@@ -3,7 +3,6 @@
 ==========================================================
 *NOTE: COMRP SCRIPT FIXED FACTION VOICE CHAT  <BEARDEV>	 *
 *NOTE: COMRP SCRIPT FIXED MINING JOB & MAPPINGS v2.2(a)  *
-*NOTE: /rcon login cbe5a4fg  Port:27015 rcon password 	 *
 ==========================================================
 
 **********************************[ CREADITS ]**********************************
@@ -16,6 +15,8 @@ NOTES:
 	Job Salary (Set to 300-500)
 
 	Added Farmer Job
+coordinates ng ibang Doors naayos kona , bukas ko ayusin ung sa bank rob at createtextdraw
+PD interiors Need bawasan ung mga Vehicle sa PD
 
 */
 
@@ -2937,7 +2938,7 @@ new const jobLocations[][jobEnum] =
 	{"Taxi Driver",     2098.5796,-1360.2363,24.0139},
 	{"Drug Dealer",     2165.3611, -1673.0824, 15.0778},
 	{"Lawyer",          1381.0668, -1086.6857, 27.3906},
-	{"Detective",       -1651.5219,699.1163,1008.7549},
+	{"Detective",       1605.1649, -1469.8822, -74.8176},
 	{"Farmer",     		-383.7594, -1410.1899, 25.7266}
 };
 
@@ -3324,6 +3325,7 @@ new const Float:cellPositions[][] =
 new const Float:arrestPoints[][] =
 {
 	{1581.2336,-1661.0497,13.5490},
+	{1630.6196,-1501.1324,-74.8176},//NEW PD
 	{2218.3938,2456.5930,-7.4531},
     {2689.5527,454.8143,10.8190},
     {200.1352,1869.3240,13.1470},
@@ -4655,7 +4657,7 @@ LocateMethod(playerid, params[])
 	else if(!strcmp(params, "mechanic shop", true))
 	{
 	    PlayerInfo[playerid][pCP] = CHECKPOINT_MISC;
-	    SetPlayerCheckpoint(playerid, 1141.4368,1361.9114,10.8203, 3.0);
+	    SetPlayerCheckpoint(playerid, 999.7162,-1445.3545,13.5469, 3.0);
 	    SCM(playerid, COLOR_WHITE, "** Checkpoint marked at the location of the Mechanic Autoparts.");
 	}
 	else if(!strcmp(params, "pizzaman", true))
@@ -4721,7 +4723,7 @@ LocateMethod(playerid, params[])
 	else if(!strcmp(params, "detective", true))
 	{
 	    PlayerInfo[playerid][pCP] = CHECKPOINT_MISC;
-	    SetPlayerCheckpoint(playerid, 1554.0564,-1675.6132,15.1953, 3.0);
+	    SetPlayerCheckpoint(playerid, 1540.2587,-1675.3967,15.3959, 3.0);
 	    SCM(playerid, COLOR_WHITE, "** Checkpoint marked at the location of the Detective job.");
 	}
 	else if(!strcmp(params, "thief", true))
@@ -5033,7 +5035,7 @@ public OnPlayerTeleport(playerid, Float:distance)
 
 		    if(PlayerInfo[playerid][pACWarns] < 4)
 		    {
-	    	    SAM(COLOR_YELLOW, "| COM:BOT | WARNING | %s[%i] is possibly teleport hacking (distance: %.1f).", GetRPName(playerid), playerid, distance);
+	    	    SAM(COLOR_YELLOW, "| TIR:BOT | WARNING | %s[%i] is possibly teleport hacking (distance: %.1f).", GetRPName(playerid), playerid, distance);
 	        	Log_Write("log_cheat", "%s (uid: %i) possibly teleport hacked (distance: %.1f)", GetPlayerNameEx(playerid), PlayerInfo[playerid][pID], distance);
 			}
 			else
@@ -20221,7 +20223,7 @@ public OnGameModeInit()
 	ApplyActorAnimation(ActorJob[3], "PED", "IDLE_CHAT", 4.1, 1, 1, 1, 1, 1);
 	SetActorInvulnerable(ActorJob[3], true);
 
-   	ActorJob[4] = CreateActor(71, -1650.3531,700.2090,1008.7549,138.9747);// DetectiveActor
+   	ActorJob[4] = CreateActor(71, 1604.9031,-1468.5970,-74.8176,100.9309);// DetectiveActor
 	ApplyActorAnimation(ActorJob[4], "PED", "IDLE_CHAT", 4.1, 1, 1, 1, 1, 1);
 	SetActorInvulnerable(ActorJob[4], true);
     SetActorVirtualWorld(ActorJob[4], 1);
@@ -21250,7 +21252,7 @@ public OnGameModeInit()
 	TextDrawFont(LogoTD[3], 2);
 	TextDrawSetProportional(LogoTD[3], 1);
 
-	LogoTD[4] = TextDrawCreate(563.011022, 29.762947, "~r~Reality");
+	LogoTD[4] = TextDrawCreate(563.011022, 29.762947, "~r~tirrp");
 	TextDrawLetterSize(LogoTD[4], 0.159999, 0.925925);
 	TextDrawAlignment(LogoTD[4], 1);
 	TextDrawColor(LogoTD[4], 833085439);
@@ -42319,7 +42321,7 @@ CMD:kiosk(playerid)
     strcat(string, "- "WHITE"Check "SVRCLR"/rules"WHITE" for a basic list of server rules.\n");
     strcat(string, "- "WHITE"Check "SVRCLR"/help"WHITE" to see available commands.\n\n");
     strcat(string, "Be sure to check out our website and forums at "SVRCLR""SERVER_URL""WHITE".\n");
-    strcat(string, "You can also join us on Discord at "SVRCLR"discord.io/ml-rp"WHITE"\n\n");
+    strcat(string, "You can also join us on Discord at "SVRCLR"discord.io/tir-rp"WHITE"\n\n");
     strcat(string, ""WHITE"Have fun!");
     ShowPlayerDialog(playerid, DIALOG_KIOSK, DIALOG_STYLE_MSGBOX, "Welcome to "SVRCLR""SERVER_NAME"", string, "Close", "");
     return 1;
@@ -55498,7 +55500,7 @@ CMD:locate(playerid, params[])
 
 CMD:findjob(playerid, params[])
 {
-	return ShowPlayerDialog(playerid, DIALOG_LOCATELIST1, DIALOG_STYLE_LIST, "Select Destination", "Pizzaman\nTrucker\nFisherman\nBodyguard\nArms Dealer\nMiner\nTaxi Driver\nDrug Dealer\nLawyer\nDetective", "Select", "Close");
+	return ShowPlayerDialog(playerid, DIALOG_LOCATELIST1, DIALOG_STYLE_LIST, "Select Destination", "Pizzaman\nTrucker\nFisherman\nBodyguard\nArms Dealer\nMiner\nTaxi Driver\nDrug Dealer\nLawyer\nDetective\nFarmer", "Select", "Close");
 }
 CMD:findsidejob(playerid, params[])
 {
@@ -59317,12 +59319,12 @@ CMD:g(playerid, params[])
 		{
 		    if(strlen(params) > MAX_SPLIT_LENGTH)
 		    {
-		        SM(i, SERVER_COLOR, "~y~[%s %s:~w~ %.*s...]", string, GetRPName(playerid), MAX_SPLIT_LENGTH, params);
-		        SM(i, SERVER_COLOR, "~y~[%s %s:~w~ ...%s]", string, GetRPName(playerid), params[MAX_SPLIT_LENGTH]);
+		        SM(i, COLOR_GLOBAL, "(( %s {80d6ab}%s %s: %.*s... ))", string, GetRPName(playerid), MAX_SPLIT_LENGTH, params);
+		        SM(i, COLOR_GLOBAL, "(( %s %s: ...%s ))", string, GetRPName(playerid), params[MAX_SPLIT_LENGTH]);
 			}
 			else
 			{
-			    SM(i, SERVER_COLOR, "~y~[%s %s:~w~ %s]", string, GetRPName(playerid), params);
+			    SM(i, COLOR_GLOBAL, "(( %s {80d6ab}%s %s: %s ))", string, GetRPName(playerid), params);
 			}
 		}
 	}
