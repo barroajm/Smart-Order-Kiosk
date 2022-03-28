@@ -1,2 +1,5 @@
+c:\Users\maxwe\Documents\GitHub\jmcb\gamemodes\main.pwn(23038) : îøèáêà 032: âûõîä çà ïðåäåëû ìàññèâà (ïåðåìåííàÿ "FarmerVehicles")
 Pawn compiler 3.2.3664	 	 	Copyright (c) 1997-2017, ITB CompuPhase
 
+
+Îøèáîê:1.
