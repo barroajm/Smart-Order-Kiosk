@@ -23035,7 +23035,7 @@ public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
 	        SCM(playerid, COLOR_SYNTAX, "You cannot operate this vehicle as you are not a Taxi Driver.");
 	        ClearAnimations(playerid);
 	    }
-		if((FarmerVehicles[0] <= vehicleid <= FarmerVehicles[10]) && !PlayerHasJob(playerid, JOB_FARMER))
+		if((FarmerVehicles[0] <= vehicleid <= FarmerVehicles[9]) && !PlayerHasJob(playerid, JOB_FARMER))
 	    {
 	        SCM(playerid, COLOR_SYNTAX, "You cannot operate this vehicle as you are not a Farmer.");
 	        ClearAnimations(playerid);
@@ -30416,7 +30416,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 				{
 				    case 0: // JOBS
 				    {
-				    	ShowPlayerDialog(playerid, DIALOG_LOCATELIST1, DIALOG_STYLE_LIST, "Select Destination", "Pizzaman\nTrucker\nFisherman\nBodyguard\nArms Dealer\nMiner\nTaxi Driver\nDrug Dealer\nLawyer\nDetective", "Select", "Close");
+				    	ShowPlayerDialog(playerid, DIALOG_LOCATELIST1, DIALOG_STYLE_LIST, "Select Destination", "Pizzaman\nTrucker\nFisherman\nBodyguard\nArms Dealer\nMiner\nTaxi Driver\nDrug Dealer\nLawyer\nDetective\nFarmer", "Select", "Close");
 				    }
 				    case 1: // STORES
 				    {
@@ -30473,8 +30473,8 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 						LocateMethod(playerid,"Detective");
 				//	case 10:
 				//	    LocateMethod(playerid,"GarbageMan");
-				//	case 10:
-				//	    LocateMethod(playerid,"Farmer");
+					case 10:
+					    LocateMethod(playerid,"Farmer");
 				}
 			}
 		}
