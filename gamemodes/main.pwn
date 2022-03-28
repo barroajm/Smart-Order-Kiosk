@@ -11,12 +11,13 @@ OLD SCRIPTER: 									JECK
 OLD SERVERNAME                                  CITY OF MATIRIK
 
 NOTES:
-	Vehicle DealerShip (50k - 500k)
-	Job Salary (Set to 300-500)
-
-	Added Farmer Job
+	
 coordinates ng ibang Doors naayos kona , bukas ko ayusin ung sa bank rob at createtextdraw
 PD interiors Need bawasan ung mga Vehicle sa PD
+
+
+Added: Anti-Cheat, Purge System
+Changed the animation of injured
 
 */
 
@@ -29,6 +30,7 @@ PD interiors Need bawasan ung mga Vehicle sa PD
 
 #include <a_http>
 #include <a_mysql>
+#include <nex-ac>
 #include <foreach>
 #include <sscanf2>
 #include <streamer>
@@ -260,6 +262,162 @@ PD interiors Need bawasan ung mga Vehicle sa PD
 #define COLOR_SYSTEM_PM 0x66CC00AA	// LIGHT GREEN
 #define COLOR_SYSTEM_PW 0xFFFF33AA	// YELLOW
 
+// AC System
+#define AC_TABLE_SETTINGS "anticheat_settings" // Name of the table in the database with anti-cheat settings
+#define AC_TABLE_FIELD_CODE "ac_code" // Name of the field with the anti-cheat code in the table
+#define AC_TABLE_FIELD_TRIGGER "ac_code_trigger_type" // Name of the field with the value of the anti-cheat code trigger in the table
+#define AC_MAX_CODES 53 // The number of anti-cheat codes (currently there are 53)
+#define AC_MAX_CODE_LENGTH (3 + 1) // Maximum Characters in the anti-cheat "code" (001/002/003, etc.)
+#define AC_MAX_CODE_NAME_LENGTH (33 + 1) // Maximum Characters in the full name of the cheat, for which any code is responsible
+
+#define AC_MAX_TRIGGER_TYPES 3 // The number of anti-cheat trigger (punishment) types. As you add types of triggers (punishments), increase this value.
+#define AC_MAX_TRIGGER_TYPE_NAME_LENGTH (8 + 1) // Maximum Characters in the name of the anti-cheat trigger (punishment) type
+
+#define AC_GLOBAL_TRIGGER_TYPE_PLAYER 0
+#define AC_GLOBAL_TRIGGER_TYPE_IP 1
+
+// Types of triggers are declared by macros to make it easier to navigate in OnCheatDetected.
+#define AC_CODE_TRIGGER_TYPE_DISABLED 0 // AC_CODE_TRIGGER_TYPE_DISABLED - Punishment type: Disabled
+#define AC_CODE_TRIGGER_TYPE_WARNING 1 // AC_CODE_TRIGGER_TYPE_WARNING - Punishment type: Warning
+#define AC_CODE_TRIGGER_TYPE_KICK 2 // AC_CODE_TRIGGER_TYPE_KICK - Punishment type: Kick
+
+#define AC_TRIGGER_ANTIFLOOD_TIME 20 // Time for anti-flood triggers (in seconds)
+#define AC_MAX_CODES_ON_PAGE 15 // Maximum number of items on the anti-cheat settings page
+#define AC_DIALOG_NEXT_PAGE_TEXT ">>> Next page" // Text of the button that will display the next page of the list
+#define AC_DIALOG_PREVIOUS_PAGE_TEXT "<<< Previous page" // Text of the button that will display the previous page of the list
+
+
+new AC_CODE[AC_MAX_CODES][AC_MAX_CODE_LENGTH] =
+{
+    "000",
+    "001",
+    "002",
+    "003",
+    "004",
+    "005",
+    "006",
+    "007",
+    "008",
+    "009",
+    "010",
+    "011",
+    "012",
+    "013",
+    "014",
+    "015",
+    "016",
+    "017",
+    "018",
+    "019",
+    "020",
+    "021",
+    "022",
+    "023",
+    "024",
+    "025",
+    "026",
+    "027",
+    "028",
+    "029",
+    "030",
+    "031",
+    "032",
+    "033",
+    "034",
+    "035",
+    "036",
+    "037",
+    "038",
+    "039",
+    "040",
+    "041",
+    "042",
+    "043",
+    "044",
+    "045",
+    "046",
+    "047",
+    "048",
+    "049",
+    "050",
+    "051",
+    "052"
+};
+
+new AC_CODE_NAME[AC_MAX_CODES][AC_MAX_CODE_NAME_LENGTH] =
+{
+    {"AirBreak (onfoot)"},
+    {"AirBreak (in vehicle)"},
+    {"Teleport (onfoot)"},
+    {"Teleport (in vehicle)"},
+    {"Teleport (into/between vehicles)"},
+    {"Teleport (vehicle to player)"},
+    {"Teleport (pickups)"},
+    {"FlyHack (onfoot)"},
+    {"FlyHack (in vehicle)"},
+    {"SpeedHack (onfoot)"},
+    {"SpeedHack (in vehicle)"},
+    {"Health hack (in vehicle)"},
+    {"Health hack (onfoot)"},
+    {"Armour hack"},
+    {"Money hack"},
+    {"Weapon hack"},
+    {"Ammo hack (add)"},
+    {"Ammo hack (infinite)"},
+    {"Special actions hack"},
+    {"GodMode from bullets (onfoot)"},
+    {"GodMode from bullets (in vehicle)"},
+    {"Invisible hack"},
+    {"Lagcomp-spoof"},
+    {"Tuning hack"},
+    {"Parkour mod"},
+    {"Quick turn"},
+    {"Rapid fire"},
+    {"FakeSpawn"},
+    {"FakeKill"},
+    {"Pro Aim"},
+    {"CJ run"},
+    {"CarShot"},
+    {"CarJack"},
+    {"UnFreeze"},
+    {"AFK Ghost"},
+    {"Full Aiming"},
+    {"Fake NPC"},
+    {"Reconnect"},
+    {"High ping"},
+    {"Dialog hack"},
+    {"Sandbox"},
+    {"Invalid version"},
+    {"Rcon hack"},
+    {"Tuning crasher"},
+    {"Invalid seat crasher"},
+    {"Dialog crasher"},
+    {"Attached object crasher"},
+    {"Weapon Crasher"},
+    {"Connects to one slot"},
+    {"Flood callback functions"},
+    {"Flood change seat"},
+    {"DDos"},
+    {"NOP's"}
+};
+
+new AC_TRIGGER_TYPE_NAME[AC_MAX_TRIGGER_TYPES][AC_MAX_TRIGGER_TYPE_NAME_LENGTH] =
+{
+    {"Disabled"},
+    {"Warning"},
+    {"Kick"}
+};
+
+new
+    AC_CODE_TRIGGER_TYPE[AC_MAX_CODES],
+    AC_CODE_TRIGGERED_COUNT[AC_MAX_CODES] = {0, ...};
+
+new
+    pAntiCheatLastCodeTriggerTime[MAX_PLAYERS][AC_MAX_CODES],
+    pAntiCheatSettingsPage[MAX_PLAYERS char],
+    pAntiCheatSettingsMenuListData[MAX_PLAYERS][AC_MAX_CODES_ON_PAGE],
+    pAntiCheatSettingsEditCodeId[MAX_PLAYERS];
+
 //sampvoice
 new SV_GSTREAM:gstream = SV_NULL; //Admin
 new SV_GSTREAM:emsstream = SV_NULL; //Ems
@@ -486,6 +644,9 @@ new CarregandoTelaLogin[MAX_PLAYERS];
 new TimerLogin[MAX_PLAYERS];
 new Text:LoadScreenLogin[14];
 
+// Purge System
+new PlayerText:PurgeTD[MAX_PLAYERS][5];
+
 /*
 new Text:loadTela1;
 new Text:loadTela2;
@@ -600,6 +761,21 @@ enum objectData {
 };
 new ObjectData[MAX_MAPOBJECTS][objectData];
 
+// Purge System
+enum purgeenum
+{
+	pExists,
+	pStarted,
+	pTimer,
+	pStartTimer,
+	pEndTimer,
+	pKills[MAX_PLAYERS],
+	pDeath[MAX_PLAYERS],
+	pGovernment[MAX_PLAYER_NAME],
+	
+};
+
+new PurgeInfo[purgeenum];
 
 // Poll System
 new PollVoted[MAX_PLAYERS];
@@ -787,7 +963,17 @@ enum
 	#endif*/
 	DIALOG_CREATEQUIZ,
 	DIALOG_DLOCKER,
-	DIALOG_DGUN
+	DIALOG_DGUN,
+
+	// Purge System
+	DIALOG_PURGE,
+	DIALOG_PURGE_STARTTIMER,
+	DIALOG_PURGE_ENDTIMER,
+	DIALOG_PURGE_GOVERNMENT,
+
+	// AC System
+	ANTICHEAT_SETTINGS,
+	ANTICHEAT_EDIT_CODE,
 }
 
 enum
@@ -1936,7 +2122,6 @@ new Text:UnknownTD[4];
 // Capture Limit
 new MaxCapCount[2] = {  2 , 1 };
 
-new enabledpurge = 0;
 new enabledOOC;
 new enabledNewbie = 1;
 new enabledVip = 1;
@@ -7663,6 +7848,17 @@ ShowDialogToPlayer(playerid, dialogid)
 			    ShowPlayerDialog(playerid, DIALOG_CREATEQUIZ, DIALOG_STYLE_INPUT, "Create A Quiz - Enter Answer", "What should the answer be? (displayed once answered)", "Submit", "Back");
 			}
 		}
+		case DIALOG_PURGE:
+		{
+			new str[2048];
+			str = "Options\tDescription\n";
+			format(str, sizeof(str), "%sStart Timer\t%i Seconds\n", str, PurgeInfo[pStartTimer]);
+			format(str, sizeof(str), "%sEnd Timer\t%i Seconds\n", str, PurgeInfo[pEndTimer]);
+			format(str, sizeof(str), "%sGovernment\t%s\n", str, PurgeInfo[pGovernment]);
+			format(str, sizeof(str), "%sStart Purge\n", str);
+			format(str, sizeof(str), "%sEnd Purge\n", str);
+			ShowPlayerDialog(playerid, DIALOG_PURGE, DIALOG_STYLE_TABLIST_HEADERS, "Purge Settings", str, "Next", "Return");
+		}
 	}
 	return 1;
 }
@@ -7849,6 +8045,38 @@ SendPaycheck(playerid)
 	}
 
 	interest = (PlayerInfo[playerid][pBank] / 500) * rate;
+
+	switch(PlayerInfo[playerid][pVIPPackage])
+    {
+        case 0:
+        {
+            if(interest > 0)
+            {
+                interest = 0;
+            }
+        }
+        case 1:
+        {
+            if(interest > 500)
+            {
+                interest = 500;
+            }
+        }
+        case 2:
+        {
+            if(interest > 1000)
+            {
+                interest = 1000;
+            }
+        }
+        case 3:
+        {
+            if(interest > 1500)
+            {
+                interest = 1500;
+            }
+        }
+    }
 
 	total += interest;
 
@@ -14710,6 +14938,158 @@ ComServ(playerid)
 	}
 }
 
+// Purge System
+
+TogglePurge()
+{
+	new url[1028];
+	if(!PurgeInfo[pStarted])
+	{
+		PurgeInfo[pStarted] = 1;
+		SMA(SERVER_COLOR, "(( Administrator %s enabled the Purge. ))", PurgeInfo[pGovernment]);
+		SMA(COLOR_GREEN, "Governor %s has pressed the button and the purge has just begin.", PurgeInfo[pGovernment]);
+		SMA(COLOR_RED, "Governor %s: This is your governor speaking, the purge has just start, stay in your homes.", PurgeInfo[pGovernment]);
+    	SMA(COLOR_RED, "Governor %s: Do everything you want just to survive this time, We want to reduce population!", PurgeInfo[pGovernment]);
+    	SMA(COLOR_RED, "Governor %s: OMASHALA! May God be with you in this fight!", PurgeInfo[pGovernment]);
+
+		format(url, sizeof(url), "http://%s/ThePurge.mp3", SERVER_MUSIC_URL);
+    	foreach(new i : Player)
+		{
+		 	if(!PlayerInfo[i][pToggleMusic])
+			{
+				PlayAudioStreamForPlayer(i, url);
+			}
+		}
+		gWeather = 1;
+		gWorldTime = 1;
+
+		SetWeather(gWeather);
+		SetWorldTime(gWorldTime);
+		SMA(COLOR_GREY2, "Weather changed to 1.");
+		SMA(COLOR_GREY2, "Time of day changed to 1 hours.");
+	}
+	else
+	{
+		PurgeInfo[pExists] = 0;
+	    PurgeInfo[pStarted] = 0;
+	    SMA(SERVER_COLOR, "(( Administrator %s disabled the Purge. ))", PurgeInfo[pGovernment]);
+	    SMA(COLOR_GREEN, "Governor %s has stopped the purge.", PurgeInfo[pGovernment]);
+	    SMA(COLOR_RED, "Governor %s: This is your governor speaking, the purge has come to its end.", PurgeInfo[pGovernment]);
+    	SMA(COLOR_RED, "Governor %s: Be back to your daily lives and we congratulate for those who survived!", PurgeInfo[pGovernment]);
+
+        foreach(new i: Player)
+		{
+	    	if(!PlayerInfo[i][pToggleMusic])
+	    	{
+	    	    ResetPlayerWeaponsEx(i);
+		    	StopAudioStreamForPlayer(i);
+			}
+		}
+		gWeather = 1;
+		gWorldTime = 1;
+
+		SetWeather(gWeather);
+		SetWorldTime(gWorldTime);
+		SMA(COLOR_GREY2, "Weather changed to %i.", gWeather);
+		SMA(COLOR_GREY2, "Time of day changed to %i hours.", gWorldTime);
+	}
+}
+
+forward OnPurgeStartCountDown();
+public OnPurgeStartCountDown()
+{
+	new string[128];
+	PurgeInfo[pStartTimer] -- ;
+	if(PurgeInfo[pStartTimer] <= 0)
+	{
+		TogglePurge();
+ 		format(string, sizeof(string), "~r~PURGE Has been~n~~b~STARTED~n~~r~Lets~y~Go");
+  		KillTimer(PurgeInfo[pTimer]);
+		PurgeInfo[pTimer] = SetTimer("OnPurgeEndCountDown",1000,1);
+
+		foreach(new i : Player)
+		{
+			PurgeInfo[pKills][i] = 0;
+			PurgeInfo[pDeath][i] = 0;
+			GameTextForPlayer(i,string,2000,3);
+			PlayerPlaySound(i, 4203, 0.0, 0.0, 0.0);
+		}
+	}
+   	format(string, sizeof(string), "Starts in: %i", PurgeInfo[pStartTimer]);
+	foreach(new i : Player)
+	{
+		if(PlayerInfo[i][pLogged] && !PlayerInfo[i][pKicked])
+		{
+			PlayerTextDrawSetString(i, PurgeTD[i][3], string);
+			PlayerPlaySound(i, 4203, 0.0, 0.0, 0.0);
+		}
+	}
+	return 1;
+}
+
+forward OnPurgeEndCountDown();
+public OnPurgeEndCountDown()
+{
+	new string[128];
+	PurgeInfo[pEndTimer] -- ;
+	if(PurgeInfo[pEndTimer] <= 0)
+	{
+		TogglePurge();
+ 		format(string, sizeof(string), "~r~PURGE Has been~n~~b~Ended~n~~r~Lets~y~Go");
+  		KillTimer(PurgeInfo[pTimer]);
+
+		foreach(new i : Player)
+		{
+			PurgeInfo[pExists] = 0;
+			PurgeInfo[pStarted] = 0;
+			GameTextForPlayer(i,string,2000,3);
+			PlayerPlaySound(i, 4203, 0.0, 0.0, 0.0);
+		}
+	}
+   	format(string, sizeof(string), "Ends in: %i", PurgeInfo[pEndTimer]);
+	foreach(new i : Player)
+	{
+		if(PlayerInfo[i][pLogged] && !PlayerInfo[i][pKicked])
+		{
+			PlayerTextDrawSetString(i, PurgeTD[i][3], string);
+			PlayerPlaySound(i, 4203, 0.0, 0.0, 0.0);
+		}
+	}
+	return 1;
+}
+
+forward purgetimer();
+public purgetimer()
+{
+	new string[128];
+
+	foreach(new i: Player)
+	{
+		if(PurgeInfo[pExists])
+		{
+			format(string, sizeof(string), "Kills: %i", PurgeInfo[pKills][i]);
+			PlayerTextDrawSetString(i, PurgeTD[i][2], string);
+			
+			format(string, sizeof(string), "Death: %i", PurgeInfo[pKills][i]);
+			PlayerTextDrawSetString(i, PurgeTD[i][1], string);
+
+			for(new s = 0; s < 5; s ++)
+			{
+				PlayerTextDrawHide(i, PurgeTD[i][s]);
+				PlayerTextDrawShow(i, PurgeTD[i][s]);	
+			}
+		} 
+		else 
+		{
+			for(new s = 0; s < 5; s ++)
+			{
+				PlayerTextDrawHide(i, PurgeTD[i][s]);
+				
+			}
+		}
+	}
+}
+
 forward SecondTimer();
 public SecondTimer()
 {
@@ -15281,21 +15661,29 @@ public SecondTimer()
 					SetPlayerVirtualWorld(i, PlayerInfo[i][pHospitalType]);
 					SetCameraBehindPlayer(i);
 
-					if(!enabledpurge) {
-						GivePlayerCash(i, -1500);
-						Dyuze(i, "Notice", "Discharged we deduct you $1500.");
+					if(!PurgeInfo[pStarted])
+					{
+						new amount = 500 + random(1000);
+         				GivePlayerCash(i, -amount);
+						Dyuze(i, "Notice", "Discharged we deduct you $%i.", amount);
 						if(PlayerInfo[i][pDelivered])
 						{
-							SCM(i, COLOR_DOCTOR, "You have been billed $1500 for your stay. Your items is safed!");
+							
+							SM(i, COLOR_DOCTOR, "You have been billed $%i for your stay. Your items is safed!", amount);
 							PlayerInfo[i][pDelivered] = 0;
 						}
 						else
 						{
-							SCM(i, COLOR_DOCTOR, "You have been billed $1500 for your stay. Your illegal items have been confiscated by staff.");
+							SCM(i, COLOR_DOCTOR, "You have been billed $1000 for your stay. Your illegal items have been confiscated by staff.");
 							SCM(i, COLOR_LIGHTRED, "(( You have lost 30 minutes of your memory. ))");
 						}
-					} else SCM(i, COLOR_DOCTOR, "You have been discharged for free for the purge event. (( Type /purgeme to refill your weapons. ))");
-
+					}
+					else
+					{
+			    		new amount = 1000 + random(1000);
+   						GivePlayerCash(i, -amount);
+						SM(i, COLOR_DOCTOR, "You have been discharged for $%i by the purge event. (( Type /purgeme to refill your weapons. ))", amount);
+					}
 					new hospital[32];
 					switch(PlayerInfo[i][pHospitalType])
 					{
@@ -19987,6 +20375,8 @@ public OnGameModeInit()
 	mysql_tquery(connectionID, "SELECT * FROM `gates`", "Gate_Load", "");
 	mysql_tquery(connectionID, "SELECT * FROM `object`", "Object_Load", "");
 
+	UploadAntiCheatSettings();
+
 	SetTimer ( "SpeedUpdate", 50, false ) ;
 	L_draw_speed[ 0 ] = TextDrawCreate ( 190, 400.0, L_count[ 0 ] ) ;
 	L_speed_update[ 0 ] = 210 ;
@@ -21595,6 +21985,7 @@ public OnGameModeInit()
 	// Timers
 	SetTimer("MinuteTimer", 60000, true);
 	SetTimer("SecondTimer", 1000, true);
+	SetTimer("purgetimer", 700, true);
 	SetTimer("FuelTimer", 75000, true);
 	SetTimer("InjuredTimer", 5000, true);
 	SetTimer("LotteryUpdate", 2700000, true);
@@ -21748,6 +22139,14 @@ public OnPlayerConnect(playerid)
 	TextDrawFont ( L_player_draw[ playerid ], 3 ), TextDrawLetterSize( L_player_draw[ playerid ], 0.3, 5.5 ) ;
 
     ObrisiObjekte( playerid ); // matirik map
+
+	for(new i = 0; i < AC_MAX_CODES; i++)
+	{
+		pAntiCheatLastCodeTriggerTime[playerid][i] = 0;
+	}
+	pAntiCheatSettingsPage{playerid} = 0; // Присваиваем значение 0 переменной, хранящей номер страницы настроек анти-чита, на которой находится игрок
+    pAntiCheatSettingsEditCodeId[playerid] = -1;
+
     ExBJck[playerid] = 0;
     pBlind[playerid] = 0;
     Maskara[playerid] = 0;
@@ -22492,6 +22891,77 @@ public OnPlayerConnect(playerid)
 	PlayerTextDrawSetProportional(playerid, SpeedPlayerTD[playerid][9], 1);
 	PlayerTextDrawSetSelectable(playerid, SpeedPlayerTD[playerid][9], 0);
 
+	//Purge Textdraw
+	PurgeTD[playerid][0] = CreatePlayerTextDraw(playerid, 316.000000, 409.000000, "_");
+	PlayerTextDrawFont(playerid, PurgeTD[playerid][0], 1);
+	PlayerTextDrawLetterSize(playerid, PurgeTD[playerid][0], 0.245838, 4.349987);
+	PlayerTextDrawTextSize(playerid, PurgeTD[playerid][0], 622.000000, 177.000000);
+	PlayerTextDrawSetOutline(playerid, PurgeTD[playerid][0], 1);
+	PlayerTextDrawSetShadow(playerid, PurgeTD[playerid][0], 0);
+	PlayerTextDrawAlignment(playerid, PurgeTD[playerid][0], 2);
+	PlayerTextDrawColor(playerid, PurgeTD[playerid][0], -1);
+	PlayerTextDrawBackgroundColor(playerid, PurgeTD[playerid][0], 255);
+	PlayerTextDrawBoxColor(playerid, PurgeTD[playerid][0], -1509423004);
+	PlayerTextDrawUseBox(playerid, PurgeTD[playerid][0], 1);
+	PlayerTextDrawSetProportional(playerid, PurgeTD[playerid][0], 1);
+	PlayerTextDrawSetSelectable(playerid, PurgeTD[playerid][0], 0);
+
+	PurgeTD[playerid][1] = CreatePlayerTextDraw(playerid, 350.000000, 430.000000, "Death: 00");
+	PlayerTextDrawFont(playerid, PurgeTD[playerid][1], 1);
+	PlayerTextDrawLetterSize(playerid, PurgeTD[playerid][1], 0.237000, 1.500000);
+	PlayerTextDrawTextSize(playerid, PurgeTD[playerid][1], 400.000000, 17.000000);
+	PlayerTextDrawSetOutline(playerid, PurgeTD[playerid][1], 1);
+	PlayerTextDrawSetShadow(playerid, PurgeTD[playerid][1], 0);
+	PlayerTextDrawAlignment(playerid, PurgeTD[playerid][1], 1);
+	PlayerTextDrawColor(playerid, PurgeTD[playerid][1], -1);
+	PlayerTextDrawBackgroundColor(playerid, PurgeTD[playerid][1], 255);
+	PlayerTextDrawBoxColor(playerid, PurgeTD[playerid][1], 50);
+	PlayerTextDrawUseBox(playerid, PurgeTD[playerid][1], 0);
+	PlayerTextDrawSetProportional(playerid, PurgeTD[playerid][1], 1);
+	PlayerTextDrawSetSelectable(playerid, PurgeTD[playerid][1], 0);
+
+	PurgeTD[playerid][2] = CreatePlayerTextDraw(playerid, 298.000000, 430.000000, "Kills: 00");
+	PlayerTextDrawFont(playerid, PurgeTD[playerid][2], 1);
+	PlayerTextDrawLetterSize(playerid, PurgeTD[playerid][2], 0.237000, 1.500000);
+	PlayerTextDrawTextSize(playerid, PurgeTD[playerid][2], 400.000000, 17.000000);
+	PlayerTextDrawSetOutline(playerid, PurgeTD[playerid][2], 1);
+	PlayerTextDrawSetShadow(playerid, PurgeTD[playerid][2], 0);
+	PlayerTextDrawAlignment(playerid, PurgeTD[playerid][2], 1);
+	PlayerTextDrawColor(playerid, PurgeTD[playerid][2], -1);
+	PlayerTextDrawBackgroundColor(playerid, PurgeTD[playerid][2], 225);
+	PlayerTextDrawBoxColor(playerid, PurgeTD[playerid][2], 50);
+	PlayerTextDrawUseBox(playerid, PurgeTD[playerid][2], 0);
+	PlayerTextDrawSetProportional(playerid, PurgeTD[playerid][2], 1);
+	PlayerTextDrawSetSelectable(playerid, PurgeTD[playerid][2], 0);
+
+	PurgeTD[playerid][3] = CreatePlayerTextDraw(playerid, 230.000000, 430.000000, "Start in: 00:00");
+	PlayerTextDrawFont(playerid, PurgeTD[playerid][3], 1);
+	PlayerTextDrawLetterSize(playerid, PurgeTD[playerid][3], 0.195831, 1.500000);
+	PlayerTextDrawTextSize(playerid, PurgeTD[playerid][3], 632.500000, 17.000000);
+	PlayerTextDrawSetOutline(playerid, PurgeTD[playerid][3], 1);
+	PlayerTextDrawSetShadow(playerid, PurgeTD[playerid][3], 0);
+	PlayerTextDrawAlignment(playerid, PurgeTD[playerid][3], 1);
+	PlayerTextDrawColor(playerid, PurgeTD[playerid][3], -1973791);
+	PlayerTextDrawBackgroundColor(playerid, PurgeTD[playerid][3], 255);
+	PlayerTextDrawBoxColor(playerid, PurgeTD[playerid][3], 50);
+	PlayerTextDrawUseBox(playerid, PurgeTD[playerid][3], 0);
+	PlayerTextDrawSetProportional(playerid, PurgeTD[playerid][3], 1);
+	PlayerTextDrawSetSelectable(playerid, PurgeTD[playerid][3], 0);
+
+	PurgeTD[playerid][4] = CreatePlayerTextDraw(playerid, 289.000000, 406.000000, "Purge Event");
+	PlayerTextDrawFont(playerid, PurgeTD[playerid][4], 1);
+	PlayerTextDrawLetterSize(playerid, PurgeTD[playerid][4], 0.266667, 1.600000);
+	PlayerTextDrawTextSize(playerid, PurgeTD[playerid][4], 627.500000, 0.500000);
+	PlayerTextDrawSetOutline(playerid, PurgeTD[playerid][4], 1);
+	PlayerTextDrawSetShadow(playerid, PurgeTD[playerid][4], 0);
+	PlayerTextDrawAlignment(playerid, PurgeTD[playerid][4], 1);
+	PlayerTextDrawColor(playerid, PurgeTD[playerid][4], -1);
+	PlayerTextDrawBackgroundColor(playerid, PurgeTD[playerid][4], 255);
+	PlayerTextDrawBoxColor(playerid, PurgeTD[playerid][4], 50);
+	PlayerTextDrawUseBox(playerid, PurgeTD[playerid][4], 0);
+	PlayerTextDrawSetProportional(playerid, PurgeTD[playerid][4], 1);
+	PlayerTextDrawSetSelectable(playerid, PurgeTD[playerid][4], 0);
+
 	// GPS
 	PlayerInfo[playerid][pText][0] = CreatePlayerTextDraw(playerid, 155.000000, 429.000000, "Los Santos");
 	PlayerTextDrawFont(playerid, PlayerInfo[playerid][pText][0], 2);
@@ -22743,6 +23213,11 @@ public OnPlayerSpawn(playerid)
 	{
 	    SetPlayerInPaintball(playerid, PlayerInfo[playerid][pPaintball]);
 	}
+	else if(PurgeInfo[pStarted] && PlayerInfo[playerid][pInjured])
+	{
+		SetPlayerHealth(playerid, -50.0);
+		SCM(playerid, COLOR_RED, "You have been killed on the purge");
+	}
 	else
 	{
 	    PlayerInfo[playerid][pJoinedEvent] = 0;
@@ -22751,7 +23226,8 @@ public OnPlayerSpawn(playerid)
 	    {
 	        SetPlayerHealth(playerid, 100.0);
 	        SetPlayerArmour(playerid, 0.0);
-            ApplyAnimation(playerid, "SWEET", "Sweet_injuredloop", 4.1, 0, 0, 0, 1, 0, 1);
+            //ApplyAnimation(playerid, "SWEET", "Sweet_injuredloop", 4.1, 0, 0, 0, 1, 0, 1);
+			ApplyAnimation(playerid, "SWAT", "gnstwall_injurd", 4.1, 0, 0, 0, 1, 0, 1);
 
 			Dyuze(playerid, "Wounded", "/accept death or /call 911", 10000);
 	        SCM(playerid, COLOR_DOCTOR, "You are wounded and losing blood. /call 911 for medical attention.");
@@ -22927,6 +23403,11 @@ public OnPlayerDeath(playerid, killerid, reason)
 	        PlayerInfo[playerid][pInterior] = GetPlayerInterior(playerid);
 	        PlayerInfo[playerid][pWorld] = GetPlayerVirtualWorld(playerid);
 		}
+	}
+	if(PurgeInfo[pStarted] && killerid != INVALID_PLAYER_ID && playerid != INVALID_PLAYER_ID && killerid == playerid)
+	{
+		PurgeInfo[pDeath][playerid] += 1;
+		PurgeInfo[pKills][killerid] += 1;
 	}
 
 	if(PlayerInfo[playerid][pCallLine] != INVALID_PLAYER_ID)
@@ -32651,6 +33132,122 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 				ReloadBusiness(businessid);
 			    SM(playerid, COLOR_AQUA, "You've changed the interior of business %i to %s.", businessid, bizInteriorArray[listitem][intName]);
 		    }
+		}
+		case DIALOG_PURGE:
+		{
+			new str[2048];
+			if(response)
+			{
+				switch(listitem)
+				{
+					case 0:
+					{
+						format(str, sizeof(str), "Please type the Seconds of the Purge Will Start. (60 = 1 minute)");
+						ShowPlayerDialog(playerid, DIALOG_PURGE_STARTTIMER, DIALOG_STYLE_INPUT, "Purge Settings", str, "Enter", "Cancel");
+					}
+					case 1:
+					{
+						format(str, sizeof(str), "Please type the Seconds of the Purge Will End. (60 = 1 minute)");
+						ShowPlayerDialog(playerid, DIALOG_PURGE_ENDTIMER, DIALOG_STYLE_INPUT, "Purge Settings", str, "Enter", "Cancel");
+					}
+					case 2:
+					{
+						format(str, sizeof(str), "Please type the name of the Government");
+						ShowPlayerDialog(playerid, DIALOG_PURGE_GOVERNMENT, DIALOG_STYLE_INPUT, "Purge Settings", str, "Enter", "Cancel");
+					}
+					case 3:
+					{
+						if(PurgeInfo[pStarted])
+						{
+							SM(playerid, COLOR_SYNTAX, "The Purge has already Started.");
+							return 1;
+						}
+						PurgeInfo[pExists] = 1;
+						PurgeInfo[pTimer] = SetTimer("OnPurgeStartCountDown",1000,1);
+					}
+					case 4:
+					{
+						if(!PurgeInfo[pStarted])
+						{
+							SM(playerid, COLOR_SYNTAX, "The Purge is Not Yet Started.");
+							return 1;
+						}
+						TogglePurge();
+					}
+				}
+			}
+		}
+		case DIALOG_PURGE_STARTTIMER:
+		{
+			if(response)
+			{
+				new timer, str[2048];
+
+		    	if(sscanf(inputtext, "i", timer))
+				{
+					format(str, sizeof(str), "Please type the Seconds of the Purge Will Start. (60 = 1 minute)");
+					ShowPlayerDialog(playerid, DIALOG_PURGE_STARTTIMER, DIALOG_STYLE_INPUT, "Purge Settings", str, "Enter", "Cancel");
+					return 1;
+		        }
+				if(timer <= 0)
+				{
+					format(str, sizeof(str), "The Timer Cant be set bellow 0. (60 = 1 minute)");
+					ShowPlayerDialog(playerid, DIALOG_PURGE_STARTTIMER, DIALOG_STYLE_INPUT, "Purge Settings", str, "Enter", "Cancel");
+					return 1;
+				}
+				PurgeInfo[pStartTimer] = timer;
+				ShowDialogToPlayer(playerid, DIALOG_PURGE);
+			}
+		}
+		case DIALOG_PURGE_ENDTIMER:
+		{
+			if(response)
+			{
+				new timer, str[2048];
+
+		    	if(sscanf(inputtext, "i", timer))
+				{
+					format(str, sizeof(str), "Please type the Seconds of the Purge Will End. (60 = 1 minute)");
+					ShowPlayerDialog(playerid, DIALOG_PURGE_ENDTIMER, DIALOG_STYLE_INPUT, "Purge Settings", str, "Enter", "Cancel");
+					return 1;
+		        }
+				if(timer <= 0)
+				{
+					format(str, sizeof(str), "The Timer Cant be set bellow 0. (60 = 1 minute)");
+					ShowPlayerDialog(playerid, DIALOG_PURGE_ENDTIMER, DIALOG_STYLE_INPUT, "Purge Settings", str, "Enter", "Cancel");
+					return 1;
+				}
+				PurgeInfo[pEndTimer] = timer;
+				ShowDialogToPlayer(playerid, DIALOG_PURGE);
+			}
+		}
+		case DIALOG_PURGE_GOVERNMENT:
+		{
+			if(response)
+			{
+				new name[1028], str[2048];
+
+		    	if(sscanf(inputtext, "s[1028]", name))
+				{
+					format(str, sizeof(str), "Please type the name of the Government");
+					ShowPlayerDialog(playerid, DIALOG_PURGE_GOVERNMENT, DIALOG_STYLE_INPUT, "Purge Settings", str, "Enter", "Cancel");
+					return 1;
+		        }
+				if(strlen(name) < 3)
+				{
+					format(str, sizeof(str), "the name for the government Cant go Bellow 3");
+					ShowPlayerDialog(playerid, DIALOG_PURGE_GOVERNMENT, DIALOG_STYLE_INPUT, "Purge Settings", str, "Enter", "Cancel");
+					return 1;
+				}
+				if(strlen(name) > 1028)
+				{
+					format(str, sizeof(str), "the name for the government Cant go Above 1028");
+					ShowPlayerDialog(playerid, DIALOG_PURGE_GOVERNMENT, DIALOG_STYLE_INPUT, "Purge Settings", str, "Enter", "Cancel");
+					return 1;
+				}
+				strcpy(PurgeInfo[pGovernment], name, 1028);
+				ShowDialogToPlayer(playerid, DIALOG_PURGE);
+			}
 		}
 		case DIALOG_FACTIONLOCKER:
 		{
@@ -44689,20 +45286,6 @@ CMD:refilldrug(playerid, params[])
 
 	return 1;
 }
-CMD:purgeme(playerid, params[])
-{
-	if(!enabledpurge)
-	{
-	    return SCM(playerid, COLOR_SYNTAX, "The purge is disabled at the moment.");
-	}
-	GiveWeapon(playerid, 5);
-	GiveWeapon(playerid, 22);
-	GiveWeapon(playerid, 30);
-	SCM(playerid, COLOR_SYNTAX,""SERVER_BOT" given you 9mm, Baseball bat, and AK-47 for the purge.");
-	return 1;
-}
-
-
 
 CMD:top(playerid)
 {
@@ -44710,23 +45293,28 @@ CMD:top(playerid)
 	return 1;
 }
 
-CMD:togpurge(playerid, params[])
-{
-    if(PlayerInfo[playerid][pAdmin] < 3)
-	{
-	    return SCM(playerid, COLOR_SYNTAX, "You are not authorized to use this command.");
-	}
 
-	if(!enabledpurge)
+CMD:purgeme(playerid, params[])
+{
+	if(!PurgeInfo[pStarted])
 	{
-	    enabledpurge = 1;
-	    SMA(SERVER_COLOR, "(( Administrator %s enabled the Purge. ))", GetRPName(playerid));
+	    return SCM(playerid, COLOR_SYNTAX, "The purge is disabled at the moment.");
 	}
-	else
+	GiveWeapon(playerid, 24); //DEAGLE
+	GiveWeapon(playerid, 30); //AK47
+	GiveWeapon(playerid, 33); //RIFLE
+	SCM(playerid, COLOR_SYNTAX,""SERVER_BOT"[PURGE REMINDER]: Enjoy your weapons!");
+	return 1;
+}
+
+
+CMD:purgesettings(playerid, params[])
+{
+	if(PlayerInfo[playerid][pAdmin] < 8)
 	{
-	    enabledpurge = 0;
-	    SMA(SERVER_COLOR, "(( Administrator %s disabled the Purge. ))", GetRPName(playerid));
+		return 1;
 	}
+	ShowDialogToPlayer(playerid, DIALOG_PURGE);
 	return 1;
 }
 
@@ -69057,3 +69645,199 @@ public SV_VOID:OnPlayerActivationKeyRelease(SV_UINT:playerid, SV_UINT:keyid)
 	}	
 }
 
+
+// AC System
+stock UploadAntiCheatSettings()
+{
+	printf("[LoadAntiCheat] Loading data from database...");
+    mysql_function_query(connectionID, "SELECT * FROM `anticheat_settings`", true, "UploadAntiCheat", "");
+}
+
+forward UploadAntiCheat();
+public UploadAntiCheat()
+{
+    new rows = cache_num_rows(), tick = GetTickCount();
+
+	if (!rows)
+	{
+        print("[MySQL]: Anti-cheat settings were not found in the database. Loading of the mod stopped - configure anti-cheat. ");
+		for(new i=0;i<53;i++)
+		{
+			mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "INSERT INTO anticheat_settings (ac_code, ac_code_trigger_type) VALUES('%i', '1')", i);
+			mysql_tquery(connectionID, queryBuffer);
+		}
+		print("[MySQL]: Anti-cheat settings Updated added. - configure anti-cheat. ");
+        //return GameModeExit();
+    }
+
+    for(new i = 0; i < AC_MAX_CODES; i++)
+    {
+        AC_CODE_TRIGGER_TYPE[i] = cache_get_field_content_int(i, "ac_code_trigger_type");
+
+        if (AC_CODE_TRIGGER_TYPE[i] == AC_CODE_TRIGGER_TYPE_DISABLED) {
+            EnableAntiCheat(i, 0);
+        }
+    }
+
+    new mes[128];
+    format(mes, sizeof(mes), "[ANTICHEAT]: Anti-cheat settings loaded successfully (loaded: %i). Time: %i мс.", rows, GetTickCount() - tick);
+    print(mes);
+
+    return 1;
+}
+
+forward OnCheatDetected(playerid, ip_address[], type, code);
+public OnCheatDetected(playerid, ip_address[], type, code)
+{
+	if(PlayerInfo[playerid][pAdmin] < 2)
+	{
+		if (type == AC_GLOBAL_TRIGGER_TYPE_PLAYER)
+		{
+			switch(code)
+			{
+				case 5, 6, 11, 22:
+				{
+					return 1;
+				}
+				case 32: // CarJack
+				{
+					new
+						Float:x,
+						Float:y,
+						Float:z;
+
+					AntiCheatGetPos(playerid, x, y, z);
+					return SetPlayerPos(playerid, x, y, z);
+				}
+				default:
+				{
+					if (gettime() - pAntiCheatLastCodeTriggerTime[playerid][code] < AC_TRIGGER_ANTIFLOOD_TIME)
+						return 1;
+
+					pAntiCheatLastCodeTriggerTime[playerid][code] = gettime();
+					AC_CODE_TRIGGERED_COUNT[code]++;
+
+					new trigger_type = AC_CODE_TRIGGER_TYPE[code];
+
+					switch(trigger_type)
+					{
+						case AC_CODE_TRIGGER_TYPE_DISABLED: return 1;
+						case AC_CODE_TRIGGER_TYPE_WARNING:
+						{
+							new str[128];
+							format(str, sizeof(str),"%s[%d] suspected of using cheat programs: %s [code: %03d].", GetRPName(playerid), playerid, AC_CODE_NAME[code], code);
+							SendAdminMessage(COLOR_RED, str);
+							//SM(playerid, -1, "You were suspected of using cheat programs: %s [code: %03d].", AC_CODE_NAME[code], code);
+							new szString[128];
+							format(szString, sizeof(szString), "%s[%d] suspected of using cheat programs: %s [code: %03d].", GetRPName(playerid), playerid, AC_CODE_NAME[code], code);
+							Log_Write("log_cheat", "%s (uid: %i) suspected of using cheat programs", GetPlayerNameEx(playerid), PlayerInfo[playerid][pID]);
+
+							#if defined DISCORD
+							new astr[128];
+							format(astr, sizeof(astr), "%s[%d] suspected of using cheat programs: %s [code: %03d].", GetRPName(playerid), playerid, AC_CODE_NAME[code], code);
+							DCC_SendChannelMessage(AntiCheatLogs, astr);
+							#endif
+						}
+						case AC_CODE_TRIGGER_TYPE_KICK:
+						{
+							new str[128];
+							format(str, sizeof(str),"%s[%d] was kicked on suspicion of using cheat programs: %s [code: %03d].", GetRPName(playerid), playerid, AC_CODE_NAME[code], code);
+							SendAdminMessage(COLOR_RED, str);
+							
+							#if defined DISCORD
+							new astr[128];
+							format(astr, sizeof(astr), "%s[%d] was kicked on suspicion of using cheat programs: %s [code: %03d].", GetRPName(playerid), playerid, AC_CODE_NAME[code], code);
+							DCC_SendChannelMessage(AntiCheatLogs, astr);
+							#endif
+
+							SM(playerid, -1, "You were kicked on suspicion of using cheat programs: %s [code: %03d].", AC_CODE_NAME[code], code);
+							AntiCheatKickWithDesync(playerid, code);
+						}
+					}
+				}
+			}
+		}
+		else // AC_GLOBAL_TRIGGER_TYPE_IP
+		{
+			AC_CODE_TRIGGERED_COUNT[code]++;
+			new str[128];
+			format(str, sizeof(str),"<AC-BAN-IP> IP address %s was blocked: %s [code: %03d].", ip_address, AC_CODE_NAME[code], code);
+			SendAdminMessage(COLOR_RED, str);
+			BlockIpAddress(ip_address, 0);
+		}
+	}
+    return 1;
+}
+
+stock ShowPlayer_AntiCheatSettings(playerid)
+{
+    static
+        dialog_string[42 + 19 - 8 + (AC_MAX_CODE_LENGTH + AC_MAX_CODE_NAME_LENGTH + AC_MAX_TRIGGER_TYPE_NAME_LENGTH + 10)*AC_MAX_CODES_ON_PAGE] = EOS;
+
+    new
+        triggeredCount = 0,
+        page = pAntiCheatSettingsPage{playerid},
+        next = 0,
+        index = 0;
+
+    dialog_string = "Name\tPunishment\tNumber of positives\n";
+
+    for(new i = 0; i < AC_MAX_CODES; i++)
+    {
+        if (i >= (page * AC_MAX_CODES_ON_PAGE) && i < (page * AC_MAX_CODES_ON_PAGE) + AC_MAX_CODES_ON_PAGE)
+            next++;
+
+        if (i >= (page - 1) * AC_MAX_CODES_ON_PAGE && i < ((page - 1) * AC_MAX_CODES_ON_PAGE) + AC_MAX_CODES_ON_PAGE)
+        {
+            triggeredCount = AC_CODE_TRIGGERED_COUNT[i];
+
+            format(dialog_string, sizeof(dialog_string), "%s[%s] %s\t%s\t%d\n",
+                dialog_string,
+                AC_CODE[i],
+                AC_CODE_NAME[i],
+                AC_TRIGGER_TYPE_NAME[AC_CODE_TRIGGER_TYPE[i]],
+                triggeredCount);
+
+            pAntiCheatSettingsMenuListData[playerid][index++] = i;
+        }
+    }
+
+    if (next)
+        strcat(dialog_string, ""AC_DIALOG_NEXT_PAGE_TEXT"\n");
+
+    if (page > 1)
+        strcat(dialog_string, AC_DIALOG_PREVIOUS_PAGE_TEXT);
+
+    return ShowPlayerDialog(playerid, ANTICHEAT_SETTINGS, DIALOG_STYLE_TABLIST_HEADERS, "Anti-cheat settings", dialog_string, "Select", "Cancel");
+}
+
+//The function of showing the menu for editing the type of triggering of a certain code in anti-cheat
+stock ShowPlayer_AntiCheatEditCode(playerid, code)
+{
+    new
+        dialog_header[22 - 4 + AC_MAX_CODE_LENGTH + AC_MAX_CODE_NAME_LENGTH],
+        dialog_string[AC_MAX_TRIGGER_TYPE_NAME_LENGTH*AC_MAX_TRIGGER_TYPES];
+
+    format(dialog_header, sizeof(dialog_header), "Code: %s | Name: %s", AC_CODE[code], AC_CODE_NAME[code]); //Название
+
+    for(new i = 0; i < AC_MAX_TRIGGER_TYPES; i++)
+    {
+        strcat(dialog_string, AC_TRIGGER_TYPE_NAME[i]);
+
+        if (i + 1 != AC_MAX_TRIGGER_TYPES)
+            strcat(dialog_string, "\n");
+    }
+
+    return ShowPlayerDialog(playerid, ANTICHEAT_EDIT_CODE, DIALOG_STYLE_LIST, dialog_header, dialog_string, "Select", "Return");
+}
+
+CMD:anticheats(playerid, params[])
+{
+	if(PlayerInfo[playerid][pAdmin] < 7 && !IsPlayerAdmin(playerid))
+	{
+	    return SCM(playerid, COLOR_SYNTAX, "You are not authorized to use this command.");
+	}
+
+    pAntiCheatSettingsPage{playerid} = 1; // Set the variable that stores the page number the player is on to the value 1 (that is, now the player is on page 1)
+    return ShowPlayer_AntiCheatSettings(playerid); // Show the player the main anti-cheat settings dialog
+}
