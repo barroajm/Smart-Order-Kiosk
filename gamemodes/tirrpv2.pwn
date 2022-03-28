@@ -10,7 +10,6 @@
 
 OLD SCRIPTER: 									JECK
 OLD SERVERNAME                                  CITY OF MATIRIK
-
 */
 
 #include <a_samp>
