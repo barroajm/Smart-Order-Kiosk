@@ -166,6 +166,7 @@ Changed the animation of injured
 #define MAX_SPLIT_LENGTH            70
 // ---------------------------------------
 #define MAX_REPORTS         		50
+#define MAX_NEWBIES         		50
 #define MAX_HOUSES          		1500
 #define MAX_CCTVS 					100
 #define MAX_CCTVMENUS 				10  // This number should be MAX_CCTVS divided by 10
@@ -1709,6 +1710,15 @@ enum rEnum
 	rTime
 };
 
+enum nEnum
+{
+	nExists,
+	nNewbie,
+	nAnsweredBy,
+	nText[128],
+	nTime
+};
+
 enum eventEnum
 {
 	eReady,
@@ -2158,6 +2168,7 @@ new RobberyInfo[robberyEnum];
 new MarkedPositions[MAX_PLAYERS][3][mEnum];
 new PlayerInfo[MAX_PLAYERS+1][pEnum];
 new ReportInfo[MAX_REPORTS][rEnum];
+new NewbieInfo[MAX_NEWBIES][nEnum];
 new HouseInfo[MAX_HOUSES][hEnum];
 new GarageInfo[MAX_GARAGES][gEnum];
 new BusinessInfo[MAX_BUSINESSES][bEnum];
@@ -6849,6 +6860,97 @@ AddDMReportToQueue(playerid, text[])
 	}
 
 	return 0;
+}
+
+
+AddNewbieToQueue(playerid, text[])
+{
+    for(new i = 0; i < MAX_NEWBIES; i ++)
+	{
+	    if(!NewbieInfo[i][nExists])
+	    {
+	        strcpy(NewbieInfo[i][nText], text, 128);
+
+	        NewbieInfo[i][nExists] = 1;
+			NewbieInfo[i][nNewbie] = playerid;
+			NewbieInfo[i][nAnsweredBy] = INVALID_PLAYER_ID;
+			NewbieInfo[i][nTime] = 5;
+
+			SetTimerEx("NewbieTimer", 60 * 2000, false, "i", i);
+
+			foreach(new p : Player)
+			{
+	    		if(!PlayerInfo[p][pToggleNewbie])
+	    		{
+			        PlayerInfo[playerid][pLastReport] = gettime();
+			        SM(p, COLOR_YELLOW, "Question from %s (NID: %i): {FF76FB}%s", GetRPName(playerid), i, text);
+			        return 1;
+			    }
+			}
+		}
+	}
+	return 0;
+}
+
+SendNewbieAnswer(playerid, newbieid, text[])
+{
+	new string[128], qstring[128];
+	if((!isnull(PlayerInfo[playerid][pCustomTitle]) && strcmp(PlayerInfo[playerid][pCustomTitle], "None", true) != 0 && strcmp(PlayerInfo[playerid][pCustomTitle], "0", true) != 0) && strcmp(PlayerInfo[playerid][pCustomTitle], "NULL", true) != 0) {
+	    new color;
+		if(PlayerInfo[playerid][pCustomTColor] == -1 || PlayerInfo[playerid][pCustomTColor] == -256)
+		{
+	    	color = 0xC8C8C8FF;
+		}
+		else
+		{
+		    color = PlayerInfo[playerid][pCustomTColor];
+		}
+	    format(string, sizeof(string), "{%06x}%s{7DAEFF} %s", color >>> 8, PlayerInfo[playerid][pCustomTitle], GetRPName(playerid));
+
+    } 
+	else if(PlayerInfo[playerid][pAdmin] > 1)
+	{
+	    format(string, sizeof(string), ""SVRCLR"%s{7DAEFF} %s", GetColorARank(playerid), GetRPName(playerid));
+	} else if(PlayerInfo[playerid][pHelper] > 0) {
+	    format(string, sizeof(string), "{33CCFF}%s{7DAEFF} %s", GetHelperRank(playerid), GetRPName(playerid));
+    } else if(PlayerInfo[playerid][pFormerAdmin]) {
+	    format(string, sizeof(string), "Former Admin %s", GetRPName(playerid));
+	} else if(PlayerInfo[playerid][pVIPPackage] > 0) {
+		format(string, sizeof(string), "%s Donator %s", GetDonatorRank(PlayerInfo[playerid][pVIPPackage]), GetRPName(playerid));
+	} else if(PlayerInfo[playerid][pLevel] > 1) {
+	    format(string, sizeof(string), "Level %i Player %s", PlayerInfo[playerid][pLevel], GetRPName(playerid));
+	} else {
+	    format(string, sizeof(string), "Newbie %s", GetRPName(playerid));
+	}
+
+	format(qstring, sizeof(qstring), "%s: %s", GetRPName(NewbieInfo[newbieid][nNewbie]), NewbieInfo[newbieid][nText]);
+
+    foreach(new i : Player)
+	{
+	    if(!PlayerInfo[i][pToggleNewbie])
+	    {
+	        if(strlen(text) > MAX_SPLIT_LENGTH)
+	        {
+	        	SM(i, COLOR_NEWBIE, "[Question] %s", qstring);
+				SM(i, COLOR_NEWBIE, "[Answer] %s: %.*s...", string, MAX_SPLIT_LENGTH, text);
+				SM(i, COLOR_NEWBIE, "[Answer] %s: ...%s", string, text[MAX_SPLIT_LENGTH]);
+			}
+			else
+			{
+				SM(i, COLOR_NEWBIE, "[Question] %s", qstring);
+				SM(i, COLOR_NEWBIE, "[Answer] %s: %s", string, text);
+			}
+		}
+	}
+
+	NewbieInfo[newbieid][nExists] = 0;
+	NewbieInfo[newbieid][nNewbie] = INVALID_PLAYER_ID;
+	NewbieInfo[newbieid][nAnsweredBy] = INVALID_PLAYER_ID;
+
+	if(PlayerInfo[playerid][pAdmin] < 2 && PlayerInfo[playerid][pHelper] == 0)
+	{
+ 		PlayerInfo[playerid][pLastNewbie] = gettime();
+	}
 }
 
 AddBan(username[], ip[], from[], reason[], permanent = 0)
@@ -39718,13 +39820,12 @@ CMD:ooc(playerid, params[])
 	return 1;
 }
 
-CMD:newb(playerid, params[]) return callcmd::newbie(playerid, params);
 CMD:n(playerid, params[]) return callcmd::newbie(playerid, params);
 CMD:newbie(playerid, params[])
 {
 	if(isnull(params))
 	{
-	    return SCM(playerid, COLOR_SYNTAX, "Usage: /(n)ewbie [newbie chat]");
+	    return SCM(playerid, COLOR_SYNTAX, "Usage: /newbie [Question]");
 	}
 	if(!enabledNewbie && PlayerInfo[playerid][pAdmin] < 2)
 	{
@@ -39743,11 +39844,44 @@ CMD:newbie(playerid, params[])
 	    return SCM(playerid, COLOR_SYNTAX, "You can't speak in the newbie chat as you have it toggled.");
 	}
 
-	SendNewbieChatMessage(playerid, params);
+	SMA(COLOR_WHITE, "Type (/anewbie) to answer a Newbie Questions.");
+	SMA(COLOR_WHITE, "Type (/questions) to check if there is any Questions.");
+	AddNewbieToQueue(playerid, params);
+	return 1;
+}
 
+CMD:an(playerid, params[]) return callcmd::anewbie(playerid, params);
+CMD:anewbie(playerid, params[])
+{
+	new newbieid, chat[128];
+
+	if(sscanf(params, "iS[128]", newbieid, chat))
+	    return SCM(playerid, COLOR_SYNTAX, "Usage: /anewbie [QuestionID] [answer]");
+
+	if(!(0 <= newbieid < MAX_NEWBIES) || !NewbieInfo[newbieid][nExists])
+	    return SCM(playerid, COLOR_SYNTAX, "Invalid Newbie ID.");
+
+	NewbieInfo[newbieid][nAnsweredBy] = playerid;
 	PlayerInfo[playerid][pNewbies] ++;
 	mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "UPDATE users SET newbies = %i WHERE uid = %i", PlayerInfo[playerid][pNewbies], PlayerInfo[playerid][pID]);
 	mysql_tquery(connectionID, queryBuffer);
+
+	SendNewbieAnswer(playerid, newbieid, chat);
+	return 1;
+}
+
+CMD:questions(playerid, params[])
+{
+	SCM(playerid, COLOR_BLUE, "Pending Questions:");
+	for(new i = 0; i < MAX_NEWBIES; i ++)
+	{
+	    if(NewbieInfo[i][nExists])
+	    {
+	        SM(playerid, COLOR_GREY2, "(NID: %i) %s[%i] Questions: %s", i, GetRPName(NewbieInfo[i][nNewbie]), NewbieInfo[i][nNewbie], NewbieInfo[i][nText]);
+		}
+	}
+	SMA(COLOR_WHITE, "Type (/anewbie) to answer a Newbie Questions.");
+	SMA(COLOR_WHITE, "Type (/questions) to check if there is any Questions.");
 	return 1;
 }
 
@@ -42245,14 +42379,15 @@ CMD:sth(playerid, params[])
 	    return SCM(playerid, COLOR_SYNTAX, "The report specified is being handled by another admin.");
 	}
 
-    SAM(COLOR_LIGHTRED, "| TIR:ADMIN | %s has sent report %i to helpers.", GetRPName(playerid), reportid);
-	SM(ReportInfo[reportid][rReporter], COLOR_YELLOW, "%s has redirected your report to all helpers online.", GetRPName(playerid));
-
+    SendAdminMessage(COLOR_SYNTAX, "AdmCmd: %s has sent report %i to helpers.", GetRPName(playerid), reportid);
+    SM(ReportInfo[reportid][rReporter], COLOR_GREEN, "%s has redirected your report to all helpers online.", GetRPName(playerid));
+    
     strcpy(PlayerInfo[ReportInfo[reportid][rReporter]][pHelpRequest], ReportInfo[reportid][rText], 128);
-	SendHelperMessage(COLOR_AQUA, "** Help Request from %s[%i]: %s **", GetRPName(ReportInfo[reportid][rReporter]), ReportInfo[reportid][rReporter], ReportInfo[reportid][rText]);
+    //SendHelperMessage(COLOR_AQUA, "** Help Request from %s[%i]: %s **", GetRPName(ReportInfo[reportid][rReporter]), ReportInfo[reportid][rReporter], ReportInfo[reportid][rText]);
 
-	PlayerInfo[playerid][pLastRequest] = gettime();
-	ReportInfo[reportid][rExists] = 0;
+    SendNewbieChatMessage(ReportInfo[reportid][rReporter], ReportInfo[reportid][rText]);
+    PlayerInfo[playerid][pLastRequest] = gettime();
+    ReportInfo[reportid][rExists] = 0;
 	return 1;
 }
 
@@ -59912,7 +60047,7 @@ CMD:g(playerid, params[])
 			}
 			else
 			{
-			    SM(i, COLOR_GLOBAL, "(( %s {80d6ab}%s %s: %s ))", string, GetRPName(playerid), params);
+			    SM(i, COLOR_GLOBAL, "(( %s {80d6ab}%s: %s))", string, GetRPName(playerid), params);
 			}
 		}
 	}
