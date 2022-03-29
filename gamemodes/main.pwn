@@ -16,7 +16,7 @@ coordinates ng ibang Doors naayos kona , bukas ko ayusin ung sa bank rob at crea
 PD interiors Need bawasan ung mga Vehicle sa PD
 
 
-Added: Anti-Cheat, Purge System
+Added: Purge System
 Changed the animation of injured
 
 */
@@ -422,11 +422,6 @@ new
 */
 //sampvoice
 new SV_GSTREAM:gstream = SV_NULL; //Admin
-new SV_GSTREAM:emsstream = SV_NULL; //Ems
-new SV_GSTREAM:lspdstream = SV_NULL; //Lspd
-new SV_GSTREAM:mechstream = SV_NULL; //Mech
-new SV_GSTREAM:newsstream = SV_NULL; //News
-new SV_GSTREAM:govstream = SV_NULL; //Gov
 new SV_LSTREAM:lstream[MAX_PLAYERS] = { SV_NULL, ... }; //local
 
 //CameraInfo
@@ -1073,9 +1068,7 @@ enum
 	FACTION_GOVERNMENT,
 	FACTION_HITMAN,
 	FACTION_FEDERAL,
-	FACTION_MECHANIC,
-	FACTION_DOJ,
-	FACTION_ARMY
+	FACTION_MECHANIC
 };
 
 enum
@@ -3553,9 +3546,7 @@ new const factionTypes[][] =
 	{"Government"},
 	{"Hitman agency"},
 	{"Federal police"},
-	{"Mechanic"},
-	{"Department of Justice"},
-	{"Armed Forces"}
+	{"Mechanic"}
 };
 
 new const deployableItems[][] =
@@ -9547,7 +9538,7 @@ ShowTurfsOnMap(playerid, enable)
 			    }
 			    else
 			    {
-				    if(PlayerInfo[TurfInfo[i][tCapturer]][pGang] == -1 && (GetFactionType(TurfInfo[i][tCapturer]) == FACTION_POLICE && GetFactionType(TurfInfo[i][tCapturer]) == FACTION_ARMY && GetFactionType(TurfInfo[i][tCapturer]) == FACTION_FEDERAL))
+				    if(PlayerInfo[TurfInfo[i][tCapturer]][pGang] == -1 && (GetFactionType(TurfInfo[i][tCapturer]) == FACTION_POLICE && GetFactionType(TurfInfo[i][tCapturer]) == FACTION_FEDERAL))
 				        GangZoneFlashForPlayer(playerid, TurfInfo[i][tGangZone], 0x000000AA);
 					else if(PlayerInfo[TurfInfo[i][tCapturer]][pGang] >= 0)
 						GangZoneFlashForPlayer(playerid, TurfInfo[i][tGangZone], (GangInfo[PlayerInfo[TurfInfo[i][tCapturer]][pGang]][gColor] & ~0xff) + 0xAA);
@@ -10012,7 +10003,7 @@ IsABoat(vehicleid)
 
 IsLawEnforcement(playerid)
 {
-	return GetFactionType(playerid) == FACTION_POLICE || GetFactionType(playerid) == FACTION_FEDERAL || GetFactionType(playerid) == FACTION_ARMY || GetFactionType(playerid) == FACTION_DOJ;
+	return GetFactionType(playerid) == FACTION_POLICE || GetFactionType(playerid) == FACTION_FEDERAL;
 }
 
 IsPlayerBeingFound(playerid)
@@ -10083,7 +10074,6 @@ RemoveFaction(factionid)
 	        SM(i, COLOR_LIGHTRED, "The faction you were apart of has been deleted by an administrator.");
             SetPlayerSkin(i, 230);
 
-            Voice_FactionLeave(i,PlayerInfo[i][pFaction]); //BearDev
 	        PlayerInfo[i][pFaction] = -1;
 	        PlayerInfo[i][pFactionRank] = 0;
 	        PlayerInfo[i][pDivision] = -1;
@@ -16431,16 +16421,6 @@ public MinuteTimer()
 		                mysql_tquery(connectionID, queryBuffer);
 		            }
 		        }
-				for(new i = 0; i < MAX_FACTIONS; i ++)
-		        {
-		            if(FactionInfo[i][fType] == FACTION_ARMY && FactionInfo[i][fTurfTokens] < 3)
-		            {
-		                FactionInfo[i][fTurfTokens]++;
-
-		                mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "UPDATE factions SET turftokens = turftokens + 1 WHERE id = %i", i);
-		                mysql_tquery(connectionID, queryBuffer);
-		            }
-		        }
 		    }
 		}
 
@@ -17974,8 +17954,6 @@ public OnAdminOfflineCheck(playerid, username[])
 
 		strcpy(PlayerInfo[MAX_PLAYERS][pUsername], username, MAX_PLAYER_NAME);
 		DisplayStats(MAX_PLAYERS, playerid);
-
-		Voice_FactionJoin(playerid,PlayerInfo[playerid][pFaction]); //BearDev
 	}
 }
 
@@ -20469,11 +20447,6 @@ public OnGameModeInit()
 
     //sampvoice
     gstream = SvCreateGStream(0xFFFF00FF, "ADMIN");
-   	lspdstream = SvCreateGStream(0xffff0000, "LSPD-Radio");
-   	emsstream = SvCreateGStream(0xF5DEB3FF, "EMS-Radio");
-   	newsstream = SvCreateGStream(0xFFA500AA, "NEWS-Radio");
-   	mechstream = SvCreateGStream(0x74AF7AFF, "MECH-Radio");
-	govstream = SvCreateGStream(0xFFFFFFFF, "GOV-Radio");
 
 	new string[128];
 	connectionID = mysql_connect(MYSQL_HOSTNAME, MYSQL_USERNAME, MYSQL_DATABASE, MYSQL_PASSWORD);
@@ -22170,11 +22143,6 @@ public OnGameModeExit()
 {
     //sampvoice
     if (gstream) SvDeleteStream(gstream);
-    if (lspdstream) SvDeleteStream(lspdstream);
-    if (emsstream) SvDeleteStream(emsstream);
-    if (mechstream) SvDeleteStream(mechstream);
-    if (newsstream) SvDeleteStream(newsstream);
-    if (govstream) SvDeleteStream(govstream);
 
 	for(new i = 0; i < MAX_OBJECTS; i ++)
 	{
@@ -22253,19 +22221,12 @@ public OnPlayerConnect(playerid)
 
         // Attach the player to the global stream as a listener
         if (gstream) SvAttachListenerToStream(gstream, playerid);
-        /*if (lspdstream) SvAttachListenerToStream(lspdstream, playerid);
-        if (emsstream) SvAttachListenerToStream(emsstream, playerid);
-        if (mechstream) SvAttachListenerToStream(mechstream, playerid);
-        if (newsstream) SvAttachListenerToStream(newsstream, playerid);
-        if (govstream) SvAttachListenerToStream(govstream, playerid);*/
 
         // Assign microphone activation keys to the player
         SvAddKey(playerid, 0x5A); //[Local]Z
         SvAddKey(playerid, 0x72); //[Global]F3
-        SvAddKey(playerid, 0x58); //Factions Key
         
     }
-
 
 	if(gDisabledVPN)
 	{
@@ -23277,7 +23238,6 @@ public OnPlayerDisconnect(playerid, reason)
         SvDeleteStream(lstream[playerid]);
         lstream[playerid] = SV_NULL;
     }
-	Voice_FactionLeave(playerid,PlayerInfo[playerid][pFaction]); //BearDev
 
 	TerminateInfo(playerid, reason);
 	TextDrawDestroy( L_player_draw[playerid] );
@@ -25399,7 +25359,6 @@ public OnPlayerText(playerid, text[])
                             PlayerInfo[playerid][pEmergencyCall] = 120;
                             PlayerInfo[playerid][pEmergencyType] = FACTION_POLICE;
                             PlayerInfo[playerid][pEmergencyType] = FACTION_FEDERAL;
-                            PlayerInfo[playerid][pEmergencyType] = FACTION_ARMY;
 
 						    SCM(playerid, COLOR_DISPATCH, "All units in the area have been notified. Thank you for your time.");
 						    HangupCall(playerid, HANGUP_USER);
@@ -33458,7 +33417,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 		    {
 				switch(FactionInfo[PlayerInfo[playerid][pFaction]][fType])
 				{
-					case FACTION_POLICE, FACTION_MEDIC, FACTION_FEDERAL, FACTION_MECHANIC, FACTION_ARMY:
+					case FACTION_POLICE, FACTION_MEDIC, FACTION_FEDERAL, FACTION_MECHANIC:
 					{
 					    if(listitem == 0) // Toggle duty
 					    {
@@ -33522,7 +33481,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 							}
 						}
 					}
-					case FACTION_GOVERNMENT, FACTION_NEWS, FACTION_DOJ:
+					case FACTION_GOVERNMENT, FACTION_NEWS:
 					{
 						if(listitem == 0) // Toggle duty
 					    {
@@ -33602,7 +33561,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 		    {
 				switch(FactionInfo[PlayerInfo[playerid][pFaction]][fType])
 				{
-					case FACTION_POLICE, FACTION_FEDERAL, FACTION_ARMY:
+					case FACTION_POLICE, FACTION_FEDERAL:
 					{
 					    switch(listitem)
 					    {
@@ -33718,7 +33677,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 					        }
 					    }
 					}
-					case FACTION_NEWS, FACTION_DOJ:
+					case FACTION_NEWS:
 					{
 					    switch(listitem)
 					    {
@@ -39785,7 +39744,7 @@ CMD:factionhelp(playerid, params[])
 
 	switch(FactionInfo[PlayerInfo[playerid][pFaction]][fType])
 	{
-	    case FACTION_POLICE, FACTION_FEDERAL, FACTION_ARMY:
+	    case FACTION_POLICE, FACTION_FEDERAL:
 	    {
 	        SCM(playerid, COLOR_WHITE, "** Police: /open, /cell, /cells, /tazer, /cuff, /uncuff, /drag, /detain, /charge, /arrest.");
 	        SCM(playerid, COLOR_WHITE, "** Police: /wanted, /frisk, /take, /ticket, /gov, /ram, /deploy, /undeploy, /undeployall, /backup.");
@@ -41542,9 +41501,7 @@ CMD:accept(playerid, params[])
 	    {
 	        return SCM(playerid, COLOR_SYNTAX, "That player is no longer allowed to invite you.");
 	    }
-        Voice_FactionLeave(playerid,PlayerInfo[playerid][pFaction]); //BearDev
 	    PlayerInfo[playerid][pFaction] = factionid;
-	    Voice_FactionJoin(playerid,PlayerInfo[playerid][pFaction]); //BearDev
 	    PlayerInfo[playerid][pFactionRank] = 0;
 	    PlayerInfo[playerid][pDivision] = -1;
 
@@ -46152,7 +46109,7 @@ CMD:editvehicle(playerid, params[])
 	    if(sscanf(param, "i", type))
 	    {
 	        SCM(playerid, COLOR_SYNTAX, "Usage: /editvehicle [vehicleid] [faction] [type]");
-	        SCM(playerid, COLOR_GREY2, "List of types: (0) None (1) Police (2) Medic (3) News (4) Government (5) Hitman (6) Federal (7) Mechanic (8) DOJ (9) Army");
+	        SCM(playerid, COLOR_GREY2, "List of types: (0) None (1) Police (2) Medic (3) News (4) Government (5) Hitman (6) Federal (7) Mechanic");
 	        return 1;
 		}
 		if(!(0 <= type <= sizeof(factionTypes)))
@@ -46456,7 +46413,7 @@ CMD:respawncars(playerid, params[])
 	    if(sscanf(param, "i", type))
 	    {
 	        SCM(playerid, COLOR_SYNTAX, "Usage: /respawncars [faction] [type]");
-	        SCM(playerid, COLOR_GREY2, "List of types: (0) None (1) Police (2) Medic (3) News (4) Government (5) Hitman (6) Federal (7) Mechanic (8) DOJ (9) Army");
+	        SCM(playerid, COLOR_GREY2, "List of types: (0) None (1) Police (2) Medic (3) News (4) Government (5) Hitman (6) Federal (7) Mechanic");
 	        return 1;
 		}
 		if(!(1 <= type <= sizeof(factionTypes)))
@@ -53731,7 +53688,7 @@ CMD:editentrance(playerid, params[])
 	    if(sscanf(param, "i", type))
 	    {
 	        SCM(playerid, COLOR_SYNTAX, "Usage: /editentrance [entranceid] [faction] [type]");
-	        SCM(playerid, COLOR_GREY2, "List of types: (0) None (1) Police (2) Medic (3) News (4) Government (5) Hitman (6) Federal (7) Mechanic (8) DOJ (9) Army");
+	        SCM(playerid, COLOR_GREY2, "List of types: (0) None (1) Police (2) Medic (3) News (4) Government (5) Hitman (6) Federal (7) Mechanic");
 	        return 1;
 		}
 		if(!(0 <= type <= sizeof(factionTypes)))
@@ -59495,21 +59452,34 @@ CMD:farm(playerid, params[])
 
 CMD:createfaction(playerid, params[])
 {
-	new name[48], type_id = -1;
+	new type[12], name[48], type_id = -1;
 
     if(!PlayerInfo[playerid][pFactionMod])
 	{
 	    return SCM(playerid, COLOR_SYNTAX, "You are not authorized to use this command.");
 	}
-	if(sscanf(params, "s[12]s[48]", type_id, name))
+	if(sscanf(params, "s[12]s[48]", type, name))
 	{
 	    SCM(playerid, COLOR_SYNTAX, "Usage: /createfaction [type] [name]");
-		SCM(playerid, COLOR_GREY2, "List of types: (0) None (1) Police (2) Medic (3) News (4) Government (5) Hitman (6) Federal (7) Mechanic (8) DOJ (9) Army");
+		SCM(playerid, COLOR_GREY2, "List of types: police, medic, news, government, hitman, federal, mechanic");
 		return 1;
 	}
-	if(!(0 <= type_id <= sizeof(factionTypes)))
-	{
-		return SCM(playerid, COLOR_SYNTAX, "Invalid type.");
+	if(!strcmp(type, "police", true)) {
+	    type_id = FACTION_POLICE;
+	} else if(!strcmp(type, "medic", true)) {
+	    type_id = FACTION_MEDIC;
+	} else if(!strcmp(type, "news", true)) {
+	    type_id = FACTION_NEWS;
+	} else if(!strcmp(type, "government", true)) {
+	    type_id = FACTION_GOVERNMENT;
+	} else if(!strcmp(type, "hitman", true)) {
+	    type_id = FACTION_HITMAN;
+	} else if(!strcmp(type, "federal", true)) {
+	    type_id = FACTION_FEDERAL;
+	} else if(!strcmp(type, "mechanic", true)) {
+	    type_id = FACTION_MECHANIC;
+	} else {
+		return SM(playerid, COLOR_SYNTAX, "Invalid Faction Type.");
 	}
 
 	for(new i = 1; i < MAX_FACTIONS; i ++)
@@ -59582,7 +59552,7 @@ CMD:editfaction(playerid, params[])
 	    if(sscanf(param, "i", type))
 	    {
 	        SCM(playerid, COLOR_SYNTAX, "Usage: /editfaction [factionid] [type] [option]");
-	        SCM(playerid, COLOR_GREY2, "List of types: (0) None (1) Police (2) Medic (3) News (4) Government (5) Hitman (6) Federal (7) Mechanic (8) DOJ (9) Army");
+	        SCM(playerid, COLOR_GREY2, "List of types: (0) None (1) Police (2) Medic (3) News (4) Government (5) Hitman (6) Federal (7) Mechanic");
 	        return 1;
 		}
 		if(!(0 <= type <= sizeof(factionTypes)))
@@ -59816,7 +59786,6 @@ CMD:purgefaction(playerid, params[])
 	        SM(i, COLOR_LIGHTRED, "The faction you were apart of has been purged by an administrator.");
             SetPlayerSkin(i, 230);
 
-            Voice_FactionLeave(i,PlayerInfo[i][pFaction]); //BearDev
 	        PlayerInfo[i][pFaction] = -1;
 	        PlayerInfo[i][pFactionRank] = 0;
 	        PlayerInfo[i][pDivision] = -1;
@@ -59889,7 +59858,6 @@ CMD:setfaction(playerid, params[])
 
 	if(factionid == -1)
 	{
-     	Voice_FactionLeave(targetid,PlayerInfo[targetid][pFaction]); //BearDev
 		PlayerInfo[targetid][pFaction] = -1;
 		PlayerInfo[targetid][pFactionRank] = 0;
 		PlayerInfo[targetid][pDivision] = -1;
@@ -59913,9 +59881,7 @@ CMD:setfaction(playerid, params[])
 			mysql_tquery(connectionID, queryBuffer);
 		}*/
 
-		Voice_FactionLeave(targetid,PlayerInfo[targetid][pFaction]); //BearDev
 		PlayerInfo[targetid][pFaction] = factionid;
-		Voice_FactionJoin(targetid,PlayerInfo[targetid][pFaction]); //BearDev
 		PlayerInfo[targetid][pFactionRank] = rankid;
 		PlayerInfo[targetid][pDivision] = -1;
 
@@ -60348,11 +60314,11 @@ CMD:d(playerid, params[])
 
 	switch(FactionInfo[PlayerInfo[playerid][pFaction]][fType])
 	{
-	    case FACTION_POLICE, FACTION_MEDIC, FACTION_GOVERNMENT, FACTION_FEDERAL, FACTION_ARMY, FACTION_DOJ:
+	    case FACTION_POLICE, FACTION_MEDIC, FACTION_GOVERNMENT, FACTION_FEDERAL:
 	    {
 			foreach(new i : Player)
 			{
-			    if((!PlayerInfo[i][pToggleRadio]) && (GetFactionType(i) == FACTION_POLICE || GetFactionType(i) == FACTION_MEDIC || GetFactionType(i) == FACTION_GOVERNMENT || GetFactionType(i) == FACTION_FEDERAL, GetFactionType(i) == FACTION_ARMY))
+			    if((!PlayerInfo[i][pToggleRadio]) && (GetFactionType(i) == FACTION_POLICE || GetFactionType(i) == FACTION_MEDIC || GetFactionType(i) == FACTION_GOVERNMENT || GetFactionType(i) == FACTION_FEDERAL))
 			    {
 			        if(strlen(params) > MAX_SPLIT_LENGTH)
 			        {
@@ -60447,7 +60413,6 @@ CMD:faction(playerid, params[])
 		ResetPlayerWeaponsEx(targetid);
         SetPlayerSkin(targetid, 230);
 
-		Voice_FactionLeave(targetid,PlayerInfo[targetid][pFaction]); //BearDev
         PlayerInfo[targetid][pFaction] = -1;
         PlayerInfo[targetid][pFactionRank] = 0;
         PlayerInfo[targetid][pDivision] = -1;
@@ -60520,7 +60485,6 @@ CMD:faction(playerid, params[])
         SetPlayerSkin(playerid, 230);
 
 
-        Voice_FactionLeave(playerid,PlayerInfo[playerid][pFaction]); //BearDev
         PlayerInfo[playerid][pFaction] = -1;
         PlayerInfo[playerid][pFactionRank] = 0;
         PlayerInfo[playerid][pDivision] = -1;
@@ -60910,11 +60874,11 @@ CMD:locker(playerid, params[])
 
 	switch(FactionInfo[PlayerInfo[playerid][pFaction]][fType])
 	{
-	    case FACTION_POLICE, FACTION_MEDIC, FACTION_FEDERAL, FACTION_ARMY:
+	    case FACTION_POLICE, FACTION_MEDIC, FACTION_FEDERAL:
 	    {
 	        ShowPlayerDialog(playerid, DIALOG_FACTIONLOCKER, DIALOG_STYLE_LIST, "Locker", "Toggle duty\nEquipment\nUniforms", "Select", "Cancel");
 		}
-		case FACTION_GOVERNMENT, FACTION_NEWS, FACTION_MECHANIC, FACTION_DOJ:
+		case FACTION_GOVERNMENT, FACTION_NEWS, FACTION_MECHANIC:
 		{
 		    ShowPlayerDialog(playerid, DIALOG_FACTIONLOCKER, DIALOG_STYLE_LIST, "Locker", "Toggle duty\nEquipment\nUniforms", "Select", "Cancel");
 		}
@@ -61008,7 +60972,7 @@ CMD:sto(playerid, params[])
 
 	switch(FactionInfo[PlayerInfo[playerid][pFaction]][fType])
 	{
-	    case FACTION_POLICE, FACTION_FEDERAL, FACTION_ARMY:
+	    case FACTION_POLICE, FACTION_FEDERAL:
 	    {
 	        SendProximityMessage(playerid, 50.0, COLOR_YELLOW, "[>] %s: Driver! Step out of the vehicle with your hands above your head!", GetRPName(playerid));
 			SetPlayerBubbleText(playerid, 50.0, COLOR_YELLOW, "(Megaphone) %s",params);
@@ -61026,7 +60990,7 @@ CMD:po(playerid, params[])
 
 	switch(FactionInfo[PlayerInfo[playerid][pFaction]][fType])
 	{
-	    case FACTION_POLICE, FACTION_FEDERAL, FACTION_ARMY:
+	    case FACTION_POLICE, FACTION_FEDERAL:
 	    {
 	        SendProximityMessage(playerid, 50.0, COLOR_YELLOW, "[>] %s: Pull your vehicle over to the side of the road and turn off the ignition!", GetRPName(playerid));
 			SetPlayerBubbleText(playerid, 50.0, COLOR_YELLOW, "(Megaphone) %s",params);
@@ -61865,16 +61829,6 @@ CMD:gov(playerid, params[])
 	        SMA(COLOR_ROYALBLUE, "** %s %s: %s", FactionRanks[PlayerInfo[playerid][pFaction]][PlayerInfo[playerid][pFactionRank]], GetRPName(playerid), params);
 		}
 		case FACTION_MECHANIC:
-		{
-	        SCMA(COLOR_WHITE, "---------- * Mechanic Service Announcement * ----------");
-	        SMA(COLOR_GENERAL3, "** %s %s: %s", FactionRanks[PlayerInfo[playerid][pFaction]][PlayerInfo[playerid][pFactionRank]], GetRPName(playerid), params);
-		}
-		case FACTION_ARMY:
-		{
-	        SCMA(COLOR_WHITE, "---------- * Mechanic Service Announcement * ----------");
-	        SMA(COLOR_GREEN, "** %s %s: %s", FactionRanks[PlayerInfo[playerid][pFaction]][PlayerInfo[playerid][pFactionRank]], GetRPName(playerid), params);
-		}
-		case FACTION_DOJ:
 		{
 	        SCMA(COLOR_WHITE, "---------- * Mechanic Service Announcement * ----------");
 	        SMA(COLOR_GENERAL3, "** %s %s: %s", FactionRanks[PlayerInfo[playerid][pFaction]][PlayerInfo[playerid][pFactionRank]], GetRPName(playerid), params);
@@ -69731,46 +69685,6 @@ stock ReturnLyrics(lyricid)
 		return 1;
 	}
 #endif
-//BearDev
-Voice_FactionLeave(playerid,FactionID) {
-		if(FactionID == FACTION_MEDIC) {
-		if(emsstream) SvDetachListenerFromStream(emsstream, playerid);
-	}
-		if(FactionID == FACTION_POLICE) {
-		if(lspdstream) SvDetachListenerFromStream(lspdstream, playerid);
-	}
-		if(FactionID == FACTION_NEWS) {
-		if(newsstream) SvDetachListenerFromStream(newsstream, playerid);
-	}
-		if(FactionID == FACTION_MECHANIC) {
-		if(mechstream) SvDetachListenerFromStream(mechstream, playerid);
-	}
-		if(FactionID == FACTION_GOVERNMENT) {
-		if(govstream) SvDetachListenerFromStream(govstream, playerid);
-	}
-		//Another Faction you need to create one by one global stream variable
-		return 1;
-}
-//BearDev
-Voice_FactionJoin(playerid,FactionID) {
-		if(FactionID == FACTION_MEDIC) {
-		if(emsstream) SvAttachListenerToStream(emsstream, playerid);
-	}
-		if(FactionID == FACTION_POLICE) {
-		if(lspdstream) SvAttachListenerToStream(lspdstream, playerid);
-	}
-		if(FactionID == FACTION_NEWS) {
-		if(newsstream) SvAttachListenerToStream(newsstream, playerid);
-	}
-		if(FactionID == FACTION_MECHANIC) {
-		if(mechstream) SvAttachListenerToStream(mechstream, playerid);
-	}
-		if(FactionID == FACTION_GOVERNMENT) {
-		if(govstream) SvAttachListenerToStream(govstream, playerid);
-	}
-		//Another Faction you need to create one by one global stream variable
-		return 1;
-}
 
 CMD:VoiceOn(playerid,params[]) {
     SvAttachSpeakerToStream(lstream[playerid], playerid);
@@ -69785,25 +69699,6 @@ public SV_VOID:OnPlayerActivationKeyPress(SV_UINT:playerid, SV_UINT:keyid)
     // Attach the player to the global stream as a speaker if the 'F3' key is pressed
     if (keyid == 0x72 && gstream) SvAttachSpeakerToStream(gstream, playerid);
     // Attach  player to faction LSPD , Press 'x' key is pressed
-	if (keyid == 0x58) {
-		switch(PlayerInfo[playerid][pFaction]) {
-			case FACTION_POLICE: {
-				if(lspdstream) SvAttachSpeakerToStream(lspdstream, playerid);
-			}
-			case FACTION_MEDIC: {
-				if(emsstream) SvAttachSpeakerToStream(emsstream, playerid);
-			}
-			case FACTION_NEWS: {
-				if(newsstream) SvAttachSpeakerToStream(newsstream, playerid);
-			}
-			case FACTION_MECHANIC: {
-				if(mechstream) SvAttachSpeakerToStream(mechstream, playerid);
-			}
-			case FACTION_GOVERNMENT: {
-				if(govstream) SvAttachSpeakerToStream(govstream, playerid);
-			}
-		}
-	}
 }
 
 public SV_VOID:OnPlayerActivationKeyRelease(SV_UINT:playerid, SV_UINT:keyid)
@@ -69811,26 +69706,7 @@ public SV_VOID:OnPlayerActivationKeyRelease(SV_UINT:playerid, SV_UINT:keyid)
     // Detach the player from the local stream if the 'B' key is released
     if (keyid == 0x5A && lstream[playerid]) SvDetachSpeakerFromStream(lstream[playerid], playerid);
     // Detach the player from the global stream if the 'F3' key is released
-    if (keyid == 0x72 && gstream) SvDetachSpeakerFromStream(gstream, playerid);
-	if (keyid == 0x58) {
-		switch(PlayerInfo[playerid][pFaction]) {
-			case FACTION_POLICE: {
-				if(lspdstream) SvDetachSpeakerFromStream(lspdstream, playerid);
-			}
-			case FACTION_MEDIC: {
-				if(emsstream) SvDetachSpeakerFromStream(emsstream, playerid);
-			}
-			case FACTION_NEWS: {
-				if(newsstream) SvDetachSpeakerFromStream(newsstream, playerid);
-			}
-			case FACTION_MECHANIC: {
-				if(mechstream) SvDetachSpeakerFromStream(mechstream, playerid);
-			}
-			case FACTION_GOVERNMENT: {
-				if(govstream) SvDetachSpeakerFromStream(govstream, playerid);
-			}
-		}
-	}	
+    if (keyid == 0x72 && gstream) SvDetachSpeakerFromStream(gstream, playerid);	
 }
 
 /*
