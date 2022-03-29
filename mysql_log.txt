@@ -1,0 +1,1841 @@
+[08:27:08] [ERROR] cache_get_field_content_int - invalid datatype
+[08:27:08] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('11')
+[08:27:08] [ERROR] cache_get_field_content_int - invalid datatype
+[08:29:19] [ERROR] cache_get_field_content_int - invalid datatype
+[08:29:19] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('2')
+[08:29:19] [ERROR] cache_get_field_content_int - invalid datatype
+[08:29:56] [ERROR] cache_get_field_content_int - invalid datatype
+[08:30:46] [ERROR] cache_get_field_content_int - invalid datatype
+[08:30:48] [ERROR] cache_get_field_content_int - invalid datatype
+[08:31:43] [ERROR] cache_get_field_content_int - invalid datatype
+[08:32:57] [ERROR] cache_get_field_content_int - invalid datatype
+[08:32:57] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('2')
+[08:32:57] [ERROR] cache_get_field_content_int - invalid datatype
+[08:34:15] [ERROR] cache_get_field_content_int - invalid datatype
+[08:34:15] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('8')
+[08:34:15] [ERROR] cache_get_field_content_int - invalid datatype
+[08:37:33] [ERROR] cache_get_field_content_int - invalid datatype
+[08:37:33] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('6')
+[08:37:33] [ERROR] cache_get_field_content_int - invalid datatype
+[08:38:40] [ERROR] cache_get_field_content_int - invalid datatype
+[08:38:40] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('9')
+[08:38:40] [ERROR] cache_get_field_content_int - invalid datatype
+[08:42:39] [ERROR] cache_get_field_content_int - invalid datatype
+[08:42:39] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('11')
+[08:42:39] [ERROR] cache_get_field_content_int - invalid datatype
+[08:43:03] [ERROR] cache_get_field_content_int - invalid datatype
+[08:43:22] [ERROR] cache_get_field_content_int - invalid datatype
+[08:44:20] [ERROR] cache_get_field_content_int - invalid datatype
+[08:44:40] [ERROR] cache_get_field_content_int - invalid datatype
+[08:44:40] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('2')
+[08:44:40] [ERROR] cache_get_field_content_int - invalid datatype
+[08:44:50] [ERROR] cache_get_field_content_int - invalid datatype
+[08:44:50] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('3')
+[08:44:50] [ERROR] cache_get_field_content_int - invalid datatype
+[08:45:08] [ERROR] cache_get_field_content_int - invalid datatype
+[08:45:35] [ERROR] cache_get_field_content_int - invalid datatype
+[08:45:35] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('1')
+[08:45:35] [ERROR] cache_get_field_content_int - invalid datatype
+[08:50:50] [ERROR] CMySQLQuery::Execute[] - (error #1136) Column count doesn't match value count at row 1
+[08:51:24] [ERROR] cache_get_field_content_int - invalid datatype
+[08:52:10] [ERROR] cache_get_field_content_int - invalid datatype
+[08:52:10] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('2')
+[08:52:10] [ERROR] cache_get_field_content_int - invalid datatype
+[08:53:31] [ERROR] cache_get_field_content_int - invalid datatype
+[08:53:31] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('8')
+[08:53:31] [ERROR] cache_get_field_content_int - invalid datatype
+[08:54:02] [ERROR] cache_get_field_content_int - invalid datatype
+[08:54:02] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('3')
+[08:54:02] [ERROR] cache_get_field_content_int - invalid datatype
+[08:54:47] [ERROR] cache_get_field_content_int - invalid datatype
+[08:54:47] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('11')
+[08:54:47] [ERROR] cache_get_field_content_int - invalid datatype
+[08:56:01] [ERROR] cache_get_field_content_int - invalid datatype
+[08:56:01] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('10')
+[08:56:01] [ERROR] cache_get_field_content_int - invalid datatype
+[08:57:09] [ERROR] cache_get_field_content_int - invalid datatype
+[08:57:09] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('12')
+[08:57:09] [ERROR] cache_get_field_content_int - invalid datatype
+[08:58:05] [ERROR] cache_get_field_content_int - invalid datatype
+[08:58:10] [ERROR] cache_get_field_content_int - invalid datatype
+[08:58:10] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('13')
+[08:58:10] [ERROR] cache_get_field_content_int - invalid datatype
+[08:58:14] [ERROR] cache_get_field_content_int - invalid datatype
+[08:58:32] [ERROR] cache_get_field_content_int - invalid datatype
+[08:58:32] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('14')
+[08:58:32] [ERROR] cache_get_field_content_int - invalid datatype
+[08:58:49] [ERROR] cache_get_field_content_int - invalid datatype
+[08:58:49] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('7')
+[08:58:49] [ERROR] cache_get_field_content_int - invalid datatype
+[08:58:57] [ERROR] cache_get_field_content_int - invalid datatype
+[09:00:38] [ERROR] cache_get_field_content_int - invalid datatype
+[09:02:12] [ERROR] cache_get_field_content_int - invalid datatype
+[09:05:00] [ERROR] cache_get_field_content_int - invalid datatype
+[09:05:00] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('6')
+[09:05:00] [ERROR] cache_get_field_content_int - invalid datatype
+[09:05:38] [ERROR] cache_get_field_content_int - invalid datatype
+[09:05:38] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('3')
+[09:05:38] [ERROR] cache_get_field_content_int - invalid datatype
+[09:05:41] [ERROR] cache_get_field_content_int - invalid datatype
+[09:06:02] [ERROR] cache_get_field_content_int - invalid datatype
+[09:06:02] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('4')
+[09:06:02] [ERROR] cache_get_field_content_int - invalid datatype
+[09:07:17] [ERROR] cache_get_field_content_int - invalid datatype
+[09:07:17] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('7')
+[09:07:17] [ERROR] cache_get_field_content_int - invalid datatype
+[09:07:37] [ERROR] cache_get_field_content_int - invalid datatype
+[09:07:37] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('3')
+[09:07:37] [ERROR] cache_get_field_content_int - invalid datatype
+[09:08:07] [ERROR] cache_get_field_content_int - invalid datatype
+[09:08:24] [ERROR] cache_get_field_content_int - invalid datatype
+[09:08:24] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('11')
+[09:08:24] [ERROR] cache_get_field_content_int - invalid datatype
+[09:10:05] [ERROR] cache_get_field_content_int - invalid datatype
+[09:10:05] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('1')
+[09:10:05] [ERROR] cache_get_field_content_int - invalid datatype
+[09:20:50] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[09:20:50] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[09:20:50] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[09:20:50] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[09:20:50] [ERROR] cache_get_field_content_int - invalid datatype
+[09:20:50] [ERROR] cache_get_field_content_int - invalid datatype
+[09:20:50] [ERROR] cache_get_field_content_int - invalid datatype
+[09:20:50] [ERROR] cache_get_field_content_int - invalid datatype
+[09:20:50] [ERROR] cache_get_field_content_int - invalid datatype
+[09:20:50] [ERROR] cache_get_field_content_int - invalid datatype
+[09:20:50] [ERROR] cache_get_field_content_int - invalid datatype
+[09:20:50] [ERROR] cache_get_field_content_int - invalid datatype
+[09:20:50] [ERROR] cache_get_field_content_int - invalid datatype
+[09:20:50] [ERROR] cache_get_field_content_int - invalid datatype
+[09:20:50] [ERROR] cache_get_field_content_int - invalid datatype
+[09:20:50] [ERROR] cache_get_field_content_int - invalid datatype
+[09:20:50] [ERROR] cache_get_field_content_int - invalid datatype
+[09:20:50] [ERROR] cache_get_field_content_int - invalid datatype
+[09:20:50] [ERROR] cache_get_field_content_int - invalid datatype
+[09:20:50] [ERROR] cache_get_field_content_int - invalid datatype
+[09:20:50] [ERROR] cache_get_field_content_int - invalid datatype
+[09:20:50] [ERROR] cache_get_field_content_int - invalid datatype
+[09:21:24] [ERROR] cache_get_field_content_int - invalid datatype
+[09:21:44] [ERROR] cache_get_field_content_int - invalid datatype
+[09:21:44] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('3')
+[09:21:44] [ERROR] cache_get_field_content_int - invalid datatype
+[09:21:55] [ERROR] cache_get_field_content_int - invalid datatype
+[09:21:55] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('4')
+[09:21:55] [ERROR] cache_get_field_content_int - invalid datatype
+[09:23:00] [ERROR] cache_get_field_content_int - invalid datatype
+[09:23:07] [ERROR] cache_get_field_content_int - invalid datatype
+[09:23:07] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('1')
+[09:23:07] [ERROR] cache_get_field_content_int - invalid datatype
+[09:24:11] [ERROR] cache_get_field_content_int - invalid datatype
+[09:24:11] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('2')
+[09:24:11] [ERROR] cache_get_field_content_int - invalid datatype
+[09:24:37] [ERROR] cache_get_field_content_int - invalid datatype
+[09:24:39] [ERROR] cache_get_field_content_int - invalid datatype
+[09:25:01] [ERROR] cache_get_field_content_int - invalid datatype
+[09:25:14] [ERROR] cache_get_field_content_int - invalid datatype
+[09:25:14] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('4')
+[09:25:14] [ERROR] cache_get_field_content_int - invalid datatype
+[09:26:25] [ERROR] cache_get_field_content_int - invalid datatype
+[09:26:25] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('1')
+[09:26:25] [ERROR] cache_get_field_content_int - invalid datatype
+[09:35:03] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[09:35:03] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[09:35:03] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[09:35:03] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[09:35:03] [ERROR] cache_get_field_content_int - invalid datatype
+[09:35:03] [ERROR] cache_get_field_content_int - invalid datatype
+[09:35:03] [ERROR] cache_get_field_content_int - invalid datatype
+[09:35:03] [ERROR] cache_get_field_content_int - invalid datatype
+[09:35:03] [ERROR] cache_get_field_content_int - invalid datatype
+[09:35:03] [ERROR] cache_get_field_content_int - invalid datatype
+[09:35:03] [ERROR] cache_get_field_content_int - invalid datatype
+[09:35:03] [ERROR] cache_get_field_content_int - invalid datatype
+[09:35:03] [ERROR] cache_get_field_content_int - invalid datatype
+[09:35:03] [ERROR] cache_get_field_content_int - invalid datatype
+[09:35:03] [ERROR] cache_get_field_content_int - invalid datatype
+[09:35:03] [ERROR] cache_get_field_content_int - invalid datatype
+[09:35:03] [ERROR] cache_get_field_content_int - invalid datatype
+[09:35:03] [ERROR] cache_get_field_content_int - invalid datatype
+[09:35:03] [ERROR] cache_get_field_content_int - invalid datatype
+[09:35:03] [ERROR] cache_get_field_content_int - invalid datatype
+[09:35:03] [ERROR] cache_get_field_content_int - invalid datatype
+[09:35:03] [ERROR] cache_get_field_content_int - invalid datatype
+[09:35:05] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[09:35:05] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[09:35:05] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[09:35:05] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[09:35:05] [ERROR] cache_get_field_content_int - invalid datatype
+[09:35:05] [ERROR] cache_get_field_content_int - invalid datatype
+[09:35:05] [ERROR] cache_get_field_content_int - invalid datatype
+[09:35:05] [ERROR] cache_get_field_content_int - invalid datatype
+[09:35:05] [ERROR] cache_get_field_content_int - invalid datatype
+[09:35:05] [ERROR] cache_get_field_content_int - invalid datatype
+[09:35:05] [ERROR] cache_get_field_content_int - invalid datatype
+[09:35:05] [ERROR] cache_get_field_content_int - invalid datatype
+[09:35:05] [ERROR] cache_get_field_content_int - invalid datatype
+[09:35:05] [ERROR] cache_get_field_content_int - invalid datatype
+[09:35:05] [ERROR] cache_get_field_content_int - invalid datatype
+[09:35:05] [ERROR] cache_get_field_content_int - invalid datatype
+[09:35:05] [ERROR] cache_get_field_content_int - invalid datatype
+[09:35:05] [ERROR] cache_get_field_content_int - invalid datatype
+[09:35:05] [ERROR] cache_get_field_content_int - invalid datatype
+[09:35:05] [ERROR] cache_get_field_content_int - invalid datatype
+[09:35:05] [ERROR] cache_get_field_content_int - invalid datatype
+[09:35:05] [ERROR] cache_get_field_content_int - invalid datatype
+[09:35:40] [ERROR] cache_get_field_content_int - invalid datatype
+[09:35:40] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('2')
+[09:35:40] [ERROR] cache_get_field_content_int - invalid datatype
+[09:35:42] [ERROR] cache_get_field_content_int - invalid datatype
+[09:35:42] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('1')
+[09:35:42] [ERROR] cache_get_field_content_int - invalid datatype
+[09:36:26] [ERROR] cache_get_field_content_int - invalid datatype
+[09:36:26] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('4')
+[09:36:26] [ERROR] cache_get_field_content_int - invalid datatype
+[09:36:26] [ERROR] cache_get_field_content_int - invalid datatype
+[09:36:26] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('3')
+[09:36:26] [ERROR] cache_get_field_content_int - invalid datatype
+[09:36:46] [ERROR] cache_get_field_content_int - invalid datatype
+[09:37:27] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[09:37:27] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[09:37:27] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[09:37:27] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[09:37:27] [ERROR] cache_get_field_content_int - invalid datatype
+[09:37:27] [ERROR] cache_get_field_content_int - invalid datatype
+[09:37:27] [ERROR] cache_get_field_content_int - invalid datatype
+[09:37:27] [ERROR] cache_get_field_content_int - invalid datatype
+[09:37:27] [ERROR] cache_get_field_content_int - invalid datatype
+[09:37:27] [ERROR] cache_get_field_content_int - invalid datatype
+[09:37:27] [ERROR] cache_get_field_content_int - invalid datatype
+[09:37:27] [ERROR] cache_get_field_content_int - invalid datatype
+[09:37:27] [ERROR] cache_get_field_content_int - invalid datatype
+[09:37:27] [ERROR] cache_get_field_content_int - invalid datatype
+[09:37:27] [ERROR] cache_get_field_content_int - invalid datatype
+[09:37:27] [ERROR] cache_get_field_content_int - invalid datatype
+[09:37:27] [ERROR] cache_get_field_content_int - invalid datatype
+[09:37:27] [ERROR] cache_get_field_content_int - invalid datatype
+[09:37:27] [ERROR] cache_get_field_content_int - invalid datatype
+[09:37:27] [ERROR] cache_get_field_content_int - invalid datatype
+[09:37:27] [ERROR] cache_get_field_content_int - invalid datatype
+[09:37:27] [ERROR] cache_get_field_content_int - invalid datatype
+[09:38:31] [ERROR] cache_get_field_content_int - invalid datatype
+[09:38:31] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('1')
+[09:38:31] [ERROR] cache_get_field_content_int - invalid datatype
+[09:39:25] [ERROR] cache_get_field_content_int - invalid datatype
+[09:39:30] [ERROR] cache_get_field_content_int - invalid datatype
+[09:39:30] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('2')
+[09:39:30] [ERROR] cache_get_field_content_int - invalid datatype
+[09:40:38] [ERROR] cache_get_field_content_int - invalid datatype
+[09:40:38] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('3')
+[09:40:38] [ERROR] cache_get_field_content_int - invalid datatype
+[09:42:20] [ERROR] cache_get_field_content_int - invalid datatype
+[09:42:20] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('2')
+[09:42:20] [ERROR] cache_get_field_content_int - invalid datatype
+[09:42:20] [ERROR] cache_get_field_content_int - invalid datatype
+[09:42:20] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('3')
+[09:42:20] [ERROR] cache_get_field_content_int - invalid datatype
+[09:47:22] [ERROR] cache_get_field_content_int - invalid datatype
+[09:47:22] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('4')
+[09:47:22] [ERROR] cache_get_field_content_int - invalid datatype
+[09:47:27] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[09:47:27] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[09:47:27] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[09:47:27] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[09:47:27] [ERROR] cache_get_field_content_int - invalid datatype
+[09:47:27] [ERROR] cache_get_field_content_int - invalid datatype
+[09:47:27] [ERROR] cache_get_field_content_int - invalid datatype
+[09:47:27] [ERROR] cache_get_field_content_int - invalid datatype
+[09:47:27] [ERROR] cache_get_field_content_int - invalid datatype
+[09:47:27] [ERROR] cache_get_field_content_int - invalid datatype
+[09:47:27] [ERROR] cache_get_field_content_int - invalid datatype
+[09:47:27] [ERROR] cache_get_field_content_int - invalid datatype
+[09:47:27] [ERROR] cache_get_field_content_int - invalid datatype
+[09:47:27] [ERROR] cache_get_field_content_int - invalid datatype
+[09:47:27] [ERROR] cache_get_field_content_int - invalid datatype
+[09:47:27] [ERROR] cache_get_field_content_int - invalid datatype
+[09:47:27] [ERROR] cache_get_field_content_int - invalid datatype
+[09:47:27] [ERROR] cache_get_field_content_int - invalid datatype
+[09:47:27] [ERROR] cache_get_field_content_int - invalid datatype
+[09:47:27] [ERROR] cache_get_field_content_int - invalid datatype
+[09:47:27] [ERROR] cache_get_field_content_int - invalid datatype
+[09:47:27] [ERROR] cache_get_field_content_int - invalid datatype
+[09:48:14] [ERROR] cache_get_field_content_int - invalid datatype
+[09:48:14] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('1')
+[09:48:14] [ERROR] cache_get_field_content_int - invalid datatype
+[09:48:20] [ERROR] cache_get_field_content_int - invalid datatype
+[09:48:20] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('2')
+[09:48:20] [ERROR] cache_get_field_content_int - invalid datatype
+[09:48:31] [ERROR] cache_get_field_content_int - invalid datatype
+[09:48:41] [ERROR] cache_get_field_content_int - invalid datatype
+[09:49:24] [ERROR] cache_get_field_content_int - invalid datatype
+[09:49:24] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('3')
+[09:49:24] [ERROR] cache_get_field_content_int - invalid datatype
+[09:51:33] [ERROR] cache_get_field_content_int - invalid datatype
+[09:51:33] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('4')
+[09:51:33] [ERROR] cache_get_field_content_int - invalid datatype
+[09:52:24] [ERROR] cache_get_field_content_int - invalid datatype
+[09:52:24] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('5')
+[09:52:24] [ERROR] cache_get_field_content_int - invalid datatype
+[09:53:05] [ERROR] cache_get_field_content_int - invalid datatype
+[09:53:28] [ERROR] cache_get_field_content_int - invalid datatype
+[09:53:28] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('6')
+[09:53:28] [ERROR] cache_get_field_content_int - invalid datatype
+[09:54:08] [ERROR] cache_get_field_content_int - invalid datatype
+[09:54:08] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('3')
+[09:54:08] [ERROR] cache_get_field_content_int - invalid datatype
+[09:54:32] [ERROR] cache_get_field_content_int - invalid datatype
+[09:54:32] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('9')
+[09:54:32] [ERROR] cache_get_field_content_int - invalid datatype
+[09:54:41] [ERROR] cache_get_field_content_int - invalid datatype
+[09:54:41] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('8')
+[09:54:41] [ERROR] cache_get_field_content_int - invalid datatype
+[09:57:25] [ERROR] cache_get_field_content_int - invalid datatype
+[09:57:36] [ERROR] cache_get_field_content_int - invalid datatype
+[09:57:36] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('4')
+[09:57:36] [ERROR] cache_get_field_content_int - invalid datatype
+[09:58:55] [ERROR] cache_get_field_content_int - invalid datatype
+[09:58:55] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('1')
+[09:58:55] [ERROR] cache_get_field_content_int - invalid datatype
+[09:59:25] [ERROR] cache_get_field_content_int - invalid datatype
+[09:59:32] [ERROR] cache_get_field_content_int - invalid datatype
+[09:59:32] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('3')
+[09:59:32] [ERROR] cache_get_field_content_int - invalid datatype
+[10:00:37] [ERROR] cache_get_field_content_int - invalid datatype
+[10:00:37] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('4')
+[10:00:37] [ERROR] cache_get_field_content_int - invalid datatype
+[10:00:50] [ERROR] cache_get_field_content_int - invalid datatype
+[10:00:50] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('5')
+[10:00:50] [ERROR] cache_get_field_content_int - invalid datatype
+[10:02:31] [ERROR] cache_get_field_content_int - invalid datatype
+[10:03:03] [ERROR] cache_get_field_content_int - invalid datatype
+[10:03:03] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('4')
+[10:03:03] [ERROR] cache_get_field_content_int - invalid datatype
+[10:03:22] [ERROR] cache_get_field_content_int - invalid datatype
+[10:03:22] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('1')
+[10:03:22] [ERROR] cache_get_field_content_int - invalid datatype
+[10:05:01] [ERROR] cache_get_field_content_int - invalid datatype
+[10:05:01] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('10')
+[10:05:01] [ERROR] cache_get_field_content_int - invalid datatype
+[10:05:02] [ERROR] cache_get_field_content_int - invalid datatype
+[10:05:11] [ERROR] cache_get_field_content_int - invalid datatype
+[10:05:11] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('9')
+[10:05:11] [ERROR] cache_get_field_content_int - invalid datatype
+[10:05:52] [ERROR] cache_get_field_content_int - invalid datatype
+[10:05:52] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('5')
+[10:05:52] [ERROR] cache_get_field_content_int - invalid datatype
+[10:05:57] [ERROR] cache_get_field_content_int - invalid datatype
+[10:05:57] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('3')
+[10:05:57] [ERROR] cache_get_field_content_int - invalid datatype
+[10:06:41] [ERROR] cache_get_field_content_int - invalid datatype
+[10:06:41] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('4')
+[10:06:41] [ERROR] cache_get_field_content_int - invalid datatype
+[10:06:50] [ERROR] cache_get_field_content_int - invalid datatype
+[10:06:50] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('3')
+[10:06:50] [ERROR] cache_get_field_content_int - invalid datatype
+[10:08:49] [ERROR] cache_get_field_content_int - invalid datatype
+[10:09:14] [ERROR] cache_get_field_content_int - invalid datatype
+[10:09:14] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('9')
+[10:09:14] [ERROR] cache_get_field_content_int - invalid datatype
+[10:09:42] [ERROR] cache_get_field_content_int - invalid datatype
+[10:09:42] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('1')
+[10:09:42] [ERROR] cache_get_field_content_int - invalid datatype
+[10:09:50] [ERROR] cache_get_field_content_int - invalid datatype
+[10:09:50] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('12')
+[10:09:50] [ERROR] cache_get_field_content_int - invalid datatype
+[10:09:52] [ERROR] cache_get_field_content_int - invalid datatype
+[10:10:04] [ERROR] cache_get_field_content_int - invalid datatype
+[10:10:04] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('3')
+[10:10:04] [ERROR] cache_get_field_content_int - invalid datatype
+[10:10:05] [ERROR] cache_get_field_content_int - invalid datatype
+[10:10:05] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('7')
+[10:10:05] [ERROR] cache_get_field_content_int - invalid datatype
+[10:10:25] [ERROR] cache_get_field_content_int - invalid datatype
+[10:10:40] [ERROR] cache_get_field_content_int - invalid datatype
+[10:10:40] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('8')
+[10:10:40] [ERROR] cache_get_field_content_int - invalid datatype
+[10:11:00] [ERROR] cache_get_field_content_int - invalid datatype
+[10:11:42] [ERROR] cache_get_field_content_int - invalid datatype
+[10:11:42] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('7')
+[10:11:42] [ERROR] cache_get_field_content_int - invalid datatype
+[10:12:00] [ERROR] cache_get_field_content_int - invalid datatype
+[10:12:04] [ERROR] cache_get_field_content_int - invalid datatype
+[10:12:04] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('3')
+[10:12:04] [ERROR] cache_get_field_content_int - invalid datatype
+[10:12:12] [ERROR] cache_get_field_content_int - invalid datatype
+[10:12:12] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('7')
+[10:12:12] [ERROR] cache_get_field_content_int - invalid datatype
+[10:12:30] [ERROR] cache_get_field_content_int - invalid datatype
+[10:12:30] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('7')
+[10:12:30] [ERROR] cache_get_field_content_int - invalid datatype
+[10:12:34] [ERROR] cache_get_field_content_int - invalid datatype
+[10:12:36] [ERROR] cache_get_field_content_int - invalid datatype
+[10:12:36] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('7')
+[10:12:36] [ERROR] cache_get_field_content_int - invalid datatype
+[10:12:47] [ERROR] cache_get_field_content_int - invalid datatype
+[10:12:47] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('5')
+[10:12:47] [ERROR] cache_get_field_content_int - invalid datatype
+[10:13:21] [ERROR] cache_get_field_content_int - invalid datatype
+[10:13:21] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('13')
+[10:13:21] [ERROR] cache_get_field_content_int - invalid datatype
+[10:13:35] [ERROR] cache_get_field_content_int - invalid datatype
+[10:13:35] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('5')
+[10:13:35] [ERROR] cache_get_field_content_int - invalid datatype
+[10:13:52] [ERROR] cache_get_field_content_int - invalid datatype
+[10:13:52] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('14')
+[10:13:52] [ERROR] cache_get_field_content_int - invalid datatype
+[10:14:45] [ERROR] cache_get_field_content_int - invalid datatype
+[10:15:08] [ERROR] cache_get_field_content_int - invalid datatype
+[10:15:08] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('7')
+[10:15:08] [ERROR] cache_get_field_content_int - invalid datatype
+[10:15:11] [ERROR] cache_get_field_content_int - invalid datatype
+[10:15:11] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('8')
+[10:15:11] [ERROR] cache_get_field_content_int - invalid datatype
+[10:15:14] [ERROR] cache_get_field_content_int - invalid datatype
+[10:15:14] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('5')
+[10:15:14] [ERROR] cache_get_field_content_int - invalid datatype
+[10:15:16] [ERROR] cache_get_field_content_int - invalid datatype
+[10:15:16] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('9')
+[10:15:16] [ERROR] cache_get_field_content_int - invalid datatype
+[10:15:25] [ERROR] cache_get_field_content_int - invalid datatype
+[10:15:25] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('7')
+[10:15:25] [ERROR] cache_get_field_content_int - invalid datatype
+[10:15:33] [ERROR] cache_get_field_content_int - invalid datatype
+[10:15:38] [ERROR] cache_get_field_content_int - invalid datatype
+[10:15:38] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('16')
+[10:15:38] [ERROR] cache_get_field_content_int - invalid datatype
+[10:15:41] [ERROR] cache_get_field_content_int - invalid datatype
+[10:15:42] [ERROR] cache_get_field_content_int - invalid datatype
+[10:15:42] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('14')
+[10:15:42] [ERROR] cache_get_field_content_int - invalid datatype
+[10:15:43] [ERROR] cache_get_field_content_int - invalid datatype
+[10:16:09] [WARNING] CMySQLConnection::Disconnect - no connection available
+[10:16:21] [WARNING] CMySQLHandle::Create - connection already exists
+[10:16:21] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[10:16:21] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[10:16:21] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[10:16:21] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[10:16:21] [ERROR] cache_get_field_content_int - invalid datatype
+[10:16:21] [ERROR] cache_get_field_content_int - invalid datatype
+[10:16:21] [ERROR] cache_get_field_content_int - invalid datatype
+[10:16:21] [ERROR] cache_get_field_content_int - invalid datatype
+[10:16:21] [ERROR] cache_get_field_content_int - invalid datatype
+[10:16:21] [ERROR] cache_get_field_content_int - invalid datatype
+[10:16:21] [ERROR] cache_get_field_content_int - invalid datatype
+[10:16:21] [ERROR] cache_get_field_content_int - invalid datatype
+[10:16:21] [ERROR] cache_get_field_content_int - invalid datatype
+[10:16:21] [ERROR] cache_get_field_content_int - invalid datatype
+[10:16:21] [ERROR] cache_get_field_content_int - invalid datatype
+[10:16:21] [ERROR] cache_get_field_content_int - invalid datatype
+[10:16:21] [ERROR] cache_get_field_content_int - invalid datatype
+[10:16:21] [ERROR] cache_get_field_content_int - invalid datatype
+[10:16:21] [ERROR] cache_get_field_content_int - invalid datatype
+[10:16:21] [ERROR] cache_get_field_content_int - invalid datatype
+[10:16:21] [ERROR] cache_get_field_content_int - invalid datatype
+[10:16:21] [ERROR] cache_get_field_content_int - invalid datatype
+[10:16:43] [ERROR] cache_get_field_content_int - invalid datatype
+[10:16:43] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('16')
+[10:16:43] [ERROR] cache_get_field_content_int - invalid datatype
+[10:16:49] [ERROR] cache_get_field_content_int - invalid datatype
+[10:17:02] [ERROR] cache_get_field_content_int - invalid datatype
+[10:17:02] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('2')
+[10:17:02] [ERROR] cache_get_field_content_int - invalid datatype
+[10:17:03] [ERROR] cache_get_field_content_int - invalid datatype
+[10:17:03] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('1')
+[10:17:03] [ERROR] cache_get_field_content_int - invalid datatype
+[10:17:05] [ERROR] cache_get_field_content_int - invalid datatype
+[10:17:05] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('3')
+[10:17:05] [ERROR] cache_get_field_content_int - invalid datatype
+[10:17:11] [ERROR] cache_get_field_content_int - invalid datatype
+[10:17:11] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('4')
+[10:17:11] [ERROR] cache_get_field_content_int - invalid datatype
+[10:17:28] [ERROR] cache_get_field_content_int - invalid datatype
+[10:17:45] [ERROR] cache_get_field_content_int - invalid datatype
+[10:18:25] [ERROR] cache_get_field_content_int - invalid datatype
+[10:18:25] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('5')
+[10:18:25] [ERROR] cache_get_field_content_int - invalid datatype
+[10:18:47] [ERROR] cache_get_field_content_int - invalid datatype
+[10:18:47] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('6')
+[10:18:47] [ERROR] cache_get_field_content_int - invalid datatype
+[10:20:14] [ERROR] cache_get_field_content_int - invalid datatype
+[10:20:14] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('7')
+[10:20:14] [ERROR] cache_get_field_content_int - invalid datatype
+[10:20:58] [ERROR] cache_get_field_content_int - invalid datatype
+[10:20:58] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('8')
+[10:20:58] [ERROR] cache_get_field_content_int - invalid datatype
+[10:21:04] [ERROR] cache_get_field_content_int - invalid datatype
+[10:21:04] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('9')
+[10:21:04] [ERROR] cache_get_field_content_int - invalid datatype
+[10:21:32] [ERROR] cache_delete - invalid connection handle (id: 1)
+[10:22:43] [ERROR] cache_get_field_content_int - invalid datatype
+[10:22:44] [ERROR] cache_get_field_content_int - invalid datatype
+[10:22:44] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('11')
+[10:22:44] [ERROR] cache_get_field_content_int - invalid datatype
+[10:23:59] [ERROR] cache_get_field_content_int - invalid datatype
+[10:23:59] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('9')
+[10:23:59] [ERROR] cache_get_field_content_int - invalid datatype
+[10:24:00] [ERROR] cache_get_field_content_int - invalid datatype
+[10:24:00] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('6')
+[10:24:00] [ERROR] cache_get_field_content_int - invalid datatype
+[10:24:22] [ERROR] cache_get_field_content_int - invalid datatype
+[10:24:22] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('13')
+[10:24:22] [ERROR] cache_get_field_content_int - invalid datatype
+[10:24:43] [ERROR] cache_get_field_content_int - invalid datatype
+[10:24:43] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('12')
+[10:24:43] [ERROR] cache_get_field_content_int - invalid datatype
+[10:25:49] [ERROR] cache_get_field_content_int - invalid datatype
+[10:25:49] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('13')
+[10:25:49] [ERROR] cache_get_field_content_int - invalid datatype
+[10:26:20] [ERROR] cache_get_field_content_int - invalid datatype
+[10:26:20] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('14')
+[10:26:20] [ERROR] cache_get_field_content_int - invalid datatype
+[10:26:31] [ERROR] cache_get_field_content_int - invalid datatype
+[10:26:31] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('17')
+[10:26:31] [ERROR] cache_get_field_content_int - invalid datatype
+[10:27:15] [ERROR] cache_get_field_content_int - invalid datatype
+[10:27:15] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('5')
+[10:27:15] [ERROR] cache_get_field_content_int - invalid datatype
+[10:28:54] [ERROR] cache_get_field_content_int - invalid datatype
+[10:28:54] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('3')
+[10:28:54] [ERROR] cache_get_field_content_int - invalid datatype
+[10:29:05] [ERROR] cache_get_field_content_int - invalid datatype
+[10:29:40] [ERROR] cache_get_field_content_int - invalid datatype
+[10:29:40] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('5')
+[10:29:40] [ERROR] cache_get_field_content_int - invalid datatype
+[10:30:49] [ERROR] cache_get_field_content_int - invalid datatype
+[10:30:49] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('5')
+[10:30:49] [ERROR] cache_get_field_content_int - invalid datatype
+[10:31:13] [ERROR] cache_get_field_content_int - invalid datatype
+[10:31:13] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('5')
+[10:31:13] [ERROR] cache_get_field_content_int - invalid datatype
+[10:32:26] [ERROR] cache_get_field_content_int - invalid datatype
+[10:32:26] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('5')
+[10:32:26] [ERROR] cache_get_field_content_int - invalid datatype
+[10:32:47] [ERROR] cache_get_field_content_int - invalid datatype
+[10:32:47] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('6')
+[10:32:47] [ERROR] cache_get_field_content_int - invalid datatype
+[10:33:06] [ERROR] cache_get_field_content_int - invalid datatype
+[10:33:06] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('9')
+[10:33:06] [ERROR] cache_get_field_content_int - invalid datatype
+[10:33:46] [ERROR] cache_get_field_content_int - invalid datatype
+[10:33:46] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('11')
+[10:33:46] [ERROR] cache_get_field_content_int - invalid datatype
+[10:34:09] [ERROR] cache_get_field_content_int - invalid datatype
+[10:34:09] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('2')
+[10:34:09] [ERROR] cache_get_field_content_int - invalid datatype
+[10:35:07] [ERROR] cache_get_field_content_int - invalid datatype
+[10:35:07] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('1')
+[10:35:07] [ERROR] cache_get_field_content_int - invalid datatype
+[10:35:43] [ERROR] cache_get_field_content_int - invalid datatype
+[10:35:43] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('5')
+[10:35:43] [ERROR] cache_get_field_content_int - invalid datatype
+[10:37:52] [WARNING] CMySQLConnection::Disconnect - no connection available
+[10:38:04] [WARNING] CMySQLHandle::Create - connection already exists
+[10:38:04] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[10:38:04] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[10:38:04] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[10:38:04] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[10:38:04] [ERROR] cache_get_field_content_int - invalid datatype
+[10:38:04] [ERROR] cache_get_field_content_int - invalid datatype
+[10:38:04] [ERROR] cache_get_field_content_int - invalid datatype
+[10:38:04] [ERROR] cache_get_field_content_int - invalid datatype
+[10:38:04] [ERROR] cache_get_field_content_int - invalid datatype
+[10:38:04] [ERROR] cache_get_field_content_int - invalid datatype
+[10:38:04] [ERROR] cache_get_field_content_int - invalid datatype
+[10:38:04] [ERROR] cache_get_field_content_int - invalid datatype
+[10:38:04] [ERROR] cache_get_field_content_int - invalid datatype
+[10:38:04] [ERROR] cache_get_field_content_int - invalid datatype
+[10:38:04] [ERROR] cache_get_field_content_int - invalid datatype
+[10:38:04] [ERROR] cache_get_field_content_int - invalid datatype
+[10:38:04] [ERROR] cache_get_field_content_int - invalid datatype
+[10:38:04] [ERROR] cache_get_field_content_int - invalid datatype
+[10:38:04] [ERROR] cache_get_field_content_int - invalid datatype
+[10:38:04] [ERROR] cache_get_field_content_int - invalid datatype
+[10:38:04] [ERROR] cache_get_field_content_int - invalid datatype
+[10:38:04] [ERROR] cache_get_field_content_int - invalid datatype
+[10:38:36] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[10:38:36] [ERROR] cache_get_field_content_int - invalid datatype
+[10:38:36] [ERROR] cache_get_field_content_int - invalid datatype
+[10:38:36] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('3')
+[10:38:36] [ERROR] cache_get_field_content_int - invalid datatype
+[10:38:52] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[10:38:52] [ERROR] cache_get_field_content_int - invalid datatype
+[10:38:52] [ERROR] cache_get_field_content_int - invalid datatype
+[10:39:01] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[10:39:01] [ERROR] cache_get_field_content_int - invalid datatype
+[10:39:01] [ERROR] cache_get_field_content_int - invalid datatype
+[10:39:01] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('1')
+[10:39:01] [ERROR] cache_get_field_content_int - invalid datatype
+[10:39:38] [ERROR] cache_get_field_content_int - invalid datatype
+[10:40:44] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[10:40:44] [ERROR] cache_get_field_content_int - invalid datatype
+[10:40:44] [ERROR] cache_get_field_content_int - invalid datatype
+[10:40:44] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('2')
+[10:40:44] [ERROR] cache_get_field_content_int - invalid datatype
+[10:41:00] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[10:41:00] [ERROR] cache_get_field_content_int - invalid datatype
+[10:41:00] [ERROR] cache_get_field_content_int - invalid datatype
+[10:41:00] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('4')
+[10:41:00] [ERROR] cache_get_field_content_int - invalid datatype
+[10:41:12] [ERROR] cache_get_field_content_int - invalid datatype
+[10:41:14] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[10:41:14] [ERROR] cache_get_field_content_int - invalid datatype
+[10:41:14] [ERROR] cache_get_field_content_int - invalid datatype
+[10:41:14] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('5')
+[10:41:14] [ERROR] cache_get_field_content_int - invalid datatype
+[10:41:23] [ERROR] cache_get_field_content_int - invalid datatype
+[10:41:45] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[10:41:45] [ERROR] cache_get_field_content_int - invalid datatype
+[10:41:45] [ERROR] cache_get_field_content_int - invalid datatype
+[10:41:45] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('6')
+[10:41:45] [ERROR] cache_get_field_content_int - invalid datatype
+[10:41:53] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[10:41:53] [ERROR] cache_get_field_content_int - invalid datatype
+[10:41:53] [ERROR] cache_get_field_content_int - invalid datatype
+[10:41:53] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('2')
+[10:41:53] [ERROR] cache_get_field_content_int - invalid datatype
+[10:42:12] [ERROR] cache_get_field_content_int - invalid datatype
+[10:43:18] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[10:43:18] [ERROR] cache_get_field_content_int - invalid datatype
+[10:43:18] [ERROR] cache_get_field_content_int - invalid datatype
+[10:43:18] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('4')
+[10:43:18] [ERROR] cache_get_field_content_int - invalid datatype
+[10:43:20] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[10:43:20] [ERROR] cache_get_field_content_int - invalid datatype
+[10:43:20] [ERROR] cache_get_field_content_int - invalid datatype
+[10:43:20] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('5')
+[10:43:20] [ERROR] cache_get_field_content_int - invalid datatype
+[10:44:00] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[10:44:00] [ERROR] cache_get_field_content_int - invalid datatype
+[10:44:00] [ERROR] cache_get_field_content_int - invalid datatype
+[10:44:00] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('1')
+[10:44:00] [ERROR] cache_get_field_content_int - invalid datatype
+[10:44:07] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[10:44:07] [ERROR] cache_get_field_content_int - invalid datatype
+[10:44:07] [ERROR] cache_get_field_content_int - invalid datatype
+[10:44:07] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('6')
+[10:44:07] [ERROR] cache_get_field_content_int - invalid datatype
+[10:44:10] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[10:44:10] [ERROR] cache_get_field_content_int - invalid datatype
+[10:44:10] [ERROR] cache_get_field_content_int - invalid datatype
+[10:44:10] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('7')
+[10:44:10] [ERROR] cache_get_field_content_int - invalid datatype
+[10:46:03] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[10:46:03] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[10:46:03] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[10:46:03] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[10:46:03] [ERROR] cache_get_field_content_int - invalid datatype
+[10:46:03] [ERROR] cache_get_field_content_int - invalid datatype
+[10:46:03] [ERROR] cache_get_field_content_int - invalid datatype
+[10:46:03] [ERROR] cache_get_field_content_int - invalid datatype
+[10:46:03] [ERROR] cache_get_field_content_int - invalid datatype
+[10:46:03] [ERROR] cache_get_field_content_int - invalid datatype
+[10:46:03] [ERROR] cache_get_field_content_int - invalid datatype
+[10:46:03] [ERROR] cache_get_field_content_int - invalid datatype
+[10:46:03] [ERROR] cache_get_field_content_int - invalid datatype
+[10:46:03] [ERROR] cache_get_field_content_int - invalid datatype
+[10:46:03] [ERROR] cache_get_field_content_int - invalid datatype
+[10:46:03] [ERROR] cache_get_field_content_int - invalid datatype
+[10:46:03] [ERROR] cache_get_field_content_int - invalid datatype
+[10:46:03] [ERROR] cache_get_field_content_int - invalid datatype
+[10:46:03] [ERROR] cache_get_field_content_int - invalid datatype
+[10:46:03] [ERROR] cache_get_field_content_int - invalid datatype
+[10:46:03] [ERROR] cache_get_field_content_int - invalid datatype
+[10:46:03] [ERROR] cache_get_field_content_int - invalid datatype
+[10:46:48] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[10:46:48] [ERROR] cache_get_field_content_int - invalid datatype
+[10:46:48] [ERROR] cache_get_field_content_int - invalid datatype
+[10:46:48] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('2')
+[10:46:48] [ERROR] cache_get_field_content_int - invalid datatype
+[10:46:55] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[10:46:55] [ERROR] cache_get_field_content_int - invalid datatype
+[10:46:55] [ERROR] cache_get_field_content_int - invalid datatype
+[10:47:01] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[10:47:01] [ERROR] cache_get_field_content_int - invalid datatype
+[10:47:01] [ERROR] cache_get_field_content_int - invalid datatype
+[10:47:01] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('1')
+[10:47:01] [ERROR] cache_get_field_content_int - invalid datatype
+[10:47:05] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[10:47:05] [ERROR] cache_get_field_content_int - invalid datatype
+[10:47:05] [ERROR] cache_get_field_content_int - invalid datatype
+[10:47:05] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('4')
+[10:47:05] [ERROR] cache_get_field_content_int - invalid datatype
+[10:47:12] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[10:47:12] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[10:47:12] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[10:47:12] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[10:47:12] [ERROR] cache_get_field_content_int - invalid datatype
+[10:47:12] [ERROR] cache_get_field_content_int - invalid datatype
+[10:47:12] [ERROR] cache_get_field_content_int - invalid datatype
+[10:47:12] [ERROR] cache_get_field_content_int - invalid datatype
+[10:47:12] [ERROR] cache_get_field_content_int - invalid datatype
+[10:47:12] [ERROR] cache_get_field_content_int - invalid datatype
+[10:47:12] [ERROR] cache_get_field_content_int - invalid datatype
+[10:47:12] [ERROR] cache_get_field_content_int - invalid datatype
+[10:47:12] [ERROR] cache_get_field_content_int - invalid datatype
+[10:47:12] [ERROR] cache_get_field_content_int - invalid datatype
+[10:47:12] [ERROR] cache_get_field_content_int - invalid datatype
+[10:47:12] [ERROR] cache_get_field_content_int - invalid datatype
+[10:47:12] [ERROR] cache_get_field_content_int - invalid datatype
+[10:47:12] [ERROR] cache_get_field_content_int - invalid datatype
+[10:47:12] [ERROR] cache_get_field_content_int - invalid datatype
+[10:47:12] [ERROR] cache_get_field_content_int - invalid datatype
+[10:47:12] [ERROR] cache_get_field_content_int - invalid datatype
+[10:47:12] [ERROR] cache_get_field_content_int - invalid datatype
+[10:47:48] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[10:47:48] [ERROR] cache_get_field_content_int - invalid datatype
+[10:47:48] [ERROR] cache_get_field_content_int - invalid datatype
+[10:47:55] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[10:47:55] [ERROR] cache_get_field_content_int - invalid datatype
+[10:47:55] [ERROR] cache_get_field_content_int - invalid datatype
+[10:47:55] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('3')
+[10:47:55] [ERROR] cache_get_field_content_int - invalid datatype
+[10:47:57] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[10:47:57] [ERROR] cache_get_field_content_int - invalid datatype
+[10:47:57] [ERROR] cache_get_field_content_int - invalid datatype
+[10:47:57] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('1')
+[10:47:57] [ERROR] cache_get_field_content_int - invalid datatype
+[10:48:14] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[10:48:14] [ERROR] cache_get_field_content_int - invalid datatype
+[10:48:14] [ERROR] cache_get_field_content_int - invalid datatype
+[10:48:14] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('4')
+[10:48:14] [ERROR] cache_get_field_content_int - invalid datatype
+[10:48:31] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[10:48:31] [ERROR] cache_get_field_content_int - invalid datatype
+[10:48:31] [ERROR] cache_get_field_content_int - invalid datatype
+[10:48:31] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('5')
+[10:48:31] [ERROR] cache_get_field_content_int - invalid datatype
+[10:48:57] [ERROR] cache_get_field_content_int - invalid datatype
+[10:49:36] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[10:49:36] [ERROR] cache_get_field_content_int - invalid datatype
+[10:49:36] [ERROR] cache_get_field_content_int - invalid datatype
+[10:49:36] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('1')
+[10:49:36] [ERROR] cache_get_field_content_int - invalid datatype
+[10:49:39] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[10:49:39] [ERROR] cache_get_field_content_int - invalid datatype
+[10:49:39] [ERROR] cache_get_field_content_int - invalid datatype
+[10:49:39] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('3')
+[10:49:39] [ERROR] cache_get_field_content_int - invalid datatype
+[10:49:42] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[10:49:42] [ERROR] cache_get_field_content_int - invalid datatype
+[10:49:42] [ERROR] cache_get_field_content_int - invalid datatype
+[10:49:42] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('2')
+[10:49:42] [ERROR] cache_get_field_content_int - invalid datatype
+[10:50:02] [ERROR] cache_get_field_content_int - invalid datatype
+[10:50:06] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[10:50:06] [ERROR] cache_get_field_content_int - invalid datatype
+[10:50:06] [ERROR] cache_get_field_content_int - invalid datatype
+[10:50:06] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('4')
+[10:50:06] [ERROR] cache_get_field_content_int - invalid datatype
+[10:51:09] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[10:51:09] [ERROR] cache_get_field_content_int - invalid datatype
+[10:51:09] [ERROR] cache_get_field_content_int - invalid datatype
+[10:51:09] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('6')
+[10:51:09] [ERROR] cache_get_field_content_int - invalid datatype
+[10:51:41] [ERROR] cache_get_field_content_int - invalid datatype
+[10:51:54] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[10:51:54] [ERROR] cache_get_field_content_int - invalid datatype
+[10:51:54] [ERROR] cache_get_field_content_int - invalid datatype
+[10:51:54] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('7')
+[10:51:54] [ERROR] cache_get_field_content_int - invalid datatype
+[10:52:45] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[10:52:45] [ERROR] cache_get_field_content_int - invalid datatype
+[10:52:45] [ERROR] cache_get_field_content_int - invalid datatype
+[10:52:45] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('8')
+[10:52:45] [ERROR] cache_get_field_content_int - invalid datatype
+[10:53:20] [ERROR] cache_get_field_content_int - invalid datatype
+[10:55:04] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[10:55:04] [ERROR] cache_get_field_content_int - invalid datatype
+[10:55:04] [ERROR] cache_get_field_content_int - invalid datatype
+[10:55:04] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('9')
+[10:55:04] [ERROR] cache_get_field_content_int - invalid datatype
+[10:55:36] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[10:55:36] [ERROR] cache_get_field_content_int - invalid datatype
+[10:55:36] [ERROR] cache_get_field_content_int - invalid datatype
+[10:55:52] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[10:55:52] [ERROR] cache_get_field_content_int - invalid datatype
+[10:55:52] [ERROR] cache_get_field_content_int - invalid datatype
+[10:55:52] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('7')
+[10:55:52] [ERROR] cache_get_field_content_int - invalid datatype
+[10:57:40] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[10:57:40] [ERROR] cache_get_field_content_int - invalid datatype
+[10:57:40] [ERROR] cache_get_field_content_int - invalid datatype
+[10:57:40] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('10')
+[10:57:40] [ERROR] cache_get_field_content_int - invalid datatype
+[10:57:59] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[10:57:59] [ERROR] cache_get_field_content_int - invalid datatype
+[10:57:59] [ERROR] cache_get_field_content_int - invalid datatype
+[10:57:59] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('11')
+[10:57:59] [ERROR] cache_get_field_content_int - invalid datatype
+[10:58:15] [ERROR] cache_get_field_content_int - invalid datatype
+[10:58:49] [ERROR] cache_get_field_content_int - invalid datatype
+[10:58:52] [ERROR] cache_get_field_content_int - invalid datatype
+[10:59:08] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[10:59:08] [ERROR] cache_get_field_content_int - invalid datatype
+[10:59:08] [ERROR] cache_get_field_content_int - invalid datatype
+[10:59:08] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('7')
+[10:59:08] [ERROR] cache_get_field_content_int - invalid datatype
+[10:59:15] [ERROR] cache_get_field_content_int - invalid datatype
+[11:00:31] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:00:31] [ERROR] cache_get_field_content_int - invalid datatype
+[11:00:31] [ERROR] cache_get_field_content_int - invalid datatype
+[11:00:31] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('14')
+[11:00:31] [ERROR] cache_get_field_content_int - invalid datatype
+[11:00:45] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:00:45] [ERROR] cache_get_field_content_int - invalid datatype
+[11:00:45] [ERROR] cache_get_field_content_int - invalid datatype
+[11:00:45] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('12')
+[11:00:45] [ERROR] cache_get_field_content_int - invalid datatype
+[11:00:54] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:00:54] [ERROR] cache_get_field_content_int - invalid datatype
+[11:00:54] [ERROR] cache_get_field_content_int - invalid datatype
+[11:00:54] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('3')
+[11:00:54] [ERROR] cache_get_field_content_int - invalid datatype
+[11:01:14] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:01:14] [ERROR] cache_get_field_content_int - invalid datatype
+[11:01:14] [ERROR] cache_get_field_content_int - invalid datatype
+[11:01:14] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('8')
+[11:01:14] [ERROR] cache_get_field_content_int - invalid datatype
+[11:01:19] [ERROR] cache_get_field_content_int - invalid datatype
+[11:03:13] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[11:03:13] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[11:03:13] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[11:03:13] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[11:03:13] [ERROR] cache_get_field_content_int - invalid datatype
+[11:03:13] [ERROR] cache_get_field_content_int - invalid datatype
+[11:03:13] [ERROR] cache_get_field_content_int - invalid datatype
+[11:03:13] [ERROR] cache_get_field_content_int - invalid datatype
+[11:03:13] [ERROR] cache_get_field_content_int - invalid datatype
+[11:03:13] [ERROR] cache_get_field_content_int - invalid datatype
+[11:03:13] [ERROR] cache_get_field_content_int - invalid datatype
+[11:03:13] [ERROR] cache_get_field_content_int - invalid datatype
+[11:03:13] [ERROR] cache_get_field_content_int - invalid datatype
+[11:03:13] [ERROR] cache_get_field_content_int - invalid datatype
+[11:03:13] [ERROR] cache_get_field_content_int - invalid datatype
+[11:03:13] [ERROR] cache_get_field_content_int - invalid datatype
+[11:03:13] [ERROR] cache_get_field_content_int - invalid datatype
+[11:03:13] [ERROR] cache_get_field_content_int - invalid datatype
+[11:03:13] [ERROR] cache_get_field_content_int - invalid datatype
+[11:03:13] [ERROR] cache_get_field_content_int - invalid datatype
+[11:03:13] [ERROR] cache_get_field_content_int - invalid datatype
+[11:03:13] [ERROR] cache_get_field_content_int - invalid datatype
+[11:03:36] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:03:36] [ERROR] cache_get_field_content_int - invalid datatype
+[11:03:36] [ERROR] cache_get_field_content_int - invalid datatype
+[11:03:46] [ERROR] cache_get_field_content_int - invalid datatype
+[11:04:17] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:04:17] [ERROR] cache_get_field_content_int - invalid datatype
+[11:04:17] [ERROR] cache_get_field_content_int - invalid datatype
+[11:04:17] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('6')
+[11:04:17] [ERROR] cache_get_field_content_int - invalid datatype
+[11:04:17] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:04:17] [ERROR] cache_get_field_content_int - invalid datatype
+[11:04:17] [ERROR] cache_get_field_content_int - invalid datatype
+[11:04:17] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('3')
+[11:04:17] [ERROR] cache_get_field_content_int - invalid datatype
+[11:04:19] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:04:19] [ERROR] cache_get_field_content_int - invalid datatype
+[11:04:19] [ERROR] cache_get_field_content_int - invalid datatype
+[11:04:19] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('2')
+[11:04:19] [ERROR] cache_get_field_content_int - invalid datatype
+[11:04:43] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:04:43] [ERROR] cache_get_field_content_int - invalid datatype
+[11:04:43] [ERROR] cache_get_field_content_int - invalid datatype
+[11:04:43] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('9')
+[11:04:43] [ERROR] cache_get_field_content_int - invalid datatype
+[11:04:49] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:04:49] [ERROR] cache_get_field_content_int - invalid datatype
+[11:04:49] [ERROR] cache_get_field_content_int - invalid datatype
+[11:04:49] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('4')
+[11:04:49] [ERROR] cache_get_field_content_int - invalid datatype
+[11:04:54] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:04:54] [ERROR] cache_get_field_content_int - invalid datatype
+[11:04:54] [ERROR] cache_get_field_content_int - invalid datatype
+[11:05:06] [ERROR] cache_get_field_content_int - invalid datatype
+[11:05:31] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:05:31] [ERROR] cache_get_field_content_int - invalid datatype
+[11:05:31] [ERROR] cache_get_field_content_int - invalid datatype
+[11:05:31] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('8')
+[11:05:31] [ERROR] cache_get_field_content_int - invalid datatype
+[11:05:35] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[11:05:35] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[11:05:35] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[11:05:35] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[11:05:35] [ERROR] cache_get_field_content_int - invalid datatype
+[11:05:35] [ERROR] cache_get_field_content_int - invalid datatype
+[11:05:35] [ERROR] cache_get_field_content_int - invalid datatype
+[11:05:35] [ERROR] cache_get_field_content_int - invalid datatype
+[11:05:35] [ERROR] cache_get_field_content_int - invalid datatype
+[11:05:35] [ERROR] cache_get_field_content_int - invalid datatype
+[11:05:35] [ERROR] cache_get_field_content_int - invalid datatype
+[11:05:35] [ERROR] cache_get_field_content_int - invalid datatype
+[11:05:35] [ERROR] cache_get_field_content_int - invalid datatype
+[11:05:35] [ERROR] cache_get_field_content_int - invalid datatype
+[11:05:35] [ERROR] cache_get_field_content_int - invalid datatype
+[11:05:35] [ERROR] cache_get_field_content_int - invalid datatype
+[11:05:35] [ERROR] cache_get_field_content_int - invalid datatype
+[11:05:35] [ERROR] cache_get_field_content_int - invalid datatype
+[11:05:35] [ERROR] cache_get_field_content_int - invalid datatype
+[11:05:35] [ERROR] cache_get_field_content_int - invalid datatype
+[11:05:35] [ERROR] cache_get_field_content_int - invalid datatype
+[11:05:35] [ERROR] cache_get_field_content_int - invalid datatype
+[11:06:06] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:06:06] [ERROR] cache_get_field_content_int - invalid datatype
+[11:06:06] [ERROR] cache_get_field_content_int - invalid datatype
+[11:06:16] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:06:16] [ERROR] cache_get_field_content_int - invalid datatype
+[11:06:16] [ERROR] cache_get_field_content_int - invalid datatype
+[11:06:16] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('5')
+[11:06:16] [ERROR] cache_get_field_content_int - invalid datatype
+[11:06:24] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:06:24] [ERROR] cache_get_field_content_int - invalid datatype
+[11:06:24] [ERROR] cache_get_field_content_int - invalid datatype
+[11:06:24] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('2')
+[11:06:24] [ERROR] cache_get_field_content_int - invalid datatype
+[11:06:29] [ERROR] cache_get_field_content_int - invalid datatype
+[11:06:40] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:06:40] [ERROR] cache_get_field_content_int - invalid datatype
+[11:06:40] [ERROR] cache_get_field_content_int - invalid datatype
+[11:06:40] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('4')
+[11:06:40] [ERROR] cache_get_field_content_int - invalid datatype
+[11:06:55] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:06:55] [ERROR] cache_get_field_content_int - invalid datatype
+[11:06:55] [ERROR] cache_get_field_content_int - invalid datatype
+[11:06:55] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('1')
+[11:06:55] [ERROR] cache_get_field_content_int - invalid datatype
+[11:07:10] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:07:10] [ERROR] cache_get_field_content_int - invalid datatype
+[11:07:10] [ERROR] cache_get_field_content_int - invalid datatype
+[11:07:10] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('3')
+[11:07:10] [ERROR] cache_get_field_content_int - invalid datatype
+[11:07:28] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:07:28] [ERROR] cache_get_field_content_int - invalid datatype
+[11:07:28] [ERROR] cache_get_field_content_int - invalid datatype
+[11:07:28] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('8')
+[11:07:28] [ERROR] cache_get_field_content_int - invalid datatype
+[11:08:27] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:08:27] [ERROR] cache_get_field_content_int - invalid datatype
+[11:08:27] [ERROR] cache_get_field_content_int - invalid datatype
+[11:08:27] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('9')
+[11:08:27] [ERROR] cache_get_field_content_int - invalid datatype
+[11:08:32] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:08:32] [ERROR] cache_get_field_content_int - invalid datatype
+[11:08:32] [ERROR] cache_get_field_content_int - invalid datatype
+[11:08:32] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('5')
+[11:08:32] [ERROR] cache_get_field_content_int - invalid datatype
+[11:08:36] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:08:36] [ERROR] cache_get_field_content_int - invalid datatype
+[11:08:36] [ERROR] cache_get_field_content_int - invalid datatype
+[11:08:36] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('6')
+[11:08:36] [ERROR] cache_get_field_content_int - invalid datatype
+[11:08:37] [ERROR] cache_get_field_content_int - invalid datatype
+[11:09:05] [ERROR] cache_get_field_content_int - invalid datatype
+[11:09:59] [ERROR] cache_get_field_content_int - invalid datatype
+[11:10:06] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:10:06] [ERROR] cache_get_field_content_int - invalid datatype
+[11:10:06] [ERROR] cache_get_field_content_int - invalid datatype
+[11:10:06] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('7')
+[11:10:06] [ERROR] cache_get_field_content_int - invalid datatype
+[11:10:34] [ERROR] cache_get_field_content_int - invalid datatype
+[11:10:41] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:10:41] [ERROR] cache_get_field_content_int - invalid datatype
+[11:10:41] [ERROR] cache_get_field_content_int - invalid datatype
+[11:10:41] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('6')
+[11:10:41] [ERROR] cache_get_field_content_int - invalid datatype
+[11:11:12] [ERROR] cache_get_field_content_int - invalid datatype
+[11:13:28] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:13:28] [ERROR] cache_get_field_content_int - invalid datatype
+[11:13:28] [ERROR] cache_get_field_content_int - invalid datatype
+[11:13:28] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('4')
+[11:13:28] [ERROR] cache_get_field_content_int - invalid datatype
+[11:14:03] [ERROR] cache_get_field_content_int - invalid datatype
+[11:17:02] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:17:02] [ERROR] cache_get_field_content_int - invalid datatype
+[11:17:02] [ERROR] cache_get_field_content_int - invalid datatype
+[11:17:05] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:17:05] [ERROR] cache_get_field_content_int - invalid datatype
+[11:17:05] [ERROR] cache_get_field_content_int - invalid datatype
+[11:17:05] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('3')
+[11:17:05] [ERROR] cache_get_field_content_int - invalid datatype
+[11:17:19] [ERROR] cache_get_field_content_int - invalid datatype
+[11:18:22] [ERROR] cache_get_field_content_int - invalid datatype
+[11:18:26] [ERROR] cache_get_field_content_int - invalid datatype
+[11:18:49] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:18:49] [ERROR] cache_get_field_content_int - invalid datatype
+[11:18:49] [ERROR] cache_get_field_content_int - invalid datatype
+[11:18:49] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('7')
+[11:18:49] [ERROR] cache_get_field_content_int - invalid datatype
+[11:19:51] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:19:51] [ERROR] cache_get_field_content_int - invalid datatype
+[11:19:51] [ERROR] cache_get_field_content_int - invalid datatype
+[11:19:51] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('3')
+[11:19:51] [ERROR] cache_get_field_content_int - invalid datatype
+[11:19:54] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:19:54] [ERROR] cache_get_field_content_int - invalid datatype
+[11:19:54] [ERROR] cache_get_field_content_int - invalid datatype
+[11:19:54] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('6')
+[11:19:54] [ERROR] cache_get_field_content_int - invalid datatype
+[11:20:15] [ERROR] cache_get_field_content_int - invalid datatype
+[11:20:21] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:20:21] [ERROR] cache_get_field_content_int - invalid datatype
+[11:20:21] [ERROR] cache_get_field_content_int - invalid datatype
+[11:20:21] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('9')
+[11:20:21] [ERROR] cache_get_field_content_int - invalid datatype
+[11:20:52] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:20:52] [ERROR] cache_get_field_content_int - invalid datatype
+[11:20:52] [ERROR] cache_get_field_content_int - invalid datatype
+[11:20:52] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('1')
+[11:20:52] [ERROR] cache_get_field_content_int - invalid datatype
+[11:21:01] [ERROR] cache_get_field_content_int - invalid datatype
+[11:21:32] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:21:32] [ERROR] cache_get_field_content_int - invalid datatype
+[11:21:32] [ERROR] cache_get_field_content_int - invalid datatype
+[11:21:32] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('10')
+[11:21:32] [ERROR] cache_get_field_content_int - invalid datatype
+[11:22:17] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:22:17] [ERROR] cache_get_field_content_int - invalid datatype
+[11:22:17] [ERROR] cache_get_field_content_int - invalid datatype
+[11:22:17] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('7')
+[11:22:17] [ERROR] cache_get_field_content_int - invalid datatype
+[11:22:42] [ERROR] cache_get_field_content_int - invalid datatype
+[11:23:20] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:23:20] [ERROR] cache_get_field_content_int - invalid datatype
+[11:23:20] [ERROR] cache_get_field_content_int - invalid datatype
+[11:23:20] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('4')
+[11:23:20] [ERROR] cache_get_field_content_int - invalid datatype
+[11:24:44] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:24:44] [ERROR] cache_get_field_content_int - invalid datatype
+[11:24:44] [ERROR] cache_get_field_content_int - invalid datatype
+[11:24:44] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('4')
+[11:24:44] [ERROR] cache_get_field_content_int - invalid datatype
+[11:25:30] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:25:30] [ERROR] cache_get_field_content_int - invalid datatype
+[11:25:30] [ERROR] cache_get_field_content_int - invalid datatype
+[11:25:30] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('6')
+[11:25:30] [ERROR] cache_get_field_content_int - invalid datatype
+[11:26:06] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:26:06] [ERROR] cache_get_field_content_int - invalid datatype
+[11:26:06] [ERROR] cache_get_field_content_int - invalid datatype
+[11:26:06] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('7')
+[11:26:06] [ERROR] cache_get_field_content_int - invalid datatype
+[11:26:14] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:26:14] [ERROR] cache_get_field_content_int - invalid datatype
+[11:26:14] [ERROR] cache_get_field_content_int - invalid datatype
+[11:26:14] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('10')
+[11:26:14] [ERROR] cache_get_field_content_int - invalid datatype
+[11:27:30] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:27:30] [ERROR] cache_get_field_content_int - invalid datatype
+[11:27:30] [ERROR] cache_get_field_content_int - invalid datatype
+[11:27:30] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('11')
+[11:27:30] [ERROR] cache_get_field_content_int - invalid datatype
+[11:29:02] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:29:02] [ERROR] cache_get_field_content_int - invalid datatype
+[11:29:02] [ERROR] cache_get_field_content_int - invalid datatype
+[11:29:02] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('9')
+[11:29:02] [ERROR] cache_get_field_content_int - invalid datatype
+[11:29:25] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:29:25] [ERROR] cache_get_field_content_int - invalid datatype
+[11:29:25] [ERROR] cache_get_field_content_int - invalid datatype
+[11:29:25] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('2')
+[11:29:25] [ERROR] cache_get_field_content_int - invalid datatype
+[11:30:20] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:30:20] [ERROR] cache_get_field_content_int - invalid datatype
+[11:30:20] [ERROR] cache_get_field_content_int - invalid datatype
+[11:30:20] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('3')
+[11:30:20] [ERROR] cache_get_field_content_int - invalid datatype
+[11:31:20] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:31:20] [ERROR] cache_get_field_content_int - invalid datatype
+[11:31:20] [ERROR] cache_get_field_content_int - invalid datatype
+[11:31:25] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:31:25] [ERROR] cache_get_field_content_int - invalid datatype
+[11:31:25] [ERROR] cache_get_field_content_int - invalid datatype
+[11:31:25] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('5')
+[11:31:25] [ERROR] cache_get_field_content_int - invalid datatype
+[11:31:55] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:31:55] [ERROR] cache_get_field_content_int - invalid datatype
+[11:31:55] [ERROR] cache_get_field_content_int - invalid datatype
+[11:31:55] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('9')
+[11:31:55] [ERROR] cache_get_field_content_int - invalid datatype
+[11:32:11] [ERROR] cache_get_field_content_int - invalid datatype
+[11:34:37] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[11:34:37] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[11:34:37] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[11:34:37] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[11:34:37] [ERROR] cache_get_field_content_int - invalid datatype
+[11:34:37] [ERROR] cache_get_field_content_int - invalid datatype
+[11:34:37] [ERROR] cache_get_field_content_int - invalid datatype
+[11:34:37] [ERROR] cache_get_field_content_int - invalid datatype
+[11:34:37] [ERROR] cache_get_field_content_int - invalid datatype
+[11:34:37] [ERROR] cache_get_field_content_int - invalid datatype
+[11:34:37] [ERROR] cache_get_field_content_int - invalid datatype
+[11:34:37] [ERROR] cache_get_field_content_int - invalid datatype
+[11:34:37] [ERROR] cache_get_field_content_int - invalid datatype
+[11:34:37] [ERROR] cache_get_field_content_int - invalid datatype
+[11:34:37] [ERROR] cache_get_field_content_int - invalid datatype
+[11:34:37] [ERROR] cache_get_field_content_int - invalid datatype
+[11:34:37] [ERROR] cache_get_field_content_int - invalid datatype
+[11:34:37] [ERROR] cache_get_field_content_int - invalid datatype
+[11:34:37] [ERROR] cache_get_field_content_int - invalid datatype
+[11:34:37] [ERROR] cache_get_field_content_int - invalid datatype
+[11:34:37] [ERROR] cache_get_field_content_int - invalid datatype
+[11:34:37] [ERROR] cache_get_field_content_int - invalid datatype
+[11:35:26] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:35:26] [ERROR] cache_get_field_content_int - invalid datatype
+[11:35:26] [ERROR] cache_get_field_content_int - invalid datatype
+[11:35:26] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('9')
+[11:35:26] [ERROR] cache_get_field_content_int - invalid datatype
+[11:35:40] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:35:40] [ERROR] cache_get_field_content_int - invalid datatype
+[11:35:40] [ERROR] cache_get_field_content_int - invalid datatype
+[11:35:40] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('2')
+[11:35:40] [ERROR] cache_get_field_content_int - invalid datatype
+[11:35:49] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:35:49] [ERROR] cache_get_field_content_int - invalid datatype
+[11:35:49] [ERROR] cache_get_field_content_int - invalid datatype
+[11:35:49] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('3')
+[11:35:49] [ERROR] cache_get_field_content_int - invalid datatype
+[11:35:49] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:35:49] [ERROR] cache_get_field_content_int - invalid datatype
+[11:35:49] [ERROR] cache_get_field_content_int - invalid datatype
+[11:35:49] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('8')
+[11:35:49] [ERROR] cache_get_field_content_int - invalid datatype
+[11:35:49] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:35:49] [ERROR] cache_get_field_content_int - invalid datatype
+[11:35:49] [ERROR] cache_get_field_content_int - invalid datatype
+[11:35:50] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:35:50] [ERROR] cache_get_field_content_int - invalid datatype
+[11:35:50] [ERROR] cache_get_field_content_int - invalid datatype
+[11:35:50] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('4')
+[11:35:50] [ERROR] cache_get_field_content_int - invalid datatype
+[11:35:50] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:35:50] [ERROR] cache_get_field_content_int - invalid datatype
+[11:35:50] [ERROR] cache_get_field_content_int - invalid datatype
+[11:35:50] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('5')
+[11:35:50] [ERROR] cache_get_field_content_int - invalid datatype
+[11:36:12] [ERROR] cache_get_field_content_int - invalid datatype
+[11:37:41] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:37:41] [ERROR] cache_get_field_content_int - invalid datatype
+[11:37:41] [ERROR] cache_get_field_content_int - invalid datatype
+[11:37:41] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('1')
+[11:37:41] [ERROR] cache_get_field_content_int - invalid datatype
+[11:37:45] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:37:45] [ERROR] cache_get_field_content_int - invalid datatype
+[11:37:45] [ERROR] cache_get_field_content_int - invalid datatype
+[11:37:45] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('4')
+[11:37:45] [ERROR] cache_get_field_content_int - invalid datatype
+[11:37:49] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[11:37:49] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[11:37:49] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[11:37:49] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[11:37:49] [ERROR] cache_get_field_content_int - invalid datatype
+[11:37:49] [ERROR] cache_get_field_content_int - invalid datatype
+[11:37:49] [ERROR] cache_get_field_content_int - invalid datatype
+[11:37:49] [ERROR] cache_get_field_content_int - invalid datatype
+[11:37:49] [ERROR] cache_get_field_content_int - invalid datatype
+[11:37:49] [ERROR] cache_get_field_content_int - invalid datatype
+[11:37:49] [ERROR] cache_get_field_content_int - invalid datatype
+[11:37:49] [ERROR] cache_get_field_content_int - invalid datatype
+[11:37:49] [ERROR] cache_get_field_content_int - invalid datatype
+[11:37:49] [ERROR] cache_get_field_content_int - invalid datatype
+[11:37:49] [ERROR] cache_get_field_content_int - invalid datatype
+[11:37:49] [ERROR] cache_get_field_content_int - invalid datatype
+[11:37:49] [ERROR] cache_get_field_content_int - invalid datatype
+[11:37:49] [ERROR] cache_get_field_content_int - invalid datatype
+[11:37:49] [ERROR] cache_get_field_content_int - invalid datatype
+[11:37:49] [ERROR] cache_get_field_content_int - invalid datatype
+[11:37:49] [ERROR] cache_get_field_content_int - invalid datatype
+[11:37:49] [ERROR] cache_get_field_content_int - invalid datatype
+[11:38:23] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:38:23] [ERROR] cache_get_field_content_int - invalid datatype
+[11:38:23] [ERROR] cache_get_field_content_int - invalid datatype
+[11:38:39] [ERROR] cache_get_field_content_int - invalid datatype
+[11:38:48] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:38:48] [ERROR] cache_get_field_content_int - invalid datatype
+[11:38:48] [ERROR] cache_get_field_content_int - invalid datatype
+[11:38:48] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('1')
+[11:38:48] [ERROR] cache_get_field_content_int - invalid datatype
+[11:38:55] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:38:55] [ERROR] cache_get_field_content_int - invalid datatype
+[11:38:55] [ERROR] cache_get_field_content_int - invalid datatype
+[11:38:55] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('3')
+[11:38:55] [ERROR] cache_get_field_content_int - invalid datatype
+[11:38:59] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:38:59] [ERROR] cache_get_field_content_int - invalid datatype
+[11:38:59] [ERROR] cache_get_field_content_int - invalid datatype
+[11:38:59] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('8')
+[11:38:59] [ERROR] cache_get_field_content_int - invalid datatype
+[11:39:08] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:39:08] [ERROR] cache_get_field_content_int - invalid datatype
+[11:39:08] [ERROR] cache_get_field_content_int - invalid datatype
+[11:39:08] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('4')
+[11:39:08] [ERROR] cache_get_field_content_int - invalid datatype
+[11:39:23] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:39:23] [ERROR] cache_get_field_content_int - invalid datatype
+[11:39:23] [ERROR] cache_get_field_content_int - invalid datatype
+[11:39:23] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('2')
+[11:39:23] [ERROR] cache_get_field_content_int - invalid datatype
+[11:39:43] [ERROR] cache_get_field_content_int - invalid datatype
+[11:39:56] [ERROR] cache_get_field_content_int - invalid datatype
+[11:40:18] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:40:18] [ERROR] cache_get_field_content_int - invalid datatype
+[11:40:18] [ERROR] cache_get_field_content_int - invalid datatype
+[11:40:18] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('2')
+[11:40:18] [ERROR] cache_get_field_content_int - invalid datatype
+[11:40:53] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:40:53] [ERROR] cache_get_field_content_int - invalid datatype
+[11:40:53] [ERROR] cache_get_field_content_int - invalid datatype
+[11:40:53] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('3')
+[11:40:53] [ERROR] cache_get_field_content_int - invalid datatype
+[11:40:59] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:40:59] [ERROR] cache_get_field_content_int - invalid datatype
+[11:40:59] [ERROR] cache_get_field_content_int - invalid datatype
+[11:40:59] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('6')
+[11:40:59] [ERROR] cache_get_field_content_int - invalid datatype
+[11:41:11] [WARNING] CMySQLResult::GetRowDataByName - field not found ("toolkit")
+[11:41:11] [ERROR] cache_get_field_content_int - invalid datatype
+[11:41:11] [ERROR] cache_get_field_content_int - invalid datatype
+[11:41:11] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('7')
+[11:41:11] [ERROR] cache_get_field_content_int - invalid datatype
+[11:41:56] [ERROR] cache_get_field_content_int - invalid datatype
+[11:41:56] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('9')
+[11:41:56] [ERROR] cache_get_field_content_int - invalid datatype
+[11:42:05] [ERROR] cache_get_field_content_int - invalid datatype
+[11:42:05] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('10')
+[11:42:05] [ERROR] cache_get_field_content_int - invalid datatype
+[11:42:49] [ERROR] cache_get_field_content_int - invalid datatype
+[11:42:49] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('5')
+[11:42:49] [ERROR] cache_get_field_content_int - invalid datatype
+[11:43:16] [ERROR] cache_get_field_content_int - invalid datatype
+[11:43:16] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('6')
+[11:43:16] [ERROR] cache_get_field_content_int - invalid datatype
+[11:43:25] [ERROR] cache_get_field_content_int - invalid datatype
+[11:43:25] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('7')
+[11:43:25] [ERROR] cache_get_field_content_int - invalid datatype
+[11:45:04] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[11:45:04] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[11:45:04] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[11:45:04] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[11:45:04] [ERROR] cache_get_field_content_int - invalid datatype
+[11:45:04] [ERROR] cache_get_field_content_int - invalid datatype
+[11:45:04] [ERROR] cache_get_field_content_int - invalid datatype
+[11:45:04] [ERROR] cache_get_field_content_int - invalid datatype
+[11:45:04] [ERROR] cache_get_field_content_int - invalid datatype
+[11:45:04] [ERROR] cache_get_field_content_int - invalid datatype
+[11:45:04] [ERROR] cache_get_field_content_int - invalid datatype
+[11:45:04] [ERROR] cache_get_field_content_int - invalid datatype
+[11:45:04] [ERROR] cache_get_field_content_int - invalid datatype
+[11:45:04] [ERROR] cache_get_field_content_int - invalid datatype
+[11:45:04] [ERROR] cache_get_field_content_int - invalid datatype
+[11:45:04] [ERROR] cache_get_field_content_int - invalid datatype
+[11:45:04] [ERROR] cache_get_field_content_int - invalid datatype
+[11:45:04] [ERROR] cache_get_field_content_int - invalid datatype
+[11:45:04] [ERROR] cache_get_field_content_int - invalid datatype
+[11:45:04] [ERROR] cache_get_field_content_int - invalid datatype
+[11:45:04] [ERROR] cache_get_field_content_int - invalid datatype
+[11:45:04] [ERROR] cache_get_field_content_int - invalid datatype
+[11:45:38] [ERROR] cache_get_field_content_int - invalid datatype
+[11:45:38] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('1')
+[11:45:38] [ERROR] cache_get_field_content_int - invalid datatype
+[11:45:48] [ERROR] cache_get_field_content_int - invalid datatype
+[11:45:48] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('2')
+[11:45:48] [ERROR] cache_get_field_content_int - invalid datatype
+[11:45:52] [ERROR] cache_get_field_content_int - invalid datatype
+[11:45:52] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('6')
+[11:45:52] [ERROR] cache_get_field_content_int - invalid datatype
+[11:46:16] [ERROR] cache_get_field_content_int - invalid datatype
+[11:46:29] [ERROR] cache_get_field_content_int - invalid datatype
+[11:46:29] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('3')
+[11:46:29] [ERROR] cache_get_field_content_int - invalid datatype
+[11:46:30] [ERROR] cache_get_field_content_int - invalid datatype
+[11:46:30] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('4')
+[11:46:30] [ERROR] cache_get_field_content_int - invalid datatype
+[11:47:01] [ERROR] cache_get_field_content_int - invalid datatype
+[11:47:01] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('5')
+[11:47:01] [ERROR] cache_get_field_content_int - invalid datatype
+[11:47:11] [ERROR] cache_get_field_content_int - invalid datatype
+[11:48:25] [ERROR] cache_get_field_content_int - invalid datatype
+[11:49:02] [ERROR] cache_get_field_content_int - invalid datatype
+[11:49:02] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('7')
+[11:49:02] [ERROR] cache_get_field_content_int - invalid datatype
+[11:49:35] [ERROR] cache_get_field_content_int - invalid datatype
+[11:49:35] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('2')
+[11:49:35] [ERROR] cache_get_field_content_int - invalid datatype
+[11:50:30] [ERROR] cache_get_field_content_int - invalid datatype
+[11:50:30] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('3')
+[11:50:30] [ERROR] cache_get_field_content_int - invalid datatype
+[11:50:47] [ERROR] cache_get_field_content_int - invalid datatype
+[11:50:51] [ERROR] cache_get_field_content_int - invalid datatype
+[11:50:51] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('1')
+[11:50:51] [ERROR] cache_get_field_content_int - invalid datatype
+[11:51:01] [ERROR] cache_get_field_content_int - invalid datatype
+[11:51:31] [ERROR] cache_get_field_content_int - invalid datatype
+[11:52:48] [ERROR] cache_get_field_content_int - invalid datatype
+[11:52:49] [ERROR] cache_get_field_content_int - invalid datatype
+[11:53:02] [ERROR] cache_get_field_content_int - invalid datatype
+[11:53:02] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('1')
+[11:53:02] [ERROR] cache_get_field_content_int - invalid datatype
+[11:53:52] [ERROR] cache_get_field_content_int - invalid datatype
+[11:53:52] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('4')
+[11:53:52] [ERROR] cache_get_field_content_int - invalid datatype
+[11:56:27] [ERROR] cache_get_field_content_int - invalid datatype
+[11:56:27] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('7')
+[11:56:27] [ERROR] cache_get_field_content_int - invalid datatype
+[11:58:19] [ERROR] cache_get_field_content_int - invalid datatype
+[11:58:19] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('8')
+[11:58:19] [ERROR] cache_get_field_content_int - invalid datatype
+[11:59:02] [ERROR] cache_get_field_content_int - invalid datatype
+[11:59:02] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('3')
+[11:59:02] [ERROR] cache_get_field_content_int - invalid datatype
+[12:00:02] [ERROR] cache_get_field_content_int - invalid datatype
+[12:00:02] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('1')
+[12:00:02] [ERROR] cache_get_field_content_int - invalid datatype
+[12:00:08] [ERROR] cache_get_field_content_int - invalid datatype
+[12:00:08] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('3')
+[12:00:08] [ERROR] cache_get_field_content_int - invalid datatype
+[12:00:37] [ERROR] cache_get_field_content_int - invalid datatype
+[12:00:45] [ERROR] cache_get_field_content_int - invalid datatype
+[12:00:45] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('6')
+[12:00:45] [ERROR] cache_get_field_content_int - invalid datatype
+[12:01:17] [ERROR] cache_get_field_content_int - invalid datatype
+[12:03:06] [ERROR] cache_get_field_content_int - invalid datatype
+[12:03:06] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('1')
+[12:03:06] [ERROR] cache_get_field_content_int - invalid datatype
+[12:03:12] [ERROR] cache_get_field_content_int - invalid datatype
+[12:03:12] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('5')
+[12:03:12] [ERROR] cache_get_field_content_int - invalid datatype
+[12:03:20] [ERROR] cache_get_field_content_int - invalid datatype
+[12:03:20] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('9')
+[12:03:20] [ERROR] cache_get_field_content_int - invalid datatype
+[12:03:26] [ERROR] cache_get_field_content_int - invalid datatype
+[12:03:26] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('10')
+[12:03:26] [ERROR] cache_get_field_content_int - invalid datatype
+[12:05:01] [ERROR] cache_get_field_content_int - invalid datatype
+[12:05:01] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('7')
+[12:05:01] [ERROR] cache_get_field_content_int - invalid datatype
+[12:06:06] [ERROR] cache_get_field_content_int - invalid datatype
+[12:06:06] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('10')
+[12:06:06] [ERROR] cache_get_field_content_int - invalid datatype
+[12:07:52] [ERROR] cache_get_field_content_int - invalid datatype
+[12:07:52] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('6')
+[12:07:52] [ERROR] cache_get_field_content_int - invalid datatype
+[12:07:54] [ERROR] cache_get_field_content_int - invalid datatype
+[12:07:54] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('3')
+[12:07:54] [ERROR] cache_get_field_content_int - invalid datatype
+[12:07:56] [ERROR] cache_get_field_content_int - invalid datatype
+[12:07:56] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('8')
+[12:07:56] [ERROR] cache_get_field_content_int - invalid datatype
+[12:11:20] [ERROR] cache_get_field_content_int - invalid datatype
+[12:11:20] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('11')
+[12:11:20] [ERROR] cache_get_field_content_int - invalid datatype
+[12:12:42] [ERROR] cache_get_field_content_int - invalid datatype
+[12:13:42] [ERROR] cache_get_field_content_int - invalid datatype
+[12:13:42] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('3')
+[12:13:42] [ERROR] cache_get_field_content_int - invalid datatype
+[12:14:02] [ERROR] cache_get_field_content_int - invalid datatype
+[12:14:02] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('4')
+[12:14:02] [ERROR] cache_get_field_content_int - invalid datatype
+[12:14:05] [ERROR] cache_get_field_content_int - invalid datatype
+[12:15:19] [ERROR] cache_get_field_content_int - invalid datatype
+[12:15:34] [ERROR] cache_get_field_content_int - invalid datatype
+[12:15:34] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('12')
+[12:15:34] [ERROR] cache_get_field_content_int - invalid datatype
+[12:16:09] [ERROR] cache_get_field_content_int - invalid datatype
+[12:16:09] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('6')
+[12:16:09] [ERROR] cache_get_field_content_int - invalid datatype
+[12:16:09] [ERROR] cache_get_field_content_int - invalid datatype
+[12:16:09] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('13')
+[12:16:09] [ERROR] cache_get_field_content_int - invalid datatype
+[12:16:15] [ERROR] cache_get_field_content_int - invalid datatype
+[12:16:15] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('14')
+[12:16:15] [ERROR] cache_get_field_content_int - invalid datatype
+[12:18:31] [ERROR] cache_get_field_content_int - invalid datatype
+[12:19:08] [ERROR] cache_get_field_content_int - invalid datatype
+[12:19:08] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('3')
+[12:19:08] [ERROR] cache_get_field_content_int - invalid datatype
+[12:19:17] [ERROR] cache_get_field_content_int - invalid datatype
+[12:19:17] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('6')
+[12:19:17] [ERROR] cache_get_field_content_int - invalid datatype
+[12:19:32] [ERROR] cache_get_field_content_int - invalid datatype
+[12:19:32] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('15')
+[12:19:32] [ERROR] cache_get_field_content_int - invalid datatype
+[12:19:48] [ERROR] cache_get_field_content_int - invalid datatype
+[12:19:48] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('16')
+[12:19:48] [ERROR] cache_get_field_content_int - invalid datatype
+[12:20:01] [ERROR] cache_get_field_content_int - invalid datatype
+[12:20:12] [ERROR] cache_get_field_content_int - invalid datatype
+[12:20:28] [ERROR] cache_get_field_content_int - invalid datatype
+[12:20:37] [ERROR] cache_get_field_content_int - invalid datatype
+[12:20:37] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('9')
+[12:20:37] [ERROR] cache_get_field_content_int - invalid datatype
+[12:20:37] [ERROR] cache_get_field_content_int - invalid datatype
+[12:20:37] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('14')
+[12:20:37] [ERROR] cache_get_field_content_int - invalid datatype
+[12:20:37] [WARNING] CMySQLConnection::Disconnect - no connection available
+[12:20:49] [WARNING] CMySQLHandle::Create - connection already exists
+[12:20:49] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[12:20:49] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[12:20:49] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[12:20:49] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[12:20:49] [ERROR] cache_get_field_content_int - invalid datatype
+[12:20:49] [ERROR] cache_get_field_content_int - invalid datatype
+[12:20:49] [ERROR] cache_get_field_content_int - invalid datatype
+[12:20:49] [ERROR] cache_get_field_content_int - invalid datatype
+[12:20:49] [ERROR] cache_get_field_content_int - invalid datatype
+[12:20:49] [ERROR] cache_get_field_content_int - invalid datatype
+[12:20:49] [ERROR] cache_get_field_content_int - invalid datatype
+[12:20:49] [ERROR] cache_get_field_content_int - invalid datatype
+[12:20:49] [ERROR] cache_get_field_content_int - invalid datatype
+[12:20:49] [ERROR] cache_get_field_content_int - invalid datatype
+[12:20:49] [ERROR] cache_get_field_content_int - invalid datatype
+[12:20:49] [ERROR] cache_get_field_content_int - invalid datatype
+[12:20:49] [ERROR] cache_get_field_content_int - invalid datatype
+[12:20:49] [ERROR] cache_get_field_content_int - invalid datatype
+[12:20:49] [ERROR] cache_get_field_content_int - invalid datatype
+[12:20:49] [ERROR] cache_get_field_content_int - invalid datatype
+[12:20:49] [ERROR] cache_get_field_content_int - invalid datatype
+[12:20:49] [ERROR] cache_get_field_content_int - invalid datatype
+[12:21:24] [ERROR] cache_get_field_content_int - invalid datatype
+[12:21:24] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('2')
+[12:21:24] [ERROR] cache_get_field_content_int - invalid datatype
+[12:21:27] [ERROR] cache_get_field_content_int - invalid datatype
+[12:21:48] [ERROR] cache_get_field_content_int - invalid datatype
+[12:21:48] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('6')
+[12:21:48] [ERROR] cache_get_field_content_int - invalid datatype
+[12:21:48] [ERROR] cache_get_field_content_int - invalid datatype
+[12:21:48] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('7')
+[12:21:48] [ERROR] cache_get_field_content_int - invalid datatype
+[12:21:57] [ERROR] cache_get_field_content_int - invalid datatype
+[12:21:57] [ERROR] cache_get_field_content_int - invalid datatype
+[12:21:57] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('3')
+[12:21:57] [ERROR] cache_get_field_content_int - invalid datatype
+[12:22:04] [ERROR] cache_get_field_content_int - invalid datatype
+[12:22:04] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('7')
+[12:22:04] [ERROR] cache_get_field_content_int - invalid datatype
+[12:22:08] [ERROR] cache_get_field_content_int - invalid datatype
+[12:22:08] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('1')
+[12:22:08] [ERROR] cache_get_field_content_int - invalid datatype
+[12:22:12] [ERROR] cache_get_field_content_int - invalid datatype
+[12:22:12] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('2')
+[12:22:12] [ERROR] cache_get_field_content_int - invalid datatype
+[12:22:30] [ERROR] cache_get_field_content_int - invalid datatype
+[12:22:30] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('4')
+[12:22:30] [ERROR] cache_get_field_content_int - invalid datatype
+[12:23:14] [ERROR] cache_get_field_content_int - invalid datatype
+[12:23:14] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('5')
+[12:23:14] [ERROR] cache_get_field_content_int - invalid datatype
+[12:23:37] [ERROR] cache_get_field_content_int - invalid datatype
+[12:23:37] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('8')
+[12:23:37] [ERROR] cache_get_field_content_int - invalid datatype
+[12:23:41] [ERROR] cache_get_field_content_int - invalid datatype
+[12:23:41] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('1')
+[12:23:41] [ERROR] cache_get_field_content_int - invalid datatype
+[12:24:00] [ERROR] cache_get_field_content_int - invalid datatype
+[12:24:01] [ERROR] cache_get_field_content_int - invalid datatype
+[12:24:18] [ERROR] cache_get_field_content_int - invalid datatype
+[12:24:18] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('9')
+[12:24:18] [ERROR] cache_get_field_content_int - invalid datatype
+[12:25:58] [ERROR] cache_get_field_content_int - invalid datatype
+[12:25:58] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('10')
+[12:25:58] [ERROR] cache_get_field_content_int - invalid datatype
+[12:26:03] [ERROR] cache_get_field_content_int - invalid datatype
+[12:26:03] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('14')
+[12:26:03] [ERROR] cache_get_field_content_int - invalid datatype
+[12:26:41] [ERROR] cache_get_field_content_int - invalid datatype
+[12:26:41] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('4')
+[12:26:41] [ERROR] cache_get_field_content_int - invalid datatype
+[12:26:45] [ERROR] cache_get_field_content_int - invalid datatype
+[12:26:54] [ERROR] cache_delete - invalid connection handle (id: 1)
+[12:27:12] [ERROR] cache_delete - invalid connection handle (id: 1)
+[12:27:16] [ERROR] cache_get_field_content_int - invalid datatype
+[12:28:06] [ERROR] cache_get_field_content_int - invalid datatype
+[12:28:06] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('6')
+[12:28:06] [ERROR] cache_get_field_content_int - invalid datatype
+[12:29:13] [ERROR] cache_get_field_content_int - invalid datatype
+[12:29:17] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[12:29:17] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[12:29:17] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[12:29:17] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[12:29:17] [ERROR] cache_get_field_content_int - invalid datatype
+[12:29:17] [ERROR] cache_get_field_content_int - invalid datatype
+[12:29:17] [ERROR] cache_get_field_content_int - invalid datatype
+[12:29:17] [ERROR] cache_get_field_content_int - invalid datatype
+[12:29:17] [ERROR] cache_get_field_content_int - invalid datatype
+[12:29:17] [ERROR] cache_get_field_content_int - invalid datatype
+[12:29:17] [ERROR] cache_get_field_content_int - invalid datatype
+[12:29:17] [ERROR] cache_get_field_content_int - invalid datatype
+[12:29:17] [ERROR] cache_get_field_content_int - invalid datatype
+[12:29:17] [ERROR] cache_get_field_content_int - invalid datatype
+[12:29:17] [ERROR] cache_get_field_content_int - invalid datatype
+[12:29:17] [ERROR] cache_get_field_content_int - invalid datatype
+[12:29:17] [ERROR] cache_get_field_content_int - invalid datatype
+[12:29:17] [ERROR] cache_get_field_content_int - invalid datatype
+[12:29:17] [ERROR] cache_get_field_content_int - invalid datatype
+[12:29:17] [ERROR] cache_get_field_content_int - invalid datatype
+[12:29:17] [ERROR] cache_get_field_content_int - invalid datatype
+[12:29:17] [ERROR] cache_get_field_content_int - invalid datatype
+[12:30:07] [ERROR] cache_get_field_content_int - invalid datatype
+[12:30:15] [ERROR] cache_get_field_content_int - invalid datatype
+[12:30:15] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('1')
+[12:30:15] [ERROR] cache_get_field_content_int - invalid datatype
+[12:30:25] [ERROR] cache_get_field_content_int - invalid datatype
+[12:30:25] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('3')
+[12:30:25] [ERROR] cache_get_field_content_int - invalid datatype
+[12:30:42] [ERROR] cache_get_field_content_int - invalid datatype
+[12:30:42] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('8')
+[12:30:42] [ERROR] cache_get_field_content_int - invalid datatype
+[12:30:43] [ERROR] cache_get_field_content_int - invalid datatype
+[12:30:43] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('4')
+[12:30:43] [ERROR] cache_get_field_content_int - invalid datatype
+[12:30:51] [ERROR] cache_get_field_content_int - invalid datatype
+[12:30:59] [ERROR] cache_get_field_content_int - invalid datatype
+[12:30:59] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('8')
+[12:30:59] [ERROR] cache_get_field_content_int - invalid datatype
+[12:31:12] [ERROR] cache_get_field_content_int - invalid datatype
+[12:31:12] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('2')
+[12:31:12] [ERROR] cache_get_field_content_int - invalid datatype
+[12:31:17] [ERROR] cache_get_field_content_int - invalid datatype
+[12:31:17] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('8')
+[12:31:17] [ERROR] cache_get_field_content_int - invalid datatype
+[12:31:42] [ERROR] cache_get_field_content_int - invalid datatype
+[12:31:42] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('6')
+[12:31:42] [ERROR] cache_get_field_content_int - invalid datatype
+[12:31:43] [ERROR] cache_get_field_content_int - invalid datatype
+[12:31:43] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('7')
+[12:31:43] [ERROR] cache_get_field_content_int - invalid datatype
+[12:31:58] [ERROR] cache_get_field_content_int - invalid datatype
+[12:31:58] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('9')
+[12:31:58] [ERROR] cache_get_field_content_int - invalid datatype
+[12:32:01] [ERROR] cache_get_field_content_int - invalid datatype
+[12:32:27] [ERROR] cache_get_field_content_int - invalid datatype
+[12:32:27] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('2')
+[12:32:27] [ERROR] cache_get_field_content_int - invalid datatype
+[12:32:36] [ERROR] cache_get_field_content_int - invalid datatype
+[12:32:39] [ERROR] cache_get_field_content_int - invalid datatype
+[12:32:39] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('5')
+[12:32:39] [ERROR] cache_get_field_content_int - invalid datatype
+[12:32:48] [ERROR] cache_get_field_content_int - invalid datatype
+[12:32:48] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('10')
+[12:32:48] [ERROR] cache_get_field_content_int - invalid datatype
+[12:34:39] [ERROR] cache_get_field_content_int - invalid datatype
+[12:34:39] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('5')
+[12:34:39] [ERROR] cache_get_field_content_int - invalid datatype
+[12:35:09] [ERROR] cache_get_field_content_int - invalid datatype
+[12:35:09] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('11')
+[12:35:09] [ERROR] cache_get_field_content_int - invalid datatype
+[12:35:10] [ERROR] cache_get_field_content_int - invalid datatype
+[12:35:10] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('9')
+[12:35:10] [ERROR] cache_get_field_content_int - invalid datatype
+[12:35:47] [ERROR] cache_get_field_content_int - invalid datatype
+[12:35:47] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('8')
+[12:35:47] [ERROR] cache_get_field_content_int - invalid datatype
+[12:36:07] [ERROR] cache_get_field_content_int - invalid datatype
+[12:36:37] [ERROR] cache_get_field_content_int - invalid datatype
+[12:36:37] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('5')
+[12:36:37] [ERROR] cache_get_field_content_int - invalid datatype
+[12:36:38] [ERROR] cache_get_field_content_int - invalid datatype
+[12:36:38] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('1')
+[12:36:38] [ERROR] cache_get_field_content_int - invalid datatype
+[12:36:56] [ERROR] cache_get_field_content_int - invalid datatype
+[12:36:56] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('2')
+[12:36:56] [ERROR] cache_get_field_content_int - invalid datatype
+[12:37:36] [ERROR] cache_get_field_content_int - invalid datatype
+[12:37:36] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('12')
+[12:37:36] [ERROR] cache_get_field_content_int - invalid datatype
+[12:37:46] [ERROR] cache_get_field_content_int - invalid datatype
+[12:37:46] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('6')
+[12:37:46] [ERROR] cache_get_field_content_int - invalid datatype
+[12:37:52] [ERROR] cache_get_field_content_int - invalid datatype
+[12:37:52] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('10')
+[12:37:52] [ERROR] cache_get_field_content_int - invalid datatype
+[12:38:00] [ERROR] cache_get_field_content_int - invalid datatype
+[12:38:00] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('13')
+[12:38:00] [ERROR] cache_get_field_content_int - invalid datatype
+[12:38:19] [ERROR] cache_get_field_content_int - invalid datatype
+[12:38:19] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('1')
+[12:38:19] [ERROR] cache_get_field_content_int - invalid datatype
+[12:38:36] [ERROR] cache_get_field_content_int - invalid datatype
+[12:38:36] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('14')
+[12:38:36] [ERROR] cache_get_field_content_int - invalid datatype
+[12:39:35] [ERROR] cache_get_field_content_int - invalid datatype
+[12:39:35] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('1')
+[12:39:35] [ERROR] cache_get_field_content_int - invalid datatype
+[12:42:23] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[12:42:23] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[12:42:23] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[12:42:23] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[12:42:23] [ERROR] cache_get_field_content_int - invalid datatype
+[12:42:23] [ERROR] cache_get_field_content_int - invalid datatype
+[12:42:23] [ERROR] cache_get_field_content_int - invalid datatype
+[12:42:23] [ERROR] cache_get_field_content_int - invalid datatype
+[12:42:23] [ERROR] cache_get_field_content_int - invalid datatype
+[12:42:23] [ERROR] cache_get_field_content_int - invalid datatype
+[12:42:23] [ERROR] cache_get_field_content_int - invalid datatype
+[12:42:23] [ERROR] cache_get_field_content_int - invalid datatype
+[12:42:23] [ERROR] cache_get_field_content_int - invalid datatype
+[12:42:23] [ERROR] cache_get_field_content_int - invalid datatype
+[12:42:23] [ERROR] cache_get_field_content_int - invalid datatype
+[12:42:23] [ERROR] cache_get_field_content_int - invalid datatype
+[12:42:23] [ERROR] cache_get_field_content_int - invalid datatype
+[12:42:23] [ERROR] cache_get_field_content_int - invalid datatype
+[12:42:23] [ERROR] cache_get_field_content_int - invalid datatype
+[12:42:23] [ERROR] cache_get_field_content_int - invalid datatype
+[12:42:23] [ERROR] cache_get_field_content_int - invalid datatype
+[12:42:23] [ERROR] cache_get_field_content_int - invalid datatype
+[12:43:16] [ERROR] cache_get_field_content_int - invalid datatype
+[12:43:17] [ERROR] cache_get_field_content_int - invalid datatype
+[12:43:17] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('1')
+[12:43:17] [ERROR] cache_get_field_content_int - invalid datatype
+[12:43:24] [ERROR] cache_get_field_content_int - invalid datatype
+[12:43:24] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('4')
+[12:43:24] [ERROR] cache_get_field_content_int - invalid datatype
+[12:43:40] [ERROR] cache_get_field_content_int - invalid datatype
+[12:43:40] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('7')
+[12:43:40] [ERROR] cache_get_field_content_int - invalid datatype
+[12:44:02] [ERROR] cache_get_field_content_int - invalid datatype
+[12:44:56] [ERROR] cache_get_field_content_int - invalid datatype
+[12:44:56] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('8')
+[12:44:56] [ERROR] cache_get_field_content_int - invalid datatype
+[12:45:01] [ERROR] cache_get_field_content_int - invalid datatype
+[12:45:01] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('2')
+[12:45:01] [ERROR] cache_get_field_content_int - invalid datatype
+[12:45:28] [ERROR] cache_get_field_content_int - invalid datatype
+[12:45:28] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('5')
+[12:45:28] [ERROR] cache_get_field_content_int - invalid datatype
+[12:45:31] [ERROR] cache_get_field_content_int - invalid datatype
+[12:46:11] [ERROR] cache_get_field_content_int - invalid datatype
+[12:46:11] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('9')
+[12:46:11] [ERROR] cache_get_field_content_int - invalid datatype
+[12:47:07] [ERROR] cache_get_field_content_int - invalid datatype
+[12:47:07] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('6')
+[12:47:07] [ERROR] cache_get_field_content_int - invalid datatype
+[12:47:36] [ERROR] cache_get_field_content_int - invalid datatype
+[12:47:43] [ERROR] cache_get_field_content_int - invalid datatype
+[12:47:43] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('11')
+[12:47:43] [ERROR] cache_get_field_content_int - invalid datatype
+[12:47:45] [ERROR] cache_get_field_content_int - invalid datatype
+[12:47:45] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('10')
+[12:47:45] [ERROR] cache_get_field_content_int - invalid datatype
+[12:50:09] [ERROR] cache_get_field_content_int - invalid datatype
+[12:50:09] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('1')
+[12:50:09] [ERROR] cache_get_field_content_int - invalid datatype
+[12:50:22] [ERROR] cache_get_field_content_int - invalid datatype
+[12:50:34] [ERROR] cache_get_field_content_int - invalid datatype
+[12:51:00] [ERROR] cache_get_field_content_int - invalid datatype
+[12:52:19] [ERROR] cache_get_field_content_int - invalid datatype
+[12:52:19] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('3')
+[12:52:19] [ERROR] cache_get_field_content_int - invalid datatype
+[12:52:57] [ERROR] cache_get_field_content_int - invalid datatype
+[12:52:57] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('11')
+[12:52:57] [ERROR] cache_get_field_content_int - invalid datatype
+[12:53:10] [ERROR] cache_get_field_content_int - invalid datatype
+[12:53:20] [ERROR] cache_get_field_content_int - invalid datatype
+[12:53:20] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('6')
+[12:53:20] [ERROR] cache_get_field_content_int - invalid datatype
+[12:53:57] [ERROR] cache_get_field_content_int - invalid datatype
+[12:55:38] [ERROR] cache_get_field_content_int - invalid datatype
+[12:55:38] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('4')
+[12:55:38] [ERROR] cache_get_field_content_int - invalid datatype
+[12:56:08] [ERROR] cache_get_field_content_int - invalid datatype
+[12:56:47] [ERROR] cache_get_field_content_int - invalid datatype
+[12:57:33] [ERROR] cache_get_field_content_int - invalid datatype
+[12:57:33] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('4')
+[12:57:33] [ERROR] cache_get_field_content_int - invalid datatype
+[12:57:40] [ERROR] cache_get_field_content_int - invalid datatype
+[12:57:40] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('5')
+[12:57:40] [ERROR] cache_get_field_content_int - invalid datatype
+[12:58:50] [ERROR] cache_get_field_content_int - invalid datatype
+[12:58:50] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('3')
+[12:58:50] [ERROR] cache_get_field_content_int - invalid datatype
+[12:59:27] [ERROR] cache_get_field_content_int - invalid datatype
+[12:59:27] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('10')
+[12:59:27] [ERROR] cache_get_field_content_int - invalid datatype
+[12:59:39] [ERROR] cache_get_field_content_int - invalid datatype
+[12:59:39] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('8')
+[12:59:39] [ERROR] cache_get_field_content_int - invalid datatype
+[12:59:45] [ERROR] cache_get_field_content_int - invalid datatype
+[12:59:45] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('12')
+[12:59:45] [ERROR] cache_get_field_content_int - invalid datatype
+[13:00:35] [ERROR] cache_get_field_content_int - invalid datatype
+[13:00:51] [ERROR] cache_get_field_content_int - invalid datatype
+[13:00:51] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('8')
+[13:00:51] [ERROR] cache_get_field_content_int - invalid datatype
+[13:00:55] [ERROR] cache_get_field_content_int - invalid datatype
+[13:02:16] [ERROR] cache_get_field_content_int - invalid datatype
+[13:03:04] [ERROR] cache_get_field_content_int - invalid datatype
+[13:03:04] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('13')
+[13:03:04] [ERROR] cache_get_field_content_int - invalid datatype
+[13:03:26] [ERROR] cache_get_field_content_int - invalid datatype
+[13:03:46] [ERROR] cache_get_field_content_int - invalid datatype
+[13:05:00] [ERROR] cache_get_field_content_int - invalid datatype
+[13:05:00] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('14')
+[13:05:00] [ERROR] cache_get_field_content_int - invalid datatype
+[13:05:57] [ERROR] cache_get_field_content_int - invalid datatype
+[13:05:57] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('13')
+[13:05:57] [ERROR] cache_get_field_content_int - invalid datatype
+[13:08:52] [ERROR] cache_get_field_content_int - invalid datatype
+[13:08:52] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('4')
+[13:08:52] [ERROR] cache_get_field_content_int - invalid datatype
+[13:09:58] [ERROR] cache_get_field_content_int - invalid datatype
+[13:09:58] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('3')
+[13:09:58] [ERROR] cache_get_field_content_int - invalid datatype
+[13:10:57] [ERROR] cache_get_field_content_int - invalid datatype
+[13:10:57] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('5')
+[13:10:57] [ERROR] cache_get_field_content_int - invalid datatype
+[13:11:37] [ERROR] cache_get_field_content_int - invalid datatype
+[13:11:37] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('3')
+[13:11:37] [ERROR] cache_get_field_content_int - invalid datatype
+[13:13:27] [ERROR] cache_get_field_content_int - invalid datatype
+[13:13:27] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('3')
+[13:13:27] [ERROR] cache_get_field_content_int - invalid datatype
+[13:14:26] [ERROR] cache_get_field_content_int - invalid datatype
+[13:14:26] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('3')
+[13:14:26] [ERROR] cache_get_field_content_int - invalid datatype
+[13:15:25] [ERROR] cache_get_field_content_int - invalid datatype
+[13:16:18] [ERROR] cache_get_field_content_int - invalid datatype
+[13:16:18] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('3')
+[13:16:18] [ERROR] cache_get_field_content_int - invalid datatype
+[13:16:44] [ERROR] cache_get_field_content_int - invalid datatype
+[13:16:47] [ERROR] cache_get_field_content_int - invalid datatype
+[13:16:47] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('4')
+[13:16:47] [ERROR] cache_get_field_content_int - invalid datatype
+[13:17:12] [ERROR] cache_get_field_content_int - invalid datatype
+[13:17:12] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('3')
+[13:17:12] [ERROR] cache_get_field_content_int - invalid datatype
+[13:18:01] [ERROR] cache_get_field_content_int - invalid datatype
+[13:18:01] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('10')
+[13:18:01] [ERROR] cache_get_field_content_int - invalid datatype
+[13:19:23] [ERROR] cache_get_field_content_int - invalid datatype
+[13:21:51] [ERROR] cache_get_field_content_int - invalid datatype
+[13:21:51] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('1')
+[13:21:51] [ERROR] cache_get_field_content_int - invalid datatype
+[13:23:42] [ERROR] cache_get_field_content_int - invalid datatype
+[13:23:42] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('3')
+[13:23:42] [ERROR] cache_get_field_content_int - invalid datatype
+[13:23:53] [ERROR] cache_get_field_content_int - invalid datatype
+[13:23:53] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('7')
+[13:23:53] [ERROR] cache_get_field_content_int - invalid datatype
+[13:23:53] [ERROR] cache_get_field_content_int - invalid datatype
+[13:23:53] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('3')
+[13:23:53] [ERROR] cache_get_field_content_int - invalid datatype
+[13:24:29] [ERROR] cache_get_field_content_int - invalid datatype
+[13:24:29] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('10')
+[13:24:29] [ERROR] cache_get_field_content_int - invalid datatype
+[13:24:53] [ERROR] cache_get_field_content_int - invalid datatype
+[13:24:53] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('14')
+[13:24:53] [ERROR] cache_get_field_content_int - invalid datatype
+[13:25:11] [ERROR] cache_get_field_content_int - invalid datatype
+[13:25:11] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('3')
+[13:25:11] [ERROR] cache_get_field_content_int - invalid datatype
+[13:25:31] [ERROR] cache_get_field_content_int - invalid datatype
+[13:25:43] [ERROR] cache_get_field_content_int - invalid datatype
+[13:25:43] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('15')
+[13:25:43] [ERROR] cache_get_field_content_int - invalid datatype
+[13:26:47] [ERROR] cache_get_field_content_int - invalid datatype
+[13:26:47] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('16')
+[13:26:47] [ERROR] cache_get_field_content_int - invalid datatype
+[13:27:09] [ERROR] cache_get_field_content_int - invalid datatype
+[13:27:09] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('4')
+[13:27:09] [ERROR] cache_get_field_content_int - invalid datatype
+[13:27:15] [ERROR] cache_get_field_content_int - invalid datatype
+[13:27:15] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('5')
+[13:27:15] [ERROR] cache_get_field_content_int - invalid datatype
+[13:27:35] [ERROR] cache_get_field_content_int - invalid datatype
+[13:27:35] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('4')
+[13:27:35] [ERROR] cache_get_field_content_int - invalid datatype
+[13:28:03] [ERROR] cache_get_field_content_int - invalid datatype
+[13:28:22] [ERROR] cache_get_field_content_int - invalid datatype
+[13:28:22] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('17')
+[13:28:22] [ERROR] cache_get_field_content_int - invalid datatype
+[13:28:24] [ERROR] cache_get_field_content_int - invalid datatype
+[13:28:24] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('18')
+[13:28:24] [ERROR] cache_get_field_content_int - invalid datatype
+[13:30:16] [ERROR] cache_get_field_content_int - invalid datatype
+[13:30:16] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('4')
+[13:30:16] [ERROR] cache_get_field_content_int - invalid datatype
+[13:30:34] [ERROR] cache_get_field_content_int - invalid datatype
+[13:31:43] [ERROR] cache_get_field_content_int - invalid datatype
+[13:32:18] [ERROR] cache_get_field_content_int - invalid datatype
+[13:32:45] [WARNING] CMySQLConnection::Disconnect - no connection available
+[13:32:58] [WARNING] CMySQLHandle::Create - connection already exists
+[13:32:58] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[13:32:58] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[13:32:58] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[13:32:58] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'shoutcast'
+[13:32:58] [ERROR] cache_get_field_content_int - invalid datatype
+[13:32:58] [ERROR] cache_get_field_content_int - invalid datatype
+[13:32:58] [ERROR] cache_get_field_content_int - invalid datatype
+[13:32:58] [ERROR] cache_get_field_content_int - invalid datatype
+[13:32:58] [ERROR] cache_get_field_content_int - invalid datatype
+[13:32:58] [ERROR] cache_get_field_content_int - invalid datatype
+[13:32:58] [ERROR] cache_get_field_content_int - invalid datatype
+[13:32:58] [ERROR] cache_get_field_content_int - invalid datatype
+[13:32:58] [ERROR] cache_get_field_content_int - invalid datatype
+[13:32:58] [ERROR] cache_get_field_content_int - invalid datatype
+[13:32:58] [ERROR] cache_get_field_content_int - invalid datatype
+[13:32:58] [ERROR] cache_get_field_content_int - invalid datatype
+[13:32:58] [ERROR] cache_get_field_content_int - invalid datatype
+[13:32:58] [ERROR] cache_get_field_content_int - invalid datatype
+[13:32:58] [ERROR] cache_get_field_content_int - invalid datatype
+[13:32:58] [ERROR] cache_get_field_content_int - invalid datatype
+[13:32:58] [ERROR] cache_get_field_content_int - invalid datatype
+[13:32:58] [ERROR] cache_get_field_content_int - invalid datatype
+[13:33:14] [ERROR] cache_get_field_content_int - invalid datatype
+[13:33:14] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('3')
+[13:33:14] [ERROR] cache_get_field_content_int - invalid datatype
+[13:33:27] [ERROR] cache_get_field_content_int - invalid datatype
+[13:33:34] [ERROR] cache_get_field_content_int - invalid datatype
+[13:33:34] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('1')
+[13:33:34] [ERROR] cache_get_field_content_int - invalid datatype
+[13:33:37] [ERROR] cache_get_field_content_int - invalid datatype
+[13:33:37] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('5')
+[13:33:37] [ERROR] cache_get_field_content_int - invalid datatype
+[13:33:39] [ERROR] cache_get_field_content_int - invalid datatype
+[13:33:39] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('4')
+[13:33:39] [ERROR] cache_get_field_content_int - invalid datatype
+[13:33:43] [ERROR] cache_get_field_content_int - invalid datatype
+[13:33:43] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('6')
+[13:33:43] [ERROR] cache_get_field_content_int - invalid datatype
+[13:33:45] [ERROR] cache_get_field_content_int - invalid datatype
+[13:33:45] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('8')
+[13:33:45] [ERROR] cache_get_field_content_int - invalid datatype
+[13:33:47] [ERROR] cache_get_field_content_int - invalid datatype
+[13:33:47] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('10')
+[13:33:47] [ERROR] cache_get_field_content_int - invalid datatype
+[13:33:52] [ERROR] cache_get_field_content_int - invalid datatype
+[13:33:54] [ERROR] cache_get_field_content_int - invalid datatype
+[13:33:54] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('12')
+[13:33:54] [ERROR] cache_get_field_content_int - invalid datatype
+[13:34:01] [ERROR] cache_get_field_content_int - invalid datatype
+[13:34:01] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('2')
+[13:34:01] [ERROR] cache_get_field_content_int - invalid datatype
+[13:34:06] [ERROR] cache_get_field_content_int - invalid datatype
+[13:34:39] [ERROR] cache_get_field_content_int - invalid datatype
+[13:34:39] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('11')
+[13:34:39] [ERROR] cache_get_field_content_int - invalid datatype
+[13:34:44] [ERROR] cache_get_field_content_int - invalid datatype
+[13:34:44] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('7')
+[13:34:44] [ERROR] cache_get_field_content_int - invalid datatype
+[13:34:59] [ERROR] cache_get_field_content_int - invalid datatype
+[13:35:02] [ERROR] cache_get_field_content_int - invalid datatype
+[13:35:43] [ERROR] cache_get_field_content_int - invalid datatype
+[13:35:43] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('13')
+[13:35:43] [ERROR] cache_get_field_content_int - invalid datatype
+[13:40:51] [ERROR] cache_get_field_content_int - invalid datatype
+[13:41:33] [ERROR] cache_get_field_content_int - invalid datatype
+[13:44:51] [ERROR] cache_get_field_content_int - invalid datatype
+[13:46:04] [ERROR] cache_get_field_content_int - invalid datatype
+[13:46:04] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('2')
+[13:46:04] [ERROR] cache_get_field_content_int - invalid datatype
+[13:46:17] [ERROR] cache_get_field_content_int - invalid datatype
+[13:46:17] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('15')
+[13:46:17] [ERROR] cache_get_field_content_int - invalid datatype
+[13:46:51] [ERROR] cache_get_field_content_int - invalid datatype
+[13:46:57] [ERROR] mysql_format - no value for specifier "%i" available
+[13:46:57] [ERROR] CMySQLQuery::Execute[] - (error #1064) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[13:47:07] [ERROR] cache_get_field_content_int - invalid datatype
+[13:47:07] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('14')
+[13:47:07] [ERROR] cache_get_field_content_int - invalid datatype
+[13:47:20] [ERROR] cache_get_field_content_int - invalid datatype
+[13:47:20] [ERROR] CMySQLResult::GetRowDataByName() - invalid row index ('2')
+[13:47:20] [ERROR] cache_get_field_content_int - invalid datatype
+[13:47:43] [ERROR] cache_delete - invalid connection handle (id: 1)
+[13:47:46] [ERROR] cache_get_field_content_int - invalid datatype
+[13:47:52] [ERROR] cache_get_field_content_int - invalid datatype
