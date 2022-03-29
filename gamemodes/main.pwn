@@ -11,13 +11,12 @@ OLD SCRIPTER: 									JECK
 OLD SERVERNAME                                  CITY OF MATIRIK
 
 NOTES:
-	
+	Vehicle DealerShip (50k - 500k)
+	Job Salary (Set to 300-500)
+
+	Added Farmer Job
 coordinates ng ibang Doors naayos kona , bukas ko ayusin ung sa bank rob at createtextdraw
 PD interiors Need bawasan ung mga Vehicle sa PD
-
-
-Added: Purge System
-Changed the animation of injured
 
 */
 
@@ -30,7 +29,6 @@ Changed the animation of injured
 
 #include <a_http>
 #include <a_mysql>
-// /#include <nex-ac>
 #include <foreach>
 #include <sscanf2>
 #include <streamer>
@@ -166,7 +164,6 @@ Changed the animation of injured
 #define MAX_SPLIT_LENGTH            70
 // ---------------------------------------
 #define MAX_REPORTS         		50
-#define MAX_NEWBIES         		50
 #define MAX_HOUSES          		1500
 #define MAX_CCTVS 					100
 #define MAX_CCTVMENUS 				10  // This number should be MAX_CCTVS divided by 10
@@ -263,165 +260,13 @@ Changed the animation of injured
 #define COLOR_SYSTEM_PM 0x66CC00AA	// LIGHT GREEN
 #define COLOR_SYSTEM_PW 0xFFFF33AA	// YELLOW
 
-/*
-// AC System
-#define AC_TABLE_SETTINGS "anticheat_settings" // Name of the table in the database with anti-cheat settings
-#define AC_TABLE_FIELD_CODE "ac_code" // Name of the field with the anti-cheat code in the table
-#define AC_TABLE_FIELD_TRIGGER "ac_code_trigger_type" // Name of the field with the value of the anti-cheat code trigger in the table
-#define AC_MAX_CODES 53 // The number of anti-cheat codes (currently there are 53)
-#define AC_MAX_CODE_LENGTH (3 + 1) // Maximum Characters in the anti-cheat "code" (001/002/003, etc.)
-#define AC_MAX_CODE_NAME_LENGTH (33 + 1) // Maximum Characters in the full name of the cheat, for which any code is responsible
-
-#define AC_MAX_TRIGGER_TYPES 3 // The number of anti-cheat trigger (punishment) types. As you add types of triggers (punishments), increase this value.
-#define AC_MAX_TRIGGER_TYPE_NAME_LENGTH (8 + 1) // Maximum Characters in the name of the anti-cheat trigger (punishment) type
-
-#define AC_GLOBAL_TRIGGER_TYPE_PLAYER 0
-#define AC_GLOBAL_TRIGGER_TYPE_IP 1
-
-// Types of triggers are declared by macros to make it easier to navigate in OnCheatDetected.
-#define AC_CODE_TRIGGER_TYPE_DISABLED 0 // AC_CODE_TRIGGER_TYPE_DISABLED - Punishment type: Disabled
-#define AC_CODE_TRIGGER_TYPE_WARNING 1 // AC_CODE_TRIGGER_TYPE_WARNING - Punishment type: Warning
-#define AC_CODE_TRIGGER_TYPE_KICK 2 // AC_CODE_TRIGGER_TYPE_KICK - Punishment type: Kick
-
-#define AC_TRIGGER_ANTIFLOOD_TIME 20 // Time for anti-flood triggers (in seconds)
-#define AC_MAX_CODES_ON_PAGE 15 // Maximum number of items on the anti-cheat settings page
-#define AC_DIALOG_NEXT_PAGE_TEXT ">>> Next page" // Text of the button that will display the next page of the list
-#define AC_DIALOG_PREVIOUS_PAGE_TEXT "<<< Previous page" // Text of the button that will display the previous page of the list
-
-
-new AC_CODE[AC_MAX_CODES][AC_MAX_CODE_LENGTH] =
-{
-    "000",
-    "001",
-    "002",
-    "003",
-    "004",
-    "005",
-    "006",
-    "007",
-    "008",
-    "009",
-    "010",
-    "011",
-    "012",
-    "013",
-    "014",
-    "015",
-    "016",
-    "017",
-    "018",
-    "019",
-    "020",
-    "021",
-    "022",
-    "023",
-    "024",
-    "025",
-    "026",
-    "027",
-    "028",
-    "029",
-    "030",
-    "031",
-    "032",
-    "033",
-    "034",
-    "035",
-    "036",
-    "037",
-    "038",
-    "039",
-    "040",
-    "041",
-    "042",
-    "043",
-    "044",
-    "045",
-    "046",
-    "047",
-    "048",
-    "049",
-    "050",
-    "051",
-    "052"
-};
-
-new AC_CODE_NAME[AC_MAX_CODES][AC_MAX_CODE_NAME_LENGTH] =
-{
-    {"AirBreak (onfoot)"},
-    {"AirBreak (in vehicle)"},
-    {"Teleport (onfoot)"},
-    {"Teleport (in vehicle)"},
-    {"Teleport (into/between vehicles)"},
-    {"Teleport (vehicle to player)"},
-    {"Teleport (pickups)"},
-    {"FlyHack (onfoot)"},
-    {"FlyHack (in vehicle)"},
-    {"SpeedHack (onfoot)"},
-    {"SpeedHack (in vehicle)"},
-    {"Health hack (in vehicle)"},
-    {"Health hack (onfoot)"},
-    {"Armour hack"},
-    {"Money hack"},
-    {"Weapon hack"},
-    {"Ammo hack (add)"},
-    {"Ammo hack (infinite)"},
-    {"Special actions hack"},
-    {"GodMode from bullets (onfoot)"},
-    {"GodMode from bullets (in vehicle)"},
-    {"Invisible hack"},
-    {"Lagcomp-spoof"},
-    {"Tuning hack"},
-    {"Parkour mod"},
-    {"Quick turn"},
-    {"Rapid fire"},
-    {"FakeSpawn"},
-    {"FakeKill"},
-    {"Pro Aim"},
-    {"CJ run"},
-    {"CarShot"},
-    {"CarJack"},
-    {"UnFreeze"},
-    {"AFK Ghost"},
-    {"Full Aiming"},
-    {"Fake NPC"},
-    {"Reconnect"},
-    {"High ping"},
-    {"Dialog hack"},
-    {"Sandbox"},
-    {"Invalid version"},
-    {"Rcon hack"},
-    {"Tuning crasher"},
-    {"Invalid seat crasher"},
-    {"Dialog crasher"},
-    {"Attached object crasher"},
-    {"Weapon Crasher"},
-    {"Connects to one slot"},
-    {"Flood callback functions"},
-    {"Flood change seat"},
-    {"DDos"},
-    {"NOP's"}
-};
-
-new AC_TRIGGER_TYPE_NAME[AC_MAX_TRIGGER_TYPES][AC_MAX_TRIGGER_TYPE_NAME_LENGTH] =
-{
-    {"Disabled"},
-    {"Warning"},
-    {"Kick"}
-};
-
-new
-    AC_CODE_TRIGGER_TYPE[AC_MAX_CODES],
-    AC_CODE_TRIGGERED_COUNT[AC_MAX_CODES] = {0, ...};
-
-new
-    pAntiCheatLastCodeTriggerTime[MAX_PLAYERS][AC_MAX_CODES],
-    pAntiCheatSettingsPage[MAX_PLAYERS char],
-    pAntiCheatSettingsMenuListData[MAX_PLAYERS][AC_MAX_CODES_ON_PAGE],
-    pAntiCheatSettingsEditCodeId[MAX_PLAYERS];
-*/
 //sampvoice
 new SV_GSTREAM:gstream = SV_NULL; //Admin
+new SV_GSTREAM:emsstream = SV_NULL; //Ems
+new SV_GSTREAM:lspdstream = SV_NULL; //Lspd
+new SV_GSTREAM:mechstream = SV_NULL; //Mech
+new SV_GSTREAM:newsstream = SV_NULL; //News
+new SV_GSTREAM:govstream = SV_NULL; //Gov
 new SV_LSTREAM:lstream[MAX_PLAYERS] = { SV_NULL, ... }; //local
 
 //CameraInfo
@@ -607,7 +452,7 @@ new ActorJob[12];
 //actor
 // new AtorHS[33];
 
-new Text:ServerMessage;
+//new Text:ServerMessage;
 
 // Blood Effects
 new Text:Blood[9];
@@ -640,9 +485,6 @@ new Text:textTelaLogin[15];
 new CarregandoTelaLogin[MAX_PLAYERS];
 new TimerLogin[MAX_PLAYERS];
 new Text:LoadScreenLogin[14];
-
-// Purge System
-new PlayerText:PurgeTD[MAX_PLAYERS][5];
 
 /*
 new Text:loadTela1;
@@ -758,21 +600,6 @@ enum objectData {
 };
 new ObjectData[MAX_MAPOBJECTS][objectData];
 
-// Purge System
-enum purgeenum
-{
-	pExists,
-	pStarted,
-	pTimer,
-	pStartTimer,
-	pEndTimer,
-	pKills[MAX_PLAYERS],
-	pDeath[MAX_PLAYERS],
-	pGovernment[MAX_PLAYER_NAME],
-	
-};
-
-new PurgeInfo[purgeenum];
 
 // Poll System
 new PollVoted[MAX_PLAYERS];
@@ -960,17 +787,7 @@ enum
 	#endif*/
 	DIALOG_CREATEQUIZ,
 	DIALOG_DLOCKER,
-	DIALOG_DGUN,
-
-	// Purge System
-	DIALOG_PURGE,
-	DIALOG_PURGE_STARTTIMER,
-	DIALOG_PURGE_ENDTIMER,
-	DIALOG_PURGE_GOVERNMENT,
-
-	// AC System
-	//ANTICHEAT_SETTINGS,
-	//ANTICHEAT_EDIT_CODE,
+	DIALOG_DGUN
 }
 
 enum
@@ -1058,7 +875,6 @@ enum
 	ILLEGAL_DRUGS,
 	ILLEGAL_MATS
 };
-
 enum
 {
 	FACTION_NONE,
@@ -1707,15 +1523,6 @@ enum rEnum
 	rTime
 };
 
-enum nEnum
-{
-	nExists,
-	nNewbie,
-	nAnsweredBy,
-	nText[128],
-	nTime
-};
-
 enum eventEnum
 {
 	eReady,
@@ -2129,6 +1936,7 @@ new Text:UnknownTD[4];
 // Capture Limit
 new MaxCapCount[2] = {  2 , 1 };
 
+new enabledpurge = 0;
 new enabledOOC;
 new enabledNewbie = 1;
 new enabledVip = 1;
@@ -2165,7 +1973,6 @@ new RobberyInfo[robberyEnum];
 new MarkedPositions[MAX_PLAYERS][3][mEnum];
 new PlayerInfo[MAX_PLAYERS+1][pEnum];
 new ReportInfo[MAX_REPORTS][rEnum];
-new NewbieInfo[MAX_NEWBIES][nEnum];
 new HouseInfo[MAX_HOUSES][hEnum];
 new GarageInfo[MAX_GARAGES][gEnum];
 new BusinessInfo[MAX_BUSINESSES][bEnum];
@@ -3545,8 +3352,7 @@ new const factionTypes[][] =
 	{"News Agency"},
 	{"Government"},
 	{"Hitman agency"},
-	{"Federal police"},
-	{"Mechanic"}
+	{"Federal police"}
 };
 
 new const deployableItems[][] =
@@ -4764,10 +4570,10 @@ LocateMethod(playerid, params[])
 	    SetPlayerCheckpoint(playerid, 1187.2183,-1334.8793,13.5653, 3.0);
 	    SCM(playerid, COLOR_WHITE, "** Checkpoint marked at the location of the all saints.");
 	}
-	else if(!strcmp(params, "dealership", true))
+	else if(!strcmp(params, "car dealership", true))
 	{
 	    PlayerInfo[playerid][pCP] = CHECKPOINT_MISC;
-	    SetPlayerCheckpoint(playerid, 542.0433, -1293.5909, 17.2422, 3.0);
+	    SetPlayerCheckpoint(playerid, 541.9677,-1293.6337,17.2422, 3.0);
 	    SCM(playerid, COLOR_WHITE, "** Checkpoint marked at the location of the dealership.");
 	}
 	else if(!strcmp(params, "boatdealer", true))
@@ -4788,24 +4594,19 @@ LocateMethod(playerid, params[])
 	    SetPlayerCheckpoint(playerid, 1461.7169,-1024.5585,23.8281, 3.0);
 	    SCM(playerid, COLOR_WHITE, "** Checkpoint marked at the location of the bank.");
 	}
-	else if(!strcmp(params, "casino", true))
+/*	else if(!strcmp(params, "casino", true))
 	{
 	    PlayerInfo[playerid][pCP] = CHECKPOINT_MISC;
 	    SetPlayerCheckpoint(playerid, 1310.0944, -1367.9332, 13.5424, 3.0);
 	    SCM(playerid, COLOR_WHITE, "** Checkpoint marked at the location of the casino.");
-	}
+	} */
 	else if(!strcmp(params, "cityhallls", true))
 	{
 	    PlayerInfo[playerid][pCP] = CHECKPOINT_MISC;
 	    SetPlayerCheckpoint(playerid, 1481.1936, -1772.3101, 18.7958, 3.0);
 	    SCM(playerid, COLOR_WHITE, "** Checkpoint marked at the location of the City Hall LS.");
 	}
-	else if(!strcmp(params, "cityhalllv", true))
-	{
-	    PlayerInfo[playerid][pCP] = CHECKPOINT_MISC;
-	    SetPlayerCheckpoint(playerid, 2447.6584, 2376.3123, 12.1635, 3.0);
-	    SCM(playerid, COLOR_WHITE, "** Checkpoint marked at the location of the City Hall LV.");
-	}
+
     else if(!strcmp(params, "matpickup2", true))
 	{
 	    PlayerInfo[playerid][pCP] = CHECKPOINT_MISC;
@@ -5266,7 +5067,7 @@ public OnPlayerAirbreak(playerid)
 
 	    if(PlayerInfo[playerid][pACWarns] < MAX_ANTICHEAT_WARNINGS)
 	    {
-	        SAM(COLOR_YELLOW, "| COM:BOT | WARNING | %s[%i] is possibly using airbreak hacks.", GetRPName(playerid), playerid);
+	        SAM(COLOR_YELLOW, "| TIR:BOT | WARNING | %s[%i] is possibly using airbreak hacks.", GetRPName(playerid), playerid);
 	        Log_Write("log_cheat", "%s (uid: %i) possibly used airbreak.", GetPlayerNameEx(playerid), PlayerInfo[playerid][pID]);
 		}
 		else
@@ -5331,7 +5132,7 @@ public CBugFreezeOver(playerid)
 new AutoMessages[][] =
 {
 	"[TIR:RP:HELP]{FFFFFF}Donation is on sale, grab the chance. Donation is for the server! - {5ee4ff}/info",
-	"[TIR:RP:HELP]{FFFFFF}Type {5ee4ff}/refund{FFFFFF} to have some bonus rewards!",
+	"[TIR:RP:HELP]{FFFFFF}Type {5ee4ff}/refunds{FFFFFF} to have some bonus rewards!",
 	"[TIR:RP:HELP]{FFFFFF}Newbies are not allowed to hold weapons for {5ee4ff}two hours{FFFFFF} to avoid rulebreaks!"
 };
 
@@ -5545,9 +5346,9 @@ GetPlayerIPRange(playerid, ch = '*')
 
 	return string;
 }
-
+/*
 new RandomSPoruke[25][128] = {
-	"~w~ Welcome to Tres Islas  if you are new here use CMD ~b~/refund",
+	"~w~ Welcome to Tres Islas  if you are new here use CMD ~b~/refunds",
 	"~w~ Welcome - you are playing on the Tres Islas server ~w~",
 	"~w~ If you need help, ask for it at~y~/newb /n ~w~",
 	"~w~ Follow all the community rules: ~y~~/rules~",
@@ -5567,7 +5368,7 @@ new RandomSPoruke[25][128] = {
 	"~w~ To report admin, use~y~/report ~w~",
 	"~w~ To see what came on the update use ~y~/update ~w~",
 	"~w~ Last server update ~y~MAR-28-2022 BY: JM ~w~",
-	"~w~ Server version: ~y~TIR:RP v1 ~w~",
+	"~w~ Server version: ~y~TIR:RP v2 ~w~",
 	"~w~ Special thank you to server content creator ~w~",
 	"~w~ Top donator: None ~w~",
 	"~w~ Thank you for your support ~w~",
@@ -5578,7 +5379,7 @@ forward RandomPoruke();
 public RandomPoruke() {
 	TextDrawSetString( ServerMessage , RandomSPoruke[ random( sizeof( RandomSPoruke ) ) ] );
 	return true;
-}
+} */
 
 GetDeathReason(reason)
 {
@@ -6860,99 +6661,6 @@ AddDMReportToQueue(playerid, text[])
 	return 0;
 }
 
-
-AddNewbieToQueue(playerid, text[])
-{
-    for(new i = 0; i < MAX_NEWBIES; i ++)
-	{
-	    if(!NewbieInfo[i][nExists])
-	    {
-	        strcpy(NewbieInfo[i][nText], text, 128);
-
-	        NewbieInfo[i][nExists] = 1;
-			NewbieInfo[i][nNewbie] = playerid;
-			NewbieInfo[i][nAnsweredBy] = INVALID_PLAYER_ID;
-			NewbieInfo[i][nTime] = 5;
-
-			SetTimerEx("NewbieTimer", 60 * 2000, false, "i", i);
-
-			foreach(new p : Player)
-			{
-	    		if(PlayerInfo[p][pHelper] > 0 || PlayerInfo[p][pAdmin])
-	    		{
-			        PlayerInfo[playerid][pLastReport] = gettime();
-					SM(p, COLOR_WHITE, "Type (/anewbie) to answer a Newbie Questions.");
-					SM(p, COLOR_WHITE, "Type (/questions) to check if there is any Questions.");
-			        SM(p, COLOR_YELLOW, "Question from %s (NID: %i): {FF76FB}%s", GetRPName(playerid), i, text);
-			    }
-			}
-			return 1;
-		}
-	}
-	return 0;
-}
-
-SendNewbieAnswer(playerid, newbieid, text[])
-{
-	new string[128], qstring[128];
-	if((!isnull(PlayerInfo[playerid][pCustomTitle]) && strcmp(PlayerInfo[playerid][pCustomTitle], "None", true) != 0 && strcmp(PlayerInfo[playerid][pCustomTitle], "0", true) != 0) && strcmp(PlayerInfo[playerid][pCustomTitle], "NULL", true) != 0) {
-	    new color;
-		if(PlayerInfo[playerid][pCustomTColor] == -1 || PlayerInfo[playerid][pCustomTColor] == -256)
-		{
-	    	color = 0xC8C8C8FF;
-		}
-		else
-		{
-		    color = PlayerInfo[playerid][pCustomTColor];
-		}
-	    format(string, sizeof(string), "{%06x}%s{7DAEFF} %s", color >>> 8, PlayerInfo[playerid][pCustomTitle], GetRPName(playerid));
-
-    } 
-	else if(PlayerInfo[playerid][pAdmin] > 1)
-	{
-	    format(string, sizeof(string), ""SVRCLR"%s{7DAEFF} %s", GetColorARank(playerid), GetRPName(playerid));
-	} else if(PlayerInfo[playerid][pHelper] > 0) {
-	    format(string, sizeof(string), "{33CCFF}%s{7DAEFF} %s", GetHelperRank(playerid), GetRPName(playerid));
-    } else if(PlayerInfo[playerid][pFormerAdmin]) {
-	    format(string, sizeof(string), "Former Admin %s", GetRPName(playerid));
-	} else if(PlayerInfo[playerid][pVIPPackage] > 0) {
-		format(string, sizeof(string), "%s Donator %s", GetDonatorRank(PlayerInfo[playerid][pVIPPackage]), GetRPName(playerid));
-	} else if(PlayerInfo[playerid][pLevel] > 1) {
-	    format(string, sizeof(string), "Level %i Player %s", PlayerInfo[playerid][pLevel], GetRPName(playerid));
-	} else {
-	    format(string, sizeof(string), "Newbie %s", GetRPName(playerid));
-	}
-
-	format(qstring, sizeof(qstring), "%s: %s", GetRPName(NewbieInfo[newbieid][nNewbie]), NewbieInfo[newbieid][nText]);
-
-    foreach(new i : Player)
-	{
-	    if(!PlayerInfo[i][pToggleNewbie])
-	    {
-	        if(strlen(text) > MAX_SPLIT_LENGTH)
-	        {
-	        	SM(i, COLOR_NEWBIE, "[Question] %s", qstring);
-				SM(i, COLOR_NEWBIE, "[Answer] %s: %.*s...", string, MAX_SPLIT_LENGTH, text);
-				SM(i, COLOR_NEWBIE, "[Answer] %s: ...%s", string, text[MAX_SPLIT_LENGTH]);
-			}
-			else
-			{
-				SM(i, COLOR_NEWBIE, "[Question] %s", qstring);
-				SM(i, COLOR_NEWBIE, "[Answer] %s: %s", string, text);
-			}
-		}
-	}
-
-	NewbieInfo[newbieid][nExists] = 0;
-	NewbieInfo[newbieid][nNewbie] = INVALID_PLAYER_ID;
-	NewbieInfo[newbieid][nAnsweredBy] = INVALID_PLAYER_ID;
-
-	if(PlayerInfo[playerid][pAdmin] < 2 && PlayerInfo[playerid][pHelper] == 0)
-	{
- 		PlayerInfo[playerid][pLastNewbie] = gettime();
-	}
-}
-
 AddBan(username[], ip[], from[], reason[], permanent = 0)
 {
 	mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "SELECT id FROM bans WHERE username = '%s' OR ip = '%s'", username, ip);
@@ -7063,22 +6771,26 @@ GivePlayerCash(playerid, amount)
 //refunds
 RefundPlayer(playerid)
 {
-	PlayerInfo[playerid][pRefunded] = 1;
-	GivePlayerCash(playerid, 50000);
-
-	mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "UPDATE users SET refunded = 1, cash = %i WHERE uid = %i",PlayerInfo[playerid][pCash], PlayerInfo[playerid][pID]);
-	mysql_tquery(connectionID, queryBuffer);
-
-	VIPRefund(playerid);
+	if(PlayerInfo[playerid][pLogged])
+	{
+		PlayerInfo[playerid][pRefunded] = 1;
+		mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "UPDATE users SET refunded = 1 WHERE uid = %i", PlayerInfo[playerid][pID]);
+		mysql_tquery(connectionID, queryBuffer);
+		GivePlayerCash(playerid, 50000);
+		VIPRefund(playerid);
+	}
 }
 
 VIPRefund(playerid)
 {
-	PlayerInfo[playerid][pVIPPackage] = 1;
-	PlayerInfo[playerid][pVIPTime] = gettime() + 259200;
-	PlayerInfo[playerid][pVIPCooldown] = 0;
-	mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "UPDATE users SET vippackage = %i, viptime = %i, vipcooldown = 0 WHERE uid = %i", PlayerInfo[playerid][pVIPPackage], PlayerInfo[playerid][pVIPTime], PlayerInfo[playerid][pID]);
-	mysql_tquery(connectionID, queryBuffer);
+	if (PlayerInfo[playerid][pLogged])
+	{
+		PlayerInfo[playerid][pVIPPackage] = 1;
+		PlayerInfo[playerid][pVIPTime] = gettime() + (432000);
+		PlayerInfo[playerid][pVIPCooldown] = 0;
+		mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "UPDATE users SET vippackage = %i, viptime = %i, vipcooldown = 0 WHERE uid = %i", PlayerInfo[playerid][pVIPPackage], PlayerInfo[playerid][pVIPTime], PlayerInfo[playerid][pID]);
+		mysql_tquery(connectionID, queryBuffer);
+	}
 }
 
 FriskPlayer(playerid, targetid)
@@ -7946,17 +7658,6 @@ ShowDialogToPlayer(playerid, dialogid)
 			    ShowPlayerDialog(playerid, DIALOG_CREATEQUIZ, DIALOG_STYLE_INPUT, "Create A Quiz - Enter Answer", "What should the answer be? (displayed once answered)", "Submit", "Back");
 			}
 		}
-		case DIALOG_PURGE:
-		{
-			new str[2048];
-			str = "Options\tDescription\n";
-			format(str, sizeof(str), "%sStart Timer\t%i Seconds\n", str, PurgeInfo[pStartTimer]);
-			format(str, sizeof(str), "%sEnd Timer\t%i Seconds\n", str, PurgeInfo[pEndTimer]);
-			format(str, sizeof(str), "%sGovernment\t%s\n", str, PurgeInfo[pGovernment]);
-			format(str, sizeof(str), "%sStart Purge\n", str);
-			format(str, sizeof(str), "%sEnd Purge\n", str);
-			ShowPlayerDialog(playerid, DIALOG_PURGE, DIALOG_STYLE_TABLIST_HEADERS, "Purge Settings", str, "Next", "Return");
-		}
 	}
 	return 1;
 }
@@ -8143,38 +7844,6 @@ SendPaycheck(playerid)
 	}
 
 	interest = (PlayerInfo[playerid][pBank] / 500) * rate;
-
-	switch(PlayerInfo[playerid][pVIPPackage])
-    {
-        case 0:
-        {
-            if(interest > 0)
-            {
-                interest = 0;
-            }
-        }
-        case 1:
-        {
-            if(interest > 500)
-            {
-                interest = 500;
-            }
-        }
-        case 2:
-        {
-            if(interest > 1000)
-            {
-                interest = 1000;
-            }
-        }
-        case 3:
-        {
-            if(interest > 1500)
-            {
-                interest = 1500;
-            }
-        }
-    }
 
 	total += interest;
 
@@ -9538,7 +9207,7 @@ ShowTurfsOnMap(playerid, enable)
 			    }
 			    else
 			    {
-				    if(PlayerInfo[TurfInfo[i][tCapturer]][pGang] == -1 && (GetFactionType(TurfInfo[i][tCapturer]) == FACTION_POLICE && GetFactionType(TurfInfo[i][tCapturer]) == FACTION_FEDERAL))
+				    if(PlayerInfo[TurfInfo[i][tCapturer]][pGang] == -1 && GetFactionType(TurfInfo[i][tCapturer]) == FACTION_POLICE)
 				        GangZoneFlashForPlayer(playerid, TurfInfo[i][tGangZone], 0x000000AA);
 					else if(PlayerInfo[TurfInfo[i][tCapturer]][pGang] >= 0)
 						GangZoneFlashForPlayer(playerid, TurfInfo[i][tGangZone], (GangInfo[PlayerInfo[TurfInfo[i][tCapturer]][pGang]][gColor] & ~0xff) + 0xAA);
@@ -10074,6 +9743,7 @@ RemoveFaction(factionid)
 	        SM(i, COLOR_LIGHTRED, "The faction you were apart of has been deleted by an administrator.");
             SetPlayerSkin(i, 230);
 
+            Voice_FactionLeave(i,PlayerInfo[i][pFaction]); //BearDev
 	        PlayerInfo[i][pFaction] = -1;
 	        PlayerInfo[i][pFactionRank] = 0;
 	        PlayerInfo[i][pDivision] = -1;
@@ -12394,13 +12064,13 @@ stock TerminateInfo(playerid, reason)
 	{
 		/*if(PlayerInfo[playerid][pHurt])
 		{
-		    SendAdminMessage(COLOR_YELLOW, "| COM:BOT | WARNING | %s possibly left the server while in a gunfight.", GetRPName(playerid));
+		    SendAdminMessage(COLOR_YELLOW, "| TIR:BOT | WARNING | %s possibly left the server while in a gunfight.", GetRPName(playerid));
 			PlayerInfo[playerid][pInjured] = 1;
 		}*/
 	    SavePlayerVariables(playerid);
 	    if(PlayerInfo[playerid][pTazedTime] > 0 || PlayerInfo[playerid][pCuffed] > 0)
 		{
-	    	SendAdminMessage(COLOR_YELLOW, "| COM:BOT | WARNING | %s left the server while tazed or cuffed.", GetRPName(playerid));
+	    	SendAdminMessage(COLOR_YELLOW, "| TIR:BOT | WARNING | %s left the server while tazed or cuffed.", GetRPName(playerid));
         	ResetPlayerWeaponsEx(playerid);
 
 		    mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "UPDATE users SET jailtype = 2, jailtime = 1200, prisonedby = 'Server', prisonreason = 'Logging to avoid arrest' WHERE uid = %i", PlayerInfo[playerid][pID]);
@@ -13674,7 +13344,7 @@ AnticheatCheck(playerid)
 
 		    if(PlayerInfo[playerid][pACWarns] < MAX_ANTICHEAT_WARNINGS)
 		    {
-		        SAM(COLOR_YELLOW, "| COM:BOT | WARNING | %s[%i] is possibly speedhacking, speed: %.1f km/h.", GetRPName(playerid), playerid, GetVehicleSpeed(GetPlayerVehicleID(playerid)));
+		        SAM(COLOR_YELLOW, "| TIR:BOT | WARNING | %s[%i] is possibly speedhacking, speed: %.1f km/h.", GetRPName(playerid), playerid, GetVehicleSpeed(GetPlayerVehicleID(playerid)));
 		        Log_Write("log_cheat", "%s (uid: %i) possibly speedhacked, speed: %.1f km/h", GetPlayerNameEx(playerid), PlayerInfo[playerid][pID], GetVehicleSpeed(GetPlayerVehicleID(playerid)));
 			}
 			else
@@ -13736,7 +13406,7 @@ AnticheatCheck(playerid)
 
 				    if(PlayerInfo[playerid][pACWarns] < MAX_ANTICHEAT_WARNINGS)
 				    {
-				        SAM(COLOR_YELLOW, "| COM:BOT | WARNING | %s[%i] is possibly armor hacking. (old: %.2f, new: %.2f)", GetRPName(playerid), playerid, PlayerInfo[playerid][pArmor], armor);
+				        SAM(COLOR_YELLOW, "| TIR:BOT | WARNING | %s[%i] is possibly armor hacking. (old: %.2f, new: %.2f)", GetRPName(playerid), playerid, PlayerInfo[playerid][pArmor], armor);
 				        Log_Write("log_cheat", "%s (uid: %i) possibly hacked armor. (old: %.2f, new: %.2f)", GetPlayerNameEx(playerid), PlayerInfo[playerid][pID], PlayerInfo[playerid][pArmor], armor);
 					}
 					else
@@ -14766,7 +14436,7 @@ public PlayerSpawn(playerid)
 			for(new i = 0; i < 14; i++) {
 				TextDrawShowForPlayer(playerid, MatirikFooter[i]);
 			}
-			TextDrawShowForPlayer(playerid, ServerMessage );
+			//TextDrawShowForPlayer(playerid, ServerMessage );
 
 			SetPlayerSkin(playerid, PlayerInfo[playerid][pSkin]);
 
@@ -15033,171 +14703,6 @@ ComServ(playerid)
 			SM(playerid, COLOR_GREY2,"** You can not escape. Your community service has been extended to %i", PlayerInfo[playerid][pComserv]);
 		}
 	}
-}
-
-// Purge System
-
-TogglePurge()
-{
-	new url[1028];
-	if(!PurgeInfo[pStarted])
-	{
-		PurgeInfo[pStarted] = 1;
-		SMA(SERVER_COLOR, "(( Administrator %s enabled the Purge. ))", PurgeInfo[pGovernment]);
-		SMA(COLOR_GREEN, "Governor %s has pressed the button and the purge has just begin.", PurgeInfo[pGovernment]);
-		SMA(COLOR_RED, "Governor %s: This is your governor speaking, the purge has just start, stay in your homes.", PurgeInfo[pGovernment]);
-    	SMA(COLOR_RED, "Governor %s: Do everything you want just to survive this time, We want to reduce population!", PurgeInfo[pGovernment]);
-    	SMA(COLOR_RED, "Governor %s: OMASHALA! May God be with you in this fight!", PurgeInfo[pGovernment]);
-
-		format(url, sizeof(url), "http://%s/ThePurge.mp3", SERVER_MUSIC_URL);
-    	foreach(new i : Player)
-		{
-		 	if(!PlayerInfo[i][pToggleMusic])
-			{
-				PlayAudioStreamForPlayer(i, url);
-			}
-		}
-		gWeather = 1;
-		gWorldTime = 1;
-
-		SetWeather(gWeather);
-		SetWorldTime(gWorldTime);
-		SMA(COLOR_GREY2, "Weather changed to 1.");
-		SMA(COLOR_GREY2, "Time of day changed to 1 hours.");
-	}
-	else
-	{
-		PurgeInfo[pExists] = 0;
-	    PurgeInfo[pStarted] = 0;
-	    SMA(SERVER_COLOR, "(( Administrator %s disabled the Purge. ))", PurgeInfo[pGovernment]);
-	    SMA(COLOR_GREEN, "Governor %s has stopped the purge.", PurgeInfo[pGovernment]);
-	    SMA(COLOR_RED, "Governor %s: This is your governor speaking, the purge has come to its end.", PurgeInfo[pGovernment]);
-    	SMA(COLOR_RED, "Governor %s: Be back to your daily lives and we congratulate for those who survived!", PurgeInfo[pGovernment]);
-
-        foreach(new i: Player)
-		{
-	    	if(!PlayerInfo[i][pToggleMusic])
-	    	{
-	    	    ResetPlayerWeaponsEx(i);
-		    	StopAudioStreamForPlayer(i);
-			}
-		}
-		gWeather = 1;
-		gWorldTime = 1;
-
-		SetWeather(gWeather);
-		SetWorldTime(gWorldTime);
-		SMA(COLOR_GREY2, "Weather changed to %i.", gWeather);
-		SMA(COLOR_GREY2, "Time of day changed to %i hours.", gWorldTime);
-	}
-}
-
-forward OnPurgeStartCountDown();
-public OnPurgeStartCountDown()
-{
-	new string[128];
-	PurgeInfo[pStartTimer] -- ;
-	if(PurgeInfo[pStartTimer] <= 0)
-	{
-		TogglePurge();
- 		format(string, sizeof(string), "~r~PURGE Has been~n~~b~STARTED~n~~r~Lets~y~Go");
-  		KillTimer(PurgeInfo[pTimer]);
-		PurgeInfo[pTimer] = SetTimer("OnPurgeEndCountDown",1000,1);
-
-		foreach(new i : Player)
-		{
-			PurgeInfo[pKills][i] = 0;
-			PurgeInfo[pDeath][i] = 0;
-			GameTextForPlayer(i,string,2000,3);
-			PlayerPlaySound(i, 4203, 0.0, 0.0, 0.0);
-		}
-	}
-   	format(string, sizeof(string), "Starts in: %i", PurgeInfo[pStartTimer]);
-	foreach(new i : Player)
-	{
-		if(PlayerInfo[i][pLogged] && !PlayerInfo[i][pKicked])
-		{
-			PlayerTextDrawSetString(i, PurgeTD[i][3], string);
-			PlayerPlaySound(i, 4203, 0.0, 0.0, 0.0);
-		}
-	}
-	return 1;
-}
-
-forward OnPurgeEndCountDown();
-public OnPurgeEndCountDown()
-{
-	new string[128];
-	PurgeInfo[pEndTimer] -- ;
-	if(PurgeInfo[pEndTimer] <= 0)
-	{
-		TogglePurge();
- 		format(string, sizeof(string), "~r~PURGE Has been~n~~b~Ended~n~~r~Lets~y~Go");
-  		KillTimer(PurgeInfo[pTimer]);
-
-		foreach(new i : Player)
-		{
-			PurgeInfo[pExists] = 0;
-			PurgeInfo[pStarted] = 0;
-			GameTextForPlayer(i,string,2000,3);
-			PlayerPlaySound(i, 4203, 0.0, 0.0, 0.0);
-		}
-	}
-   	format(string, sizeof(string), "Ends in: %i", PurgeInfo[pEndTimer]);
-	foreach(new i : Player)
-	{
-		if(PlayerInfo[i][pLogged] && !PlayerInfo[i][pKicked])
-		{
-			PlayerTextDrawSetString(i, PurgeTD[i][3], string);
-			PlayerPlaySound(i, 4203, 0.0, 0.0, 0.0);
-		}
-	}
-	return 1;
-}
-
-forward purgetimer();
-public purgetimer()
-{
-	new string[128];
-
-	foreach(new i: Player)
-	{
-		if(PurgeInfo[pExists])
-		{
-			format(string, sizeof(string), "Kills: %i", PurgeInfo[pKills][i]);
-			PlayerTextDrawSetString(i, PurgeTD[i][2], string);
-			
-			format(string, sizeof(string), "Death: %i", PurgeInfo[pKills][i]);
-			PlayerTextDrawSetString(i, PurgeTD[i][1], string);
-
-			for(new s = 0; s < 5; s ++)
-			{
-				PlayerTextDrawHide(i, PurgeTD[i][s]);
-				PlayerTextDrawShow(i, PurgeTD[i][s]);	
-			}
-		} 
-		else 
-		{
-			for(new s = 0; s < 5; s ++)
-			{
-				PlayerTextDrawHide(i, PurgeTD[i][s]);
-				
-			}
-		}
-	}
-}
-
-forward NewbieTimer(newbieid);
-public NewbieTimer(newbieid)
-{
-	if(NewbieInfo[newbieid][nExists] == 1) {
-		NewbieInfo[newbieid][nExists] = 0;
-		NewbieInfo[newbieid][nNewbie] = INVALID_PLAYER_ID;
-		NewbieInfo[newbieid][nAnsweredBy] = INVALID_PLAYER_ID;
-		SMA(COLOR_YELLOW, "** Newbie ID: %i Timer is has been removed this question since no one asnwer it.", newbieid);
-		return 1;
-	}
-	return 1;
 }
 
 forward SecondTimer();
@@ -15771,29 +15276,21 @@ public SecondTimer()
 					SetPlayerVirtualWorld(i, PlayerInfo[i][pHospitalType]);
 					SetCameraBehindPlayer(i);
 
-					if(!PurgeInfo[pStarted])
-					{
-						new amount = 500 + random(1000);
-         				GivePlayerCash(i, -amount);
-						Dyuze(i, "Notice", "Discharged we deduct you $%i.", amount);
+					if(!enabledpurge) {
+						GivePlayerCash(i, -1500);
+						Dyuze(i, "Notice", "Discharged we deduct you $1500.");
 						if(PlayerInfo[i][pDelivered])
 						{
-							
-							SM(i, COLOR_DOCTOR, "You have been billed $%i for your stay. Your items is safed!", amount);
+							SCM(i, COLOR_DOCTOR, "You have been billed $1500 for your stay. Your items is safed!");
 							PlayerInfo[i][pDelivered] = 0;
 						}
 						else
 						{
-							SCM(i, COLOR_DOCTOR, "You have been billed $1000 for your stay. Your illegal items have been confiscated by staff.");
+							SCM(i, COLOR_DOCTOR, "You have been billed $1500 for your stay. Your illegal items have been confiscated by staff.");
 							SCM(i, COLOR_LIGHTRED, "(( You have lost 30 minutes of your memory. ))");
 						}
-					}
-					else
-					{
-			    		new amount = 1000 + random(1000);
-   						GivePlayerCash(i, -amount);
-						SM(i, COLOR_DOCTOR, "You have been discharged for $%i by the purge event. (( Type /purgeme to refill your weapons. ))", amount);
-					}
+					} else SCM(i, COLOR_DOCTOR, "You have been discharged for free for the purge event. (( Type /purgeme to refill your weapons. ))");
+
 					new hospital[32];
 					switch(PlayerInfo[i][pHospitalType])
 					{
@@ -16404,16 +15901,6 @@ public MinuteTimer()
 		        for(new i = 0; i < MAX_FACTIONS; i ++)
 		        {
 		            if(FactionInfo[i][fType] == FACTION_POLICE && FactionInfo[i][fTurfTokens] < 3)
-		            {
-		                FactionInfo[i][fTurfTokens]++;
-
-		                mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "UPDATE factions SET turftokens = turftokens + 1 WHERE id = %i", i);
-		                mysql_tquery(connectionID, queryBuffer);
-		            }
-		        }
-				for(new i = 0; i < MAX_FACTIONS; i ++)
-		        {
-		            if(FactionInfo[i][fType] == FACTION_FEDERAL && FactionInfo[i][fTurfTokens] < 3)
 		            {
 		                FactionInfo[i][fTurfTokens]++;
 
@@ -17156,7 +16643,7 @@ public OnHitmanPassport(playerid, name[], level, skinid)
 		SM(playerid, COLOR_AQUA, "You have requested a namechange to "SVRCLR"%s{CCFFFF} for free, please wait for admin approval.", name);
 		SM(playerid, COLOR_AQUA, "Once the namechange has been approved, you will receive your chosen name, level and skin.");
 
-		SAM(COLOR_YELLOW, "| COM:BOT | WARNING | %s[%i] is requesting a namechange to %s. (/acceptname %i or /denyname %i)", GetRPName(playerid), playerid, name, playerid, playerid);
+		SAM(COLOR_YELLOW, "| TIR:BOT | WARNING | %s[%i] is requesting a namechange to %s. (/acceptname %i or /denyname %i)", GetRPName(playerid), playerid, name, playerid, playerid);
 	}
 }
 
@@ -17182,7 +16669,7 @@ public OnPlayerAttemptNameChange(playerid, name[])
 		    SM(playerid, COLOR_AQUA, "You have requested a namechange to "SVRCLR"%s{CCFFFF} for $%i, please wait for admin approval.", name, PlayerInfo[playerid][pLevel] * 7500);
 		}
 
-		SAM(COLOR_YELLOW, "| COM:BOT | WARNING | %s[%i] is requesting a namechange to %s. (/acceptname %i or /denyname %i)", GetRPName(playerid), playerid, name, playerid, playerid);
+		SAM(COLOR_YELLOW, "| TIR:BOT | WARNING | %s[%i] is requesting a namechange to %s. (/acceptname %i or /denyname %i)", GetRPName(playerid), playerid, name, playerid, playerid);
 	}
 }
 
@@ -17954,6 +17441,8 @@ public OnAdminOfflineCheck(playerid, username[])
 
 		strcpy(PlayerInfo[MAX_PLAYERS][pUsername], username, MAX_PLAYER_NAME);
 		DisplayStats(MAX_PLAYERS, playerid);
+
+		Voice_FactionJoin(playerid,PlayerInfo[playerid][pFaction]); //BearDev
 	}
 }
 
@@ -18722,12 +18211,10 @@ public OnQueryFinished(threadid, extraid)
 			    CarregandoTelaLogin[extraid] = 0;
 				SetPlayerInterior( extraid, 0 );
 				SetPlayerVirtualWorld( extraid, 1 );
-	            //InterpolateCameraPos( extraid, 408.2191, -2465.8276, -7.0720, 475.7796, -1206.6105, 133.3514, 50000, CAMERA_MOVE);
-				//InterpolateCameraLookAt( extraid, 408.3509, -2464.8369, -7.1369, 475.8351, -1205.6111, 133.2214, 50000, CAMERA_MOVE);
+	            InterpolateCameraPos( extraid, 408.2191, -2465.8276, -7.0720, 475.7796, -1206.6105, 133.3514, 50000, CAMERA_MOVE);
+				InterpolateCameraLookAt( extraid, 408.3509, -2464.8369, -7.1369, 475.8351, -1205.6111, 133.2214, 50000, CAMERA_MOVE);
 				 	// ==== Login ==== //
-
-				showTelaLogin(extraid);
-				/*for(new i = 0; i < 14; i++) {
+				for(new i = 0; i < 14; i++) {
 					TextDrawShowForPlayer(extraid, LoadScreenLogin[i]);
 				}
 
@@ -18741,14 +18228,14 @@ public OnQueryFinished(threadid, extraid)
 				PlayerTextDrawFont(extraid, loadTela6[extraid], 3);
 				PlayerTextDrawSetProportional(extraid, loadTela6[extraid], 1);
 				PlayerTextDrawShow(extraid, loadTela6[extraid]);
-				TimerLogin[extraid] = SetTimerEx("mostrarTelaLogin", 100, true, "d", extraid);*/
+				TimerLogin[extraid] = SetTimerEx("mostrarTelaLogin", 100, true, "d", extraid);
 			}
 			else
 			{
 				SetPlayerInterior( extraid, 0 );
 				SetPlayerVirtualWorld( extraid, 1 );
-	            //InterpolateCameraPos( extraid, 408.2191, -2465.8276, -7.0720, 475.7796, -1206.6105, 133.3514, 50000, CAMERA_MOVE);
-				//InterpolateCameraLookAt( extraid, 408.3509, -2464.8369, -7.1369, 475.8351, -1205.6111, 133.2214, 50000, CAMERA_MOVE);
+	            InterpolateCameraPos( extraid, 408.2191, -2465.8276, -7.0720, 475.7796, -1206.6105, 133.3514, 50000, CAMERA_MOVE);
+				InterpolateCameraLookAt( extraid, 408.3509, -2464.8369, -7.1369, 475.8351, -1205.6111, 133.2214, 50000, CAMERA_MOVE);
 				if(strfind(GetPlayerNameEx(extraid), "_") == -1)
 			    {
 			        ShowPlayerDialog(extraid, DIALOG_FREENAMECHANGE, DIALOG_STYLE_INPUT, "Non-Roleplay Name", "An administrator has came to the conclusion that your name is non-RP.\nTherefore you have been given this free namechange in order to correct it.\n\nEnter a name in the Firstname_Lastname format in the box below:", "Submit", "");
@@ -18756,9 +18243,8 @@ public OnQueryFinished(threadid, extraid)
 			    else
 			    {
 			    	CarregandoTelaRegister[extraid] = 0;
-					showTelaLogin(extraid);
 			        				 	// ==== Login ==== //
-					/*TextDrawShowForPlayer(extraid, loadTela11);
+					TextDrawShowForPlayer(extraid, loadTela11);
 					TextDrawShowForPlayer(extraid, loadTela22);
 					TextDrawShowForPlayer(extraid, loadTela33);
 					TextDrawShowForPlayer(extraid, loadTela44);
@@ -18774,7 +18260,7 @@ public OnQueryFinished(threadid, extraid)
 					PlayerTextDrawFont(extraid, loadTela66[extraid], 2);
 					PlayerTextDrawSetProportional(extraid, loadTela66[extraid], 1);
 					PlayerTextDrawShow(extraid, loadTela66[extraid]);
-	   				TimerRegister[extraid] = SetTimerEx("mostrarTelaRegister", 50, true, "d", extraid);*/
+	   				TimerRegister[extraid] = SetTimerEx("mostrarTelaRegister", 50, true, "d", extraid);
 				}
 			}
 	    }
@@ -18809,7 +18295,7 @@ public OnQueryFinished(threadid, extraid)
 	        else if(cache_get_field_content_int(0, "locked"))
          	{
           		SCM(extraid, COLOR_LIGHTRED, "** This account is not whitelsted. Contact us "SERVER_URL" to put your account in the whitelist.");
-            	SAM(COLOR_YELLOW, "| COM:BOT | WARNING | %s tried to login with not whitelist.", GetRPName(extraid));
+            	SAM(COLOR_YELLOW, "| TIR:BOT | WARNING | %s tried to login with not whitelist.", GetRPName(extraid));
              	KickPlayer(extraid);
             }
 			else
@@ -18869,8 +18355,6 @@ public OnQueryFinished(threadid, extraid)
                 PlayerInfo[extraid][pReportWarns] = cache_get_field_content_int(0, "reportwarns");
                 PlayerInfo[extraid][pFightStyle] = cache_get_field_content_int(0, "fightstyle");
                 PlayerInfo[extraid][pDirtyCash] = cache_get_field_content_int(0, "dirtycash");
-                PlayerInfo[extraid][pRefunded] = cache_get_field_content_int(0, "refunded");
-                PlayerInfo[extraid][pToolkit] = cache_get_field_content_int(0, "toolkit");
 
 				/*#if defined Christmas
 	#else
@@ -19164,7 +18648,7 @@ public OnQueryFinished(threadid, extraid)
 					for(new i = 0; i < 14; i++) {
 						TextDrawShowForPlayer(extraid, MatirikFooter[i]);
 					}
-					TextDrawShowForPlayer(extraid, ServerMessage );
+			//		TextDrawShowForPlayer(extraid, ServerMessage );
 
 				    if(PlayerInfo[extraid][pAdminDuty])
 				    {
@@ -19245,7 +18729,7 @@ public OnQueryFinished(threadid, extraid)
 	    {
 	        if(rows)
 	        {
-				SAM(COLOR_YELLOW, "| COM:BOT | WARNING | %s[%i] has %i pending flags. (/listflags %i)", GetRPName(extraid), extraid, rows, extraid);
+				SAM(COLOR_YELLOW, "| TIR:BOT | WARNING | %s[%i] has %i pending flags. (/listflags %i)", GetRPName(extraid), extraid, rows, extraid);
 			}
 		}
 		case THREAD_TRACE_IP:
@@ -20447,6 +19931,11 @@ public OnGameModeInit()
 
     //sampvoice
     gstream = SvCreateGStream(0xFFFF00FF, "ADMIN");
+   	lspdstream = SvCreateGStream(0xffff0000, "LSPD-Radio");
+   	emsstream = SvCreateGStream(0xF5DEB3FF, "EMS-Radio");
+   	newsstream = SvCreateGStream(0xFFA500AA, "NEWS-Radio");
+   	mechstream = SvCreateGStream(0x74AF7AFF, "MECH-Radio");
+	govstream = SvCreateGStream(0xFFFFFFFF, "GOV-Radio");
 
 	new string[128];
 	connectionID = mysql_connect(MYSQL_HOSTNAME, MYSQL_USERNAME, MYSQL_DATABASE, MYSQL_PASSWORD);
@@ -20492,8 +19981,6 @@ public OnGameModeInit()
 	mysql_tquery(connectionID, "SELECT * FROM turfs", "OnQueryFinished", "ii", THREAD_LOAD_TURFS, 0);
 	mysql_tquery(connectionID, "SELECT * FROM `gates`", "Gate_Load", "");
 	mysql_tquery(connectionID, "SELECT * FROM `object`", "Object_Load", "");
-
-	//UploadAntiCheatSettings();
 
 	SetTimer ( "SpeedUpdate", 50, false ) ;
 	L_draw_speed[ 0 ] = TextDrawCreate ( 190, 400.0, L_count[ 0 ] ) ;
@@ -20663,8 +20150,8 @@ public OnGameModeInit()
 	CreateDynamic3DTextLabel("Meth Cookoff\n> Requires Ephedrine <\n"SVRCLR"(( Type '/cookmeth' to begin cooking. ))", COLOR_GREY, 333.5727, 1121.8536, 1083.8903, 10.0);
 	CreateDynamicPickup(1577, 1, 333.5727, 1121.8536, 1083.8903);
 
-	CreateDynamic3DTextLabel("Bank\n"SVRCLR"(( Type '/bankhelp' for more help. ))", COLOR_GREY, 1667.4260, -972.6691, 683.6873, 10.0);
-	CreateDynamicPickup(1239, 1, 1667.4260, -972.6691, 683.6873);
+	CreateDynamic3DTextLabel("Bank\n"SVRCLR"(( Type '/bankhelp' for more help. ))", COLOR_GREY, 1823.7875,-1216.0211,64.0059, 10.0);
+	CreateDynamicPickup(1239, 1, 1823.7875,-1216.0211,64.0059);
 
 	gSeedsStockText = CreateDynamic3DTextLabel("Marijuana Seeds\nStock: 100\n"SVRCLR"(( Type '/getdrug seeds [amount]' ))", COLOR_GREY, 323.7289, 1117.4187, 1083.8828, 10.0);
 	CreateDynamicPickup(1578, 1, 323.7289, 1117.4187, 1083.8828);
@@ -21704,7 +21191,7 @@ public OnGameModeInit()
 	TextDrawSetProportional(MatirikFooter[13], 1);
 	TextDrawSetSelectable(MatirikFooter[13], 0);
 
-	ServerMessage = TextDrawCreate(313.000000, 426.600006, "Welcome to Tres Islas if you are new here use CMD ~b~/refunds");
+/*	ServerMessage = TextDrawCreate(313.000000, 426.600006, "Welcome to Tres Islas if you are new here use CMD ~b~/refunds");
 	TextDrawFont(ServerMessage, 2);
 	TextDrawLetterSize(ServerMessage, 0.270832, 1.699998);
 	TextDrawTextSize(ServerMessage, 400.000000, 492.000000);
@@ -21717,7 +21204,7 @@ public OnGameModeInit()
 	TextDrawUseBox(ServerMessage, 0);
 	TextDrawSetProportional(ServerMessage, 1);
 	TextDrawSetSelectable(ServerMessage, 0);
-
+*/
 	// footer end
 
 	LogoTD[0] = TextDrawCreate(535.666564, 2.385143, "T");
@@ -21760,7 +21247,7 @@ public OnGameModeInit()
 	TextDrawFont(LogoTD[3], 2);
 	TextDrawSetProportional(LogoTD[3], 1);
 
-	LogoTD[4] = TextDrawCreate(563.011022, 29.762947, "~r~tirrp");
+	LogoTD[4] = TextDrawCreate(563.011022, 29.762947, "~r~t i r r p");
 	TextDrawLetterSize(LogoTD[4], 0.159999, 0.925925);
 	TextDrawAlignment(LogoTD[4], 1);
 	TextDrawColor(LogoTD[4], 833085439);
@@ -22103,7 +21590,6 @@ public OnGameModeInit()
 	// Timers
 	SetTimer("MinuteTimer", 60000, true);
 	SetTimer("SecondTimer", 1000, true);
-	SetTimer("purgetimer", 700, true);
 	SetTimer("FuelTimer", 75000, true);
 	SetTimer("InjuredTimer", 5000, true);
 	SetTimer("LotteryUpdate", 2700000, true);
@@ -22143,6 +21629,11 @@ public OnGameModeExit()
 {
     //sampvoice
     if (gstream) SvDeleteStream(gstream);
+    if (lspdstream) SvDeleteStream(lspdstream);
+    if (emsstream) SvDeleteStream(emsstream);
+    if (mechstream) SvDeleteStream(mechstream);
+    if (newsstream) SvDeleteStream(newsstream);
+    if (govstream) SvDeleteStream(govstream);
 
 	for(new i = 0; i < MAX_OBJECTS; i ++)
 	{
@@ -22221,12 +21712,19 @@ public OnPlayerConnect(playerid)
 
         // Attach the player to the global stream as a listener
         if (gstream) SvAttachListenerToStream(gstream, playerid);
+        /*if (lspdstream) SvAttachListenerToStream(lspdstream, playerid);
+        if (emsstream) SvAttachListenerToStream(emsstream, playerid);
+        if (mechstream) SvAttachListenerToStream(mechstream, playerid);
+        if (newsstream) SvAttachListenerToStream(newsstream, playerid);
+        if (govstream) SvAttachListenerToStream(govstream, playerid);*/
 
         // Assign microphone activation keys to the player
         SvAddKey(playerid, 0x5A); //[Local]Z
         SvAddKey(playerid, 0x72); //[Global]F3
+        SvAddKey(playerid, 0x58); //Factions Key
         
     }
+
 
 	if(gDisabledVPN)
 	{
@@ -22245,14 +21743,6 @@ public OnPlayerConnect(playerid)
 	TextDrawFont ( L_player_draw[ playerid ], 3 ), TextDrawLetterSize( L_player_draw[ playerid ], 0.3, 5.5 ) ;
 
     ObrisiObjekte( playerid ); // matirik map
-
-	/*for(new i = 0; i < AC_MAX_CODES; i++)
-	{
-		pAntiCheatLastCodeTriggerTime[playerid][i] = 0;
-	}
-	pAntiCheatSettingsPage{playerid} = 0; // Присваиваем значение 0 переменной, хранящей номер страницы настроек анти-чита, на которой находится игрок
-    pAntiCheatSettingsEditCodeId[playerid] = -1;*/
-
     ExBJck[playerid] = 0;
     pBlind[playerid] = 0;
     Maskara[playerid] = 0;
@@ -22267,7 +21757,6 @@ public OnPlayerConnect(playerid)
 	// CarregandoTelaRegister[playerid] = 0;
 
 	// Default values are handled via MySQL/PhpMyAdmin. Don't assign default values here.
-	PlayerInfo[playerid][pRefunded] = 0;
 	PlayerInfo[playerid][pRobbingHouse] = -1;
 	PlayerInfo[playerid][pToolkit] = 0;
     PlayerInfo[playerid][pGraffiti] = -1;
@@ -22998,77 +22487,6 @@ public OnPlayerConnect(playerid)
 	PlayerTextDrawSetProportional(playerid, SpeedPlayerTD[playerid][9], 1);
 	PlayerTextDrawSetSelectable(playerid, SpeedPlayerTD[playerid][9], 0);
 
-	//Purge Textdraw
-	PurgeTD[playerid][0] = CreatePlayerTextDraw(playerid, 316.000000, 409.000000, "_");
-	PlayerTextDrawFont(playerid, PurgeTD[playerid][0], 1);
-	PlayerTextDrawLetterSize(playerid, PurgeTD[playerid][0], 0.245838, 4.349987);
-	PlayerTextDrawTextSize(playerid, PurgeTD[playerid][0], 622.000000, 177.000000);
-	PlayerTextDrawSetOutline(playerid, PurgeTD[playerid][0], 1);
-	PlayerTextDrawSetShadow(playerid, PurgeTD[playerid][0], 0);
-	PlayerTextDrawAlignment(playerid, PurgeTD[playerid][0], 2);
-	PlayerTextDrawColor(playerid, PurgeTD[playerid][0], -1);
-	PlayerTextDrawBackgroundColor(playerid, PurgeTD[playerid][0], 255);
-	PlayerTextDrawBoxColor(playerid, PurgeTD[playerid][0], -1509423004);
-	PlayerTextDrawUseBox(playerid, PurgeTD[playerid][0], 1);
-	PlayerTextDrawSetProportional(playerid, PurgeTD[playerid][0], 1);
-	PlayerTextDrawSetSelectable(playerid, PurgeTD[playerid][0], 0);
-
-	PurgeTD[playerid][1] = CreatePlayerTextDraw(playerid, 350.000000, 430.000000, "Death: 00");
-	PlayerTextDrawFont(playerid, PurgeTD[playerid][1], 1);
-	PlayerTextDrawLetterSize(playerid, PurgeTD[playerid][1], 0.237000, 1.500000);
-	PlayerTextDrawTextSize(playerid, PurgeTD[playerid][1], 400.000000, 17.000000);
-	PlayerTextDrawSetOutline(playerid, PurgeTD[playerid][1], 1);
-	PlayerTextDrawSetShadow(playerid, PurgeTD[playerid][1], 0);
-	PlayerTextDrawAlignment(playerid, PurgeTD[playerid][1], 1);
-	PlayerTextDrawColor(playerid, PurgeTD[playerid][1], -1);
-	PlayerTextDrawBackgroundColor(playerid, PurgeTD[playerid][1], 255);
-	PlayerTextDrawBoxColor(playerid, PurgeTD[playerid][1], 50);
-	PlayerTextDrawUseBox(playerid, PurgeTD[playerid][1], 0);
-	PlayerTextDrawSetProportional(playerid, PurgeTD[playerid][1], 1);
-	PlayerTextDrawSetSelectable(playerid, PurgeTD[playerid][1], 0);
-
-	PurgeTD[playerid][2] = CreatePlayerTextDraw(playerid, 298.000000, 430.000000, "Kills: 00");
-	PlayerTextDrawFont(playerid, PurgeTD[playerid][2], 1);
-	PlayerTextDrawLetterSize(playerid, PurgeTD[playerid][2], 0.237000, 1.500000);
-	PlayerTextDrawTextSize(playerid, PurgeTD[playerid][2], 400.000000, 17.000000);
-	PlayerTextDrawSetOutline(playerid, PurgeTD[playerid][2], 1);
-	PlayerTextDrawSetShadow(playerid, PurgeTD[playerid][2], 0);
-	PlayerTextDrawAlignment(playerid, PurgeTD[playerid][2], 1);
-	PlayerTextDrawColor(playerid, PurgeTD[playerid][2], -1);
-	PlayerTextDrawBackgroundColor(playerid, PurgeTD[playerid][2], 225);
-	PlayerTextDrawBoxColor(playerid, PurgeTD[playerid][2], 50);
-	PlayerTextDrawUseBox(playerid, PurgeTD[playerid][2], 0);
-	PlayerTextDrawSetProportional(playerid, PurgeTD[playerid][2], 1);
-	PlayerTextDrawSetSelectable(playerid, PurgeTD[playerid][2], 0);
-
-	PurgeTD[playerid][3] = CreatePlayerTextDraw(playerid, 230.000000, 430.000000, "Start in: 00:00");
-	PlayerTextDrawFont(playerid, PurgeTD[playerid][3], 1);
-	PlayerTextDrawLetterSize(playerid, PurgeTD[playerid][3], 0.195831, 1.500000);
-	PlayerTextDrawTextSize(playerid, PurgeTD[playerid][3], 632.500000, 17.000000);
-	PlayerTextDrawSetOutline(playerid, PurgeTD[playerid][3], 1);
-	PlayerTextDrawSetShadow(playerid, PurgeTD[playerid][3], 0);
-	PlayerTextDrawAlignment(playerid, PurgeTD[playerid][3], 1);
-	PlayerTextDrawColor(playerid, PurgeTD[playerid][3], -1973791);
-	PlayerTextDrawBackgroundColor(playerid, PurgeTD[playerid][3], 255);
-	PlayerTextDrawBoxColor(playerid, PurgeTD[playerid][3], 50);
-	PlayerTextDrawUseBox(playerid, PurgeTD[playerid][3], 0);
-	PlayerTextDrawSetProportional(playerid, PurgeTD[playerid][3], 1);
-	PlayerTextDrawSetSelectable(playerid, PurgeTD[playerid][3], 0);
-
-	PurgeTD[playerid][4] = CreatePlayerTextDraw(playerid, 289.000000, 406.000000, "Purge Event");
-	PlayerTextDrawFont(playerid, PurgeTD[playerid][4], 1);
-	PlayerTextDrawLetterSize(playerid, PurgeTD[playerid][4], 0.266667, 1.600000);
-	PlayerTextDrawTextSize(playerid, PurgeTD[playerid][4], 627.500000, 0.500000);
-	PlayerTextDrawSetOutline(playerid, PurgeTD[playerid][4], 1);
-	PlayerTextDrawSetShadow(playerid, PurgeTD[playerid][4], 0);
-	PlayerTextDrawAlignment(playerid, PurgeTD[playerid][4], 1);
-	PlayerTextDrawColor(playerid, PurgeTD[playerid][4], -1);
-	PlayerTextDrawBackgroundColor(playerid, PurgeTD[playerid][4], 255);
-	PlayerTextDrawBoxColor(playerid, PurgeTD[playerid][4], 50);
-	PlayerTextDrawUseBox(playerid, PurgeTD[playerid][4], 0);
-	PlayerTextDrawSetProportional(playerid, PurgeTD[playerid][4], 1);
-	PlayerTextDrawSetSelectable(playerid, PurgeTD[playerid][4], 0);
-
 	// GPS
 	PlayerInfo[playerid][pText][0] = CreatePlayerTextDraw(playerid, 155.000000, 429.000000, "Los Santos");
 	PlayerTextDrawFont(playerid, PlayerInfo[playerid][pText][0], 2);
@@ -23238,6 +22656,7 @@ public OnPlayerDisconnect(playerid, reason)
         SvDeleteStream(lstream[playerid]);
         lstream[playerid] = SV_NULL;
     }
+	Voice_FactionLeave(playerid,PlayerInfo[playerid][pFaction]); //BearDev
 
 	TerminateInfo(playerid, reason);
 	TextDrawDestroy( L_player_draw[playerid] );
@@ -23319,11 +22738,6 @@ public OnPlayerSpawn(playerid)
 	{
 	    SetPlayerInPaintball(playerid, PlayerInfo[playerid][pPaintball]);
 	}
-	else if(PurgeInfo[pStarted] && PlayerInfo[playerid][pInjured])
-	{
-		SetPlayerHealth(playerid, -50.0);
-		SCM(playerid, COLOR_RED, "You have been killed on the purge");
-	}
 	else
 	{
 	    PlayerInfo[playerid][pJoinedEvent] = 0;
@@ -23332,8 +22746,7 @@ public OnPlayerSpawn(playerid)
 	    {
 	        SetPlayerHealth(playerid, 100.0);
 	        SetPlayerArmour(playerid, 0.0);
-            //ApplyAnimation(playerid, "SWEET", "Sweet_injuredloop", 4.1, 0, 0, 0, 1, 0, 1);
-			ApplyAnimation(playerid, "SWAT", "gnstwall_injurd", 4.1, 0, 0, 0, 1, 0, 1);
+            ApplyAnimation(playerid, "SWEET", "Sweet_injuredloop", 4.1, 0, 0, 0, 1, 0, 1);
 
 			Dyuze(playerid, "Wounded", "/accept death or /call 911", 10000);
 	        SCM(playerid, COLOR_DOCTOR, "You are wounded and losing blood. /call 911 for medical attention.");
@@ -23510,11 +22923,6 @@ public OnPlayerDeath(playerid, killerid, reason)
 	        PlayerInfo[playerid][pWorld] = GetPlayerVirtualWorld(playerid);
 		}
 	}
-	if(PurgeInfo[pStarted] && killerid != INVALID_PLAYER_ID && playerid != INVALID_PLAYER_ID && killerid == playerid)
-	{
-		PurgeInfo[pDeath][playerid] += 1;
-		PurgeInfo[pKills][killerid] += 1;
-	}
 
 	if(PlayerInfo[playerid][pCallLine] != INVALID_PLAYER_ID)
 	{
@@ -23523,7 +22931,7 @@ public OnPlayerDeath(playerid, killerid, reason)
 
 	if(reason == 50 && killerid != INVALID_PLAYER_ID)
 	{
-	    SAM(COLOR_YELLOW, "| COM:BOT | WARNING | %s[%i] was helibladed by %s[%i].", GetRPName(playerid), playerid, GetRPName(killerid), killerid);
+	    SAM(COLOR_YELLOW, "| TIR:BOT | WARNING | %s[%i] was helibladed by %s[%i].", GetRPName(playerid), playerid, GetRPName(killerid), killerid);
 	}
 	PlayerInfo[playerid][pLastDeath] = gettime();
  	foreach(new i : Player)
@@ -23673,7 +23081,7 @@ public OnPlayerEnterCheckpoint(playerid)
 
 		        if(PlayerInfo[playerid][pACWarns] < MAX_ANTICHEAT_WARNINGS)
 		        {
-		            SAM(COLOR_YELLOW, "| COM:BOT | WARNING | %s[%i] is possibly teleport pizza delivering (time: %i).", GetRPName(playerid), playerid, gettime() - PlayerInfo[playerid][pLastPizza]);
+		            SAM(COLOR_YELLOW, "| TIR:BOT | WARNING | %s[%i] is possibly teleport pizza delivering (time: %i).", GetRPName(playerid), playerid, gettime() - PlayerInfo[playerid][pLastPizza]);
 				}
 				else
 				{
@@ -23957,7 +23365,7 @@ public OnPlayerEnterCheckpoint(playerid)
 
 			        if(PlayerInfo[playerid][pACWarns] < MAX_ANTICHEAT_WARNINGS)
 			        {
-			            SAM(COLOR_YELLOW, "| COM:BOT | WARNING | %s[%i] is possibly teleport matrunning (time: %i).", GetRPName(playerid), playerid, gettime() - PlayerInfo[playerid][pSmuggleTime]);
+			            SAM(COLOR_YELLOW, "| TIR:BOT | WARNING | %s[%i] is possibly teleport matrunning (time: %i).", GetRPName(playerid), playerid, gettime() - PlayerInfo[playerid][pSmuggleTime]);
 					}
 					else
 					{
@@ -24060,7 +23468,7 @@ public OnPlayerEnterCheckpoint(playerid)
 
 		        if(PlayerInfo[playerid][pACWarns] < MAX_ANTICHEAT_WARNINGS)
 		        {
-		            SAM(COLOR_YELLOW, "| COM:BOT | WARNING | %s[%i] is possibly teleport drug smuggling (time: %i).", GetRPName(playerid), playerid, gettime() - PlayerInfo[playerid][pSmuggleTime]);
+		            SAM(COLOR_YELLOW, "| TIR:BOT | WARNING | %s[%i] is possibly teleport drug smuggling (time: %i).", GetRPName(playerid), playerid, gettime() - PlayerInfo[playerid][pSmuggleTime]);
 				}
 				else if(!PlayerInfo[playerid][pKicked])
 				{
@@ -24518,7 +23926,7 @@ public OnPlayerWeaponShot(playerid, weaponid, hittype, hitid, Float:fX, Float:fY
     		{
 		        if((gAnticheat) && PlayerInfo[playerid][pAdmin] < 2 && !PlayerInfo[playerid][pKicked])
     		    {
-					SAM(COLOR_YELLOW, "| COM:BOT | WARNING | %s was automatically kicked for infinite ammo.", GetRPName(playerid));
+					SAM(COLOR_YELLOW, "| TIR:BOT | WARNING | %s was automatically kicked for infinite ammo.", GetRPName(playerid));
 					Log_Write("log_cheat", "%s (uid: %i) was automatically kicked for infinite ammo.", GetPlayerNameEx(playerid), PlayerInfo[playerid][pID]);
 					KickPlayer(playerid);
 				}
@@ -24885,7 +24293,7 @@ public OnPlayerUpdate(playerid)
 
 			    if(PlayerInfo[playerid][pACWarns] < MAX_ANTICHEAT_WARNINGS)
 				{
-				    SAM(COLOR_YELLOW, "| COM:BOT | WARNING | %s[%i] has a desynced %s.", GetRPName(playerid), playerid, GetWeaponNameEx(PlayerInfo[playerid][pCurrentWeapon]));
+				    SAM(COLOR_YELLOW, "| TIR:BOT | WARNING | %s[%i] has a desynced %s.", GetRPName(playerid), playerid, GetWeaponNameEx(PlayerInfo[playerid][pCurrentWeapon]));
 				    Log_Write("log_cheat", "%s (uid: %i) had a desynced %s with %i ammunition.", GetPlayerNameEx(playerid), PlayerInfo[playerid][pID], GetWeaponNameEx(PlayerInfo[playerid][pCurrentWeapon]), GetPlayerAmmo(playerid));
 				}
 				else
@@ -24958,7 +24366,7 @@ public OnPlayerUpdate(playerid)
 
 						    if(PlayerInfo[playerid][pACWarns] < MAX_ANTICHEAT_WARNINGS)
 						    {
-						        SAM(COLOR_YELLOW, "| COM:BOT | WARNING | %s[%i] may be hacking ammo. (old: %i, new: %i)", GetRPName(playerid), playerid, oldammo, ammo);
+						        SAM(COLOR_YELLOW, "| TIR:BOT | WARNING | %s[%i] may be hacking ammo. (old: %i, new: %i)", GetRPName(playerid), playerid, oldammo, ammo);
 						        Log_Write("log_cheat", "%s (uid: %i) possibly hacked ammo. (old: %i, new: %i)", GetPlayerNameEx(playerid), PlayerInfo[playerid][pID], oldammo, ammo);
 							}
 							else
@@ -25358,7 +24766,6 @@ public OnPlayerText(playerid, text[])
 
                             PlayerInfo[playerid][pEmergencyCall] = 120;
                             PlayerInfo[playerid][pEmergencyType] = FACTION_POLICE;
-                            PlayerInfo[playerid][pEmergencyType] = FACTION_FEDERAL;
 
 						    SCM(playerid, COLOR_DISPATCH, "All units in the area have been notified. Thank you for your time.");
 						    HangupCall(playerid, HANGUP_USER);
@@ -30609,58 +30016,6 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 				SendProximityMessage(playerid, 30.0, SERVER_COLOR, "**{C2A2DA} %s takes out a can of spray paint and sprays the wall.", GetRPName(playerid));
 			}
 		}
-		/*case ANTICHEAT_SETTINGS:
-		{
-			if(!response)
-			{
-				pAntiCheatSettingsPage{playerid} = 0;
-				return 1; // Закрываем диалог
-			}
-
-			if (!strcmp(inputtext, AC_DIALOG_NEXT_PAGE_TEXT))
-			{
-				pAntiCheatSettingsPage{playerid}++;
-			}
-			else if (!strcmp(inputtext, AC_DIALOG_PREVIOUS_PAGE_TEXT))
-			{
-				pAntiCheatSettingsPage{playerid}--;
-			}
-			else // Если игрко выбрал какой-либо из кодов анти-чита
-			{
-				pAntiCheatSettingsEditCodeId[playerid] = pAntiCheatSettingsMenuListData[playerid][listitem];
-				return ShowPlayer_AntiCheatEditCode(playerid, pAntiCheatSettingsEditCodeId[playerid]);
-			}
-			return ShowPlayer_AntiCheatSettings(playerid);
-		}
-		case ANTICHEAT_EDIT_CODE:
-		{
-			if (!response) // Если игрок закрыл диалог
-			{
-				pAntiCheatSettingsEditCodeId[playerid] = -1;
-				return ShowPlayer_AntiCheatSettings(playerid);
-			}
-
-			new
-				item = pAntiCheatSettingsEditCodeId[playerid];
-
-			if (AC_CODE_TRIGGER_TYPE[item] == listitem)
-				return ShowPlayer_AntiCheatSettings(playerid);
-
-			if (AC_CODE_TRIGGER_TYPE[item] == AC_CODE_TRIGGER_TYPE_DISABLED && listitem != AC_CODE_TRIGGER_TYPE_DISABLED)
-				EnableAntiCheat(item, 1);
-
-			AC_CODE_TRIGGER_TYPE[item] = listitem;
-
-			new
-				sql_query[101 - 4 + 1 + 2];
-
-			format(sql_query, sizeof(sql_query), "UPDATE "AC_TABLE_SETTINGS" SET `"AC_TABLE_FIELD_TRIGGER"` = '%d' WHERE `"AC_TABLE_FIELD_CODE"` = '%d'",
-				listitem,
-				item);
-
-			mysql_function_query(connectionID, sql_query, false, "", ""); // Отправляем запрос в базу данных
-			return ShowPlayer_AntiCheatSettings(playerid); // Показываем главное меню настроек анти-чита
-		}*/
 		case DIALOG_BIZMENU:
 		{
 		    if(response)
@@ -31066,7 +30421,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 				    }
 				    case 2: // GENERAL LOCATIONS
 				    {
-				    	ShowPlayerDialog(playerid, DIALOG_LOCATELIST3, DIALOG_STYLE_LIST, "Select Destination", "DMV\nBank\nCasino\nMechanic Shop\nDrug Factory\nMaterials Pickup 1\nMaterials Pickup 2\nCar Dealership\nVip Lounge\nPawnshop", "Select", "Close");
+				    	ShowPlayerDialog(playerid, DIALOG_LOCATELIST3, DIALOG_STYLE_LIST, "Select Destination", "DMV\nBank\nCasino\nMechanic Shop\nDrug Factory\nMaterials Pickup 2\nCar Dealership\nMaterials Pickup 2\nVip Lounge\nPawnshop", "Select", "Close");
 				    }
 					case 3: // Find Points
 					{
@@ -32081,9 +31436,6 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 	                        BusinessInfo[businessid][bProducts]--;
 
 	                        mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "UPDATE businesses SET cash = %i, products = %i WHERE id = %i", BusinessInfo[businessid][bCash], BusinessInfo[businessid][bProducts], BusinessInfo[businessid][bID]);
-	                        mysql_tquery(connectionID, queryBuffer);
-
-							mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "UPDATE users SET toolkit = 1, products = %i WHERE id = %i", PlayerInfo[playerid][pID]);
 	                        mysql_tquery(connectionID, queryBuffer);
 
 	                        SendProximityMessage(playerid, 20.0, SERVER_COLOR, "**{C2A2DA} %s paid $%i to the shopkeeper and received a toolkit.", GetRPName(playerid), price);
@@ -33294,122 +32646,6 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 				ReloadBusiness(businessid);
 			    SM(playerid, COLOR_AQUA, "You've changed the interior of business %i to %s.", businessid, bizInteriorArray[listitem][intName]);
 		    }
-		}
-		case DIALOG_PURGE:
-		{
-			new str[2048];
-			if(response)
-			{
-				switch(listitem)
-				{
-					case 0:
-					{
-						format(str, sizeof(str), "Please type the Seconds of the Purge Will Start. (60 = 1 minute)");
-						ShowPlayerDialog(playerid, DIALOG_PURGE_STARTTIMER, DIALOG_STYLE_INPUT, "Purge Settings", str, "Enter", "Cancel");
-					}
-					case 1:
-					{
-						format(str, sizeof(str), "Please type the Seconds of the Purge Will End. (60 = 1 minute)");
-						ShowPlayerDialog(playerid, DIALOG_PURGE_ENDTIMER, DIALOG_STYLE_INPUT, "Purge Settings", str, "Enter", "Cancel");
-					}
-					case 2:
-					{
-						format(str, sizeof(str), "Please type the name of the Government");
-						ShowPlayerDialog(playerid, DIALOG_PURGE_GOVERNMENT, DIALOG_STYLE_INPUT, "Purge Settings", str, "Enter", "Cancel");
-					}
-					case 3:
-					{
-						if(PurgeInfo[pStarted])
-						{
-							SM(playerid, COLOR_SYNTAX, "The Purge has already Started.");
-							return 1;
-						}
-						PurgeInfo[pExists] = 1;
-						PurgeInfo[pTimer] = SetTimer("OnPurgeStartCountDown",1000,1);
-					}
-					case 4:
-					{
-						if(!PurgeInfo[pStarted])
-						{
-							SM(playerid, COLOR_SYNTAX, "The Purge is Not Yet Started.");
-							return 1;
-						}
-						TogglePurge();
-					}
-				}
-			}
-		}
-		case DIALOG_PURGE_STARTTIMER:
-		{
-			if(response)
-			{
-				new timer, str[2048];
-
-		    	if(sscanf(inputtext, "i", timer))
-				{
-					format(str, sizeof(str), "Please type the Seconds of the Purge Will Start. (60 = 1 minute)");
-					ShowPlayerDialog(playerid, DIALOG_PURGE_STARTTIMER, DIALOG_STYLE_INPUT, "Purge Settings", str, "Enter", "Cancel");
-					return 1;
-		        }
-				if(timer <= 0)
-				{
-					format(str, sizeof(str), "The Timer Cant be set bellow 0. (60 = 1 minute)");
-					ShowPlayerDialog(playerid, DIALOG_PURGE_STARTTIMER, DIALOG_STYLE_INPUT, "Purge Settings", str, "Enter", "Cancel");
-					return 1;
-				}
-				PurgeInfo[pStartTimer] = timer;
-				ShowDialogToPlayer(playerid, DIALOG_PURGE);
-			}
-		}
-		case DIALOG_PURGE_ENDTIMER:
-		{
-			if(response)
-			{
-				new timer, str[2048];
-
-		    	if(sscanf(inputtext, "i", timer))
-				{
-					format(str, sizeof(str), "Please type the Seconds of the Purge Will End. (60 = 1 minute)");
-					ShowPlayerDialog(playerid, DIALOG_PURGE_ENDTIMER, DIALOG_STYLE_INPUT, "Purge Settings", str, "Enter", "Cancel");
-					return 1;
-		        }
-				if(timer <= 0)
-				{
-					format(str, sizeof(str), "The Timer Cant be set bellow 0. (60 = 1 minute)");
-					ShowPlayerDialog(playerid, DIALOG_PURGE_ENDTIMER, DIALOG_STYLE_INPUT, "Purge Settings", str, "Enter", "Cancel");
-					return 1;
-				}
-				PurgeInfo[pEndTimer] = timer;
-				ShowDialogToPlayer(playerid, DIALOG_PURGE);
-			}
-		}
-		case DIALOG_PURGE_GOVERNMENT:
-		{
-			if(response)
-			{
-				new name[1028], str[2048];
-
-		    	if(sscanf(inputtext, "s[1028]", name))
-				{
-					format(str, sizeof(str), "Please type the name of the Government");
-					ShowPlayerDialog(playerid, DIALOG_PURGE_GOVERNMENT, DIALOG_STYLE_INPUT, "Purge Settings", str, "Enter", "Cancel");
-					return 1;
-		        }
-				if(strlen(name) < 3)
-				{
-					format(str, sizeof(str), "the name for the government Cant go Bellow 3");
-					ShowPlayerDialog(playerid, DIALOG_PURGE_GOVERNMENT, DIALOG_STYLE_INPUT, "Purge Settings", str, "Enter", "Cancel");
-					return 1;
-				}
-				if(strlen(name) > 1028)
-				{
-					format(str, sizeof(str), "the name for the government Cant go Above 1028");
-					ShowPlayerDialog(playerid, DIALOG_PURGE_GOVERNMENT, DIALOG_STYLE_INPUT, "Purge Settings", str, "Enter", "Cancel");
-					return 1;
-				}
-				strcpy(PurgeInfo[pGovernment], name, 1028);
-				ShowDialogToPlayer(playerid, DIALOG_PURGE);
-			}
 		}
 		case DIALOG_FACTIONLOCKER:
 		{
@@ -36331,7 +35567,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 						mysql_tquery(connectionID, queryBuffer);
 
 						SCM(playerid, COLOR_AQUA, "You have spent 4500 GP & $100000 on "SVRCLR"Mapping{CCFFFF}. /report for an admin to set it up.");
-						SAM(COLOR_YELLOW, "| COM:BOT | WARNING | %s[%i] has a pending flag for mapping for their gang.", GetRPName(playerid), playerid);
+						SAM(COLOR_YELLOW, "| TIR:BOT | WARNING | %s[%i] has a pending flag for mapping for their gang.", GetRPName(playerid), playerid);
 					}
 					case 3:
 					{
@@ -36351,7 +35587,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 						mysql_tquery(connectionID, queryBuffer);
 
 						SCM(playerid, COLOR_AQUA, "You have spent 5000 GP & $100000 on "SVRCLR"Custom gang interior{CCFFFF}. /report for an admin to set it up.");
-						SAM(COLOR_YELLOW, "| COM:BOT | WARNING | %s[%i] has a pending flag for a custom gang interior.", GetRPName(playerid), playerid);
+						SAM(COLOR_YELLOW, "| TIR:BOT | WARNING | %s[%i] has a pending flag for a custom gang interior.", GetRPName(playerid), playerid);
 					}
 					case 4:
 					{
@@ -37701,7 +36937,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 		    {
 		    	if(!PlayerInfo[playerid][pLogged])
 		        {
-		            SAM(COLOR_YELLOW, "| COM:BOT | WARNING | %s[%i] has been kicked for failing to change their name.", GetRPName(playerid), playerid);
+		            SAM(COLOR_YELLOW, "| TIR:BOT | WARNING | %s[%i] has been kicked for failing to change their name.", GetRPName(playerid), playerid);
 		            KickPlayer(playerid);
 		        }
 		        else
@@ -37721,7 +36957,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 					strins(PlayerInfo[playerid][pPrisonedBy], "Server", 0);
 					strins(PlayerInfo[playerid][pPrisonReason], "Failing to change their name", 0);
 
-	                SAM(COLOR_YELLOW, "| COM:BOT | WARNING | %s [%i] has been prisoned for failing to change their name.", GetRPName(playerid), playerid);
+	                SAM(COLOR_YELLOW, "| TIR:BOT | WARNING | %s [%i] has been prisoned for failing to change their name.", GetRPName(playerid), playerid);
 					Log_Write("log_punishments", "%s (uid: %i) has been prisoned for 10 minutes, reason: failing to change their name.", GetPlayerNameEx(playerid), PlayerInfo[playerid][pID]);
 
 				}
@@ -39880,12 +39116,13 @@ CMD:ooc(playerid, params[])
 	return 1;
 }
 
+CMD:newb(playerid, params[]) return callcmd::newbie(playerid, params);
 CMD:n(playerid, params[]) return callcmd::newbie(playerid, params);
 CMD:newbie(playerid, params[])
 {
 	if(isnull(params))
 	{
-	    return SCM(playerid, COLOR_SYNTAX, "Usage: /newbie [Question]");
+	    return SCM(playerid, COLOR_SYNTAX, "Usage: /(n)ewbie [newbie chat]");
 	}
 	if(!enabledNewbie && PlayerInfo[playerid][pAdmin] < 2)
 	{
@@ -39903,42 +39140,12 @@ CMD:newbie(playerid, params[])
 	{
 	    return SCM(playerid, COLOR_SYNTAX, "You can't speak in the newbie chat as you have it toggled.");
 	}
-	AddNewbieToQueue(playerid, params);
-	return 1;
-}
 
-CMD:an(playerid, params[]) return callcmd::anewbie(playerid, params);
-CMD:anewbie(playerid, params[])
-{
-	new newbieid, chat[128];
+	SendNewbieChatMessage(playerid, params);
 
-	if(sscanf(params, "iS[128]", newbieid, chat))
-	    return SCM(playerid, COLOR_SYNTAX, "Usage: /anewbie [QuestionID] [answer]");
-
-	if(!(0 <= newbieid < MAX_NEWBIES) || !NewbieInfo[newbieid][nExists])
-	    return SCM(playerid, COLOR_SYNTAX, "Invalid Newbie ID.");
-
-	NewbieInfo[newbieid][nAnsweredBy] = playerid;
 	PlayerInfo[playerid][pNewbies] ++;
 	mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "UPDATE users SET newbies = %i WHERE uid = %i", PlayerInfo[playerid][pNewbies], PlayerInfo[playerid][pID]);
 	mysql_tquery(connectionID, queryBuffer);
-
-	SendNewbieAnswer(playerid, newbieid, chat);
-	return 1;
-}
-
-CMD:questions(playerid, params[])
-{
-	SCM(playerid, COLOR_BLUE, "Pending Questions:");
-	for(new i = 0; i < MAX_NEWBIES; i ++)
-	{
-	    if(NewbieInfo[i][nExists])
-	    {
-	        SM(playerid, COLOR_GREY2, "(NID: %i) %s[%i] Questions: %s", i, GetRPName(NewbieInfo[i][nNewbie]), NewbieInfo[i][nNewbie], NewbieInfo[i][nText]);
-		}
-	}
-	SMA(COLOR_WHITE, "Type (/anewbie) to answer a Newbie Questions.");
-	SMA(COLOR_WHITE, "Type (/questions) to check if there is any Questions.");
 	return 1;
 }
 
@@ -40050,7 +39257,7 @@ CMD:pay(playerid, params[])
 
     if(!strcmp(GetPlayerIP(playerid), GetPlayerIP(targetid)))
     {
-        SAM(COLOR_YELLOW, "| COM:BOT | WARNING | %s (IP: %s) has given $%i to %s (IP: %s).", GetRPName(playerid), GetPlayerIP(playerid), amount, GetRPName(targetid), GetPlayerIP(targetid));
+        SAM(COLOR_YELLOW, "| TIR:BOT | WARNING | %s (IP: %s) has given $%i to %s (IP: %s).", GetRPName(playerid), GetPlayerIP(playerid), amount, GetRPName(targetid), GetPlayerIP(targetid));
     }
 
     return 1;
@@ -41501,7 +40708,9 @@ CMD:accept(playerid, params[])
 	    {
 	        return SCM(playerid, COLOR_SYNTAX, "That player is no longer allowed to invite you.");
 	    }
+        Voice_FactionLeave(playerid,PlayerInfo[playerid][pFaction]); //BearDev
 	    PlayerInfo[playerid][pFaction] = factionid;
+	    Voice_FactionJoin(playerid,PlayerInfo[playerid][pFaction]); //BearDev
 	    PlayerInfo[playerid][pFactionRank] = 0;
 	    PlayerInfo[playerid][pDivision] = -1;
 
@@ -42070,7 +41279,7 @@ CMD:accept(playerid, params[])
 
 			if(amount > 10000 && !strcmp(GetPlayerIP(offeredby), GetPlayerIP(playerid)))
 			{
-				SAM(COLOR_YELLOW, "| COM:BOT | WARNING | %s (IP: %s) won a $%i dice bet against %s (IP: %s).", GetRPName(offeredby), GetPlayerIP(offeredby), amount, GetRPName(playerid), GetPlayerIP(playerid));
+				SAM(COLOR_YELLOW, "| TIR:BOT | WARNING | %s (IP: %s) won a $%i dice bet against %s (IP: %s).", GetRPName(offeredby), GetPlayerIP(offeredby), amount, GetRPName(playerid), GetPlayerIP(playerid));
 			}
 		}
 		else if(rand[0] == rand[1])
@@ -42088,7 +41297,7 @@ CMD:accept(playerid, params[])
 
 			if(amount > 10000 && !strcmp(GetPlayerIP(offeredby), GetPlayerIP(playerid)))
 			{
-				SAM(COLOR_YELLOW, "| COM:BOT | WARNING | %s (IP: %s) won a $%i dice bet against %s (IP: %s).", GetRPName(playerid), GetPlayerIP(playerid), amount, GetRPName(offeredby), GetPlayerIP(offeredby));
+				SAM(COLOR_YELLOW, "| TIR:BOT | WARNING | %s (IP: %s) won a $%i dice bet against %s (IP: %s).", GetRPName(playerid), GetPlayerIP(playerid), amount, GetRPName(offeredby), GetPlayerIP(offeredby));
 			}
 		}
 
@@ -42434,15 +41643,14 @@ CMD:sth(playerid, params[])
 	    return SCM(playerid, COLOR_SYNTAX, "The report specified is being handled by another admin.");
 	}
 
-    SendAdminMessage(COLOR_SYNTAX, "AdmCmd: %s has sent report %i to helpers.", GetRPName(playerid), reportid);
-    SM(ReportInfo[reportid][rReporter], COLOR_GREEN, "%s has redirected your report to all helpers online.", GetRPName(playerid));
-    
-    strcpy(PlayerInfo[ReportInfo[reportid][rReporter]][pHelpRequest], ReportInfo[reportid][rText], 128);
-    //SendHelperMessage(COLOR_AQUA, "** Help Request from %s[%i]: %s **", GetRPName(ReportInfo[reportid][rReporter]), ReportInfo[reportid][rReporter], ReportInfo[reportid][rText]);
+    SAM(COLOR_LIGHTRED, "| TIR:ADMIN | %s has sent report %i to helpers.", GetRPName(playerid), reportid);
+	SM(ReportInfo[reportid][rReporter], COLOR_YELLOW, "%s has redirected your report to all helpers online.", GetRPName(playerid));
 
-    SendNewbieChatMessage(ReportInfo[reportid][rReporter], ReportInfo[reportid][rText]);
-    PlayerInfo[playerid][pLastRequest] = gettime();
-    ReportInfo[reportid][rExists] = 0;
+    strcpy(PlayerInfo[ReportInfo[reportid][rReporter]][pHelpRequest], ReportInfo[reportid][rText], 128);
+	SendHelperMessage(COLOR_AQUA, "** Help Request from %s[%i]: %s **", GetRPName(ReportInfo[reportid][rReporter]), ReportInfo[reportid][rReporter], ReportInfo[reportid][rText]);
+
+	PlayerInfo[playerid][pLastRequest] = gettime();
+	ReportInfo[reportid][rExists] = 0;
 	return 1;
 }
 
@@ -45476,6 +44684,20 @@ CMD:refilldrug(playerid, params[])
 
 	return 1;
 }
+CMD:purgeme(playerid, params[])
+{
+	if(!enabledpurge)
+	{
+	    return SCM(playerid, COLOR_SYNTAX, "The purge is disabled at the moment.");
+	}
+	GiveWeapon(playerid, 5);
+	GiveWeapon(playerid, 22);
+	GiveWeapon(playerid, 30);
+	SCM(playerid, COLOR_SYNTAX,""SERVER_BOT" given you 9mm, Baseball bat, and AK-47 for the purge.");
+	return 1;
+}
+
+
 
 CMD:top(playerid)
 {
@@ -45483,28 +44705,23 @@ CMD:top(playerid)
 	return 1;
 }
 
-
-CMD:purgeme(playerid, params[])
+CMD:togpurge(playerid, params[])
 {
-	if(!PurgeInfo[pStarted])
+    if(PlayerInfo[playerid][pAdmin] < 3)
 	{
-	    return SCM(playerid, COLOR_SYNTAX, "The purge is disabled at the moment.");
+	    return SCM(playerid, COLOR_SYNTAX, "You are not authorized to use this command.");
 	}
-	GiveWeapon(playerid, 24); //DEAGLE
-	GiveWeapon(playerid, 30); //AK47
-	GiveWeapon(playerid, 33); //RIFLE
-	SCM(playerid, COLOR_SYNTAX,""SERVER_BOT"[PURGE REMINDER]: Enjoy your weapons!");
-	return 1;
-}
 
-
-CMD:purgesettings(playerid, params[])
-{
-	if(PlayerInfo[playerid][pAdmin] < 7)
+	if(!enabledpurge)
 	{
-		return 1;
+	    enabledpurge = 1;
+	    SMA(SERVER_COLOR, "(( Administrator %s enabled the Purge. ))", GetRPName(playerid));
 	}
-	ShowDialogToPlayer(playerid, DIALOG_PURGE);
+	else
+	{
+	    enabledpurge = 0;
+	    SMA(SERVER_COLOR, "(( Administrator %s disabled the Purge. ))", GetRPName(playerid));
+	}
 	return 1;
 }
 
@@ -46112,7 +45329,7 @@ CMD:editvehicle(playerid, params[])
 	        SCM(playerid, COLOR_GREY2, "List of types: (0) None (1) Police (2) Medic (3) News (4) Government (5) Hitman (6) Federal (7) Mechanic");
 	        return 1;
 		}
-		if(!(0 <= type <= sizeof(factionTypes)))
+		if(!(0 <= type <= 8))
 		{
 		    return SCM(playerid, COLOR_SYNTAX, "Invalid type.");
 		}
@@ -46413,10 +45630,10 @@ CMD:respawncars(playerid, params[])
 	    if(sscanf(param, "i", type))
 	    {
 	        SCM(playerid, COLOR_SYNTAX, "Usage: /respawncars [faction] [type]");
-	        SCM(playerid, COLOR_GREY2, "List of types: (0) None (1) Police (2) Medic (3) News (4) Government (5) Hitman (6) Federal (7) Mechanic");
+	        SCM(playerid, COLOR_GREY2, "List of options: (1) Police (2) Medic (3) News (4) Government (5) Hitman (6) Federal");
 	        return 1;
 		}
-		if(!(1 <= type <= sizeof(factionTypes)))
+		if(!(1 <= type <= 5))
 		{
 		    return SCM(playerid, COLOR_SYNTAX, "Invalid faction type.");
 		}
@@ -48568,15 +47785,16 @@ CMD:givemoney(playerid, params[])
 	return 1;
 }
 //refunds
-CMD:refund(playerid, params[])
+CMD:refunds(playerid, params[])
 {
 	if(PlayerInfo[playerid][pRefunded] == 1)
 	{
 	    return SCM(playerid, COLOR_GREY, "You have already claimed your refund package.");
 	}
+	else
     RefundPlayer(playerid);
-	SMA(COLOR_LIGHTRED, "SERVER: %s has claimed their refund package using [/refund].", GetRPName(playerid));
-	ShowPlayerDialog(playerid, DIALOG_REFUNDED, DIALOG_STYLE_MSGBOX, "You have claimed your refund package", "{FFFFFF}As you came to our server, you have received the following as a starter package:\n\n {369b26}$100,000\n{A028AD}Gold Donator{FFFFFF}(3 days)\n\n{FFFFFF}We hope that you will invite more of your friends to play on the server!\n{FFFFFF}/info","Enjoy!","");
+	SMA(COLOR_LIGHTRED, "SERVER: %s has claimed their refund package using [/refunds].", GetRPName(playerid));
+	ShowPlayerDialog(playerid, DIALOG_REFUNDED, DIALOG_STYLE_MSGBOX, "You have claimed your refund package", "{FFFFFF}As you came to our server, you have received the following as a starter package:\n\n {369b26}$50,000\n{A028AD}Gold Donator{FFFFFF}(5 days)\n\n{FFFFFF}We hope that you will invite more of your friends to play on the server!\n{FFFFFF}/info","Enjoy!","");
 	return 1;
 }
 
@@ -51314,7 +50532,7 @@ CMD:answerhelp(playerid, params[])
 
 CMD:c(playerid, params[])
 {
-	if(PlayerInfo[playerid][pHelper] < 2 && PlayerInfo[playerid][pAdmin] < 2)
+	if(PlayerInfo[playerid][pHelper] < 1 && PlayerInfo[playerid][pAdmin] < 2)
 	{
 	    return SCM(playerid, COLOR_SYNTAX, "You are not authorized to use this command.");
 	}
@@ -53691,7 +52909,7 @@ CMD:editentrance(playerid, params[])
 	        SCM(playerid, COLOR_GREY2, "List of types: (0) None (1) Police (2) Medic (3) News (4) Government (5) Hitman (6) Federal (7) Mechanic");
 	        return 1;
 		}
-		if(!(0 <= type <= sizeof(factionTypes)))
+		if(!(0 <= type <= 8))
 		{
 		    return SCM(playerid, COLOR_SYNTAX, "Invalid type.");
 		}
@@ -54049,7 +53267,7 @@ CMD:deliver(playerid, params[])
 
         if(PlayerInfo[playerid][pACWarns] < MAX_ANTICHEAT_WARNINGS)
         {
-            SAM(COLOR_YELLOW, "| COM:BOT | WARNING | %s[%i] is possibly teleport delivering (time: %i).", GetRPName(playerid), playerid, gettime() - PlayerInfo[playerid][pLastLoad]);
+            SAM(COLOR_YELLOW, "| TIR:BOT | WARNING | %s[%i] is possibly teleport delivering (time: %i).", GetRPName(playerid), playerid, gettime() - PlayerInfo[playerid][pLastLoad]);
 		}
 		else
 		{
@@ -55163,7 +54381,7 @@ CMD:repair(playerid, params[])
 {
 	new vehicleid = GetPlayerVehicleID(playerid), Float:health;
 
-	if(FactionInfo[PlayerInfo[playerid][pFaction]][fType] != FACTION_MECHANIC)
+	if((FactionInfo[PlayerInfo[playerid][pFaction]][fType] != FACTION_MECHANIC))
 	{
 	    return SCM(playerid, COLOR_SYNTAX, "You must be a mechanic to use this command.");
 	}
@@ -55386,7 +54604,7 @@ CMD:withdraw(playerid, params[])
 {
 	new amount;
 
-	if(!IsPlayerInRangeOfPoint(playerid, 10.0, 1667.4260, -972.6691, 683.6873))
+	if(!IsPlayerInRangeOfPoint(playerid, 10.0, 1823.7875,-1216.0211,64.0059))
 	{
 	    return SCM(playerid, COLOR_SYNTAX, "You are not in range of the bank.");
 	}
@@ -55413,7 +54631,7 @@ CMD:deposit(playerid, params[])
 {
 	new amount;
 
-	if(!IsPlayerInRangeOfPoint(playerid, 10.0, 1667.4260, -972.6691, 683.6873))
+	if(!IsPlayerInRangeOfPoint(playerid, 10.0, 1823.7875,-1216.0211,64.0059))
 	{
 	    return SCM(playerid, COLOR_SYNTAX, "You are not in range of the bank.");
 	}
@@ -55444,7 +54662,7 @@ CMD:wiretransfer(playerid, params[])
 {
 	new targetid, amount;
 
-	if(!IsPlayerInRangeOfPoint(playerid, 10.0, 1667.4260, -972.6691, 683.6873))
+	if(!IsPlayerInRangeOfPoint(playerid, 10.0, 1823.7875,-1216.0211,64.0059))
 	{
 	    return SCM(playerid, COLOR_SYNTAX, "You are not in range of the bank.");
 	}
@@ -55484,7 +54702,7 @@ CMD:wiretransfer(playerid, params[])
 
     if(!strcmp(GetPlayerIP(playerid), GetPlayerIP(targetid)))
 	{
-	    SAM(COLOR_YELLOW, "| COM:BOT | WARNING | %s (IP: %s) has transferred $%i to %s (IP: %s).", GetRPName(playerid), GetPlayerIP(playerid), amount, GetRPName(targetid), GetPlayerIP(targetid));
+	    SAM(COLOR_YELLOW, "| TIR:BOT | WARNING | %s (IP: %s) has transferred $%i to %s (IP: %s).", GetRPName(playerid), GetPlayerIP(playerid), amount, GetRPName(targetid), GetPlayerIP(targetid));
 	}
 
 	return 1;
@@ -55492,7 +54710,7 @@ CMD:wiretransfer(playerid, params[])
 
 CMD:balance(playerid, params[])
 {
-	if(!IsPlayerInRangeOfPoint(playerid, 10.0, 1667.4260, -972.6691, 683.6873))
+	if(!IsPlayerInRangeOfPoint(playerid, 10.0, 1823.7875,-1216.0211,64.0059))
 	{
 	    return SCM(playerid, COLOR_SYNTAX, "You are not in range of the bank.");
 	}
@@ -59461,25 +58679,42 @@ CMD:createfaction(playerid, params[])
 	if(sscanf(params, "s[12]s[48]", type, name))
 	{
 	    SCM(playerid, COLOR_SYNTAX, "Usage: /createfaction [type] [name]");
-		SCM(playerid, COLOR_GREY2, "List of types: police, medic, news, government, hitman, federal, mechanic");
+		SCM(playerid, COLOR_GREY2, "List of types: Police, Medic, News, Government, Hitman, Federal, Mechanic");
 		return 1;
 	}
-	if(!strcmp(type, "police", true)) {
+
+	if(!strcmp(type, "police", true))
+	{
 	    type_id = FACTION_POLICE;
-	} else if(!strcmp(type, "medic", true)) {
+	}
+	else if(!strcmp(type, "medic", true))
+	{
 	    type_id = FACTION_MEDIC;
-	} else if(!strcmp(type, "news", true)) {
+	}
+	else if(!strcmp(type, "news", true))
+	{
 	    type_id = FACTION_NEWS;
-	} else if(!strcmp(type, "government", true)) {
+	}
+	else if(!strcmp(type, "government", true))
+	{
 	    type_id = FACTION_GOVERNMENT;
-	} else if(!strcmp(type, "hitman", true)) {
+	}
+	else if(!strcmp(type, "hitman", true))
+	{
 	    type_id = FACTION_HITMAN;
-	} else if(!strcmp(type, "federal", true)) {
+	}
+	else if(!strcmp(type, "federal", true))
+	{
 	    type_id = FACTION_FEDERAL;
-	} else if(!strcmp(type, "mechanic", true)) {
+	}
+	else if(!strcmp(type, "mechanic", true))
+	{
 	    type_id = FACTION_MECHANIC;
-	} else {
-		return SM(playerid, COLOR_SYNTAX, "Invalid Faction Type.");
+	}
+
+	if(type_id == -1)
+	{
+	    return SCM(playerid, COLOR_SYNTAX, "Invalid type.");
 	}
 
 	for(new i = 1; i < MAX_FACTIONS; i ++)
@@ -59493,6 +58728,7 @@ CMD:createfaction(playerid, params[])
 	        return 1;
 		}
 	}
+
 	return 1;
 }
 
@@ -59547,25 +58783,42 @@ CMD:editfaction(playerid, params[])
 	}
 	else if(!strcmp(option, "type", true))
 	{
-	    new type;
+	    new type_id;
 
-	    if(sscanf(param, "i", type))
+	    if(isnull(param))
 	    {
 	        SCM(playerid, COLOR_SYNTAX, "Usage: /editfaction [factionid] [type] [option]");
-	        SCM(playerid, COLOR_GREY2, "List of types: (0) None (1) Police (2) Medic (3) News (4) Government (5) Hitman (6) Federal (7) Mechanic");
-	        return 1;
+			SCM(playerid, COLOR_GREY2, "List of types: Police, Medic, News, Government, Hitman, Federal, Mechanic");
+			return 1;
 		}
-		if(!(0 <= type <= sizeof(factionTypes)))
+
+		if(!strcmp(param, "police", true)) {
+		    type_id = FACTION_POLICE;
+		} else if(!strcmp(param, "medic", true)) {
+		    type_id = FACTION_MEDIC;
+		} else if(!strcmp(param, "news", true)) {
+		    type_id = FACTION_NEWS;
+		} else if(!strcmp(param, "government", true)) {
+		    type_id = FACTION_GOVERNMENT;
+		} else if(!strcmp(param, "hitman", true)) {
+		    type_id = FACTION_HITMAN;
+		} else if(!strcmp(param, "federal", true)) {
+		    type_id = FACTION_FEDERAL;
+		} else if(!strcmp(param, "mechanic", true)) {
+		    type_id = FACTION_MECHANIC;
+		}
+
+		if(type_id == -1)
 		{
 		    return SCM(playerid, COLOR_SYNTAX, "Invalid type.");
 		}
 
-		FactionInfo[factionid][fType] = type;
+		FactionInfo[factionid][fType] = type_id;
 
-		mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "UPDATE factions SET type = %i WHERE id = %i", type, factionid);
+		mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "UPDATE factions SET type = %i WHERE id = %i", type_id, factionid);
 		mysql_tquery(connectionID, queryBuffer);
 
-		SAM(COLOR_LIGHTRED, "| TIR:ADMIN | %s has set the type of faction ID %i to %s.", GetRPName(playerid), factionid, factionTypes[type]);
+		SAM(COLOR_LIGHTRED, "| TIR:ADMIN | %s has set the type of faction ID %i to %s.", GetRPName(playerid), factionid, factionTypes[type_id]);
 	}
 	else if(!strcmp(option, "color", true))
 	{
@@ -59786,6 +59039,7 @@ CMD:purgefaction(playerid, params[])
 	        SM(i, COLOR_LIGHTRED, "The faction you were apart of has been purged by an administrator.");
             SetPlayerSkin(i, 230);
 
+            Voice_FactionLeave(i,PlayerInfo[i][pFaction]); //BearDev
 	        PlayerInfo[i][pFaction] = -1;
 	        PlayerInfo[i][pFactionRank] = 0;
 	        PlayerInfo[i][pDivision] = -1;
@@ -59858,6 +59112,7 @@ CMD:setfaction(playerid, params[])
 
 	if(factionid == -1)
 	{
+     	Voice_FactionLeave(targetid,PlayerInfo[targetid][pFaction]); //BearDev
 		PlayerInfo[targetid][pFaction] = -1;
 		PlayerInfo[targetid][pFactionRank] = 0;
 		PlayerInfo[targetid][pDivision] = -1;
@@ -59881,7 +59136,9 @@ CMD:setfaction(playerid, params[])
 			mysql_tquery(connectionID, queryBuffer);
 		}*/
 
+		Voice_FactionLeave(targetid,PlayerInfo[targetid][pFaction]); //BearDev
 		PlayerInfo[targetid][pFaction] = factionid;
+		Voice_FactionJoin(targetid,PlayerInfo[targetid][pFaction]); //BearDev
 		PlayerInfo[targetid][pFactionRank] = rankid;
 		PlayerInfo[targetid][pDivision] = -1;
 
@@ -60062,7 +59319,7 @@ CMD:g(playerid, params[])
 			}
 			else
 			{
-			    SM(i, COLOR_GLOBAL, "(( %s {80d6ab}%s: %s))", string, GetRPName(playerid), params);
+			    SM(i, COLOR_GLOBAL, "(( %s {80d6ab}%s %s: %s ))", string, GetRPName(playerid), params);
 			}
 		}
 	}
@@ -60155,54 +59412,72 @@ CMD:div(playerid, params[])
 	return 1;
 }
 
-CMD:r(playerid, params[]) return callcmd::radio(playerid, params);
+CMD:r(playerid, params[])
+{
+	return callcmd::radio(playerid, params);
+}
+
 CMD:radio(playerid, params[])
 {
     if(isnull(params))
 	{
-	    return SCM(playerid, COLOR_SYNTAX, "Usage: /(r)adio [faction radio]");
+	    return SCM(playerid, COLOR_GREY, "Usage: /(r)adio [faction radio]");
 	}
 	if(PlayerInfo[playerid][pFaction] == -1)
     {
-        return SCM(playerid, COLOR_SYNTAX, "You are not apart of any faction at the moment.");
+        return SCM(playerid, COLOR_GREY, "You are not apart of any faction at the moment.");
 	}
 	if(PlayerInfo[playerid][pToggleRadio])
 	{
-	    return SCM(playerid, COLOR_SYNTAX, "You can't speak in your radio as you have it toggled.");
+	    return SCM(playerid, COLOR_GREY, "You can't speak in your radio as you have it toggled.");
 	}
 	if(PlayerInfo[playerid][pInjured])
 	{
-	    return SCM(playerid, COLOR_SYNTAX, "You cannot use this command while dead.");
+	    return SCM(playerid, COLOR_GREY, "You cannot use this command while dead.");
 	}
 	if(PlayerInfo[playerid][pCuffed])
 	{
-	    return SCM(playerid, COLOR_SYNTAX, "You cannot use this command while cuffed");
+	    return SCM(playerid, COLOR_GREY, "You cannot use this command while cuffed");
 	}
 	if(PlayerInfo[playerid][pTied])
 	{
-	    return SCM(playerid, COLOR_SYNTAX, "You cannot use this command while tied.");
+	    return SCM(playerid, COLOR_GREY, "You cannot use this command while tied.");
 	}
 
-	new color = (FactionInfo[PlayerInfo[playerid][pFaction]][fType] == FACTION_MEDIC) ? (COLOR_DOCTOR) : (COLOR_ROYALBLUE);
+	new color = (FactionInfo[PlayerInfo[playerid][pFaction]][fType] == FACTION_MEDIC) ? (COLOR_DOCTOR) : (0x0B96DBFF);
 	foreach(new i : Player)
 	{
 	    if(PlayerInfo[i][pFaction] == PlayerInfo[playerid][pFaction] && !PlayerInfo[i][pToggleRadio])
 	    {
 			if(strlen(params) > MAX_SPLIT_LENGTH)
 			{
-			    SM(i, color, "** %s %s: %.*s... **", FactionRanks[PlayerInfo[playerid][pFaction]][PlayerInfo[playerid][pFactionRank]], GetRPName(playerid), MAX_SPLIT_LENGTH, params);
-			    SM(i, color, "** %s %s: ...%s **", FactionRanks[PlayerInfo[playerid][pFaction]][PlayerInfo[playerid][pFactionRank]], GetRPName(playerid), params[MAX_SPLIT_LENGTH]);
+			    if(PlayerInfo[playerid][pDivision] == -1)
+			    {
+				    SM(i, color, "[RADIO] %s %s: %.*s... ", FactionRanks[PlayerInfo[playerid][pFaction]][PlayerInfo[playerid][pFactionRank]], GetPlayerNameEx(playerid), MAX_SPLIT_LENGTH, params);
+				    SM(i, color, "[RADIO] %s %s: ...%s ", FactionRanks[PlayerInfo[playerid][pFaction]][PlayerInfo[playerid][pFactionRank]], GetPlayerNameEx(playerid), params[MAX_SPLIT_LENGTH]);
+				}
+				else
+				{
+				    SM(i, color, "[RADIO] %s (%s) %s: %.*s... ", FactionRanks[PlayerInfo[playerid][pFaction]][PlayerInfo[playerid][pFactionRank]], FactionDivisions[PlayerInfo[playerid][pFaction]][PlayerInfo[playerid][pDivision]], GetPlayerNameEx(playerid), MAX_SPLIT_LENGTH, params);
+				    SM(i, color, "[RADIO] %s (%s) %s: ...%s ", FactionRanks[PlayerInfo[playerid][pFaction]][PlayerInfo[playerid][pFactionRank]], FactionDivisions[PlayerInfo[playerid][pFaction]][PlayerInfo[playerid][pDivision]], GetPlayerNameEx(playerid), params[MAX_SPLIT_LENGTH]);
+				}
 			}
 			else
 			{
-			    SM(i, color, "** %s %s: %s **", FactionRanks[PlayerInfo[playerid][pFaction]][PlayerInfo[playerid][pFactionRank]], GetRPName(playerid), params);
+			    if(PlayerInfo[playerid][pDivision] == -1)
+			    {
+				    SM(i, color, "[RADIO] %s %s: %s ", FactionRanks[PlayerInfo[playerid][pFaction]][PlayerInfo[playerid][pFactionRank]], GetRPName(playerid), params);
+				}
+				else
+				{
+				    SM(i, color, "[RADIO] %s (%s) %s: %s ", FactionRanks[PlayerInfo[playerid][pFaction]][PlayerInfo[playerid][pFactionRank]], FactionDivisions[PlayerInfo[playerid][pFaction]][PlayerInfo[playerid][pDivision]], GetPlayerNameEx(playerid), params);
+				}
 			}
 		}
 	}
-	SetPlayerBubbleText(playerid, 5.0, color, "(Radio) %s",params);
+	SetPlayerBubbleText(playerid, 5.0, color, "(radio) %s",params);
 	return 1;
 }
-
 /*CMD:d(playerid, params[])
 {
     if(isnull(params))
@@ -60413,6 +59688,7 @@ CMD:faction(playerid, params[])
 		ResetPlayerWeaponsEx(targetid);
         SetPlayerSkin(targetid, 230);
 
+		Voice_FactionLeave(targetid,PlayerInfo[targetid][pFaction]); //BearDev
         PlayerInfo[targetid][pFaction] = -1;
         PlayerInfo[targetid][pFactionRank] = 0;
         PlayerInfo[targetid][pDivision] = -1;
@@ -60485,6 +59761,7 @@ CMD:faction(playerid, params[])
         SetPlayerSkin(playerid, 230);
 
 
+        Voice_FactionLeave(playerid,PlayerInfo[playerid][pFaction]); //BearDev
         PlayerInfo[playerid][pFaction] = -1;
         PlayerInfo[playerid][pFactionRank] = 0;
         PlayerInfo[playerid][pDivision] = -1;
@@ -60509,7 +59786,7 @@ CMD:faction(playerid, params[])
 		}
 
      	SendFactionMessage(PlayerInfo[playerid][pFaction], COLOR_FACTIONCHAT, "(( %s %s has respawned all unoccupied faction vehicles. ))", FactionRanks[PlayerInfo[playerid][pFaction]][PlayerInfo[playerid][pFactionRank]], GetRPName(playerid));
-        SAM(COLOR_YELLOW, "| COM:BOT | WARNING | %s[%i] has respawned their faction vehicles.", GetRPName(playerid), playerid);
+        SAM(COLOR_YELLOW, "| TIR:BOT | WARNING | %s[%i] has respawned their faction vehicles.", GetRPName(playerid), playerid);
 	}
 	else if(!strcmp(option, "offlinekick", true))
 	{
@@ -60602,7 +59879,7 @@ CMD:faction(playerid, params[])
 	    mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "INSERT INTO factionranks VALUES(%i, %i, '%e') ON DUPLICATE KEY UPDATE name = '%e'", PlayerInfo[playerid][pFaction], rankid, rank, rank);
 	    mysql_tquery(connectionID, queryBuffer);
 
-	    SAM(COLOR_YELLOW, "| COM:BOT | WARNING | %s has set rank %i's name of faction ID %i to '%s'.", GetPlayerNameEx(playerid), rankid, PlayerInfo[playerid][pFaction], rank);
+	    SAM(COLOR_YELLOW, "| TIR:BOT | WARNING | %s has set rank %i's name of faction ID %i to '%s'.", GetPlayerNameEx(playerid), rankid, PlayerInfo[playerid][pFaction], rank);
 	}
 
 	return 1;
@@ -60840,6 +60117,7 @@ CMD:cell(playerid, params[])
 			    MoveDynamicObject(gPrisonCells[i], cellPositions[i][0], cellPositions[i][1], cellPositions[i][2], 2.0);
 			    Streamer_SetExtraInt(gPrisonCells[i], E_OBJECT_OPENED, 0);
 			}
+
 			return 1;
 		}
 	}
@@ -61831,7 +61109,7 @@ CMD:gov(playerid, params[])
 		case FACTION_MECHANIC:
 		{
 	        SCMA(COLOR_WHITE, "---------- * Mechanic Service Announcement * ----------");
-	        SMA(COLOR_GENERAL3, "** %s %s: %s", FactionRanks[PlayerInfo[playerid][pFaction]][PlayerInfo[playerid][pFactionRank]], GetRPName(playerid), params);
+	        SMA(COLOR_GREEN, "** %s %s: %s", FactionRanks[PlayerInfo[playerid][pFaction]][PlayerInfo[playerid][pFactionRank]], GetRPName(playerid), params);
 		}
 		default:
 		{
@@ -62630,7 +61908,7 @@ CMD:deliverpatient(playerid, params[])
 		SetPlayerVirtualWorld(targetid, HOSPITAL_ALLSAINTS);
 	}
 
-	if(IsLawEnforcement(targetid) || GetFactionType(targetid) == FACTION_MEDIC)
+	if(GetFactionType(targetid) == FACTION_POLICE || GetFactionType(targetid) == FACTION_MEDIC)
 	{
         SCM(targetid, COLOR_DOCTOR, "You have not been billed for your stay. You also keep all of your weapons!");
     }
@@ -63024,7 +62302,7 @@ CMD:settax(playerid, params[])
 	format(string, sizeof(string), "Breaking News"WHITE": Mayor changed the income tax rate to %i percent.", amount);
 	SMA(COLOR_LIGHTGREEN, string);
 
-	SAM(COLOR_YELLOW, "| COM:BOT | WARNING | %s has adjusted the income tax rate to %i percent.", GetRPName(playerid), amount);
+	SAM(COLOR_YELLOW, "| TIR:BOT | WARNING | %s has adjusted the income tax rate to %i percent.", GetRPName(playerid), amount);
 	SM(playerid, COLOR_AQUA, "You have set the income tax rate to %i percent.", amount);
 	Log_Write("log_faction", "%s (uid: %i) set the income tax rate to %i percent.", GetPlayerNameEx(playerid), PlayerInfo[playerid][pID], amount);
 	return 1;
@@ -63101,7 +62379,7 @@ CMD:taxwithdraw(playerid, params[])
 	GivePlayerCash(playerid, amount);
 
 	SM(playerid, COLOR_AQUA, "** You have withdrawn $%i from the tax vault. The new balance is $%i.", amount, gVault);
-	SAM(COLOR_YELLOW, "| COM:BOT | WARNING | %s has withdrawn $%i from the tax vault, reason: %s", GetRPName(playerid), amount, reason);
+	SAM(COLOR_YELLOW, "| TIR:BOT | WARNING | %s has withdrawn $%i from the tax vault, reason: %s", GetRPName(playerid), amount, reason);
 	Log_Write("log_faction", "%s (uid: %i) has withdrawn $%i from the tax vault, reason: %s", GetPlayerNameEx(playerid), PlayerInfo[playerid][pID], amount, reason);
 	return 1;
 }
@@ -63139,7 +62417,7 @@ CMD:taxdeposit(playerid, params[])
 	GivePlayerCash(playerid, -amount);
 
 	SM(playerid, COLOR_AQUA, "** You have deposited $%i in the tax vault. The new balance is $%i.", amount, gVault);
-	SAM(COLOR_YELLOW, "| COM:BOT | WARNING | %s has deposited $%i in the tax vault.", GetRPName(playerid), amount);
+	SAM(COLOR_YELLOW, "| TIR:BOT | WARNING | %s has deposited $%i in the tax vault.", GetRPName(playerid), amount);
 	Log_Write("log_faction", "%s (uid: %i) has deposited $%i in the tax vault.", GetPlayerNameEx(playerid), PlayerInfo[playerid][pID], amount);
 	return 1;
 }
@@ -63202,7 +62480,7 @@ CMD:contract(playerid, params[])
 	mysql_tquery(connectionID, queryBuffer);
 
 	SM(playerid, COLOR_AQUA, "You have placed a contract on %s for $%i, reason: %s", GetRPName(targetid), amount, reason);
-	SAM(COLOR_YELLOW, "| COM:BOT | WARNING | %s placed a contract on %s for $%i, reason: %s", GetRPName(playerid), GetRPName(targetid), amount, reason);
+	SAM(COLOR_YELLOW, "| TIR:BOT | WARNING | %s placed a contract on %s for $%i, reason: %s", GetRPName(playerid), GetRPName(targetid), amount, reason);
  	Log_Write("log_contracts", "%s (uid: %i) placed a contract on %s (uid: %i) for $%i, reason: %s", GetPlayerNameEx(playerid), PlayerInfo[playerid][pID], GetPlayerNameEx(targetid), PlayerInfo[targetid][pID], amount, reason);
  	return 1;
 }
@@ -67029,7 +66307,7 @@ CMD:grespawncars(playerid, params[])
 		}
 	}
 
-	SAM(COLOR_YELLOW, "| COM:BOT | WARNING | %s[%i] has respawned their gang vehicles.", GetRPName(playerid), playerid);
+	SAM(COLOR_YELLOW, "| TIR:BOT | WARNING | %s[%i] has respawned their gang vehicles.", GetRPName(playerid), playerid);
 	SCM(playerid, COLOR_YELLOW, "You have respawned all of your unoccupied gang vehicles.");
 	return 1;
 }
@@ -69685,6 +68963,46 @@ stock ReturnLyrics(lyricid)
 		return 1;
 	}
 #endif
+//BearDev
+Voice_FactionLeave(playerid,FactionID) {
+		if(FactionID == FACTION_MEDIC) {
+		if(emsstream) SvDetachListenerFromStream(emsstream, playerid);
+	}
+		if(FactionID == FACTION_POLICE) {
+		if(lspdstream) SvDetachListenerFromStream(lspdstream, playerid);
+	}
+		if(FactionID == FACTION_NEWS) {
+		if(newsstream) SvDetachListenerFromStream(newsstream, playerid);
+	}
+		if(FactionID == FACTION_MECHANIC) {
+		if(mechstream) SvDetachListenerFromStream(mechstream, playerid);
+	}
+		if(FactionID == FACTION_GOVERNMENT) {
+		if(govstream) SvDetachListenerFromStream(govstream, playerid);
+	}
+		//Another Faction you need to create one by one global stream variable
+		return 1;
+}
+//BearDev
+Voice_FactionJoin(playerid,FactionID) {
+		if(FactionID == FACTION_MEDIC) {
+		if(emsstream) SvAttachListenerToStream(emsstream, playerid);
+	}
+		if(FactionID == FACTION_POLICE) {
+		if(lspdstream) SvAttachListenerToStream(lspdstream, playerid);
+	}
+		if(FactionID == FACTION_NEWS) {
+		if(newsstream) SvAttachListenerToStream(newsstream, playerid);
+	}
+		if(FactionID == FACTION_MECHANIC) {
+		if(mechstream) SvAttachListenerToStream(mechstream, playerid);
+	}
+		if(FactionID == FACTION_GOVERNMENT) {
+		if(govstream) SvAttachListenerToStream(govstream, playerid);
+	}
+		//Another Faction you need to create one by one global stream variable
+		return 1;
+}
 
 CMD:VoiceOn(playerid,params[]) {
     SvAttachSpeakerToStream(lstream[playerid], playerid);
@@ -69699,6 +69017,25 @@ public SV_VOID:OnPlayerActivationKeyPress(SV_UINT:playerid, SV_UINT:keyid)
     // Attach the player to the global stream as a speaker if the 'F3' key is pressed
     if (keyid == 0x72 && gstream) SvAttachSpeakerToStream(gstream, playerid);
     // Attach  player to faction LSPD , Press 'x' key is pressed
+	if (keyid == 0x58) {
+		switch(PlayerInfo[playerid][pFaction]) {
+			case FACTION_POLICE: {
+				if(lspdstream) SvAttachSpeakerToStream(lspdstream, playerid);
+			}
+			case FACTION_MEDIC: {
+				if(emsstream) SvAttachSpeakerToStream(emsstream, playerid);
+			}
+			case FACTION_NEWS: {
+				if(newsstream) SvAttachSpeakerToStream(newsstream, playerid);
+			}
+			case FACTION_MECHANIC: {
+				if(mechstream) SvAttachSpeakerToStream(mechstream, playerid);
+			}
+			case FACTION_GOVERNMENT: {
+				if(govstream) SvAttachSpeakerToStream(govstream, playerid);
+			}
+		}
+	}
 }
 
 public SV_VOID:OnPlayerActivationKeyRelease(SV_UINT:playerid, SV_UINT:keyid)
@@ -69706,202 +69043,25 @@ public SV_VOID:OnPlayerActivationKeyRelease(SV_UINT:playerid, SV_UINT:keyid)
     // Detach the player from the local stream if the 'B' key is released
     if (keyid == 0x5A && lstream[playerid]) SvDetachSpeakerFromStream(lstream[playerid], playerid);
     // Detach the player from the global stream if the 'F3' key is released
-    if (keyid == 0x72 && gstream) SvDetachSpeakerFromStream(gstream, playerid);	
-}
-
-/*
-// AC System
-stock UploadAntiCheatSettings()
-{
-	printf("[LoadAntiCheat] Loading data from database...");
-    mysql_function_query(connectionID, "SELECT * FROM `anticheat_settings`", true, "UploadAntiCheat", "");
-}
-
-forward UploadAntiCheat();
-public UploadAntiCheat()
-{
-    new rows = cache_num_rows(), tick = GetTickCount();
-
-	if (!rows)
-	{
-        print("[MySQL]: Anti-cheat settings were not found in the database. Loading of the mod stopped - configure anti-cheat. ");
-		for(new i=0;i<53;i++)
-		{
-			mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "INSERT INTO anticheat_settings (ac_code, ac_code_trigger_type) VALUES('%i', '1')", i);
-			mysql_tquery(connectionID, queryBuffer);
-		}
-		print("[MySQL]: Anti-cheat settings Updated added. - configure anti-cheat. ");
-        //return GameModeExit();
-    }
-
-    for(new i = 0; i < AC_MAX_CODES; i++)
-    {
-        AC_CODE_TRIGGER_TYPE[i] = cache_get_field_content_int(i, "ac_code_trigger_type");
-
-        if (AC_CODE_TRIGGER_TYPE[i] == AC_CODE_TRIGGER_TYPE_DISABLED) {
-            EnableAntiCheat(i, 0);
-        }
-    }
-
-    new mes[128];
-    format(mes, sizeof(mes), "[ANTICHEAT]: Anti-cheat settings loaded successfully (loaded: %i). Time: %i мс.", rows, GetTickCount() - tick);
-    print(mes);
-
-    return 1;
-}
-
-forward OnCheatDetected(playerid, ip_address[], type, code);
-public OnCheatDetected(playerid, ip_address[], type, code)
-{
-	if(PlayerInfo[playerid][pAdmin] < 2)
-	{
-		if (type == AC_GLOBAL_TRIGGER_TYPE_PLAYER)
-		{
-			switch(code)
-			{
-				case 5, 6, 11, 22:
-				{
-					return 1;
-				}
-				case 32: // CarJack
-				{
-					new
-						Float:x,
-						Float:y,
-						Float:z;
-
-					AntiCheatGetPos(playerid, x, y, z);
-					return SetPlayerPos(playerid, x, y, z);
-				}
-				default:
-				{
-					if (gettime() - pAntiCheatLastCodeTriggerTime[playerid][code] < AC_TRIGGER_ANTIFLOOD_TIME)
-						return 1;
-
-					pAntiCheatLastCodeTriggerTime[playerid][code] = gettime();
-					AC_CODE_TRIGGERED_COUNT[code]++;
-
-					new trigger_type = AC_CODE_TRIGGER_TYPE[code];
-
-					switch(trigger_type)
-					{
-						case AC_CODE_TRIGGER_TYPE_DISABLED: return 1;
-						case AC_CODE_TRIGGER_TYPE_WARNING:
-						{
-							new str[128];
-							format(str, sizeof(str),"%s[%d] suspected of using cheat programs: %s [code: %03d].", GetRPName(playerid), playerid, AC_CODE_NAME[code], code);
-							SendAdminMessage(COLOR_RED, str);
-							//SM(playerid, -1, "You were suspected of using cheat programs: %s [code: %03d].", AC_CODE_NAME[code], code);
-							new szString[128];
-							format(szString, sizeof(szString), "%s[%d] suspected of using cheat programs: %s [code: %03d].", GetRPName(playerid), playerid, AC_CODE_NAME[code], code);
-							Log_Write("log_cheat", "%s (uid: %i) suspected of using cheat programs", GetPlayerNameEx(playerid), PlayerInfo[playerid][pID]);
-
-							#if defined DISCORD
-							new astr[128];
-							format(astr, sizeof(astr), "%s[%d] suspected of using cheat programs: %s [code: %03d].", GetRPName(playerid), playerid, AC_CODE_NAME[code], code);
-							DCC_SendChannelMessage(AntiCheatLogs, astr);
-							#endif
-						}
-						case AC_CODE_TRIGGER_TYPE_KICK:
-						{
-							new str[128];
-							format(str, sizeof(str),"%s[%d] was kicked on suspicion of using cheat programs: %s [code: %03d].", GetRPName(playerid), playerid, AC_CODE_NAME[code], code);
-							SendAdminMessage(COLOR_RED, str);
-							
-							#if defined DISCORD
-							new astr[128];
-							format(astr, sizeof(astr), "%s[%d] was kicked on suspicion of using cheat programs: %s [code: %03d].", GetRPName(playerid), playerid, AC_CODE_NAME[code], code);
-							DCC_SendChannelMessage(AntiCheatLogs, astr);
-							#endif
-
-							SM(playerid, -1, "You were kicked on suspicion of using cheat programs: %s [code: %03d].", AC_CODE_NAME[code], code);
-							AntiCheatKickWithDesync(playerid, code);
-						}
-					}
-				}
+    if (keyid == 0x72 && gstream) SvDetachSpeakerFromStream(gstream, playerid);
+	if (keyid == 0x58) {
+		switch(PlayerInfo[playerid][pFaction]) {
+			case FACTION_POLICE: {
+				if(lspdstream) SvDetachSpeakerFromStream(lspdstream, playerid);
+			}
+			case FACTION_MEDIC: {
+				if(emsstream) SvDetachSpeakerFromStream(emsstream, playerid);
+			}
+			case FACTION_NEWS: {
+				if(newsstream) SvDetachSpeakerFromStream(newsstream, playerid);
+			}
+			case FACTION_MECHANIC: {
+				if(mechstream) SvDetachSpeakerFromStream(mechstream, playerid);
+			}
+			case FACTION_GOVERNMENT: {
+				if(govstream) SvDetachSpeakerFromStream(govstream, playerid);
 			}
 		}
-		else // AC_GLOBAL_TRIGGER_TYPE_IP
-		{
-			AC_CODE_TRIGGERED_COUNT[code]++;
-			new str[128];
-			format(str, sizeof(str),"<AC-BAN-IP> IP address %s was blocked: %s [code: %03d].", ip_address, AC_CODE_NAME[code], code);
-			SendAdminMessage(COLOR_RED, str);
-			BlockIpAddress(ip_address, 0);
-		}
-	}
-    return 1;
+	}	
 }
 
-stock ShowPlayer_AntiCheatSettings(playerid)
-{
-    static
-        dialog_string[42 + 19 - 8 + (AC_MAX_CODE_LENGTH + AC_MAX_CODE_NAME_LENGTH + AC_MAX_TRIGGER_TYPE_NAME_LENGTH + 10)*AC_MAX_CODES_ON_PAGE] = EOS;
-
-    new
-        triggeredCount = 0,
-        page = pAntiCheatSettingsPage{playerid},
-        next = 0,
-        index = 0;
-
-    dialog_string = "Name\tPunishment\tNumber of positives\n";
-
-    for(new i = 0; i < AC_MAX_CODES; i++)
-    {
-        if (i >= (page * AC_MAX_CODES_ON_PAGE) && i < (page * AC_MAX_CODES_ON_PAGE) + AC_MAX_CODES_ON_PAGE)
-            next++;
-
-        if (i >= (page - 1) * AC_MAX_CODES_ON_PAGE && i < ((page - 1) * AC_MAX_CODES_ON_PAGE) + AC_MAX_CODES_ON_PAGE)
-        {
-            triggeredCount = AC_CODE_TRIGGERED_COUNT[i];
-
-            format(dialog_string, sizeof(dialog_string), "%s[%s] %s\t%s\t%d\n",
-                dialog_string,
-                AC_CODE[i],
-                AC_CODE_NAME[i],
-                AC_TRIGGER_TYPE_NAME[AC_CODE_TRIGGER_TYPE[i]],
-                triggeredCount);
-
-            pAntiCheatSettingsMenuListData[playerid][index++] = i;
-        }
-    }
-
-    if (next)
-        strcat(dialog_string, ""AC_DIALOG_NEXT_PAGE_TEXT"\n");
-
-    if (page > 1)
-        strcat(dialog_string, AC_DIALOG_PREVIOUS_PAGE_TEXT);
-
-    return ShowPlayerDialog(playerid, ANTICHEAT_SETTINGS, DIALOG_STYLE_TABLIST_HEADERS, "Anti-cheat settings", dialog_string, "Select", "Cancel");
-}
-
-//The function of showing the menu for editing the type of triggering of a certain code in anti-cheat
-stock ShowPlayer_AntiCheatEditCode(playerid, code)
-{
-    new
-        dialog_header[22 - 4 + AC_MAX_CODE_LENGTH + AC_MAX_CODE_NAME_LENGTH],
-        dialog_string[AC_MAX_TRIGGER_TYPE_NAME_LENGTH*AC_MAX_TRIGGER_TYPES];
-
-    format(dialog_header, sizeof(dialog_header), "Code: %s | Name: %s", AC_CODE[code], AC_CODE_NAME[code]); //Название
-
-    for(new i = 0; i < AC_MAX_TRIGGER_TYPES; i++)
-    {
-        strcat(dialog_string, AC_TRIGGER_TYPE_NAME[i]);
-
-        if (i + 1 != AC_MAX_TRIGGER_TYPES)
-            strcat(dialog_string, "\n");
-    }
-
-    return ShowPlayerDialog(playerid, ANTICHEAT_EDIT_CODE, DIALOG_STYLE_LIST, dialog_header, dialog_string, "Select", "Return");
-}
-
-CMD:anticheats(playerid, params[])
-{
-	if(PlayerInfo[playerid][pAdmin] < 7 && !IsPlayerAdmin(playerid))
-	{
-	    return SCM(playerid, COLOR_SYNTAX, "You are not authorized to use this command.");
-	}
-
-    pAntiCheatSettingsPage{playerid} = 1; // Set the variable that stores the page number the player is on to the value 1 (that is, now the player is on page 1)
-    return ShowPlayer_AntiCheatSettings(playerid); // Show the player the main anti-cheat settings dialog
-}*/
