@@ -18211,7 +18211,8 @@ public OnQueryFinished(threadid, extraid)
 			    CarregandoTelaLogin[extraid] = 0;
 				SetPlayerInterior( extraid, 0 );
 				SetPlayerVirtualWorld( extraid, 1 );
-	            InterpolateCameraPos( extraid, 408.2191, -2465.8276, -7.0720, 475.7796, -1206.6105, 133.3514, 50000, CAMERA_MOVE);
+				showTelaLogin(extraid);
+	            /*InterpolateCameraPos( extraid, 408.2191, -2465.8276, -7.0720, 475.7796, -1206.6105, 133.3514, 50000, CAMERA_MOVE);
 				InterpolateCameraLookAt( extraid, 408.3509, -2464.8369, -7.1369, 475.8351, -1205.6111, 133.2214, 50000, CAMERA_MOVE);
 				 	// ==== Login ==== //
 				for(new i = 0; i < 14; i++) {
@@ -18228,14 +18229,14 @@ public OnQueryFinished(threadid, extraid)
 				PlayerTextDrawFont(extraid, loadTela6[extraid], 3);
 				PlayerTextDrawSetProportional(extraid, loadTela6[extraid], 1);
 				PlayerTextDrawShow(extraid, loadTela6[extraid]);
-				TimerLogin[extraid] = SetTimerEx("mostrarTelaLogin", 100, true, "d", extraid);
+				TimerLogin[extraid] = SetTimerEx("mostrarTelaLogin", 100, true, "d", extraid);*/
 			}
 			else
 			{
 				SetPlayerInterior( extraid, 0 );
 				SetPlayerVirtualWorld( extraid, 1 );
-	            InterpolateCameraPos( extraid, 408.2191, -2465.8276, -7.0720, 475.7796, -1206.6105, 133.3514, 50000, CAMERA_MOVE);
-				InterpolateCameraLookAt( extraid, 408.3509, -2464.8369, -7.1369, 475.8351, -1205.6111, 133.2214, 50000, CAMERA_MOVE);
+	        	//InterpolateCameraPos( extraid, 408.2191, -2465.8276, -7.0720, 475.7796, -1206.6105, 133.3514, 50000, CAMERA_MOVE);
+				//InterpolateCameraLookAt( extraid, 408.3509, -2464.8369, -7.1369, 475.8351, -1205.6111, 133.2214, 50000, CAMERA_MOVE);
 				if(strfind(GetPlayerNameEx(extraid), "_") == -1)
 			    {
 			        ShowPlayerDialog(extraid, DIALOG_FREENAMECHANGE, DIALOG_STYLE_INPUT, "Non-Roleplay Name", "An administrator has came to the conclusion that your name is non-RP.\nTherefore you have been given this free namechange in order to correct it.\n\nEnter a name in the Firstname_Lastname format in the box below:", "Submit", "");
@@ -18243,8 +18244,9 @@ public OnQueryFinished(threadid, extraid)
 			    else
 			    {
 			    	CarregandoTelaRegister[extraid] = 0;
+					showTelaLogin(extraid);
 			        				 	// ==== Login ==== //
-					TextDrawShowForPlayer(extraid, loadTela11);
+					/*TextDrawShowForPlayer(extraid, loadTela11);
 					TextDrawShowForPlayer(extraid, loadTela22);
 					TextDrawShowForPlayer(extraid, loadTela33);
 					TextDrawShowForPlayer(extraid, loadTela44);
@@ -18260,7 +18262,7 @@ public OnQueryFinished(threadid, extraid)
 					PlayerTextDrawFont(extraid, loadTela66[extraid], 2);
 					PlayerTextDrawSetProportional(extraid, loadTela66[extraid], 1);
 					PlayerTextDrawShow(extraid, loadTela66[extraid]);
-	   				TimerRegister[extraid] = SetTimerEx("mostrarTelaRegister", 50, true, "d", extraid);
+	   				TimerRegister[extraid] = SetTimerEx("mostrarTelaRegister", 50, true, "d", extraid);*/
 				}
 			}
 	    }
@@ -18355,6 +18357,8 @@ public OnQueryFinished(threadid, extraid)
                 PlayerInfo[extraid][pReportWarns] = cache_get_field_content_int(0, "reportwarns");
                 PlayerInfo[extraid][pFightStyle] = cache_get_field_content_int(0, "fightstyle");
                 PlayerInfo[extraid][pDirtyCash] = cache_get_field_content_int(0, "dirtycash");
+                PlayerInfo[extraid][pRefunded] = cache_get_field_content_int(0, "refunded");
+                PlayerInfo[extraid][pToolkit] = cache_get_field_content_int(0, "toolkit");
 
 				/*#if defined Christmas
 	#else
@@ -22130,6 +22134,16 @@ public OnPlayerConnect(playerid)
 	        RemovePlayerAttachedObject(playerid, i);
 		}
 	}
+	
+	//  =========FARMER JOB ============
+	inharvesterjob[playerid] = 0;
+	onplant[playerid] = 0;
+	startplant[playerid] = 0;
+	prinesplant[playerid] = 0;
+	countplant[playerid] = 0;
+	prinesplantEx[playerid] = 0;
+	countplantEx[playerid] = 0;
+	ExtraPlants[playerid] = 0;
 
 	ResetPlayerWeapons(playerid);
 	StopAudioStreamForPlayer(playerid);
@@ -22142,15 +22156,7 @@ public OnPlayerConnect(playerid)
 	zone_paintball[1] = GangZoneCreateEx(-2591.2288, -1814.2455, -2178.9082, -1394.5500);
 	area_paintball[1] = CreateDynamicRectangle(-2591.2288, -1814.2455, -2178.9082, -1394.5500);
 
-    //  =========FARMER JOB ============
-	inharvesterjob[playerid] = 0;
-	onplant[playerid] = 0;
-	startplant[playerid] = 0;
-	prinesplant[playerid] = 0;
-	countplant[playerid] = 0;
-	prinesplantEx[playerid] = 0;
-	countplantEx[playerid] = 0;
-	ExtraPlants[playerid] = 0;
+   
 	/*#if defined Christmas
 	#else
 		EventTextdraw[playerid] = CreatePlayerTextDraw(playerid, 608.000000, 97.000000, "C0");
@@ -31390,32 +31396,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 	                        SendProximityMessage(playerid, 20.0, SERVER_COLOR, "**{C2A2DA} %s paid $%i to the shopkeeper and received 2 blindfolds.", GetRPName(playerid), price);
 	                        SCM(playerid, COLOR_WHITE, "Blindfold purchased. Use /blindfold to blindfold people in your vehicle.");
 						}
-					/*	case 16:
-						{
-						    new price = BusinessInfo[businessid][bPrices][16];
-
-						    if(PlayerInfo[playerid][pCash] < price)
-	                        {
-	                            return SCM(playerid, COLOR_SYNTAX, "You don't have enough money. You can't buy this.");
-	                        }
-							if(PlayerInfo[playerid][pBackpack] > 1)
-							{
-						    	return SCM(playerid, COLOR_SYNTAX, "You already have a small backpack.");
-							}
-
-						    PlayerInfo[playerid][pBackpack] = 1;
-	                        GivePlayerCash(playerid, -price);
-
-							BusinessInfo[businessid][bCash] += price;
-	                        BusinessInfo[businessid][bProducts]--;
-
-	                        mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "UPDATE businesses SET cash = %i, products = %i WHERE id = %i", BusinessInfo[businessid][bCash], BusinessInfo[businessid][bProducts], BusinessInfo[businessid][bID]);
-	                        mysql_tquery(connectionID, queryBuffer);
-
-	                        SendProximityMessage(playerid, 20.0, SERVER_COLOR, "**{C2A2DA} %s paid $%i to the shopkeeper and received small backpack.", GetRPName(playerid), price);
-	                        SCM(playerid, COLOR_WHITE, "Small Backpack purchased. Use /(b)ack(p)ack to check your backpack.");
-						} */
-						case 17:
+						case 16:
 						{
 		    				new price = BusinessInfo[businessid][bPrices][17];
 
@@ -31423,7 +31404,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 	                        {
 	                            return SCM(playerid, COLOR_SYNTAX, "You don't have enough money. You can't buy this.");
 	                        }
-						    if(PlayerInfo[playerid][pRope] == 1)
+						    if(PlayerInfo[playerid][pToolkit] == 1)
 						    {
 						        return SCM(playerid, COLOR_SYNTAX, "You can't have more than 1 toolkits.");
 						    }
@@ -31441,7 +31422,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 	                        SendProximityMessage(playerid, 20.0, SERVER_COLOR, "**{C2A2DA} %s paid $%i to the shopkeeper and received a toolkit.", GetRPName(playerid), price);
 	                        SCM(playerid, COLOR_WHITE, "Toolkit purchased. Use /hotwire to hotwire people's vehicles.");
 						}
-						case 18:
+						case 17:
 						{
 		    				new price = BusinessInfo[businessid][bPrices][18];
 
@@ -31467,14 +31448,15 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 	                        SendProximityMessage(playerid, 20.0, SERVER_COLOR, "**{C2A2DA} %s paid $%i to the shopkeeper and received a flashlight.", GetRPName(playerid), price);
 	                        SCM(playerid, COLOR_WHITE, "Flashlight purchased. use /flashlight to use it on your hand and /taclight to use it on your weapon.	");
 						}
-						case 19:
+						case 20:
 						{
 							if (PlayerInfo[playerid][pLottery])
 								return SCM(playerid, COLOR_SYNTAX, "You have a lottery ticket already.");
 
 							ShowPlayerDialog(playerid, LotteryNumber, DIALOG_STYLE_INPUT, "Lottery Number", "Please enter your desired lottery number below (from 1-60):", "Submit", "Cancel");
 						}
-						case 20: {
+						/*case 20:
+						{
 							new price = BusinessInfo[businessid][bPrices][11];
 						    if(PlayerInfo[playerid][pCash] < price)
 	                        {
@@ -31499,7 +31481,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
 	                        SendProximityMessage(playerid, 20.0, SERVER_COLOR, "**{C2A2DA} %s paid $%i to the shopkeeper and received a Mask.", GetRPName(playerid), price);
 	                        SCM(playerid, COLOR_WHITE, "** Mask purchased. Use /mask to toggle it.");
-						}
+						}*/
 					}
 				}
 				else if(BusinessInfo[businessid][bType] == BUSINESS_GUNSHOP)
@@ -52335,7 +52317,7 @@ CMD:buy(playerid, params[])
 	{
 	    case BUSINESS_STORE:
 	    {
-			format(string, sizeof(string), "Mobile Phone\t%s\nPortable Radio\t%s\nCigars\t%s\nSpraycans\t%s\nPhonebook\t%s\nCamera\t%s\nMP3 player\t%s\nFishing rod\t%s\nFish bait\t%s\nMuriatic acid\t%s\nBaking soda\t%s\nPocket watch\t%s\nGPS system\t%s\nGasoline can\t%s\nRope\t%s\nBlindfold\t%s\nToolkit\t%s\nFlashlight\t%s\nLottery Ticket\t%s\nMask\t%s",
+			format(string, sizeof(string), "Mobile Phone\t%s\nPortable Radio\t%s\nCigars\t%s\nSpraycans\t%s\nPhonebook\t%s\nCamera\t%s\nMP3 player\t%s\nFishing rod\t%s\nFish bait\t%s\nMuriatic acid\t%s\nBaking soda\t%s\nPocket watch\t%s\nGPS system\t%s\nGasoline can\t%s\nRope\t%s\nBlindfold\t%s\nToolkit\t%s\nFlashlight\t%s\nLottery Ticket\t%s",
 				FormatNumber(BusinessInfo[businessid][bPrices][0]),
 				FormatNumber(BusinessInfo[businessid][bPrices][1]),
 				FormatNumber(BusinessInfo[businessid][bPrices][2]),
@@ -52352,11 +52334,10 @@ CMD:buy(playerid, params[])
 				FormatNumber(BusinessInfo[businessid][bPrices][13]),
 				FormatNumber(BusinessInfo[businessid][bPrices][14]),
 				FormatNumber(BusinessInfo[businessid][bPrices][15]),
-				//FormatNumber(BusinessInfo[businessid][bPrices][16]),
+				FormatNumber(BusinessInfo[businessid][bPrices][16]),
 				FormatNumber(BusinessInfo[businessid][bPrices][17]),
 				FormatNumber(BusinessInfo[businessid][bPrices][18]),
-				FormatNumber(BusinessInfo[businessid][bPrices][19]),
-				FormatNumber(BusinessInfo[businessid][bPrices][20]));
+				FormatNumber(BusinessInfo[businessid][bPrices][19]));
 
 	        ShowPlayerDialog(playerid, DIALOG_BUY, DIALOG_STYLE_TABLIST, title, string, "Select", "Cancel");
 		}
@@ -52430,7 +52411,7 @@ CMD:products(playerid, parmas[]) {
 	{
 	    case BUSINESS_STORE:
 	    {
-			format(string, sizeof(string), "Mobile Phone\t%s\nPortable Radio\t%s\nCigars\t%s\nSpraycans\t%s\nPhonebook\t%s\nCamera\t%s\nMP3 player\t%s\nFishing rod\t%s\nFish bait\t%s\nMuriatic acid\t%s\nBaking soda\t%s\nPocket watch\t%s\nGPS system\t%s\nGasoline can\t%s\nRope\t%s\nBlindfold\t%s\nToolkit\t%s\nFlashlight\t%s\nLottery Ticket\t%s\nMask\t%s",
+			format(string, sizeof(string), "Mobile Phone\t%s\nPortable Radio\t%s\nCigars\t%s\nSpraycans\t%s\nPhonebook\t%s\nCamera\t%s\nMP3 player\t%s\nFishing rod\t%s\nFish bait\t%s\nMuriatic acid\t%s\nBaking soda\t%s\nPocket watch\t%s\nGPS system\t%s\nGasoline can\t%s\nRope\t%s\nBlindfold\t%s\nToolkit\t%s\nFlashlight\t%s\nLottery Ticket\t%s",
 				FormatNumber(BusinessInfo[businessid][bPrices][0]),
 				FormatNumber(BusinessInfo[businessid][bPrices][1]),
 				FormatNumber(BusinessInfo[businessid][bPrices][2]),
@@ -52447,11 +52428,10 @@ CMD:products(playerid, parmas[]) {
 				FormatNumber(BusinessInfo[businessid][bPrices][13]),
 				FormatNumber(BusinessInfo[businessid][bPrices][14]),
 				FormatNumber(BusinessInfo[businessid][bPrices][15]),
-				//FormatNumber(BusinessInfo[businessid][bPrices][16]),
+				FormatNumber(BusinessInfo[businessid][bPrices][16]),
 				FormatNumber(BusinessInfo[businessid][bPrices][17]),
 				FormatNumber(BusinessInfo[businessid][bPrices][18]),
-				FormatNumber(BusinessInfo[businessid][bPrices][19]),
-				FormatNumber(BusinessInfo[businessid][bPrices][20]));
+				FormatNumber(BusinessInfo[businessid][bPrices][19]));
 
 	        ShowPlayerDialog(playerid, DIALOG_EDITBUY, DIALOG_STYLE_TABLIST, title, string, "Select", "Cancel");
 		}
@@ -59314,12 +59294,12 @@ CMD:g(playerid, params[])
 		{
 		    if(strlen(params) > MAX_SPLIT_LENGTH)
 		    {
-		        SM(i, COLOR_GLOBAL, "(( %s {80d6ab}%s %s: %.*s... ))", string, GetRPName(playerid), MAX_SPLIT_LENGTH, params);
+		        SM(i, COLOR_GLOBAL, "(( %s {80d6ab}%s: %.*s... ))", string, GetRPName(playerid), MAX_SPLIT_LENGTH, params);
 		        SM(i, COLOR_GLOBAL, "(( %s %s: ...%s ))", string, GetRPName(playerid), params[MAX_SPLIT_LENGTH]);
 			}
 			else
 			{
-			    SM(i, COLOR_GLOBAL, "(( %s {80d6ab}%s %s: %s ))", string, GetRPName(playerid), params);
+			    SM(i, COLOR_GLOBAL, "(( %s {80d6ab}%s: %s ))", string, GetRPName(playerid), params);
 			}
 		}
 	}
