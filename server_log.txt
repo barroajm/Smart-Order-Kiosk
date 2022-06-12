@@ -6607,3 +6607,2491 @@ v0.3.7-R2, (C)2005-2015 SA-MP Team
 [08:46:43] [Script] 6 gangs loaded.
 [08:46:43] [Script] 9 points loaded.
 [08:46:43] [Script] 13 turfs loaded.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[14:00:54] filterscripts = ""  (string)
+[14:00:54] weburl = "www.sa-mp.com"  (string)
+[14:00:54] 
+[14:00:54] Server Plugins
+[14:00:54] --------------
+[14:00:54]  Loading plugin: pawncmd.so
+[14:00:57]   Failed.
+[14:00:57]  Loading plugin: sampvoice.so
+[14:00:57]   Failed.
+[14:00:57]  Loading plugin: discord-connector.so
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[14:07:49] filterscripts = ""  (string)
+[14:07:49] weburl = "www.sa-mp.com"  (string)
+[14:07:49] 
+[14:07:49] Server Plugins
+[14:07:49] --------------
+[14:07:49]  Loading plugin: pawncmd
+[14:07:49] [Pawn.CMD] plugin v3.3.6 loading...
+[14:07:49] [Pawn.CMD] 
+
+    | Pawn.CMD 3.3.6 | 2016 - 2021
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Sep 26 2021 at 11:55:10
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[14:07:49]   Loaded.
+[14:07:49]  Loading plugin: sampvoice
+[14:07:49] [sv:dbg:network:init] : module initializing...
+[14:07:49] [dbg:raknet:init] : module initializing...
+[14:07:49] [dbg:raknet:init] : module initialized
+[14:07:49] [sv:dbg:network:init] : module initialized
+[14:07:49] [sv:dbg:main:Load] : creating 8 work threads...
+[14:07:49]  -------------------------------------------    
+[14:07:49]    ___                __   __    _              
+[14:07:49]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[14:07:49]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[14:07:49]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[14:07:49]                   |_|                           
+[14:07:49]  -------------------------------------------    
+[14:07:49]            SampVoice by MOR loaded              
+[14:07:49]  -------------------------------------------    
+[14:07:49]   Loaded.
+[14:07:49]  Loading plugin: discord-connector
+[14:07:49]   Failed.
+[14:07:49]  Loading plugin: sscanf
+[14:07:49] 
+
+[14:07:49]  ===============================
+
+[14:07:49]       sscanf plugin loaded.     
+
+[14:07:49]          Version:  2.8.3        
+
+[14:07:49]   (c) 2018 Alex "Y_Less" Cole  
+
+[14:07:49]  ===============================
+
+[14:07:49]   Loaded.
+[14:07:49]  Loading plugin: streamer
+[14:07:49] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[14:07:49]   Loaded.
+[14:07:49]  Loading plugin: mysql
+[14:07:49]   Failed.
+[14:07:49]  Loading plugin: Whirlpool
+[14:07:49]  
+[14:07:49]  ==================
+[14:07:49]  
+[14:07:49]   Whirlpool loaded
+[14:07:49]  
+[14:07:49]  ==================
+[14:07:49]  
+[14:07:49]   Loaded.
+[14:07:49]  Loading plugin: SKY
+[14:07:49] 
+[14:07:49]  ===============================
+[14:07:49]    
+[14:07:49]    < SKY - 2.3.0 >
+[14:07:49]    
+[14:07:49]    (c) 2008 - Present | YSF Maintainers
+[14:07:49]    (c) 2015 | Oscar "Slice" Broman
+[14:07:49]    
+[14:07:49]    Server Version: 0.3.7 R2
+[14:07:49]    Operating System: Windows
+[14:07:49]    Built on: Sep 27 2021 at 23:19:52
+[14:07:49]    
+[14:07:49]  ===============================
+[14:07:49] 
+[14:07:49]   Loaded.
+[14:07:49]  Loading plugin: nativechecker
+[14:07:49]   Loaded.
+[14:07:49]  Loaded 7 plugins.
+
+[14:07:49] 
+[14:07:49] Ban list
+[14:07:49] --------
+[14:07:49]  Loaded: samp.ban
+[14:07:49] 
+[14:07:49] 
+[14:07:49] Filterscripts
+[14:07:49] ---------------
+[14:07:49]   Loaded 0 filterscripts.
+
+[14:07:50] [Pawn.CMD] DoAmxLoadImpl: Mismatch between the plugin (3.3.6) and include (0.1.58) versions
+[14:07:50] [sv:dbg:main:AmxLoad] : net game pointer (value:006E9F20) received
+[14:07:50] [sv:dbg:network:bind] : voice server running on port 61224
+[14:07:50] *** Streamer Plugin: The include file version (0x291) for this script is older than the plugin version (0x295). The script might need to be recompiled with the latest include file.
+[14:07:50] AMX (55178744) loaded
+[14:07:50]    Error: Function not registered: 'DCC_GetMessageChannel'
+[14:07:50]    Error: Function not registered: 'DCC_GetMessageAuthor'
+[14:07:50]    Error: Function not registered: 'DCC_IsUserBot'
+[14:07:50]    Error: Function not registered: 'DCC_GetMessageContent'
+[14:07:50]    Error: Function not registered: 'cache_get_row_count'
+[14:07:50]    Error: Function not registered: 'mysql_tquery'
+[14:07:50]    Error: Function not registered: 'cache_get_data'
+[14:07:50]    Error: Function not registered: 'cache_get_field_content'
+[14:07:50]    Error: Function not registered: 'cache_get_field_content_int'
+[14:07:50]    Error: Function not registered: 'cache_get_field_content_float'
+[14:07:50]    Error: Function not registered: 'mysql_format'
+[14:07:50]    Error: Function not registered: 'cache_insert_id'
+[14:07:50]    Error: Function not registered: 'mysql_escape_string'
+[14:07:50]    Error: Function not registered: 'mysql_unprocessed_queries'
+[14:07:50]    Error: Function not registered: 'cache_get_row_int'
+[14:07:50]    Error: Function not registered: 'cache_get_row'
+[14:07:50]    Error: Function not registered: 'mysql_connect'
+[14:07:50]    Error: Function not registered: 'mysql_errno'
+[14:07:50]    Error: Function not registered: 'DCC_FindRoleById'
+[14:07:50]    Error: Function not registered: 'mysql_close'
+[14:07:50]    Error: Function not registered: 'DCC_SetBotActivity'
+[14:07:50]    Error: Function not registered: 'mysql_query'
+[14:07:50]    Error: Function not registered: 'cache_delete'
+[14:07:50]    Error: Function not registered: 'DCC_FindChannelById'
+[14:07:50]    Error: Function not registered: 'DCC_SendChannelMessage'
+[14:07:50]    Error: Function not registered: 'DCC_GetChannelName'
+[14:07:50]    Error: Function not registered: 'DCC_GetUserName'
+[14:07:50]    Error: Function not registered: 'DCC_CreateEmbed'
+[14:07:50]    Error: Function not registered: 'DCC_HasGuildMemberRole'
+[14:07:50]    Error: Function not registered: 'DCC_GetChannelGuild'
+[14:07:50]    Error: Function not registered: 'DCC_TriggerBotTypingIndicator'
+[14:07:50]    Error: Function not registered: 'DCC_GetUserDiscriminator'
+[14:07:50]    Error: Function not registered: 'DCC_SetEmbedDescription'
+[14:07:50]    Error: Function not registered: 'DCC_SetEmbedFooter'
+[14:07:50]    Error: Function not registered: 'DCC_SetEmbedColor'
+[14:07:50]    Error: Function not registered: 'DCC_SendChannelEmbedMessage'
+[14:07:50]    Error: Function not registered: 'DCC_CreatePrivateChannel'
+[14:07:50]    Error: Function not registered: 'DCC_SetGuildMemberNickname'
+[14:07:50]    Error: Function not registered: 'DCC_AddGuildMemberRole'
+[14:07:50]    Error: Function not registered: 'DCC_GetCreatedPrivateChannel'
+[14:07:50] Script[gamemodes/v2morgancity.amx]: Run time error 19: "File or function is not found"
+[14:07:50] Number of vehicle models: 0
+[14:08:00]  -------------------------------------------
+[14:08:00]            SampVoice unloading...           
+[14:08:00]  -------------------------------------------
+[14:08:00] [dbg:raknet:free] : module releasing...
+[14:08:00] [dbg:raknet:free] : module released
+[14:08:00] [sv:dbg:network:free] : module releasing...
+[14:08:00] [sv:dbg:network:free] : module released
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[14:08:10] filterscripts = ""  (string)
+[14:08:10] weburl = "www.sa-mp.com"  (string)
+[14:08:10] 
+[14:08:10] Server Plugins
+[14:08:10] --------------
+[14:08:10]  Loading plugin: pawncmd
+[14:08:10] [Pawn.CMD] plugin v3.3.6 loading...
+[14:08:10] [Pawn.CMD] 
+
+    | Pawn.CMD 3.3.6 | 2016 - 2021
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Sep 26 2021 at 11:55:10
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[14:08:10]   Loaded.
+[14:08:10]  Loading plugin: sampvoice
+[14:08:10] [sv:dbg:network:init] : module initializing...
+[14:08:10] [dbg:raknet:init] : module initializing...
+[14:08:10] [dbg:raknet:init] : module initialized
+[14:08:10] [sv:dbg:network:init] : module initialized
+[14:08:10] [sv:dbg:main:Load] : creating 8 work threads...
+[14:08:10]  -------------------------------------------    
+[14:08:10]    ___                __   __    _              
+[14:08:10]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[14:08:10]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[14:08:10]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[14:08:10]                   |_|                           
+[14:08:10]  -------------------------------------------    
+[14:08:10]            SampVoice by MOR loaded              
+[14:08:10]  -------------------------------------------    
+[14:08:10]   Loaded.
+[14:08:10]  Loading plugin: sscanf
+[14:08:10] 
+
+[14:08:10]  ===============================
+
+[14:08:10]       sscanf plugin loaded.     
+
+[14:08:10]          Version:  2.8.3        
+
+[14:08:10]   (c) 2018 Alex "Y_Less" Cole  
+
+[14:08:10]  ===============================
+
+[14:08:10]   Loaded.
+[14:08:10]  Loading plugin: streamer
+[14:08:10] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[14:08:10]   Loaded.
+[14:08:10]  Loading plugin: mysql
+[14:08:10]   Failed.
+[14:08:10]  Loading plugin: Whirlpool
+[14:08:10]  
+[14:08:10]  ==================
+[14:08:10]  
+[14:08:10]   Whirlpool loaded
+[14:08:10]  
+[14:08:10]  ==================
+[14:08:10]  
+[14:08:10]   Loaded.
+[14:08:10]  Loading plugin: SKY
+[14:08:10] 
+[14:08:10]  ===============================
+[14:08:10]    
+[14:08:10]    < SKY - 2.3.0 >
+[14:08:10]    
+[14:08:10]    (c) 2008 - Present | YSF Maintainers
+[14:08:10]    (c) 2015 | Oscar "Slice" Broman
+[14:08:10]    
+[14:08:10]    Server Version: 0.3.7 R2
+[14:08:10]    Operating System: Windows
+[14:08:10]    Built on: Sep 27 2021 at 23:19:52
+[14:08:10]    
+[14:08:10]  ===============================
+[14:08:10] 
+[14:08:10]   Loaded.
+[14:08:10]  Loading plugin: nativechecker
+[14:08:10]   Loaded.
+[14:08:10]  Loaded 7 plugins.
+
+[14:08:10] 
+[14:08:10] Ban list
+[14:08:10] --------
+[14:08:10]  Loaded: samp.ban
+[14:08:10] 
+[14:08:10] 
+[14:08:10] Filterscripts
+[14:08:10] ---------------
+[14:08:10]   Loaded 0 filterscripts.
+
+[14:08:10] [Pawn.CMD] DoAmxLoadImpl: Mismatch between the plugin (3.3.6) and include (0.1.58) versions
+[14:08:10] [sv:dbg:main:AmxLoad] : net game pointer (value:02309F10) received
+[14:08:10] [sv:dbg:network:bind] : voice server running on port 53050
+[14:08:10] *** Streamer Plugin: The include file version (0x291) for this script is older than the plugin version (0x295). The script might need to be recompiled with the latest include file.
+[14:08:10] AMX (55178744) loaded
+[14:08:10]    Error: Function not registered: 'DCC_GetMessageChannel'
+[14:08:10]    Error: Function not registered: 'DCC_GetMessageAuthor'
+[14:08:10]    Error: Function not registered: 'DCC_IsUserBot'
+[14:08:10]    Error: Function not registered: 'DCC_GetMessageContent'
+[14:08:10]    Error: Function not registered: 'cache_get_row_count'
+[14:08:10]    Error: Function not registered: 'mysql_tquery'
+[14:08:10]    Error: Function not registered: 'cache_get_data'
+[14:08:10]    Error: Function not registered: 'cache_get_field_content'
+[14:08:10]    Error: Function not registered: 'cache_get_field_content_int'
+[14:08:10]    Error: Function not registered: 'cache_get_field_content_float'
+[14:08:10]    Error: Function not registered: 'mysql_format'
+[14:08:10]    Error: Function not registered: 'cache_insert_id'
+[14:08:10]    Error: Function not registered: 'mysql_escape_string'
+[14:08:10]    Error: Function not registered: 'mysql_unprocessed_queries'
+[14:08:10]    Error: Function not registered: 'cache_get_row_int'
+[14:08:10]    Error: Function not registered: 'cache_get_row'
+[14:08:10]    Error: Function not registered: 'mysql_connect'
+[14:08:10]    Error: Function not registered: 'mysql_errno'
+[14:08:10]    Error: Function not registered: 'DCC_FindRoleById'
+[14:08:10]    Error: Function not registered: 'mysql_close'
+[14:08:10]    Error: Function not registered: 'DCC_SetBotActivity'
+[14:08:10]    Error: Function not registered: 'mysql_query'
+[14:08:10]    Error: Function not registered: 'cache_delete'
+[14:08:10]    Error: Function not registered: 'DCC_FindChannelById'
+[14:08:10]    Error: Function not registered: 'DCC_SendChannelMessage'
+[14:08:10]    Error: Function not registered: 'DCC_GetChannelName'
+[14:08:10]    Error: Function not registered: 'DCC_GetUserName'
+[14:08:10]    Error: Function not registered: 'DCC_CreateEmbed'
+[14:08:10]    Error: Function not registered: 'DCC_HasGuildMemberRole'
+[14:08:10]    Error: Function not registered: 'DCC_GetChannelGuild'
+[14:08:10]    Error: Function not registered: 'DCC_TriggerBotTypingIndicator'
+[14:08:10]    Error: Function not registered: 'DCC_GetUserDiscriminator'
+[14:08:10]    Error: Function not registered: 'DCC_SetEmbedDescription'
+[14:08:10]    Error: Function not registered: 'DCC_SetEmbedFooter'
+[14:08:10]    Error: Function not registered: 'DCC_SetEmbedColor'
+[14:08:10]    Error: Function not registered: 'DCC_SendChannelEmbedMessage'
+[14:08:10]    Error: Function not registered: 'DCC_CreatePrivateChannel'
+[14:08:10]    Error: Function not registered: 'DCC_SetGuildMemberNickname'
+[14:08:10]    Error: Function not registered: 'DCC_AddGuildMemberRole'
+[14:08:10]    Error: Function not registered: 'DCC_GetCreatedPrivateChannel'
+[14:08:10] Script[gamemodes/v2morgancity.amx]: Run time error 19: "File or function is not found"
+[14:08:10] Number of vehicle models: 0
+[14:08:22]  -------------------------------------------
+[14:08:22]            SampVoice unloading...           
+[14:08:22]  -------------------------------------------
+[14:08:22] [dbg:raknet:free] : module releasing...
+[14:08:22] [dbg:raknet:free] : module released
+[14:08:22] [sv:dbg:network:free] : module releasing...
+[14:08:22] [sv:dbg:network:free] : module released
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[14:09:36] filterscripts = ""  (string)
+[14:09:36] weburl = "www.sa-mp.com"  (string)
+[14:09:36] 
+[14:09:36] Server Plugins
+[14:09:36] --------------
+[14:09:36]  Loading plugin: pawncmd
+[14:09:36] [Pawn.CMD] plugin v3.3.6 loading...
+[14:09:36] [Pawn.CMD] 
+
+    | Pawn.CMD 3.3.6 | 2016 - 2021
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Sep 26 2021 at 11:55:10
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[14:09:36]   Loaded.
+[14:09:36]  Loading plugin: sampvoice
+[14:09:36] [sv:dbg:network:init] : module initializing...
+[14:09:36] [dbg:raknet:init] : module initializing...
+[14:09:36] [dbg:raknet:init] : module initialized
+[14:09:36] [sv:dbg:network:init] : module initialized
+[14:09:36] [sv:dbg:main:Load] : creating 8 work threads...
+[14:09:36]  -------------------------------------------    
+[14:09:36]    ___                __   __    _              
+[14:09:36]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[14:09:36]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[14:09:36]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[14:09:36]                   |_|                           
+[14:09:36]  -------------------------------------------    
+[14:09:36]            SampVoice by MOR loaded              
+[14:09:36]  -------------------------------------------    
+[14:09:36]   Loaded.
+[14:09:36]  Loading plugin: discord-connector
+[14:09:36]   Failed.
+[14:09:36]  Loading plugin: sscanf
+[14:09:36] 
+
+[14:09:36]  ===============================
+
+[14:09:36]       sscanf plugin loaded.     
+
+[14:09:36]          Version:  2.8.3        
+
+[14:09:36]   (c) 2018 Alex "Y_Less" Cole  
+
+[14:09:36]  ===============================
+
+[14:09:36]   Loaded.
+[14:09:36]  Loading plugin: streamer
+[14:09:36] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[14:09:36]   Loaded.
+[14:09:36]  Loading plugin: mysql
+[14:09:36]   Failed.
+[14:09:36]  Loading plugin: Whirlpool
+[14:09:36]  
+[14:09:36]  ==================
+[14:09:36]  
+[14:09:36]   Whirlpool loaded
+[14:09:36]  
+[14:09:36]  ==================
+[14:09:36]  
+[14:09:36]   Loaded.
+[14:09:36]  Loading plugin: SKY
+[14:09:36] 
+[14:09:36]  ===============================
+[14:09:36]    
+[14:09:36]    < SKY - 2.3.0 >
+[14:09:36]    
+[14:09:36]    (c) 2008 - Present | YSF Maintainers
+[14:09:36]    (c) 2015 | Oscar "Slice" Broman
+[14:09:36]    
+[14:09:36]    Server Version: 0.3.7 R2
+[14:09:36]    Operating System: Windows
+[14:09:36]    Built on: Sep 27 2021 at 23:19:52
+[14:09:36]    
+[14:09:36]  ===============================
+[14:09:36] 
+[14:09:36]   Loaded.
+[14:09:36]  Loading plugin: nativechecker
+[14:09:36]   Loaded.
+[14:09:36]  Loaded 7 plugins.
+
+[14:09:36] 
+[14:09:36] Ban list
+[14:09:36] --------
+[14:09:36]  Loaded: samp.ban
+[14:09:36] 
+[14:09:36] 
+[14:09:36] Filterscripts
+[14:09:36] ---------------
+[14:09:36]   Loaded 0 filterscripts.
+
+[14:09:36] [Pawn.CMD] DoAmxLoadImpl: Mismatch between the plugin (3.3.6) and include (0.1.58) versions
+[14:09:36] [sv:dbg:main:AmxLoad] : net game pointer (value:02589F20) received
+[14:09:36] [sv:dbg:network:bind] : voice server running on port 57084
+[14:09:36] AMX (55113208) loaded
+[14:09:36]    Error: Function not registered: 'DCC_GetMessageChannel'
+[14:09:36]    Error: Function not registered: 'DCC_GetMessageAuthor'
+[14:09:36]    Error: Function not registered: 'DCC_IsUserBot'
+[14:09:36]    Error: Function not registered: 'DCC_GetMessageContent'
+[14:09:36]    Error: Function not registered: 'cache_get_row_count'
+[14:09:36]    Error: Function not registered: 'mysql_tquery'
+[14:09:36]    Error: Function not registered: 'cache_get_data'
+[14:09:36]    Error: Function not registered: 'cache_get_field_content'
+[14:09:36]    Error: Function not registered: 'cache_get_field_content_int'
+[14:09:36]    Error: Function not registered: 'cache_get_field_content_float'
+[14:09:36]    Error: Function not registered: 'mysql_format'
+[14:09:36]    Error: Function not registered: 'cache_insert_id'
+[14:09:36]    Error: Function not registered: 'mysql_escape_string'
+[14:09:36]    Error: Function not registered: 'mysql_unprocessed_queries'
+[14:09:36]    Error: Function not registered: 'cache_get_row_int'
+[14:09:36]    Error: Function not registered: 'cache_get_row'
+[14:09:36]    Error: Function not registered: 'mysql_connect'
+[14:09:36]    Error: Function not registered: 'mysql_errno'
+[14:09:36]    Error: Function not registered: 'DCC_FindRoleById'
+[14:09:36]    Error: Function not registered: 'mysql_close'
+[14:09:36]    Error: Function not registered: 'DCC_SetBotActivity'
+[14:09:36]    Error: Function not registered: 'mysql_query'
+[14:09:36]    Error: Function not registered: 'cache_delete'
+[14:09:36]    Error: Function not registered: 'DCC_FindChannelById'
+[14:09:36]    Error: Function not registered: 'DCC_SendChannelMessage'
+[14:09:36]    Error: Function not registered: 'DCC_GetChannelName'
+[14:09:36]    Error: Function not registered: 'DCC_GetUserName'
+[14:09:36]    Error: Function not registered: 'DCC_CreateEmbed'
+[14:09:36]    Error: Function not registered: 'DCC_HasGuildMemberRole'
+[14:09:36]    Error: Function not registered: 'DCC_GetChannelGuild'
+[14:09:36]    Error: Function not registered: 'DCC_TriggerBotTypingIndicator'
+[14:09:36]    Error: Function not registered: 'DCC_GetUserDiscriminator'
+[14:09:36]    Error: Function not registered: 'DCC_SetEmbedDescription'
+[14:09:36]    Error: Function not registered: 'DCC_SetEmbedFooter'
+[14:09:36]    Error: Function not registered: 'DCC_SetEmbedColor'
+[14:09:36]    Error: Function not registered: 'DCC_SendChannelEmbedMessage'
+[14:09:36]    Error: Function not registered: 'DCC_CreatePrivateChannel'
+[14:09:36]    Error: Function not registered: 'DCC_SetGuildMemberNickname'
+[14:09:36]    Error: Function not registered: 'DCC_AddGuildMemberRole'
+[14:09:36]    Error: Function not registered: 'DCC_GetCreatedPrivateChannel'
+[14:09:36] Script[gamemodes/v2morgancity.amx]: Run time error 19: "File or function is not found"
+[14:09:36] Number of vehicle models: 0
+[14:09:45]  -------------------------------------------
+[14:09:45]            SampVoice unloading...           
+[14:09:45]  -------------------------------------------
+[14:09:45] [dbg:raknet:free] : module releasing...
+[14:09:45] [dbg:raknet:free] : module released
+[14:09:45] [sv:dbg:network:free] : module releasing...
+[14:09:45] [sv:dbg:network:free] : module released
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[14:11:20] filterscripts = ""  (string)
+[14:11:20] weburl = "www.sa-mp.com"  (string)
+[14:11:20] 
+[14:11:20] Server Plugins
+[14:11:20] --------------
+[14:11:20]  Loading plugin: pawncmd
+[14:11:20] [Pawn.CMD] plugin v3.3.6 loading...
+[14:11:20] [Pawn.CMD] 
+
+    | Pawn.CMD 3.3.6 | 2016 - 2021
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Sep 26 2021 at 11:55:10
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[14:11:20]   Loaded.
+[14:11:20]  Loading plugin: sampvoice
+[14:11:20] [sv:dbg:network:init] : module initializing...
+[14:11:20] [dbg:raknet:init] : module initializing...
+[14:11:20] [dbg:raknet:init] : module initialized
+[14:11:20] [sv:dbg:network:init] : module initialized
+[14:11:20] [sv:dbg:main:Load] : creating 8 work threads...
+[14:11:20]  -------------------------------------------    
+[14:11:20]    ___                __   __    _              
+[14:11:20]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[14:11:20]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[14:11:20]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[14:11:20]                   |_|                           
+[14:11:20]  -------------------------------------------    
+[14:11:20]            SampVoice by MOR loaded              
+[14:11:20]  -------------------------------------------    
+[14:11:20]   Loaded.
+[14:11:20]  Loading plugin: discord-connector
+[14:11:20]   Failed.
+[14:11:20]  Loading plugin: sscanf
+[14:11:20] 
+
+[14:11:20]  ===============================
+
+[14:11:20]       sscanf plugin loaded.     
+
+[14:11:20]          Version:  2.8.3        
+
+[14:11:20]   (c) 2018 Alex "Y_Less" Cole  
+
+[14:11:20]  ===============================
+
+[14:11:20]   Loaded.
+[14:11:20]  Loading plugin: streamer
+[14:11:20] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[14:11:20]   Loaded.
+[14:11:20]  Loading plugin: mysql
+[14:11:20]   Failed.
+[14:11:20]  Loading plugin: Whirlpool
+[14:11:20]  
+[14:11:20]  ==================
+[14:11:20]  
+[14:11:20]   Whirlpool loaded
+[14:11:20]  
+[14:11:21]  ==================
+[14:11:21]  
+[14:11:21]   Loaded.
+[14:11:21]  Loading plugin: SKY
+[14:11:21] 
+[14:11:21]  ===============================
+[14:11:21]    
+[14:11:21]    < SKY - 2.3.0 >
+[14:11:21]    
+[14:11:21]    (c) 2008 - Present | YSF Maintainers
+[14:11:21]    (c) 2015 | Oscar "Slice" Broman
+[14:11:21]    
+[14:11:21]    Server Version: 0.3.7 R2
+[14:11:21]    Operating System: Windows
+[14:11:21]    Built on: Sep 27 2021 at 23:19:52
+[14:11:21]    
+[14:11:21]  ===============================
+[14:11:21] 
+[14:11:21]   Loaded.
+[14:11:21]  Loading plugin: nativechecker
+[14:11:21]   Loaded.
+[14:11:21]  Loaded 7 plugins.
+
+[14:11:21] 
+[14:11:21] Ban list
+[14:11:21] --------
+[14:11:21]  Loaded: samp.ban
+[14:11:21] 
+[14:11:21] 
+[14:11:21] Filterscripts
+[14:11:21] ---------------
+[14:11:21]   Loaded 0 filterscripts.
+
+[14:11:21] [Pawn.CMD] DoAmxLoadImpl: Mismatch between the plugin (3.3.6) and include (0.1.58) versions
+[14:11:21] [sv:dbg:main:AmxLoad] : net game pointer (value:022E9F20) received
+[14:11:21] [sv:dbg:network:bind] : voice server running on port 51535
+[14:11:21] AMX (55113208) loaded
+[14:11:21]    Error: Function not registered: 'DCC_GetMessageChannel'
+[14:11:21]    Error: Function not registered: 'DCC_GetMessageAuthor'
+[14:11:21]    Error: Function not registered: 'DCC_IsUserBot'
+[14:11:21]    Error: Function not registered: 'DCC_GetMessageContent'
+[14:11:21]    Error: Function not registered: 'cache_get_row_count'
+[14:11:21]    Error: Function not registered: 'mysql_tquery'
+[14:11:21]    Error: Function not registered: 'cache_get_data'
+[14:11:21]    Error: Function not registered: 'cache_get_field_content'
+[14:11:21]    Error: Function not registered: 'cache_get_field_content_int'
+[14:11:21]    Error: Function not registered: 'cache_get_field_content_float'
+[14:11:21]    Error: Function not registered: 'mysql_format'
+[14:11:21]    Error: Function not registered: 'cache_insert_id'
+[14:11:21]    Error: Function not registered: 'mysql_escape_string'
+[14:11:21]    Error: Function not registered: 'mysql_unprocessed_queries'
+[14:11:21]    Error: Function not registered: 'cache_get_row_int'
+[14:11:21]    Error: Function not registered: 'cache_get_row'
+[14:11:21]    Error: Function not registered: 'mysql_connect'
+[14:11:21]    Error: Function not registered: 'mysql_errno'
+[14:11:21]    Error: Function not registered: 'DCC_FindRoleById'
+[14:11:21]    Error: Function not registered: 'mysql_close'
+[14:11:21]    Error: Function not registered: 'DCC_SetBotActivity'
+[14:11:21]    Error: Function not registered: 'mysql_query'
+[14:11:21]    Error: Function not registered: 'cache_delete'
+[14:11:21]    Error: Function not registered: 'DCC_FindChannelById'
+[14:11:21]    Error: Function not registered: 'DCC_SendChannelMessage'
+[14:11:21]    Error: Function not registered: 'DCC_GetChannelName'
+[14:11:21]    Error: Function not registered: 'DCC_GetUserName'
+[14:11:21]    Error: Function not registered: 'DCC_CreateEmbed'
+[14:11:21]    Error: Function not registered: 'DCC_HasGuildMemberRole'
+[14:11:21]    Error: Function not registered: 'DCC_GetChannelGuild'
+[14:11:21]    Error: Function not registered: 'DCC_TriggerBotTypingIndicator'
+[14:11:21]    Error: Function not registered: 'DCC_GetUserDiscriminator'
+[14:11:21]    Error: Function not registered: 'DCC_SetEmbedDescription'
+[14:11:21]    Error: Function not registered: 'DCC_SetEmbedFooter'
+[14:11:21]    Error: Function not registered: 'DCC_SetEmbedColor'
+[14:11:21]    Error: Function not registered: 'DCC_SendChannelEmbedMessage'
+[14:11:21]    Error: Function not registered: 'DCC_CreatePrivateChannel'
+[14:11:21]    Error: Function not registered: 'DCC_SetGuildMemberNickname'
+[14:11:21]    Error: Function not registered: 'DCC_AddGuildMemberRole'
+[14:11:21]    Error: Function not registered: 'DCC_GetCreatedPrivateChannel'
+[14:11:21] Script[gamemodes/v2morgancity.amx]: Run time error 19: "File or function is not found"
+[14:11:21] Number of vehicle models: 0
+[14:11:39]  -------------------------------------------
+[14:11:39]            SampVoice unloading...           
+[14:11:39]  -------------------------------------------
+[14:11:39] [dbg:raknet:free] : module releasing...
+[14:11:39] [dbg:raknet:free] : module released
+[14:11:39] [sv:dbg:network:free] : module releasing...
+[14:11:39] [sv:dbg:network:free] : module released
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[14:12:35] filterscripts = ""  (string)
+[14:12:35] weburl = "www.sa-mp.com"  (string)
+[14:12:35] 
+[14:12:35] Server Plugins
+[14:12:35] --------------
+[14:12:35]  Loading plugin: pawncmd
+[14:12:35] [Pawn.CMD] plugin v3.3.6 loading...
+[14:12:35] [Pawn.CMD] 
+
+    | Pawn.CMD 3.3.6 | 2016 - 2021
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Sep 26 2021 at 11:55:10
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[14:12:35]   Loaded.
+[14:12:35]  Loading plugin: sampvoice
+[14:12:35] [sv:dbg:network:init] : module initializing...
+[14:12:35] [dbg:raknet:init] : module initializing...
+[14:12:35] [dbg:raknet:init] : module initialized
+[14:12:35] [sv:dbg:network:init] : module initialized
+[14:12:35] [sv:dbg:main:Load] : creating 8 work threads...
+[14:12:35]  -------------------------------------------    
+[14:12:35]    ___                __   __    _              
+[14:12:35]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[14:12:35]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[14:12:35]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[14:12:35]                   |_|                           
+[14:12:35]  -------------------------------------------    
+[14:12:35]            SampVoice by MOR loaded              
+[14:12:35]  -------------------------------------------    
+[14:12:35]   Loaded.
+[14:12:35]  Loading plugin: discord-connector
+[14:12:36]   Failed.
+[14:12:36]  Loading plugin: sscanf
+[14:12:36] 
+
+[14:12:36]  ===============================
+
+[14:12:36]       sscanf plugin loaded.     
+
+[14:12:36]          Version:  2.8.3        
+
+[14:12:36]   (c) 2018 Alex "Y_Less" Cole  
+
+[14:12:36]  ===============================
+
+[14:12:36]   Loaded.
+[14:12:36]  Loading plugin: streamer
+[14:12:36] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[14:12:36]   Loaded.
+[14:12:36]  Loading plugin: mysql
+[14:12:36]   Failed.
+[14:12:36]  Loading plugin: Whirlpool
+[14:12:36]  
+[14:12:36]  ==================
+[14:12:36]  
+[14:12:36]   Whirlpool loaded
+[14:12:36]  
+[14:12:36]  ==================
+[14:12:36]  
+[14:12:36]   Loaded.
+[14:12:36]  Loading plugin: SKY
+[14:12:36] 
+[14:12:36]  ===============================
+[14:12:36]    
+[14:12:36]    < SKY - 2.3.0 >
+[14:12:36]    
+[14:12:36]    (c) 2008 - Present | YSF Maintainers
+[14:12:36]    (c) 2015 | Oscar "Slice" Broman
+[14:12:36]    
+[14:12:36]    Server Version: 0.3.7 R2
+[14:12:36]    Operating System: Windows
+[14:12:36]    Built on: Sep 27 2021 at 23:19:52
+[14:12:36]    
+[14:12:36]  ===============================
+[14:12:36] 
+[14:12:36]   Loaded.
+[14:12:36]  Loading plugin: nativechecker
+[14:12:36]   Loaded.
+[14:12:36]  Loaded 7 plugins.
+
+[14:12:36] 
+[14:12:36] Ban list
+[14:12:36] --------
+[14:12:36]  Loaded: samp.ban
+[14:12:36] 
+[14:12:36] 
+[14:12:36] Filterscripts
+[14:12:36] ---------------
+[14:12:36]   Loaded 0 filterscripts.
+
+[14:12:36] [sv:dbg:main:AmxLoad] : net game pointer (value:025B9F20) received
+[14:12:36] [sv:dbg:network:bind] : voice server running on port 64349
+[14:12:36] AMX (55113208) loaded
+[14:12:36]    Error: Function not registered: 'DCC_GetMessageChannel'
+[14:12:36]    Error: Function not registered: 'DCC_GetMessageAuthor'
+[14:12:36]    Error: Function not registered: 'DCC_IsUserBot'
+[14:12:36]    Error: Function not registered: 'DCC_GetMessageContent'
+[14:12:36]    Error: Function not registered: 'cache_get_row_count'
+[14:12:36]    Error: Function not registered: 'mysql_tquery'
+[14:12:36]    Error: Function not registered: 'cache_get_data'
+[14:12:36]    Error: Function not registered: 'cache_get_field_content'
+[14:12:36]    Error: Function not registered: 'cache_get_field_content_int'
+[14:12:36]    Error: Function not registered: 'cache_get_field_content_float'
+[14:12:36]    Error: Function not registered: 'mysql_format'
+[14:12:36]    Error: Function not registered: 'cache_insert_id'
+[14:12:36]    Error: Function not registered: 'mysql_escape_string'
+[14:12:36]    Error: Function not registered: 'mysql_unprocessed_queries'
+[14:12:36]    Error: Function not registered: 'cache_get_row_int'
+[14:12:36]    Error: Function not registered: 'cache_get_row'
+[14:12:36]    Error: Function not registered: 'mysql_connect'
+[14:12:36]    Error: Function not registered: 'mysql_errno'
+[14:12:36]    Error: Function not registered: 'DCC_FindRoleById'
+[14:12:36]    Error: Function not registered: 'mysql_close'
+[14:12:36]    Error: Function not registered: 'DCC_SetBotActivity'
+[14:12:36]    Error: Function not registered: 'mysql_query'
+[14:12:36]    Error: Function not registered: 'cache_delete'
+[14:12:36]    Error: Function not registered: 'DCC_FindChannelById'
+[14:12:36]    Error: Function not registered: 'DCC_SendChannelMessage'
+[14:12:36]    Error: Function not registered: 'DCC_GetChannelName'
+[14:12:36]    Error: Function not registered: 'DCC_GetUserName'
+[14:12:36]    Error: Function not registered: 'DCC_CreateEmbed'
+[14:12:36]    Error: Function not registered: 'DCC_HasGuildMemberRole'
+[14:12:36]    Error: Function not registered: 'DCC_GetChannelGuild'
+[14:12:36]    Error: Function not registered: 'DCC_TriggerBotTypingIndicator'
+[14:12:36]    Error: Function not registered: 'DCC_GetUserDiscriminator'
+[14:12:36]    Error: Function not registered: 'DCC_SetEmbedDescription'
+[14:12:36]    Error: Function not registered: 'DCC_SetEmbedFooter'
+[14:12:36]    Error: Function not registered: 'DCC_SetEmbedColor'
+[14:12:36]    Error: Function not registered: 'DCC_SendChannelEmbedMessage'
+[14:12:36]    Error: Function not registered: 'DCC_CreatePrivateChannel'
+[14:12:36]    Error: Function not registered: 'DCC_SetGuildMemberNickname'
+[14:12:36]    Error: Function not registered: 'DCC_AddGuildMemberRole'
+[14:12:36]    Error: Function not registered: 'DCC_GetCreatedPrivateChannel'
+[14:12:36] Script[gamemodes/v2morgancity.amx]: Run time error 19: "File or function is not found"
+[14:12:36] Number of vehicle models: 0
+[14:12:45]  -------------------------------------------
+[14:12:45]            SampVoice unloading...           
+[14:12:45]  -------------------------------------------
+[14:12:45] [dbg:raknet:free] : module releasing...
+[14:12:45] [dbg:raknet:free] : module released
+[14:12:45] [sv:dbg:network:free] : module releasing...
+[14:12:45] [sv:dbg:network:free] : module released
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[14:17:33] filterscripts = ""  (string)
+[14:17:33] weburl = "www.sa-mp.com"  (string)
+[14:17:33] 
+[14:17:33] Server Plugins
+[14:17:33] --------------
+[14:17:33]  Loading plugin: pawncmd
+[14:17:33] [Pawn.CMD] plugin v3.3.6 loading...
+[14:17:33] [Pawn.CMD] 
+
+    | Pawn.CMD 3.3.6 | 2016 - 2021
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Sep 26 2021 at 11:55:10
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[14:17:33]   Loaded.
+[14:17:33]  Loading plugin: sampvoice
+[14:17:33] [sv:dbg:network:init] : module initializing...
+[14:17:33] [dbg:raknet:init] : module initializing...
+[14:17:33] [dbg:raknet:init] : module initialized
+[14:17:33] [sv:dbg:network:init] : module initialized
+[14:17:33] [sv:dbg:main:Load] : creating 8 work threads...
+[14:17:33]  -------------------------------------------    
+[14:17:33]    ___                __   __    _              
+[14:17:33]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[14:17:33]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[14:17:33]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[14:17:33]                   |_|                           
+[14:17:33]  -------------------------------------------    
+[14:17:33]            SampVoice by MOR loaded              
+[14:17:33]  -------------------------------------------    
+[14:17:33]   Loaded.
+[14:17:33]  Loading plugin: discord-connector
+[14:17:33]   Failed.
+[14:17:33]  Loading plugin: sscanf
+[14:17:33] 
+
+[14:17:33]  ===============================
+
+[14:17:33]       sscanf plugin loaded.     
+
+[14:17:33]          Version:  2.8.3        
+
+[14:17:33]   (c) 2018 Alex "Y_Less" Cole  
+
+[14:17:33]  ===============================
+
+[14:17:33]   Loaded.
+[14:17:33]  Loading plugin: streamer
+[14:17:33] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[14:17:33]   Loaded.
+[14:17:33]  Loading plugin: mysql
+[14:17:33]   Failed.
+[14:17:33]  Loading plugin: Whirlpool
+[14:17:33]  
+[14:17:33]  ==================
+[14:17:33]  
+[14:17:33]   Whirlpool loaded
+[14:17:33]  
+[14:17:33]  ==================
+[14:17:33]  
+[14:17:33]   Loaded.
+[14:17:33]  Loading plugin: SKY
+[14:17:33] 
+[14:17:33]  ===============================
+[14:17:33]    
+[14:17:33]    < SKY - 2.3.0 >
+[14:17:33]    
+[14:17:33]    (c) 2008 - Present | YSF Maintainers
+[14:17:33]    (c) 2015 | Oscar "Slice" Broman
+[14:17:33]    
+[14:17:33]    Server Version: 0.3.7 R2
+[14:17:33]    Operating System: Windows
+[14:17:33]    Built on: Sep 27 2021 at 23:19:52
+[14:17:33]    
+[14:17:33]  ===============================
+[14:17:33] 
+[14:17:33]   Loaded.
+[14:17:33]  Loading plugin: nativechecker
+[14:17:33]   Loaded.
+[14:17:33]  Loaded 7 plugins.
+
+[14:17:33] 
+[14:17:33] Ban list
+[14:17:33] --------
+[14:17:33]  Loaded: samp.ban
+[14:17:33] 
+[14:17:33] 
+[14:17:33] Filterscripts
+[14:17:33] ---------------
+[14:17:33]   Loaded 0 filterscripts.
+
+[14:17:33] [sv:dbg:main:AmxLoad] : net game pointer (value:024E9F20) received
+[14:17:33] [sv:dbg:network:bind] : voice server running on port 65470
+[14:17:33] AMX (55047672) loaded
+[14:17:33]    Error: Function not registered: 'DCC_GetMessageChannel'
+[14:17:33]    Error: Function not registered: 'DCC_GetMessageAuthor'
+[14:17:33]    Error: Function not registered: 'DCC_IsUserBot'
+[14:17:33]    Error: Function not registered: 'DCC_GetMessageContent'
+[14:17:33]    Error: Function not registered: 'cache_get_row_count'
+[14:17:33]    Error: Function not registered: 'mysql_tquery'
+[14:17:33]    Error: Function not registered: 'cache_get_data'
+[14:17:33]    Error: Function not registered: 'cache_get_field_content'
+[14:17:33]    Error: Function not registered: 'cache_get_field_content_int'
+[14:17:33]    Error: Function not registered: 'cache_get_field_content_float'
+[14:17:33]    Error: Function not registered: 'mysql_format'
+[14:17:33]    Error: Function not registered: 'cache_insert_id'
+[14:17:33]    Error: Function not registered: 'mysql_escape_string'
+[14:17:33]    Error: Function not registered: 'mysql_unprocessed_queries'
+[14:17:33]    Error: Function not registered: 'cache_get_row_int'
+[14:17:33]    Error: Function not registered: 'cache_get_row'
+[14:17:33]    Error: Function not registered: 'mysql_connect'
+[14:17:33]    Error: Function not registered: 'mysql_errno'
+[14:17:33]    Error: Function not registered: 'DCC_FindRoleById'
+[14:17:33]    Error: Function not registered: 'mysql_close'
+[14:17:33]    Error: Function not registered: 'DCC_SetBotActivity'
+[14:17:33]    Error: Function not registered: 'mysql_query'
+[14:17:33]    Error: Function not registered: 'cache_delete'
+[14:17:33]    Error: Function not registered: 'DCC_FindChannelById'
+[14:17:33]    Error: Function not registered: 'DCC_SendChannelMessage'
+[14:17:33]    Error: Function not registered: 'DCC_GetChannelName'
+[14:17:33]    Error: Function not registered: 'DCC_GetUserName'
+[14:17:33]    Error: Function not registered: 'DCC_CreateEmbed'
+[14:17:33]    Error: Function not registered: 'DCC_HasGuildMemberRole'
+[14:17:33]    Error: Function not registered: 'DCC_GetChannelGuild'
+[14:17:33]    Error: Function not registered: 'DCC_TriggerBotTypingIndicator'
+[14:17:33]    Error: Function not registered: 'DCC_GetUserDiscriminator'
+[14:17:33]    Error: Function not registered: 'DCC_SetEmbedDescription'
+[14:17:33]    Error: Function not registered: 'DCC_SetEmbedFooter'
+[14:17:33]    Error: Function not registered: 'DCC_SetEmbedColor'
+[14:17:33]    Error: Function not registered: 'DCC_SendChannelEmbedMessage'
+[14:17:33]    Error: Function not registered: 'DCC_CreatePrivateChannel'
+[14:17:33]    Error: Function not registered: 'DCC_SetGuildMemberNickname'
+[14:17:33]    Error: Function not registered: 'DCC_AddGuildMemberRole'
+[14:17:33]    Error: Function not registered: 'DCC_GetCreatedPrivateChannel'
+[14:17:33] Script[gamemodes/v2morgancity.amx]: Run time error 19: "File or function is not found"
+[14:17:33] Number of vehicle models: 0
+[14:18:11]  -------------------------------------------
+[14:18:11]            SampVoice unloading...           
+[14:18:11]  -------------------------------------------
+[14:18:11] [dbg:raknet:free] : module releasing...
+[14:18:11] [dbg:raknet:free] : module released
+[14:18:11] [sv:dbg:network:free] : module releasing...
+[14:18:11] [sv:dbg:network:free] : module released
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[14:18:46] filterscripts = ""  (string)
+[14:18:46] weburl = "www.sa-mp.com"  (string)
+[14:18:46] 
+[14:18:46] Server Plugins
+[14:18:46] --------------
+[14:18:46]  Loading plugin: pawncmd
+[14:18:46] [Pawn.CMD] plugin v3.3.6 loading...
+[14:18:46] [Pawn.CMD] 
+
+    | Pawn.CMD 3.3.6 | 2016 - 2021
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Sep 26 2021 at 11:55:10
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[14:18:46]   Loaded.
+[14:18:46]  Loading plugin: sampvoice
+[14:18:46] [sv:dbg:network:init] : module initializing...
+[14:18:46] [dbg:raknet:init] : module initializing...
+[14:18:46] [dbg:raknet:init] : module initialized
+[14:18:46] [sv:dbg:network:init] : module initialized
+[14:18:46] [sv:dbg:main:Load] : creating 8 work threads...
+[14:18:46]  -------------------------------------------    
+[14:18:46]    ___                __   __    _              
+[14:18:46]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[14:18:46]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[14:18:46]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[14:18:46]                   |_|                           
+[14:18:46]  -------------------------------------------    
+[14:18:46]            SampVoice by MOR loaded              
+[14:18:46]  -------------------------------------------    
+[14:18:46]   Loaded.
+[14:18:46]  Loading plugin: discord-connector
+[14:18:46]   Failed.
+[14:18:46]  Loading plugin: sscanf
+[14:18:46] 
+
+[14:18:46]  ===============================
+
+[14:18:46]       sscanf plugin loaded.     
+
+[14:18:46]          Version:  2.8.3        
+
+[14:18:46]   (c) 2018 Alex "Y_Less" Cole  
+
+[14:18:46]  ===============================
+
+[14:18:46]   Loaded.
+[14:18:46]  Loading plugin: streamer
+[14:18:46] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[14:18:46]   Loaded.
+[14:18:46]  Loading plugin: mysql
+[14:18:46]   Failed.
+[14:18:46]  Loading plugin: Whirlpool
+[14:18:46]  
+[14:18:46]  ==================
+[14:18:46]  
+[14:18:46]   Whirlpool loaded
+[14:18:46]  
+[14:18:46]  ==================
+[14:18:46]  
+[14:18:46]   Loaded.
+[14:18:46]  Loading plugin: SKY
+[14:18:46] 
+[14:18:46]  ===============================
+[14:18:46]    
+[14:18:46]    < SKY - 2.3.0 >
+[14:18:46]    
+[14:18:46]    (c) 2008 - Present | YSF Maintainers
+[14:18:46]    (c) 2015 | Oscar "Slice" Broman
+[14:18:46]    
+[14:18:46]    Server Version: 0.3.7 R2
+[14:18:46]    Operating System: Windows
+[14:18:46]    Built on: Sep 27 2021 at 23:19:52
+[14:18:46]    
+[14:18:46]  ===============================
+[14:18:46] 
+[14:18:46]   Loaded.
+[14:18:46]  Loading plugin: nativechecker
+[14:18:46]   Loaded.
+[14:18:46]  Loaded 7 plugins.
+
+[14:18:46] 
+[14:18:46] Ban list
+[14:18:46] --------
+[14:18:46]  Loaded: samp.ban
+[14:18:46] 
+[14:18:46] 
+[14:18:46] Filterscripts
+[14:18:46] ---------------
+[14:18:46]   Loaded 0 filterscripts.
+
+[14:18:46] [sv:dbg:main:AmxLoad] : net game pointer (value:023A9F20) received
+[14:18:46] [sv:dbg:network:bind] : voice server running on port 54232
+[14:18:46] AMX (55178744) loaded
+[14:18:46]    Error: Function not registered: 'DCC_GetMessageChannel'
+[14:18:46]    Error: Function not registered: 'DCC_GetMessageAuthor'
+[14:18:46]    Error: Function not registered: 'DCC_IsUserBot'
+[14:18:46]    Error: Function not registered: 'DCC_GetMessageContent'
+[14:18:46]    Error: Function not registered: 'cache_get_row_count'
+[14:18:46]    Error: Function not registered: 'mysql_tquery'
+[14:18:46]    Error: Function not registered: 'cache_get_data'
+[14:18:46]    Error: Function not registered: 'cache_get_field_content'
+[14:18:46]    Error: Function not registered: 'cache_get_field_content_int'
+[14:18:46]    Error: Function not registered: 'cache_get_field_content_float'
+[14:18:46]    Error: Function not registered: 'mysql_format'
+[14:18:46]    Error: Function not registered: 'cache_insert_id'
+[14:18:46]    Error: Function not registered: 'mysql_escape_string'
+[14:18:46]    Error: Function not registered: 'mysql_unprocessed_queries'
+[14:18:46]    Error: Function not registered: 'cache_get_row_int'
+[14:18:46]    Error: Function not registered: 'cache_get_row'
+[14:18:46]    Error: Function not registered: 'mysql_connect'
+[14:18:46]    Error: Function not registered: 'mysql_errno'
+[14:18:46]    Error: Function not registered: 'DCC_FindRoleById'
+[14:18:46]    Error: Function not registered: 'mysql_close'
+[14:18:46]    Error: Function not registered: 'DCC_SetBotActivity'
+[14:18:46]    Error: Function not registered: 'mysql_query'
+[14:18:46]    Error: Function not registered: 'cache_delete'
+[14:18:46]    Error: Function not registered: 'DCC_FindChannelById'
+[14:18:46]    Error: Function not registered: 'DCC_SendChannelMessage'
+[14:18:46]    Error: Function not registered: 'DCC_GetChannelName'
+[14:18:46]    Error: Function not registered: 'DCC_GetUserName'
+[14:18:46]    Error: Function not registered: 'DCC_CreateEmbed'
+[14:18:46]    Error: Function not registered: 'DCC_HasGuildMemberRole'
+[14:18:46]    Error: Function not registered: 'DCC_GetChannelGuild'
+[14:18:46]    Error: Function not registered: 'DCC_TriggerBotTypingIndicator'
+[14:18:46]    Error: Function not registered: 'DCC_GetUserDiscriminator'
+[14:18:46]    Error: Function not registered: 'DCC_SetEmbedDescription'
+[14:18:46]    Error: Function not registered: 'DCC_SetEmbedFooter'
+[14:18:46]    Error: Function not registered: 'DCC_SetEmbedColor'
+[14:18:46]    Error: Function not registered: 'DCC_SendChannelEmbedMessage'
+[14:18:46]    Error: Function not registered: 'DCC_CreatePrivateChannel'
+[14:18:46]    Error: Function not registered: 'DCC_SetGuildMemberNickname'
+[14:18:46]    Error: Function not registered: 'DCC_AddGuildMemberRole'
+[14:18:46]    Error: Function not registered: 'DCC_GetCreatedPrivateChannel'
+[14:18:46] Script[gamemodes/v2morgancity.amx]: Run time error 19: "File or function is not found"
+[14:18:46] Number of vehicle models: 0
+[14:18:55]  -------------------------------------------
+[14:18:55]            SampVoice unloading...           
+[14:18:55]  -------------------------------------------
+[14:18:55] [dbg:raknet:free] : module releasing...
+[14:18:55] [dbg:raknet:free] : module released
+[14:18:55] [sv:dbg:network:free] : module releasing...
+[14:18:55] [sv:dbg:network:free] : module released
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[14:19:42] filterscripts = ""  (string)
+[14:19:42] weburl = "www.sa-mp.com"  (string)
+[14:19:42] 
+[14:19:42] Server Plugins
+[14:19:42] --------------
+[14:19:42]  Loading plugin: pawncmd
+[14:19:42] [Pawn.CMD] plugin v3.3.6 loading...
+[14:19:42] [Pawn.CMD] 
+
+    | Pawn.CMD 3.3.6 | 2016 - 2021
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Sep 26 2021 at 11:55:10
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[14:19:42]   Loaded.
+[14:19:42]  Loading plugin: sampvoice
+[14:19:42] [sv:dbg:network:init] : module initializing...
+[14:19:42] [dbg:raknet:init] : module initializing...
+[14:19:42] [dbg:raknet:init] : module initialized
+[14:19:42] [sv:dbg:network:init] : module initialized
+[14:19:42] [sv:dbg:main:Load] : creating 8 work threads...
+[14:19:42]  -------------------------------------------    
+[14:19:42]    ___                __   __    _              
+[14:19:42]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[14:19:42]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[14:19:42]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[14:19:42]                   |_|                           
+[14:19:42]  -------------------------------------------    
+[14:19:42]            SampVoice by MOR loaded              
+[14:19:42]  -------------------------------------------    
+[14:19:42]   Loaded.
+[14:19:42]  Loading plugin: discord-connector
+[14:19:42]   Failed.
+[14:19:42]  Loading plugin: sscanf
+[14:19:42] 
+
+[14:19:42]  ===============================
+
+[14:19:42]       sscanf plugin loaded.     
+
+[14:19:42]          Version:  2.8.3        
+
+[14:19:42]   (c) 2018 Alex "Y_Less" Cole  
+
+[14:19:42]  ===============================
+
+[14:19:42]   Loaded.
+[14:19:42]  Loading plugin: streamer
+[14:19:42] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[14:19:42]   Loaded.
+[14:19:42]  Loading plugin: mysql
+[14:19:42]  >> plugin.mysql: R39-6 successfully loaded.
+[14:19:42]   Loaded.
+[14:19:42]  Loading plugin: Whirlpool
+[14:19:42]  
+[14:19:42]  ==================
+[14:19:43]  
+[14:19:43]   Whirlpool loaded
+[14:19:43]  
+[14:19:43]  ==================
+[14:19:43]  
+[14:19:43]   Loaded.
+[14:19:43]  Loading plugin: SKY
+[14:19:43] 
+[14:19:43]  ===============================
+[14:19:43]    
+[14:19:43]    < SKY - 2.3.0 >
+[14:19:43]    
+[14:19:43]    (c) 2008 - Present | YSF Maintainers
+[14:19:43]    (c) 2015 | Oscar "Slice" Broman
+[14:19:43]    
+[14:19:43]    Server Version: 0.3.7 R2
+[14:19:43]    Operating System: Windows
+[14:19:43]    Built on: Sep 27 2021 at 23:19:52
+[14:19:43]    
+[14:19:43]  ===============================
+[14:19:43] 
+[14:19:43]   Loaded.
+[14:19:43]  Loading plugin: nativechecker
+[14:19:43]   Loaded.
+[14:19:43]  Loaded 8 plugins.
+
+[14:19:43] 
+[14:19:43] Ban list
+[14:19:43] --------
+[14:19:43]  Loaded: samp.ban
+[14:19:43] 
+[14:19:43] 
+[14:19:43] Filterscripts
+[14:19:43] ---------------
+[14:19:43]   Loaded 0 filterscripts.
+
+[14:19:43] [sv:dbg:main:AmxLoad] : net game pointer (value:02389F20) received
+[14:19:43] [sv:dbg:network:bind] : voice server running on port 62712
+[14:19:43] AMX (55244344) loaded
+[14:19:43]    Error: Function not registered: 'DCC_GetMessageChannel'
+[14:19:43]    Error: Function not registered: 'DCC_GetMessageAuthor'
+[14:19:43]    Error: Function not registered: 'DCC_IsUserBot'
+[14:19:43]    Error: Function not registered: 'DCC_GetMessageContent'
+[14:19:43]    Error: Function not registered: 'DCC_FindRoleById'
+[14:19:43]    Error: Function not registered: 'DCC_SetBotActivity'
+[14:19:43]    Error: Function not registered: 'DCC_FindChannelById'
+[14:19:43]    Error: Function not registered: 'DCC_SendChannelMessage'
+[14:19:43]    Error: Function not registered: 'DCC_GetChannelName'
+[14:19:43]    Error: Function not registered: 'DCC_GetUserName'
+[14:19:43]    Error: Function not registered: 'DCC_CreateEmbed'
+[14:19:43]    Error: Function not registered: 'DCC_HasGuildMemberRole'
+[14:19:43]    Error: Function not registered: 'DCC_GetChannelGuild'
+[14:19:43]    Error: Function not registered: 'DCC_TriggerBotTypingIndicator'
+[14:19:43]    Error: Function not registered: 'DCC_GetUserDiscriminator'
+[14:19:43]    Error: Function not registered: 'DCC_SetEmbedDescription'
+[14:19:43]    Error: Function not registered: 'DCC_SetEmbedFooter'
+[14:19:43]    Error: Function not registered: 'DCC_SetEmbedColor'
+[14:19:43]    Error: Function not registered: 'DCC_SendChannelEmbedMessage'
+[14:19:43]    Error: Function not registered: 'DCC_CreatePrivateChannel'
+[14:19:43]    Error: Function not registered: 'DCC_SetGuildMemberNickname'
+[14:19:43]    Error: Function not registered: 'DCC_AddGuildMemberRole'
+[14:19:43]    Error: Function not registered: 'DCC_GetCreatedPrivateChannel'
+[14:19:43] Script[gamemodes/v2morgancity.amx]: Run time error 19: "File or function is not found"
+[14:19:43] Number of vehicle models: 0
+[14:20:27]  -------------------------------------------
+[14:20:27]            SampVoice unloading...           
+[14:20:27]  -------------------------------------------
+[14:20:27] [dbg:raknet:free] : module releasing...
+[14:20:27] [dbg:raknet:free] : module released
+[14:20:27] [sv:dbg:network:free] : module releasing...
+[14:20:27] [sv:dbg:network:free] : module released
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[14:20:46] filterscripts = ""  (string)
+[14:20:46] weburl = "www.sa-mp.com"  (string)
+[14:20:46] 
+[14:20:46] Server Plugins
+[14:20:46] --------------
+[14:20:46]  Loading plugin: crashdetect
+[14:20:47]   CrashDetect plugin 4.19.4
+[14:20:47]   Loaded.
+[14:20:47]  Loading plugin: pawncmd
+[14:20:47] [Pawn.CMD] plugin v3.3.6 loading...
+[14:20:47] [Pawn.CMD] 
+
+    | Pawn.CMD 3.3.6 | 2016 - 2021
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Sep 26 2021 at 11:55:10
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[14:20:47]   Loaded.
+[14:20:47]  Loading plugin: sampvoice
+[14:20:47] [sv:dbg:network:init] : module initializing...
+[14:20:47] [dbg:raknet:init] : module initializing...
+[14:20:47] [dbg:raknet:init] : module initialized
+[14:20:47] [sv:dbg:network:init] : module initialized
+[14:20:47] [sv:dbg:main:Load] : creating 8 work threads...
+[14:20:47]  -------------------------------------------    
+[14:20:47]    ___                __   __    _              
+[14:20:47]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[14:20:47]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[14:20:47]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[14:20:47]                   |_|                           
+[14:20:47]  -------------------------------------------    
+[14:20:47]            SampVoice by MOR loaded              
+[14:20:47]  -------------------------------------------    
+[14:20:47]   Loaded.
+[14:20:47]  Loading plugin: sscanf
+[14:20:47] 
+
+[14:20:47]  ===============================
+
+[14:20:47]       sscanf plugin loaded.     
+
+[14:20:47]          Version:  2.8.3        
+
+[14:20:47]   (c) 2018 Alex "Y_Less" Cole  
+
+[14:20:47]  ===============================
+
+[14:20:47]   Loaded.
+[14:20:47]  Loading plugin: streamer
+[14:20:47] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[14:20:47]   Loaded.
+[14:20:47]  Loading plugin: mysql
+[14:20:47]  >> plugin.mysql: R39-6 successfully loaded.
+[14:20:47]   Loaded.
+[14:20:47]  Loading plugin: Whirlpool
+[14:20:47]  
+[14:20:47]  ==================
+[14:20:47]  
+[14:20:47]   Whirlpool loaded
+[14:20:47]  
+[14:20:47]  ==================
+[14:20:47]  
+[14:20:47]   Loaded.
+[14:20:47]  Loading plugin: SKY
+[14:20:47] 
+[14:20:47]  ===============================
+[14:20:47]    
+[14:20:47]    < SKY - 2.3.0 >
+[14:20:47]    
+[14:20:47]    (c) 2008 - Present | YSF Maintainers
+[14:20:47]    (c) 2015 | Oscar "Slice" Broman
+[14:20:47]    
+[14:20:47]    Server Version: 0.3.7 R2
+[14:20:47]    Operating System: Windows
+[14:20:47]    Built on: Sep 27 2021 at 23:19:52
+[14:20:47]    
+[14:20:47]  ===============================
+[14:20:47] 
+[14:20:47]   Loaded.
+[14:20:47]  Loading plugin: nativechecker
+[14:20:47]   Loaded.
+[14:20:47]  Loaded 9 plugins.
+
+[14:20:47] 
+[14:20:47] Ban list
+[14:20:47] --------
+[14:20:47]  Loaded: samp.ban
+[14:20:47] 
+[14:20:47] 
+[14:20:47] Filterscripts
+[14:20:47] ---------------
+[14:20:47]   Loaded 0 filterscripts.
+
+[14:20:47] [sv:dbg:main:AmxLoad] : net game pointer (value:02339F18) received
+[14:20:47] [sv:dbg:network:bind] : voice server running on port 56524
+[14:20:47] AMX (55573064) loaded
+[14:20:47]    Error: Function not registered: 'DCC_GetMessageChannel'
+[14:20:47]    Error: Function not registered: 'DCC_GetMessageAuthor'
+[14:20:47]    Error: Function not registered: 'DCC_IsUserBot'
+[14:20:47]    Error: Function not registered: 'DCC_GetMessageContent'
+[14:20:47]    Error: Function not registered: 'DCC_FindRoleById'
+[14:20:47]    Error: Function not registered: 'DCC_SetBotActivity'
+[14:20:47]    Error: Function not registered: 'DCC_FindChannelById'
+[14:20:47]    Error: Function not registered: 'DCC_SendChannelMessage'
+[14:20:47]    Error: Function not registered: 'DCC_GetChannelName'
+[14:20:47]    Error: Function not registered: 'DCC_GetUserName'
+[14:20:47]    Error: Function not registered: 'DCC_CreateEmbed'
+[14:20:47]    Error: Function not registered: 'DCC_HasGuildMemberRole'
+[14:20:47]    Error: Function not registered: 'DCC_GetChannelGuild'
+[14:20:47]    Error: Function not registered: 'DCC_TriggerBotTypingIndicator'
+[14:20:47]    Error: Function not registered: 'DCC_GetUserDiscriminator'
+[14:20:47]    Error: Function not registered: 'DCC_SetEmbedDescription'
+[14:20:47]    Error: Function not registered: 'DCC_SetEmbedFooter'
+[14:20:47]    Error: Function not registered: 'DCC_SetEmbedColor'
+[14:20:47]    Error: Function not registered: 'DCC_SendChannelEmbedMessage'
+[14:20:47]    Error: Function not registered: 'DCC_CreatePrivateChannel'
+[14:20:47]    Error: Function not registered: 'DCC_SetGuildMemberNickname'
+[14:20:47]    Error: Function not registered: 'DCC_AddGuildMemberRole'
+[14:20:47]    Error: Function not registered: 'DCC_GetCreatedPrivateChannel'
+[14:20:47] [debug] Run time error 19: "File or function is not found"
+[14:20:47] [debug]  DCC_GetMessageChannel
+[14:20:47] [debug]  DCC_GetMessageAuthor
+[14:20:47] [debug]  DCC_IsUserBot
+[14:20:47] [debug]  DCC_GetMessageContent
+[14:20:47] [debug]  DCC_FindRoleById
+[14:20:47] [debug]  DCC_SetBotActivity
+[14:20:47] [debug]  DCC_FindChannelById
+[14:20:47] [debug]  DCC_SendChannelMessage
+[14:20:47] [debug]  DCC_GetChannelName
+[14:20:47] [debug]  DCC_GetUserName
+[14:20:47] [debug]  DCC_CreateEmbed
+[14:20:47] [debug]  DCC_HasGuildMemberRole
+[14:20:47] [debug]  DCC_GetChannelGuild
+[14:20:47] [debug]  DCC_TriggerBotTypingIndicator
+[14:20:47] [debug]  DCC_GetUserDiscriminator
+[14:20:47] [debug]  DCC_SetEmbedDescription
+[14:20:47] [debug]  DCC_SetEmbedFooter
+[14:20:47] [debug]  DCC_SetEmbedColor
+[14:20:47] [debug]  DCC_SendChannelEmbedMessage
+[14:20:47] [debug]  DCC_CreatePrivateChannel
+[14:20:47] [debug]  DCC_SetGuildMemberNickname
+[14:20:47] [debug]  DCC_AddGuildMemberRole
+[14:20:47] [debug]  DCC_GetCreatedPrivateChannel
+[14:20:47] [debug] Run time error 19: "File or function is not found"
+[14:20:47] [debug]  DCC_GetMessageChannel
+[14:20:47] [debug]  DCC_GetMessageAuthor
+[14:20:47] [debug]  DCC_IsUserBot
+[14:20:47] [debug]  DCC_GetMessageContent
+[14:20:47] [debug]  DCC_FindRoleById
+[14:20:47] [debug]  DCC_SetBotActivity
+[14:20:47] [debug]  DCC_FindChannelById
+[14:20:47] [debug]  DCC_SendChannelMessage
+[14:20:47] [debug]  DCC_GetChannelName
+[14:20:47] [debug]  DCC_GetUserName
+[14:20:47] [debug]  DCC_CreateEmbed
+[14:20:47] [debug]  DCC_HasGuildMemberRole
+[14:20:47] [debug]  DCC_GetChannelGuild
+[14:20:47] [debug]  DCC_TriggerBotTypingIndicator
+[14:20:47] [debug]  DCC_GetUserDiscriminator
+[14:20:47] [debug]  DCC_SetEmbedDescription
+[14:20:47] [debug]  DCC_SetEmbedFooter
+[14:20:47] [debug]  DCC_SetEmbedColor
+[14:20:47] [debug]  DCC_SendChannelEmbedMessage
+[14:20:47] [debug]  DCC_CreatePrivateChannel
+[14:20:47] [debug]  DCC_SetGuildMemberNickname
+[14:20:47] [debug]  DCC_AddGuildMemberRole
+[14:20:47] [debug]  DCC_GetCreatedPrivateChannel
+[14:20:47] Script[gamemodes/v2morgancity.amx]: Run time error 19: "File or function is not found"
+[14:20:47] Number of vehicle models: 0
+[14:23:57]  -------------------------------------------
+[14:23:57]            SampVoice unloading...           
+[14:23:57]  -------------------------------------------
+[14:23:57] [dbg:raknet:free] : module releasing...
+[14:23:57] [dbg:raknet:free] : module released
+[14:23:57] [sv:dbg:network:free] : module releasing...
+[14:23:57] [sv:dbg:network:free] : module released
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[14:30:23] filterscripts = ""  (string)
+[14:30:23] weburl = "www.sa-mp.com"  (string)
+[14:30:23] 
+[14:30:23] Server Plugins
+[14:30:23] --------------
+[14:30:23]  Loading plugin: crashdetect
+[14:30:23]   CrashDetect plugin 4.19.4
+[14:30:23]   Loaded.
+[14:30:23]  Loading plugin: pawncmd
+[14:30:23] [Pawn.CMD] plugin v3.3.6 loading...
+[14:30:23] [Pawn.CMD] 
+
+    | Pawn.CMD 3.3.6 | 2016 - 2021
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Sep 26 2021 at 11:55:10
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[14:30:23]   Loaded.
+[14:30:23]  Loading plugin: sampvoice
+[14:30:23] [sv:dbg:network:init] : module initializing...
+[14:30:23] [dbg:raknet:init] : module initializing...
+[14:30:23] [dbg:raknet:init] : module initialized
+[14:30:23] [sv:dbg:network:init] : module initialized
+[14:30:23] [sv:dbg:main:Load] : creating 8 work threads...
+[14:30:23]  -------------------------------------------    
+[14:30:23]    ___                __   __    _              
+[14:30:23]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[14:30:23]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[14:30:23]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[14:30:23]                   |_|                           
+[14:30:23]  -------------------------------------------    
+[14:30:23]            SampVoice by MOR loaded              
+[14:30:23]  -------------------------------------------    
+[14:30:23]   Loaded.
+[14:30:23]  Loading plugin: sscanf
+[14:30:23] 
+
+[14:30:23]  ===============================
+
+[14:30:23]       sscanf plugin loaded.     
+
+[14:30:23]          Version:  2.8.3        
+
+[14:30:23]   (c) 2018 Alex "Y_Less" Cole  
+
+[14:30:23]  ===============================
+
+[14:30:23]   Loaded.
+[14:30:23]  Loading plugin: streamer
+[14:30:23] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[14:30:23]   Loaded.
+[14:30:23]  Loading plugin: mysql
+[14:30:23]  >> plugin.mysql: R39-6 successfully loaded.
+[14:30:23]   Loaded.
+[14:30:23]  Loading plugin: Whirlpool
+[14:30:23]  
+[14:30:23]  ==================
+[14:30:23]  
+[14:30:23]   Whirlpool loaded
+[14:30:23]  
+[14:30:23]  ==================
+[14:30:23]  
+[14:30:23]   Loaded.
+[14:30:23]  Loading plugin: SKY
+[14:30:23] 
+[14:30:23]  ===============================
+[14:30:23]    
+[14:30:23]    < SKY - 2.3.0 >
+[14:30:23]    
+[14:30:23]    (c) 2008 - Present | YSF Maintainers
+[14:30:23]    (c) 2015 | Oscar "Slice" Broman
+[14:30:23]    
+[14:30:23]    Server Version: 0.3.7 R2
+[14:30:23]    Operating System: Windows
+[14:30:23]    Built on: Sep 27 2021 at 23:19:52
+[14:30:23]    
+[14:30:23]  ===============================
+[14:30:23] 
+[14:30:23]   Loaded.
+[14:30:23]  Loading plugin: nativechecker
+[14:30:23]   Loaded.
+[14:30:23]  Loaded 9 plugins.
+
+[14:30:23] 
+[14:30:23] Ban list
+[14:30:23] --------
+[14:30:23]  Loaded: samp.ban
+[14:30:23] 
+[14:30:23] 
+[14:30:23] Filterscripts
+[14:30:23] ---------------
+[14:30:23]   Loaded 0 filterscripts.
+
+[14:30:23] [sv:dbg:main:AmxLoad] : net game pointer (value:023F9F18) received
+[14:30:23] [sv:dbg:network:bind] : voice server running on port 62821
+[14:30:23] AMX (55573064) loaded
+[14:30:23]    Error: Function not registered: 'DCC_GetMessageChannel'
+[14:30:23]    Error: Function not registered: 'DCC_GetMessageAuthor'
+[14:30:23]    Error: Function not registered: 'DCC_IsUserBot'
+[14:30:23]    Error: Function not registered: 'DCC_GetMessageContent'
+[14:30:23] [debug] Run time error 19: "File or function is not found"
+[14:30:23] [debug]  DCC_GetMessageChannel
+[14:30:23] [debug]  DCC_GetMessageAuthor
+[14:30:23] [debug]  DCC_IsUserBot
+[14:30:23] [debug]  DCC_GetMessageContent
+[14:30:23] [debug] Run time error 19: "File or function is not found"
+[14:30:23] [debug]  DCC_GetMessageChannel
+[14:30:23] [debug]  DCC_GetMessageAuthor
+[14:30:23] [debug]  DCC_IsUserBot
+[14:30:23] [debug]  DCC_GetMessageContent
+[14:30:23] Script[gamemodes/v2morgancity.amx]: Run time error 19: "File or function is not found"
+[14:30:23] Number of vehicle models: 0
+[14:30:54]  -------------------------------------------
+[14:30:54]            SampVoice unloading...           
+[14:30:54]  -------------------------------------------
+[14:30:54] [dbg:raknet:free] : module releasing...
+[14:30:54] [dbg:raknet:free] : module released
+[14:30:54] [sv:dbg:network:free] : module releasing...
+[14:30:54] [sv:dbg:network:free] : module released
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[14:30:56] filterscripts = ""  (string)
+[14:30:56] weburl = "www.sa-mp.com"  (string)
+[14:30:56] 
+[14:30:56] Server Plugins
+[14:30:56] --------------
+[14:30:56]  Loading plugin: crashdetect
+[14:30:56]   CrashDetect plugin 4.19.4
+[14:30:56]   Loaded.
+[14:30:56]  Loading plugin: pawncmd
+[14:30:56] [Pawn.CMD] plugin v3.3.6 loading...
+[14:30:56] [Pawn.CMD] 
+
+    | Pawn.CMD 3.3.6 | 2016 - 2021
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Sep 26 2021 at 11:55:10
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[14:30:56]   Loaded.
+[14:30:56]  Loading plugin: sampvoice
+[14:30:56] [sv:dbg:network:init] : module initializing...
+[14:30:56] [dbg:raknet:init] : module initializing...
+[14:30:56] [dbg:raknet:init] : module initialized
+[14:30:56] [sv:dbg:network:init] : module initialized
+[14:30:56] [sv:dbg:main:Load] : creating 8 work threads...
+[14:30:56]  -------------------------------------------    
+[14:30:56]    ___                __   __    _              
+[14:30:56]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[14:30:56]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[14:30:56]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[14:30:56]                   |_|                           
+[14:30:56]  -------------------------------------------    
+[14:30:56]            SampVoice by MOR loaded              
+[14:30:56]  -------------------------------------------    
+[14:30:56]   Loaded.
+[14:30:56]  Loading plugin: sscanf
+[14:30:56] 
+
+[14:30:56]  ===============================
+
+[14:30:56]       sscanf plugin loaded.     
+
+[14:30:56]          Version:  2.8.3        
+
+[14:30:56]   (c) 2018 Alex "Y_Less" Cole  
+
+[14:30:56]  ===============================
+
+[14:30:56]   Loaded.
+[14:30:56]  Loading plugin: streamer
+[14:30:56] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[14:30:57]   Loaded.
+[14:30:57]  Loading plugin: mysql
+[14:30:57]  >> plugin.mysql: R39-6 successfully loaded.
+[14:30:57]   Loaded.
+[14:30:57]  Loading plugin: Whirlpool
+[14:30:57]  
+[14:30:57]  ==================
+[14:30:57]  
+[14:30:57]   Whirlpool loaded
+[14:30:57]  
+[14:30:57]  ==================
+[14:30:57]  
+[14:30:57]   Loaded.
+[14:30:57]  Loading plugin: SKY
+[14:30:57] 
+[14:30:57]  ===============================
+[14:30:57]    
+[14:30:57]    < SKY - 2.3.0 >
+[14:30:57]    
+[14:30:57]    (c) 2008 - Present | YSF Maintainers
+[14:30:57]    (c) 2015 | Oscar "Slice" Broman
+[14:30:57]    
+[14:30:57]    Server Version: 0.3.7 R2
+[14:30:57]    Operating System: Windows
+[14:30:57]    Built on: Sep 27 2021 at 23:19:52
+[14:30:57]    
+[14:30:57]  ===============================
+[14:30:57] 
+[14:30:57]   Loaded.
+[14:30:57]  Loading plugin: nativechecker
+[14:30:57]   Loaded.
+[14:30:57]  Loaded 9 plugins.
+
+[14:30:57] 
+[14:30:57] Ban list
+[14:30:57] --------
+[14:30:57]  Loaded: samp.ban
+[14:30:57] 
+[14:30:57] 
+[14:30:57] Filterscripts
+[14:30:57] ---------------
+[14:30:57]   Loaded 0 filterscripts.
+
+[14:30:57] [sv:dbg:main:AmxLoad] : net game pointer (value:023A9F18) received
+[14:30:57] [sv:dbg:network:bind] : voice server running on port 61606
+[14:30:57] AMX (60815944) loaded
+[14:30:57]  
+[14:30:57] --------------------------------------
+[14:30:57]  Anticheat Nex-AC loaded!
+[14:30:57]  Anticheat version: 1.9.52
+[14:30:57]  Author: Nexius
+[14:30:57] --------------------------------------
+
+[14:30:57]  
+[14:30:57]  
+[14:30:57]  
+[14:30:57]  ======================================= 
+[14:30:57]  |                                     | 
+[14:30:57]  |        YSI version 3.09.0684        | 
+[14:30:57]  |        By Alex "Y_Less" Cole        | 
+[14:30:57]  |                                     | 
+[14:30:57]  ======================================= 
+[14:30:57]  
+[14:30:57] Couldn't connect to radio station database... server will continue to operate normally.
+[14:30:57] 
+************************************************************************************************************************
+[14:30:57]  					Morgan City Roleplay Version - MC:RP                                                                    
+[14:30:57]  					 Last Update game version - MC:RP                                                                
+[14:30:57] ************************************************************************************************************************
+
+[14:30:57] [LoadAntiCheat] Loading data from database...
+[14:30:57] Morgan City Roleplay
+[14:30:57] 430 objects loaded.
+[14:30:57] Number of vehicle models: 21
+[14:30:57] [Script] 262 houses loaded.
+[14:30:57] [Script] 3 garages loaded.
+[14:30:57] [Script] 28 businesses loaded.
+[14:30:57] [Script] 28 entrances loaded.
+[14:30:57] [Script] 4 factions loaded.
+[14:30:57] [Script] 2 lands loaded.
+[14:30:58] [Script] 19 gangs loaded.
+[14:30:58] [Script] 0 points loaded.
+[14:30:58] [Script] 10 Points Loaded.
+[14:30:58] [Graffities] No records found.
+[14:30:58] [BillBoards] No records found.
+[14:30:58] [ANTICHEAT]: Anti-cheat settings loaded successfully (loaded: 53). Time: 0 мс.
+[14:32:11] [connection] 127.0.0.1:56728 requests connection cookie.
+[14:32:12] [connection] incoming connection: 127.0.0.1:56728 id: 0
+[14:32:12] [sv:dbg:network:connect] : connecting player (0) with address (127.0.0.1) ...
+[14:32:12] [sv:dbg:network:connect] : player (0) assigned key (de17e6e4)
+[14:32:12] [join] Chevrolet_Corvette has joined the server (0:127.0.0.1)
+[14:32:12] > {FFFFFF}Chevrolet Corvette has joined the server [{FFFFFF}IP:{FFFFFF} 127.0.0.1] [City: ] [Country: ]
+[14:32:12] [sv:dbg:network:receive] : player (0) identified (port:56729)
+[14:33:57] [sv:dbg:network:connect] : disconnecting player (0) ...
+[14:33:57] > {FFFFFF}Chevrolet Corvette Left The Server [{00ffff}IP:{FFFFFF} 255.255.255.255]
+[14:33:57] [part] Chevrolet_Corvette has left the server (0:1)
+[14:34:23] [connection] 127.0.0.1:50189 requests connection cookie.
+[14:34:24] [connection] incoming connection: 127.0.0.1:50189 id: 0
+[14:34:24] [sv:dbg:network:connect] : connecting player (0) with address (127.0.0.1) ...
+[14:34:24] [sv:dbg:network:connect] : player (0) assigned key (6ea3e740)
+[14:34:24] [join] Chevrolet_Corvette has joined the server (0:127.0.0.1)
+[14:34:24] > {FFFFFF}Chevrolet Corvette has joined the server [{FFFFFF}IP:{FFFFFF} 127.0.0.1] [City: ] [Country: ]
+[14:34:24] [sv:dbg:network:receive] : player (0) identified (port:50190)
+[14:34:57] [cmd] Chevrolet Corvette: [g]
+[14:35:31] [cmd] Chevrolet Corvette: [g]
+[14:35:31] [cmd] Chevrolet Corvette: [g]
+[14:36:57] [cmd] Chevrolet Corvette: [mcrpjm2022]
+[14:37:09] RCON (In-Game): Player #0 (Chevrolet_Corvette) has logged in.
+[14:37:14] [cmd] Chevrolet Corvette: [makeadmin]
+[14:37:17] AdmCmd: Chevrolet Corvette has made Chevrolet Corvette a {C949FD}Head Administrator{ffffff} (7).
+[14:37:17] [cmd] Chevrolet Corvette: [makeadmin]
+[14:37:18] AdmCmd: Chevrolet Corvette has made Chevrolet Corvette a {FF50F1}Community Owner{ffffff} (9).
+[14:37:18] [cmd] Chevrolet Corvette: [makeadmin]
+[14:37:23] [cmd] Chevrolet Corvette: [mcrpjm2022]
+[14:37:28] AdmCmd: Chevrolet Corvette has made Chevrolet Corvette a {FF50F1}Community Developer{ffffff} (10).
+[14:37:28] [cmd] Chevrolet Corvette: [makeadmin]
+[14:37:31] [cmd] Chevrolet Corvette: [makeadmin]
+[14:37:34] [cmd] Chevrolet Corvette: [mcrpjm2022]
+[14:38:17] [sv:dbg:network:connect] : disconnecting player (0) ...
+[14:38:17] > {FFFFFF}Chevrolet Corvette Left The Server [{00ffff}IP:{FFFFFF} 255.255.255.255]
+[14:38:17] [part] Chevrolet_Corvette has left the server (0:1)
+[14:38:18]  -------------------------------------------
+[14:38:18]            SampVoice unloading...           
+[14:38:18]  -------------------------------------------
+[14:38:18] [dbg:raknet:free] : module releasing...
+[14:38:18] [dbg:raknet:free] : module released
+[14:38:18] [sv:dbg:network:free] : module releasing...
+[14:38:18] [sv:dbg:network:free] : module released
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[14:38:25] filterscripts = ""  (string)
+[14:38:25] weburl = "www.sa-mp.com"  (string)
+[14:38:25] 
+[14:38:25] Server Plugins
+[14:38:25] --------------
+[14:38:25]  Loading plugin: crashdetect
+[14:38:25]   CrashDetect plugin 4.19.4
+[14:38:25]   Loaded.
+[14:38:25]  Loading plugin: pawncmd
+[14:38:25] [Pawn.CMD] plugin v3.3.6 loading...
+[14:38:25] [Pawn.CMD] 
+
+    | Pawn.CMD 3.3.6 | 2016 - 2021
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Sep 26 2021 at 11:55:10
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[14:38:25]   Loaded.
+[14:38:25]  Loading plugin: sampvoice
+[14:38:25] [sv:dbg:network:init] : module initializing...
+[14:38:25] [dbg:raknet:init] : module initializing...
+[14:38:25] [dbg:raknet:init] : module initialized
+[14:38:25] [sv:dbg:network:init] : module initialized
+[14:38:25] [sv:dbg:main:Load] : creating 8 work threads...
+[14:38:25]  -------------------------------------------    
+[14:38:25]    ___                __   __    _              
+[14:38:25]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[14:38:25]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[14:38:25]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[14:38:25]                   |_|                           
+[14:38:25]  -------------------------------------------    
+[14:38:25]            SampVoice by MOR loaded              
+[14:38:25]  -------------------------------------------    
+[14:38:25]   Loaded.
+[14:38:25]  Loading plugin: sscanf
+[14:38:25] 
+
+[14:38:25]  ===============================
+
+[14:38:25]       sscanf plugin loaded.     
+
+[14:38:25]          Version:  2.8.3        
+
+[14:38:25]   (c) 2018 Alex "Y_Less" Cole  
+
+[14:38:25]  ===============================
+
+[14:38:25]   Loaded.
+[14:38:26]  Loading plugin: streamer
+[14:38:26] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[14:38:26]   Loaded.
+[14:38:26]  Loading plugin: mysql
+[14:38:26]  >> plugin.mysql: R39-6 successfully loaded.
+[14:38:26]   Loaded.
+[14:38:26]  Loading plugin: Whirlpool
+[14:38:26]  
+[14:38:26]  ==================
+[14:38:26]  
+[14:38:26]   Whirlpool loaded
+[14:38:26]  
+[14:38:26]  ==================
+[14:38:26]  
+[14:38:26]   Loaded.
+[14:38:26]  Loading plugin: SKY
+[14:38:26] 
+[14:38:26]  ===============================
+[14:38:26]    
+[14:38:26]    < SKY - 2.3.0 >
+[14:38:26]    
+[14:38:26]    (c) 2008 - Present | YSF Maintainers
+[14:38:26]    (c) 2015 | Oscar "Slice" Broman
+[14:38:26]    
+[14:38:26]    Server Version: 0.3.7 R2
+[14:38:26]    Operating System: Windows
+[14:38:26]    Built on: Sep 27 2021 at 23:19:52
+[14:38:26]    
+[14:38:26]  ===============================
+[14:38:26] 
+[14:38:26]   Loaded.
+[14:38:26]  Loading plugin: nativechecker
+[14:38:26]   Loaded.
+[14:38:26]  Loaded 9 plugins.
+
+[14:38:26] 
+[14:38:26] Ban list
+[14:38:26] --------
+[14:38:26]  Loaded: samp.ban
+[14:38:26] 
+[14:38:26] 
+[14:38:26] Filterscripts
+[14:38:26] ---------------
+[14:38:26]   Loaded 0 filterscripts.
+
+[14:38:26] [sv:dbg:main:AmxLoad] : net game pointer (value:022C9F18) received
+[14:38:26] [sv:dbg:network:bind] : voice server running on port 51769
+[14:38:26] AMX (59898440) loaded
+[14:38:26]  
+[14:38:26] --------------------------------------
+[14:38:26]  Anticheat Nex-AC loaded!
+[14:38:26]  Anticheat version: 1.9.52
+[14:38:26]  Author: Nexius
+[14:38:26] --------------------------------------
+
+[14:38:26]  
+[14:38:26]  
+[14:38:26]  
+[14:38:26]  ======================================= 
+[14:38:26]  |                                     | 
+[14:38:26]  |        YSI version 3.09.0684        | 
+[14:38:26]  |        By Alex "Y_Less" Cole        | 
+[14:38:26]  |                                     | 
+[14:38:26]  ======================================= 
+[14:38:26]  
+[14:38:26] Couldn't connect to radio station database... server will continue to operate normally.
+[14:38:26] 
+************************************************************************************************************************
+[14:38:26]  					Morgan City Roleplay Version - MC:RP                                                                    
+[14:38:26]  					 Last Update game version - MC:RP                                                                
+[14:38:26] ************************************************************************************************************************
+
+[14:38:26] [LoadAntiCheat] Loading data from database...
+[14:38:26] Morgan City Roleplay
+[14:38:26] 430 objects loaded.
+[14:38:26] Number of vehicle models: 21
+[14:38:27] [Script] 262 houses loaded.
+[14:38:27] [Script] 3 garages loaded.
+[14:38:27] [Script] 28 businesses loaded.
+[14:38:27] [Script] 28 entrances loaded.
+[14:38:27] [Script] 4 factions loaded.
+[14:38:27] [Script] 2 lands loaded.
+[14:38:27] [Script] 19 gangs loaded.
+[14:38:27] [Script] 0 points loaded.
+[14:38:27] [Script] 10 Points Loaded.
+[14:38:27] [Graffities] No records found.
+[14:38:28] [BillBoards] No records found.
+[14:38:28] [ANTICHEAT]: Anti-cheat settings loaded successfully (loaded: 53). Time: 0 мс.
+[14:38:46] [connection] 127.0.0.1:49617 requests connection cookie.
+[14:38:47] [connection] incoming connection: 127.0.0.1:49617 id: 0
+[14:38:48] [sv:dbg:network:connect] : connecting player (0) with address (127.0.0.1) ...
+[14:38:48] [sv:dbg:network:connect] : player (0) assigned key (635a3b9c)
+[14:38:48] [join] Chevrolet_Corvette has joined the server (0:127.0.0.1)
+[14:38:48] > {FFFFFF}Chevrolet Corvette has joined the server [{FFFFFF}IP:{FFFFFF} 127.0.0.1] [City: ] [Country: ]
+[14:38:48] [sv:dbg:network:receive] : player (0) identified (port:49618)
+[14:38:58] SERVER: Chevrolet Corvette has logged in as a {eb4034}{FF50F1}Community Developer{ffffff}{FFFFFF}.
+[14:38:58] AdmCmd: {FF50F1}Community Developer{ffffff} Chevrolet Corvette has logged in.
+[14:39:04] [chat] [Chevrolet_Corvette]: if(strcmp(PlayerInfo[playerid][pUsername], "Michael_Vinsmoke", true) != 0)
+	{
+		return SCM(playerid, COLOR_SYNTAX, "You don't 
+[14:39:12] [cmd] Chevrolet Corvette: [mcrpjm2022]
+[14:39:54] RCON (In-Game): Player #0 (Chevrolet_Corvette) has logged in.
+[14:39:56] [cmd] Chevrolet Corvette: [mcrpjm2022]
+[14:40:32] [sv:dbg:network:connect] : disconnecting player (0) ...
+[14:40:32] > {FFFFFF}Chevrolet Corvette Left The Server [{00ffff}IP:{FFFFFF} 255.255.255.255]
+[14:40:32] [part] Chevrolet_Corvette has left the server (0:1)
+[14:40:33]  -------------------------------------------
+[14:40:33]            SampVoice unloading...           
+[14:40:33]  -------------------------------------------
+[14:40:33] [dbg:raknet:free] : module releasing...
+[14:40:33] [dbg:raknet:free] : module released
+[14:40:33] [sv:dbg:network:free] : module releasing...
+[14:40:33] [sv:dbg:network:free] : module released
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[14:40:40] filterscripts = ""  (string)
+[14:40:40] weburl = "www.sa-mp.com"  (string)
+[14:40:40] 
+[14:40:40] Server Plugins
+[14:40:40] --------------
+[14:40:40]  Loading plugin: crashdetect
+[14:40:40]   CrashDetect plugin 4.19.4
+[14:40:40]   Loaded.
+[14:40:40]  Loading plugin: pawncmd
+[14:40:40] [Pawn.CMD] plugin v3.3.6 loading...
+[14:40:40] [Pawn.CMD] 
+
+    | Pawn.CMD 3.3.6 | 2016 - 2021
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Sep 26 2021 at 11:55:10
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[14:40:40]   Loaded.
+[14:40:40]  Loading plugin: sampvoice
+[14:40:40] [sv:dbg:network:init] : module initializing...
+[14:40:40] [dbg:raknet:init] : module initializing...
+[14:40:40] [dbg:raknet:init] : module initialized
+[14:40:40] [sv:dbg:network:init] : module initialized
+[14:40:40] [sv:dbg:main:Load] : creating 8 work threads...
+[14:40:40]  -------------------------------------------    
+[14:40:40]    ___                __   __    _              
+[14:40:40]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[14:40:40]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[14:40:40]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[14:40:40]                   |_|                           
+[14:40:40]  -------------------------------------------    
+[14:40:40]            SampVoice by MOR loaded              
+[14:40:40]  -------------------------------------------    
+[14:40:40]   Loaded.
+[14:40:40]  Loading plugin: sscanf
+[14:40:40] 
+
+[14:40:40]  ===============================
+
+[14:40:40]       sscanf plugin loaded.     
+
+[14:40:40]          Version:  2.8.3        
+
+[14:40:40]   (c) 2018 Alex "Y_Less" Cole  
+
+[14:40:40]  ===============================
+
+[14:40:40]   Loaded.
+[14:40:40]  Loading plugin: streamer
+[14:40:40] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[14:40:40]   Loaded.
+[14:40:40]  Loading plugin: mysql
+[14:40:40]  >> plugin.mysql: R39-6 successfully loaded.
+[14:40:40]   Loaded.
+[14:40:40]  Loading plugin: Whirlpool
+[14:40:41]  
+[14:40:41]  ==================
+[14:40:41]  
+[14:40:41]   Whirlpool loaded
+[14:40:41]  
+[14:40:41]  ==================
+[14:40:41]  
+[14:40:41]   Loaded.
+[14:40:41]  Loading plugin: SKY
+[14:40:41] 
+[14:40:41]  ===============================
+[14:40:41]    
+[14:40:41]    < SKY - 2.3.0 >
+[14:40:41]    
+[14:40:41]    (c) 2008 - Present | YSF Maintainers
+[14:40:41]    (c) 2015 | Oscar "Slice" Broman
+[14:40:41]    
+[14:40:41]    Server Version: 0.3.7 R2
+[14:40:41]    Operating System: Windows
+[14:40:41]    Built on: Sep 27 2021 at 23:19:52
+[14:40:41]    
+[14:40:41]  ===============================
+[14:40:41] 
+[14:40:41]   Loaded.
+[14:40:41]  Loading plugin: nativechecker
+[14:40:41]   Loaded.
+[14:40:41]  Loaded 9 plugins.
+
+[14:40:41] 
+[14:40:41] Ban list
+[14:40:41] --------
+[14:40:41]  Loaded: samp.ban
+[14:40:41] 
+[14:40:41] 
+[14:40:41] Filterscripts
+[14:40:41] ---------------
+[14:40:41]   Loaded 0 filterscripts.
+
+[14:40:41] [sv:dbg:main:AmxLoad] : net game pointer (value:02369F18) received
+[14:40:41] [sv:dbg:network:bind] : voice server running on port 64586
+[14:40:41] AMX (55507528) loaded
+[14:40:41]  
+[14:40:41] --------------------------------------
+[14:40:41]  Anticheat Nex-AC loaded!
+[14:40:41]  Anticheat version: 1.9.52
+[14:40:41]  Author: Nexius
+[14:40:41] --------------------------------------
+
+[14:40:41]  
+[14:40:41]  
+[14:40:41]  
+[14:40:41]  ======================================= 
+[14:40:41]  |                                     | 
+[14:40:41]  |        YSI version 3.09.0684        | 
+[14:40:41]  |        By Alex "Y_Less" Cole        | 
+[14:40:41]  |                                     | 
+[14:40:41]  ======================================= 
+[14:40:41]  
+[14:40:41] Couldn't connect to radio station database... server will continue to operate normally.
+[14:40:41] 
+************************************************************************************************************************
+[14:40:41]  					Morgan City Roleplay Version - MC:RP                                                                    
+[14:40:41]  					 Last Update game version - MC:RP                                                                
+[14:40:41] ************************************************************************************************************************
+
+[14:40:41] [LoadAntiCheat] Loading data from database...
+[14:40:41] Morgan City Roleplay
+[14:40:41] 430 objects loaded.
+[14:40:41] Number of vehicle models: 21
+[14:40:42] [Script] 262 houses loaded.
+[14:40:42] [Script] 3 garages loaded.
+[14:40:42] [Script] 28 businesses loaded.
+[14:40:42] [Script] 28 entrances loaded.
+[14:40:42] [Script] 4 factions loaded.
+[14:40:42] [Script] 2 lands loaded.
+[14:40:42] [Script] 19 gangs loaded.
+[14:40:42] [Script] 0 points loaded.
+[14:40:42] [Script] 10 Points Loaded.
+[14:40:42] [Graffities] No records found.
+[14:40:42] [BillBoards] No records found.
+[14:40:43] [ANTICHEAT]: Anti-cheat settings loaded successfully (loaded: 53). Time: 0 мс.
+[14:43:01]  -------------------------------------------
+[14:43:01]            SampVoice unloading...           
+[14:43:01]  -------------------------------------------
+[14:43:01] [dbg:raknet:free] : module releasing...
+[14:43:01] [dbg:raknet:free] : module released
+[14:43:01] [sv:dbg:network:free] : module releasing...
+[14:43:01] [sv:dbg:network:free] : module released
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[14:43:06] filterscripts = ""  (string)
+[14:43:06] weburl = "www.sa-mp.com"  (string)
+[14:43:06] 
+[14:43:06] Server Plugins
+[14:43:06] --------------
+[14:43:06]  Loading plugin: crashdetect
+[14:43:06]   CrashDetect plugin 4.19.4
+[14:43:06]   Loaded.
+[14:43:06]  Loading plugin: pawncmd
+[14:43:06] [Pawn.CMD] plugin v3.3.6 loading...
+[14:43:06] [Pawn.CMD] 
+
+    | Pawn.CMD 3.3.6 | 2016 - 2021
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Sep 26 2021 at 11:55:10
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[14:43:06]   Loaded.
+[14:43:06]  Loading plugin: sampvoice
+[14:43:06] [sv:dbg:network:init] : module initializing...
+[14:43:06] [dbg:raknet:init] : module initializing...
+[14:43:06] [dbg:raknet:init] : module initialized
+[14:43:06] [sv:dbg:network:init] : module initialized
+[14:43:06] [sv:dbg:main:Load] : creating 8 work threads...
+[14:43:06]  -------------------------------------------    
+[14:43:06]    ___                __   __    _              
+[14:43:06]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[14:43:06]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[14:43:06]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[14:43:06]                   |_|                           
+[14:43:06]  -------------------------------------------    
+[14:43:06]            SampVoice by MOR loaded              
+[14:43:06]  -------------------------------------------    
+[14:43:06]   Loaded.
+[14:43:06]  Loading plugin: sscanf
+[14:43:06] 
+
+[14:43:06]  ===============================
+
+[14:43:06]       sscanf plugin loaded.     
+
+[14:43:06]          Version:  2.8.3        
+
+[14:43:06]   (c) 2018 Alex "Y_Less" Cole  
+
+[14:43:06]  ===============================
+
+[14:43:06]   Loaded.
+[14:43:06]  Loading plugin: streamer
+[14:43:06] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[14:43:06]   Loaded.
+[14:43:06]  Loading plugin: mysql
+[14:43:06]  >> plugin.mysql: R39-6 successfully loaded.
+[14:43:06]   Loaded.
+[14:43:06]  Loading plugin: Whirlpool
+[14:43:06]  
+[14:43:06]  ==================
+[14:43:06]  
+[14:43:06]   Whirlpool loaded
+[14:43:06]  
+[14:43:06]  ==================
+[14:43:06]  
+[14:43:06]   Loaded.
+[14:43:06]  Loading plugin: SKY
+[14:43:06] 
+[14:43:06]  ===============================
+[14:43:06]    
+[14:43:06]    < SKY - 2.3.0 >
+[14:43:06]    
+[14:43:06]    (c) 2008 - Present | YSF Maintainers
+[14:43:06]    (c) 2015 | Oscar "Slice" Broman
+[14:43:06]    
+[14:43:06]    Server Version: 0.3.7 R2
+[14:43:07]    Operating System: Windows
+[14:43:07]    Built on: Sep 27 2021 at 23:19:52
+[14:43:07]    
+[14:43:07]  ===============================
+[14:43:07] 
+[14:43:07]   Loaded.
+[14:43:07]  Loading plugin: nativechecker
+[14:43:07]   Loaded.
+[14:43:07]  Loaded 9 plugins.
+
+[14:43:07] 
+[14:43:07] Ban list
+[14:43:07] --------
+[14:43:07]  Loaded: samp.ban
+[14:43:07] 
+[14:43:07] 
+[14:43:07] Filterscripts
+[14:43:07] ---------------
+[14:43:07]   Loaded 0 filterscripts.
+
+[14:43:07] [sv:dbg:main:AmxLoad] : net game pointer (value:02359F18) received
+[14:43:07] [sv:dbg:network:bind] : voice server running on port 52619
+[14:43:07] AMX (55573064) loaded
+[14:43:07]  
+[14:43:07] --------------------------------------
+[14:43:07]  Anticheat Nex-AC loaded!
+[14:43:07]  Anticheat version: 1.9.52
+[14:43:07]  Author: Nexius
+[14:43:07] --------------------------------------
+
+[14:43:07]  
+[14:43:07]  
+[14:43:07]  
+[14:43:07]  ======================================= 
+[14:43:07]  |                                     | 
+[14:43:07]  |        YSI version 3.09.0684        | 
+[14:43:07]  |        By Alex "Y_Less" Cole        | 
+[14:43:07]  |                                     | 
+[14:43:07]  ======================================= 
+[14:43:07]  
+[14:43:07] Couldn't connect to radio station database... server will continue to operate normally.
+[14:43:07] 
+************************************************************************************************************************
+[14:43:07]  					Morgan City Roleplay Version - MC:RP                                                                    
+[14:43:07]  					 Last Update game version - MC:RP                                                                
+[14:43:07] ************************************************************************************************************************
+
+[14:43:07] [LoadAntiCheat] Loading data from database...
+[14:43:07] Morgan City Roleplay
+[14:43:07] 430 objects loaded.
+[14:43:07] Number of vehicle models: 21
+[14:43:07] [Script] 262 houses loaded.
+[14:43:07] [Script] 3 garages loaded.
+[14:43:07] [Script] 28 businesses loaded.
+[14:43:07] [Script] 28 entrances loaded.
+[14:43:07] [Script] 4 factions loaded.
+[14:43:07] [Script] 2 lands loaded.
+[14:43:07] [Script] 19 gangs loaded.
+[14:43:07] [Script] 0 points loaded.
+[14:43:07] [Script] 10 Points Loaded.
+[14:43:07] [Graffities] No records found.
+[14:43:07] [BillBoards] No records found.
+[14:43:07] [ANTICHEAT]: Anti-cheat settings loaded successfully (loaded: 53). Time: 0 мс.
+[14:43:27] [connection] 127.0.0.1:65266 requests connection cookie.
+[14:43:28] [connection] incoming connection: 127.0.0.1:65266 id: 0
+[14:43:29] [sv:dbg:network:connect] : connecting player (0) with address (127.0.0.1) ...
+[14:43:29] [sv:dbg:network:connect] : player (0) assigned key (b22876f2)
+[14:43:29] [join] Chevrolet_Corvette has joined the server (0:127.0.0.1)
+[14:43:29] > {FFFFFF}Chevrolet Corvette has joined the server [{FFFFFF}IP:{FFFFFF} 127.0.0.1] [City: ] [Country: ]
+[14:43:29] [sv:dbg:network:receive] : player (0) identified (port:65267)
+[14:43:40] SERVER: Chevrolet Corvette has logged in as a {eb4034}{FF50F1}Community Developer{ffffff}{FFFFFF}.
+[14:43:40] AdmCmd: {FF50F1}Community Developer{ffffff} Chevrolet Corvette has logged in.
+[14:43:53] [cmd] Chevrolet Corvette: [mcrpjm2022]
+[14:43:58] [sv:dbg:network:connect] : disconnecting player (0) ...
+[14:43:58] > {FFFFFF}Chevrolet Corvette Left The Server [{00ffff}IP:{FFFFFF} 255.255.255.255]
+[14:43:58] [part] Chevrolet_Corvette has left the server (0:1)
+[14:44:24]  -------------------------------------------
+[14:44:24]            SampVoice unloading...           
+[14:44:24]  -------------------------------------------
+[14:44:24] [dbg:raknet:free] : module releasing...
+[14:44:24] [dbg:raknet:free] : module released
+[14:44:24] [sv:dbg:network:free] : module releasing...
+[14:44:24] [sv:dbg:network:free] : module released
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[14:44:26] filterscripts = ""  (string)
+[14:44:26] weburl = "www.sa-mp.com"  (string)
+[14:44:26] 
+[14:44:26] Server Plugins
+[14:44:26] --------------
+[14:44:26]  Loading plugin: crashdetect
+[14:44:26]   CrashDetect plugin 4.19.4
+[14:44:26]   Loaded.
+[14:44:26]  Loading plugin: pawncmd
+[14:44:26] [Pawn.CMD] plugin v3.3.6 loading...
+[14:44:26] [Pawn.CMD] 
+
+    | Pawn.CMD 3.3.6 | 2016 - 2021
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Sep 26 2021 at 11:55:10
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[14:44:26]   Loaded.
+[14:44:26]  Loading plugin: sampvoice
+[14:44:26] [sv:dbg:network:init] : module initializing...
+[14:44:26] [dbg:raknet:init] : module initializing...
+[14:44:26] [dbg:raknet:init] : module initialized
+[14:44:26] [sv:dbg:network:init] : module initialized
+[14:44:26] [sv:dbg:main:Load] : creating 8 work threads...
+[14:44:26]  -------------------------------------------    
+[14:44:26]    ___                __   __    _              
+[14:44:26]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[14:44:26]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[14:44:26]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[14:44:26]                   |_|                           
+[14:44:26]  -------------------------------------------    
+[14:44:26]            SampVoice by MOR loaded              
+[14:44:26]  -------------------------------------------    
+[14:44:26]   Loaded.
+[14:44:26]  Loading plugin: sscanf
+[14:44:26] 
+
+[14:44:26]  ===============================
+
+[14:44:26]       sscanf plugin loaded.     
+
+[14:44:26]          Version:  2.8.3        
+
+[14:44:26]   (c) 2018 Alex "Y_Less" Cole  
+
+[14:44:26]  ===============================
+
+[14:44:26]   Loaded.
+[14:44:26]  Loading plugin: streamer
+[14:44:26] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[14:44:26]   Loaded.
+[14:44:26]  Loading plugin: mysql
+[14:44:26]  >> plugin.mysql: R39-6 successfully loaded.
+[14:44:26]   Loaded.
+[14:44:26]  Loading plugin: Whirlpool
+[14:44:26]  
+[14:44:26]  ==================
+[14:44:26]  
+[14:44:26]   Whirlpool loaded
+[14:44:26]  
+[14:44:26]  ==================
+[14:44:26]  
+[14:44:26]   Loaded.
+[14:44:26]  Loading plugin: SKY
+[14:44:26] 
+[14:44:26]  ===============================
+[14:44:26]    
+[14:44:26]    < SKY - 2.3.0 >
+[14:44:26]    
+[14:44:26]    (c) 2008 - Present | YSF Maintainers
+[14:44:26]    (c) 2015 | Oscar "Slice" Broman
+[14:44:26]    
+[14:44:26]    Server Version: 0.3.7 R2
+[14:44:26]    Operating System: Windows
+[14:44:26]    Built on: Sep 27 2021 at 23:19:52
+[14:44:26]    
+[14:44:26]  ===============================
+[14:44:26] 
+[14:44:26]   Loaded.
+[14:44:26]  Loading plugin: nativechecker
+[14:44:26]   Loaded.
+[14:44:26]  Loaded 9 plugins.
+
+[14:44:26] 
+[14:44:26] Ban list
+[14:44:26] --------
+[14:44:27]  Loaded: samp.ban
+[14:44:27] 
+[14:44:27] 
+[14:44:27] Filterscripts
+[14:44:27] ---------------
+[14:44:27]   Loaded 0 filterscripts.
+
+[14:44:27] [sv:dbg:main:AmxLoad] : net game pointer (value:023A9F18) received
+[14:44:27] [sv:dbg:network:bind] : voice server running on port 59429
+[14:44:27] AMX (55441992) loaded
+[14:44:27]  
+[14:44:27] --------------------------------------
+[14:44:27]  Anticheat Nex-AC loaded!
+[14:44:27]  Anticheat version: 1.9.52
+[14:44:27]  Author: Nexius
+[14:44:27] --------------------------------------
+
+[14:44:27]  
+[14:44:27]  
+[14:44:27]  
+[14:44:27]  ======================================= 
+[14:44:27]  |                                     | 
+[14:44:27]  |        YSI version 3.09.0684        | 
+[14:44:27]  |        By Alex "Y_Less" Cole        | 
+[14:44:27]  |                                     | 
+[14:44:27]  ======================================= 
+[14:44:27]  
+[14:44:27] Couldn't connect to radio station database... server will continue to operate normally.
+[14:44:27] 
+************************************************************************************************************************
+[14:44:27]  					Morgan City Roleplay Version - MC:RP                                                                    
+[14:44:27]  					 Last Update game version - MC:RP                                                                
+[14:44:27] ************************************************************************************************************************
+
+[14:44:27] [LoadAntiCheat] Loading data from database...
+[14:44:27] Morgan City Roleplay
+[14:44:27] 430 objects loaded.
+[14:44:27] Number of vehicle models: 21
+[14:44:27] [Script] 262 houses loaded.
+[14:44:27] [Script] 3 garages loaded.
+[14:44:28] [Script] 28 businesses loaded.
+[14:44:28] [Script] 28 entrances loaded.
+[14:44:28] [Script] 4 factions loaded.
+[14:44:28] [Script] 2 lands loaded.
+[14:44:28] [Script] 19 gangs loaded.
+[14:44:28] [Script] 0 points loaded.
+[14:44:28] [Script] 10 Points Loaded.
+[14:44:28] [Graffities] No records found.
+[14:44:28] [BillBoards] No records found.
+[14:44:28] [ANTICHEAT]: Anti-cheat settings loaded successfully (loaded: 53). Time: 0 мс.
+[14:44:50] [connection] 127.0.0.1:59792 requests connection cookie.
+[14:44:51] [connection] incoming connection: 127.0.0.1:59792 id: 0
+[14:44:52] [sv:dbg:network:connect] : connecting player (0) with address (127.0.0.1) ...
+[14:44:52] [sv:dbg:network:connect] : player (0) assigned key (563152e)
+[14:44:52] [join] Chevrolet_Corvette has joined the server (0:127.0.0.1)
+[14:44:52] > {FFFFFF}Chevrolet Corvette has joined the server [{FFFFFF}IP:{FFFFFF} 127.0.0.1] [City: ] [Country: ]
+[14:44:52] [sv:dbg:network:receive] : player (0) identified (port:59793)
+[14:45:07] SERVER: Chevrolet Corvette has logged in as a {eb4034}{FF50F1}Community Developer{ffffff}{FFFFFF}.
+[14:45:07] AdmCmd: {FF50F1}Community Developer{ffffff} Chevrolet Corvette has logged in.
+[14:45:15] [cmd] Chevrolet Corvette: [mcrpjm2022]
+[14:45:28] [chat] [Chevrolet_Corvette]: oo
+[14:45:37] [debug] Run time error 4: "Array index out of bounds"
+[14:45:37] [debug]  Attempted to read/write array element at negative index -1
+[14:45:37] [debug] AMX backtrace:
+[14:45:37] [debug] #0 005df620 in public WC_OnPlayerKeyStateChange (0, 24, 8)  at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:46552
+[14:45:37] [debug] #1 000770f4 in public CB_OnPlayerKeyStateChange (playerid=0, newkeys=24, oldkeys=8) at C:\Users\vj\Documents\jmcb\pawno\include\weapon-config.inc:2847
+[14:45:37] [debug] #2 000687d8 in public ac_OnPlayerKeyStateChange (playerid=0, newkeys=24, oldkeys=8) at C:\Users\vj\Documents\jmcb\pawno\include\callbacks.inc:1055
+[14:45:37] [debug] #3 00028eb8 in public OnPlayerKeyStateChange (playerid=0, newkeys=24, oldkeys=8) at C:\Users\vj\Documents\jmcb\pawno\include\nex-ac.inc:5698
+[14:45:57] [sv:dbg:network:connect] : disconnecting player (0) ...
+[14:45:57] > {FFFFFF}Chevrolet Corvette Left The Server [{00ffff}IP:{FFFFFF} 255.255.255.255]
+[14:45:57] [part] Chevrolet_Corvette has left the server (0:1)
+[14:46:01]  -------------------------------------------
+[14:46:01]            SampVoice unloading...           
+[14:46:01]  -------------------------------------------
+[14:46:01] [dbg:raknet:free] : module releasing...
+[14:46:01] [dbg:raknet:free] : module released
+[14:46:01] [sv:dbg:network:free] : module releasing...
+[14:46:01] [sv:dbg:network:free] : module released
