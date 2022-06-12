@@ -1,2 +1,9 @@
+C:\Users\Kate\Documents\GitHub\jmcb\gamemodes\v2morgancity.pwn(1470) : íåïðàâèëüíàÿ òàáóëÿöèÿ
+C:\Users\Kate\Documents\GitHub\jmcb\gamemodes\v2morgancity.pwn(1472) : íåïðàâèëüíàÿ òàáóëÿöèÿ
+C:\Users\Kate\Documents\GitHub\jmcb\gamemodes\v2morgancity.pwn(41630) : íåïðàâèëüíàÿ òàáóëÿöèÿ
+C:\Users\Kate\Documents\GitHub\jmcb\gamemodes\v2morgancity.pwn(41699) : íåïðàâèëüíàÿ òàáóëÿöèÿ
+C:\Users\Kate\Documents\GitHub\jmcb\gamemodes\v2morgancity.pwn(58934) : íåïðàâèëüíàÿ òàáóëÿöèÿ
+C:\Users\Kate\Documents\GitHub\jmcb\gamemodes\v2morgancity.pwn(74312) : íåïðàâèëüíàÿ òàáóëÿöèÿ
+C:\Users\Kate\Documents\GitHub\jmcb\gamemodes\v2morgancity.pwn(74349) : íåïðàâèëüíàÿ òàáóëÿöèÿ
 Pawn compiler 3.2.3664	 	 	Copyright (c) 1997-2016, ITB CompuPhase
 
