@@ -7,6 +7,7 @@ SA-MP Dedicated Server
 ----------------------
 v0.3.7-R2, (C)2005-2015 SA-MP Team
 
+<<<<<<< HEAD
 [10:28:24] filterscripts = ""  (string)
 [10:28:24] weburl = "www.sa-mp.com"  (string)
 [10:28:24] 
@@ -18,6 +19,19 @@ v0.3.7-R2, (C)2005-2015 SA-MP Team
 [10:28:24]  Loading plugin: pawncmd.so
 [10:28:24] [Pawn.CMD] plugin v3.3.6 loading...
 [10:28:24] [Pawn.CMD] 
+=======
+[07:08:54] filterscripts = ""  (string)
+[07:08:54] weburl = "www.sa-mp.com"  (string)
+[07:08:54] 
+[07:08:54] Server Plugins
+[07:08:54] --------------
+[07:08:54]  Loading plugin: crashdetect.so
+[07:08:54]   CrashDetect v4.13.1 is OK.
+[07:08:54]   Loaded.
+[07:08:54]  Loading plugin: pawncmd.so
+[07:08:54] [Pawn.CMD] plugin v3.3.6 loading...
+[07:08:54] [Pawn.CMD] 
+>>>>>>> parent of 564d5c1 (/verify to connect player)
 
     | Pawn.CMD 3.3.6 | 2016 - 2021
     |--------------------------------
@@ -28,6 +42,7 @@ v0.3.7-R2, (C)2005-2015 SA-MP Team
     |--------------------------------------------------------------
     | Repository: https://github.com/katursis/Pawn.CMD
 
+<<<<<<< HEAD
 [10:28:24]   Loaded.
 [10:28:24]  Loading plugin: sampvoice.so
 [10:28:24] [sv:dbg:network:init] : module initializing...
@@ -249,6 +264,273 @@ v0.3.7-R2, (C)2005-2015 SA-MP Team
 [10:30:06] [debug] Run time error 20: "Invalid index parameter (bad entry point)"
 [10:30:07] [debug] Run time error 20: "Invalid index parameter (bad entry point)"
 [10:30:08] [debug] Run time error 20: "Invalid index parameter (bad entry point)"
+=======
+[07:08:54]   Loaded.
+[07:08:54]  Loading plugin: sampvoice.so
+[07:08:54] [sv:dbg:network:init] : module initializing...
+[07:08:54] [dbg:raknet:init] : module initializing...
+[07:08:54] [dbg:raknet:init] : module initialized
+[07:08:54] [sv:dbg:network:init] : module initialized
+[07:08:54] [sv:dbg:main:Load] : creating 4 work threads...
+[07:08:54]  -------------------------------------------    
+[07:08:54]    ___                __   __    _              
+[07:08:54]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[07:08:54]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[07:08:54]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[07:08:54]                   |_|                           
+[07:08:54]  -------------------------------------------    
+[07:08:54]            SampVoice by MOR loaded              
+[07:08:54]  -------------------------------------------    
+[07:08:54]   Loaded.
+[07:08:54]  Loading plugin: sscanf.so
+[07:08:54] 
+
+[07:08:54]  ===============================
+
+[07:08:54]       sscanf plugin loaded.     
+
+[07:08:54]          Version:  2.8.3        
+
+[07:08:54]   (c) 2018 Alex "Y_Less" Cole  
+
+[07:08:54]  ===============================
+
+[07:08:54]   Loaded.
+[07:08:54]  Loading plugin: streamer.so
+[07:08:54] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[07:08:54]   Loaded.
+[07:08:54]  Loading plugin: mysql.so
+[07:08:54]   Failed (libmysqlclient.so.18: cannot open shared object file: No such file or directory)
+[07:08:54]  Loading plugin: Whirlpool.so
+[07:08:54]  
+[07:08:54]  ==================
+[07:08:54]  
+[07:08:54]   Whirlpool loaded
+[07:08:54]  
+[07:08:54]  ==================
+[07:08:54]  
+[07:08:54]   Loaded.
+[07:08:54]  Loading plugin: SKY
+[07:08:54]   Failed (plugins/SKY: cannot open shared object file: No such file or directory)
+[07:08:54]  Loading plugin: nativechecker.so
+[07:08:54]   Loaded.
+[07:08:54]  Loaded 7 plugins.
+
+[07:08:54] 
+[07:08:54] Ban list
+[07:08:54] --------
+[07:08:54]  Loaded: samp.ban
+[07:08:54] 
+[07:08:54] 
+[07:08:54] Filterscripts
+[07:08:54] ---------------
+[07:08:54]   Loaded 0 filterscripts.
+
+[07:08:57] [sv:dbg:main:AmxLoad] : net game pointer (value:0xa177c70) received
+[07:08:57] [sv:dbg:network:bind] : voice server running on port 32854
+[07:08:57] AMX (169290192) loaded
+[07:08:57]    Error: Function not registered: 'FreezeSyncPacket'
+[07:08:57]    Error: Function not registered: 'SetFakeFacingAngle'
+[07:08:57]    Error: Function not registered: 'SendLastSyncPacket'
+[07:08:57]    Error: Function not registered: 'ClearAnimationsForPlayer'
+[07:08:57]    Error: Function not registered: 'SetKnifeSync'
+[07:08:57]    Error: Function not registered: 'SetFakeHealth'
+[07:08:57]    Error: Function not registered: 'SetFakeArmour'
+[07:08:57]    Error: Function not registered: 'PlayerTextDrawSetPosition'
+[07:08:57]    Error: Function not registered: 'SpawnPlayerForWorld'
+[07:08:57]    Error: Function not registered: 'cache_get_row_count'
+[07:08:57]    Error: Function not registered: 'mysql_tquery'
+[07:08:57]    Error: Function not registered: 'cache_get_data'
+[07:08:57]    Error: Function not registered: 'cache_get_field_content'
+[07:08:57]    Error: Function not registered: 'cache_get_field_content_int'
+[07:08:57]    Error: Function not registered: 'cache_get_field_content_float'
+[07:08:57]    Error: Function not registered: 'mysql_format'
+[07:08:57]    Error: Function not registered: 'cache_insert_id'
+[07:08:57]    Error: Function not registered: 'mysql_escape_string'
+[07:08:57]    Error: Function not registered: 'mysql_unprocessed_queries'
+[07:08:57]    Error: Function not registered: 'cache_get_row_int'
+[07:08:57]    Error: Function not registered: 'cache_get_row'
+[07:08:57]    Error: Function not registered: 'mysql_connect'
+[07:08:57]    Error: Function not registered: 'mysql_errno'
+[07:08:57]    Error: Function not registered: 'mysql_close'
+[07:08:57]    Error: Function not registered: 'mysql_query'
+[07:08:57]    Error: Function not registered: 'cache_delete'
+[07:08:57] [debug] Run time error 19: "File or function is not found"
+[07:08:57] [debug]  FreezeSyncPacket
+[07:08:57] [debug]  SetFakeFacingAngle
+[07:08:57] [debug]  SendLastSyncPacket
+[07:08:57] [debug]  ClearAnimationsForPlayer
+[07:08:57] [debug]  SetKnifeSync
+[07:08:57] [debug]  SetFakeHealth
+[07:08:57] [debug]  SetFakeArmour
+[07:08:57] [debug]  PlayerTextDrawSetPosition
+[07:08:57] [debug]  SpawnPlayerForWorld
+[07:08:57] [debug]  cache_get_row_count
+[07:08:57] [debug]  mysql_tquery
+[07:08:57] [debug]  cache_get_data
+[07:08:57] [debug]  cache_get_field_content
+[07:08:57] [debug]  cache_get_field_content_int
+[07:08:57] [debug]  cache_get_field_content_float
+[07:08:57] [debug]  mysql_format
+[07:08:57] [debug]  cache_insert_id
+[07:08:57] [debug]  mysql_escape_string
+[07:08:57] [debug]  mysql_unprocessed_queries
+[07:08:57] [debug]  cache_get_row_int
+[07:08:57] [debug]  cache_get_row
+[07:08:57] [debug]  mysql_connect
+[07:08:57] [debug]  mysql_errno
+[07:08:57] [debug]  mysql_close
+[07:08:57] [debug]  mysql_query
+[07:08:57] [debug]  cache_delete
+[07:08:57] [debug] Run time error 19: "File or function is not found"
+[07:08:57] [debug]  FreezeSyncPacket
+[07:08:57] [debug]  SetFakeFacingAngle
+[07:08:57] [debug]  SendLastSyncPacket
+[07:08:57] [debug]  ClearAnimationsForPlayer
+[07:08:57] [debug]  SetKnifeSync
+[07:08:57] [debug]  SetFakeHealth
+[07:08:57] [debug]  SetFakeArmour
+[07:08:57] [debug]  PlayerTextDrawSetPosition
+[07:08:57] [debug]  SpawnPlayerForWorld
+[07:08:57] [debug]  cache_get_row_count
+[07:08:57] [debug]  mysql_tquery
+[07:08:57] [debug]  cache_get_data
+[07:08:57] [debug]  cache_get_field_content
+[07:08:57] [debug]  cache_get_field_content_int
+[07:08:57] [debug]  cache_get_field_content_float
+[07:08:57] [debug]  mysql_format
+[07:08:57] [debug]  cache_insert_id
+[07:08:57] [debug]  mysql_escape_string
+[07:08:57] [debug]  mysql_unprocessed_queries
+[07:08:57] [debug]  cache_get_row_int
+[07:08:57] [debug]  cache_get_row
+[07:08:57] [debug]  mysql_connect
+[07:08:57] [debug]  mysql_errno
+[07:08:57] [debug]  mysql_close
+[07:08:57] [debug]  mysql_query
+[07:08:57] [debug]  cache_delete
+[07:08:57] Script[gamemodes/v2morgancity.amx]: Run time error 19: "File or function is not found"
+[07:08:57] Number of vehicle models: 0
+[07:09:06] [connection] 112.209.24.91:59899 requests connection cookie.
+[07:09:07] [connection] incoming connection: 112.209.24.91:59899 id: 0
+[07:09:07] [debug] Run time error 19: "File or function is not found"
+[07:09:07] [debug]  FreezeSyncPacket
+[07:09:07] [debug]  SetFakeFacingAngle
+[07:09:07] [debug]  SendLastSyncPacket
+[07:09:07] [debug]  ClearAnimationsForPlayer
+[07:09:07] [debug]  SetKnifeSync
+[07:09:07] [debug]  SetFakeHealth
+[07:09:07] [debug]  SetFakeArmour
+[07:09:07] [debug]  PlayerTextDrawSetPosition
+[07:09:07] [debug]  SpawnPlayerForWorld
+[07:09:07] [debug]  cache_get_row_count
+[07:09:07] [debug]  mysql_tquery
+[07:09:07] [debug]  cache_get_data
+[07:09:07] [debug]  cache_get_field_content
+[07:09:07] [debug]  cache_get_field_content_int
+[07:09:07] [debug]  cache_get_field_content_float
+[07:09:07] [debug]  mysql_format
+[07:09:07] [debug]  cache_insert_id
+[07:09:07] [debug]  mysql_escape_string
+[07:09:07] [debug]  mysql_unprocessed_queries
+[07:09:07] [debug]  cache_get_row_int
+[07:09:07] [debug]  cache_get_row
+[07:09:07] [debug]  mysql_connect
+[07:09:07] [debug]  mysql_errno
+[07:09:07] [debug]  mysql_close
+[07:09:07] [debug]  mysql_query
+[07:09:07] [debug]  cache_delete
+[07:09:08] [sv:dbg:network:connect] : connecting player (0) with address (112.209.24.91) ...
+[07:09:08] [sv:dbg:network:connect] : player (0) assigned key (5b18d17030907a6f)
+[07:09:08] [join] Bomboo_La_Palermo has joined the server (0:112.209.24.91)
+[07:09:08] [debug] Run time error 19: "File or function is not found"
+[07:09:08] [debug]  FreezeSyncPacket
+[07:09:08] [debug]  SetFakeFacingAngle
+[07:09:08] [debug]  SendLastSyncPacket
+[07:09:08] [debug]  ClearAnimationsForPlayer
+[07:09:08] [debug]  SetKnifeSync
+[07:09:08] [debug]  SetFakeHealth
+[07:09:08] [debug]  SetFakeArmour
+[07:09:08] [debug]  PlayerTextDrawSetPosition
+[07:09:08] [debug]  SpawnPlayerForWorld
+[07:09:08] [debug]  cache_get_row_count
+[07:09:08] [debug]  mysql_tquery
+[07:09:08] [debug]  cache_get_data
+[07:09:08] [debug]  cache_get_field_content
+[07:09:08] [debug]  cache_get_field_content_int
+[07:09:08] [debug]  cache_get_field_content_float
+[07:09:08] [debug]  mysql_format
+[07:09:08] [debug]  cache_insert_id
+[07:09:08] [debug]  mysql_escape_string
+[07:09:08] [debug]  mysql_unprocessed_queries
+[07:09:08] [debug]  cache_get_row_int
+[07:09:08] [debug]  cache_get_row
+[07:09:08] [debug]  mysql_connect
+[07:09:08] [debug]  mysql_errno
+[07:09:08] [debug]  mysql_close
+[07:09:08] [debug]  mysql_query
+[07:09:08] [debug]  cache_delete
+[07:09:18] [connection] 112.209.24.91:51753 requests connection cookie.
+[07:09:19] [connection] incoming connection: 112.209.24.91:51753 id: 1
+[07:09:19] [debug] Run time error 19: "File or function is not found"
+[07:09:19] [debug]  FreezeSyncPacket
+[07:09:19] [debug]  SetFakeFacingAngle
+[07:09:19] [debug]  SendLastSyncPacket
+[07:09:19] [debug]  ClearAnimationsForPlayer
+[07:09:19] [debug]  SetKnifeSync
+[07:09:19] [debug]  SetFakeHealth
+[07:09:19] [debug]  SetFakeArmour
+[07:09:19] [debug]  PlayerTextDrawSetPosition
+[07:09:19] [debug]  SpawnPlayerForWorld
+[07:09:19] [debug]  cache_get_row_count
+[07:09:19] [debug]  mysql_tquery
+[07:09:19] [debug]  cache_get_data
+[07:09:19] [debug]  cache_get_field_content
+[07:09:19] [debug]  cache_get_field_content_int
+[07:09:19] [debug]  cache_get_field_content_float
+[07:09:19] [debug]  mysql_format
+[07:09:19] [debug]  cache_insert_id
+[07:09:19] [debug]  mysql_escape_string
+[07:09:19] [debug]  mysql_unprocessed_queries
+[07:09:19] [debug]  cache_get_row_int
+[07:09:19] [debug]  cache_get_row
+[07:09:19] [debug]  mysql_connect
+[07:09:19] [debug]  mysql_errno
+[07:09:19] [debug]  mysql_close
+[07:09:19] [debug]  mysql_query
+[07:09:19] [debug]  cache_delete
+[07:09:20] [join] Karding_El_Greeco has joined the server (1:112.209.24.91)
+[07:09:20] [debug] Run time error 19: "File or function is not found"
+[07:09:20] [debug]  FreezeSyncPacket
+[07:09:20] [debug]  SetFakeFacingAngle
+[07:09:20] [debug]  SendLastSyncPacket
+[07:09:20] [debug]  ClearAnimationsForPlayer
+[07:09:20] [debug]  SetKnifeSync
+[07:09:20] [debug]  SetFakeHealth
+[07:09:20] [debug]  SetFakeArmour
+[07:09:20] [debug]  PlayerTextDrawSetPosition
+[07:09:20] [debug]  SpawnPlayerForWorld
+[07:09:20] [debug]  cache_get_row_count
+[07:09:20] [debug]  mysql_tquery
+[07:09:20] [debug]  cache_get_data
+[07:09:20] [debug]  cache_get_field_content
+[07:09:20] [debug]  cache_get_field_content_int
+[07:09:20] [debug]  cache_get_field_content_float
+[07:09:20] [debug]  mysql_format
+[07:09:20] [debug]  cache_insert_id
+[07:09:20] [debug]  mysql_escape_string
+[07:09:20] [debug]  mysql_unprocessed_queries
+[07:09:20] [debug]  cache_get_row_int
+[07:09:20] [debug]  cache_get_row
+[07:09:20] [debug]  mysql_connect
+[07:09:20] [debug]  mysql_errno
+[07:09:20] [debug]  mysql_close
+[07:09:20] [debug]  mysql_query
+[07:09:20] [debug]  cache_delete
+>>>>>>> parent of 564d5c1 (/verify to connect player)
 
 ----------
 Loaded log file: "server_log.txt".
@@ -258,6 +540,7 @@ SA-MP Dedicated Server
 ----------------------
 v0.3.7-R2, (C)2005-2015 SA-MP Team
 
+<<<<<<< HEAD
 [10:30:12] filterscripts = ""  (string)
 [10:30:12] weburl = "www.sa-mp.com"  (string)
 [10:30:12] 
@@ -269,6 +552,19 @@ v0.3.7-R2, (C)2005-2015 SA-MP Team
 [10:30:12]  Loading plugin: pawncmd.so
 [10:30:12] [Pawn.CMD] plugin v3.3.6 loading...
 [10:30:12] [Pawn.CMD] 
+=======
+[07:15:14] filterscripts = ""  (string)
+[07:15:14] weburl = "www.sa-mp.com"  (string)
+[07:15:14] 
+[07:15:14] Server Plugins
+[07:15:14] --------------
+[07:15:14]  Loading plugin: crashdetect.so
+[07:15:14]   CrashDetect v4.13.1 is OK.
+[07:15:14]   Loaded.
+[07:15:14]  Loading plugin: pawncmd.so
+[07:15:14] [Pawn.CMD] plugin v3.3.6 loading...
+[07:15:14] [Pawn.CMD] 
+>>>>>>> parent of 564d5c1 (/verify to connect player)
 
     | Pawn.CMD 3.3.6 | 2016 - 2021
     |--------------------------------
@@ -279,6 +575,7 @@ v0.3.7-R2, (C)2005-2015 SA-MP Team
     |--------------------------------------------------------------
     | Repository: https://github.com/katursis/Pawn.CMD
 
+<<<<<<< HEAD
 [10:30:12]   Loaded.
 [10:30:12]  Loading plugin: sampvoice.so
 [10:30:12] [sv:dbg:network:init] : module initializing...
@@ -408,6 +705,274 @@ v0.3.7-R2, (C)2005-2015 SA-MP Team
 [10:30:19] [debug] Run time error 20: "Invalid index parameter (bad entry point)"
 [10:30:20] [debug] Run time error 20: "Invalid index parameter (bad entry point)"
 [10:30:20] --- Server Shutting Down.
+=======
+[07:15:14]   Loaded.
+[07:15:14]  Loading plugin: sampvoice.so
+[07:15:14] [sv:dbg:network:init] : module initializing...
+[07:15:14] [dbg:raknet:init] : module initializing...
+[07:15:14] [dbg:raknet:init] : module initialized
+[07:15:14] [sv:dbg:network:init] : module initialized
+[07:15:14] [sv:dbg:main:Load] : creating 4 work threads...
+[07:15:14]  -------------------------------------------    
+[07:15:14]    ___                __   __    _              
+[07:15:14]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[07:15:14]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[07:15:14]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[07:15:14]                   |_|                           
+[07:15:14]  -------------------------------------------    
+[07:15:14]            SampVoice by MOR loaded              
+[07:15:14]  -------------------------------------------    
+[07:15:14]   Loaded.
+[07:15:14]  Loading plugin: sscanf.so
+[07:15:14] 
+
+[07:15:14]  ===============================
+
+[07:15:14]       sscanf plugin loaded.     
+
+[07:15:14]          Version:  2.8.3        
+
+[07:15:14]   (c) 2018 Alex "Y_Less" Cole  
+
+[07:15:14]  ===============================
+
+[07:15:14]   Loaded.
+[07:15:14]  Loading plugin: streamer.so
+[07:15:14] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[07:15:14]   Loaded.
+[07:15:14]  Loading plugin: mysql.so
+[07:15:14]   Failed (libmysqlclient.so.18: cannot open shared object file: No such file or directory)
+[07:15:14]  Loading plugin: Whirlpool.so
+[07:15:14]  
+[07:15:14]  ==================
+[07:15:14]  
+[07:15:14]   Whirlpool loaded
+[07:15:14]  
+[07:15:14]  ==================
+[07:15:14]  
+[07:15:14]   Loaded.
+[07:15:14]  Loading plugin: SKY
+[07:15:14]   Failed (plugins/SKY: cannot open shared object file: No such file or directory)
+[07:15:14]  Loading plugin: nativechecker.so
+[07:15:14]   Loaded.
+[07:15:14]  Loaded 7 plugins.
+
+[07:15:14] 
+[07:15:14] Ban list
+[07:15:14] --------
+[07:15:14]  Loaded: samp.ban
+[07:15:14] 
+[07:15:14] 
+[07:15:14] Filterscripts
+[07:15:14] ---------------
+[07:15:14]   Loaded 0 filterscripts.
+
+[07:15:14] [connection] 112.209.24.91:51772 requests connection cookie.
+[07:15:15] [connection] 112.209.24.91:59067 requests connection cookie.
+[07:15:16] [connection] 112.209.24.91:45950 requests connection cookie.
+[07:15:17] [sv:dbg:main:AmxLoad] : net game pointer (value:0x8826c70) received
+[07:15:17] [sv:dbg:network:bind] : voice server running on port 56347
+[07:15:17] AMX (142744016) loaded
+[07:15:17]    Error: Function not registered: 'FreezeSyncPacket'
+[07:15:17]    Error: Function not registered: 'SetFakeFacingAngle'
+[07:15:17]    Error: Function not registered: 'SendLastSyncPacket'
+[07:15:17]    Error: Function not registered: 'ClearAnimationsForPlayer'
+[07:15:17]    Error: Function not registered: 'SetKnifeSync'
+[07:15:17]    Error: Function not registered: 'SetFakeHealth'
+[07:15:17]    Error: Function not registered: 'SetFakeArmour'
+[07:15:17]    Error: Function not registered: 'PlayerTextDrawSetPosition'
+[07:15:17]    Error: Function not registered: 'SpawnPlayerForWorld'
+[07:15:17]    Error: Function not registered: 'cache_get_row_count'
+[07:15:17]    Error: Function not registered: 'mysql_tquery'
+[07:15:17]    Error: Function not registered: 'cache_get_data'
+[07:15:17]    Error: Function not registered: 'cache_get_field_content'
+[07:15:17]    Error: Function not registered: 'cache_get_field_content_int'
+[07:15:17]    Error: Function not registered: 'cache_get_field_content_float'
+[07:15:17]    Error: Function not registered: 'mysql_format'
+[07:15:17]    Error: Function not registered: 'cache_insert_id'
+[07:15:17]    Error: Function not registered: 'mysql_escape_string'
+[07:15:17]    Error: Function not registered: 'mysql_unprocessed_queries'
+[07:15:17]    Error: Function not registered: 'cache_get_row_int'
+[07:15:17]    Error: Function not registered: 'cache_get_row'
+[07:15:17]    Error: Function not registered: 'mysql_connect'
+[07:15:17]    Error: Function not registered: 'mysql_errno'
+[07:15:17]    Error: Function not registered: 'mysql_close'
+[07:15:17]    Error: Function not registered: 'mysql_query'
+[07:15:17]    Error: Function not registered: 'cache_delete'
+[07:15:17] [debug] Run time error 19: "File or function is not found"
+[07:15:17] [debug]  FreezeSyncPacket
+[07:15:17] [debug]  SetFakeFacingAngle
+[07:15:17] [debug]  SendLastSyncPacket
+[07:15:17] [debug]  ClearAnimationsForPlayer
+[07:15:17] [debug]  SetKnifeSync
+[07:15:17] [debug]  SetFakeHealth
+[07:15:17] [debug]  SetFakeArmour
+[07:15:17] [debug]  PlayerTextDrawSetPosition
+[07:15:17] [debug]  SpawnPlayerForWorld
+[07:15:17] [debug]  cache_get_row_count
+[07:15:17] [debug]  mysql_tquery
+[07:15:17] [debug]  cache_get_data
+[07:15:17] [debug]  cache_get_field_content
+[07:15:17] [debug]  cache_get_field_content_int
+[07:15:17] [debug]  cache_get_field_content_float
+[07:15:17] [debug]  mysql_format
+[07:15:17] [debug]  cache_insert_id
+[07:15:17] [debug]  mysql_escape_string
+[07:15:17] [debug]  mysql_unprocessed_queries
+[07:15:17] [debug]  cache_get_row_int
+[07:15:17] [debug]  cache_get_row
+[07:15:17] [debug]  mysql_connect
+[07:15:17] [debug]  mysql_errno
+[07:15:17] [debug]  mysql_close
+[07:15:17] [debug]  mysql_query
+[07:15:17] [debug]  cache_delete
+[07:15:17] [debug] Run time error 19: "File or function is not found"
+[07:15:17] [debug]  FreezeSyncPacket
+[07:15:17] [debug]  SetFakeFacingAngle
+[07:15:17] [debug]  SendLastSyncPacket
+[07:15:17] [debug]  ClearAnimationsForPlayer
+[07:15:17] [debug]  SetKnifeSync
+[07:15:17] [debug]  SetFakeHealth
+[07:15:17] [debug]  SetFakeArmour
+[07:15:17] [debug]  PlayerTextDrawSetPosition
+[07:15:17] [debug]  SpawnPlayerForWorld
+[07:15:17] [debug]  cache_get_row_count
+[07:15:17] [debug]  mysql_tquery
+[07:15:17] [debug]  cache_get_data
+[07:15:17] [debug]  cache_get_field_content
+[07:15:17] [debug]  cache_get_field_content_int
+[07:15:17] [debug]  cache_get_field_content_float
+[07:15:17] [debug]  mysql_format
+[07:15:17] [debug]  cache_insert_id
+[07:15:17] [debug]  mysql_escape_string
+[07:15:17] [debug]  mysql_unprocessed_queries
+[07:15:17] [debug]  cache_get_row_int
+[07:15:17] [debug]  cache_get_row
+[07:15:17] [debug]  mysql_connect
+[07:15:17] [debug]  mysql_errno
+[07:15:17] [debug]  mysql_close
+[07:15:17] [debug]  mysql_query
+[07:15:17] [debug]  cache_delete
+[07:15:17] Script[gamemodes/v2morgancity.amx]: Run time error 19: "File or function is not found"
+[07:15:17] Number of vehicle models: 0
+[07:15:17] [connection] incoming connection: 112.209.24.91:60436 id: 0
+[07:15:17] [debug] Run time error 19: "File or function is not found"
+[07:15:17] [debug]  FreezeSyncPacket
+[07:15:17] [debug]  SetFakeFacingAngle
+[07:15:17] [debug]  SendLastSyncPacket
+[07:15:17] [debug]  ClearAnimationsForPlayer
+[07:15:17] [debug]  SetKnifeSync
+[07:15:17] [debug]  SetFakeHealth
+[07:15:17] [debug]  SetFakeArmour
+[07:15:17] [debug]  PlayerTextDrawSetPosition
+[07:15:17] [debug]  SpawnPlayerForWorld
+[07:15:17] [debug]  cache_get_row_count
+[07:15:17] [debug]  mysql_tquery
+[07:15:17] [debug]  cache_get_data
+[07:15:17] [debug]  cache_get_field_content
+[07:15:17] [debug]  cache_get_field_content_int
+[07:15:17] [debug]  cache_get_field_content_float
+[07:15:17] [debug]  mysql_format
+[07:15:17] [debug]  cache_insert_id
+[07:15:17] [debug]  mysql_escape_string
+[07:15:17] [debug]  mysql_unprocessed_queries
+[07:15:17] [debug]  cache_get_row_int
+[07:15:17] [debug]  cache_get_row
+[07:15:17] [debug]  mysql_connect
+[07:15:17] [debug]  mysql_errno
+[07:15:17] [debug]  mysql_close
+[07:15:17] [debug]  mysql_query
+[07:15:17] [debug]  cache_delete
+[07:15:17] [join] Karding_El_Greeco has joined the server (0:112.209.24.91)
+[07:15:17] [debug] Run time error 19: "File or function is not found"
+[07:15:17] [debug]  FreezeSyncPacket
+[07:15:17] [debug]  SetFakeFacingAngle
+[07:15:17] [debug]  SendLastSyncPacket
+[07:15:17] [debug]  ClearAnimationsForPlayer
+[07:15:17] [debug]  SetKnifeSync
+[07:15:17] [debug]  SetFakeHealth
+[07:15:17] [debug]  SetFakeArmour
+[07:15:17] [debug]  PlayerTextDrawSetPosition
+[07:15:17] [debug]  SpawnPlayerForWorld
+[07:15:17] [debug]  cache_get_row_count
+[07:15:17] [debug]  mysql_tquery
+[07:15:17] [debug]  cache_get_data
+[07:15:17] [debug]  cache_get_field_content
+[07:15:17] [debug]  cache_get_field_content_int
+[07:15:17] [debug]  cache_get_field_content_float
+[07:15:17] [debug]  mysql_format
+[07:15:17] [debug]  cache_insert_id
+[07:15:17] [debug]  mysql_escape_string
+[07:15:17] [debug]  mysql_unprocessed_queries
+[07:15:17] [debug]  cache_get_row_int
+[07:15:17] [debug]  cache_get_row
+[07:15:17] [debug]  mysql_connect
+[07:15:17] [debug]  mysql_errno
+[07:15:17] [debug]  mysql_close
+[07:15:17] [debug]  mysql_query
+[07:15:17] [debug]  cache_delete
+[07:15:17] [connection] incoming connection: 112.209.24.91:45950 id: 1
+[07:15:17] [debug] Run time error 19: "File or function is not found"
+[07:15:17] [debug]  FreezeSyncPacket
+[07:15:17] [debug]  SetFakeFacingAngle
+[07:15:17] [debug]  SendLastSyncPacket
+[07:15:17] [debug]  ClearAnimationsForPlayer
+[07:15:17] [debug]  SetKnifeSync
+[07:15:17] [debug]  SetFakeHealth
+[07:15:17] [debug]  SetFakeArmour
+[07:15:17] [debug]  PlayerTextDrawSetPosition
+[07:15:17] [debug]  SpawnPlayerForWorld
+[07:15:17] [debug]  cache_get_row_count
+[07:15:17] [debug]  mysql_tquery
+[07:15:17] [debug]  cache_get_data
+[07:15:17] [debug]  cache_get_field_content
+[07:15:17] [debug]  cache_get_field_content_int
+[07:15:17] [debug]  cache_get_field_content_float
+[07:15:17] [debug]  mysql_format
+[07:15:17] [debug]  cache_insert_id
+[07:15:17] [debug]  mysql_escape_string
+[07:15:17] [debug]  mysql_unprocessed_queries
+[07:15:17] [debug]  cache_get_row_int
+[07:15:17] [debug]  cache_get_row
+[07:15:17] [debug]  mysql_connect
+[07:15:17] [debug]  mysql_errno
+[07:15:17] [debug]  mysql_close
+[07:15:17] [debug]  mysql_query
+[07:15:17] [debug]  cache_delete
+[07:15:18] [sv:dbg:network:connect] : connecting player (1) with address (112.209.24.91) ...
+[07:15:18] [sv:dbg:network:connect] : player (1) assigned key (5b18d170afbc7d82)
+[07:15:18] [join] Bomboo_La_Palermo has joined the server (1:112.209.24.91)
+[07:15:18] [debug] Run time error 19: "File or function is not found"
+[07:15:18] [debug]  FreezeSyncPacket
+[07:15:18] [debug]  SetFakeFacingAngle
+[07:15:18] [debug]  SendLastSyncPacket
+[07:15:18] [debug]  ClearAnimationsForPlayer
+[07:15:18] [debug]  SetKnifeSync
+[07:15:18] [debug]  SetFakeHealth
+[07:15:18] [debug]  SetFakeArmour
+[07:15:18] [debug]  PlayerTextDrawSetPosition
+[07:15:18] [debug]  SpawnPlayerForWorld
+[07:15:18] [debug]  cache_get_row_count
+[07:15:18] [debug]  mysql_tquery
+[07:15:18] [debug]  cache_get_data
+[07:15:18] [debug]  cache_get_field_content
+[07:15:18] [debug]  cache_get_field_content_int
+[07:15:18] [debug]  cache_get_field_content_float
+[07:15:18] [debug]  mysql_format
+[07:15:18] [debug]  cache_insert_id
+[07:15:18] [debug]  mysql_escape_string
+[07:15:18] [debug]  mysql_unprocessed_queries
+[07:15:18] [debug]  cache_get_row_int
+[07:15:18] [debug]  cache_get_row
+[07:15:18] [debug]  mysql_connect
+[07:15:18] [debug]  mysql_errno
+[07:15:18] [debug]  mysql_close
+[07:15:18] [debug]  mysql_query
+[07:15:18] [debug]  cache_delete
+>>>>>>> parent of 564d5c1 (/verify to connect player)
 
 ----------
 Loaded log file: "server_log.txt".
@@ -417,6 +982,7 @@ SA-MP Dedicated Server
 ----------------------
 v0.3.7-R2, (C)2005-2015 SA-MP Team
 
+<<<<<<< HEAD
 [10:30:20] filterscripts = ""  (string)
 [10:30:20] weburl = "www.sa-mp.com"  (string)
 [10:30:20] 
@@ -428,6 +994,19 @@ v0.3.7-R2, (C)2005-2015 SA-MP Team
 [10:30:20]  Loading plugin: pawncmd.so
 [10:30:20] [Pawn.CMD] plugin v3.3.6 loading...
 [10:30:20] [Pawn.CMD] 
+=======
+[07:20:13] filterscripts = ""  (string)
+[07:20:13] weburl = "www.sa-mp.com"  (string)
+[07:20:13] 
+[07:20:13] Server Plugins
+[07:20:13] --------------
+[07:20:13]  Loading plugin: crashdetect.so
+[07:20:13]   CrashDetect v4.13.1 is OK.
+[07:20:13]   Loaded.
+[07:20:13]  Loading plugin: pawncmd.so
+[07:20:13] [Pawn.CMD] plugin v3.3.6 loading...
+[07:20:13] [Pawn.CMD] 
+>>>>>>> parent of 564d5c1 (/verify to connect player)
 
     | Pawn.CMD 3.3.6 | 2016 - 2021
     |--------------------------------
@@ -438,6 +1017,7 @@ v0.3.7-R2, (C)2005-2015 SA-MP Team
     |--------------------------------------------------------------
     | Repository: https://github.com/katursis/Pawn.CMD
 
+<<<<<<< HEAD
 [10:30:20]   Loaded.
 [10:30:20]  Loading plugin: sampvoice.so
 [10:30:20] [sv:dbg:network:init] : module initializing...
@@ -838,6 +1418,224 @@ v0.3.7-R2, (C)2005-2015 SA-MP Team
 [10:33:34] [debug] Run time error 20: "Invalid index parameter (bad entry point)"
 [10:33:35] [debug] Run time error 20: "Invalid index parameter (bad entry point)"
 [10:33:35] --- Server Shutting Down.
+=======
+[07:20:13]   Loaded.
+[07:20:13]  Loading plugin: sampvoice.so
+[07:20:13] [sv:dbg:network:init] : module initializing...
+[07:20:13] [dbg:raknet:init] : module initializing...
+[07:20:13] [dbg:raknet:init] : module initialized
+[07:20:13] [sv:dbg:network:init] : module initialized
+[07:20:13] [sv:dbg:main:Load] : creating 4 work threads...
+[07:20:13]  -------------------------------------------    
+[07:20:13]    ___                __   __    _              
+[07:20:13]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[07:20:13]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[07:20:13]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[07:20:13]                   |_|                           
+[07:20:13]  -------------------------------------------    
+[07:20:13]            SampVoice by MOR loaded              
+[07:20:13]  -------------------------------------------    
+[07:20:13]   Loaded.
+[07:20:13]  Loading plugin: sscanf.so
+[07:20:13] 
+
+[07:20:13]  ===============================
+
+[07:20:13]       sscanf plugin loaded.     
+
+[07:20:13]          Version:  2.8.3        
+
+[07:20:13]   (c) 2018 Alex "Y_Less" Cole  
+
+[07:20:13]  ===============================
+
+[07:20:13]   Loaded.
+[07:20:13]  Loading plugin: streamer.so
+[07:20:13] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[07:20:13]   Loaded.
+[07:20:13]  Loading plugin: mysql.so
+[07:20:13]   Failed (libmysqlclient.so.18: cannot open shared object file: No such file or directory)
+[07:20:13]  Loading plugin: Whirlpool.so
+[07:20:13]  
+[07:20:13]  ==================
+[07:20:13]  
+[07:20:13]   Whirlpool loaded
+[07:20:13]  
+[07:20:13]  ==================
+[07:20:13]  
+[07:20:13]   Loaded.
+[07:20:13]  Loading plugin: SKY.so
+[07:20:13] 
+[07:20:13]  ===============================
+[07:20:13]    
+[07:20:13]    < SKY - 2.3.0 >
+[07:20:13]    
+[07:20:13]    (c) 2008 - Present | YSF Maintainers
+[07:20:13]    (c) 2015 | Oscar "Slice" Broman
+[07:20:13]    
+[07:20:13]    Server Version: 0.3.7 R2
+[07:20:13]    Operating System: Linux
+[07:20:13]    Built on: Jul 19 2020 at 17:53:06
+[07:20:13]    
+[07:20:13]  ===============================
+[07:20:13] 
+[07:20:13]   Loaded.
+[07:20:13]  Loading plugin: nativechecker.so
+[07:20:13]   Loaded.
+[07:20:13]  Loaded 8 plugins.
+
+[07:20:13] 
+[07:20:13] Ban list
+[07:20:13] --------
+[07:20:13]  Loaded: samp.ban
+[07:20:13] 
+[07:20:13] 
+[07:20:13] Filterscripts
+[07:20:13] ---------------
+[07:20:13]   Loaded 0 filterscripts.
+
+[07:20:13] [connection] 112.209.24.91:6349 requests connection cookie.
+[07:20:13] [connection] 112.209.24.91:36718 requests connection cookie.
+[07:20:16] [sv:dbg:main:AmxLoad] : net game pointer (value:0xa123a70) received
+[07:20:16] [sv:dbg:network:bind] : voice server running on port 45016
+[07:20:16] AMX (168925648) loaded
+[07:20:16]    Error: Function not registered: 'cache_get_row_count'
+[07:20:16]    Error: Function not registered: 'mysql_tquery'
+[07:20:16]    Error: Function not registered: 'cache_get_data'
+[07:20:16]    Error: Function not registered: 'cache_get_field_content'
+[07:20:16]    Error: Function not registered: 'cache_get_field_content_int'
+[07:20:16]    Error: Function not registered: 'cache_get_field_content_float'
+[07:20:16]    Error: Function not registered: 'mysql_format'
+[07:20:16]    Error: Function not registered: 'cache_insert_id'
+[07:20:16]    Error: Function not registered: 'mysql_escape_string'
+[07:20:16]    Error: Function not registered: 'mysql_unprocessed_queries'
+[07:20:16]    Error: Function not registered: 'cache_get_row_int'
+[07:20:16]    Error: Function not registered: 'cache_get_row'
+[07:20:16]    Error: Function not registered: 'mysql_connect'
+[07:20:16]    Error: Function not registered: 'mysql_errno'
+[07:20:16]    Error: Function not registered: 'mysql_close'
+[07:20:16]    Error: Function not registered: 'mysql_query'
+[07:20:16]    Error: Function not registered: 'cache_delete'
+[07:20:16] [debug] Run time error 19: "File or function is not found"
+[07:20:16] [debug]  cache_get_row_count
+[07:20:16] [debug]  mysql_tquery
+[07:20:16] [debug]  cache_get_data
+[07:20:16] [debug]  cache_get_field_content
+[07:20:16] [debug]  cache_get_field_content_int
+[07:20:16] [debug]  cache_get_field_content_float
+[07:20:16] [debug]  mysql_format
+[07:20:16] [debug]  cache_insert_id
+[07:20:16] [debug]  mysql_escape_string
+[07:20:16] [debug]  mysql_unprocessed_queries
+[07:20:16] [debug]  cache_get_row_int
+[07:20:16] [debug]  cache_get_row
+[07:20:16] [debug]  mysql_connect
+[07:20:16] [debug]  mysql_errno
+[07:20:16] [debug]  mysql_close
+[07:20:16] [debug]  mysql_query
+[07:20:16] [debug]  cache_delete
+[07:20:16] [debug] Run time error 19: "File or function is not found"
+[07:20:16] [debug]  cache_get_row_count
+[07:20:16] [debug]  mysql_tquery
+[07:20:16] [debug]  cache_get_data
+[07:20:16] [debug]  cache_get_field_content
+[07:20:16] [debug]  cache_get_field_content_int
+[07:20:16] [debug]  cache_get_field_content_float
+[07:20:16] [debug]  mysql_format
+[07:20:16] [debug]  cache_insert_id
+[07:20:16] [debug]  mysql_escape_string
+[07:20:16] [debug]  mysql_unprocessed_queries
+[07:20:16] [debug]  cache_get_row_int
+[07:20:16] [debug]  cache_get_row
+[07:20:16] [debug]  mysql_connect
+[07:20:16] [debug]  mysql_errno
+[07:20:16] [debug]  mysql_close
+[07:20:16] [debug]  mysql_query
+[07:20:16] [debug]  cache_delete
+[07:20:16] Script[gamemodes/v2morgancity.amx]: Run time error 19: "File or function is not found"
+[07:20:16] Number of vehicle models: 0
+[07:20:16] [connection] incoming connection: 112.209.24.91:6349 id: 0
+[07:20:16] [debug] Run time error 19: "File or function is not found"
+[07:20:16] [debug]  cache_get_row_count
+[07:20:16] [debug]  mysql_tquery
+[07:20:16] [debug]  cache_get_data
+[07:20:16] [debug]  cache_get_field_content
+[07:20:16] [debug]  cache_get_field_content_int
+[07:20:16] [debug]  cache_get_field_content_float
+[07:20:16] [debug]  mysql_format
+[07:20:16] [debug]  cache_insert_id
+[07:20:16] [debug]  mysql_escape_string
+[07:20:16] [debug]  mysql_unprocessed_queries
+[07:20:16] [debug]  cache_get_row_int
+[07:20:16] [debug]  cache_get_row
+[07:20:16] [debug]  mysql_connect
+[07:20:16] [debug]  mysql_errno
+[07:20:16] [debug]  mysql_close
+[07:20:16] [debug]  mysql_query
+[07:20:16] [debug]  cache_delete
+[07:20:16] [connection] incoming connection: 112.209.24.91:36718 id: 1
+[07:20:16] [debug] Run time error 19: "File or function is not found"
+[07:20:16] [debug]  cache_get_row_count
+[07:20:16] [debug]  mysql_tquery
+[07:20:16] [debug]  cache_get_data
+[07:20:16] [debug]  cache_get_field_content
+[07:20:16] [debug]  cache_get_field_content_int
+[07:20:16] [debug]  cache_get_field_content_float
+[07:20:16] [debug]  mysql_format
+[07:20:16] [debug]  cache_insert_id
+[07:20:16] [debug]  mysql_escape_string
+[07:20:16] [debug]  mysql_unprocessed_queries
+[07:20:16] [debug]  cache_get_row_int
+[07:20:16] [debug]  cache_get_row
+[07:20:16] [debug]  mysql_connect
+[07:20:16] [debug]  mysql_errno
+[07:20:16] [debug]  mysql_close
+[07:20:16] [debug]  mysql_query
+[07:20:16] [debug]  cache_delete
+[07:20:16] [sv:dbg:network:connect] : connecting player (1) with address (112.209.24.91) ...
+[07:20:16] [sv:dbg:network:connect] : player (1) assigned key (5b18d17015ade4a7)
+[07:20:16] [join] Bomboo_La_Palermo has joined the server (1:112.209.24.91)
+[07:20:16] [debug] Run time error 19: "File or function is not found"
+[07:20:16] [debug]  cache_get_row_count
+[07:20:16] [debug]  mysql_tquery
+[07:20:16] [debug]  cache_get_data
+[07:20:16] [debug]  cache_get_field_content
+[07:20:16] [debug]  cache_get_field_content_int
+[07:20:16] [debug]  cache_get_field_content_float
+[07:20:16] [debug]  mysql_format
+[07:20:16] [debug]  cache_insert_id
+[07:20:16] [debug]  mysql_escape_string
+[07:20:16] [debug]  mysql_unprocessed_queries
+[07:20:16] [debug]  cache_get_row_int
+[07:20:16] [debug]  cache_get_row
+[07:20:16] [debug]  mysql_connect
+[07:20:16] [debug]  mysql_errno
+[07:20:16] [debug]  mysql_close
+[07:20:16] [debug]  mysql_query
+[07:20:16] [debug]  cache_delete
+[07:20:16] [join] Karding_El_Greeco has joined the server (0:112.209.24.91)
+[07:20:16] [debug] Run time error 19: "File or function is not found"
+[07:20:16] [debug]  cache_get_row_count
+[07:20:16] [debug]  mysql_tquery
+[07:20:16] [debug]  cache_get_data
+[07:20:16] [debug]  cache_get_field_content
+[07:20:16] [debug]  cache_get_field_content_int
+[07:20:16] [debug]  cache_get_field_content_float
+[07:20:16] [debug]  mysql_format
+[07:20:16] [debug]  cache_insert_id
+[07:20:16] [debug]  mysql_escape_string
+[07:20:16] [debug]  mysql_unprocessed_queries
+[07:20:16] [debug]  cache_get_row_int
+[07:20:16] [debug]  cache_get_row
+[07:20:16] [debug]  mysql_connect
+[07:20:16] [debug]  mysql_errno
+[07:20:16] [debug]  mysql_close
+[07:20:16] [debug]  mysql_query
+[07:20:16] [debug]  cache_delete
+>>>>>>> parent of 564d5c1 (/verify to connect player)
 
 ----------
 Loaded log file: "server_log.txt".
@@ -847,6 +1645,7 @@ SA-MP Dedicated Server
 ----------------------
 v0.3.7-R2, (C)2005-2015 SA-MP Team
 
+<<<<<<< HEAD
 [10:33:35] filterscripts = ""  (string)
 [10:33:35] weburl = "www.sa-mp.com"  (string)
 [10:33:35] 
@@ -858,6 +1657,19 @@ v0.3.7-R2, (C)2005-2015 SA-MP Team
 [10:33:35]  Loading plugin: pawncmd.so
 [10:33:35] [Pawn.CMD] plugin v3.3.6 loading...
 [10:33:35] [Pawn.CMD] 
+=======
+[07:24:49] filterscripts = ""  (string)
+[07:24:49] weburl = "www.sa-mp.com"  (string)
+[07:24:49] 
+[07:24:49] Server Plugins
+[07:24:49] --------------
+[07:24:49]  Loading plugin: crashdetect.so
+[07:24:49]   CrashDetect v4.13.1 is OK.
+[07:24:49]   Loaded.
+[07:24:49]  Loading plugin: pawncmd.so
+[07:24:49] [Pawn.CMD] plugin v3.3.6 loading...
+[07:24:49] [Pawn.CMD] 
+>>>>>>> parent of 564d5c1 (/verify to connect player)
 
     | Pawn.CMD 3.3.6 | 2016 - 2021
     |--------------------------------
@@ -868,6 +1680,7 @@ v0.3.7-R2, (C)2005-2015 SA-MP Team
     |--------------------------------------------------------------
     | Repository: https://github.com/katursis/Pawn.CMD
 
+<<<<<<< HEAD
 [10:33:35]   Loaded.
 [10:33:35]  Loading plugin: sampvoice.so
 [10:33:35] [sv:dbg:network:init] : module initializing...
@@ -1229,6 +2042,300 @@ v0.3.7-R2, (C)2005-2015 SA-MP Team
 [10:36:10] [debug] Run time error 20: "Invalid index parameter (bad entry point)"
 [10:36:10] [debug] Run time error 20: "Invalid index parameter (bad entry point)"
 [10:36:11] [debug] Run time error 20: "Invalid index parameter (bad entry point)"
+=======
+[07:24:49]   Loaded.
+[07:24:49]  Loading plugin: sampvoice.so
+[07:24:49] [sv:dbg:network:init] : module initializing...
+[07:24:49] [dbg:raknet:init] : module initializing...
+[07:24:49] [dbg:raknet:init] : module initialized
+[07:24:49] [sv:dbg:network:init] : module initialized
+[07:24:49] [sv:dbg:main:Load] : creating 4 work threads...
+[07:24:49]  -------------------------------------------    
+[07:24:49]    ___                __   __    _              
+[07:24:49]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[07:24:49]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[07:24:49]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[07:24:49]                   |_|                           
+[07:24:49]  -------------------------------------------    
+[07:24:49]            SampVoice by MOR loaded              
+[07:24:49]  -------------------------------------------    
+[07:24:49]   Loaded.
+[07:24:49]  Loading plugin: sscanf.so
+[07:24:49] 
+
+[07:24:49]  ===============================
+
+[07:24:49]       sscanf plugin loaded.     
+
+[07:24:49]          Version:  2.8.3        
+
+[07:24:49]   (c) 2018 Alex "Y_Less" Cole  
+
+[07:24:49]  ===============================
+
+[07:24:49]   Loaded.
+[07:24:49]  Loading plugin: streamer.so
+[07:24:49] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[07:24:49]   Loaded.
+[07:24:49]  Loading plugin: mysql.so
+[07:24:49]   Failed (libmysqlclient.so.18: cannot open shared object file: No such file or directory)
+[07:24:49]  Loading plugin: Whirlpool.so
+[07:24:49]  
+[07:24:49]  ==================
+[07:24:49]  
+[07:24:49]   Whirlpool loaded
+[07:24:49]  
+[07:24:49]  ==================
+[07:24:49]  
+[07:24:49]   Loaded.
+[07:24:49]  Loading plugin: SKY.so
+[07:24:49] 
+[07:24:49]  ===============================
+[07:24:49]    
+[07:24:49]    < SKY - 2.3.0 >
+[07:24:49]    
+[07:24:49]    (c) 2008 - Present | YSF Maintainers
+[07:24:49]    (c) 2015 | Oscar "Slice" Broman
+[07:24:49]    
+[07:24:49]    Server Version: 0.3.7 R2
+[07:24:49]    Operating System: Linux
+[07:24:49]    Built on: Jul 19 2020 at 17:53:06
+[07:24:49]    
+[07:24:49]  ===============================
+[07:24:49] 
+[07:24:49]   Loaded.
+[07:24:49]  Loading plugin: nativechecker.so
+[07:24:49]   Loaded.
+[07:24:49]  Loaded 8 plugins.
+
+[07:24:49] 
+[07:24:49] Ban list
+[07:24:49] --------
+[07:24:49]  Loaded: samp.ban
+[07:24:49] 
+[07:24:49] 
+[07:24:49] Filterscripts
+[07:24:49] ---------------
+[07:24:49]   Loaded 0 filterscripts.
+
+[07:24:52] [sv:dbg:main:AmxLoad] : net game pointer (value:0x94dca70) received
+[07:24:52] [sv:dbg:network:bind] : voice server running on port 60914
+[07:24:52] AMX (156051920) loaded
+[07:24:52]    Error: Function not registered: 'cache_get_row_count'
+[07:24:52]    Error: Function not registered: 'mysql_tquery'
+[07:24:52]    Error: Function not registered: 'cache_get_data'
+[07:24:52]    Error: Function not registered: 'cache_get_field_content'
+[07:24:52]    Error: Function not registered: 'cache_get_field_content_int'
+[07:24:52]    Error: Function not registered: 'cache_get_field_content_float'
+[07:24:52]    Error: Function not registered: 'mysql_format'
+[07:24:52]    Error: Function not registered: 'cache_insert_id'
+[07:24:52]    Error: Function not registered: 'mysql_escape_string'
+[07:24:52]    Error: Function not registered: 'mysql_unprocessed_queries'
+[07:24:52]    Error: Function not registered: 'cache_get_row_int'
+[07:24:52]    Error: Function not registered: 'cache_get_row'
+[07:24:52]    Error: Function not registered: 'mysql_connect'
+[07:24:52]    Error: Function not registered: 'mysql_errno'
+[07:24:52]    Error: Function not registered: 'mysql_close'
+[07:24:52]    Error: Function not registered: 'mysql_query'
+[07:24:52]    Error: Function not registered: 'cache_delete'
+[07:24:52] [debug] Run time error 19: "File or function is not found"
+[07:24:52] [debug]  cache_get_row_count
+[07:24:52] [debug]  mysql_tquery
+[07:24:52] [debug]  cache_get_data
+[07:24:52] [debug]  cache_get_field_content
+[07:24:52] [debug]  cache_get_field_content_int
+[07:24:52] [debug]  cache_get_field_content_float
+[07:24:52] [debug]  mysql_format
+[07:24:52] [debug]  cache_insert_id
+[07:24:52] [debug]  mysql_escape_string
+[07:24:52] [debug]  mysql_unprocessed_queries
+[07:24:52] [debug]  cache_get_row_int
+[07:24:52] [debug]  cache_get_row
+[07:24:52] [debug]  mysql_connect
+[07:24:52] [debug]  mysql_errno
+[07:24:52] [debug]  mysql_close
+[07:24:52] [debug]  mysql_query
+[07:24:52] [debug]  cache_delete
+[07:24:52] [debug] Run time error 19: "File or function is not found"
+[07:24:52] [debug]  cache_get_row_count
+[07:24:52] [debug]  mysql_tquery
+[07:24:52] [debug]  cache_get_data
+[07:24:52] [debug]  cache_get_field_content
+[07:24:52] [debug]  cache_get_field_content_int
+[07:24:52] [debug]  cache_get_field_content_float
+[07:24:52] [debug]  mysql_format
+[07:24:52] [debug]  cache_insert_id
+[07:24:52] [debug]  mysql_escape_string
+[07:24:52] [debug]  mysql_unprocessed_queries
+[07:24:52] [debug]  cache_get_row_int
+[07:24:52] [debug]  cache_get_row
+[07:24:52] [debug]  mysql_connect
+[07:24:52] [debug]  mysql_errno
+[07:24:52] [debug]  mysql_close
+[07:24:52] [debug]  mysql_query
+[07:24:52] [debug]  cache_delete
+[07:24:52] Script[gamemodes/v2morgancity.amx]: Run time error 19: "File or function is not found"
+[07:24:52] Number of vehicle models: 0
+[07:25:00] [connection] 112.209.24.91:58786 requests connection cookie.
+[07:25:01] [connection] incoming connection: 112.209.24.91:58786 id: 0
+[07:25:01] [debug] Run time error 19: "File or function is not found"
+[07:25:01] [debug]  cache_get_row_count
+[07:25:01] [debug]  mysql_tquery
+[07:25:01] [debug]  cache_get_data
+[07:25:01] [debug]  cache_get_field_content
+[07:25:01] [debug]  cache_get_field_content_int
+[07:25:01] [debug]  cache_get_field_content_float
+[07:25:01] [debug]  mysql_format
+[07:25:01] [debug]  cache_insert_id
+[07:25:01] [debug]  mysql_escape_string
+[07:25:01] [debug]  mysql_unprocessed_queries
+[07:25:01] [debug]  cache_get_row_int
+[07:25:01] [debug]  cache_get_row
+[07:25:01] [debug]  mysql_connect
+[07:25:01] [debug]  mysql_errno
+[07:25:01] [debug]  mysql_close
+[07:25:01] [debug]  mysql_query
+[07:25:01] [debug]  cache_delete
+[07:25:02] [join] Karding_El_Greeco has joined the server (0:112.209.24.91)
+[07:25:02] [debug] Run time error 19: "File or function is not found"
+[07:25:02] [debug]  cache_get_row_count
+[07:25:02] [debug]  mysql_tquery
+[07:25:02] [debug]  cache_get_data
+[07:25:02] [debug]  cache_get_field_content
+[07:25:02] [debug]  cache_get_field_content_int
+[07:25:02] [debug]  cache_get_field_content_float
+[07:25:02] [debug]  mysql_format
+[07:25:02] [debug]  cache_insert_id
+[07:25:02] [debug]  mysql_escape_string
+[07:25:02] [debug]  mysql_unprocessed_queries
+[07:25:02] [debug]  cache_get_row_int
+[07:25:02] [debug]  cache_get_row
+[07:25:02] [debug]  mysql_connect
+[07:25:02] [debug]  mysql_errno
+[07:25:02] [debug]  mysql_close
+[07:25:02] [debug]  mysql_query
+[07:25:02] [debug]  cache_delete
+[07:25:03] [connection] 112.209.24.91:41199 requests connection cookie.
+[07:25:04] [connection] incoming connection: 112.209.24.91:41199 id: 1
+[07:25:04] [debug] Run time error 19: "File or function is not found"
+[07:25:04] [debug]  cache_get_row_count
+[07:25:04] [debug]  mysql_tquery
+[07:25:04] [debug]  cache_get_data
+[07:25:04] [debug]  cache_get_field_content
+[07:25:04] [debug]  cache_get_field_content_int
+[07:25:04] [debug]  cache_get_field_content_float
+[07:25:04] [debug]  mysql_format
+[07:25:04] [debug]  cache_insert_id
+[07:25:04] [debug]  mysql_escape_string
+[07:25:04] [debug]  mysql_unprocessed_queries
+[07:25:04] [debug]  cache_get_row_int
+[07:25:04] [debug]  cache_get_row
+[07:25:04] [debug]  mysql_connect
+[07:25:04] [debug]  mysql_errno
+[07:25:04] [debug]  mysql_close
+[07:25:04] [debug]  mysql_query
+[07:25:04] [debug]  cache_delete
+[07:25:04] [sv:dbg:network:connect] : connecting player (1) with address (112.209.24.91) ...
+[07:25:04] [sv:dbg:network:connect] : player (1) assigned key (5b18d17098ef0d23)
+[07:25:04] [join] Bomboo_La_Palermo has joined the server (1:112.209.24.91)
+[07:25:04] [debug] Run time error 19: "File or function is not found"
+[07:25:04] [debug]  cache_get_row_count
+[07:25:04] [debug]  mysql_tquery
+[07:25:04] [debug]  cache_get_data
+[07:25:04] [debug]  cache_get_field_content
+[07:25:04] [debug]  cache_get_field_content_int
+[07:25:04] [debug]  cache_get_field_content_float
+[07:25:04] [debug]  mysql_format
+[07:25:04] [debug]  cache_insert_id
+[07:25:04] [debug]  mysql_escape_string
+[07:25:04] [debug]  mysql_unprocessed_queries
+[07:25:04] [debug]  cache_get_row_int
+[07:25:04] [debug]  cache_get_row
+[07:25:04] [debug]  mysql_connect
+[07:25:04] [debug]  mysql_errno
+[07:25:04] [debug]  mysql_close
+[07:25:04] [debug]  mysql_query
+[07:25:04] [debug]  cache_delete
+[07:26:16] [connection] 136.158.37.217:28457 requests connection cookie.
+[07:26:17] [connection] incoming connection: 136.158.37.217:28457 id: 2
+[07:26:17] [debug] Run time error 19: "File or function is not found"
+[07:26:17] [debug]  cache_get_row_count
+[07:26:17] [debug]  mysql_tquery
+[07:26:17] [debug]  cache_get_data
+[07:26:17] [debug]  cache_get_field_content
+[07:26:17] [debug]  cache_get_field_content_int
+[07:26:17] [debug]  cache_get_field_content_float
+[07:26:17] [debug]  mysql_format
+[07:26:17] [debug]  cache_insert_id
+[07:26:17] [debug]  mysql_escape_string
+[07:26:17] [debug]  mysql_unprocessed_queries
+[07:26:17] [debug]  cache_get_row_int
+[07:26:17] [debug]  cache_get_row
+[07:26:17] [debug]  mysql_connect
+[07:26:17] [debug]  mysql_errno
+[07:26:17] [debug]  mysql_close
+[07:26:17] [debug]  mysql_query
+[07:26:17] [debug]  cache_delete
+[07:26:18] [join] Drake_Lowkey has joined the server (2:136.158.37.217)
+[07:26:18] [debug] Run time error 19: "File or function is not found"
+[07:26:18] [debug]  cache_get_row_count
+[07:26:18] [debug]  mysql_tquery
+[07:26:18] [debug]  cache_get_data
+[07:26:18] [debug]  cache_get_field_content
+[07:26:18] [debug]  cache_get_field_content_int
+[07:26:18] [debug]  cache_get_field_content_float
+[07:26:18] [debug]  mysql_format
+[07:26:18] [debug]  cache_insert_id
+[07:26:18] [debug]  mysql_escape_string
+[07:26:18] [debug]  mysql_unprocessed_queries
+[07:26:18] [debug]  cache_get_row_int
+[07:26:18] [debug]  cache_get_row
+[07:26:18] [debug]  mysql_connect
+[07:26:18] [debug]  mysql_errno
+[07:26:18] [debug]  mysql_close
+[07:26:18] [debug]  mysql_query
+[07:26:18] [debug]  cache_delete
+[07:26:18] [debug] Run time error 19: "File or function is not found"
+[07:26:18] [debug]  cache_get_row_count
+[07:26:18] [debug]  mysql_tquery
+[07:26:18] [debug]  cache_get_data
+[07:26:18] [debug]  cache_get_field_content
+[07:26:18] [debug]  cache_get_field_content_int
+[07:26:18] [debug]  cache_get_field_content_float
+[07:26:18] [debug]  mysql_format
+[07:26:18] [debug]  cache_insert_id
+[07:26:18] [debug]  mysql_escape_string
+[07:26:18] [debug]  mysql_unprocessed_queries
+[07:26:18] [debug]  cache_get_row_int
+[07:26:18] [debug]  cache_get_row
+[07:26:18] [debug]  mysql_connect
+[07:26:18] [debug]  mysql_errno
+[07:26:18] [debug]  mysql_close
+[07:26:18] [debug]  mysql_query
+[07:26:18] [debug]  cache_delete
+[07:27:08] [debug] Run time error 19: "File or function is not found"
+[07:27:08] [debug]  cache_get_row_count
+[07:27:08] [debug]  mysql_tquery
+[07:27:08] [debug]  cache_get_data
+[07:27:08] [debug]  cache_get_field_content
+[07:27:08] [debug]  cache_get_field_content_int
+[07:27:08] [debug]  cache_get_field_content_float
+[07:27:08] [debug]  mysql_format
+[07:27:08] [debug]  cache_insert_id
+[07:27:08] [debug]  mysql_escape_string
+[07:27:08] [debug]  mysql_unprocessed_queries
+[07:27:08] [debug]  cache_get_row_int
+[07:27:08] [debug]  cache_get_row
+[07:27:08] [debug]  mysql_connect
+[07:27:08] [debug]  mysql_errno
+[07:27:08] [debug]  mysql_close
+[07:27:08] [debug]  mysql_query
+[07:27:08] [debug]  cache_delete
+[07:27:08] [part] Drake_Lowkey has left the server (2:1)
+>>>>>>> parent of 564d5c1 (/verify to connect player)
 
 ----------
 Loaded log file: "server_log.txt".
@@ -1238,6 +2345,7 @@ SA-MP Dedicated Server
 ----------------------
 v0.3.7-R2, (C)2005-2015 SA-MP Team
 
+<<<<<<< HEAD
 [10:36:12] filterscripts = ""  (string)
 [10:36:12] weburl = "www.sa-mp.com"  (string)
 [10:36:12] 
@@ -1346,6 +2454,303 @@ v0.3.7-R2, (C)2005-2015 SA-MP Team
 [10:36:36] [debug]  PC_Init
 [10:36:36] [debug] Run time error 19: "File or function is not found"
 [10:36:36] [debug]  PC_Init
+=======
+[07:27:42] filterscripts = ""  (string)
+[07:27:42] weburl = "www.sa-mp.com"  (string)
+[07:27:42] 
+[07:27:42] Server Plugins
+[07:27:42] --------------
+[07:27:42]  Loading plugin: crashdetect.so
+[07:27:42]   CrashDetect v4.13.1 is OK.
+[07:27:42]   Loaded.
+[07:27:42]  Loading plugin: pawncmd.so
+[07:27:42] [Pawn.CMD] plugin v3.3.6 loading...
+[07:27:42] [Pawn.CMD] 
+
+    | Pawn.CMD 3.3.6 | 2016 - 2021
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Sep 26 2021 at 08:25:00
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[07:27:42]   Loaded.
+[07:27:42]  Loading plugin: sampvoice.so
+[07:27:42] [sv:dbg:network:init] : module initializing...
+[07:27:42] [dbg:raknet:init] : module initializing...
+[07:27:42] [dbg:raknet:init] : module initialized
+[07:27:42] [sv:dbg:network:init] : module initialized
+[07:27:42] [sv:dbg:main:Load] : creating 4 work threads...
+[07:27:42]  -------------------------------------------    
+[07:27:42]    ___                __   __    _              
+[07:27:42]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[07:27:42]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[07:27:42]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[07:27:42]                   |_|                           
+[07:27:42]  -------------------------------------------    
+[07:27:42]            SampVoice by MOR loaded              
+[07:27:42]  -------------------------------------------    
+[07:27:42]   Loaded.
+[07:27:42]  Loading plugin: sscanf.so
+[07:27:42] 
+
+[07:27:42]  ===============================
+
+[07:27:42]       sscanf plugin loaded.     
+
+[07:27:42]          Version:  2.8.3        
+
+[07:27:42]   (c) 2018 Alex "Y_Less" Cole  
+
+[07:27:42]  ===============================
+
+[07:27:42]   Loaded.
+[07:27:42]  Loading plugin: streamer.so
+[07:27:42] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[07:27:42]   Loaded.
+[07:27:42]  Loading plugin: mysql.so
+[07:27:42]   Failed (libmysqlclient.so.18: cannot open shared object file: No such file or directory)
+[07:27:42]  Loading plugin: Whirlpool.so
+[07:27:42]  
+[07:27:42]  ==================
+[07:27:42]  
+[07:27:42]   Whirlpool loaded
+[07:27:42]  
+[07:27:42]  ==================
+[07:27:42]  
+[07:27:42]   Loaded.
+[07:27:42]  Loading plugin: SKY.so
+[07:27:42] 
+[07:27:42]  ===============================
+[07:27:42]    
+[07:27:42]    < SKY - 2.3.0 >
+[07:27:42]    
+[07:27:42]    (c) 2008 - Present | YSF Maintainers
+[07:27:42]    (c) 2015 | Oscar "Slice" Broman
+[07:27:42]    
+[07:27:42]    Server Version: 0.3.7 R2
+[07:27:42]    Operating System: Linux
+[07:27:42]    Built on: Jul 19 2020 at 17:53:06
+[07:27:42]    
+[07:27:42]  ===============================
+[07:27:42] 
+[07:27:42]   Loaded.
+[07:27:42]  Loading plugin: nativechecker.so
+[07:27:42]   Loaded.
+[07:27:42]  Loaded 8 plugins.
+
+[07:27:42] 
+[07:27:42] Ban list
+[07:27:42] --------
+[07:27:42]  Loaded: samp.ban
+[07:27:42] 
+[07:27:42] 
+[07:27:42] Filterscripts
+[07:27:42] ---------------
+[07:27:42]   Loaded 0 filterscripts.
+
+[07:27:43] [connection] 136.158.37.217:31261 requests connection cookie.
+[07:27:46] [sv:dbg:main:AmxLoad] : net game pointer (value:0x89bba70) received
+[07:27:46] [sv:dbg:network:bind] : voice server running on port 53696
+[07:27:46] AMX (144382416) loaded
+[07:27:46]    Error: Function not registered: 'cache_get_row_count'
+[07:27:46]    Error: Function not registered: 'mysql_tquery'
+[07:27:46]    Error: Function not registered: 'cache_get_data'
+[07:27:46]    Error: Function not registered: 'cache_get_field_content'
+[07:27:46]    Error: Function not registered: 'cache_get_field_content_int'
+[07:27:46]    Error: Function not registered: 'cache_get_field_content_float'
+[07:27:46]    Error: Function not registered: 'mysql_format'
+[07:27:46]    Error: Function not registered: 'cache_insert_id'
+[07:27:46]    Error: Function not registered: 'mysql_escape_string'
+[07:27:46]    Error: Function not registered: 'mysql_unprocessed_queries'
+[07:27:46]    Error: Function not registered: 'cache_get_row_int'
+[07:27:46]    Error: Function not registered: 'cache_get_row'
+[07:27:46]    Error: Function not registered: 'mysql_connect'
+[07:27:46]    Error: Function not registered: 'mysql_errno'
+[07:27:46]    Error: Function not registered: 'mysql_close'
+[07:27:46]    Error: Function not registered: 'mysql_query'
+[07:27:46]    Error: Function not registered: 'cache_delete'
+[07:27:46] [debug] Run time error 19: "File or function is not found"
+[07:27:46] [debug]  cache_get_row_count
+[07:27:46] [debug]  mysql_tquery
+[07:27:46] [debug]  cache_get_data
+[07:27:46] [debug]  cache_get_field_content
+[07:27:46] [debug]  cache_get_field_content_int
+[07:27:46] [debug]  cache_get_field_content_float
+[07:27:46] [debug]  mysql_format
+[07:27:46] [debug]  cache_insert_id
+[07:27:46] [debug]  mysql_escape_string
+[07:27:46] [debug]  mysql_unprocessed_queries
+[07:27:46] [debug]  cache_get_row_int
+[07:27:46] [debug]  cache_get_row
+[07:27:46] [debug]  mysql_connect
+[07:27:46] [debug]  mysql_errno
+[07:27:46] [debug]  mysql_close
+[07:27:46] [debug]  mysql_query
+[07:27:46] [debug]  cache_delete
+[07:27:46] [debug] Run time error 19: "File or function is not found"
+[07:27:46] [debug]  cache_get_row_count
+[07:27:46] [debug]  mysql_tquery
+[07:27:46] [debug]  cache_get_data
+[07:27:46] [debug]  cache_get_field_content
+[07:27:46] [debug]  cache_get_field_content_int
+[07:27:46] [debug]  cache_get_field_content_float
+[07:27:46] [debug]  mysql_format
+[07:27:46] [debug]  cache_insert_id
+[07:27:46] [debug]  mysql_escape_string
+[07:27:46] [debug]  mysql_unprocessed_queries
+[07:27:46] [debug]  cache_get_row_int
+[07:27:46] [debug]  cache_get_row
+[07:27:46] [debug]  mysql_connect
+[07:27:46] [debug]  mysql_errno
+[07:27:46] [debug]  mysql_close
+[07:27:46] [debug]  mysql_query
+[07:27:46] [debug]  cache_delete
+[07:27:46] Script[gamemodes/v2morgancity.amx]: Run time error 19: "File or function is not found"
+[07:27:46] Number of vehicle models: 0
+[07:27:46] [connection] incoming connection: 136.158.37.217:31261 id: 0
+[07:27:46] [debug] Run time error 19: "File or function is not found"
+[07:27:46] [debug]  cache_get_row_count
+[07:27:46] [debug]  mysql_tquery
+[07:27:46] [debug]  cache_get_data
+[07:27:46] [debug]  cache_get_field_content
+[07:27:46] [debug]  cache_get_field_content_int
+[07:27:46] [debug]  cache_get_field_content_float
+[07:27:46] [debug]  mysql_format
+[07:27:46] [debug]  cache_insert_id
+[07:27:46] [debug]  mysql_escape_string
+[07:27:46] [debug]  mysql_unprocessed_queries
+[07:27:46] [debug]  cache_get_row_int
+[07:27:46] [debug]  cache_get_row
+[07:27:46] [debug]  mysql_connect
+[07:27:46] [debug]  mysql_errno
+[07:27:46] [debug]  mysql_close
+[07:27:46] [debug]  mysql_query
+[07:27:46] [debug]  cache_delete
+[07:27:46] [join] Drake_Lowkey has joined the server (0:136.158.37.217)
+[07:27:46] [debug] Run time error 19: "File or function is not found"
+[07:27:46] [debug]  cache_get_row_count
+[07:27:46] [debug]  mysql_tquery
+[07:27:46] [debug]  cache_get_data
+[07:27:46] [debug]  cache_get_field_content
+[07:27:46] [debug]  cache_get_field_content_int
+[07:27:46] [debug]  cache_get_field_content_float
+[07:27:46] [debug]  mysql_format
+[07:27:46] [debug]  cache_insert_id
+[07:27:46] [debug]  mysql_escape_string
+[07:27:46] [debug]  mysql_unprocessed_queries
+[07:27:46] [debug]  cache_get_row_int
+[07:27:46] [debug]  cache_get_row
+[07:27:46] [debug]  mysql_connect
+[07:27:46] [debug]  mysql_errno
+[07:27:46] [debug]  mysql_close
+[07:27:46] [debug]  mysql_query
+[07:27:46] [debug]  cache_delete
+[07:27:46] [debug] Run time error 19: "File or function is not found"
+[07:27:46] [debug]  cache_get_row_count
+[07:27:46] [debug]  mysql_tquery
+[07:27:46] [debug]  cache_get_data
+[07:27:46] [debug]  cache_get_field_content
+[07:27:46] [debug]  cache_get_field_content_int
+[07:27:46] [debug]  cache_get_field_content_float
+[07:27:46] [debug]  mysql_format
+[07:27:46] [debug]  cache_insert_id
+[07:27:46] [debug]  mysql_escape_string
+[07:27:46] [debug]  mysql_unprocessed_queries
+[07:27:46] [debug]  cache_get_row_int
+[07:27:46] [debug]  cache_get_row
+[07:27:46] [debug]  mysql_connect
+[07:27:46] [debug]  mysql_errno
+[07:27:46] [debug]  mysql_close
+[07:27:46] [debug]  mysql_query
+[07:27:46] [debug]  cache_delete
+[07:27:52] [connection] 112.209.24.91:58886 requests connection cookie.
+[07:27:53] [connection] incoming connection: 112.209.24.91:58886 id: 1
+[07:27:53] [debug] Run time error 19: "File or function is not found"
+[07:27:53] [debug]  cache_get_row_count
+[07:27:53] [debug]  mysql_tquery
+[07:27:53] [debug]  cache_get_data
+[07:27:53] [debug]  cache_get_field_content
+[07:27:53] [debug]  cache_get_field_content_int
+[07:27:53] [debug]  cache_get_field_content_float
+[07:27:53] [debug]  mysql_format
+[07:27:53] [debug]  cache_insert_id
+[07:27:53] [debug]  mysql_escape_string
+[07:27:53] [debug]  mysql_unprocessed_queries
+[07:27:53] [debug]  cache_get_row_int
+[07:27:53] [debug]  cache_get_row
+[07:27:53] [debug]  mysql_connect
+[07:27:53] [debug]  mysql_errno
+[07:27:53] [debug]  mysql_close
+[07:27:53] [debug]  mysql_query
+[07:27:53] [debug]  cache_delete
+[07:27:53] [sv:dbg:network:connect] : connecting player (1) with address (112.209.24.91) ...
+[07:27:53] [sv:dbg:network:connect] : player (1) assigned key (5b18d170c05966c8)
+[07:27:53] [join] Bomboo_La_Palermo has joined the server (1:112.209.24.91)
+[07:27:53] [debug] Run time error 19: "File or function is not found"
+[07:27:53] [debug]  cache_get_row_count
+[07:27:53] [debug]  mysql_tquery
+[07:27:53] [debug]  cache_get_data
+[07:27:53] [debug]  cache_get_field_content
+[07:27:53] [debug]  cache_get_field_content_int
+[07:27:53] [debug]  cache_get_field_content_float
+[07:27:53] [debug]  mysql_format
+[07:27:53] [debug]  cache_insert_id
+[07:27:53] [debug]  mysql_escape_string
+[07:27:53] [debug]  mysql_unprocessed_queries
+[07:27:53] [debug]  cache_get_row_int
+[07:27:53] [debug]  cache_get_row
+[07:27:53] [debug]  mysql_connect
+[07:27:53] [debug]  mysql_errno
+[07:27:53] [debug]  mysql_close
+[07:27:53] [debug]  mysql_query
+[07:27:53] [debug]  cache_delete
+[07:28:02] [connection] 112.209.24.91:6369 requests connection cookie.
+[07:28:03] [connection] incoming connection: 112.209.24.91:6369 id: 2
+[07:28:03] [debug] Run time error 19: "File or function is not found"
+[07:28:03] [debug]  cache_get_row_count
+[07:28:03] [debug]  mysql_tquery
+[07:28:03] [debug]  cache_get_data
+[07:28:03] [debug]  cache_get_field_content
+[07:28:03] [debug]  cache_get_field_content_int
+[07:28:03] [debug]  cache_get_field_content_float
+[07:28:03] [debug]  mysql_format
+[07:28:03] [debug]  cache_insert_id
+[07:28:03] [debug]  mysql_escape_string
+[07:28:03] [debug]  mysql_unprocessed_queries
+[07:28:03] [debug]  cache_get_row_int
+[07:28:03] [debug]  cache_get_row
+[07:28:03] [debug]  mysql_connect
+[07:28:03] [debug]  mysql_errno
+[07:28:03] [debug]  mysql_close
+[07:28:03] [debug]  mysql_query
+[07:28:03] [debug]  cache_delete
+[07:28:03] [join] Karding_El_Greeco has joined the server (2:112.209.24.91)
+[07:28:03] [debug] Run time error 19: "File or function is not found"
+[07:28:03] [debug]  cache_get_row_count
+[07:28:03] [debug]  mysql_tquery
+[07:28:03] [debug]  cache_get_data
+[07:28:03] [debug]  cache_get_field_content
+[07:28:03] [debug]  cache_get_field_content_int
+[07:28:03] [debug]  cache_get_field_content_float
+[07:28:03] [debug]  mysql_format
+[07:28:03] [debug]  cache_insert_id
+[07:28:03] [debug]  mysql_escape_string
+[07:28:03] [debug]  mysql_unprocessed_queries
+[07:28:03] [debug]  cache_get_row_int
+[07:28:03] [debug]  cache_get_row
+[07:28:03] [debug]  mysql_connect
+[07:28:03] [debug]  mysql_errno
+[07:28:03] [debug]  mysql_close
+[07:28:03] [debug]  mysql_query
+[07:28:03] [debug]  cache_delete
+[07:29:06] --- Server Shutting Down.
+>>>>>>> parent of 564d5c1 (/verify to connect player)
 
 ----------
 Loaded log file: "server_log.txt".
@@ -1355,6 +2760,7 @@ SA-MP Dedicated Server
 ----------------------
 v0.3.7-R2, (C)2005-2015 SA-MP Team
 
+<<<<<<< HEAD
 [10:37:43] filterscripts = ""  (string)
 [10:37:43] weburl = "www.sa-mp.com"  (string)
 [10:37:43] 
@@ -2334,3 +3740,317 @@ v0.3.7-R2, (C)2005-2015 SA-MP Team
 [10:49:34] [debug] Run time error 20: "Invalid index parameter (bad entry point)"
 [10:49:35] [debug] Run time error 20: "Invalid index parameter (bad entry point)"
 [10:49:36] [debug] Run time error 20: "Invalid index parameter (bad entry point)"
+=======
+[07:29:06] filterscripts = ""  (string)
+[07:29:06] weburl = "www.sa-mp.com"  (string)
+[07:29:06] 
+[07:29:06] Server Plugins
+[07:29:06] --------------
+[07:29:06]  Loading plugin: crashdetect.so
+[07:29:06]   CrashDetect v4.13.1 is OK.
+[07:29:06]   Loaded.
+[07:29:06]  Loading plugin: pawncmd.so
+[07:29:06] [Pawn.CMD] plugin v3.3.6 loading...
+[07:29:06] [Pawn.CMD] 
+
+    | Pawn.CMD 3.3.6 | 2016 - 2021
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Sep 26 2021 at 08:25:00
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[07:29:06]   Loaded.
+[07:29:06]  Loading plugin: sampvoice.so
+[07:29:06] [sv:dbg:network:init] : module initializing...
+[07:29:06] [dbg:raknet:init] : module initializing...
+[07:29:06] [dbg:raknet:init] : module initialized
+[07:29:06] [sv:dbg:network:init] : module initialized
+[07:29:06] [sv:dbg:main:Load] : creating 4 work threads...
+[07:29:06]  -------------------------------------------    
+[07:29:06]    ___                __   __    _              
+[07:29:06]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[07:29:06]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[07:29:06]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[07:29:06]                   |_|                           
+[07:29:06]  -------------------------------------------    
+[07:29:06]            SampVoice by MOR loaded              
+[07:29:06]  -------------------------------------------    
+[07:29:06]   Loaded.
+[07:29:06]  Loading plugin: sscanf.so
+[07:29:06] 
+
+[07:29:06]  ===============================
+
+[07:29:06]       sscanf plugin loaded.     
+
+[07:29:06]          Version:  2.8.3        
+
+[07:29:06]   (c) 2018 Alex "Y_Less" Cole  
+
+[07:29:06]  ===============================
+
+[07:29:06]   Loaded.
+[07:29:06]  Loading plugin: streamer.so
+[07:29:06] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[07:29:06]   Loaded.
+[07:29:06]  Loading plugin: mysql.so
+[07:29:06]   Failed (libmysqlclient.so.18: cannot open shared object file: No such file or directory)
+[07:29:06]  Loading plugin: Whirlpool.so
+[07:29:06]  
+[07:29:06]  ==================
+[07:29:06]  
+[07:29:06]   Whirlpool loaded
+[07:29:06]  
+[07:29:06]  ==================
+[07:29:06]  
+[07:29:06]   Loaded.
+[07:29:06]  Loading plugin: SKY.so
+[07:29:06] 
+[07:29:06]  ===============================
+[07:29:06]    
+[07:29:06]    < SKY - 2.3.0 >
+[07:29:06]    
+[07:29:06]    (c) 2008 - Present | YSF Maintainers
+[07:29:06]    (c) 2015 | Oscar "Slice" Broman
+[07:29:06]    
+[07:29:06]    Server Version: 0.3.7 R2
+[07:29:06]    Operating System: Linux
+[07:29:06]    Built on: Jul 19 2020 at 17:53:06
+[07:29:06]    
+[07:29:06]  ===============================
+[07:29:06] 
+[07:29:06]   Loaded.
+[07:29:06]  Loading plugin: nativechecker.so
+[07:29:06]   Loaded.
+[07:29:06]  Loaded 8 plugins.
+
+[07:29:06] 
+[07:29:06] Ban list
+[07:29:06] --------
+[07:29:06]  Loaded: samp.ban
+[07:29:06] 
+[07:29:07] 
+[07:29:07] Filterscripts
+[07:29:07] ---------------
+[07:29:07]   Loaded 0 filterscripts.
+
+[07:29:09] [sv:dbg:main:AmxLoad] : net game pointer (value:0x8fe6a70) received
+[07:29:09] [sv:dbg:network:bind] : voice server running on port 48892
+[07:29:09] AMX (150850000) loaded
+[07:29:09]    Error: Function not registered: 'cache_get_row_count'
+[07:29:09]    Error: Function not registered: 'mysql_tquery'
+[07:29:09]    Error: Function not registered: 'cache_get_data'
+[07:29:09]    Error: Function not registered: 'cache_get_field_content'
+[07:29:09]    Error: Function not registered: 'cache_get_field_content_int'
+[07:29:09]    Error: Function not registered: 'cache_get_field_content_float'
+[07:29:09]    Error: Function not registered: 'mysql_format'
+[07:29:09]    Error: Function not registered: 'cache_insert_id'
+[07:29:09]    Error: Function not registered: 'mysql_escape_string'
+[07:29:09]    Error: Function not registered: 'mysql_unprocessed_queries'
+[07:29:09]    Error: Function not registered: 'cache_get_row_int'
+[07:29:09]    Error: Function not registered: 'cache_get_row'
+[07:29:09]    Error: Function not registered: 'mysql_connect'
+[07:29:09]    Error: Function not registered: 'mysql_errno'
+[07:29:09]    Error: Function not registered: 'mysql_close'
+[07:29:09]    Error: Function not registered: 'mysql_query'
+[07:29:09]    Error: Function not registered: 'cache_delete'
+[07:29:09] [debug] Run time error 19: "File or function is not found"
+[07:29:09] [debug]  cache_get_row_count
+[07:29:09] [debug]  mysql_tquery
+[07:29:09] [debug]  cache_get_data
+[07:29:09] [debug]  cache_get_field_content
+[07:29:09] [debug]  cache_get_field_content_int
+[07:29:09] [debug]  cache_get_field_content_float
+[07:29:09] [debug]  mysql_format
+[07:29:09] [debug]  cache_insert_id
+[07:29:09] [debug]  mysql_escape_string
+[07:29:09] [debug]  mysql_unprocessed_queries
+[07:29:09] [debug]  cache_get_row_int
+[07:29:09] [debug]  cache_get_row
+[07:29:09] [debug]  mysql_connect
+[07:29:09] [debug]  mysql_errno
+[07:29:09] [debug]  mysql_close
+[07:29:09] [debug]  mysql_query
+[07:29:09] [debug]  cache_delete
+[07:29:09] [debug] Run time error 19: "File or function is not found"
+[07:29:09] [debug]  cache_get_row_count
+[07:29:09] [debug]  mysql_tquery
+[07:29:09] [debug]  cache_get_data
+[07:29:09] [debug]  cache_get_field_content
+[07:29:09] [debug]  cache_get_field_content_int
+[07:29:09] [debug]  cache_get_field_content_float
+[07:29:09] [debug]  mysql_format
+[07:29:09] [debug]  cache_insert_id
+[07:29:09] [debug]  mysql_escape_string
+[07:29:09] [debug]  mysql_unprocessed_queries
+[07:29:09] [debug]  cache_get_row_int
+[07:29:09] [debug]  cache_get_row
+[07:29:09] [debug]  mysql_connect
+[07:29:09] [debug]  mysql_errno
+[07:29:09] [debug]  mysql_close
+[07:29:09] [debug]  mysql_query
+[07:29:09] [debug]  cache_delete
+[07:29:09] Script[gamemodes/v2morgancity.amx]: Run time error 19: "File or function is not found"
+[07:29:09] Number of vehicle models: 0
+[07:29:16] [connection] 136.158.37.217:34146 requests connection cookie.
+[07:29:17] [connection] incoming connection: 136.158.37.217:34146 id: 0
+[07:29:17] [debug] Run time error 19: "File or function is not found"
+[07:29:17] [debug]  cache_get_row_count
+[07:29:17] [debug]  mysql_tquery
+[07:29:17] [debug]  cache_get_data
+[07:29:17] [debug]  cache_get_field_content
+[07:29:17] [debug]  cache_get_field_content_int
+[07:29:17] [debug]  cache_get_field_content_float
+[07:29:17] [debug]  mysql_format
+[07:29:17] [debug]  cache_insert_id
+[07:29:17] [debug]  mysql_escape_string
+[07:29:17] [debug]  mysql_unprocessed_queries
+[07:29:17] [debug]  cache_get_row_int
+[07:29:17] [debug]  cache_get_row
+[07:29:17] [debug]  mysql_connect
+[07:29:17] [debug]  mysql_errno
+[07:29:17] [debug]  mysql_close
+[07:29:17] [debug]  mysql_query
+[07:29:17] [debug]  cache_delete
+[07:29:18] [join] Drake_Lowkey has joined the server (0:136.158.37.217)
+[07:29:18] [debug] Run time error 19: "File or function is not found"
+[07:29:18] [debug]  cache_get_row_count
+[07:29:18] [debug]  mysql_tquery
+[07:29:18] [debug]  cache_get_data
+[07:29:18] [debug]  cache_get_field_content
+[07:29:18] [debug]  cache_get_field_content_int
+[07:29:18] [debug]  cache_get_field_content_float
+[07:29:18] [debug]  mysql_format
+[07:29:18] [debug]  cache_insert_id
+[07:29:18] [debug]  mysql_escape_string
+[07:29:18] [debug]  mysql_unprocessed_queries
+[07:29:18] [debug]  cache_get_row_int
+[07:29:18] [debug]  cache_get_row
+[07:29:18] [debug]  mysql_connect
+[07:29:18] [debug]  mysql_errno
+[07:29:18] [debug]  mysql_close
+[07:29:18] [debug]  mysql_query
+[07:29:18] [debug]  cache_delete
+[07:29:18] [connection] 112.209.24.91:58788 requests connection cookie.
+[07:29:19] [connection] incoming connection: 112.209.24.91:58788 id: 1
+[07:29:19] [debug] Run time error 19: "File or function is not found"
+[07:29:19] [debug]  cache_get_row_count
+[07:29:19] [debug]  mysql_tquery
+[07:29:19] [debug]  cache_get_data
+[07:29:19] [debug]  cache_get_field_content
+[07:29:19] [debug]  cache_get_field_content_int
+[07:29:19] [debug]  cache_get_field_content_float
+[07:29:19] [debug]  mysql_format
+[07:29:19] [debug]  cache_insert_id
+[07:29:19] [debug]  mysql_escape_string
+[07:29:19] [debug]  mysql_unprocessed_queries
+[07:29:19] [debug]  cache_get_row_int
+[07:29:19] [debug]  cache_get_row
+[07:29:19] [debug]  mysql_connect
+[07:29:19] [debug]  mysql_errno
+[07:29:19] [debug]  mysql_close
+[07:29:19] [debug]  mysql_query
+[07:29:19] [debug]  cache_delete
+[07:29:20] [join] Karding_El_Greeco has joined the server (1:112.209.24.91)
+[07:29:20] [debug] Run time error 19: "File or function is not found"
+[07:29:20] [debug]  cache_get_row_count
+[07:29:20] [debug]  mysql_tquery
+[07:29:20] [debug]  cache_get_data
+[07:29:20] [debug]  cache_get_field_content
+[07:29:20] [debug]  cache_get_field_content_int
+[07:29:20] [debug]  cache_get_field_content_float
+[07:29:20] [debug]  mysql_format
+[07:29:20] [debug]  cache_insert_id
+[07:29:20] [debug]  mysql_escape_string
+[07:29:20] [debug]  mysql_unprocessed_queries
+[07:29:20] [debug]  cache_get_row_int
+[07:29:20] [debug]  cache_get_row
+[07:29:20] [debug]  mysql_connect
+[07:29:20] [debug]  mysql_errno
+[07:29:20] [debug]  mysql_close
+[07:29:20] [debug]  mysql_query
+[07:29:20] [debug]  cache_delete
+[07:29:20] [connection] 112.209.24.91:53536 requests connection cookie.
+[07:29:21] [connection] incoming connection: 112.209.24.91:53536 id: 2
+[07:29:21] [debug] Run time error 19: "File or function is not found"
+[07:29:21] [debug]  cache_get_row_count
+[07:29:21] [debug]  mysql_tquery
+[07:29:21] [debug]  cache_get_data
+[07:29:21] [debug]  cache_get_field_content
+[07:29:21] [debug]  cache_get_field_content_int
+[07:29:21] [debug]  cache_get_field_content_float
+[07:29:21] [debug]  mysql_format
+[07:29:21] [debug]  cache_insert_id
+[07:29:21] [debug]  mysql_escape_string
+[07:29:21] [debug]  mysql_unprocessed_queries
+[07:29:21] [debug]  cache_get_row_int
+[07:29:21] [debug]  cache_get_row
+[07:29:21] [debug]  mysql_connect
+[07:29:21] [debug]  mysql_errno
+[07:29:21] [debug]  mysql_close
+[07:29:21] [debug]  mysql_query
+[07:29:21] [debug]  cache_delete
+[07:29:22] [sv:dbg:network:connect] : connecting player (2) with address (112.209.24.91) ...
+[07:29:22] [sv:dbg:network:connect] : player (2) assigned key (5b18d170498c1581)
+[07:29:22] [join] Bomboo_La_Palermo has joined the server (2:112.209.24.91)
+[07:29:22] [debug] Run time error 19: "File or function is not found"
+[07:29:22] [debug]  cache_get_row_count
+[07:29:22] [debug]  mysql_tquery
+[07:29:22] [debug]  cache_get_data
+[07:29:22] [debug]  cache_get_field_content
+[07:29:22] [debug]  cache_get_field_content_int
+[07:29:22] [debug]  cache_get_field_content_float
+[07:29:22] [debug]  mysql_format
+[07:29:22] [debug]  cache_insert_id
+[07:29:22] [debug]  mysql_escape_string
+[07:29:22] [debug]  mysql_unprocessed_queries
+[07:29:22] [debug]  cache_get_row_int
+[07:29:22] [debug]  cache_get_row
+[07:29:22] [debug]  mysql_connect
+[07:29:22] [debug]  mysql_errno
+[07:29:22] [debug]  mysql_close
+[07:29:22] [debug]  mysql_query
+[07:29:22] [debug]  cache_delete
+[07:29:44] [debug] Run time error 19: "File or function is not found"
+[07:29:44] [debug]  cache_get_row_count
+[07:29:44] [debug]  mysql_tquery
+[07:29:44] [debug]  cache_get_data
+[07:29:44] [debug]  cache_get_field_content
+[07:29:44] [debug]  cache_get_field_content_int
+[07:29:44] [debug]  cache_get_field_content_float
+[07:29:44] [debug]  mysql_format
+[07:29:44] [debug]  cache_insert_id
+[07:29:44] [debug]  mysql_escape_string
+[07:29:44] [debug]  mysql_unprocessed_queries
+[07:29:44] [debug]  cache_get_row_int
+[07:29:44] [debug]  cache_get_row
+[07:29:44] [debug]  mysql_connect
+[07:29:44] [debug]  mysql_errno
+[07:29:44] [debug]  mysql_close
+[07:29:44] [debug]  mysql_query
+[07:29:44] [debug]  cache_delete
+[07:29:47] [debug] Run time error 19: "File or function is not found"
+[07:29:47] [debug]  cache_get_row_count
+[07:29:47] [debug]  mysql_tquery
+[07:29:47] [debug]  cache_get_data
+[07:29:47] [debug]  cache_get_field_content
+[07:29:47] [debug]  cache_get_field_content_int
+[07:29:47] [debug]  cache_get_field_content_float
+[07:29:47] [debug]  mysql_format
+[07:29:47] [debug]  cache_insert_id
+[07:29:47] [debug]  mysql_escape_string
+[07:29:47] [debug]  mysql_unprocessed_queries
+[07:29:47] [debug]  cache_get_row_int
+[07:29:47] [debug]  cache_get_row
+[07:29:47] [debug]  mysql_connect
+[07:29:47] [debug]  mysql_errno
+[07:29:47] [debug]  mysql_close
+[07:29:47] [debug]  mysql_query
+[07:29:47] [debug]  cache_delete
+>>>>>>> parent of 564d5c1 (/verify to connect player)
