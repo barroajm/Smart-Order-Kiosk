@@ -6,7 +6,7 @@ port 7777
 hostname Morgan City Roleplay
 gamemode0 v2morgancity 1
 filterscripts
-plugins pawncmd.so sampvoice.so discord-connector.so sscanf.so streamer.so mysql_static.so Whirlpool.so SKY.so log-core.so YSF.so nativechecker.so
+plugins crashdetect.so pawncmd.so sampvoice.so sscanf.so streamer.so mysql_static.so Whirlpool.so SKY.so nativechecker.so
 discord_bot_token OTgzNzE5ODg3MDMxNjM1OTg4.GAnd8_.Bvd7PyphT3d6jnIz51ljpcw58g2ffYFDvhUlx0
 announce 1
 chatlogging 1
