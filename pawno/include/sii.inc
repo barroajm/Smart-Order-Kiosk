@@ -11,12 +11,12 @@
 #if defined MAX_STRING
 	#define INI_MAX_VALUE MAX_STRING
 #else
-	#define INI_MAX_VALUE 128
+	#define INI_MAX_VALUE 256
 #endif
 #define INI_MAX_KEY 24
 #define INI_MAX_LINE (INI_MAX_KEY + INI_MAX_VALUE + 3)
 #define INI_MAX_FILENAME 256
-#define INI_MAX_LINES 512
+#define INI_MAX_LINES 768
 
 
 enum E_CACHE

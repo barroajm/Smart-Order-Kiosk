@@ -24,6 +24,7 @@ native GetGMTByName(name[]);
 native GetPlayerGMT(playerid);
 native GetPlayerCountryCode(playerid);
 native GetPlayerCountryCode3(playerid);
+native GetIPCountry(ip[]);
 native GetPlayerCountryName(playerid);
 */
 
@@ -46,6 +47,16 @@ stock GetPlayerGMT(playerid)
 	new ip[16];
 	GetPlayerIp(playerid, ip, sizeof(ip));
 	return GetGMT(ip);
+}
+
+stock GetIPCountry(ip[])
+{
+	new country[MAX_COUNTRY_NAME];
+	new ret = GetCountryName(ip, country, sizeof(country));
+	if(!ret)
+		format(country, sizeof(country), "Unknown");
+
+	return country;
 }
 
 stock GetPlayerCountryCode(playerid)
@@ -72,7 +83,7 @@ stock GetPlayerCountryName(playerid)
 
 	new ret = GetCountryName(ip, country, sizeof(country));
 	if(!ret)
-		format(country, sizeof(country), "Private IP");
+		format(country, sizeof(country), "Unknown");
 
 	return country;
 }
@@ -85,7 +96,7 @@ stock GetPlayerLocationInfos(playerid, country[], city[], &gmt, &Float:latitude 
 	GetPlayerIp(playerid, ip, sizeof(ip));
 
 	if(!GetCountryName(ip, country, sizeof(country)))
-		format(country, sizeof(country), "Private IP");
+		format(country, sizeof(country), "Unknown IP City");
 
 	if(!GetCityName(ip, city, sizeof(city)))
 		format(city, sizeof(city), "Unknown City");

@@ -1,466 +1,553 @@
 /*
 
-    MIT License
-
-    Copyright (c) 2018 Calisthenics
-
-    Permission is hereby granted, free of charge, to any person obtaining a copy
-    of this software and associated documentation files (the "Software"), to deal
-    in the Software without restriction, including without limitation the rights
-    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-    copies of the Software, and to permit persons to whom the Software is
-    furnished to do so, subject to the following conditions:
-
-    The above copyright notice and this permission notice shall be included in all
-    copies or substantial portions of the Software.
-
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-    SOFTWARE.
-
-*/
-/*
-
-This product includes GeoLite2 data created by MaxMind, available from http://www.maxmind.com
-
-*/
-/*
-
-Credits:
-    MaxMind - GeoLite2
-    TimeZoneDB.com - time zones
-    Alex "Y_Less" Cole - sscanf
-    Andy Skelton - ordering by `ip_to` (avoidance of range scan)
-    Nikolay Bachiyski - ordering by `ip_to` (avoidance of range scan)
-    Mark Robson - highest `ip_from` which is less than or equal to the given IP (avoidance of next country returned due to gaps)
+	GeoIP Include by Whitetiger
+	-> SQLite GeoIP Include
+	
+	Credits: Whitetiger, RaekwonDaChef, Y_Less, Andreas Gohr.
+	
+	MaxMind, GeoIP and related marks are registered trademarks of MaxMind, Inc.
+	
+	---------------------------------------------------------------------------------------
 	
 */
 
-#if defined _INC_geolite
-    #endinput
-#endif
-#define _INC_geolite
-
-#if !defined sscanf
-    #error Please include <sscanf2> first.
+#if defined _geolocation_included
+  #endinput
 #endif
 
-#define MAX_AUTONOMOUS_SYSTEM_LENGTH    95
-#define MAX_COUNTRY_LENGTH              45
-#define MAX_CITY_LENGTH                 109
-#define MAX_PROVINCE_LENGTH             53
-#define MAX_UTC_LENGTH                  7
 
-static stock
-    bool: GEOLITE_init,
+#define _geolocation_included
 
-    DB: GEOLITE_country_db,
-    DB: GEOLITE_city_db,
-    DB: GEOLITE_asn_db,
-    DB: GEOLITE_province_db;
+#include <a_samp>
 
-public OnFilterScriptInit()
-{
-    GEOLITE_init = true;
-    
-    geolite_open_dbs();
-    
-    #if defined GEOLITE_OnFilterScriptInit
-        return GEOLITE_OnFilterScriptInit();
-    #else
-        return 1;
-    #endif
+
+/*
+	---------------------------------------------------------------------------------------
+	Variables
+	---------------------------------------------------------------------------------------
+*/
+
+
+#if !defined GeoIP_MainFile
+	#define GeoIP_MainFile      "geoip.db"
+#endif
+
+#if !defined GeoIP_CityFile
+	#define GeoIP_CityFile      "geoip_city.db"
+#endif
+
+new DB:geoip_db;
+new DB:geoip_city;
+
+new stock g_iBackwardsCompat = -1;
+
+
+new DBResult:_result;
+
+/*
+	---------------------------------------------------------------------------------------
+	NATIVES
+	---------------------------------------------------------------------------------------
+*/
+
+/*
+	native GetPlayerCountry(playerid, string[], const len = sizeof(string));
+	native GetPlayerISP(playerid, string[], const len = sizeof(string));
+	native GetPlayerCity(playerid, string[], const len = sizeof(string));
+	native GetPlayerGMT(playerid);
+	native GetPlayerProxy(playerid);
+*/
+
+stock GetPlayerCountry(playerid, string[], const len = sizeof(string)) {
+	new ip[24];
+	GetPlayerIp(playerid, ip, sizeof(ip));
+
+	GetIPCountry(ip, string, len);
+
+	return true;
 }
 
-#if defined _ALS_OnFilterScriptInit
-    #undef OnFilterScriptInit
-#else
-    #define _ALS_OnFilterScriptInit
-#endif
+stock GetPlayerISP(playerid, string[], const len = sizeof(string)) {
+	new ip[24];
+	GetPlayerIp(playerid, ip, sizeof(ip));
 
-#define OnFilterScriptInit GEOLITE_OnFilterScriptInit
+	GetIPISP(ip, string, len);
+	new placeholder[1];
+    sscanf_(string, "ss", placeholder, string);
 
-#if defined GEOLITE_OnFilterScriptInit
-    forward GEOLITE_OnFilterScriptInit();
-#endif
-
-public OnFilterScriptExit()
-{
-    if (GEOLITE_init)
-    {
-        geolite_close_dbs();
-    }
-
-    #if defined GEOLITE_OnFilterScriptExit
-        return GEOLITE_OnFilterScriptExit();
-    #else
-        return 1;
-    #endif
+    return true;
 }
 
-#if defined _ALS_OnFilterScriptExit
-    #undef OnFilterScriptExit
-#else
-    #define _ALS_OnFilterScriptExit
-#endif
+stock GetPlayerCity(playerid, string[], const len = sizeof(string)) {
+	new ip[24];
+	GetPlayerIp(playerid, ip, sizeof(ip));
 
-#define OnFilterScriptExit GEOLITE_OnFilterScriptExit
+	GetIPCity(ip, string, len);
 
-#if defined GEOLITE_OnFilterScriptExit
-    forward GEOLITE_OnFilterScriptExit();
-#endif
+	return true;
+}
 
-public OnGameModeInit()
-{
-    if (!GEOLITE_init)
-    {
-        geolite_open_dbs();
-    }
+stock GetPlayerGMT(playerid) {
+	new ip[24];
+	GetPlayerIp(playerid, ip, sizeof(ip));
+
+	return GetIPGMT(ip);
+}
+
+stock GetPlayerProxy(playerid) {
+	new ip[24];
+	GetPlayerIp(playerid, ip, sizeof(ip));
 	
-    #if defined GEOLITE_OnGameModeInit
-        return GEOLITE_OnGameModeInit();
-    #else
-        return 1;
-    #endif
+	return GetIPProxy(ip);
 }
-
-#if defined _ALS_OnGameModeInit
-    #undef OnGameModeInit
-#else
-    #define _ALS_OnGameModeInit
-#endif
-
-#define OnGameModeInit GEOLITE_OnGameModeInit
-
-#if defined GEOLITE_OnGameModeInit
-    forward GEOLITE_OnGameModeInit();
-#endif
-
-public OnGameModeExit()
-{
-    if (!GEOLITE_init)
-    {
-        geolite_close_dbs();
-    }
-
-    #if defined GEOLITE_OnGameModeExit
-        return GEOLITE_OnGameModeExit();
-    #else
-        return 1;
-    #endif
-}
-#if defined _ALS_OnGameModeExit
-    #undef OnGameModeExit
-#else
-    #define _ALS_OnGameModeExit
-#endif
-
-#define OnGameModeExit GEOLITE_OnGameModeExit
-
-#if defined GEOLITE_OnGameModeExit
-    forward GEOLITE_OnGameModeExit();
-#endif
 
 /*
 
-native GetIpAutonomousSystem(const geolite_ip[], geolite_dest[], geolite_len = sizeof (geolite_dest));
-native GetIpCountry(const geolite_ip[], geolite_dest[], geolite_len = sizeof (geolite_dest));
-native GetIpCity(const geolite_ip[], geolite_dest[], geolite_len = sizeof (geolite_dest));
-native GetIpProvince(const geolite_ip[], geolite_dest[], geolite_len = sizeof (geolite_dest));
-native GetIpUTC(const geolite_ip[], geolite_dest[], geolite_len = sizeof (geolite_dest));
-native IsIpProxy(const geolite_ip[]);
+	---------------------------------------------------------------------------------------
+	INTERNAL FUNCTIONS
+	---------------------------------------------------------------------------------------
+
+	- stock GetIPCountry(ip[], dest[], len = sizeof(dest))
+	- stock GetIPISP(ip[], dest[], len = sizeof(dest))
+	- stock GetIPCity(ip[], dest[], len = sizeof(dest))
+	- stock GetIPGMT(ip[])
+	- stock GetIPProxy(ip[])
+	- stock ip2long(ip[])
 
 */
 
-stock GetIpAutonomousSystem(const geolite_ip[], geolite_dest[], geolite_len = sizeof (geolite_dest))
-{
-    if (GEOLITE_asn_db == DB: 0) return 0;
-    
-    new DBResult: geolite_result,
-
-        geolite_octet1, geolite_octet2, geolite_octet3, geolite_octet4,
-
-        calculations[24], query[305];
-
-    sscanf(geolite_ip, "p<.>dddd", geolite_octet1, geolite_octet2, geolite_octet3, geolite_octet4);
-
-    format(calculations, sizeof (calculations), "(16777216*%d+%d)", geolite_octet1, (65536 * geolite_octet2) + (256 * geolite_octet3) + geolite_octet4);
-    format(query, sizeof (query),
-
-        "SELECT CASE (ip_from<=%s) \
-                WHEN 1 THEN autonomous_system_organization \
-                ELSE 'Unknown' \
-                END AS autonomous_system_organization \
-           FROM asn_blocks AS b,asn_organizations AS o \
-          WHERE b.autonomous_system_number=o.autonomous_system_number AND ip_to>=%s \
-          ORDER BY ip_to LIMIT 1;",
-
-    calculations, calculations);
-
-    geolite_result = db_query(GEOLITE_asn_db, query);
-    db_get_field(geolite_result, 0, geolite_dest, geolite_len);
-    db_free_result(geolite_result);
-    return 1;
-}
-
-stock GetIpCountry(const geolite_ip[], geolite_dest[], geolite_len = sizeof (geolite_dest))
-{
-    if (GEOLITE_country_db == DB: 0) return 0;
-    
-    new DBResult: geolite_result,
-
-        geolite_octet1, geolite_octet2, geolite_octet3, geolite_octet4,
-
-        calculations[24], query[245];
-
-    sscanf(geolite_ip, "p<.>dddd", geolite_octet1, geolite_octet2, geolite_octet3, geolite_octet4);
-
-    format(calculations, sizeof (calculations), "(16777216*%d+%d)", geolite_octet1, (65536 * geolite_octet2) + (256 * geolite_octet3) + geolite_octet4);
-    format(query, sizeof (query),
-
-        "SELECT CASE (ip_from<=%s) \
-                WHEN 1 THEN country_name \
-                ELSE 'Unknown' \
-                END AS country_name \
-           FROM country_blocks AS b,country_locations AS l \
-          WHERE b.geoname_id=l.geoname_id AND ip_to>=%s \
-          ORDER BY ip_to LIMIT 1;",
-
-    calculations, calculations);
-
-    geolite_result = db_query(GEOLITE_country_db, query);
-    db_get_field(geolite_result, 0, geolite_dest, geolite_len);
-    db_free_result(geolite_result);
-    return 1;
-}
-
-stock GetIpCity(const geolite_ip[], geolite_dest[], geolite_len = sizeof (geolite_dest))
-{
-    if (GEOLITE_city_db == DB: 0) return 0;
-    
-    new DBResult: geolite_result,
-
-        geolite_octet1, geolite_octet2, geolite_octet3, geolite_octet4,
-
-        calculations[24], query[235];
-
-    sscanf(geolite_ip, "p<.>dddd", geolite_octet1, geolite_octet2, geolite_octet3, geolite_octet4);
-
-    format(calculations, sizeof (calculations), "(16777216*%d+%d)", geolite_octet1, (65536 * geolite_octet2) + (256 * geolite_octet3) + geolite_octet4);
-    format(query, sizeof (query),
-
-        "SELECT CASE (ip_from<=%s) \
-                WHEN 1 THEN city_name \
-                ELSE 'Unknown' \
-                END AS city_name \
-           FROM city_blocks AS b,city_locations AS l \
-          WHERE b.geoname_id=l.geoname_id AND ip_to>=%s \
-          ORDER BY ip_to LIMIT 1;",
-
-    calculations, calculations);
-
-    geolite_result = db_query(GEOLITE_city_db, query);
-    db_get_field(geolite_result, 0, geolite_dest, geolite_len);
-    db_free_result(geolite_result);
-    return 1;
-}
-
-stock GetIpProvince(const geolite_ip[], geolite_dest[], geolite_len = sizeof (geolite_dest))
-{
-    if (GEOLITE_province_db == DB: 0) return 0;
-
-    new DBResult: geolite_result,
-
-        geolite_octet1, geolite_octet2, geolite_octet3, geolite_octet4,
-
-        calculations[24], query[261];
-
-    sscanf(geolite_ip, "p<.>dddd", geolite_octet1, geolite_octet2, geolite_octet3, geolite_octet4);
-
-    format(calculations, sizeof (calculations), "(16777216*%d+%d)", geolite_octet1, (65536 * geolite_octet2) + (256 * geolite_octet3) + geolite_octet4);
-    format(query, sizeof (query),
-
-        "SELECT CASE (ip_from<=%s) \
-                WHEN 1 THEN subdivision_1_name \
-                ELSE 'Unknown' \
-                END AS subdivision_1_name \
-           FROM province_blocks AS b,province_locations AS l \
-          WHERE b.geoname_id=l.geoname_id AND ip_to>=%s \
-          ORDER BY ip_to LIMIT 1;",
-
-    calculations, calculations);
-
-    geolite_result = db_query(GEOLITE_province_db, query);
-    db_get_field(geolite_result, 0, geolite_dest, geolite_len);
-    db_free_result(geolite_result);
-    return 1;
-}
-
-stock GetIpUTC(const geolite_ip[], geolite_dest[], geolite_len = sizeof (geolite_dest))
-{
-    if (GEOLITE_city_db == DB: 0) return 0;
-    
-    new DBResult: geolite_result,
-
-        geolite_octet1, geolite_octet2, geolite_octet3, geolite_octet4,
-
-        calculations[24], query[234];
-
-    sscanf(geolite_ip, "p<.>dddd", geolite_octet1, geolite_octet2, geolite_octet3, geolite_octet4);
-
-    format(calculations, sizeof (calculations), "(16777216*%d+%d)", geolite_octet1, (65536 * geolite_octet2) + (256 * geolite_octet3) + geolite_octet4);
-    format(query, sizeof (query),
-
-        "SELECT CASE (ip_from<=%s) \
-                WHEN 1 THEN time_zone \
-                ELSE '+00:00' \
-                END AS time_zone \
-           FROM city_blocks AS b,city_locations AS l \
-          WHERE b.geoname_id=l.geoname_id AND ip_to>=%s \
-          ORDER BY ip_to LIMIT 1;",
-
-    calculations, calculations);
-
-    geolite_result = db_query(GEOLITE_city_db, query);
-    db_get_field(geolite_result, 0, geolite_dest, geolite_len);
-    db_free_result(geolite_result);
-    return 1;
-}
-
-stock IsIpProxy(const geolite_ip[])
-{
-    new geolite_AP[MAX_COUNTRY_LENGTH];
-
-    if (GEOLITE_country_db != DB: 0)
-    {
-        return (GetIpCountry(geolite_ip, geolite_AP, MAX_COUNTRY_LENGTH) &&
-            !strcmp(geolite_AP, "Anonymous Proxy"));
-    }
-    else if (GEOLITE_city_db != DB: 0)
-    {
-        return (GetIpCity(geolite_ip, geolite_AP, MAX_COUNTRY_LENGTH) &&
-            !strcmp(geolite_AP, "Anonymous Proxy"));
-    }
-    return 0;
-}
-
-/*
-
-native GetPlayerAutonomousSystem(playerid, geolite_dest[], geolite_len = sizeof (geolite_dest));
-native GetPlayerCountry(playerid, geolite_dest[], geolite_len = sizeof (geolite_dest));
-native GetPlayerCity(playerid, geolite_dest[], geolite_len = sizeof (geolite_dest));
-native GetPlayerProvince(playerid, geolite_dest[], geolite_len = sizeof (geolite_dest));
-native GetPlayerUTC(playerid, geolite_dest[], geolite_len = sizeof (geolite_dest));
-native IsPlayerUsingProxy(playerid);
-
-*/
-
-stock GetPlayerAutonomousSystem(playerid, geolite_dest[], geolite_len = sizeof (geolite_dest))
-{
-    new geolite_ip[16];
-
-    return (GetPlayerIp(playerid, geolite_ip, sizeof (geolite_ip)) != -1
-        && GetIpAutonomousSystem(geolite_ip, geolite_dest, geolite_len));
-}
-
-stock GetPlayerCountry(playerid, geolite_dest[], geolite_len = sizeof (geolite_dest))
-{
-    new geolite_ip[16];
-
-    return (GetPlayerIp(playerid, geolite_ip, sizeof (geolite_ip)) != -1
-        && GetIpCountry(geolite_ip, geolite_dest, geolite_len));
-}
-
-stock GetPlayerCity(playerid, geolite_dest[], geolite_len = sizeof (geolite_dest))
-{
-    new geolite_ip[16];
-
-    return (GetPlayerIp(playerid, geolite_ip, sizeof (geolite_ip)) != -1
-        && GetIpCity(geolite_ip, geolite_dest, geolite_len));
-}
-
-stock GetPlayerProvince(playerid, geolite_dest[], geolite_len = sizeof (geolite_dest))
-{
-    new geolite_ip[16];
-
-    return (GetPlayerIp(playerid, geolite_ip, sizeof (geolite_ip)) != -1
-        && GetIpProvince(geolite_ip, geolite_dest, geolite_len));
-}
-
-stock GetPlayerUTC(playerid, geolite_dest[], geolite_len = sizeof (geolite_dest))
-{
-    new geolite_ip[16];
-
-    return (GetPlayerIp(playerid, geolite_ip, sizeof (geolite_ip)) != -1
-        && GetIpUTC(geolite_ip, geolite_dest, geolite_len));
-}
-
-stock IsPlayerUsingProxy(playerid)
-{
-    new geolite_ip[16];
-
-    return (GetPlayerIp(playerid, geolite_ip, sizeof (geolite_ip)) != -1
-        && IsIpProxy(geolite_ip));
-}
-
-/*
-
-Internal functions:
-    geolite_open_dbs();
-    geolite_close_dbs();
+stock GetIPCountry(ip[], dest[], const len = sizeof(dest)) {
+	new tmp[90];
+	tmp = ip2long(ip);
 	
-*/
+	new string[500];
+	
+	geoip_db = db_open(GeoIP_MainFile);
+	
+	if(g_iBackwardsCompat == -1) {
+	    _result = db_query(geoip_db, "SELECT name FROM sqlite_master WHERE type='table' AND name='ip_country'");
+	    if(db_num_rows(_result) >= 1)
+        {
+            g_iBackwardsCompat = 1;
+        }
+        else
+        {
+            g_iBackwardsCompat = 0;
+		}
+		db_free_result(_result);
+	}
+	
+	if(g_iBackwardsCompat == 1) {
+	    format(string, sizeof(string), "SELECT cn FROM ip_country WHERE idx >= (%s-(%s %% 65536)) AND ip_to >= %s AND  ip_from < %s LIMIT 1", tmp, tmp, tmp, tmp);
+	} else {
+		format(string, sizeof(string), "SELECT loc.*\n FROM loc_country loc,\n blocks_country blk\n WHERE blk.idx >= (%s-(%s %% 65536))\n AND blk.startIpNum < %s\n AND blk.endIpNum > %s\n AND loc.locId = blk.locId LIMIT 1;", tmp, tmp, tmp, tmp);
+	}
 
-static geolite_open_dbs()
-{
-    if (fexist("maxmind_asn.db"))
+    _result = db_query(geoip_db, string);
+    if(db_num_rows(_result) >= 1)
     {
-        GEOLITE_asn_db = db_open("maxmind_asn.db");
-        db_free_result(db_query(GEOLITE_asn_db, "PRAGMA query_only = ON"));
+  		db_get_field_assoc(_result,"cn",dest,len);
     }
-
-    if (fexist("maxmind_country.db"))
-    {
-        GEOLITE_country_db = db_open("maxmind_country.db");
-        db_free_result(db_query(GEOLITE_country_db, "PRAGMA query_only = ON"));
-    }
-
-    if (fexist("maxmind_city.db"))
-    {
-        GEOLITE_city_db = db_open("maxmind_city.db");
-        db_free_result(db_query(GEOLITE_city_db, "PRAGMA query_only = ON"));
-    }
-    
-    if (fexist("maxmind_province.db"))
-    {
-        GEOLITE_province_db = db_open("maxmind_province.db");
-        db_free_result(db_query(GEOLITE_province_db, "PRAGMA query_only = ON"));
-    }
+    db_free_result(_result);
+	db_close(geoip_db);
+	
+	if(!strlen(dest)) format(dest, len, "Unknown");
+	
+	return true;
 }
 
-static geolite_close_dbs()
+stock GetIPISP(ip[], dest[], const len = sizeof(dest)) {
+
+	new tmp[90];
+	tmp = ip2long(ip);
+	
+	new string[500];
+	format(string, sizeof(string), "SELECT internet_service_provider FROM geo_isp WHERE idx >= (%s-(%s %% 65536)) AND ip_to >= %s AND  ip_from < %s LIMIT 1", tmp, tmp, tmp, tmp);
+
+	geoip_db = db_open(GeoIP_MainFile);
+    _result = db_query(geoip_db, string);
+    if(db_num_rows(_result) >= 1)
+    {
+        db_get_field_assoc(_result,"internet_service_provider",dest,len);
+    }
+    db_free_result(_result);
+	db_close(geoip_db);
+	
+	if(!strlen(dest)) format(dest, len, "Unknown");
+
+	return true;
+}
+
+stock GetIPCity(ip[], dest[], const len = sizeof(dest)) {
+	new tmp[90];
+	tmp = ip2long(ip);
+	
+	new string[500];
+	format(string, sizeof(string), "SELECT loc.*\n FROM geolocation loc,\n geoblocks blk\n WHERE blk.idx = (%s-(%s %% 65536))\n AND blk.startIpNum < %s\n AND blk.endIpNum > %s\n AND loc.locId = blk.locId LIMIT 1;", tmp, tmp, tmp, tmp);
+
+	geoip_city = db_open(GeoIP_CityFile);
+    _result = db_query(geoip_city, string);
+    if(db_num_rows(_result) >= 1)
+    {
+        db_get_field_assoc(_result,"city",dest,len);
+    }
+    db_free_result(_result);
+	db_close(geoip_city);
+	
+	if(!strlen(dest)) format(dest, len, "Unknown");
+	
+	return true;
+}
+
+stock GetIPGMT(ip[]) {
+	new tmp[90];
+	tmp = ip2long(ip);
+	
+	new dest[50];
+	
+	new string[500];
+	format(string, sizeof(string), "SELECT blk.*, loc.longitude\n FROM geolocation loc,\n geoblocks blk\n WHERE blk.idx = (%s-(%s %% 65536))\n AND blk.startIpNum < %s\n AND blk.endIpNum > %s\n AND loc.locId = blk.locId LIMIT 1;", tmp, tmp, tmp, tmp);
+
+	geoip_city = db_open(GeoIP_CityFile);
+    _result = db_query(geoip_city, string);
+    if(db_num_rows(_result) >= 1)
+    {
+        db_get_field_assoc(_result, "longitude", dest, sizeof(dest));
+    }
+    db_free_result(_result);
+	db_close(geoip_city);
+	
+	if(!strlen(dest)) format(dest, sizeof(dest), "Unknown");
+	
+	return floatround( strval( dest ) / 15 );
+}
+
+stock GetIPProxy(ip[]) {
+
+    /*if(g_iBackwardsCompat == -1) {
+	    _result = db_query(geoip_db, "SELECT name FROM sqlite_master WHERE type='table' AND name='ip_country'");
+	    if(db_num_rows(_result) >= 1)
+        {
+            g_iBackwardsCompat = 1;
+        }
+        else
+        {
+            g_iBackwardsCompat = 0;
+		}
+	}
+	
+	if(g_iBackwardsCompat == 1) {
+	    printf("Error: GetIPProxy cannot work on old GeoIP Database files, please update your database files!");
+	    printf("http://forum.sa-mp.com/showthread.php?t=296171");
+	    return false;
+	}
+	if(strlen(ip) > 0) {
+	
+		new tmp[90];
+		tmp = ip2long(ip);
+
+		new dest[50];
+
+		new string[500];
+		format(string, sizeof(string), "SELECT blk.*\n FROM geolocation loc,\n geoblocks blk\n WHERE blk.idx = (%s-(%s %% 65536))\n AND blk.startIpNum < %s\n AND blk.endIpNum > %s\n AND loc.locId = blk.locId LIMIT 1;", tmp, tmp, tmp, tmp);
+
+		geoip_city = db_open(GeoIP_CityFile);
+		_result = db_query(geoip_city, string);
+		if(db_num_rows(_result) >= 1)
+		{
+			db_get_field_assoc(_result, "is_anonymous_proxy", dest, sizeof(dest));
+		}
+		db_free_result(_result);
+		db_close(geoip_city);
+		
+		return strval(dest);
+	}*/
+	
+	#pragma unused ip
+	return false;
+}
+
+/*forward OnProxyRecieved(index, response_code, data[]);
+public OnProxyRecieved(index, response_code, data[]) {
+
+	if(IsPlayerConnected(index)) {
+	
+		new ip[MAX_PLAYER_NAME];
+		GetPlayerIp(index, ip, sizeof(ip));
+		
+		if(strlen(IPInfo[index]) > 0 && strlen(ip) > 0 && !strcmp(IPInfo[index], ip, true)) {
+			CallLocalFunction("OnProxyResponse", "ii",  index, strval(data));
+		}
+	}
+	IPInfo[index] = "";
+}*/
+
+stock ip2long(ip[]) {
+	new ips[4];
+	sscanf_(ip, "p.dddd", ips[0], ips[1], ips[2], ips[3]);
+	new tmp[90];
+	format(tmp, sizeof(tmp), "((16777216 * %d) + (65536 * %d) + (256 * %d) + %d)", ips[0], ips[1], ips[2], ips[3]);
+	// we use a string here so it will not pass the 32-bit integer limits, the math is done later in the sql query
+	return tmp;
+}
+
+/*
+
+	---------------------------------------------------------------------------------------
+	SECONDARY FUNCTIONS
+	---------------------------------------------------------------------------------------
+	
+	- stock sscanf_(string[], format[], {Float,_}:...)
+
+*/
+
+stock sscanf_(string[], format[], {Float,_}:...) // by Y_Less
 {
-    if (GEOLITE_asn_db != DB: 0)
-    {
-        db_close(GEOLITE_asn_db);
-    }
+	#if defined isnull
+		if (isnull(string))
+	#else
+		if (string[0] == 0 || (string[0] == 1 && string[1] == 0))
+	#endif
+		{
+			return format[0];
+		}
+	#pragma tabsize 4
+	new
+		formatPos = 0,
+		stringPos = 0,
+		paramPos = 2,
+		paramCount = numargs(),
+		delim = ' ';
+	while (string[stringPos] && string[stringPos] <= ' ')
+	{
+		stringPos++;
+	}
+	while (paramPos < paramCount && string[stringPos])
+	{
+		switch (format[formatPos++])
+		{
+			case '\0':
+			{
+				return 0;
+			}
+			case 'i', 'd':
+			{
+				new
+					neg = 1,
+					num = 0,
+					ch = string[stringPos];
+				if (ch == '-')
+				{
+					neg = -1;
+					ch = string[++stringPos];
+				}
+				do
+				{
+					stringPos++;
+					if ('0' <= ch <= '9')
+					{
+						num = (num * 10) + (ch - '0');
+					}
+					else
+					{
+						return -1;
+					}
+				}
+				while ((ch = string[stringPos]) > ' ' && ch != delim);
+				setarg(paramPos, 0, num * neg);
+			}
+			case 'h', 'x':
+			{
+				new
+					num = 0,
+					ch = string[stringPos];
+				do
+				{
+					stringPos++;
+					switch (ch)
+					{
+						case 'x', 'X':
+						{
+							num = 0;
+							continue;
+						}
+						case '0' .. '9':
+						{
+							num = (num << 4) | (ch - '0');
+						}
+						case 'a' .. 'f':
+						{
+							num = (num << 4) | (ch - ('a' - 10));
+						}
+						case 'A' .. 'F':
+						{
+							num = (num << 4) | (ch - ('A' - 10));
+						}
+						default:
+						{
+							return -1;
+						}
+					}
+				}
+				while ((ch = string[stringPos]) > ' ' && ch != delim);
+				setarg(paramPos, 0, num);
+			}
+			case 'c':
+			{
+				setarg(paramPos, 0, string[stringPos++]);
+			}
+			case 'f':
+			{
 
-    if (GEOLITE_country_db != DB: 0)
-    {
-        db_close(GEOLITE_country_db);
-    }
-
-    if (GEOLITE_city_db != DB: 0)
-    {
-        db_close(GEOLITE_city_db);
-    }
-    
-    if (GEOLITE_province_db != DB: 0)
-    {
-        db_close(GEOLITE_province_db);
-    }
+				new changestr[16], changepos = 0, strpos = stringPos;
+				while(changepos < 16 && string[strpos] && string[strpos] != delim)
+				{
+					changestr[changepos++] = string[strpos++];
+   				}
+				changestr[changepos] = '\0';
+				setarg(paramPos,0,_:floatstr(changestr));
+			}
+			case 'p':
+			{
+				delim = format[formatPos++];
+				continue;
+			}
+			case '\'':
+			{
+				new
+					end = formatPos - 1,
+					ch;
+				while ((ch = format[++end]) && ch != '\'') {}
+				if (!ch)
+				{
+					return -1;
+				}
+				format[end] = '\0';
+				if ((ch = strfind(string, format[formatPos], false, stringPos)) == -1)
+				{
+					if (format[end + 1])
+					{
+						return -1;
+					}
+					return 0;
+				}
+				format[end] = '\'';
+				stringPos = ch + (end - formatPos);
+				formatPos = end + 1;
+			}
+			case 'u':
+			{
+				new
+					end = stringPos - 1,
+					id = 0,
+					bool:num = true,
+					ch;
+				while ((ch = string[++end]) && ch != delim)
+				{
+					if (num)
+					{
+						if ('0' <= ch <= '9')
+						{
+							id = (id * 10) + (ch - '0');
+						}
+						else
+						{
+							num = false;
+						}
+					}
+				}
+				if (num && IsPlayerConnected(id))
+				{
+					setarg(paramPos, 0, id);
+				}
+				else
+				{
+					#if !defined foreach
+						#define foreach(%1,%2) for (new %2 = 0; %2 < MAX_PLAYERS; %2++) if (IsPlayerConnected(%2))
+						#define __SSCANF_FOREACH__
+					#endif
+					string[end] = '\0';
+					num = false;
+					new
+						name[MAX_PLAYER_NAME];
+					id = end - stringPos;
+					foreach (Player, playerid)
+					{
+						GetPlayerName(playerid, name, sizeof (name));
+						if (!strcmp(name, string[stringPos], true, id))
+						{
+							setarg(paramPos, 0, playerid);
+							num = true;
+							break;
+						}
+					}
+					if (!num)
+					{
+						setarg(paramPos, 0, INVALID_PLAYER_ID);
+					}
+					string[end] = ch;
+					#if defined __SSCANF_FOREACH__
+						#undef foreach
+						#undef __SSCANF_FOREACH__
+					#endif
+				}
+				stringPos = end;
+			}
+			case 's', 'z':
+			{
+				new
+					i = 0,
+					ch;
+				if (format[formatPos])
+				{
+					while ((ch = string[stringPos++]) && ch != delim)
+					{
+						setarg(paramPos, i++, ch);
+					}
+					if (!i)
+					{
+						return -1;
+					}
+				}
+				else
+				{
+					while ((ch = string[stringPos++]))
+					{
+						setarg(paramPos, i++, ch);
+					}
+				}
+				stringPos--;
+				setarg(paramPos, i, '\0');
+			}
+			default:
+			{
+				continue;
+			}
+		}
+		while (string[stringPos] && string[stringPos] != delim && string[stringPos] > ' ')
+		{
+			stringPos++;
+		}
+		while (string[stringPos] && (string[stringPos] == delim || string[stringPos] <= ' '))
+		{
+			stringPos++;
+		}
+		paramPos++;
+	}
+	do
+	{
+		if ((delim = format[formatPos++]) > ' ')
+		{
+			if (delim == '\'')
+			{
+				while ((delim = format[formatPos++]) && delim != '\'') {}
+			}
+			else if (delim != 'z')
+			{
+				return delim;
+			}
+		}
+	}
+	while (delim > ' ');
+	return 0;
 }

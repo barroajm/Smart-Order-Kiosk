@@ -107,7 +107,7 @@ native RNPC_CreateCustomBuild(type, name[]);
 #if defined RNPC_DEBUG
 	stock RNPC_TEMP_SendClientMessage(playerid, color, text[], len=sizeof(text)) {
 		#pragma unused len
-		// if (IsPlayerNPC(playerid))
+		// if (IsPlayerRNPC(playerid))
 		// not needed here as this include doesnt communicate with real players anyways
 		printf("RNPC %d <-- [CMD] %s", playerid, text);
 		SendClientMessage(playerid, color, text);
@@ -155,7 +155,7 @@ stock ConnectRNPC(name[])
  */
 stock MoveRNPC(npcid, Float:x, Float:y, Float:z, Float:speed, use_zmap=0)
 {
-	if (!IsPlayerNPC(npcid)) return false;
+	if (!IsPlayerRNPC(npcid)) return false;
 	
 	new Float:nx, Float:ny, Float:nz;
 	new slot;
@@ -193,7 +193,7 @@ stock RNPC_CreateBuild_s(npcid, type, slot=0) {
  */
 stock RNPC_StartPlayback(npcid, rec[])
 {
-	if (!IsPlayerNPC(npcid)) return false;
+	if (!IsPlayerRNPC(npcid)) return false;
 	
 	new form[40];
 	format(form, 40, "RNPC:109:%s", rec);
@@ -326,7 +326,7 @@ public ResetVehicleHit(npcid) {
 	public OnPlayerCommandText(playerid, cmdtext[])
 #endif
 {
-	if (!IsPlayerNPC(playerid)) return CallLocalFunction(OPCT_HOOKNAME, "is", playerid, cmdtext);
+	if (!IsPlayerRNPC(playerid)) return CallLocalFunction(OPCT_HOOKNAME, "is", playerid, cmdtext);
 	
 	#if defined RNPC_DEBUG
 		printf("RNPC %d --> [CMD] %s", playerid, cmdtext);
@@ -464,11 +464,12 @@ public ResetVehicleHit(npcid) {
 	forward RNPC_OnPlayerCommandText(playerid, cmdtext[]);
 #endif
 
+
 /**
  *	Updating the data when the bot connected.
  */
 public OnPlayerConnect(playerid) {
-	if (!IsPlayerNPC(playerid)) return CallLocalFunction("RNPC_OnPlayerConnect", "i", playerid);
+	if (!IsPlayerRNPC(playerid)) return CallLocalFunction("RNPC_OnPlayerConnect", "i", playerid);
 	
 	rnpcPend{playerid} = RNPC_CONNECTED;
 	rnpcCurSlot{playerid} = -1;	
@@ -492,7 +493,7 @@ forward RNPC_OnPlayerConnect(playerid);
  *	Clearing the data when the bot disconnects.
  */
 public OnPlayerDisconnect(playerid, reason) {
-	if (!IsPlayerNPC(playerid)) return CallLocalFunction("RNPC_OnPlayerDisconnect", "ii", playerid, reason);
+	if (!IsPlayerRNPC(playerid)) return CallLocalFunction("RNPC_OnPlayerDisconnect", "ii", playerid, reason);
 
 	rnpcPend{playerid} = RNPC_NOT_EXISTING;
 	rnpcCurSlot{playerid} = -1;
@@ -513,7 +514,7 @@ forward RNPC_OnPlayerDisconnect(playerid, reason);
  *	Setting spawn-related data (health etc)
  */
 public OnPlayerSpawn(playerid) {
-	if (IsPlayerNPC(playerid)) {
+	if (IsPlayerRNPC(playerid)) {
 	
 		rnpcData[playerid][RNPC_HEALTH] = 100.0;
 		rnpcData[playerid][RNPC_DEAD] = 0;
@@ -537,12 +538,9 @@ forward RNPC_OnPlayerSpawn(playerid);
 
 public OnPlayerGiveDamage(playerid, damagedid, Float: amount, weaponid, bodypart)
 {	
-    if(playerid < MAX_PLAYERS && damagedid < MAX_PLAYERS)
-    {
-        if (rnpcData[damagedid][RNPC_SHOOTABLE] && IsPlayerNPC(damagedid)) {
-			SetRNPCHealth(damagedid, GetRNPCHealth(damagedid) - amount, playerid, weaponid);
-		}
-    }
+	if (rnpcData[damagedid][RNPC_SHOOTABLE] && IsPlayerRNPC(damagedid)) {
+		SetRNPCHealth(damagedid, GetRNPCHealth(damagedid) - amount, playerid, weaponid);
+	}	
     return CallLocalFunction("RNPC_OnPlayerGiveDamage", "iifii", playerid, damagedid, amount, weaponid, bodypart);
 }
 #if defined _ALS_OnPlayerGiveDamage
@@ -556,7 +554,7 @@ forward RNPC_OnPlayerGiveDamage(playerid, damagedid, Float: amount, weaponid, bo
 #if !defined RNPC_DONT_USE_DEAD_STREAMIN_FIX
 	public OnPlayerStreamIn(playerid, forplayerid)
 	{	
-		if (IsPlayerNPC(playerid)) {
+		if (IsPlayerRNPC(playerid)) {
 			if (rnpcData[playerid][RNPC_DEAD] > 0) {
 				ApplyAnimation(playerid, "PED", "KO_skid_back", 4.1, 0, 1, 1, 1, 0, 1);
 			}
@@ -577,52 +575,55 @@ forward RNPC_OnPlayerGiveDamage(playerid, damagedid, Float: amount, weaponid, bo
 // End of user functions ---------------------------------------------------
 
 // Version checker and stats collector
-public OnGameModeInit() {
-	/*printf("  RNPC versionchecker: checking for updates...");
-	new url[72];
-	format(url, sizeof(url), "version=%d&port=%d", RNPC_BUILD, GetServerVarAsInt("port"));
-	HTTP(9000, HTTP_POST, RNPC_VERSION_STARTURL, url, "RNPC_http_versioncheck");	*/
-
-	return CallLocalFunction("RNPC_OnGameModeInit", "");
-}
-#if defined _ALS_OnGameModeInit
-	#undef OnGameModeInit
-#else
-	#define _ALS_OnGameModeInit
-#endif
-#define OnGameModeInit RNPC_OnGameModeInit
-forward RNPC_OnGameModeInit();
-
-forward RNPC_http_versioncheck(index, response_code, data[]);
-public RNPC_http_versioncheck(index, response_code, data[]) {
-	if (index != 9000) return;
+#if !defined RNPC_NO_VERSION_CHECK
+	#include <a_http>
+	public OnGameModeInit() {
+		printf("  RNPC versionchecker: checking for updates..."); 
+		new url[72];
+		format(url, sizeof(url), "version=%d&port=%d", RNPC_BUILD, GetServerVarAsInt("port"));
+		HTTP(9000, HTTP_POST, RNPC_VERSION_STARTURL, url, "RNPC_http_versioncheck");	
 	
-	if (response_code != 200) {
-		printf("  RNPC versionchecker: Connection problem.");
-		return;
+		return CallLocalFunction("RNPC_OnGameModeInit", "");
 	}
-	
-	if (strlen(data) > 1) {
-		printf("------------------------------------------------------------------");
-		printf("  RNPC versionchecker: New version available!", data);
-		printf("  RNPC versionchecker: Your version: "RNPC_VERSION" ("RNPC_DATE")");
-		printf("  RNPC versionchecker: New version:  %s", data);
-		printf("  RNPC versionchecker: Check "RNPC_VERSION_DLPAGE" for downloads");
-		printf("------------------------------------------------------------------");
+	#if defined _ALS_OnGameModeInit
+		#undef OnGameModeInit
+	#else
+		#define _ALS_OnGameModeInit
+	#endif
+	#define OnGameModeInit RNPC_OnGameModeInit
+	forward RNPC_OnGameModeInit();
+
+	forward RNPC_http_versioncheck(index, response_code, data[]);
+	public RNPC_http_versioncheck(index, response_code, data[]) {
+		if (index != 9000) return;
+		
+		if (response_code != 200) {
+			printf("  RNPC versionchecker: Connection problem.");
+			return;
+		}
+		
+		if (strlen(data) > 1) {
+			printf("------------------------------------------------------------------");
+			printf("  RNPC versionchecker: New version available!", data);
+			printf("  RNPC versionchecker: Your version: "RNPC_VERSION" ("RNPC_DATE")");
+			printf("  RNPC versionchecker: New version:  %s", data);
+			printf("  RNPC versionchecker: Check "RNPC_VERSION_DLPAGE" for downloads");
+			printf("------------------------------------------------------------------");
+		}
+		
+		#if !defined RNPC_NO_STATUPDATES
+			SetTimer("RNPC_http_statupdater", 60000 * 15, 1);
+		#endif
 	}
 	
 	#if !defined RNPC_NO_STATUPDATES
-		SetTimer("RNPC_http_statupdater", 60000 * 15, 1);
+		forward RNPC_http_statupdater();
+		public RNPC_http_statupdater() {
+			new url[64];
+			format(url, sizeof(url), "version=%d&port=%d", RNPC_BUILD, GetServerVarAsInt("port"));
+			HTTP(0, HTTP_POST, RNPC_VERSION_UPDATEURL, url, "RNPC_http_versioncheck");
+		}
 	#endif
-}
-
-#if !defined RNPC_NO_STATUPDATES
-	forward RNPC_http_statupdater();
-	public RNPC_http_statupdater() {
-		new url[64];
-		format(url, sizeof(url), "version=%d&port=%d", RNPC_BUILD, GetServerVarAsInt("port"));
-		HTTP(0, HTTP_POST, RNPC_VERSION_UPDATEURL, url, "RNPC_http_versioncheck");
-	}
 #endif
 
 

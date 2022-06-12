@@ -1,6 +1,6 @@
 /*
-    SA-MP IRC Plugin v1.3.6
-    Copyright © 2010 Incognito
+    SA-MP IRC Plugin v1.4.1
+    Copyright © 2011 Incognito
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -20,7 +20,17 @@
 	#endinput
 #endif
 #define _irc_included
-#pragma library irc
+
+#include <a_samp>
+
+// Enumerator
+
+enum
+{
+	E_IRC_CONNECT_ATTEMPTS,
+	E_IRC_CONNECT_DELAY,
+	E_IRC_CONNECT_TIMEOUT
+}
 
 // Natives
 
@@ -38,6 +48,8 @@ native IRC_KickUser(botid, const channel[], const user[], const message[] = "");
 native IRC_GetUserChannelMode(botid, const channel[], const user[], dest[]);
 native IRC_GetChannelUserList(botid, const channel[], dest[], maxlength = sizeof dest);
 native IRC_SetChannelTopic(botid, const channel[], const topic[]);
+native IRC_RequestCTCP(botid, const user[], const message[]);
+native IRC_ReplyCTCP(botid, const user[], const message[]);
 native IRC_SendRaw(botid, const message[]);
 native IRC_CreateGroup();
 native IRC_DestroyGroup(groupid);
@@ -45,30 +57,35 @@ native IRC_AddToGroup(groupid, botid);
 native IRC_RemoveFromGroup(groupid, botid);
 native IRC_GroupSay(groupid, const target[], const message[]);
 native IRC_GroupNotice(groupid, const target[], const message[]);
+native IRC_SetIntData(botid, data, value);
 
 // Callbacks
 
-forward IRC_OnConnect(botid);
-forward IRC_OnDisconnect(botid);
+forward IRC_OnConnect(botid, ip[], port);
+forward IRC_OnDisconnect(botid, ip[], port, reason[]);
+forward IRC_OnConnectAttempt(botid, ip[], port);
+forward IRC_OnConnectAttemptFail(botid, ip[], port, reason[]);
 forward IRC_OnJoinChannel(botid, channel[]);
 forward IRC_OnLeaveChannel(botid, channel[], message[]);
+forward IRC_OnKickedFromChannel(botid, channel[], oppeduser[], oppedhost[], message[]);
 forward IRC_OnUserDisconnect(botid, user[], host[], message[]);
 forward IRC_OnUserJoinChannel(botid, channel[], user[], host[]);
 forward IRC_OnUserLeaveChannel(botid, channel[], user[], host[], message[]);
+forward IRC_OnUserKickedFromChannel(botid, channel[], kickeduser[], oppeduser[], oppedhost[], message[]);
 forward IRC_OnUserNickChange(botid, oldnick[], newnick[], host[]);
 forward IRC_OnUserSetChannelMode(botid, channel[], user[], host[], mode[]);
 forward IRC_OnUserSetChannelTopic(botid, channel[], user[], host[], topic[]);
 forward IRC_OnUserSay(botid, recipient[], user[], host[], message[]);
 forward IRC_OnUserNotice(botid, recipient[], user[], host[], message[]);
+forward IRC_OnUserRequestCTCP(botid, user[], host[], message[]);
+forward IRC_OnUserReplyCTCP(botid, user[], host[], message[]);
 forward IRC_OnReceiveRaw(botid, message[]);
 
 // Stock Functions
 
-stock
-	IRC_IsVoice(botid, channel[], user[])
+stock IRC_IsVoice(botid, channel[], user[])
 {
-	new
-		mode[2];
+	new mode[2];
 	IRC_GetUserChannelMode(botid, channel, user, mode);
 	switch (mode[0])
 	{
@@ -80,11 +97,9 @@ stock
 	return 0;
 }
 
-stock
-	IRC_IsHalfop(botid, channel[], user[])
+stock IRC_IsHalfop(botid, channel[], user[])
 {
-	new
-		mode[2];
+	new mode[2];
 	IRC_GetUserChannelMode(botid, channel, user, mode);
 	switch (mode[0])
 	{
@@ -97,11 +112,9 @@ stock
 	return 0;
 }
 
-stock
-	IRC_IsOp(botid, channel[], user[])
+stock IRC_IsOp(botid, channel[], user[])
 {
-	new
-		mode[2];
+	new mode[2];
 	IRC_GetUserChannelMode(botid, channel, user, mode);
 	switch (mode[0])
 	{
@@ -114,11 +127,9 @@ stock
 	return 0;
 }
 
-stock
-	IRC_IsAdmin(botid, channel[], user[])
+stock IRC_IsAdmin(botid, channel[], user[])
 {
-	new
-		mode[2];
+	new mode[2];
 	IRC_GetUserChannelMode(botid, channel, user, mode);
 	switch (mode[0])
 	{
@@ -131,11 +142,9 @@ stock
 	return 0;
 }
 
-stock
-	IRC_IsOwner(botid, channel[], user[])
+stock IRC_IsOwner(botid, channel[], user[])
 {
-	new
-		mode[2];
+	new mode[2];
 	IRC_GetUserChannelMode(botid, channel, user, mode);
 	switch (mode[0])
 	{
@@ -149,7 +158,7 @@ stock
 }
 
 // Command system for users in IRC channels
-// Slightly modified zcmd (original by ZeeX)
+// Slightly modified zcmd by Zeex
 
 #define CHANNEL_PREFIX '#'
 #define COMMAND_PREFIX '!'
@@ -166,11 +175,9 @@ stock
 		((!(%1[0])) || (((%1[0]) == '\1') && (!(%1[1]))))
 #endif
 
-static
-	bool:IRC_g_OUS = false;
+static bool:IRC_g_OUS = false;
 
-public
-	OnFilterScriptInit()
+public OnFilterScriptInit()
 {
 	IRC_g_OUS = funcidx("IRC_OUS") != -1;
 	if (funcidx("IRC_OnFilterScriptInit") != -1)
@@ -187,11 +194,9 @@ public
 #endif
 #define OnFilterScriptInit IRC_OnFilterScriptInit
 
-forward
-	IRC_OnFilterScriptInit();
+forward IRC_OnFilterScriptInit();
 
-public
-	OnGameModeInit()
+public OnGameModeInit()
 {
 	IRC_g_OUS = funcidx("IRC_OUS") != -1;
 	if (funcidx("IRC_OnGameModeInit") != -1)
@@ -208,17 +213,13 @@ public
 #endif
 #define OnGameModeInit IRC_OnGameModeInit
 
-forward
-	IRC_OnGameModeInit();
+forward IRC_OnGameModeInit();
 
-public
-	IRC_OnUserSay(botid, recipient[], user[], host[], message[])
+public IRC_OnUserSay(botid, recipient[], user[], host[], message[])
 {
 	if (recipient[0] == CHANNEL_PREFIX && message[0] == COMMAND_PREFIX)
 	{
-		new
-			function[32],
-			pos = 0;
+		new function[32], pos = 0;
 		while (message[++pos] > ' ')
 		{
 			function[pos - 1] = tolower(message[pos]);
@@ -251,5 +252,4 @@ public
 #endif
 #define IRC_OnUserSay IRC_OUS
 
-forward
-	IRC_OUS(botid, recipient[], user[], host[], message[]);
+forward IRC_OUS(botid, recipient[], user[], host[], message[]);

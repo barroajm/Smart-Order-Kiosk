@@ -1,24 +1,22 @@
 /*
-    SA-MP Audio Plugin v0.5
-    Copyright © 2011 Incognito
-
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-*/
+ * Copyright (C) 2012 Incognito
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 #include <a_samp>
 
-// Main Natives
+// Natives (Main)
 
 native Audio_CreateTCPServer(port);
 native Audio_DestroyTCPServer();
@@ -27,14 +25,14 @@ native Audio_IsClientConnected(playerid);
 native Audio_SendMessage(playerid, const message[]);
 native Audio_TransferPack(playerid);
 
-// Sequence Natives
+// Natives (Sequences)
 
 native Audio_CreateSequence();
 native Audio_DestroySequence(sequenceid);
 native Audio_AddToSequence(sequenceid, audioid);
 native Audio_RemoveFromSequence(sequenceid, audioid);
 
-// Audio Natives
+// Natives (Audio)
 
 native Audio_Play(playerid, audioid, bool:pause = false, bool:loop = false, bool:downmix = false);
 native Audio_PlayStreamed(playerid, const url[], bool:pause = false, bool:loop = false, bool:downmix = false);
@@ -51,18 +49,18 @@ native Audio_RemoveFX(playerid, handleid, type);
 native Audio_Set3DPosition(playerid, handleid, Float:x, Float:y, Float:z, Float:distance);
 native Audio_Remove3DPosition(playerid, handleid);
 
-// Radio Station Natives
+// Natives (Radio Stations)
 
 native Audio_SetRadioStation(playerid, station);
 native Audio_StopRadio(playerid);
 
-// Internal Natives
+// Natives (Internal)
 
 native Audio_AddPlayer(playerid, const ip[], const name[]);
 native Audio_RenamePlayer(playerid, const name[]);
 native Audio_RemovePlayer(playerid);
 
-// Main Callbacks
+// Callbacks (Main)
 
 forward Audio_OnClientConnect(playerid);
 forward Audio_OnClientDisconnect(playerid);
@@ -72,7 +70,7 @@ forward Audio_OnStop(playerid, handleid);
 forward Audio_OnTrackChange(playerid, handleid, track[]);
 forward Audio_OnRadioStationChange(playerid, station);
 
-// Custom Callbacks
+// Callbacks (Custom)
 
 forward Audio_OnGetPosition(playerid, handleid, seconds);
 

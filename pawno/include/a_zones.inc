@@ -231,12 +231,12 @@ static const gSAZones[][SAZONE_MAIN] = {  // Majority of names and area coordina
 	{"Little Mexico",               {1758.90,-1722.20,-89.00,1812.60,-1577.50,110.90}},
 	{"Los Flores",                  {2581.70,-1454.30,-89.00,2632.80,-1393.40,110.90}},
 	{"Los Flores",                  {2581.70,-1393.40,-89.00,2747.70,-1135.00,110.90}},
-	{"Los Santos International",    {1249.60,-2394.30,-89.00,1852.00,-2179.20,110.90}},
-	{"Los Santos International",    {1852.00,-2394.30,-89.00,2089.00,-2179.20,110.90}},
-	{"Los Santos International",    {1382.70,-2730.80,-89.00,2201.80,-2394.30,110.90}},
-	{"Los Santos International",    {1974.60,-2394.30,-39.00,2089.00,-2256.50,60.90}},
-	{"Los Santos International",    {1400.90,-2669.20,-39.00,2189.80,-2597.20,60.90}},
-	{"Los Santos International",    {2051.60,-2597.20,-39.00,2152.40,-2394.30,60.90}},
+	{"Los Santos Airport",    	{1249.60,-2394.30,-89.00,1852.00,-2179.20,110.90}},
+	{"Los Santos Airport",   	{1852.00,-2394.30,-89.00,2089.00,-2179.20,110.90}},
+	{"Los Santos Airport",    	{1382.70,-2730.80,-89.00,2201.80,-2394.30,110.90}},
+	{"Los Santos Airport",    	{1974.60,-2394.30,-39.00,2089.00,-2256.50,60.90}},
+	{"Los Santos Airport",  	{1400.90,-2669.20,-39.00,2189.80,-2597.20,60.90}},
+	{"Los Santos Airport",   	{2051.60,-2597.20,-39.00,2152.40,-2394.30,60.90}},
 	{"Marina",                      {647.70,-1804.20,-89.00,851.40,-1577.50,110.90}},
 	{"Marina",                      {647.70,-1577.50,-89.00,807.90,-1416.20,110.90}},
 	{"Marina",                      {807.90,-1577.50,-89.00,926.90,-1416.20,110.90}},
@@ -469,5 +469,18 @@ stock IsPlayerInZone(playerid, zone[]) //Credits to Cueball, Betamaster, Mabako,
 		if(strfind(TmpZone, zone, true) != -1)
 			return 1;
 	}
+	return 0;
+}
+
+stock GetZone(Float: x, Float: y, zone[]) //Credits to Cueball, Betamaster, Mabako, and Simon (for finetuning).
+{
+ 	for(new i = 0; i != sizeof(gSAZones); i++ )
+ 	{
+		if(x >= gSAZones[i][SAZONE_AREA][0] && x <= gSAZones[i][SAZONE_AREA][3] && y >= gSAZones[i][SAZONE_AREA][1] && y <= gSAZones[i][SAZONE_AREA][4])
+		{
+		    return format(zone, MAX_ZONE_NAME, gSAZones[i][SAZONE_NAME], 0);
+		}
+	}
+	
 	return 0;
 }

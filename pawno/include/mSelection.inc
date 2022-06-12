@@ -17,6 +17,168 @@ ShowModelSelectionMenuEx(playerid, items_array[], item_amount, header_text[], ex
 forward OnPlayerModelSelection(playerid, response, listid, modelid);
 forward OnPlayerModelSelectionEx(playerid, response, extraid, modelid);
 
+new BuyingVeh[MAX_PLAYERS];
+
+new VehicleNames2[212][] = {
+   "Landstalker",  "Bravura",  "Buffalo", "Linerunner", "Perennial", "Sentinel",
+   "Dumper",  "Firetruck" ,  "Trashmaster" ,  "Stretch",  "Manana",  "Infernus",
+   "Voodoo", "Pony",  "Mule", "Cheetah", "Ambulance",  "Leviathan",  "Moonbeam",
+   "Esperanto", "Taxi",  "Washington",  "Bobcat",  "Mr Whoopee", "BF Injection",
+   "Hunter", "Premier",  "Enforcer",  "Securicar", "Banshee", "Predator", "Bus",
+   "Rhino",  "Barracks",  "Hotknife",  "Trailer",  "Previon", "Coach", "Cabbie",
+   "Stallion", "Rumpo", "RC Bandit",  "Romero", "Packer", "Monster",  "Admiral",
+   "Squalo", "Seasparrow", "Pizzaboy", "Tram", "Trailer",  "Turismo", "Speeder",
+   "Reefer", "Tropic", "Flatbed","Yankee", "Caddy", "Solair","Berkley's RC Van",
+   "Skimmer", "PCJ-600", "Faggio", "Freeway", "RC Baron","RC Raider","Glendale",
+   "Oceanic", "Sanchez", "Sparrow",  "Patriot", "Quad",  "Coastguard", "Dinghy",
+   "Hermes", "Sabre", "Rustler", "ZR-350", "Walton",  "Regina",  "Comet", "BMX",
+   "Burrito", "Camper", "Marquis", "Baggage", "Dozer","Maverick","News Chopper",
+   "Rancher", "FBI Rancher", "Virgo", "Greenwood","Jetmax","Hotring","Sandking",
+   "Blista Compact", "Police Maverick", "Boxville", "Benson","Mesa","RC Goblin",
+   "Hotring Racer", "Hotring Racer", "Bloodring Banger", "Rancher",  "Super GT",
+   "Elegant", "Journey", "Bike", "Mountain Bike", "Beagle", "Cropdust", "Stunt",
+   "Tanker", "RoadTrain", "Nebula", "Majestic", "Buccaneer", "Shamal",  "Hydra",
+   "FCR-900","NRG-500","HPV1000","Cement Truck","Tow Truck","Fortune","Cadrona",
+   "FBI Truck", "Willard", "Forklift","Tractor","Combine","Feltzer","Remington",
+   "Slamvan", "Blade", "Freight", "Streak","Vortex","Vincent","Bullet","Clover",
+   "Sadler",  "Firetruck", "Hustler", "Intruder", "Primo", "Cargobob",  "Tampa",
+   "Sunrise", "Merit",  "Utility Truck",  "Nevada", "Yosemite", "Windsor",  "Monster",
+   "Monster","Uranus","Jester","Sultan","Stratum","Elegy","Raindance","RCTiger",
+   "Flash","Tahoma","Savanna", "Bandito", "Freight", "Trailer", "Kart", "Mower",
+   "Dune", "Sweeper", "Broadway", "Tornado", "AT-400",  "DFT-30", "Huntley",
+   "Stafford", "BF-400", "Newsvan","Tug","Trailer","Emperor","Wayfarer","Euros",
+   "Hotdog", "Club", "Trailer", "Trailer","Andromada","Dodo","RC Cam", "Launch",
+   "Police Car (LSPD)", "Police Car (SFPD)","Police Car (LVPD)","Police Ranger",
+   "Picador",   "S.W.A.T. Van",  "Alpha",   "Phoenix",   "Glendale",   "Sadler",
+   "Luggage Trailer","Luggage Trailer","Stair Trailer", "Boxville", "Farm Plow",
+   "Utility Trailer"
+};
+
+
+enum DEALERSHIP
+{
+	cCarModel,
+	cCarPrice
+}
+new DonateVehicles[][DEALERSHIP] = {
+{481, 12000},
+{509, 12000},
+{477, 425000},
+{468, 55000},
+{521, 100000},
+{541, 555999},
+{429, 560000}
+};
+
+new VehiclePrices[][DEALERSHIP] = {
+{462, 11999},
+{525, 19500},
+{543, 21000},
+{473, 26000},
+{463, 30500},
+{440, 31000},
+{532, 35500},
+{600, 35999},
+{491, 35999},
+{410, 35999},
+{516, 35999},
+{418, 36000},
+{586, 36000},
+{467, 36500},
+{547, 39500},
+{401, 41500},
+{549, 41999},
+{436, 41999},
+{420, 45500},
+{517, 45999},
+{589, 45999},
+{518, 45999},
+{527, 45999},
+{551, 45999},
+{439, 45999},
+{445, 46000},
+{478, 46000},
+{492, 48999},
+{422, 51000},
+{529, 51500},
+{405, 52500},
+{466, 52999},
+{546, 53999},
+{540, 55500},
+{474, 55999},
+{526, 55999},
+{500, 56000},
+{483, 56000},
+{545, 56000},
+{419, 56781},
+{561, 56999},
+{459, 61000},
+{421, 61500},
+{458, 61500},
+{550, 61999},
+{576, 62500},
+{412, 64500},
+{438, 65500},
+{533, 65999},
+{534, 65999},
+{585, 65999},
+{507, 65999},
+{554, 66000},
+{567, 66500},
+{536, 66500},
+{599, 66500},
+{575, 66999},
+{479, 71400},
+{489, 71750},
+{431, 76000},
+{523, 76000},
+{575, 76500},
+{542, 76500},
+{413, 80000},
+{496, 80299},
+{535, 80999},
+{508, 81800},
+{426, 86500},
+{404, 86500},
+{562, 92999},
+{580, 95999},
+{482, 96500},
+{566, 100500},
+{587, 101000},
+{423, 101500},
+{588, 101500},
+{559, 105999},
+{579, 106500},
+{400, 109999},
+{453, 121000},
+{402, 126000},
+{558, 126000},
+{480, 126500},
+{408, 126500},
+{602, 151000},
+{565, 155999},
+{555, 186000},
+{484, 232200},
+{430, 246000},
+{409, 251000},
+{560, 276000},
+{454, 300999},
+{603, 345000},
+{415, 456999},
+{446, 501000},
+{563, 1001000},
+{417, 1001000},
+{487, 2551000},
+{593, 3501000},
+{481, 12000},
+{509, 12000},
+{477, 425000},
+{468, 55000},
+{521, 100000},
+{541, 555999},
+{429, 560000}
+};
+
 // settings static lists
 #define mS_TOTAL_ITEMS         	1000 // Max amount of items from all lists
 #define mS_TOTAL_LISTS			20 // Max amount of lists
@@ -48,6 +210,7 @@ new PlayerText:gBackgroundTextDrawId[MAX_PLAYERS];
 new PlayerText:gNextButtonTextDrawId[MAX_PLAYERS];
 new PlayerText:gPrevButtonTextDrawId[MAX_PLAYERS];
 new PlayerText:gCancelButtonTextDrawId[MAX_PLAYERS];
+new PlayerText:gVehicleName[MAX_PLAYERS][mS_SELECTION_ITEMS];
 new PlayerText:gSelectionItems[MAX_PLAYERS][mS_SELECTION_ITEMS];
 new gSelectionItemsTag[MAX_PLAYERS][mS_SELECTION_ITEMS];
 new gItemAt[MAX_PLAYERS];
@@ -149,6 +312,37 @@ stock PlayerText:mS_CreatePlayerDialogButton(playerid, Float:Xpos, Float:Ypos, F
     return txtInit;
 }
  
+ //------------------------------------------------
+forward IsADonateModel(model);
+public IsADonateModel(model)
+{
+	for(new i = 0; i < sizeof(DonateVehicles); i++)
+		if(DonateVehicles[i][cCarModel] == model)
+			return true;
+	return false;
+}
+ 
+stock PlayerText:CreateVehicleName(playerid, model, Float:Xpos, Float:Ypos, Float:Width, Float:Height, vehiclename[], vehicleprice)
+{
+ 	new PlayerText:txtInit;
+	new str[128];
+	if(IsADonateModel(model))
+		format(str, sizeof(str), "%s~n~$%d~n~~n~~n~~n~~n~~y~[SPECIAL]", vehiclename, vehicleprice);
+	else
+		format(str, sizeof(str), "%s~n~$%d", vehiclename, vehicleprice);
+   	txtInit = CreatePlayerTextDraw(playerid, Xpos, Ypos, str);
+   	PlayerTextDrawBackgroundColor(playerid, txtInit, 0x000000FF);
+	PlayerTextDrawLetterSize(playerid, txtInit, 0.3, 1.0);
+	PlayerTextDrawFont(playerid, txtInit, 1);
+	PlayerTextDrawSetShadow(playerid, txtInit, 1); // no shadow
+    PlayerTextDrawSetOutline(playerid, txtInit, 1);
+    PlayerTextDrawColor(playerid, txtInit, 0xC0C0C0FF);
+    PlayerTextDrawTextSize(playerid, txtInit, Height, Width); // The width and height are reversed for centering.. something the game does <g>
+    PlayerTextDrawShow(playerid, txtInit);
+    return txtInit;
+}
+ 
+ 
 //------------------------------------------------
 
 stock PlayerText:mS_CreatePlayerHeaderTextDraw(playerid, Float:Xpos, Float:Ypos, header_text[])
@@ -161,6 +355,20 @@ stock PlayerText:mS_CreatePlayerHeaderTextDraw(playerid, Float:Xpos, Float:Ypos,
 	PlayerTextDrawSetShadow(playerid, txtInit, 0);
     PlayerTextDrawSetOutline(playerid, txtInit, 1);
     PlayerTextDrawColor(playerid, txtInit, 0xACCBF1FF);
+    PlayerTextDrawShow(playerid, txtInit);
+    return txtInit;
+}
+
+stock PlayerText:CreateHeaderBuyableText(playerid, Float:Xpos, Float:Ypos, header_text[])
+{
+	new PlayerText:txtInit;
+   	txtInit = CreatePlayerTextDraw(playerid, Xpos, Ypos, header_text);
+   	PlayerTextDrawUseBox(playerid, txtInit, 0);
+	PlayerTextDrawLetterSize(playerid, txtInit, 1.25, 3.0);
+	PlayerTextDrawFont(playerid, txtInit, 3);
+	PlayerTextDrawSetShadow(playerid, txtInit, 1);
+    PlayerTextDrawSetOutline(playerid, txtInit, 1);
+    PlayerTextDrawColor(playerid, txtInit, 0x00FF00FF);
     PlayerTextDrawShow(playerid, txtInit);
     return txtInit;
 }
@@ -209,6 +417,14 @@ stock mS_DestroyPlayerMPs(playerid)
 	    if(gSelectionItems[playerid][x] != PlayerText:INVALID_TEXT_DRAW) {
 			PlayerTextDrawDestroy(playerid, gSelectionItems[playerid][x]);
 			gSelectionItems[playerid][x] = PlayerText:INVALID_TEXT_DRAW;
+			if(BuyingVeh[playerid] == 1)
+			{
+				if(gVehicleName[playerid][x] != PlayerText:INVALID_TEXT_DRAW) 
+				{
+					PlayerTextDrawDestroy(playerid, gVehicleName[playerid][x]);
+					gVehicleName[playerid][x] = PlayerText:INVALID_TEXT_DRAW;
+				}
+			}
 		}
 		x++;
 	}
@@ -276,6 +492,79 @@ stock mS_ShowPlayerMPs(playerid)
 	}
 }
 
+stock ShowPlayerBuyable(playerid)
+{
+	new bgcolor = GetPVarInt(playerid, "mS_previewBGcolor");
+    new x=0;
+	new Float:BaseX = mS_DIALOG_BASE_X;
+	new Float:BaseY = mS_DIALOG_BASE_Y - (mS_SPRITE_DIM_Y * 0.33); // down a bit
+	new linetracker = 0;
+	
+	new mS_listID = mS_GetPlayerCurrentListID(playerid);
+	if(mS_listID == mS_CUSTOM_LISTID)
+	{
+		new itemat = (GetPVarInt(playerid, "mS_list_page") * mS_SELECTION_ITEMS);
+		new Float:rotzoom[4];
+		rotzoom[0] = GetPVarFloat(playerid, "mS_custom_Xrot");
+		rotzoom[1] = GetPVarFloat(playerid, "mS_custom_Yrot");
+		rotzoom[2] = GetPVarFloat(playerid, "mS_custom_Zrot");
+		rotzoom[3] = GetPVarFloat(playerid, "mS_custom_Zoom");
+		new itemamount = mS_GetAmountOfListItemsEx(playerid);
+		// Destroy any previous ones created
+		mS_DestroyPlayerMPs(playerid);
+
+		while(x != mS_SELECTION_ITEMS && itemat < (itemamount)) {
+			if(linetracker == 0) {
+				BaseX = mS_DIALOG_BASE_X + 25.0; // in a bit from the box
+				BaseY += mS_SPRITE_DIM_Y + 1.0; // move on the Y for the next line
+			}	
+			gSelectionItems[playerid][x] = mS_CreateMPTextDraw(playerid, gCustomList[playerid][itemat], BaseX, BaseY, rotzoom[0], rotzoom[1], rotzoom[2], rotzoom[3], mS_SPRITE_DIM_X, mS_SPRITE_DIM_Y, bgcolor);
+			gSelectionItemsTag[playerid][x] = gCustomList[playerid][itemat];
+			BaseX += mS_SPRITE_DIM_X + 1.0; // move on the X for the next sprite
+			linetracker++;
+			if(linetracker == mS_ITEMS_PER_LINE) linetracker = 0;
+			itemat++;
+			x++;
+		}
+	}
+	else
+	{
+		new itemat = (gLists[mS_listID][mS_LIST_START] + (GetPVarInt(playerid, "mS_list_page") * mS_SELECTION_ITEMS));
+		
+		// Destroy any previous ones created
+		mS_DestroyPlayerMPs(playerid);
+		while(x != mS_SELECTION_ITEMS && itemat < (gLists[mS_listID][mS_LIST_END]+1)) {
+			if(linetracker == 0) {
+				BaseX = mS_DIALOG_BASE_X + 25.0; // in a bit from the box
+				BaseY += mS_SPRITE_DIM_Y + 1.0; // move on the Y for the next line
+			}
+			new rzID = gItemList[itemat][mS_ITEM_ROT_ZOOM_ID]; // avoid long line
+			if(rzID > -1) gSelectionItems[playerid][x] = mS_CreateMPTextDraw(playerid, gItemList[itemat][mS_ITEM_MODEL], BaseX, BaseY, gRotZoom[rzID][0], gRotZoom[rzID][1], gRotZoom[rzID][2], gRotZoom[rzID][3], mS_SPRITE_DIM_X, mS_SPRITE_DIM_Y, bgcolor);
+			else gSelectionItems[playerid][x] = mS_CreateMPTextDraw(playerid, gItemList[itemat][mS_ITEM_MODEL], BaseX, BaseY, 0.0, 0.0, 0.0, 1.0, mS_SPRITE_DIM_X, mS_SPRITE_DIM_Y, bgcolor);
+			
+			gVehicleName[playerid][x] = CreateVehicleName(playerid, gItemList[itemat][mS_ITEM_MODEL], BaseX, BaseY, mS_SPRITE_DIM_X, mS_SPRITE_DIM_Y, VehicleNames2[gItemList[itemat][mS_ITEM_MODEL]-400], GetVehiclePrice2(gItemList[itemat][mS_ITEM_MODEL]));
+			
+			gSelectionItemsTag[playerid][x] = gItemList[itemat][mS_ITEM_MODEL];
+			BaseX += mS_SPRITE_DIM_X + 1.0; // move on the X for the next sprite
+			linetracker++;
+			if(linetracker == mS_ITEMS_PER_LINE) linetracker = 0;
+			itemat++;
+			x++;
+		}
+	}
+}
+
+stock GetVehiclePrice2(model)
+{
+	for(new i = 0; i < sizeof(VehiclePrices); i++)
+	{
+		if(model == VehiclePrices[i][cCarModel])
+			return VehiclePrices[i][cCarPrice];
+	}
+	return 0;
+}
+
+
 //------------------------------------------------
 
 stock mS_UpdatePageTextDraw(playerid)
@@ -311,9 +600,33 @@ stock ShowModelSelectionMenu(playerid, ListID, header_text[], dialogBGcolor = 0x
     gNextButtonTextDrawId[playerid] = mS_CreatePlayerDialogButton(playerid, mS_DIALOG_WIDTH - 30.0, mS_DIALOG_BASE_Y+mS_DIALOG_HEIGHT+100.0, 50.0, 16.0, mS_NEXT_TEXT);
     gPrevButtonTextDrawId[playerid] = mS_CreatePlayerDialogButton(playerid, mS_DIALOG_WIDTH - 90.0, mS_DIALOG_BASE_Y+mS_DIALOG_HEIGHT+100.0, 50.0, 16.0, mS_PREV_TEXT);
     gCancelButtonTextDrawId[playerid] = mS_CreatePlayerDialogButton(playerid, mS_DIALOG_WIDTH - 150.0, mS_DIALOG_BASE_Y+mS_DIALOG_HEIGHT+100.0, 50.0, 16.0, mS_CANCEL_TEXT);
-
+	
 	SetPVarInt(playerid, "mS_previewBGcolor", previewBGcolor);
     mS_ShowPlayerMPs(playerid);
+    mS_UpdatePageTextDraw(playerid);
+	
+	SelectTextDraw(playerid, tdSelectionColor);
+	return 1;
+}
+
+stock ShowModelSelectionMenu2(playerid, ListID, header_text[], dialogBGcolor = 0x4A5A6BBB, previewBGcolor = 0x88888899 , tdSelectionColor = 0xFFFF00AA)
+{
+	if(!(0 <= ListID < mS_TOTAL_LISTS && gLists[ListID][mS_LIST_START] != gLists[ListID][mS_LIST_END])) return 0;
+	mS_DestroySelectionMenu(playerid);
+	SetPVarInt(playerid, "mS_list_page", 0);
+	SetPVarInt(playerid, "mS_list_id", ListID);
+	SetPVarInt(playerid, "mS_list_active", 1);
+	SetPVarInt(playerid, "mS_list_time", GetTickCount());
+
+    gBackgroundTextDrawId[playerid] = mS_CreatePlayerBGTextDraw(playerid, mS_DIALOG_BASE_X, mS_DIALOG_BASE_Y + 20.0, mS_DIALOG_WIDTH, mS_DIALOG_HEIGHT, dialogBGcolor);
+    gHeaderTextDrawId[playerid] = CreateHeaderBuyableText(playerid, mS_DIALOG_BASE_X, mS_DIALOG_BASE_Y, header_text);
+    gCurrentPageTextDrawId[playerid] = mS_CreateCurrentPageTextDraw(playerid, mS_DIALOG_WIDTH - 30.0, mS_DIALOG_BASE_Y + 15.0);
+    gNextButtonTextDrawId[playerid] = mS_CreatePlayerDialogButton(playerid, mS_DIALOG_WIDTH - 30.0, mS_DIALOG_BASE_Y+mS_DIALOG_HEIGHT+100.0, 50.0, 16.0, mS_NEXT_TEXT);
+    gPrevButtonTextDrawId[playerid] = mS_CreatePlayerDialogButton(playerid, mS_DIALOG_WIDTH - 90.0, mS_DIALOG_BASE_Y+mS_DIALOG_HEIGHT+100.0, 50.0, 16.0, mS_PREV_TEXT);
+    gCancelButtonTextDrawId[playerid] = mS_CreatePlayerDialogButton(playerid, mS_DIALOG_WIDTH - 150.0, mS_DIALOG_BASE_Y+mS_DIALOG_HEIGHT+100.0, 50.0, 16.0, mS_CANCEL_TEXT);
+	BuyingVeh[playerid] = 1;
+	SetPVarInt(playerid, "mS_previewBGcolor", previewBGcolor);
+    ShowPlayerBuyable(playerid);
     mS_UpdatePageTextDraw(playerid);
 	
 	SelectTextDraw(playerid, tdSelectionColor);
@@ -422,9 +735,13 @@ public OnPlayerConnect(playerid)
     gNextButtonTextDrawId[playerid] = PlayerText:INVALID_TEXT_DRAW;
     gPrevButtonTextDrawId[playerid] = PlayerText:INVALID_TEXT_DRAW;
     gCancelButtonTextDrawId[playerid] = PlayerText:INVALID_TEXT_DRAW;
-    
+
     for(new x=0; x < mS_SELECTION_ITEMS; x++) {
         gSelectionItems[playerid][x] = PlayerText:INVALID_TEXT_DRAW;
+	}
+	
+	for(new x=0; x < mS_SELECTION_ITEMS; x++) {
+        gVehicleName[playerid][x] = PlayerText:INVALID_TEXT_DRAW;
 	}
 	
 	gItemAt[playerid] = 0;
@@ -518,7 +835,18 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 		{			
 			if(curpage < (mS_GetNumberOfPagesEx(playerid) - 1)) {
 				SetPVarInt(playerid, "mS_list_page", curpage + 1);
-				mS_ShowPlayerMPs(playerid);
+				if(BuyingVeh[playerid] == 1)
+				{
+					for(new x=0; x < mS_SELECTION_ITEMS; x++) 
+					{
+						PlayerTextDrawDestroy(playerid, gVehicleName[playerid][x]);
+					}
+					ShowPlayerBuyable(playerid);
+				}
+				else
+				{
+					mS_ShowPlayerMPs(playerid);
+				}
 				mS_UpdatePageTextDraw(playerid);
 				PlayerPlaySound(playerid, 1083, 0.0, 0.0, 0.0);
 			} else {
@@ -529,7 +857,18 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 		{
 			if(curpage < (mS_GetNumberOfPages(listID) - 1)) {
 				SetPVarInt(playerid, "mS_list_page", curpage + 1);
-				mS_ShowPlayerMPs(playerid);
+				if(BuyingVeh[playerid] == 1)
+				{
+					for(new x=0; x < mS_SELECTION_ITEMS; x++) 
+					{
+						PlayerTextDrawDestroy(playerid, gVehicleName[playerid][x]);
+					}
+					ShowPlayerBuyable(playerid);
+				}
+				else
+				{
+					mS_ShowPlayerMPs(playerid);
+				}
 				mS_UpdatePageTextDraw(playerid);
 				PlayerPlaySound(playerid, 1083, 0.0, 0.0, 0.0);
 			} else {
@@ -543,7 +882,18 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 	if(playertextid == gPrevButtonTextDrawId[playerid]) {
 	    if(curpage > 0) {
 	    	SetPVarInt(playerid, "mS_list_page", curpage - 1);
-	    	mS_ShowPlayerMPs(playerid);
+			if(BuyingVeh[playerid] == 1)
+			{
+				for(new x=0; x < mS_SELECTION_ITEMS; x++) 
+				{
+					PlayerTextDrawDestroy(playerid, gVehicleName[playerid][x]);
+				}
+				ShowPlayerBuyable(playerid);	
+			}
+	    	else
+			{
+				mS_ShowPlayerMPs(playerid);
+			}
 	    	mS_UpdatePageTextDraw(playerid);
 	    	PlayerPlaySound(playerid, 1084, 0.0, 0.0, 0.0);
 		} else {
@@ -571,6 +921,10 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 				PlayerPlaySound(playerid, 1083, 0.0, 0.0, 0.0);
 				new item_id = gSelectionItemsTag[playerid][x];
 				HideModelSelectionMenu(playerid);
+				if(BuyingVeh[playerid] == 1)
+				{
+					BuyingVeh[playerid] = 0;
+				}
 				CallLocalFunction("OnPlayerModelSelection", "dddd", playerid, 1, listID, item_id);
 				return 1;
 			}

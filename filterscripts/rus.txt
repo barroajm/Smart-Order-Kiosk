@@ -1,0 +1,18 @@
+D:\Current Astraea City\filterscripts\MAPPINGS.pwn(26) : îøèáêà 037: íåïðàâèëüíàÿ ñòðîêà (âîçìîæíî, íåçàâåðø¸ííàÿ ñòðîêà)
+D:\Current Astraea City\filterscripts\MAPPINGS.pwn(27) : íåïðàâèëüíàÿ òàáóëÿöèÿ
+D:\Current Astraea City\filterscripts\MAPPINGS.pwn(27) : îøèáêà 017: íåîáúÿâëåííûé ñèìâîë "Owner"
+D:\Current Astraea City\filterscripts\MAPPINGS.pwn(27) : îøèáêà 017: íåîáúÿâëåííûé ñèìâîë "Chip"
+D:\Current Astraea City\filterscripts\MAPPINGS.pwn(28) : îøèáêà 017: íåîáúÿâëåííûé ñèìâîë "Dev"
+D:\Current Astraea City\filterscripts\MAPPINGS.pwn(28) : îøèáêà 017: íåîáúÿâëåííûé ñèìâîë "Mercado"
+D:\Current Astraea City\filterscripts\MAPPINGS.pwn(29) : îøèáêà 017: íåîáúÿâëåííûé ñèìâîë "Mapper"
+D:\Current Astraea City\filterscripts\MAPPINGS.pwn(29) : îøèáêà 017: íåîáúÿâëåííûé ñèìâîë "Kardit"
+D:\Current Astraea City\filterscripts\MAPPINGS.pwn(29) -- (31) : ïðåäóïðåæäåíèå 215: âûðàæåíèå íå èìååò ýôôåêòà
+D:\Current Astraea City\filterscripts\MAPPINGS.pwn(31) : îøèáêà 001: îæèäàëñÿ òîêåí ";", íî íàéäåí "-identifier-"
+D:\Current Astraea City\filterscripts\MAPPINGS.pwn(31) : ôàòàëüíàÿ îøèáêà 107: ñëèøêîì ìíîãî îøèáîê íà îäíîé ñòðîêå
+
+Êîìïèëÿöèÿ îñòàíîâëåíà.
+
+Pawn compiler 3.2.3664	 	 	Copyright (c) 1997-2016, ITB CompuPhase
+
+
+Îøèáîê:9.

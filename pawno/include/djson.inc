@@ -1,10 +1,10 @@
 /*
- *            DJson 1.6.2
- *       (c) Copyright 2008-2010 by DracoBlue
+ *            DJson 1.6
+ *       (c) Copyright 2008 by DracoBlue
  *
  * @author    : DracoBlue (http://dracoblue.com)
  * @date      : 20th Aug 2008
- * @update    : 8th May 2010
+ * @update    : 21st Jun 2009
  *
  * This file is provided as is (no warranties).
  *
@@ -26,7 +26,7 @@
 #pragma dynamic 4000000
 
 #define DJSON_CACHE_USE_TEMPTABLES 1
-#define DJSON_ALLOW_STYLED_OUTPUT 1
+#define DJSON_ALLOW_STYLED_OUTPUT 0
 
 /**
  * @access private
@@ -267,11 +267,6 @@ stock DJSON_json_escape(src[]) {
 				nxt_trg_pos++;
 				tmp[nxt_trg_pos]='r';
 			}
-			case '"': {
-				tmp[nxt_trg_pos]='\\';
-				nxt_trg_pos++;
-				tmp[nxt_trg_pos]='"';
-			}
 			case 9: {
 				tmp[nxt_trg_pos]='\\';
 				nxt_trg_pos++;
@@ -299,7 +294,7 @@ stock DJSON_json_escape(src[]) {
  */
 stock DJSON_cache_createNode(file[],key[],type_id,value[],parent,pos=-1) {
 	new query[DJSON_MAX_STRING];
-	format(query,DJSON_MAX_STRING,"INSERT INTO `c` (`id`,`file`,`path`,`value`,`type`, `pos`,`parent`) VALUES ((SELECT max(`id`) FROM `c`)+1,'%s','%s','%s',%d,%d,%d)",DJSON_sql_escape(file),DJSON_sql_escape(key),DJSON_sql_escape(value),type_id,pos,parent);
+	format(query,DJSON_MAX_STRING,"INSERT INTO `c` (`id`,`file`,`path`,`value`,`type`, `pos`,`parent`) VALUES ((SELECT max(id) FROM c WHERE file='%s')+1,'%s','%s','%s',%d,%d,%d)",DJSON_sql_escape(file),DJSON_sql_escape(file),DJSON_sql_escape(key),DJSON_sql_escape(value),type_id,pos,parent);
 	db_query(DJSON_cache_db,query);
 	new DBResult:res;
 	format(query,DJSON_MAX_STRING,"SELECT `id` FROM `c` WHERE file = '%s' AND path = '%s'",DJSON_sql_escape(file),DJSON_sql_escape(key));
@@ -1228,7 +1223,6 @@ stock DJSON_prepareTreeForPath(file[],path[]) {
  * @return int Number of items in the djson Array
  */
 stock djCount(file[],path[],use_cached_value=true) {
-	DJSON_LastErrorCode=0;
 	if (!DJSON_cache_IsFileCached(file) || !use_cached_value) DJSON_cache_ReloadFile(file);
 	new query[DJSON_MAX_STRING];
 	new DBResult:res;
@@ -1279,7 +1273,6 @@ stock djCount(file[],path[],use_cached_value=true) {
  * @ingroup djson
  */
 stock djIsSet(file[],path[],use_cached_value=true) {
-	DJSON_LastErrorCode=0;
 	if (!DJSON_cache_IsFileCached(file) || !use_cached_value) DJSON_cache_ReloadFile(file);
 	new query[DJSON_MAX_STRING];
 	if (DJSON_LastErrorCode) {
@@ -1314,7 +1307,6 @@ stock djIsSet(file[],path[],use_cached_value=true) {
  * @ingroup djson
  */
 stock djUnset(file[],path[],use_cached_value=true) {
-	DJSON_LastErrorCode=0;
 	if (!DJSON_cache_IsFileCached(file) || !use_cached_value) DJSON_cache_ReloadFile(file);
 	new query[DJSON_MAX_STRING];
 	if (DJSON_LastErrorCode) {
@@ -1429,7 +1421,6 @@ stock djUnset(file[],path[],use_cached_value=true) {
  * @see djCommit
  */
 stock djAppend(file[],path[],value[],use_cached_value=true) {
-	DJSON_LastErrorCode=0;
 	if (!DJSON_cache_IsFileCached(file) || !use_cached_value) DJSON_cache_ReloadFile(file);
 	new query[DJSON_MAX_STRING];
 	if (DJSON_LastErrorCode) {
@@ -1506,7 +1497,6 @@ stock djAppend(file[],path[],value[],use_cached_value=true) {
  * @ingroup djson
  */
 stock djSet(file[],path[],new_value[],use_cached_value=true) {
-	DJSON_LastErrorCode=0;
 	if (!DJSON_cache_IsFileCached(file) || !use_cached_value) DJSON_cache_ReloadFile(file);
 
 	DJSON_prepareTreeForPath(file,path);
@@ -1535,7 +1525,6 @@ stock djSet(file[],path[],new_value[],use_cached_value=true) {
  * @ingroup djson
  */
 stock djSetInt(file[],path[],new_value,use_cached_value=true) {
-	DJSON_LastErrorCode=0;
 	if (!DJSON_cache_IsFileCached(file) || !use_cached_value) DJSON_cache_ReloadFile(file);
 
 	DJSON_prepareTreeForPath(file,path);
@@ -1564,7 +1553,6 @@ stock djSetInt(file[],path[],new_value,use_cached_value=true) {
  * @ingroup djson
  */
 stock djSetFloat(file[],path[],Float:new_value,use_cached_value=true) {
-	DJSON_LastErrorCode=0;
 	if (!DJSON_cache_IsFileCached(file) || !use_cached_value) DJSON_cache_ReloadFile(file);
 
 	DJSON_prepareTreeForPath(file,path);
@@ -1592,7 +1580,6 @@ stock djSetFloat(file[],path[],Float:new_value,use_cached_value=true) {
  * @ingroup djson
  */
 stock dj(file[],path[],use_cached_value=true) {
-	DJSON_LastErrorCode=0;
 	if (!DJSON_cache_IsFileCached(file) || !use_cached_value) DJSON_cache_ReloadFile(file);
 	new query[DJSON_MAX_STRING];
 	if (DJSON_LastErrorCode) {
@@ -1705,7 +1692,6 @@ stock djStyled(toggle) {
  * @ingroup djson
  */
 stock djCreateFile(file[]) {
-	DJSON_LastErrorCode=0;
 	new File:fhnd = fopen(file,io_write);
 	if (!fhnd) {
 		DJSON_LastErrorCode = 1;
@@ -1725,7 +1711,6 @@ stock djCreateFile(file[]) {
  * @ingroup djson
  */
 stock djRemoveFile(file[]) {
-	DJSON_LastErrorCode=0;
 	if (DJSON_cache_IsFileCached(file)) DJSON_cache_UnloadFile(file);
 	if (fremove(file)) {
 		DJSON_LastErrorCode = 1;
@@ -1790,12 +1775,8 @@ djson_GameModeInit() {
 	if (djInt("djson_test.json","player/pos/y")!=20) printf(" x Error reading: player/pos/y, was: %d",djInt("djson_test.json","player/pos/y"));
 		else printf(" o Read: player/pos/y, is: %d",djInt("djson_test.json","player/pos/y"));
 
-	if (djInt("djson_test.json","player/pos/d")!=0) printf(" x Error reading: player/pos/d, was: %d",djInt("djson_test.json","player/pos/d"));
-		else printf(" o Read: player/pos/d, is: %d",djInt("djson_test.json","player/pos/d"));
 
-	if (djInt("djson_test.json","player/pos/y")!=20) printf(" x Error reading: player/pos/y, was: %d",djInt("djson_test.json","player/pos/y"));
-		else printf(" o Read: player/pos/y, is: %d",djInt("djson_test.json","player/pos/y"));
-		
+
 	// Create a player/id entry
 	if (djIsSet("djson_test.json","player/id")) printf(" x Error player/id should not be set");
 		else printf(" o Check player/id is not set, yet: correct!");
@@ -1994,7 +1975,7 @@ djson_GameModeInit() {
 	djSet("djson_simple_test.json","items/0/name","A");
 	djAppend("djson_simple_test.json","items","");
 	djSet("djson_simple_test.json","items/1/id","234");
-	djSet("djson_simple_test.json","items/1/name","\"B\"");
+	djSet("djson_simple_test.json","items/1/name","B");
 	djAppend("djson_simple_test.json","items","");
 	djSet("djson_simple_test.json","items/2/id","345");
 	djSet("djson_simple_test.json","items/2/name","C");
@@ -2005,7 +1986,6 @@ djson_GameModeInit() {
 	djSet("djson_simple_test.json","items/4/id","567");
 	djSet("djson_simple_test.json","items/4/name","E");
 
-
 	DJSON_cache_debug_print();
 
 	printf("unsetting ...");
@@ -2013,14 +1993,6 @@ djson_GameModeInit() {
 	printf("unsetting ... done!");
 
 	DJSON_cache_debug_print();
-
-	printf("reading something with \" and  \" ...");
-	DJSON_cache_UnloadFile("djson_simple_test.json");
-	format(tmp,DJSON_MAX_STRING,dj("djson_simple_test.json","items/1/name"));
-	if (strcmp(tmp,"\"B\"")!=0 || strlen(tmp)==0) printf(" X Could not read the escaped value back, it's: %s", tmp);
-		else printf(" o Could read the escaped value back, it's: %s", tmp);
-
-	printf("reading something with \" and  \" ... done");
 
 	djCreateFile("djson_number_test.json");
 	djAutocommit(true);
@@ -2065,26 +2037,6 @@ djson_GameModeInit() {
 
 	// testing negative, positive and numbers which are non of that :-)
 	fremove("djson_number_test.json");
-
-	DJSON_cache_UnloadFile("djson_number_test.json");
-	DJSON_cache_UnloadFile("djson_simple_test.json");
-	DJSON_cache_UnloadFile("djson_test.json");
-
-	djCreateFile("djappend_test.json");
-	djAppend("djappend_test.json","Object","");
-	djAppend("djappend_test.json", "Object", "TestValue1");
-	format(tmp,DJSON_MAX_STRING,dj("djappend_test.json","Object/1"));
-	if (strcmp(tmp,"TestValue1")!=0 || strlen(tmp)==0) printf(" X Could not append Testvalue1 to Object");
-		else printf(" o Append TestValue1 to Object");
-
-	tmp_int = djSet("djappend_test_between.json", "Dummy", "0");
-	if (tmp_int) printf(" o Set Dummy to 0");
-		else printf(" X Could not set Dummy 0");
-
-	djAppend("djappend_test.json", "Object", "TestValue2");
-	format(tmp,DJSON_MAX_STRING,dj("djappend_test.json","Object/2"));
-	if (strcmp(tmp,"TestValue2")!=0 || strlen(tmp)==0) printf(" X Could not append Testvalue2 to Object");
-		else printf(" o Append TestValue2 to Object");
 
 	// Reset to default before test started
 	djAutocommit(BEFORE_AUTOCOMMIT_VAL);

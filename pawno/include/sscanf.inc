@@ -1,11 +1,11 @@
 #include <a_samp>
 
-stock sscanf(string[], format[], {Float,_}:...)
+stock sscanf(stringgg2[], format[], {Float,_}:...)
 {
 	#if defined isnull
-		if (isnull(string))
+		if (isnull(stringgg2))
 	#else
-		if (string[0] == 0 || (string[0] == 1 && string[1] == 0))
+		if (stringgg2[0] == 0 || (stringgg2[0] == 1 && stringgg2[1] == 0))
 	#endif
 		{
 			return format[0];
@@ -13,15 +13,15 @@ stock sscanf(string[], format[], {Float,_}:...)
 	#pragma tabsize 4
 	new
 		formatPos = 0,
-		stringPos = 0,
+		stringgg2Pos = 0,
 		paramPos = 2,
 		paramCount = numargs(),
 		delim = ' ';
-	while (string[stringPos] && string[stringPos] <= ' ')
+	while (stringgg2[stringgg2Pos] && stringgg2[stringgg2Pos] <= ' ')
 	{
-		stringPos++;
+		stringgg2Pos++;
 	}
-	while (paramPos < paramCount && string[stringPos])
+	while (paramPos < paramCount && stringgg2[stringgg2Pos])
 	{
 		switch (format[formatPos++])
 		{
@@ -34,15 +34,15 @@ stock sscanf(string[], format[], {Float,_}:...)
 				new
 					neg = 1,
 					num = 0,
-					ch = string[stringPos];
+					ch = stringgg2[stringgg2Pos];
 				if (ch == '-')
 				{
 					neg = -1;
-					ch = string[++stringPos];
+					ch = stringgg2[++stringgg2Pos];
 				}
 				do
 				{
-					stringPos++;
+					stringgg2Pos++;
 					if ('0' <= ch <= '9')
 					{
 						num = (num * 10) + (ch - '0');
@@ -52,17 +52,17 @@ stock sscanf(string[], format[], {Float,_}:...)
 						return -1;
 					}
 				}
-				while ((ch = string[stringPos]) > ' ' && ch != delim);
+				while ((ch = stringgg2[stringgg2Pos]) > ' ' && ch != delim);
 				setarg(paramPos, 0, num * neg);
 			}
 			case 'h', 'x':
 			{
 				new
 					num = 0,
-					ch = string[stringPos];
+					ch = stringgg2[stringgg2Pos];
 				do
 				{
-					stringPos++;
+					stringgg2Pos++;
 					switch (ch)
 					{
 						case 'x', 'X':
@@ -88,20 +88,20 @@ stock sscanf(string[], format[], {Float,_}:...)
 						}
 					}
 				}
-				while ((ch = string[stringPos]) > ' ' && ch != delim);
+				while ((ch = stringgg2[stringgg2Pos]) > ' ' && ch != delim);
 				setarg(paramPos, 0, num);
 			}
 			case 'c':
 			{
-				setarg(paramPos, 0, string[stringPos++]);
+				setarg(paramPos, 0, stringgg2[stringgg2Pos++]);
 			}
 			case 'f':
 			{
 
-				new changestr[16], changepos = 0, strpos = stringPos;
-				while(changepos < 16 && string[strpos] && string[strpos] != delim)
+				new changestr[16], changepos = 0, strpos = stringgg2Pos;
+				while(changepos < 16 && stringgg2[strpos] && stringgg2[strpos] != delim)
 				{
-					changestr[changepos++] = string[strpos++];
+					changestr[changepos++] = stringgg2[strpos++];
     				}
 				changestr[changepos] = '\0';
 				setarg(paramPos,0,_:floatstr(changestr));
@@ -122,7 +122,7 @@ stock sscanf(string[], format[], {Float,_}:...)
 					return -1;
 				}
 				format[end] = '\0';
-				if ((ch = strfind(string, format[formatPos], false, stringPos)) == -1)
+				if ((ch = strfind(stringgg2, format[formatPos], false, stringgg2Pos)) == -1)
 				{
 					if (format[end + 1])
 					{
@@ -131,17 +131,17 @@ stock sscanf(string[], format[], {Float,_}:...)
 					return 0;
 				}
 				format[end] = '\'';
-				stringPos = ch + (end - formatPos);
+				stringgg2Pos = ch + (end - formatPos);
 				formatPos = end + 1;
 			}
 			case 'u':
 			{
 				new
-					end = stringPos - 1,
+					end = stringgg2Pos - 1,
 					id = 0,
 					bool:num = true,
 					ch;
-				while ((ch = string[++end]) && ch != delim)
+				while ((ch = stringgg2[++end]) && ch != delim)
 				{
 					if (num)
 					{
@@ -165,15 +165,15 @@ stock sscanf(string[], format[], {Float,_}:...)
 						#define foreach(%1,%2) for (new %2 = 0; %2 < MAX_PLAYERS; %2++) if (IsPlayerConnected(%2))
 						#define __SSCANF_FOREACH__
 					#endif
-					string[end] = '\0';
+					stringgg2[end] = '\0';
 					num = false;
 					new
 						name[MAX_PLAYER_NAME];
-					id = end - stringPos;
+					id = end - stringgg2Pos;
 					foreach (Player, playerid)
 					{
 						GetPlayerName(playerid, name, sizeof (name));
-						if (!strcmp(name, string[stringPos], true, id))
+						if (!strcmp(name, stringgg2[stringgg2Pos], true, id))
 						{
 							setarg(paramPos, 0, playerid);
 							num = true;
@@ -184,13 +184,13 @@ stock sscanf(string[], format[], {Float,_}:...)
 					{
 						setarg(paramPos, 0, INVALID_PLAYER_ID);
 					}
-					string[end] = ch;
+					stringgg2[end] = ch;
 					#if defined __SSCANF_FOREACH__
 						#undef foreach
 						#undef __SSCANF_FOREACH__
 					#endif
 				}
-				stringPos = end;
+				stringgg2Pos = end;
 			}
 			case 's', 'z':
 			{
@@ -199,7 +199,7 @@ stock sscanf(string[], format[], {Float,_}:...)
 					ch;
 				if (format[formatPos])
 				{
-					while ((ch = string[stringPos++]) && ch != delim)
+					while ((ch = stringgg2[stringgg2Pos++]) && ch != delim)
 					{
 						setarg(paramPos, i++, ch);
 					}
@@ -210,12 +210,12 @@ stock sscanf(string[], format[], {Float,_}:...)
 				}
 				else
 				{
-					while ((ch = string[stringPos++]))
+					while ((ch = stringgg2[stringgg2Pos++]))
 					{
 						setarg(paramPos, i++, ch);
 					}
 				}
-				stringPos--;
+				stringgg2Pos--;
 				setarg(paramPos, i, '\0');
 			}
 			default:
@@ -223,13 +223,13 @@ stock sscanf(string[], format[], {Float,_}:...)
 				continue;
 			}
 		}
-		while (string[stringPos] && string[stringPos] != delim && string[stringPos] > ' ')
+		while (stringgg2[stringgg2Pos] && stringgg2[stringgg2Pos] != delim && stringgg2[stringgg2Pos] > ' ')
 		{
-			stringPos++;
+			stringgg2Pos++;
 		}
-		while (string[stringPos] && (string[stringPos] == delim || string[stringPos] <= ' '))
+		while (stringgg2[stringgg2Pos] && (stringgg2[stringgg2Pos] == delim || stringgg2[stringgg2Pos] <= ' '))
 		{
-			stringPos++;
+			stringgg2Pos++;
 		}
 		paramPos++;
 	}

@@ -1,1 +1,0 @@
-native WP_Hash(buffer[], len, const str[]);

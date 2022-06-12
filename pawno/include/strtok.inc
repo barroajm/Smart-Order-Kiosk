@@ -1,6 +1,4 @@
-#include <a_samp>
-
-stock strtok(const string[], &index)
+strtok(const string[], &index)
 {
 	new length = strlen(string);
 	while ((index < length) && (string[index] <= ' '))
