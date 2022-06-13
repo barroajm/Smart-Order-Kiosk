@@ -9604,7 +9604,7 @@ stock pacificmappings() {
 	SetDynamicObjectMaterial(tmpobjid, 0, 11391, "hubprops2_sfse", "blackbag", 0x00000000);
 	tmpobjid = CreateDynamicObject(19482, 1250.006958, -1285.376220, 1062.430419, 0.000000, 0.000000, 0.000000);
 	SetDynamicObjectMaterial(tmpobjid, 0, 10101, "2notherbuildsfe", "ferry_build14", 0x00000000);
-	SetDynamicObjectMaterialText(tmpobjid, 0, "{ffffff} SGRP", 130, "Quartz MS", 70, 1, 0x00000000, 0, 1);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "{ffffff} MCRP", 130, "Quartz MS", 70, 1, 0x00000000, 0, 1);
 	tmpobjid = CreateDynamicObject(19482, 1250.006958, -1285.376220, 1061.899047, 0.000000, 0.000000, 0.000000);
 	SetDynamicObjectMaterial(tmpobjid, 0, 10101, "2notherbuildsfe", "ferry_build14", 0x00000000);
 	SetDynamicObjectMaterialText(tmpobjid, 0, "{ffffff} HOSPITAL", 130, "Quartz MS", 70, 1, 0x00000000, 0, 1);
@@ -13138,9 +13138,9 @@ stock pacificmappings() {
 	SetDynamicObjectMaterial(tmpobjid, 0, 18996, "mattextures", "sampblack", 0x00000000);
 	SetDynamicObjectMaterial(tmpobjid, 1, 18835, "mickytextures", "whiteforletters", 0x00000000);
 	tmpobjid = CreateDynamicObject(19482, 542.657226, -1303.613525, 20.256216, 0.000000, 0.000000, 90.099960, -1, -1, -1, 450.00, 450.00); 
-	SetDynamicObjectMaterialText(tmpobjid, 0, "{FF0000} SGRP", 50, "Ariel", 30, 1, 0x00000000, 0x00000000, 1);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "{FF0000} MCRP", 50, "Ariel", 30, 1, 0x00000000, 0x00000000, 1);
 	tmpobjid = CreateDynamicObject(19482, 505.013031, -1311.325927, 32.136230, 0.000000, 0.000000, 40.399959, -1, -1, -1, 450.00, 450.00); 
-	SetDynamicObjectMaterialText(tmpobjid, 0, "{FF0000} SGRP", 50, "Ariel", 35, 1, 0x00000000, 0x00000000, 1);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "{FF0000} MCRP", 50, "Ariel", 35, 1, 0x00000000, 0x00000000, 1);
 	tmpobjid = CreateDynamicObject(19482, 505.013031, -1311.325927, 30.676223, 0.000000, 0.000000, 40.399959, -1, -1, -1, 450.00, 450.00); 
 	SetDynamicObjectMaterialText(tmpobjid, 0, "{FF0000} CAR", 50, "Ariel", 35, 1, 0x00000000, 0x00000000, 1);
 	tmpobjid = CreateDynamicObject(19482, 505.123107, -1311.454956, 29.106199, 0.000000, 0.000000, 40.399959, -1, -1, -1, 450.00, 450.00); 
