@@ -4256,3 +4256,74 @@ v0.3.7-R2, (C)2005-2015 SA-MP Team
 [07:39:46] ---------------
 [07:39:46]   Loaded 0 filterscripts.
 
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[12:27:33] filterscripts = ""  (string)
+[12:27:33] weburl = "www.sa-mp.com"  (string)
+[12:27:33] 
+[12:27:33] Server Plugins
+[12:27:33] --------------
+[12:27:33]  Loading plugin: crashdetect.so
+[12:27:34]   Failed.
+[12:27:34]  Loading plugin: pawncmd.so
+[12:27:35]   Failed.
+[12:27:35]  Loading plugin: sampvoice.so
+[12:27:36]   Failed.
+[12:27:36]  Loading plugin: sscanf.so
+[12:27:36]   Failed.
+[12:27:36]  Loading plugin: streamer.so
+[12:27:37]   Failed.
+[12:27:37]  Loading plugin: mysql_static.so
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[12:27:54] filterscripts = ""  (string)
+[12:27:54] weburl = "www.sa-mp.com"  (string)
+[12:27:54] 
+[12:27:54] Server Plugins
+[12:27:54] --------------
+[12:27:54]  Loading plugin: crashdetect
+[12:27:54]   Failed.
+[12:27:54]  Loading plugin: pawncmd
+[12:27:54]   Failed.
+[12:27:54]  Loading plugin: sampvoice
+[12:27:54]   Failed.
+[12:27:54]  Loading plugin: sscanf
+[12:27:54]   Failed.
+[12:27:54]  Loading plugin: streamer.so
+[12:27:56]   Failed.
+[12:27:56]  Loading plugin: mysql
+[12:27:56]   Failed.
+[12:27:56]  Loading plugin: Whirlpool
+[12:27:56]   Failed.
+[12:27:56]  Loading plugin: SKY
+[12:27:56]   Failed.
+[12:27:56]  Loading plugin: nativechecker
+[12:27:56]   Failed.
+[12:27:56]  Loaded 0 plugins.
+
+[12:27:56] 
+[12:27:56] Ban list
+[12:27:56] --------
+[12:27:56]  Loaded: samp.ban
+[12:27:56] 
+[12:27:56] 
+[12:27:56] Filterscripts
+[12:27:56] ---------------
+[12:27:56]   Loaded 0 filterscripts.
+
+[12:27:56] Script[gamemodes/v2morgancity.amx]: Run time error 19: "File or function is not found"
+[12:27:56] Number of vehicle models: 0
