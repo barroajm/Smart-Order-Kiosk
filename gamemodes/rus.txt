@@ -1,2 +1,16 @@
+includes\sabongdebug.pwn(105) : îøèáêà 017: íåîáúÿâëåííûé ñèìâîë "PlayerInfo"
+includes\sabongdebug.pwn(107) : îøèáêà 017: íåîáúÿâëåííûé ñèìâîë "COLOR_SYNTAX"
+includes\sabongdebug.pwn(109) : îøèáêà 017: íåîáúÿâëåííûé ñèìâîë "PlayerInfo"
+includes\sabongdebug.pwn(111) : îøèáêà 017: íåîáúÿâëåííûé ñèìâîë "COLOR_SYNTAX"
+includes\sabongdebug.pwn(115) : îøèáêà 017: íåîáúÿâëåííûé ñèìâîë "COLOR_GREY"
+includes\sabongdebug.pwn(115) : îøèáêà 017: íåîáúÿâëåííûé ñèìâîë "WHITE"
+includes\sabongdebug.pwn(115) : ïðåäóïðåæäåíèå 215: âûðàæåíèå íå èìååò ýôôåêòà
+includes\sabongdebug.pwn(115) : îøèáêà 001: îæèäàëñÿ òîêåí ";", íî íàéäåí ")"
+includes\sabongdebug.pwn(115) : ôàòàëüíàÿ îøèáêà 107: ñëèøêîì ìíîãî îøèáîê íà îäíîé ñòðîêå
+
+Êîìïèëÿöèÿ îñòàíîâëåíà.
+
 Pawn compiler 3.2.3664	 	 	Copyright (c) 1997-2016, ITB CompuPhase
 
+
+Îøèáîê:8.
