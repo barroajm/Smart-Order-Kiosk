@@ -91,12 +91,12 @@ stock pacificremoveobjects( playerid ) {
 	RemoveBuildingForPlayer(playerid, 3594, 2526.520, -1474.380, 23.625, 0.250);
 	RemoveBuildingForPlayer(playerid, 3594, 2526.580, -1474.380, 24.585, 0.250);
 	
-    //SOGO
+/*    //SOGO
 	RemoveBuildingForPlayer(playerid, 6364, 590.710, -1273.000, 37.843, 0.250);
 	RemoveBuildingForPlayer(playerid, 6365, 590.710, -1273.000, 37.843, 0.250);
 	RemoveBuildingForPlayer(playerid, 6337, 536.132, -1291.680, 23.468, 0.250);
 	RemoveBuildingForPlayer(playerid, 6482, 536.132, -1291.680, 23.468, 0.250);
-	
+*/
     //Allsaints map///////////////////////////////////////////////////////////////////////////////////////////////
     RemoveBuildingForPlayer(playerid, 1529, 1098.8125, -1292.5469, 17.1406, 0.25);
     RemoveBuildingForPlayer(playerid, 5935, 1120.1563, -1303.4531, 18.5703, 0.25);
@@ -4502,7 +4502,7 @@ stock pacificmappings() {
 	tmpobjid = CreateDynamicObject(1550,833.963,-2053.168,12.157,0.000,0.000,0.000,-1,-1,-1,300.000,300.000);
 	tmpobjid = CreateDynamicObject(3749,836.380,-2025.196,17.354,0.000,0.000,0.000,-1,-1,-1,300.000,300.000);
 	
-	//SOGO
+/*	//SOGO
 	tmpobjid = CreateDynamicObject(6364,590.717,-1272.807,37.855,0.000,0.000,0.000,-1,-1,-1,300.000,300.000);
 	SetDynamicObjectMaterial(tmpobjid, 1, 14668, "711c", "CJ_CHIP_M2", 0x00000000);
 	SetDynamicObjectMaterial(tmpobjid, 2, 14668, "711c", "CJ_CHIP_M2", 0x00000000);
@@ -4513,11 +4513,11 @@ stock pacificmappings() {
 	SetDynamicObjectMaterial(tmpobjid, 7, 10101, "2notherbuildsfe", "flatdoor01_law", 0x00000000);
 	SetDynamicObjectMaterial(tmpobjid, 8, 10101, "2notherbuildsfe", "Bow_church_grass_alt", 0x00000000);
 	tmpobjid = CreateDynamicObject(19360,611.521,-1234.037,28.367,0.000,0.000,58.600,-1,-1,-1,300.000,300.000);
-	SetDynamicObjectMaterialText(tmpobjid, 0, "{ff0000} SOGO", 50, "Quartz MS", 50, 1, 0x00000000, 0x00000000, 2);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "{ff0000} EUROTEL", 50, "Quartz MS", 50, 1, 0x00000000, 0x00000000, 2);
 	tmpobjid = CreateDynamicObject(19360,611.621,-1234.122,26.087,0.000,0.000,58.600,-1,-1,-1,300.000,300.000);
 	SetDynamicObjectMaterialText(tmpobjid, 0, "{8080ff} Hotel", 60, "Quartz MS", 53, 1, 0x00000000, 0x00000000, 0);
 	tmpobjid = CreateDynamicObject(4239,610.179,-1248.608,49.696,0.000,0.000,2.599,-1,-1,-1,300.000,300.000);
-	SetDynamicObjectMaterialText(tmpobjid, 0, "{ff0000} SOGO", 40, "Engravers MT", 37, 1, 0x00000000, 0x00000000, 1);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "{ff0000} EUROTEL", 40, "Engravers MT", 37, 1, 0x00000000, 0x00000000, 1);
 	tmpobjid = CreateDynamicObject(4239,610.174,-1248.477,44.386,0.000,0.000,2.599,-1,-1,-1,300.000,300.000);
 	SetDynamicObjectMaterialText(tmpobjid, 0, "{ff0000} Hotel", 80, "Engravers MT", 40, 1, 0x00000000, 0x00000000, 1);
 	tmpobjid = CreateDynamicObject(4239,610.251,-1249.074,36.686,0.000,0.000,2.599,-1,-1,-1,300.000,300.000);
@@ -4555,7 +4555,7 @@ stock pacificmappings() {
 	tmpobjid = CreateDynamicObject(18652,612.735,-1235.417,30.001,0.000,0.000,57.099,-1,-1,-1,300.000,300.000);
 	tmpobjid = CreateDynamicObject(18652,610.762,-1234.140,30.001,0.000,0.000,57.099,-1,-1,-1,300.000,300.000);
 	tmpobjid = CreateDynamicObject(18652,609.956,-1233.619,30.001,0.000,0.000,57.099,-1,-1,-1,300.000,300.000);
-	
+*/
     //Allsaints HP map////////////////////////////////////////////////////////////////////////////////////////////////////////
     CreateDynamicObject(19538, 1134.90723, -1321.79480, 12.37570,   0.00000, 0.00000, 0.00000);
     CreateDynamicObject(18766, 1072.95825, -1325.25745, 12.36830,   0.00000, 0.00000, 90.00000);
