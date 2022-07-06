@@ -1,4 +1,5 @@
 stock pacificremoveobjects( playerid ) {
+
 	// NEW HOSPITAL by Lake
     RemoveBuildingForPlayer(playerid, 1529, 1098.812, -1292.546, 17.139, 0.250);
     RemoveBuildingForPlayer(playerid, 5931, 1114.312, -1348.100, 17.983, 0.250);
@@ -49,7 +50,7 @@ stock pacificremoveobjects( playerid ) {
     RemoveBuildingForPlayer(playerid, 620, 1184.812, -1303.146, 12.578, 0.250);
     RemoveBuildingForPlayer(playerid, 1297, 1190.771, -1320.859, 15.944, 0.250);
 
-	//MCDO //////////////////////////////////////////////////////////////////////////////////////////////
+	//MCDO //
 	RemoveBuildingForPlayer(playerid, 5950, 837.4141, -1361.2188, 10.0313, 0.25);
 	RemoveBuildingForPlayer(playerid, 1462, 826.8516, -1385.6719, 12.5078, 0.25);
 	RemoveBuildingForPlayer(playerid, 5817, 848.8594, -1370.4297, 17.7969, 0.25);
@@ -190,6 +191,7 @@ stock pacificmappings() {
 
 	new tmpobjid;
 	new HOUSE_INT;
+	
 	//NEW HOSPITAL BY LAKE
 	tmpobjid = CreateDynamicObjectEx(7313, 1127.605102, -1423.819335, 19.368690, 0.000000, 0.000000, 179.299957, 300.00, 300.00);
     SetDynamicObjectMaterialText(tmpobjid, 0, "{FF0000} Morgan City Mall", 70, "Calibri", 35, 0, 0x00000000, 0x00000001, 1);
