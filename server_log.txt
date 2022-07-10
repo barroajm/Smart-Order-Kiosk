@@ -6156,3 +6156,1684 @@ v0.3.7-R2, (C)2005-2015 SA-MP Team
 [19:40:59] [dbg:raknet:free] : module released
 [19:40:59] [sv:dbg:network:free] : module releasing...
 [19:40:59] [sv:dbg:network:free] : module released
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[19:42:56] filterscripts = ""  (string)
+[19:42:56] weburl = "www.sa-mp.com"  (string)
+[19:42:56] 
+[19:42:56] Server Plugins
+[19:42:56] --------------
+[19:42:56]  Loading plugin: crashdetect
+[19:42:56]   CrashDetect plugin 4.19.4
+[19:42:56]   Loaded.
+[19:42:56]  Loading plugin: pawncmd
+[19:42:56] [Pawn.CMD] plugin v3.3.6 loading...
+[19:42:56] [Pawn.CMD] 
+
+    | Pawn.CMD 3.3.6 | 2016 - 2021
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Sep 26 2021 at 11:55:10
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[19:42:56]   Loaded.
+[19:42:56]  Loading plugin: sampvoice
+[19:42:56] [sv:dbg:network:init] : module initializing...
+[19:42:56] [dbg:raknet:init] : module initializing...
+[19:42:56] [dbg:raknet:init] : module initialized
+[19:42:56] [sv:dbg:network:init] : module initialized
+[19:42:56] [sv:dbg:main:Load] : creating 8 work threads...
+[19:42:56]  -------------------------------------------    
+[19:42:56]    ___                __   __    _              
+[19:42:56]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[19:42:56]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[19:42:56]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[19:42:56]                   |_|                           
+[19:42:56]  -------------------------------------------    
+[19:42:56]            SampVoice by MOR loaded              
+[19:42:56]  -------------------------------------------    
+[19:42:56]   Loaded.
+[19:42:56]  Loading plugin: sscanf
+[19:42:56] 
+
+[19:42:56]  ===============================
+
+[19:42:56]       sscanf plugin loaded.     
+
+[19:42:56]          Version:  2.8.3        
+
+[19:42:56]   (c) 2018 Alex "Y_Less" Cole  
+
+[19:42:56]  ===============================
+
+[19:42:56]   Loaded.
+[19:42:56]  Loading plugin: discord-connector
+[19:42:57]  >> plugin.dc-connector: v0.3.5 successfully loaded.
+[19:42:57]   Loaded.
+[19:42:57]  Loading plugin: mysql
+[19:42:57]  >> plugin.mysql: R39-6 successfully loaded.
+[19:42:57]   Loaded.
+[19:42:57]  Loading plugin: streamer
+[19:42:57] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[19:42:57]   Loaded.
+[19:42:57]  Loading plugin: Whirlpool
+[19:42:57]  
+[19:42:57]  ==================
+[19:42:57]  
+[19:42:57]   Whirlpool loaded
+[19:42:57]  
+[19:42:57]  ==================
+[19:42:57]  
+[19:42:57]   Loaded.
+[19:42:57]  Loading plugin: SKY
+[19:42:57] 
+[19:42:57]  ===============================
+[19:42:57]    
+[19:42:57]    < SKY - 2.3.0 >
+[19:42:57]    
+[19:42:57]    (c) 2008 - Present | YSF Maintainers
+[19:42:57]    (c) 2015 | Oscar "Slice" Broman
+[19:42:57]    
+[19:42:57]    Server Version: 0.3.7 R2
+[19:42:57]    Operating System: Windows
+[19:42:57]    Built on: Sep 27 2021 at 23:19:52
+[19:42:57]    
+[19:42:57]  ===============================
+[19:42:57] 
+[19:42:57]   Loaded.
+[19:42:57]  Loading plugin: nativechecker
+[19:42:57]   Loaded.
+[19:42:57]  Loaded 10 plugins.
+
+[19:42:57] 
+[19:42:57] Ban list
+[19:42:58] --------
+[19:42:58]  Loaded: samp.ban
+[19:42:58] 
+[19:42:58] 
+[19:42:58] Filterscripts
+[19:42:58] ---------------
+[19:42:58]   Loaded 0 filterscripts.
+
+[19:42:58] [sv:dbg:main:AmxLoad] : net game pointer (value:02369F68) received
+[19:42:58] [sv:dbg:network:bind] : voice server running on port 49724
+[19:42:58] *** Streamer Plugin: The include file version (0x294) for this script is older than the plugin version (0x295). The script might need to be recompiled with the latest include file.
+[19:42:58] AMX (68876808) loaded
+[19:42:58]  
+[19:42:58] --------------------------------------
+[19:42:58]  Anticheat Nex-AC loaded!
+[19:42:58]  Anticheat version: 1.9.52
+[19:42:58]  Author: Nexius
+[19:42:58] --------------------------------------
+
+[19:42:58]  
+[19:42:58]  
+[19:42:58]  
+[19:42:58]  ======================================= 
+[19:42:58]  |                                     | 
+[19:42:58]  |        YSI version 3.09.0684        | 
+[19:42:58]  |        By Alex "Y_Less" Cole        | 
+[19:42:58]  |                                     | 
+[19:42:58]  ======================================= 
+[19:42:58]  
+[19:42:58] Unable to establish a connection with the MySQL server...
+[19:42:58] Number of vehicle models: 0
+[19:42:58] --- Server Shutting Down.
+[19:42:58]  
+[19:42:58] --------------------------------------
+[19:42:58]  Statistics anticheat Nex-AC
+[19:42:58]  Detected and prevented:
+[19:42:58]   0 cheating attempts
+[19:42:58]   0 hacking attempts
+[19:42:58]   0 crashing attempts
+[19:42:58]   0 flooding attempts
+[19:42:58]   0 attacks
+[19:42:58]  Total detected and punished 0 cheaters
+[19:42:58] --------------------------------------
+
+[19:42:58] [Pawn.CMD] plugin unloaded
+[19:42:58]  -------------------------------------------
+[19:42:58]            SampVoice unloading...           
+[19:42:58]  -------------------------------------------
+[19:42:58] [dbg:raknet:free] : module releasing...
+[19:42:58] [dbg:raknet:free] : module released
+[19:42:58] [sv:dbg:network:free] : module releasing...
+[19:42:58] [sv:dbg:network:free] : module released
+[19:42:58] 
+
+[19:42:58]  ===============================
+
+[19:42:58]      sscanf plugin unloaded.    
+
+[19:42:58]  ===============================
+
+[19:42:58] plugin.dc-connector: Unloading plugin...
+[19:42:59] plugin.dc-connector: Plugin unloaded.
+[19:42:59] plugin.mysql: Unloading plugin...
+[19:42:59] plugin.mysql: Plugin unloaded.
+[19:42:59] 
+
+*** Streamer Plugin v2.9.5 by Incognito unloaded ***
+
+[19:42:59]  
+[19:42:59]  ====================
+[19:42:59]  
+[19:42:59]   Whirlpool unloaded
+[19:42:59]  
+[19:42:59]  ====================
+[19:42:59]  
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[19:43:12] filterscripts = ""  (string)
+[19:43:12] weburl = "www.sa-mp.com"  (string)
+[19:43:12] 
+[19:43:12] Server Plugins
+[19:43:12] --------------
+[19:43:12]  Loading plugin: crashdetect
+[19:43:12]   CrashDetect plugin 4.19.4
+[19:43:12]   Loaded.
+[19:43:12]  Loading plugin: pawncmd
+[19:43:12] [Pawn.CMD] plugin v3.3.6 loading...
+[19:43:12] [Pawn.CMD] 
+
+    | Pawn.CMD 3.3.6 | 2016 - 2021
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Sep 26 2021 at 11:55:10
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[19:43:12]   Loaded.
+[19:43:12]  Loading plugin: sampvoice
+[19:43:12] [sv:dbg:network:init] : module initializing...
+[19:43:12] [dbg:raknet:init] : module initializing...
+[19:43:12] [dbg:raknet:init] : module initialized
+[19:43:12] [sv:dbg:network:init] : module initialized
+[19:43:12] [sv:dbg:main:Load] : creating 8 work threads...
+[19:43:12]  -------------------------------------------    
+[19:43:12]    ___                __   __    _              
+[19:43:12]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[19:43:12]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[19:43:12]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[19:43:12]                   |_|                           
+[19:43:12]  -------------------------------------------    
+[19:43:12]            SampVoice by MOR loaded              
+[19:43:12]  -------------------------------------------    
+[19:43:12]   Loaded.
+[19:43:12]  Loading plugin: sscanf
+[19:43:12] 
+
+[19:43:12]  ===============================
+
+[19:43:12]       sscanf plugin loaded.     
+
+[19:43:12]          Version:  2.8.3        
+
+[19:43:12]   (c) 2018 Alex "Y_Less" Cole  
+
+[19:43:12]  ===============================
+
+[19:43:12]   Loaded.
+[19:43:12]  Loading plugin: mysql
+[19:43:12]  >> plugin.mysql: R39-6 successfully loaded.
+[19:43:12]   Loaded.
+[19:43:12]  Loading plugin: streamer
+[19:43:12] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[19:43:12]   Loaded.
+[19:43:12]  Loading plugin: Whirlpool
+[19:43:12]  
+[19:43:12]  ==================
+[19:43:12]  
+[19:43:12]   Whirlpool loaded
+[19:43:12]  
+[19:43:12]  ==================
+[19:43:12]  
+[19:43:12]   Loaded.
+[19:43:12]  Loading plugin: SKY
+[19:43:12] 
+[19:43:12]  ===============================
+[19:43:12]    
+[19:43:12]    < SKY - 2.3.0 >
+[19:43:12]    
+[19:43:12]    (c) 2008 - Present | YSF Maintainers
+[19:43:12]    (c) 2015 | Oscar "Slice" Broman
+[19:43:12]    
+[19:43:12]    Server Version: 0.3.7 R2
+[19:43:12]    Operating System: Windows
+[19:43:12]    Built on: Sep 27 2021 at 23:19:52
+[19:43:12]    
+[19:43:12]  ===============================
+[19:43:12] 
+[19:43:12]   Loaded.
+[19:43:12]  Loading plugin: nativechecker
+[19:43:12]   Loaded.
+[19:43:12]  Loaded 9 plugins.
+
+[19:43:12] 
+[19:43:12] Ban list
+[19:43:12] --------
+[19:43:12]  Loaded: samp.ban
+[19:43:12] 
+[19:43:12] 
+[19:43:12] Filterscripts
+[19:43:12] ---------------
+[19:43:12]   Loaded 0 filterscripts.
+
+[19:43:12] [sv:dbg:main:AmxLoad] : net game pointer (value:02419F50) received
+[19:43:12] [sv:dbg:network:bind] : voice server running on port 53894
+[19:43:12] *** Streamer Plugin: The include file version (0x294) for this script is older than the plugin version (0x295). The script might need to be recompiled with the latest include file.
+[19:43:12] AMX (60881480) loaded
+[19:43:12]    Error: Function not registered: 'DCC_GetMessageChannel'
+[19:43:12]    Error: Function not registered: 'DCC_GetMessageAuthor'
+[19:43:12]    Error: Function not registered: 'DCC_IsUserBot'
+[19:43:12]    Error: Function not registered: 'DCC_GetMessageContent'
+[19:43:12]    Error: Function not registered: 'DCC_FindChannelById'
+[19:43:12]    Error: Function not registered: 'DCC_CreateEmbed'
+[19:43:12]    Error: Function not registered: 'DCC_SetEmbedColor'
+[19:43:12]    Error: Function not registered: 'DCC_SendChannelEmbedMessage'
+[19:43:12]    Error: Function not registered: 'DCC_FindUserByName'
+[19:43:12]    Error: Function not registered: 'DCC_FindGuildById'
+[19:43:12]    Error: Function not registered: 'DCC_FindRoleById'
+[19:43:12]    Error: Function not registered: 'DCC_SetEmbedTitle'
+[19:43:12]    Error: Function not registered: 'DCC_SetEmbedDescription'
+[19:43:12]    Error: Function not registered: 'DCC_AddGuildMemberRole'
+[19:43:12]    Error: Function not registered: 'DCC_RemoveGuildMemberRole'
+[19:43:12]    Error: Function not registered: 'DCC_SetGuildMemberNickname'
+[19:43:12]    Error: Function not registered: 'DCC_SetBotActivity'
+[19:43:12]    Error: Function not registered: 'DCC_SendChannelMessage'
+[19:43:12]    Error: Function not registered: 'DCC_GetChannelName'
+[19:43:12]    Error: Function not registered: 'DCC_GetUserName'
+[19:43:12]    Error: Function not registered: 'DCC_HasGuildMemberRole'
+[19:43:12]    Error: Function not registered: 'DCC_GetChannelGuild'
+[19:43:12]    Error: Function not registered: 'DCC_TriggerBotTypingIndicator'
+[19:43:12]    Error: Function not registered: 'DCC_GetUserDiscriminator'
+[19:43:12]    Error: Function not registered: 'DCC_SetEmbedFooter'
+[19:43:12]    Error: Function not registered: 'DCC_SetEmbedColor'
+[19:43:12]    Error: Function not registered: 'DCC_CreatePrivateChannel'
+[19:43:12]    Error: Function not registered: 'DCC_GetCreatedPrivateChannel'
+[19:43:12] [debug] Run time error 19: "File or function is not found"
+[19:43:12] [debug]  DCC_GetMessageChannel
+[19:43:12] [debug]  DCC_GetMessageAuthor
+[19:43:12] [debug]  DCC_IsUserBot
+[19:43:12] [debug]  DCC_GetMessageContent
+[19:43:12] [debug]  DCC_FindChannelById
+[19:43:12] [debug]  DCC_CreateEmbed
+[19:43:12] [debug]  DCC_SetEmbedColor
+[19:43:12] [debug]  DCC_SendChannelEmbedMessage
+[19:43:12] [debug]  DCC_FindUserByName
+[19:43:12] [debug]  DCC_FindGuildById
+[19:43:12] [debug]  DCC_FindRoleById
+[19:43:12] [debug]  DCC_SetEmbedTitle
+[19:43:12] [debug]  DCC_SetEmbedDescription
+[19:43:12] [debug]  DCC_AddGuildMemberRole
+[19:43:12] [debug]  DCC_RemoveGuildMemberRole
+[19:43:12] [debug]  DCC_SetGuildMemberNickname
+[19:43:12] [debug]  DCC_SetBotActivity
+[19:43:12] [debug]  DCC_SendChannelMessage
+[19:43:12] [debug]  DCC_GetChannelName
+[19:43:12] [debug]  DCC_GetUserName
+[19:43:12] [debug]  DCC_HasGuildMemberRole
+[19:43:12] [debug]  DCC_GetChannelGuild
+[19:43:12] [debug]  DCC_TriggerBotTypingIndicator
+[19:43:12] [debug]  DCC_GetUserDiscriminator
+[19:43:12] [debug]  DCC_SetEmbedFooter
+[19:43:12] [debug]  DCC_SetEmbedColor
+[19:43:12] [debug]  DCC_CreatePrivateChannel
+[19:43:12] [debug]  DCC_GetCreatedPrivateChannel
+[19:43:12] [debug] Run time error 19: "File or function is not found"
+[19:43:12] [debug]  DCC_GetMessageChannel
+[19:43:12] [debug]  DCC_GetMessageAuthor
+[19:43:12] [debug]  DCC_IsUserBot
+[19:43:12] [debug]  DCC_GetMessageContent
+[19:43:12] [debug]  DCC_FindChannelById
+[19:43:12] [debug]  DCC_CreateEmbed
+[19:43:12] [debug]  DCC_SetEmbedColor
+[19:43:12] [debug]  DCC_SendChannelEmbedMessage
+[19:43:12] [debug]  DCC_FindUserByName
+[19:43:12] [debug]  DCC_FindGuildById
+[19:43:12] [debug]  DCC_FindRoleById
+[19:43:12] [debug]  DCC_SetEmbedTitle
+[19:43:12] [debug]  DCC_SetEmbedDescription
+[19:43:12] [debug]  DCC_AddGuildMemberRole
+[19:43:12] [debug]  DCC_RemoveGuildMemberRole
+[19:43:12] [debug]  DCC_SetGuildMemberNickname
+[19:43:12] [debug]  DCC_SetBotActivity
+[19:43:12] [debug]  DCC_SendChannelMessage
+[19:43:12] [debug]  DCC_GetChannelName
+[19:43:12] [debug]  DCC_GetUserName
+[19:43:12] [debug]  DCC_HasGuildMemberRole
+[19:43:12] [debug]  DCC_GetChannelGuild
+[19:43:12] [debug]  DCC_TriggerBotTypingIndicator
+[19:43:12] [debug]  DCC_GetUserDiscriminator
+[19:43:12] [debug]  DCC_SetEmbedFooter
+[19:43:12] [debug]  DCC_SetEmbedColor
+[19:43:12] [debug]  DCC_CreatePrivateChannel
+[19:43:12] [debug]  DCC_GetCreatedPrivateChannel
+[19:43:12] Script[gamemodes/v2morgancity.amx]: Run time error 19: "File or function is not found"
+[19:43:12] Number of vehicle models: 0
+[19:44:40]  -------------------------------------------
+[19:44:40]            SampVoice unloading...           
+[19:44:40]  -------------------------------------------
+[19:44:40] [dbg:raknet:free] : module releasing...
+[19:44:40] [dbg:raknet:free] : module released
+[19:44:40] [sv:dbg:network:free] : module releasing...
+[19:44:40] [sv:dbg:network:free] : module released
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[21:49:53] filterscripts = ""  (string)
+[21:49:53] weburl = "www.sa-mp.com"  (string)
+[21:49:53] 
+[21:49:53] Server Plugins
+[21:49:53] --------------
+[21:49:53]  Loading plugin: crashdetect
+[21:49:53]   CrashDetect plugin 4.19.4
+[21:49:53]   Loaded.
+[21:49:53]  Loading plugin: pawncmd
+[21:49:53] [Pawn.CMD] plugin v3.3.6 loading...
+[21:49:53] [Pawn.CMD] 
+
+    | Pawn.CMD 3.3.6 | 2016 - 2021
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Sep 26 2021 at 11:55:10
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[21:49:53]   Loaded.
+[21:49:53]  Loading plugin: sampvoice
+[21:49:53] [sv:dbg:network:init] : module initializing...
+[21:49:53] [dbg:raknet:init] : module initializing...
+[21:49:53] [dbg:raknet:init] : module initialized
+[21:49:53] [sv:dbg:network:init] : module initialized
+[21:49:53] [sv:dbg:main:Load] : creating 8 work threads...
+[21:49:53]  -------------------------------------------    
+[21:49:53]    ___                __   __    _              
+[21:49:53]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[21:49:53]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[21:49:53]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[21:49:53]                   |_|                           
+[21:49:53]  -------------------------------------------    
+[21:49:53]            SampVoice by MOR loaded              
+[21:49:53]  -------------------------------------------    
+[21:49:53]   Loaded.
+[21:49:53]  Loading plugin: sscanf
+[21:49:53] 
+
+[21:49:53]  ===============================
+
+[21:49:53]       sscanf plugin loaded.     
+
+[21:49:53]          Version:  2.8.3        
+
+[21:49:53]   (c) 2018 Alex "Y_Less" Cole  
+
+[21:49:53]  ===============================
+
+[21:49:53]   Loaded.
+[21:49:53]  Loading plugin: discord-connector
+[21:49:55]  >> plugin.dc-connector: v0.3.5 successfully loaded.
+[21:49:55]   Loaded.
+[21:49:55]  Loading plugin: mysql
+[21:49:55]  >> plugin.mysql: R39-6 successfully loaded.
+[21:49:55]   Loaded.
+[21:49:55]  Loading plugin: streamer
+[21:49:55] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[21:49:55]   Loaded.
+[21:49:55]  Loading plugin: Whirlpool
+[21:49:55]  
+[21:49:55]  ==================
+[21:49:55]  
+[21:49:55]   Whirlpool loaded
+[21:49:55]  
+[21:49:55]  ==================
+[21:49:55]  
+[21:49:55]   Loaded.
+[21:49:55]  Loading plugin: SKY
+[21:49:55] 
+[21:49:55]  ===============================
+[21:49:55]    
+[21:49:55]    < SKY - 2.3.0 >
+[21:49:55]    
+[21:49:55]    (c) 2008 - Present | YSF Maintainers
+[21:49:55]    (c) 2015 | Oscar "Slice" Broman
+[21:49:55]    
+[21:49:55]    Server Version: 0.3.7 R2
+[21:49:55]    Operating System: Windows
+[21:49:55]    Built on: Sep 27 2021 at 23:19:52
+[21:49:55]    
+[21:49:55]  ===============================
+[21:49:55] 
+[21:49:55]   Loaded.
+[21:49:55]  Loading plugin: nativechecker
+[21:49:55]   Loaded.
+[21:49:55]  Loaded 10 plugins.
+
+[21:49:55] 
+[21:49:55] Ban list
+[21:49:55] --------
+[21:49:55]  Loaded: samp.ban
+[21:49:55] 
+[21:49:55] 
+[21:49:55] Filterscripts
+[21:49:55] ---------------
+[21:49:55]   Loaded 0 filterscripts.
+
+[21:49:55] [sv:dbg:main:AmxLoad] : net game pointer (value:02439F68) received
+[21:49:55] [sv:dbg:network:bind] : voice server running on port 62641
+[21:49:55] AMX (73792008) loaded
+[21:49:55]  
+[21:49:55] --------------------------------------
+[21:49:55]  Anticheat Nex-AC loaded!
+[21:49:55]  Anticheat version: 1.9.52
+[21:49:55]  Author: Nexius
+[21:49:55] --------------------------------------
+
+[21:49:55]  
+[21:49:55]  
+[21:49:55]  
+[21:49:55]  ======================================= 
+[21:49:55]  |                                     | 
+[21:49:55]  |        YSI version 3.09.0684        | 
+[21:49:55]  |        By Alex "Y_Less" Cole        | 
+[21:49:55]  |                                     | 
+[21:49:55]  ======================================= 
+[21:49:55]  
+[21:49:55] Unable to establish a connection with the MySQL server...
+[21:49:55] Number of vehicle models: 0
+[21:49:55] --- Server Shutting Down.
+[21:49:55]  
+[21:49:55] --------------------------------------
+[21:49:55]  Statistics anticheat Nex-AC
+[21:49:55]  Detected and prevented:
+[21:49:55]   0 cheating attempts
+[21:49:55]   0 hacking attempts
+[21:49:55]   0 crashing attempts
+[21:49:55]   0 flooding attempts
+[21:49:55]   0 attacks
+[21:49:55]  Total detected and punished 0 cheaters
+[21:49:55] --------------------------------------
+
+[21:49:55] [Pawn.CMD] plugin unloaded
+[21:49:55]  -------------------------------------------
+[21:49:55]            SampVoice unloading...           
+[21:49:55]  -------------------------------------------
+[21:49:55] [dbg:raknet:free] : module releasing...
+[21:49:55] [dbg:raknet:free] : module released
+[21:49:55] [sv:dbg:network:free] : module releasing...
+[21:49:55] [sv:dbg:network:free] : module released
+[21:49:55] 
+
+[21:49:55]  ===============================
+
+[21:49:55]      sscanf plugin unloaded.    
+
+[21:49:55]  ===============================
+
+[21:49:55] plugin.dc-connector: Unloading plugin...
+[21:49:56] plugin.dc-connector: Plugin unloaded.
+[21:49:56] plugin.mysql: Unloading plugin...
+[21:49:56] plugin.mysql: Plugin unloaded.
+[21:49:56] 
+
+*** Streamer Plugin v2.9.5 by Incognito unloaded ***
+
+[21:49:56]  
+[21:49:56]  ====================
+[21:49:56]  
+[21:49:56]   Whirlpool unloaded
+[21:49:56]  
+[21:49:56]  ====================
+[21:49:56]  
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[21:51:11] filterscripts = ""  (string)
+[21:51:11] weburl = "www.sa-mp.com"  (string)
+[21:51:11] 
+[21:51:11] Server Plugins
+[21:51:11] --------------
+[21:51:11]  Loading plugin: crashdetect
+[21:51:11]   CrashDetect plugin 4.19.4
+[21:51:11]   Loaded.
+[21:51:11]  Loading plugin: pawncmd
+[21:51:11] [Pawn.CMD] plugin v3.3.6 loading...
+[21:51:11] [Pawn.CMD] 
+
+    | Pawn.CMD 3.3.6 | 2016 - 2021
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Sep 26 2021 at 11:55:10
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[21:51:11]   Loaded.
+[21:51:11]  Loading plugin: sampvoice
+[21:51:11] [sv:dbg:network:init] : module initializing...
+[21:51:11] [dbg:raknet:init] : module initializing...
+[21:51:11] [dbg:raknet:init] : module initialized
+[21:51:11] [sv:dbg:network:init] : module initialized
+[21:51:11] [sv:dbg:main:Load] : creating 8 work threads...
+[21:51:11]  -------------------------------------------    
+[21:51:11]    ___                __   __    _              
+[21:51:11]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[21:51:11]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[21:51:11]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[21:51:11]                   |_|                           
+[21:51:11]  -------------------------------------------    
+[21:51:11]            SampVoice by MOR loaded              
+[21:51:11]  -------------------------------------------    
+[21:51:11]   Loaded.
+[21:51:11]  Loading plugin: sscanf
+[21:51:11] 
+
+[21:51:11]  ===============================
+
+[21:51:11]       sscanf plugin loaded.     
+
+[21:51:11]          Version:  2.8.3        
+
+[21:51:11]   (c) 2018 Alex "Y_Less" Cole  
+
+[21:51:11]  ===============================
+
+[21:51:11]   Loaded.
+[21:51:11]  Loading plugin: discord-connector
+[21:51:13]  >> plugin.dc-connector: v0.3.5 successfully loaded.
+[21:51:13]   Loaded.
+[21:51:13]  Loading plugin: mysql
+[21:51:13]  >> plugin.mysql: R39-6 successfully loaded.
+[21:51:13]   Loaded.
+[21:51:13]  Loading plugin: streamer
+[21:51:13] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[21:51:13]   Loaded.
+[21:51:13]  Loading plugin: Whirlpool
+[21:51:13]  
+[21:51:13]  ==================
+[21:51:13]  
+[21:51:13]   Whirlpool loaded
+[21:51:13]  
+[21:51:13]  ==================
+[21:51:13]  
+[21:51:13]   Loaded.
+[21:51:13]  Loading plugin: SKY
+[21:51:13] 
+[21:51:13]  ===============================
+[21:51:13]    
+[21:51:13]    < SKY - 2.3.0 >
+[21:51:13]    
+[21:51:13]    (c) 2008 - Present | YSF Maintainers
+[21:51:13]    (c) 2015 | Oscar "Slice" Broman
+[21:51:13]    
+[21:51:13]    Server Version: 0.3.7 R2
+[21:51:13]    Operating System: Windows
+[21:51:13]    Built on: Sep 27 2021 at 23:19:52
+[21:51:13]    
+[21:51:13]  ===============================
+[21:51:13] 
+[21:51:13]   Loaded.
+[21:51:13]  Loading plugin: nativechecker
+[21:51:13]   Loaded.
+[21:51:13]  Loaded 10 plugins.
+
+[21:51:13] 
+[21:51:13] Ban list
+[21:51:13] --------
+[21:51:13]  Loaded: samp.ban
+[21:51:13] 
+[21:51:13] 
+[21:51:13] Filterscripts
+[21:51:13] ---------------
+[21:51:13]   Loaded 0 filterscripts.
+
+[21:51:13] [sv:dbg:main:AmxLoad] : net game pointer (value:02339F68) received
+[21:51:13] [sv:dbg:network:bind] : voice server running on port 58045
+[21:51:13] AMX (73529864) loaded
+[21:51:13]  
+[21:51:13] --------------------------------------
+[21:51:13]  Anticheat Nex-AC loaded!
+[21:51:13]  Anticheat version: 1.9.52
+[21:51:13]  Author: Nexius
+[21:51:13] --------------------------------------
+
+[21:51:13]  
+[21:51:13]  
+[21:51:13]  
+[21:51:13]  ======================================= 
+[21:51:13]  |                                     | 
+[21:51:13]  |        YSI version 3.09.0684        | 
+[21:51:13]  |        By Alex "Y_Less" Cole        | 
+[21:51:13]  |                                     | 
+[21:51:13]  ======================================= 
+[21:51:13]  
+[21:51:13] Couldn't connect to radio station database... server will continue to operate normally.
+[21:51:13] 
+************************************************************************************************************************
+[21:51:13]  					Morgan City Roleplay [LOW ECONOMY] Version - MC:RPv2                                                                    
+[21:51:13]  					 Last Update game version - MC:RPv2                                                                
+[21:51:13] ************************************************************************************************************************
+
+[21:51:13] [LoadAntiCheat] Loading data from database...
+[21:51:14] Morgan City Roleplay [LOW ECONOMY]
+[21:51:14] 84 objects loaded.
+[21:51:14] Number of vehicle models: 20
+[21:51:15] [Script] 262 houses loaded.
+[21:51:15] [Script] 3 garages loaded.
+[21:51:15] [debug] Run time error 4: "Array index out of bounds"
+[21:51:15] [debug]  Attempted to read/write array element at index 8 in array of size 7
+[21:51:15] [debug] AMX backtrace:
+[21:51:15] [debug] #0 00380c64 in ReloadBusiness (businessid=16) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:16944
+[21:51:15] [debug] #1 003ef718 in public OnQueryFinished (threadid=14, extraid=0) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:25359
+[21:51:15] [Script] 28 entrances loaded.
+[21:51:15] [Script] 4 factions loaded.
+[21:51:15] [debug] Run time error 4: "Array index out of bounds"
+[21:51:15] [debug]  Attempted to read/write array element at index 7 in array of size 7
+[21:51:15] [debug] AMX backtrace:
+[21:51:15] [debug] #0 003f1c50 in public OnQueryFinished (threadid=21, extraid=0) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:25478
+[21:51:15] [Script] 2 lands loaded.
+[21:51:15] [Script] 19 gangs loaded.
+[21:51:15] [Script] 0 points loaded.
+[21:51:15] [Script] 10 Points Loaded.
+[21:51:15] [Graffities] No records found.
+[21:51:15] [BillBoards] No records found.
+[21:51:15] [ANTICHEAT]: Anti-cheat settings loaded successfully (loaded: 53). Time: 0 ??.
+[21:52:40] [connection] 127.0.0.1:63370 requests connection cookie.
+[21:52:41] [connection] incoming connection: 127.0.0.1:63370 id: 0
+[21:52:41] [sv:dbg:network:connect] : connecting player (0) with address (127.0.0.1) ...
+[21:52:41] [sv:dbg:network:connect] : player (0) assigned key (8b84900a)
+[21:52:41] [join] Lisher_Frost has joined the server (0:127.0.0.1)
+[21:52:41] > {FFFFFF}Lisher Frost has joined the server [{FFFFFF}IP:{FFFFFF} 127.0.0.1] [City: ] [Country: ]
+[21:52:41] [sv:dbg:network:receive] : player (0) identified (port:63371)
+[21:53:19] [sv:dbg:network:connect] : disconnecting player (0) ...
+[21:53:19] > {FFFFFF}Lisher Frost Left The Server [{00ffff}IP:{FFFFFF} 255.255.255.255]
+[21:53:19] [part] Lisher_Frost has left the server (0:1)
+[21:54:37] [connection] 127.0.0.1:63616 requests connection cookie.
+[21:54:38] [connection] incoming connection: 127.0.0.1:63616 id: 0
+[21:54:38] [sv:dbg:network:connect] : connecting player (0) with address (127.0.0.1) ...
+[21:54:38] [sv:dbg:network:connect] : player (0) assigned key (fcdaf29a)
+[21:54:38] [join] Lisher_Frost has joined the server (0:127.0.0.1)
+[21:54:38] > {FFFFFF}Lisher Frost has joined the server [{FFFFFF}IP:{FFFFFF} 127.0.0.1] [City: ] [Country: ]
+[21:54:38] [sv:dbg:network:receive] : player (0) identified (port:63617)
+[21:55:10] [cmd] Lisher Frost: [verify]
+[21:55:13] [cmd] Lisher Frost: [settings]
+[21:55:18] [cmd] Lisher Frost: [settings]
+[21:55:39] [cmd] Lisher Frost: [settings]
+[21:55:41] [cmd] Lisher Frost: [settings]
+[21:55:42] [cmd] Lisher Frost: [settings]
+[21:55:46] [cmd] Lisher Frost: [settings]
+[21:55:50] [cmd] Lisher Frost: [settings]
+[21:57:17] [cmd] Lisher Frost: [settings]
+[21:57:21] [cmd] Lisher Frost: [settings]
+[21:57:23] [cmd] Lisher Frost: [settings]
+[21:57:24] [cmd] Lisher Frost: [settings]
+[21:57:25] [cmd] Lisher Frost: [settings]
+[21:57:26] [cmd] Lisher Frost: [settings]
+[21:57:27] [cmd] Lisher Frost: [settings]
+[21:57:28] [chat] [Lisher_Frost]: a
+[21:59:47] [sv:dbg:network:connect] : disconnecting player (0) ...
+[21:59:47] > {FFFFFF}Lisher Frost Left The Server [{00ffff}IP:{FFFFFF} 255.255.255.255]
+[21:59:47] [part] Lisher_Frost has left the server (0:1)
+[21:59:48]  -------------------------------------------
+[21:59:48]            SampVoice unloading...           
+[21:59:48]  -------------------------------------------
+[21:59:48] [dbg:raknet:free] : module releasing...
+[21:59:48] [dbg:raknet:free] : module released
+[21:59:48] [sv:dbg:network:free] : module releasing...
+[21:59:48] [sv:dbg:network:free] : module released
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[22:02:20] filterscripts = ""  (string)
+[22:02:20] weburl = "www.sa-mp.com"  (string)
+[22:02:20] 
+[22:02:20] Server Plugins
+[22:02:20] --------------
+[22:02:20]  Loading plugin: crashdetect
+[22:02:20]   CrashDetect plugin 4.19.4
+[22:02:20]   Loaded.
+[22:02:20]  Loading plugin: pawncmd
+[22:02:20] [Pawn.CMD] plugin v3.3.6 loading...
+[22:02:20] [Pawn.CMD] 
+
+    | Pawn.CMD 3.3.6 | 2016 - 2021
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Sep 26 2021 at 11:55:10
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[22:02:20]   Loaded.
+[22:02:20]  Loading plugin: sampvoice
+[22:02:20] [sv:dbg:network:init] : module initializing...
+[22:02:20] [dbg:raknet:init] : module initializing...
+[22:02:20] [dbg:raknet:init] : module initialized
+[22:02:20] [sv:dbg:network:init] : module initialized
+[22:02:20] [sv:dbg:main:Load] : creating 8 work threads...
+[22:02:20]  -------------------------------------------    
+[22:02:20]    ___                __   __    _              
+[22:02:20]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[22:02:20]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[22:02:20]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[22:02:20]                   |_|                           
+[22:02:20]  -------------------------------------------    
+[22:02:20]            SampVoice by MOR loaded              
+[22:02:20]  -------------------------------------------    
+[22:02:20]   Loaded.
+[22:02:20]  Loading plugin: sscanf
+[22:02:20] 
+
+[22:02:20]  ===============================
+
+[22:02:20]       sscanf plugin loaded.     
+
+[22:02:20]          Version:  2.8.3        
+
+[22:02:20]   (c) 2018 Alex "Y_Less" Cole  
+
+[22:02:20]  ===============================
+
+[22:02:20]   Loaded.
+[22:02:20]  Loading plugin: discord-connector
+[22:02:22]  >> plugin.dc-connector: v0.3.5 successfully loaded.
+[22:02:22]   Loaded.
+[22:02:22]  Loading plugin: mysql
+[22:02:22]  >> plugin.mysql: R39-6 successfully loaded.
+[22:02:22]   Loaded.
+[22:02:22]  Loading plugin: streamer
+[22:02:22] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[22:02:22]   Loaded.
+[22:02:22]  Loading plugin: Whirlpool
+[22:02:22]  
+[22:02:22]  ==================
+[22:02:22]  
+[22:02:22]   Whirlpool loaded
+[22:02:22]  
+[22:02:22]  ==================
+[22:02:22]  
+[22:02:22]   Loaded.
+[22:02:22]  Loading plugin: SKY
+[22:02:22] 
+[22:02:22]  ===============================
+[22:02:22]    
+[22:02:22]    < SKY - 2.3.0 >
+[22:02:22]    
+[22:02:22]    (c) 2008 - Present | YSF Maintainers
+[22:02:22]    (c) 2015 | Oscar "Slice" Broman
+[22:02:22]    
+[22:02:22]    Server Version: 0.3.7 R2
+[22:02:22]    Operating System: Windows
+[22:02:22]    Built on: Sep 27 2021 at 23:19:52
+[22:02:22]    
+[22:02:22]  ===============================
+[22:02:22] 
+[22:02:22]   Loaded.
+[22:02:22]  Loading plugin: nativechecker
+[22:02:22]   Loaded.
+[22:02:22]  Loaded 10 plugins.
+
+[22:02:22] 
+[22:02:22] Ban list
+[22:02:22] --------
+[22:02:22]  Loaded: samp.ban
+[22:02:22] 
+[22:02:22] 
+[22:02:22] Filterscripts
+[22:02:22] ---------------
+[22:02:22]   Loaded 0 filterscripts.
+
+[22:02:22] [sv:dbg:main:AmxLoad] : net game pointer (value:02419F68) received
+[22:02:22] [sv:dbg:network:bind] : voice server running on port 51459
+[22:02:22] AMX (68876808) loaded
+[22:02:22]  
+[22:02:22] --------------------------------------
+[22:02:22]  Anticheat Nex-AC loaded!
+[22:02:22]  Anticheat version: 1.9.52
+[22:02:22]  Author: Nexius
+[22:02:22] --------------------------------------
+
+[22:02:22]  
+[22:02:22]  
+[22:02:22]  
+[22:02:22]  ======================================= 
+[22:02:22]  |                                     | 
+[22:02:22]  |        YSI version 3.09.0684        | 
+[22:02:22]  |        By Alex "Y_Less" Cole        | 
+[22:02:22]  |                                     | 
+[22:02:22]  ======================================= 
+[22:02:22]  
+[22:02:22] Couldn't connect to radio station database... server will continue to operate normally.
+[22:02:22] 
+************************************************************************************************************************
+[22:02:22]  					Morgan City Roleplay [LOW ECONOMY] Version - MC:RPv2                                                                    
+[22:02:22]  					 Last Update game version - MC:RPv2                                                                
+[22:02:22] ************************************************************************************************************************
+
+[22:02:22] [LoadAntiCheat] Loading data from database...
+[22:02:22] Morgan City Roleplay [LOW ECONOMY]
+[22:02:22] 84 objects loaded.
+[22:02:22] Number of vehicle models: 20
+[22:02:22] [Script] 262 houses loaded.
+[22:02:22] [Script] 3 garages loaded.
+[22:02:22] [debug] Run time error 4: "Array index out of bounds"
+[22:02:22] [debug]  Attempted to read/write array element at index 8 in array of size 7
+[22:02:22] [debug] AMX backtrace:
+[22:02:22] [debug] #0 00380c64 in ReloadBusiness (businessid=16) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:16944
+[22:02:22] [debug] #1 003ef718 in public OnQueryFinished (threadid=14, extraid=0) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:25359
+[22:02:22] [Script] 28 entrances loaded.
+[22:02:22] [Script] 4 factions loaded.
+[22:02:22] [debug] Run time error 4: "Array index out of bounds"
+[22:02:22] [debug]  Attempted to read/write array element at index 7 in array of size 7
+[22:02:22] [debug] AMX backtrace:
+[22:02:22] [debug] #0 003f1c50 in public OnQueryFinished (threadid=21, extraid=0) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:25478
+[22:02:22] [Script] 2 lands loaded.
+[22:02:23] [Script] 19 gangs loaded.
+[22:02:23] [Script] 0 points loaded.
+[22:02:23] [Script] 10 Points Loaded.
+[22:02:23] [Graffities] No records found.
+[22:02:23] [BillBoards] No records found.
+[22:02:23] [ANTICHEAT]: Anti-cheat settings loaded successfully (loaded: 53). Time: 0 ??.
+[22:03:41] [connection] 127.0.0.1:56777 requests connection cookie.
+[22:03:42] [connection] incoming connection: 127.0.0.1:56777 id: 0
+[22:03:42] [sv:dbg:network:connect] : connecting player (0) with address (127.0.0.1) ...
+[22:03:42] [sv:dbg:network:connect] : player (0) assigned key (a4ab04d2)
+[22:03:42] [join] Lisher_Frost has joined the server (0:127.0.0.1)
+[22:03:42] > {FFFFFF}Lisher Frost has joined the server [{FFFFFF}IP:{FFFFFF} 127.0.0.1] [City: ] [Country: ]
+[22:03:42] [sv:dbg:network:receive] : player (0) identified (port:56778)
+[22:04:07] [cmd] Lisher Frost: [verify]
+[22:05:21] [sv:dbg:network:connect] : disconnecting player (0) ...
+[22:05:21] > {FFFFFF}Lisher Frost Left The Server [{00ffff}IP:{FFFFFF} 255.255.255.255]
+[22:05:21] [part] Lisher_Frost has left the server (0:1)
+[22:05:23]  -------------------------------------------
+[22:05:23]            SampVoice unloading...           
+[22:05:23]  -------------------------------------------
+[22:05:23] [dbg:raknet:free] : module releasing...
+[22:05:23] [dbg:raknet:free] : module released
+[22:05:23] [sv:dbg:network:free] : module releasing...
+[22:05:23] [sv:dbg:network:free] : module released
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[22:05:34] filterscripts = ""  (string)
+[22:05:34] weburl = "www.sa-mp.com"  (string)
+[22:05:34] 
+[22:05:34] Server Plugins
+[22:05:34] --------------
+[22:05:34]  Loading plugin: crashdetect
+[22:05:34]   CrashDetect plugin 4.19.4
+[22:05:34]   Loaded.
+[22:05:34]  Loading plugin: pawncmd
+[22:05:34] [Pawn.CMD] plugin v3.3.6 loading...
+[22:05:34] [Pawn.CMD] 
+
+    | Pawn.CMD 3.3.6 | 2016 - 2021
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Sep 26 2021 at 11:55:10
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[22:05:34]   Loaded.
+[22:05:34]  Loading plugin: sampvoice
+[22:05:34] [sv:dbg:network:init] : module initializing...
+[22:05:34] [dbg:raknet:init] : module initializing...
+[22:05:34] [dbg:raknet:init] : module initialized
+[22:05:34] [sv:dbg:network:init] : module initialized
+[22:05:34] [sv:dbg:main:Load] : creating 8 work threads...
+[22:05:34]  -------------------------------------------    
+[22:05:34]    ___                __   __    _              
+[22:05:34]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[22:05:34]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[22:05:34]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[22:05:34]                   |_|                           
+[22:05:34]  -------------------------------------------    
+[22:05:34]            SampVoice by MOR loaded              
+[22:05:34]  -------------------------------------------    
+[22:05:34]   Loaded.
+[22:05:34]  Loading plugin: sscanf
+[22:05:34] 
+
+[22:05:34]  ===============================
+
+[22:05:34]       sscanf plugin loaded.     
+
+[22:05:34]          Version:  2.8.3        
+
+[22:05:34]   (c) 2018 Alex "Y_Less" Cole  
+
+[22:05:34]  ===============================
+
+[22:05:34]   Loaded.
+[22:05:34]  Loading plugin: discord-connector
+[22:05:36]  >> plugin.dc-connector: v0.3.5 successfully loaded.
+[22:05:36]   Loaded.
+[22:05:36]  Loading plugin: mysql
+[22:05:36]  >> plugin.mysql: R39-6 successfully loaded.
+[22:05:36]   Loaded.
+[22:05:36]  Loading plugin: streamer
+[22:05:36] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[22:05:36]   Loaded.
+[22:05:36]  Loading plugin: Whirlpool
+[22:05:36]  
+[22:05:36]  ==================
+[22:05:36]  
+[22:05:36]   Whirlpool loaded
+[22:05:36]  
+[22:05:36]  ==================
+[22:05:36]  
+[22:05:36]   Loaded.
+[22:05:36]  Loading plugin: SKY
+[22:05:36] 
+[22:05:36]  ===============================
+[22:05:36]    
+[22:05:36]    < SKY - 2.3.0 >
+[22:05:36]    
+[22:05:36]    (c) 2008 - Present | YSF Maintainers
+[22:05:36]    (c) 2015 | Oscar "Slice" Broman
+[22:05:36]    
+[22:05:36]    Server Version: 0.3.7 R2
+[22:05:36]    Operating System: Windows
+[22:05:36]    Built on: Sep 27 2021 at 23:19:52
+[22:05:36]    
+[22:05:36]  ===============================
+[22:05:36] 
+[22:05:36]   Loaded.
+[22:05:36]  Loading plugin: nativechecker
+[22:05:36]   Loaded.
+[22:05:36]  Loaded 10 plugins.
+
+[22:05:36] 
+[22:05:36] Ban list
+[22:05:36] --------
+[22:05:36]  Loaded: samp.ban
+[22:05:36] 
+[22:05:36] 
+[22:05:36] Filterscripts
+[22:05:36] ---------------
+[22:05:36]   Loaded 0 filterscripts.
+
+[22:05:36] [sv:dbg:main:AmxLoad] : net game pointer (value:02459F68) received
+[22:05:36] [sv:dbg:network:bind] : voice server running on port 54929
+[22:05:36] AMX (69073416) loaded
+[22:05:36]  
+[22:05:36] --------------------------------------
+[22:05:36]  Anticheat Nex-AC loaded!
+[22:05:36]  Anticheat version: 1.9.52
+[22:05:36]  Author: Nexius
+[22:05:36] --------------------------------------
+
+[22:05:36]  
+[22:05:36]  
+[22:05:36]  
+[22:05:36]  ======================================= 
+[22:05:36]  |                                     | 
+[22:05:36]  |        YSI version 3.09.0684        | 
+[22:05:36]  |        By Alex "Y_Less" Cole        | 
+[22:05:36]  |                                     | 
+[22:05:36]  ======================================= 
+[22:05:36]  
+[22:05:36] Couldn't connect to radio station database... server will continue to operate normally.
+[22:05:36] 
+************************************************************************************************************************
+[22:05:36]  					Morgan City Roleplay [LOW ECONOMY] Version - MC:RPv2                                                                    
+[22:05:36]  					 Last Update game version - MC:RPv2                                                                
+[22:05:36] ************************************************************************************************************************
+
+[22:05:36] [LoadAntiCheat] Loading data from database...
+[22:05:36] Morgan City Roleplay [LOW ECONOMY]
+[22:05:36] 84 objects loaded.
+[22:05:36] Number of vehicle models: 20
+[22:05:37] [Script] 262 houses loaded.
+[22:05:37] [Script] 3 garages loaded.
+[22:05:37] [debug] Run time error 4: "Array index out of bounds"
+[22:05:37] [debug]  Attempted to read/write array element at index 8 in array of size 7
+[22:05:37] [debug] AMX backtrace:
+[22:05:37] [debug] #0 00380c64 in ReloadBusiness (businessid=16) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:16944
+[22:05:37] [debug] #1 003ef718 in public OnQueryFinished (threadid=14, extraid=0) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:25359
+[22:05:37] [Script] 28 entrances loaded.
+[22:05:37] [Script] 4 factions loaded.
+[22:05:37] [debug] Run time error 4: "Array index out of bounds"
+[22:05:37] [debug]  Attempted to read/write array element at index 7 in array of size 7
+[22:05:37] [debug] AMX backtrace:
+[22:05:37] [debug] #0 003f1c50 in public OnQueryFinished (threadid=21, extraid=0) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:25478
+[22:05:37] [Script] 2 lands loaded.
+[22:05:37] [Script] 19 gangs loaded.
+[22:05:37] [Script] 0 points loaded.
+[22:05:37] [Script] 10 Points Loaded.
+[22:05:37] [Graffities] No records found.
+[22:05:37] [BillBoards] No records found.
+[22:05:37] [ANTICHEAT]: Anti-cheat settings loaded successfully (loaded: 53). Time: 0 ??.
+[22:05:57] [connection] 127.0.0.1:54272 requests connection cookie.
+[22:05:58] [connection] incoming connection: 127.0.0.1:54272 id: 0
+[22:05:58] [sv:dbg:network:connect] : connecting player (0) with address (127.0.0.1) ...
+[22:05:58] [sv:dbg:network:connect] : player (0) assigned key (e6652194)
+[22:05:58] [join] Lisher_Frost has joined the server (0:127.0.0.1)
+[22:05:58] > {FFFFFF}Lisher Frost has joined the server [{FFFFFF}IP:{FFFFFF} 127.0.0.1] [City: ] [Country: ]
+[22:05:58] [sv:dbg:network:receive] : player (0) identified (port:58307)
+[22:06:35] [chat] [Lisher_Frost]: !verify
+[22:06:48] [chat] [Lisher_Frost]: a
+[22:06:50] [cmd] Lisher Frost: [settings]
+[22:06:56] [cmd] Lisher Frost: [settings]
+[22:07:10] [cmd] Lisher Frost: [settings]
+[22:08:05] [cmd] Lisher Frost: [settings]
+[22:18:32] [sv:dbg:network:connect] : disconnecting player (0) ...
+[22:18:32] > {FFFFFF}Lisher Frost Left The Server [{00ffff}IP:{FFFFFF} 255.255.255.255]
+[22:18:32] [part] Lisher_Frost has left the server (0:1)
+[22:18:33]  -------------------------------------------
+[22:18:33]            SampVoice unloading...           
+[22:18:33]  -------------------------------------------
+[22:18:33] [dbg:raknet:free] : module releasing...
+[22:18:33] [dbg:raknet:free] : module released
+[22:18:33] [sv:dbg:network:free] : module releasing...
+[22:18:33] [sv:dbg:network:free] : module released
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[22:18:36] filterscripts = ""  (string)
+[22:18:36] weburl = "www.sa-mp.com"  (string)
+[22:18:36] 
+[22:18:36] Server Plugins
+[22:18:36] --------------
+[22:18:36]  Loading plugin: crashdetect
+[22:18:36]   CrashDetect plugin 4.19.4
+[22:18:36]   Loaded.
+[22:18:36]  Loading plugin: pawncmd
+[22:18:36] [Pawn.CMD] plugin v3.3.6 loading...
+[22:18:36] [Pawn.CMD] 
+
+    | Pawn.CMD 3.3.6 | 2016 - 2021
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Sep 26 2021 at 11:55:10
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[22:18:36]   Loaded.
+[22:18:36]  Loading plugin: sampvoice
+[22:18:36] [sv:dbg:network:init] : module initializing...
+[22:18:36] [dbg:raknet:init] : module initializing...
+[22:18:36] [dbg:raknet:init] : module initialized
+[22:18:36] [sv:dbg:network:init] : module initialized
+[22:18:36] [sv:dbg:main:Load] : creating 8 work threads...
+[22:18:36]  -------------------------------------------    
+[22:18:36]    ___                __   __    _              
+[22:18:36]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[22:18:36]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[22:18:36]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[22:18:36]                   |_|                           
+[22:18:36]  -------------------------------------------    
+[22:18:36]            SampVoice by MOR loaded              
+[22:18:36]  -------------------------------------------    
+[22:18:36]   Loaded.
+[22:18:36]  Loading plugin: sscanf
+[22:18:36] 
+
+[22:18:36]  ===============================
+
+[22:18:36]       sscanf plugin loaded.     
+
+[22:18:36]          Version:  2.8.3        
+
+[22:18:36]   (c) 2018 Alex "Y_Less" Cole  
+
+[22:18:36]  ===============================
+
+[22:18:36]   Loaded.
+[22:18:36]  Loading plugin: discord-connector
+[22:18:38]  >> plugin.dc-connector: v0.3.5 successfully loaded.
+[22:18:38]   Loaded.
+[22:18:38]  Loading plugin: mysql
+[22:18:38]  >> plugin.mysql: R39-6 successfully loaded.
+[22:18:38]   Loaded.
+[22:18:38]  Loading plugin: streamer
+[22:18:38] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[22:18:38]   Loaded.
+[22:18:38]  Loading plugin: Whirlpool
+[22:18:38]  
+[22:18:38]  ==================
+[22:18:38]  
+[22:18:38]   Whirlpool loaded
+[22:18:38]  
+[22:18:38]  ==================
+[22:18:38]  
+[22:18:38]   Loaded.
+[22:18:38]  Loading plugin: SKY
+[22:18:38] 
+[22:18:38]  ===============================
+[22:18:38]    
+[22:18:38]    < SKY - 2.3.0 >
+[22:18:38]    
+[22:18:38]    (c) 2008 - Present | YSF Maintainers
+[22:18:38]    (c) 2015 | Oscar "Slice" Broman
+[22:18:38]    
+[22:18:38]    Server Version: 0.3.7 R2
+[22:18:38]    Operating System: Windows
+[22:18:38]    Built on: Sep 27 2021 at 23:19:52
+[22:18:38]    
+[22:18:38]  ===============================
+[22:18:38] 
+[22:18:38]   Loaded.
+[22:18:38]  Loading plugin: nativechecker
+[22:18:38]   Loaded.
+[22:18:38]  Loaded 10 plugins.
+
+[22:18:38] 
+[22:18:38] Ban list
+[22:18:38] --------
+[22:18:38]  Loaded: samp.ban
+[22:18:38] 
+[22:18:38] 
+[22:18:38] Filterscripts
+[22:18:38] ---------------
+[22:18:38]   Loaded 0 filterscripts.
+
+[22:18:38] [sv:dbg:main:AmxLoad] : net game pointer (value:02589F68) received
+[22:18:38] [sv:dbg:network:bind] : voice server running on port 64268
+[22:18:38] AMX (73202184) loaded
+[22:18:38]  
+[22:18:38] --------------------------------------
+[22:18:38]  Anticheat Nex-AC loaded!
+[22:18:38]  Anticheat version: 1.9.52
+[22:18:38]  Author: Nexius
+[22:18:38] --------------------------------------
+
+[22:18:38]  
+[22:18:38]  
+[22:18:38]  
+[22:18:38]  ======================================= 
+[22:18:38]  |                                     | 
+[22:18:38]  |        YSI version 3.09.0684        | 
+[22:18:38]  |        By Alex "Y_Less" Cole        | 
+[22:18:38]  |                                     | 
+[22:18:38]  ======================================= 
+[22:18:38]  
+[22:18:38] Couldn't connect to radio station database... server will continue to operate normally.
+[22:18:38] 
+************************************************************************************************************************
+[22:18:38]  					Morgan City Roleplay [LOW ECONOMY] Version - MC:RPv2                                                                    
+[22:18:38]  					 Last Update game version - MC:RPv2                                                                
+[22:18:38] ************************************************************************************************************************
+
+[22:18:38] [LoadAntiCheat] Loading data from database...
+[22:18:38] Morgan City Roleplay [LOW ECONOMY]
+[22:18:38] 84 objects loaded.
+[22:18:38] Number of vehicle models: 20
+[22:18:39] [Script] 262 houses loaded.
+[22:18:39] [Script] 3 garages loaded.
+[22:18:39] [debug] Run time error 4: "Array index out of bounds"
+[22:18:39] [debug]  Attempted to read/write array element at index 8 in array of size 7
+[22:18:39] [debug] AMX backtrace:
+[22:18:39] [debug] #0 00380c64 in ReloadBusiness (businessid=16) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:16944
+[22:18:39] [debug] #1 003ef718 in public OnQueryFinished (threadid=14, extraid=0) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:25359
+[22:18:39] [Script] 28 entrances loaded.
+[22:18:39] [Script] 4 factions loaded.
+[22:18:39] [debug] Run time error 4: "Array index out of bounds"
+[22:18:39] [debug]  Attempted to read/write array element at index 7 in array of size 7
+[22:18:39] [debug] AMX backtrace:
+[22:18:39] [debug] #0 003f1c50 in public OnQueryFinished (threadid=21, extraid=0) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:25478
+[22:18:39] [Script] 2 lands loaded.
+[22:18:39] [Script] 19 gangs loaded.
+[22:18:39] [Script] 0 points loaded.
+[22:18:39] [Script] 10 Points Loaded.
+[22:18:39] [Graffities] No records found.
+[22:18:39] [BillBoards] No records found.
+[22:18:39] [ANTICHEAT]: Anti-cheat settings loaded successfully (loaded: 53). Time: 0 ??.
+[22:19:01] [connection] 127.0.0.1:56826 requests connection cookie.
+[22:19:02] [connection] incoming connection: 127.0.0.1:56826 id: 0
+[22:19:02] [sv:dbg:network:connect] : connecting player (0) with address (127.0.0.1) ...
+[22:19:02] [sv:dbg:network:connect] : player (0) assigned key (1948f2b4)
+[22:19:02] [join] Lisher_Frost has joined the server (0:127.0.0.1)
+[22:19:02] > {FFFFFF}Lisher Frost has joined the server [{FFFFFF}IP:{FFFFFF} 127.0.0.1] [City: ] [Country: ]
+[22:19:02] [sv:dbg:network:receive] : player (0) identified (port:64405)
+[22:19:31] [cmd] Lisher Frost: [settings]
+[22:20:51] [sv:dbg:network:connect] : disconnecting player (0) ...
+[22:20:51] > {FFFFFF}Lisher Frost Left The Server [{00ffff}IP:{FFFFFF} 255.255.255.255]
+[22:20:51] [part] Lisher_Frost has left the server (0:1)
+[22:20:52]  -------------------------------------------
+[22:20:52]            SampVoice unloading...           
+[22:20:52]  -------------------------------------------
+[22:20:52] [dbg:raknet:free] : module releasing...
+[22:20:52] [dbg:raknet:free] : module released
+[22:20:52] [sv:dbg:network:free] : module releasing...
+[22:20:52] [sv:dbg:network:free] : module released
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[22:20:56] filterscripts = ""  (string)
+[22:20:56] weburl = "www.sa-mp.com"  (string)
+[22:20:56] 
+[22:20:56] Server Plugins
+[22:20:56] --------------
+[22:20:56]  Loading plugin: crashdetect
+[22:20:56]   CrashDetect plugin 4.19.4
+[22:20:56]   Loaded.
+[22:20:56]  Loading plugin: pawncmd
+[22:20:56] [Pawn.CMD] plugin v3.3.6 loading...
+[22:20:56] [Pawn.CMD] 
+
+    | Pawn.CMD 3.3.6 | 2016 - 2021
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Sep 26 2021 at 11:55:10
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[22:20:56]   Loaded.
+[22:20:56]  Loading plugin: sampvoice
+[22:20:56] [sv:dbg:network:init] : module initializing...
+[22:20:56] [dbg:raknet:init] : module initializing...
+[22:20:56] [dbg:raknet:init] : module initialized
+[22:20:56] [sv:dbg:network:init] : module initialized
+[22:20:56] [sv:dbg:main:Load] : creating 8 work threads...
+[22:20:56]  -------------------------------------------    
+[22:20:56]    ___                __   __    _              
+[22:20:56]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[22:20:56]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[22:20:56]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[22:20:56]                   |_|                           
+[22:20:56]  -------------------------------------------    
+[22:20:56]            SampVoice by MOR loaded              
+[22:20:56]  -------------------------------------------    
+[22:20:56]   Loaded.
+[22:20:56]  Loading plugin: sscanf
+[22:20:56] 
+
+[22:20:56]  ===============================
+
+[22:20:56]       sscanf plugin loaded.     
+
+[22:20:56]          Version:  2.8.3        
+
+[22:20:56]   (c) 2018 Alex "Y_Less" Cole  
+
+[22:20:56]  ===============================
+
+[22:20:56]   Loaded.
+[22:20:56]  Loading plugin: discord-connector
+[22:20:58]  >> plugin.dc-connector: v0.3.5 successfully loaded.
+[22:20:58]   Loaded.
+[22:20:58]  Loading plugin: mysql
+[22:20:58]  >> plugin.mysql: R39-6 successfully loaded.
+[22:20:58]   Loaded.
+[22:20:58]  Loading plugin: streamer
+[22:20:58] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[22:20:58]   Loaded.
+[22:20:58]  Loading plugin: Whirlpool
+[22:20:58]  
+[22:20:58]  ==================
+[22:20:58]  
+[22:20:58]   Whirlpool loaded
+[22:20:58]  
+[22:20:58]  ==================
+[22:20:58]  
+[22:20:58]   Loaded.
+[22:20:58]  Loading plugin: SKY
+[22:20:58] 
+[22:20:58]  ===============================
+[22:20:58]    
+[22:20:58]    < SKY - 2.3.0 >
+[22:20:58]    
+[22:20:58]    (c) 2008 - Present | YSF Maintainers
+[22:20:58]    (c) 2015 | Oscar "Slice" Broman
+[22:20:58]    
+[22:20:58]    Server Version: 0.3.7 R2
+[22:20:58]    Operating System: Windows
+[22:20:58]    Built on: Sep 27 2021 at 23:19:52
+[22:20:58]    
+[22:20:58]  ===============================
+[22:20:58] 
+[22:20:58]   Loaded.
+[22:20:58]  Loading plugin: nativechecker
+[22:20:58]   Loaded.
+[22:20:58]  Loaded 10 plugins.
+
+[22:20:58] 
+[22:20:58] Ban list
+[22:20:58] --------
+[22:20:58]  Loaded: samp.ban
+[22:20:58] 
+[22:20:58] 
+[22:20:58] Filterscripts
+[22:20:58] ---------------
+[22:20:58]   Loaded 0 filterscripts.
+
+[22:20:58] [sv:dbg:main:AmxLoad] : net game pointer (value:02409F68) received
+[22:20:59] [sv:dbg:network:bind] : voice server running on port 52715
+[22:20:59] AMX (68811272) loaded
+[22:20:59]  
+[22:20:59] --------------------------------------
+[22:20:59]  Anticheat Nex-AC loaded!
+[22:20:59]  Anticheat version: 1.9.52
+[22:20:59]  Author: Nexius
+[22:20:59] --------------------------------------
+
+[22:20:59]  
+[22:20:59]  
+[22:20:59]  
+[22:20:59]  ======================================= 
+[22:20:59]  |                                     | 
+[22:20:59]  |        YSI version 3.09.0684        | 
+[22:20:59]  |        By Alex "Y_Less" Cole        | 
+[22:20:59]  |                                     | 
+[22:20:59]  ======================================= 
+[22:20:59]  
+[22:20:59] Couldn't connect to radio station database... server will continue to operate normally.
+[22:20:59] 
+************************************************************************************************************************
+[22:20:59]  					Morgan City Roleplay [LOW ECONOMY] Version - MC:RPv2                                                                    
+[22:20:59]  					 Last Update game version - MC:RPv2                                                                
+[22:20:59] ************************************************************************************************************************
+
+[22:20:59] [LoadAntiCheat] Loading data from database...
+[22:20:59] Morgan City Roleplay [LOW ECONOMY]
+[22:20:59] 84 objects loaded.
+[22:20:59] Number of vehicle models: 20
+[22:20:59] [Script] 262 houses loaded.
+[22:20:59] [Script] 3 garages loaded.
+[22:20:59] [debug] Run time error 4: "Array index out of bounds"
+[22:20:59] [debug]  Attempted to read/write array element at index 8 in array of size 7
+[22:20:59] [debug] AMX backtrace:
+[22:20:59] [debug] #0 00380c64 in ReloadBusiness (businessid=16) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:16944
+[22:20:59] [debug] #1 003ef718 in public OnQueryFinished (threadid=14, extraid=0) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:25359
+[22:20:59] [Script] 28 entrances loaded.
+[22:20:59] [Script] 4 factions loaded.
+[22:20:59] [debug] Run time error 4: "Array index out of bounds"
+[22:20:59] [debug]  Attempted to read/write array element at index 7 in array of size 7
+[22:20:59] [debug] AMX backtrace:
+[22:20:59] [debug] #0 003f1c50 in public OnQueryFinished (threadid=21, extraid=0) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:25478
+[22:20:59] [Script] 2 lands loaded.
+[22:20:59] [Script] 19 gangs loaded.
+[22:20:59] [Script] 0 points loaded.
+[22:20:59] [Script] 10 Points Loaded.
+[22:20:59] [Graffities] No records found.
+[22:20:59] [BillBoards] No records found.
+[22:20:59] [ANTICHEAT]: Anti-cheat settings loaded successfully (loaded: 53). Time: 0 ??.
+[22:21:17] [connection] 127.0.0.1:62950 requests connection cookie.
+[22:21:18] [connection] incoming connection: 127.0.0.1:62950 id: 0
+[22:21:19] [sv:dbg:network:connect] : connecting player (0) with address (127.0.0.1) ...
+[22:21:19] [sv:dbg:network:connect] : player (0) assigned key (4f916d21)
+[22:21:19] [join] Lisher_Frost has joined the server (0:127.0.0.1)
+[22:21:19] > {FFFFFF}Lisher Frost has joined the server [{FFFFFF}IP:{FFFFFF} 127.0.0.1] [City: ] [Country: ]
+[22:21:19] [sv:dbg:network:receive] : player (0) identified (port:54144)
+[22:21:45] [cmd] Lisher Frost: [settings]
+[22:21:48] [cmd] Lisher Frost: [settings]
+[22:21:51] [cmd] Lisher Frost: [settings]
+[22:21:54] [cmd] Lisher Frost: [settings]
+[22:21:55] [cmd] Lisher Frost: [settings]
+[22:22:24] [cmd] Lisher Frost: [settings]
+[22:22:31] [cmd] Lisher Frost: [settings]
+[22:27:09] [sv:dbg:network:connect] : disconnecting player (0) ...
+[22:27:09] > {FFFFFF}Lisher Frost Left The Server [{00ffff}IP:{FFFFFF} 255.255.255.255]
+[22:27:09] [part] Lisher_Frost has left the server (0:1)
+[22:27:12]  -------------------------------------------
+[22:27:12]            SampVoice unloading...           
+[22:27:12]  -------------------------------------------
+[22:27:12] [dbg:raknet:free] : module releasing...
+[22:27:12] [dbg:raknet:free] : module released
+[22:27:12] [sv:dbg:network:free] : module releasing...
+[22:27:12] [sv:dbg:network:free] : module released
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[22:28:47] filterscripts = ""  (string)
+[22:28:47] weburl = "www.sa-mp.com"  (string)
+[22:28:47] 
+[22:28:47] Server Plugins
+[22:28:47] --------------
+[22:28:47]  Loading plugin: crashdetect
+[22:28:47]   CrashDetect plugin 4.19.4
+[22:28:47]   Loaded.
+[22:28:47]  Loading plugin: pawncmd
+[22:28:47] [Pawn.CMD] plugin v3.3.6 loading...
+[22:28:47] [Pawn.CMD] 
+
+    | Pawn.CMD 3.3.6 | 2016 - 2021
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Sep 26 2021 at 11:55:10
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[22:28:47]   Loaded.
+[22:28:47]  Loading plugin: sampvoice
+[22:28:47] [sv:dbg:network:init] : module initializing...
+[22:28:47] [dbg:raknet:init] : module initializing...
+[22:28:47] [dbg:raknet:init] : module initialized
+[22:28:47] [sv:dbg:network:init] : module initialized
+[22:28:47] [sv:dbg:main:Load] : creating 8 work threads...
+[22:28:47]  -------------------------------------------    
+[22:28:47]    ___                __   __    _              
+[22:28:47]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[22:28:47]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[22:28:47]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[22:28:47]                   |_|                           
+[22:28:47]  -------------------------------------------    
+[22:28:47]            SampVoice by MOR loaded              
+[22:28:47]  -------------------------------------------    
+[22:28:47]   Loaded.
+[22:28:47]  Loading plugin: sscanf
+[22:28:47] 
+
+[22:28:47]  ===============================
+
+[22:28:47]       sscanf plugin loaded.     
+
+[22:28:47]          Version:  2.8.3        
+
+[22:28:47]   (c) 2018 Alex "Y_Less" Cole  
+
+[22:28:47]  ===============================
+
+[22:28:47]   Loaded.
+[22:28:47]  Loading plugin: discord-connector
+[22:28:49]  >> plugin.dc-connector: v0.3.5 successfully loaded.
+[22:28:49]   Loaded.
+[22:28:49]  Loading plugin: mysql
+[22:28:49]  >> plugin.mysql: R39-6 successfully loaded.
+[22:28:49]   Loaded.
+[22:28:49]  Loading plugin: streamer
+[22:28:49] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[22:28:49]   Loaded.
+[22:28:49]  Loading plugin: Whirlpool
+[22:28:49]  
+[22:28:49]  ==================
+[22:28:49]  
+[22:28:49]   Whirlpool loaded
+[22:28:49]  
+[22:28:49]  ==================
+[22:28:49]  
+[22:28:49]   Loaded.
+[22:28:49]  Loading plugin: SKY
+[22:28:49] 
+[22:28:49]  ===============================
+[22:28:49]    
+[22:28:49]    < SKY - 2.3.0 >
+[22:28:49]    
+[22:28:49]    (c) 2008 - Present | YSF Maintainers
+[22:28:49]    (c) 2015 | Oscar "Slice" Broman
+[22:28:49]    
+[22:28:49]    Server Version: 0.3.7 R2
+[22:28:49]    Operating System: Windows
+[22:28:49]    Built on: Sep 27 2021 at 23:19:52
+[22:28:49]    
+[22:28:49]  ===============================
+[22:28:49] 
+[22:28:49]   Loaded.
+[22:28:49]  Loading plugin: nativechecker
+[22:28:49]   Loaded.
+[22:28:49]  Loaded 10 plugins.
+
+[22:28:49] 
+[22:28:49] Ban list
+[22:28:49] --------
+[22:28:49]  Loaded: samp.ban
+[22:28:49] 
+[22:28:49] 
+[22:28:49] Filterscripts
+[22:28:49] ---------------
+[22:28:49]   Loaded 0 filterscripts.
+
+[22:28:49] [sv:dbg:main:AmxLoad] : net game pointer (value:02339F68) received
+[22:28:49] [sv:dbg:network:bind] : voice server running on port 56364
+[22:28:49] AMX (78445064) loaded
+[22:28:49]  
+[22:28:49] --------------------------------------
+[22:28:49]  Anticheat Nex-AC loaded!
+[22:28:49]  Anticheat version: 1.9.52
+[22:28:49]  Author: Nexius
+[22:28:49] --------------------------------------
+
+[22:28:49]  
+[22:28:49]  
+[22:28:49]  
+[22:28:49]  ======================================= 
+[22:28:49]  |                                     | 
+[22:28:49]  |        YSI version 3.09.0684        | 
+[22:28:49]  |        By Alex "Y_Less" Cole        | 
+[22:28:49]  |                                     | 
+[22:28:49]  ======================================= 
+[22:28:49]  
+[22:28:49] Couldn't connect to radio station database... server will continue to operate normally.
+[22:28:49] 
+************************************************************************************************************************
+[22:28:49]  					Morgan City Roleplay [LOW ECONOMY] Version - MC:RPv2                                                                    
+[22:28:49]  					 Last Update game version - MC:RPv2                                                                
+[22:28:49] ************************************************************************************************************************
+
+[22:28:49] [LoadAntiCheat] Loading data from database...
+[22:28:49] Morgan City Roleplay [LOW ECONOMY]
+[22:28:49] 84 objects loaded.
+[22:28:49] Number of vehicle models: 20
+[22:28:50] [Script] 262 houses loaded.
+[22:28:50] [Script] 3 garages loaded.
+[22:28:50] [debug] Run time error 4: "Array index out of bounds"
+[22:28:50] [debug]  Attempted to read/write array element at index 8 in array of size 7
+[22:28:50] [debug] AMX backtrace:
+[22:28:50] [debug] #0 00380c64 in ReloadBusiness (businessid=16) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:16946
+[22:28:50] [debug] #1 003ef718 in public OnQueryFinished (threadid=14, extraid=0) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:25361
+[22:28:50] [Script] 28 entrances loaded.
+[22:28:50] [Script] 4 factions loaded.
+[22:28:50] [debug] Run time error 4: "Array index out of bounds"
+[22:28:50] [debug]  Attempted to read/write array element at index 7 in array of size 7
+[22:28:50] [debug] AMX backtrace:
+[22:28:50] [debug] #0 003f1c50 in public OnQueryFinished (threadid=21, extraid=0) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:25480
+[22:28:50] [Script] 2 lands loaded.
+[22:28:51] [Script] 19 gangs loaded.
+[22:28:51] [Script] 0 points loaded.
+[22:28:51] [Script] 10 Points Loaded.
+[22:28:51] [Graffities] No records found.
+[22:28:51] [BillBoards] No records found.
+[22:28:51] [ANTICHEAT]: Anti-cheat settings loaded successfully (loaded: 53). Time: 0 ??.
+[22:29:08] [connection] 127.0.0.1:63665 requests connection cookie.
+[22:29:09] [connection] incoming connection: 127.0.0.1:63665 id: 0
+[22:29:09] [sv:dbg:network:connect] : connecting player (0) with address (127.0.0.1) ...
+[22:29:09] [sv:dbg:network:connect] : player (0) assigned key (1653e659)
+[22:29:09] [join] Lisher_Frost has joined the server (0:127.0.0.1)
+[22:29:09] > {FFFFFF}Lisher Frost has joined the server [{FFFFFF}IP:{FFFFFF} 127.0.0.1] [City: ] [Country: ]
+[22:29:10] [sv:dbg:network:receive] : player (0) identified (port:58052)
+[22:29:34] [cmd] Lisher Frost: [settings]
+[22:29:38] [cmd] Lisher Frost: [settings]
+[22:29:41] [cmd] Lisher Frost: [settings]
+[22:29:43] [cmd] Lisher Frost: [settings]
+[22:31:18] [cmd] Lisher Frost: [settings]
