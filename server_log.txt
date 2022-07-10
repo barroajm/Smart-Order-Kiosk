@@ -4467,3 +4467,1692 @@ v0.3.7-R2, (C)2005-2015 SA-MP Team
 [22:00:44] [dbg:raknet:free] : module released
 [22:00:44] [sv:dbg:network:free] : module releasing...
 [22:00:44] [sv:dbg:network:free] : module released
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[19:26:16] filterscripts = ""  (string)
+[19:26:16] weburl = "www.sa-mp.com"  (string)
+[19:26:16] 
+[19:26:16] Server Plugins
+[19:26:16] --------------
+[19:26:16]  Loading plugin: crashdetect
+[19:26:16]   CrashDetect plugin 4.19.4
+[19:26:16]   Loaded.
+[19:26:16]  Loading plugin: pawncmd
+[19:26:16] [Pawn.CMD] plugin v3.3.6 loading...
+[19:26:16] [Pawn.CMD] 
+
+    | Pawn.CMD 3.3.6 | 2016 - 2021
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Sep 26 2021 at 11:55:10
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[19:26:16]   Loaded.
+[19:26:16]  Loading plugin: sampvoice
+[19:26:16] [sv:dbg:network:init] : module initializing...
+[19:26:16] [dbg:raknet:init] : module initializing...
+[19:26:16] [dbg:raknet:init] : module initialized
+[19:26:16] [sv:dbg:network:init] : module initialized
+[19:26:16] [sv:dbg:main:Load] : creating 8 work threads...
+[19:26:16]  -------------------------------------------    
+[19:26:16]    ___                __   __    _              
+[19:26:16]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[19:26:16]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[19:26:16]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[19:26:16]                   |_|                           
+[19:26:16]  -------------------------------------------    
+[19:26:16]            SampVoice by MOR loaded              
+[19:26:16]  -------------------------------------------    
+[19:26:16]   Loaded.
+[19:26:16]  Loading plugin: sscanf
+[19:26:16] 
+
+[19:26:16]  ===============================
+
+[19:26:16]       sscanf plugin loaded.     
+
+[19:26:16]          Version:  2.8.3        
+
+[19:26:16]   (c) 2018 Alex "Y_Less" Cole  
+
+[19:26:16]  ===============================
+
+[19:26:16]   Loaded.
+[19:26:16]  Loading plugin: discord-connector
+[19:26:18]  >> plugin.dc-connector: bot could not connect due to intent permissions. Modify your discord bot settings and enable every intent.
+[19:26:32]  -------------------------------------------
+[19:26:32]            SampVoice unloading...           
+[19:26:32]  -------------------------------------------
+[19:26:32] [dbg:raknet:free] : module releasing...
+[19:26:32] [dbg:raknet:free] : module released
+[19:26:32] [sv:dbg:network:free] : module releasing...
+[19:26:32] [sv:dbg:network:free] : module released
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[19:29:28] filterscripts = ""  (string)
+[19:29:28] weburl = "www.sa-mp.com"  (string)
+[19:29:28] 
+[19:29:28] Server Plugins
+[19:29:28] --------------
+[19:29:28]  Loading plugin: crashdetect
+[19:29:28]   CrashDetect plugin 4.19.4
+[19:29:28]   Loaded.
+[19:29:28]  Loading plugin: pawncmd
+[19:29:28] [Pawn.CMD] plugin v3.3.6 loading...
+[19:29:28] [Pawn.CMD] 
+
+    | Pawn.CMD 3.3.6 | 2016 - 2021
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Sep 26 2021 at 11:55:10
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[19:29:28]   Loaded.
+[19:29:28]  Loading plugin: sampvoice
+[19:29:28] [sv:dbg:network:init] : module initializing...
+[19:29:28] [dbg:raknet:init] : module initializing...
+[19:29:28] [dbg:raknet:init] : module initialized
+[19:29:28] [sv:dbg:network:init] : module initialized
+[19:29:28] [sv:dbg:main:Load] : creating 8 work threads...
+[19:29:28]  -------------------------------------------    
+[19:29:28]    ___                __   __    _              
+[19:29:28]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[19:29:28]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[19:29:28]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[19:29:28]                   |_|                           
+[19:29:28]  -------------------------------------------    
+[19:29:28]            SampVoice by MOR loaded              
+[19:29:28]  -------------------------------------------    
+[19:29:28]   Loaded.
+[19:29:28]  Loading plugin: sscanf
+[19:29:28] 
+
+[19:29:28]  ===============================
+
+[19:29:28]       sscanf plugin loaded.     
+
+[19:29:28]          Version:  2.8.3        
+
+[19:29:28]   (c) 2018 Alex "Y_Less" Cole  
+
+[19:29:28]  ===============================
+
+[19:29:28]   Loaded.
+[19:29:28]  Loading plugin: discord-connector
+[19:29:30]  >> plugin.dc-connector: v0.3.5 successfully loaded.
+[19:29:30]   Loaded.
+[19:29:30]  Loading plugin: streamer
+[19:29:30]   Failed.
+[19:29:30]  Loading plugin: mysql
+[19:29:30]  >> plugin.mysql: R39-6 successfully loaded.
+[19:29:30]   Loaded.
+[19:29:30]  Loading plugin: Whirlpool
+[19:29:30]   Failed.
+[19:29:30]  Loading plugin: SKY
+[19:29:30] 
+[19:29:30]  ===============================
+[19:29:30]    
+[19:29:30]    < SKY - 2.3.0 >
+[19:29:30]    
+[19:29:30]    (c) 2008 - Present | YSF Maintainers
+[19:29:30]    (c) 2015 | Oscar "Slice" Broman
+[19:29:30]    
+[19:29:30]    Server Version: 0.3.7 R2
+[19:29:30]    Operating System: Windows
+[19:29:30]    Built on: Sep 27 2021 at 23:19:52
+[19:29:30]    
+[19:29:30]  ===============================
+[19:29:30] 
+[19:29:30]   Loaded.
+[19:29:30]  Loading plugin: nativechecker
+[19:29:30]   Failed.
+[19:29:30]  Loaded 7 plugins.
+
+[19:29:30] 
+[19:29:30] Ban list
+[19:29:30] --------
+[19:29:30]  Loaded: samp.ban
+[19:29:30] 
+[19:29:30] 
+[19:29:30] Filterscripts
+[19:29:30] ---------------
+[19:29:30]   Loaded 0 filterscripts.
+
+[19:29:30] [sv:dbg:main:AmxLoad] : net game pointer (value:00789F68) received
+[19:29:30] [sv:dbg:network:bind] : voice server running on port 55934
+[19:29:31] [debug] Run time error 19: "File or function is not found"
+[19:29:31] [debug]  CreateDynamicObject
+[19:29:31] [debug]  SetDynamicObjectMaterial
+[19:29:31] [debug]  SetDynamicObjectMaterialText
+[19:29:31] [debug]  CreateDynamicObjectEx
+[19:29:31] [debug]  CreateDynamicPickup
+[19:29:31] [debug]  CreateDynamic3DTextLabel
+[19:29:31] [debug]  DestroyDynamicObject
+[19:29:31] [debug]  IsValidDynamicMapIcon
+[19:29:31] [debug]  DestroyDynamicMapIcon
+[19:29:31] [debug]  IsValidDynamicObject
+[19:29:31] [debug]  EditDynamicObject
+[19:29:31] [debug]  Streamer_GetArrayData
+[19:29:31] [debug]  Streamer_SetArrayData
+[19:29:31] [debug]  Streamer_GetUpperBound
+[19:29:31] [debug]  DestroyDynamic3DTextLabel
+[19:29:31] [debug]  IsValidDynamic3DTextLabel
+[19:29:31] [debug]  Streamer_UpdateEx
+[19:29:31] [debug]  DestroyDynamicPickup
+[19:29:31] [debug]  Streamer_GetIntData
+[19:29:31] [debug]  AttachDynamicObjectToVehicle
+[19:29:31] [debug]  DestroyDynamicArea
+[19:29:31] [debug]  CreateDynamicRectangle
+[19:29:31] [debug]  CreateDynamicMapIcon
+[19:29:31] [debug]  Streamer_SetIntData
+[19:29:31] [debug]  UpdateDynamic3DTextLabelText
+[19:29:31] [debug]  MoveDynamicObject
+[19:29:31] [debug]  IsValidDynamicPickup
+[19:29:31] [debug]  IsPlayerInDynamicArea
+[19:29:31] [debug]  GetDynamicObjectPos
+[19:29:31] [debug]  GetDynamicObjectRot
+[19:29:31] [debug]  SetDynamicObjectRot
+[19:29:31] [debug]  WP_Hash
+[19:29:31] [debug]  Streamer_CellDistance
+[19:29:31] [debug]  Streamer_TickRate
+[19:29:31] [debug]  Streamer_VisibleItems
+[19:29:31] [debug]  SetDynamicObjectPos
+[19:29:31] [debug]  Streamer_Update
+[19:29:31] [debug]  Streamer_ToggleIdleUpdate
+[19:29:31] [debug] Run time error 19: "File or function is not found"
+[19:29:31] [debug]  CreateDynamicObject
+[19:29:31] [debug]  SetDynamicObjectMaterial
+[19:29:31] [debug]  SetDynamicObjectMaterialText
+[19:29:31] [debug]  CreateDynamicObjectEx
+[19:29:31] [debug]  CreateDynamicPickup
+[19:29:31] [debug]  CreateDynamic3DTextLabel
+[19:29:31] [debug]  DestroyDynamicObject
+[19:29:31] [debug]  IsValidDynamicMapIcon
+[19:29:31] [debug]  DestroyDynamicMapIcon
+[19:29:31] [debug]  IsValidDynamicObject
+[19:29:31] [debug]  EditDynamicObject
+[19:29:31] [debug]  Streamer_GetArrayData
+[19:29:31] [debug]  Streamer_SetArrayData
+[19:29:31] [debug]  Streamer_GetUpperBound
+[19:29:31] [debug]  DestroyDynamic3DTextLabel
+[19:29:31] [debug]  IsValidDynamic3DTextLabel
+[19:29:31] [debug]  Streamer_UpdateEx
+[19:29:31] [debug]  DestroyDynamicPickup
+[19:29:31] [debug]  Streamer_GetIntData
+[19:29:31] [debug]  AttachDynamicObjectToVehicle
+[19:29:31] [debug]  DestroyDynamicArea
+[19:29:31] [debug]  CreateDynamicRectangle
+[19:29:31] [debug]  CreateDynamicMapIcon
+[19:29:31] [debug]  Streamer_SetIntData
+[19:29:31] [debug]  UpdateDynamic3DTextLabelText
+[19:29:31] [debug]  MoveDynamicObject
+[19:29:31] [debug]  IsValidDynamicPickup
+[19:29:31] [debug]  IsPlayerInDynamicArea
+[19:29:31] [debug]  GetDynamicObjectPos
+[19:29:31] [debug]  GetDynamicObjectRot
+[19:29:31] [debug]  SetDynamicObjectRot
+[19:29:31] [debug]  WP_Hash
+[19:29:31] [debug]  Streamer_CellDistance
+[19:29:31] [debug]  Streamer_TickRate
+[19:29:31] [debug]  Streamer_VisibleItems
+[19:29:31] [debug]  SetDynamicObjectPos
+[19:29:31] [debug]  Streamer_Update
+[19:29:31] [debug]  Streamer_ToggleIdleUpdate
+[19:29:31] Script[gamemodes/v2morgancity.amx]: Run time error 19: "File or function is not found"
+[19:29:31] Number of vehicle models: 0
+[19:29:59]  -------------------------------------------
+[19:29:59]            SampVoice unloading...           
+[19:29:59]  -------------------------------------------
+[19:29:59] [dbg:raknet:free] : module releasing...
+[19:29:59] [dbg:raknet:free] : module released
+[19:29:59] [sv:dbg:network:free] : module releasing...
+[19:29:59] [sv:dbg:network:free] : module released
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[19:33:03] filterscripts = ""  (string)
+[19:33:03] weburl = "www.sa-mp.com"  (string)
+[19:33:03] 
+[19:33:03] Server Plugins
+[19:33:03] --------------
+[19:33:03]  Loading plugin: crashdetect
+[19:33:03]   CrashDetect plugin 4.19.4
+[19:33:03]   Loaded.
+[19:33:03]  Loading plugin: pawncmd
+[19:33:03] [Pawn.CMD] plugin v3.3.6 loading...
+[19:33:03] [Pawn.CMD] 
+
+    | Pawn.CMD 3.3.6 | 2016 - 2021
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Sep 26 2021 at 11:55:10
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[19:33:03]   Loaded.
+[19:33:03]  Loading plugin: sampvoice
+[19:33:03] [sv:dbg:network:init] : module initializing...
+[19:33:03] [dbg:raknet:init] : module initializing...
+[19:33:03] [dbg:raknet:init] : module initialized
+[19:33:03] [sv:dbg:network:init] : module initialized
+[19:33:03] [sv:dbg:main:Load] : creating 8 work threads...
+[19:33:03]  -------------------------------------------    
+[19:33:03]    ___                __   __    _              
+[19:33:03]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[19:33:03]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[19:33:03]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[19:33:03]                   |_|                           
+[19:33:03]  -------------------------------------------    
+[19:33:03]            SampVoice by MOR loaded              
+[19:33:03]  -------------------------------------------    
+[19:33:03]   Loaded.
+[19:33:03]  Loading plugin: sscanf
+[19:33:03] 
+
+[19:33:03]  ===============================
+
+[19:33:03]       sscanf plugin loaded.     
+
+[19:33:03]          Version:  2.8.3        
+
+[19:33:03]   (c) 2018 Alex "Y_Less" Cole  
+
+[19:33:03]  ===============================
+
+[19:33:03]   Loaded.
+[19:33:03]  Loading plugin: discord-connector
+[19:33:05]  >> plugin.dc-connector: v0.3.5 successfully loaded.
+[19:33:05]   Loaded.
+[19:33:05]  Loading plugin: streamer
+[19:33:05]   Failed.
+[19:33:05]  Loading plugin: mysql
+[19:33:05]  >> plugin.mysql: R39-6 successfully loaded.
+[19:33:05]   Loaded.
+[19:33:05]  Loading plugin: Whirlpool
+[19:33:05]  
+[19:33:05]  ==================
+[19:33:05]  
+[19:33:05]   Whirlpool loaded
+[19:33:05]  
+[19:33:05]  ==================
+[19:33:05]  
+[19:33:05]   Loaded.
+[19:33:05]  Loading plugin: SKY
+[19:33:05] 
+[19:33:05]  ===============================
+[19:33:05]    
+[19:33:05]    < SKY - 2.3.0 >
+[19:33:05]    
+[19:33:05]    (c) 2008 - Present | YSF Maintainers
+[19:33:05]    (c) 2015 | Oscar "Slice" Broman
+[19:33:05]    
+[19:33:05]    Server Version: 0.3.7 R2
+[19:33:05]    Operating System: Windows
+[19:33:05]    Built on: Sep 27 2021 at 23:19:52
+[19:33:05]    
+[19:33:05]  ===============================
+[19:33:05] 
+[19:33:05]   Loaded.
+[19:33:05]  Loading plugin: nativechecker
+[19:33:05]   Failed.
+[19:33:05]  Loaded 8 plugins.
+
+[19:33:05] 
+[19:33:05] Ban list
+[19:33:05] --------
+[19:33:05]  Loaded: samp.ban
+[19:33:05] 
+[19:33:05] 
+[19:33:05] Filterscripts
+[19:33:05] ---------------
+[19:33:05]   Loaded 0 filterscripts.
+
+[19:33:05] [sv:dbg:main:AmxLoad] : net game pointer (value:02319F68) received
+[19:33:05] [sv:dbg:network:bind] : voice server running on port 61256
+[19:33:05] AMX (73398856) loaded
+[19:33:05] [debug] Run time error 19: "File or function is not found"
+[19:33:05] [debug]  CreateDynamicObject
+[19:33:05] [debug]  SetDynamicObjectMaterial
+[19:33:05] [debug]  SetDynamicObjectMaterialText
+[19:33:05] [debug]  CreateDynamicObjectEx
+[19:33:05] [debug]  CreateDynamicPickup
+[19:33:05] [debug]  CreateDynamic3DTextLabel
+[19:33:05] [debug]  DestroyDynamicObject
+[19:33:05] [debug]  IsValidDynamicMapIcon
+[19:33:05] [debug]  DestroyDynamicMapIcon
+[19:33:05] [debug]  IsValidDynamicObject
+[19:33:05] [debug]  EditDynamicObject
+[19:33:05] [debug]  Streamer_GetArrayData
+[19:33:05] [debug]  Streamer_SetArrayData
+[19:33:05] [debug]  Streamer_GetUpperBound
+[19:33:05] [debug]  DestroyDynamic3DTextLabel
+[19:33:05] [debug]  IsValidDynamic3DTextLabel
+[19:33:05] [debug]  Streamer_UpdateEx
+[19:33:05] [debug]  DestroyDynamicPickup
+[19:33:05] [debug]  Streamer_GetIntData
+[19:33:05] [debug]  AttachDynamicObjectToVehicle
+[19:33:05] [debug]  DestroyDynamicArea
+[19:33:05] [debug]  CreateDynamicRectangle
+[19:33:05] [debug]  CreateDynamicMapIcon
+[19:33:05] [debug]  Streamer_SetIntData
+[19:33:05] [debug]  UpdateDynamic3DTextLabelText
+[19:33:05] [debug]  MoveDynamicObject
+[19:33:05] [debug]  IsValidDynamicPickup
+[19:33:05] [debug]  IsPlayerInDynamicArea
+[19:33:05] [debug]  GetDynamicObjectPos
+[19:33:05] [debug]  GetDynamicObjectRot
+[19:33:05] [debug]  SetDynamicObjectRot
+[19:33:05] [debug]  Streamer_CellDistance
+[19:33:05] [debug]  Streamer_TickRate
+[19:33:05] [debug]  Streamer_VisibleItems
+[19:33:05] [debug]  SetDynamicObjectPos
+[19:33:05] [debug]  Streamer_Update
+[19:33:05] [debug]  Streamer_ToggleIdleUpdate
+[19:33:05] [debug] Run time error 19: "File or function is not found"
+[19:33:05] [debug]  CreateDynamicObject
+[19:33:05] [debug]  SetDynamicObjectMaterial
+[19:33:05] [debug]  SetDynamicObjectMaterialText
+[19:33:05] [debug]  CreateDynamicObjectEx
+[19:33:05] [debug]  CreateDynamicPickup
+[19:33:05] [debug]  CreateDynamic3DTextLabel
+[19:33:05] [debug]  DestroyDynamicObject
+[19:33:05] [debug]  IsValidDynamicMapIcon
+[19:33:05] [debug]  DestroyDynamicMapIcon
+[19:33:05] [debug]  IsValidDynamicObject
+[19:33:05] [debug]  EditDynamicObject
+[19:33:05] [debug]  Streamer_GetArrayData
+[19:33:05] [debug]  Streamer_SetArrayData
+[19:33:05] [debug]  Streamer_GetUpperBound
+[19:33:05] [debug]  DestroyDynamic3DTextLabel
+[19:33:05] [debug]  IsValidDynamic3DTextLabel
+[19:33:05] [debug]  Streamer_UpdateEx
+[19:33:05] [debug]  DestroyDynamicPickup
+[19:33:05] [debug]  Streamer_GetIntData
+[19:33:05] [debug]  AttachDynamicObjectToVehicle
+[19:33:05] [debug]  DestroyDynamicArea
+[19:33:05] [debug]  CreateDynamicRectangle
+[19:33:05] [debug]  CreateDynamicMapIcon
+[19:33:05] [debug]  Streamer_SetIntData
+[19:33:05] [debug]  UpdateDynamic3DTextLabelText
+[19:33:05] [debug]  MoveDynamicObject
+[19:33:05] [debug]  IsValidDynamicPickup
+[19:33:05] [debug]  IsPlayerInDynamicArea
+[19:33:05] [debug]  GetDynamicObjectPos
+[19:33:05] [debug]  GetDynamicObjectRot
+[19:33:05] [debug]  SetDynamicObjectRot
+[19:33:05] [debug]  Streamer_CellDistance
+[19:33:05] [debug]  Streamer_TickRate
+[19:33:05] [debug]  Streamer_VisibleItems
+[19:33:05] [debug]  SetDynamicObjectPos
+[19:33:05] [debug]  Streamer_Update
+[19:33:05] [debug]  Streamer_ToggleIdleUpdate
+[19:33:05] Script[gamemodes/v2morgancity.amx]: Run time error 19: "File or function is not found"
+[19:33:05] Number of vehicle models: 0
+[19:33:17]  -------------------------------------------
+[19:33:17]            SampVoice unloading...           
+[19:33:17]  -------------------------------------------
+[19:33:17] [dbg:raknet:free] : module releasing...
+[19:33:17] [dbg:raknet:free] : module released
+[19:33:17] [sv:dbg:network:free] : module releasing...
+[19:33:17] [sv:dbg:network:free] : module released
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[19:34:04] filterscripts = ""  (string)
+[19:34:04] weburl = "www.sa-mp.com"  (string)
+[19:34:04] 
+[19:34:04] Server Plugins
+[19:34:04] --------------
+[19:34:04]  Loading plugin: crashdetect
+[19:34:04]   CrashDetect plugin 4.19.4
+[19:34:04]   Loaded.
+[19:34:04]  Loading plugin: pawncmd
+[19:34:04] [Pawn.CMD] plugin v3.3.6 loading...
+[19:34:04] [Pawn.CMD] 
+
+    | Pawn.CMD 3.3.6 | 2016 - 2021
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Sep 26 2021 at 11:55:10
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[19:34:04]   Loaded.
+[19:34:04]  Loading plugin: sampvoice
+[19:34:04] [sv:dbg:network:init] : module initializing...
+[19:34:04] [dbg:raknet:init] : module initializing...
+[19:34:04] [dbg:raknet:init] : module initialized
+[19:34:04] [sv:dbg:network:init] : module initialized
+[19:34:04] [sv:dbg:main:Load] : creating 8 work threads...
+[19:34:04]  -------------------------------------------    
+[19:34:04]    ___                __   __    _              
+[19:34:04]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[19:34:04]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[19:34:04]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[19:34:04]                   |_|                           
+[19:34:04]  -------------------------------------------    
+[19:34:04]            SampVoice by MOR loaded              
+[19:34:04]  -------------------------------------------    
+[19:34:04]   Loaded.
+[19:34:04]  Loading plugin: sscanf
+[19:34:04] 
+
+[19:34:04]  ===============================
+
+[19:34:04]       sscanf plugin loaded.     
+
+[19:34:04]          Version:  2.8.3        
+
+[19:34:04]   (c) 2018 Alex "Y_Less" Cole  
+
+[19:34:04]  ===============================
+
+[19:34:04]   Loaded.
+[19:34:04]  Loading plugin: discord-connector
+[19:34:06]  >> plugin.dc-connector: v0.3.5 successfully loaded.
+[19:34:06]   Loaded.
+[19:34:06]  Loading plugin: streamer
+[19:34:06]   Failed.
+[19:34:06]  Loading plugin: mysql
+[19:34:06]  >> plugin.mysql: R39-6 successfully loaded.
+[19:34:06]   Loaded.
+[19:34:06]  Loading plugin: Whirlpool
+[19:34:06]  
+[19:34:06]  ==================
+[19:34:06]  
+[19:34:06]   Whirlpool loaded
+[19:34:06]  
+[19:34:06]  ==================
+[19:34:06]  
+[19:34:06]   Loaded.
+[19:34:06]  Loading plugin: SKY
+[19:34:06] 
+[19:34:06]  ===============================
+[19:34:06]    
+[19:34:06]    < SKY - 2.3.0 >
+[19:34:06]    
+[19:34:06]    (c) 2008 - Present | YSF Maintainers
+[19:34:06]    (c) 2015 | Oscar "Slice" Broman
+[19:34:06]    
+[19:34:06]    Server Version: 0.3.7 R2
+[19:34:06]    Operating System: Windows
+[19:34:06]    Built on: Sep 27 2021 at 23:19:52
+[19:34:06]    
+[19:34:06]  ===============================
+[19:34:06] 
+[19:34:06]   Loaded.
+[19:34:06]  Loading plugin: nativechecker
+[19:34:06]   Loaded.
+[19:34:06]  Loaded 9 plugins.
+
+[19:34:06] 
+[19:34:06] Ban list
+[19:34:06] --------
+[19:34:06]  Loaded: samp.ban
+[19:34:06] 
+[19:34:06] 
+[19:34:06] Filterscripts
+[19:34:06] ---------------
+[19:34:06]   Loaded 0 filterscripts.
+
+[19:34:06] [sv:dbg:main:AmxLoad] : net game pointer (value:02339F68) received
+[19:34:06] [sv:dbg:network:bind] : voice server running on port 60320
+[19:34:06] AMX (68811336) loaded
+[19:34:06]    Error: Function not registered: 'CreateDynamicObject'
+[19:34:06]    Error: Function not registered: 'SetDynamicObjectMaterial'
+[19:34:06]    Error: Function not registered: 'SetDynamicObjectMaterialText'
+[19:34:06]    Error: Function not registered: 'CreateDynamicObjectEx'
+[19:34:06]    Error: Function not registered: 'CreateDynamicPickup'
+[19:34:06]    Error: Function not registered: 'CreateDynamic3DTextLabel'
+[19:34:06]    Error: Function not registered: 'DestroyDynamicObject'
+[19:34:06]    Error: Function not registered: 'IsValidDynamicMapIcon'
+[19:34:06]    Error: Function not registered: 'DestroyDynamicMapIcon'
+[19:34:06]    Error: Function not registered: 'IsValidDynamicObject'
+[19:34:06]    Error: Function not registered: 'EditDynamicObject'
+[19:34:06]    Error: Function not registered: 'Streamer_GetArrayData'
+[19:34:06]    Error: Function not registered: 'Streamer_SetArrayData'
+[19:34:06]    Error: Function not registered: 'Streamer_GetUpperBound'
+[19:34:06]    Error: Function not registered: 'DestroyDynamic3DTextLabel'
+[19:34:06]    Error: Function not registered: 'IsValidDynamic3DTextLabel'
+[19:34:06]    Error: Function not registered: 'Streamer_UpdateEx'
+[19:34:06]    Error: Function not registered: 'DestroyDynamicPickup'
+[19:34:06]    Error: Function not registered: 'Streamer_GetIntData'
+[19:34:06]    Error: Function not registered: 'AttachDynamicObjectToVehicle'
+[19:34:06]    Error: Function not registered: 'DestroyDynamicArea'
+[19:34:06]    Error: Function not registered: 'CreateDynamicRectangle'
+[19:34:06]    Error: Function not registered: 'CreateDynamicMapIcon'
+[19:34:06]    Error: Function not registered: 'Streamer_SetIntData'
+[19:34:06]    Error: Function not registered: 'UpdateDynamic3DTextLabelText'
+[19:34:06]    Error: Function not registered: 'MoveDynamicObject'
+[19:34:06]    Error: Function not registered: 'IsValidDynamicPickup'
+[19:34:06]    Error: Function not registered: 'IsPlayerInDynamicArea'
+[19:34:06]    Error: Function not registered: 'GetDynamicObjectPos'
+[19:34:06]    Error: Function not registered: 'GetDynamicObjectRot'
+[19:34:06]    Error: Function not registered: 'SetDynamicObjectRot'
+[19:34:06]    Error: Function not registered: 'Streamer_CellDistance'
+[19:34:06]    Error: Function not registered: 'Streamer_TickRate'
+[19:34:06]    Error: Function not registered: 'Streamer_VisibleItems'
+[19:34:06]    Error: Function not registered: 'SetDynamicObjectPos'
+[19:34:06]    Error: Function not registered: 'Streamer_Update'
+[19:34:06]    Error: Function not registered: 'Streamer_ToggleIdleUpdate'
+[19:34:06] [debug] Run time error 19: "File or function is not found"
+[19:34:06] [debug]  CreateDynamicObject
+[19:34:06] [debug]  SetDynamicObjectMaterial
+[19:34:06] [debug]  SetDynamicObjectMaterialText
+[19:34:06] [debug]  CreateDynamicObjectEx
+[19:34:06] [debug]  CreateDynamicPickup
+[19:34:06] [debug]  CreateDynamic3DTextLabel
+[19:34:06] [debug]  DestroyDynamicObject
+[19:34:06] [debug]  IsValidDynamicMapIcon
+[19:34:06] [debug]  DestroyDynamicMapIcon
+[19:34:06] [debug]  IsValidDynamicObject
+[19:34:06] [debug]  EditDynamicObject
+[19:34:06] [debug]  Streamer_GetArrayData
+[19:34:06] [debug]  Streamer_SetArrayData
+[19:34:06] [debug]  Streamer_GetUpperBound
+[19:34:06] [debug]  DestroyDynamic3DTextLabel
+[19:34:06] [debug]  IsValidDynamic3DTextLabel
+[19:34:06] [debug]  Streamer_UpdateEx
+[19:34:06] [debug]  DestroyDynamicPickup
+[19:34:06] [debug]  Streamer_GetIntData
+[19:34:06] [debug]  AttachDynamicObjectToVehicle
+[19:34:06] [debug]  DestroyDynamicArea
+[19:34:06] [debug]  CreateDynamicRectangle
+[19:34:06] [debug]  CreateDynamicMapIcon
+[19:34:06] [debug]  Streamer_SetIntData
+[19:34:06] [debug]  UpdateDynamic3DTextLabelText
+[19:34:06] [debug]  MoveDynamicObject
+[19:34:06] [debug]  IsValidDynamicPickup
+[19:34:06] [debug]  IsPlayerInDynamicArea
+[19:34:06] [debug]  GetDynamicObjectPos
+[19:34:06] [debug]  GetDynamicObjectRot
+[19:34:06] [debug]  SetDynamicObjectRot
+[19:34:06] [debug]  Streamer_CellDistance
+[19:34:06] [debug]  Streamer_TickRate
+[19:34:06] [debug]  Streamer_VisibleItems
+[19:34:06] [debug]  SetDynamicObjectPos
+[19:34:06] [debug]  Streamer_Update
+[19:34:06] [debug]  Streamer_ToggleIdleUpdate
+[19:34:06] [debug] Run time error 19: "File or function is not found"
+[19:34:06] [debug]  CreateDynamicObject
+[19:34:06] [debug]  SetDynamicObjectMaterial
+[19:34:06] [debug]  SetDynamicObjectMaterialText
+[19:34:06] [debug]  CreateDynamicObjectEx
+[19:34:06] [debug]  CreateDynamicPickup
+[19:34:06] [debug]  CreateDynamic3DTextLabel
+[19:34:06] [debug]  DestroyDynamicObject
+[19:34:06] [debug]  IsValidDynamicMapIcon
+[19:34:06] [debug]  DestroyDynamicMapIcon
+[19:34:06] [debug]  IsValidDynamicObject
+[19:34:06] [debug]  EditDynamicObject
+[19:34:06] [debug]  Streamer_GetArrayData
+[19:34:06] [debug]  Streamer_SetArrayData
+[19:34:06] [debug]  Streamer_GetUpperBound
+[19:34:06] [debug]  DestroyDynamic3DTextLabel
+[19:34:06] [debug]  IsValidDynamic3DTextLabel
+[19:34:06] [debug]  Streamer_UpdateEx
+[19:34:06] [debug]  DestroyDynamicPickup
+[19:34:06] [debug]  Streamer_GetIntData
+[19:34:06] [debug]  AttachDynamicObjectToVehicle
+[19:34:06] [debug]  DestroyDynamicArea
+[19:34:06] [debug]  CreateDynamicRectangle
+[19:34:06] [debug]  CreateDynamicMapIcon
+[19:34:06] [debug]  Streamer_SetIntData
+[19:34:06] [debug]  UpdateDynamic3DTextLabelText
+[19:34:06] [debug]  MoveDynamicObject
+[19:34:06] [debug]  IsValidDynamicPickup
+[19:34:06] [debug]  IsPlayerInDynamicArea
+[19:34:06] [debug]  GetDynamicObjectPos
+[19:34:06] [debug]  GetDynamicObjectRot
+[19:34:06] [debug]  SetDynamicObjectRot
+[19:34:06] [debug]  Streamer_CellDistance
+[19:34:06] [debug]  Streamer_TickRate
+[19:34:06] [debug]  Streamer_VisibleItems
+[19:34:06] [debug]  SetDynamicObjectPos
+[19:34:06] [debug]  Streamer_Update
+[19:34:06] [debug]  Streamer_ToggleIdleUpdate
+[19:34:06] Script[gamemodes/v2morgancity.amx]: Run time error 19: "File or function is not found"
+[19:34:06] Number of vehicle models: 0
+[19:35:05]  -------------------------------------------
+[19:35:05]            SampVoice unloading...           
+[19:35:05]  -------------------------------------------
+[19:35:05] [dbg:raknet:free] : module releasing...
+[19:35:05] [dbg:raknet:free] : module released
+[19:35:05] [sv:dbg:network:free] : module releasing...
+[19:35:05] [sv:dbg:network:free] : module released
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[19:35:15] filterscripts = ""  (string)
+[19:35:15] weburl = "www.sa-mp.com"  (string)
+[19:35:15] 
+[19:35:15] Server Plugins
+[19:35:15] --------------
+[19:35:15]  Loading plugin: crashdetect
+[19:35:15]   CrashDetect plugin 4.19.4
+[19:35:15]   Loaded.
+[19:35:15]  Loading plugin: pawncmd
+[19:35:15] [Pawn.CMD] plugin v3.3.6 loading...
+[19:35:15] [Pawn.CMD] 
+
+    | Pawn.CMD 3.3.6 | 2016 - 2021
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Sep 26 2021 at 11:55:10
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[19:35:15]   Loaded.
+[19:35:15]  Loading plugin: sampvoice
+[19:35:15] [sv:dbg:network:init] : module initializing...
+[19:35:15] [dbg:raknet:init] : module initializing...
+[19:35:15] [dbg:raknet:init] : module initialized
+[19:35:15] [sv:dbg:network:init] : module initialized
+[19:35:15] [sv:dbg:main:Load] : creating 8 work threads...
+[19:35:15]  -------------------------------------------    
+[19:35:15]    ___                __   __    _              
+[19:35:15]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[19:35:15]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[19:35:15]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[19:35:15]                   |_|                           
+[19:35:15]  -------------------------------------------    
+[19:35:15]            SampVoice by MOR loaded              
+[19:35:15]  -------------------------------------------    
+[19:35:15]   Loaded.
+[19:35:15]  Loading plugin: sscanf
+[19:35:15] 
+
+[19:35:15]  ===============================
+
+[19:35:15]       sscanf plugin loaded.     
+
+[19:35:15]          Version:  2.8.3        
+
+[19:35:15]   (c) 2018 Alex "Y_Less" Cole  
+
+[19:35:15]  ===============================
+
+[19:35:15]   Loaded.
+[19:35:15]  Loading plugin: discord-connector
+[19:35:16]  >> plugin.dc-connector: v0.3.5 successfully loaded.
+[19:35:16]   Loaded.
+[19:35:16]  Loading plugin: mysql
+[19:35:16]  >> plugin.mysql: R39-6 successfully loaded.
+[19:35:16]   Loaded.
+[19:35:16]  Loading plugin: streamer
+[19:35:16]   Failed.
+[19:35:16]  Loading plugin: Whirlpool
+[19:35:16]  
+[19:35:16]  ==================
+[19:35:16]  
+[19:35:16]   Whirlpool loaded
+[19:35:16]  
+[19:35:16]  ==================
+[19:35:16]  
+[19:35:16]   Loaded.
+[19:35:16]  Loading plugin: SKY
+[19:35:16] 
+[19:35:16]  ===============================
+[19:35:16]    
+[19:35:16]    < SKY - 2.3.0 >
+[19:35:16]    
+[19:35:16]    (c) 2008 - Present | YSF Maintainers
+[19:35:16]    (c) 2015 | Oscar "Slice" Broman
+[19:35:16]    
+[19:35:16]    Server Version: 0.3.7 R2
+[19:35:16]    Operating System: Windows
+[19:35:16]    Built on: Sep 27 2021 at 23:19:52
+[19:35:16]    
+[19:35:16]  ===============================
+[19:35:16] 
+[19:35:16]   Loaded.
+[19:35:16]  Loading plugin: nativechecker
+[19:35:16]   Loaded.
+[19:35:16]  Loaded 9 plugins.
+
+[19:35:16] 
+[19:35:16] Ban list
+[19:35:16] --------
+[19:35:16]  Loaded: samp.ban
+[19:35:16] 
+[19:35:16] 
+[19:35:16] Filterscripts
+[19:35:16] ---------------
+[19:35:16]   Loaded 0 filterscripts.
+
+[19:35:16] [sv:dbg:main:AmxLoad] : net game pointer (value:023A9F68) received
+[19:35:16] [sv:dbg:network:bind] : voice server running on port 64491
+[19:35:16] AMX (73136648) loaded
+[19:35:16]    Error: Function not registered: 'CreateDynamicObject'
+[19:35:16]    Error: Function not registered: 'SetDynamicObjectMaterial'
+[19:35:16]    Error: Function not registered: 'SetDynamicObjectMaterialText'
+[19:35:16]    Error: Function not registered: 'CreateDynamicObjectEx'
+[19:35:16]    Error: Function not registered: 'CreateDynamicPickup'
+[19:35:16]    Error: Function not registered: 'CreateDynamic3DTextLabel'
+[19:35:16]    Error: Function not registered: 'DestroyDynamicObject'
+[19:35:16]    Error: Function not registered: 'IsValidDynamicMapIcon'
+[19:35:16]    Error: Function not registered: 'DestroyDynamicMapIcon'
+[19:35:16]    Error: Function not registered: 'IsValidDynamicObject'
+[19:35:16]    Error: Function not registered: 'EditDynamicObject'
+[19:35:16]    Error: Function not registered: 'Streamer_GetArrayData'
+[19:35:16]    Error: Function not registered: 'Streamer_SetArrayData'
+[19:35:16]    Error: Function not registered: 'Streamer_GetUpperBound'
+[19:35:16]    Error: Function not registered: 'DestroyDynamic3DTextLabel'
+[19:35:16]    Error: Function not registered: 'IsValidDynamic3DTextLabel'
+[19:35:16]    Error: Function not registered: 'Streamer_UpdateEx'
+[19:35:16]    Error: Function not registered: 'DestroyDynamicPickup'
+[19:35:16]    Error: Function not registered: 'Streamer_GetIntData'
+[19:35:16]    Error: Function not registered: 'AttachDynamicObjectToVehicle'
+[19:35:16]    Error: Function not registered: 'DestroyDynamicArea'
+[19:35:16]    Error: Function not registered: 'CreateDynamicRectangle'
+[19:35:16]    Error: Function not registered: 'CreateDynamicMapIcon'
+[19:35:16]    Error: Function not registered: 'Streamer_SetIntData'
+[19:35:16]    Error: Function not registered: 'UpdateDynamic3DTextLabelText'
+[19:35:16]    Error: Function not registered: 'MoveDynamicObject'
+[19:35:16]    Error: Function not registered: 'IsValidDynamicPickup'
+[19:35:16]    Error: Function not registered: 'IsPlayerInDynamicArea'
+[19:35:16]    Error: Function not registered: 'GetDynamicObjectPos'
+[19:35:16]    Error: Function not registered: 'GetDynamicObjectRot'
+[19:35:16]    Error: Function not registered: 'SetDynamicObjectRot'
+[19:35:16]    Error: Function not registered: 'Streamer_CellDistance'
+[19:35:16]    Error: Function not registered: 'Streamer_TickRate'
+[19:35:16]    Error: Function not registered: 'Streamer_VisibleItems'
+[19:35:16]    Error: Function not registered: 'SetDynamicObjectPos'
+[19:35:16]    Error: Function not registered: 'Streamer_Update'
+[19:35:16]    Error: Function not registered: 'Streamer_ToggleIdleUpdate'
+[19:35:16] [debug] Run time error 19: "File or function is not found"
+[19:35:16] [debug]  CreateDynamicObject
+[19:35:16] [debug]  SetDynamicObjectMaterial
+[19:35:16] [debug]  SetDynamicObjectMaterialText
+[19:35:16] [debug]  CreateDynamicObjectEx
+[19:35:16] [debug]  CreateDynamicPickup
+[19:35:16] [debug]  CreateDynamic3DTextLabel
+[19:35:16] [debug]  DestroyDynamicObject
+[19:35:16] [debug]  IsValidDynamicMapIcon
+[19:35:16] [debug]  DestroyDynamicMapIcon
+[19:35:16] [debug]  IsValidDynamicObject
+[19:35:16] [debug]  EditDynamicObject
+[19:35:16] [debug]  Streamer_GetArrayData
+[19:35:16] [debug]  Streamer_SetArrayData
+[19:35:16] [debug]  Streamer_GetUpperBound
+[19:35:16] [debug]  DestroyDynamic3DTextLabel
+[19:35:16] [debug]  IsValidDynamic3DTextLabel
+[19:35:16] [debug]  Streamer_UpdateEx
+[19:35:16] [debug]  DestroyDynamicPickup
+[19:35:16] [debug]  Streamer_GetIntData
+[19:35:16] [debug]  AttachDynamicObjectToVehicle
+[19:35:16] [debug]  DestroyDynamicArea
+[19:35:16] [debug]  CreateDynamicRectangle
+[19:35:16] [debug]  CreateDynamicMapIcon
+[19:35:16] [debug]  Streamer_SetIntData
+[19:35:16] [debug]  UpdateDynamic3DTextLabelText
+[19:35:16] [debug]  MoveDynamicObject
+[19:35:16] [debug]  IsValidDynamicPickup
+[19:35:16] [debug]  IsPlayerInDynamicArea
+[19:35:16] [debug]  GetDynamicObjectPos
+[19:35:16] [debug]  GetDynamicObjectRot
+[19:35:16] [debug]  SetDynamicObjectRot
+[19:35:16] [debug]  Streamer_CellDistance
+[19:35:16] [debug]  Streamer_TickRate
+[19:35:16] [debug]  Streamer_VisibleItems
+[19:35:16] [debug]  SetDynamicObjectPos
+[19:35:16] [debug]  Streamer_Update
+[19:35:16] [debug]  Streamer_ToggleIdleUpdate
+[19:35:16] [debug] Run time error 19: "File or function is not found"
+[19:35:16] [debug]  CreateDynamicObject
+[19:35:16] [debug]  SetDynamicObjectMaterial
+[19:35:16] [debug]  SetDynamicObjectMaterialText
+[19:35:16] [debug]  CreateDynamicObjectEx
+[19:35:16] [debug]  CreateDynamicPickup
+[19:35:16] [debug]  CreateDynamic3DTextLabel
+[19:35:16] [debug]  DestroyDynamicObject
+[19:35:16] [debug]  IsValidDynamicMapIcon
+[19:35:16] [debug]  DestroyDynamicMapIcon
+[19:35:16] [debug]  IsValidDynamicObject
+[19:35:16] [debug]  EditDynamicObject
+[19:35:16] [debug]  Streamer_GetArrayData
+[19:35:16] [debug]  Streamer_SetArrayData
+[19:35:16] [debug]  Streamer_GetUpperBound
+[19:35:16] [debug]  DestroyDynamic3DTextLabel
+[19:35:16] [debug]  IsValidDynamic3DTextLabel
+[19:35:16] [debug]  Streamer_UpdateEx
+[19:35:16] [debug]  DestroyDynamicPickup
+[19:35:16] [debug]  Streamer_GetIntData
+[19:35:16] [debug]  AttachDynamicObjectToVehicle
+[19:35:16] [debug]  DestroyDynamicArea
+[19:35:16] [debug]  CreateDynamicRectangle
+[19:35:16] [debug]  CreateDynamicMapIcon
+[19:35:16] [debug]  Streamer_SetIntData
+[19:35:16] [debug]  UpdateDynamic3DTextLabelText
+[19:35:16] [debug]  MoveDynamicObject
+[19:35:16] [debug]  IsValidDynamicPickup
+[19:35:16] [debug]  IsPlayerInDynamicArea
+[19:35:16] [debug]  GetDynamicObjectPos
+[19:35:16] [debug]  GetDynamicObjectRot
+[19:35:16] [debug]  SetDynamicObjectRot
+[19:35:16] [debug]  Streamer_CellDistance
+[19:35:16] [debug]  Streamer_TickRate
+[19:35:16] [debug]  Streamer_VisibleItems
+[19:35:16] [debug]  SetDynamicObjectPos
+[19:35:16] [debug]  Streamer_Update
+[19:35:16] [debug]  Streamer_ToggleIdleUpdate
+[19:35:16] Script[gamemodes/v2morgancity.amx]: Run time error 19: "File or function is not found"
+[19:35:16] Number of vehicle models: 0
+[19:35:28]  -------------------------------------------
+[19:35:28]            SampVoice unloading...           
+[19:35:28]  -------------------------------------------
+[19:35:28] [dbg:raknet:free] : module releasing...
+[19:35:28] [dbg:raknet:free] : module released
+[19:35:28] [sv:dbg:network:free] : module releasing...
+[19:35:28] [sv:dbg:network:free] : module released
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[19:36:23] filterscripts = ""  (string)
+[19:36:23] weburl = "www.sa-mp.com"  (string)
+[19:36:23] 
+[19:36:23] Server Plugins
+[19:36:23] --------------
+[19:36:23]  Loading plugin: crashdetect
+[19:36:23]   CrashDetect plugin 4.19.4
+[19:36:23]   Loaded.
+[19:36:23]  Loading plugin: pawncmd
+[19:36:23] [Pawn.CMD] plugin v3.3.6 loading...
+[19:36:23] [Pawn.CMD] 
+
+    | Pawn.CMD 3.3.6 | 2016 - 2021
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Sep 26 2021 at 11:55:10
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[19:36:23]   Loaded.
+[19:36:23]  Loading plugin: sampvoice
+[19:36:23] [sv:dbg:network:init] : module initializing...
+[19:36:23] [dbg:raknet:init] : module initializing...
+[19:36:23] [dbg:raknet:init] : module initialized
+[19:36:23] [sv:dbg:network:init] : module initialized
+[19:36:23] [sv:dbg:main:Load] : creating 8 work threads...
+[19:36:23]  -------------------------------------------    
+[19:36:23]    ___                __   __    _              
+[19:36:23]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[19:36:23]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[19:36:23]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[19:36:23]                   |_|                           
+[19:36:23]  -------------------------------------------    
+[19:36:23]            SampVoice by MOR loaded              
+[19:36:23]  -------------------------------------------    
+[19:36:23]   Loaded.
+[19:36:23]  Loading plugin: sscanf
+[19:36:23] 
+
+[19:36:23]  ===============================
+
+[19:36:23]       sscanf plugin loaded.     
+
+[19:36:23]          Version:  2.8.3        
+
+[19:36:23]   (c) 2018 Alex "Y_Less" Cole  
+
+[19:36:23]  ===============================
+
+[19:36:23]   Loaded.
+[19:36:23]  Loading plugin: discord-connector
+[19:36:24]  >> plugin.dc-connector: v0.3.5 successfully loaded.
+[19:36:24]   Loaded.
+[19:36:24]  Loading plugin: mysql
+[19:36:24]  >> plugin.mysql: R39-6 successfully loaded.
+[19:36:24]   Loaded.
+[19:36:24]  Loading plugin: streamer
+[19:36:24] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[19:36:24]   Loaded.
+[19:36:24]  Loading plugin: Whirlpool
+[19:36:24]  
+[19:36:24]  ==================
+[19:36:24]  
+[19:36:24]   Whirlpool loaded
+[19:36:24]  
+[19:36:24]  ==================
+[19:36:24]  
+[19:36:24]   Loaded.
+[19:36:24]  Loading plugin: SKY
+[19:36:24] 
+[19:36:24]  ===============================
+[19:36:24]    
+[19:36:24]    < SKY - 2.3.0 >
+[19:36:24]    
+[19:36:24]    (c) 2008 - Present | YSF Maintainers
+[19:36:24]    (c) 2015 | Oscar "Slice" Broman
+[19:36:24]    
+[19:36:24]    Server Version: 0.3.7 R2
+[19:36:24]    Operating System: Windows
+[19:36:24]    Built on: Sep 27 2021 at 23:19:52
+[19:36:24]    
+[19:36:24]  ===============================
+[19:36:24] 
+[19:36:24]   Loaded.
+[19:36:24]  Loading plugin: nativechecker
+[19:36:24]   Loaded.
+[19:36:24]  Loaded 10 plugins.
+
+[19:36:24] 
+[19:36:24] Ban list
+[19:36:24] --------
+[19:36:24]  Loaded: samp.ban
+[19:36:25] 
+[19:36:25] 
+[19:36:25] Filterscripts
+[19:36:25] ---------------
+[19:36:25]   Loaded 0 filterscripts.
+
+[19:36:25] [sv:dbg:main:AmxLoad] : net game pointer (value:022A9F68) received
+[19:36:25] [sv:dbg:network:bind] : voice server running on port 55152
+[19:36:25] AMX (73726472) loaded
+[19:36:25]  
+[19:36:25] --------------------------------------
+[19:36:25]  Anticheat Nex-AC loaded!
+[19:36:25]  Anticheat version: 1.9.52
+[19:36:25]  Author: Nexius
+[19:36:25] --------------------------------------
+
+[19:36:25]  
+[19:36:25]  
+[19:36:25]  
+[19:36:25]  ======================================= 
+[19:36:25]  |                                     | 
+[19:36:25]  |        YSI version 3.09.0684        | 
+[19:36:25]  |        By Alex "Y_Less" Cole        | 
+[19:36:25]  |                                     | 
+[19:36:25]  ======================================= 
+[19:36:25]  
+[19:36:25] Unable to establish a connection with the MySQL server...
+[19:36:25] Number of vehicle models: 0
+[19:36:25] --- Server Shutting Down.
+[19:36:25]  
+[19:36:25] --------------------------------------
+[19:36:25]  Statistics anticheat Nex-AC
+[19:36:25]  Detected and prevented:
+[19:36:25]   0 cheating attempts
+[19:36:25]   0 hacking attempts
+[19:36:25]   0 crashing attempts
+[19:36:25]   0 flooding attempts
+[19:36:25]   0 attacks
+[19:36:25]  Total detected and punished 0 cheaters
+[19:36:25] --------------------------------------
+
+[19:36:25] [Pawn.CMD] plugin unloaded
+[19:36:25]  -------------------------------------------
+[19:36:25]            SampVoice unloading...           
+[19:36:25]  -------------------------------------------
+[19:36:25] [dbg:raknet:free] : module releasing...
+[19:36:25] [dbg:raknet:free] : module released
+[19:36:25] [sv:dbg:network:free] : module releasing...
+[19:36:25] [sv:dbg:network:free] : module released
+[19:36:25] 
+
+[19:36:25]  ===============================
+
+[19:36:25]      sscanf plugin unloaded.    
+
+[19:36:25]  ===============================
+
+[19:36:25] plugin.dc-connector: Unloading plugin...
+[19:36:26] plugin.dc-connector: Plugin unloaded.
+[19:36:26] plugin.mysql: Unloading plugin...
+[19:36:26] plugin.mysql: Plugin unloaded.
+[19:36:26] 
+
+*** Streamer Plugin v2.9.5 by Incognito unloaded ***
+
+[19:36:26]  
+[19:36:26]  ====================
+[19:36:26]  
+[19:36:26]   Whirlpool unloaded
+[19:36:26]  
+[19:36:26]  ====================
+[19:36:26]  
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[19:37:44] filterscripts = ""  (string)
+[19:37:44] weburl = "www.sa-mp.com"  (string)
+[19:37:44] 
+[19:37:44] Server Plugins
+[19:37:44] --------------
+[19:37:44]  Loading plugin: crashdetect
+[19:37:44]   CrashDetect plugin 4.19.4
+[19:37:44]   Loaded.
+[19:37:44]  Loading plugin: pawncmd
+[19:37:44] [Pawn.CMD] plugin v3.3.6 loading...
+[19:37:44] [Pawn.CMD] 
+
+    | Pawn.CMD 3.3.6 | 2016 - 2021
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Sep 26 2021 at 11:55:10
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[19:37:44]   Loaded.
+[19:37:44]  Loading plugin: sampvoice
+[19:37:44] [sv:dbg:network:init] : module initializing...
+[19:37:44] [dbg:raknet:init] : module initializing...
+[19:37:44] [dbg:raknet:init] : module initialized
+[19:37:44] [sv:dbg:network:init] : module initialized
+[19:37:44] [sv:dbg:main:Load] : creating 8 work threads...
+[19:37:44]  -------------------------------------------    
+[19:37:44]    ___                __   __    _              
+[19:37:44]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[19:37:44]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[19:37:44]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[19:37:44]                   |_|                           
+[19:37:44]  -------------------------------------------    
+[19:37:44]            SampVoice by MOR loaded              
+[19:37:44]  -------------------------------------------    
+[19:37:44]   Loaded.
+[19:37:44]  Loading plugin: sscanf
+[19:37:44] 
+
+[19:37:44]  ===============================
+
+[19:37:44]       sscanf plugin loaded.     
+
+[19:37:44]          Version:  2.8.3        
+
+[19:37:44]   (c) 2018 Alex "Y_Less" Cole  
+
+[19:37:44]  ===============================
+
+[19:37:44]   Loaded.
+[19:37:44]  Loading plugin: discord-connector
+[19:37:46]  >> plugin.dc-connector: v0.3.5 successfully loaded.
+[19:37:46]   Loaded.
+[19:37:46]  Loading plugin: mysql
+[19:37:46]  >> plugin.mysql: R39-6 successfully loaded.
+[19:37:46]   Loaded.
+[19:37:46]  Loading plugin: streamer
+[19:37:46] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[19:37:46]   Loaded.
+[19:37:46]  Loading plugin: Whirlpool
+[19:37:46]  
+[19:37:46]  ==================
+[19:37:46]  
+[19:37:46]   Whirlpool loaded
+[19:37:46]  
+[19:37:46]  ==================
+[19:37:46]  
+[19:37:46]   Loaded.
+[19:37:46]  Loading plugin: SKY
+[19:37:46] 
+[19:37:46]  ===============================
+[19:37:46]    
+[19:37:46]    < SKY - 2.3.0 >
+[19:37:46]    
+[19:37:46]    (c) 2008 - Present | YSF Maintainers
+[19:37:46]    (c) 2015 | Oscar "Slice" Broman
+[19:37:46]    
+[19:37:46]    Server Version: 0.3.7 R2
+[19:37:46]    Operating System: Windows
+[19:37:46]    Built on: Sep 27 2021 at 23:19:52
+[19:37:46]    
+[19:37:46]  ===============================
+[19:37:46] 
+[19:37:46]   Loaded.
+[19:37:46]  Loading plugin: nativechecker
+[19:37:46]   Loaded.
+[19:37:46]  Loaded 10 plugins.
+
+[19:37:46] 
+[19:37:46] Ban list
+[19:37:46] --------
+[19:37:46]  Loaded: samp.ban
+[19:37:46] 
+[19:37:46] 
+[19:37:46] Filterscripts
+[19:37:46] ---------------
+[19:37:46]   Loaded 0 filterscripts.
+
+[19:37:46] [sv:dbg:main:AmxLoad] : net game pointer (value:007E9F68) received
+[19:37:46] [sv:dbg:network:bind] : voice server running on port 57893
+[19:37:46] AMX (73660936) loaded
+[19:37:46]  
+[19:37:46] --------------------------------------
+[19:37:46]  Anticheat Nex-AC loaded!
+[19:37:46]  Anticheat version: 1.9.52
+[19:37:46]  Author: Nexius
+[19:37:46] --------------------------------------
+
+[19:37:46]  
+[19:37:46]  
+[19:37:46]  
+[19:37:46]  ======================================= 
+[19:37:46]  |                                     | 
+[19:37:46]  |        YSI version 3.09.0684        | 
+[19:37:46]  |        By Alex "Y_Less" Cole        | 
+[19:37:46]  |                                     | 
+[19:37:46]  ======================================= 
+[19:37:46]  
+[19:37:46] Unable to establish a connection with the MySQL server...
+[19:37:46] Number of vehicle models: 0
+[19:37:46] --- Server Shutting Down.
+[19:37:46]  
+[19:37:46] --------------------------------------
+[19:37:46]  Statistics anticheat Nex-AC
+[19:37:46]  Detected and prevented:
+[19:37:46]   0 cheating attempts
+[19:37:46]   0 hacking attempts
+[19:37:46]   0 crashing attempts
+[19:37:46]   0 flooding attempts
+[19:37:46]   0 attacks
+[19:37:46]  Total detected and punished 0 cheaters
+[19:37:46] --------------------------------------
+
+[19:37:46] [Pawn.CMD] plugin unloaded
+[19:37:46]  -------------------------------------------
+[19:37:46]            SampVoice unloading...           
+[19:37:46]  -------------------------------------------
+[19:37:46] [dbg:raknet:free] : module releasing...
+[19:37:46] [dbg:raknet:free] : module released
+[19:37:46] [sv:dbg:network:free] : module releasing...
+[19:37:46] [sv:dbg:network:free] : module released
+[19:37:46] 
+
+[19:37:46]  ===============================
+
+[19:37:46]      sscanf plugin unloaded.    
+
+[19:37:46]  ===============================
+
+[19:37:46] plugin.dc-connector: Unloading plugin...
+[19:37:47] plugin.dc-connector: Plugin unloaded.
+[19:37:47] plugin.mysql: Unloading plugin...
+[19:37:47] plugin.mysql: Plugin unloaded.
+[19:37:47] 
+
+*** Streamer Plugin v2.9.5 by Incognito unloaded ***
+
+[19:37:47]  
+[19:37:47]  ====================
+[19:37:47]  
+[19:37:47]   Whirlpool unloaded
+[19:37:47]  
+[19:37:47]  ====================
+[19:37:47]  
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[19:38:56] filterscripts = ""  (string)
+[19:38:56] weburl = "www.sa-mp.com"  (string)
+[19:38:56] 
+[19:38:56] Server Plugins
+[19:38:56] --------------
+[19:38:56]  Loading plugin: crashdetect
+[19:38:56]   CrashDetect plugin 4.19.4
+[19:38:56]   Loaded.
+[19:38:56]  Loading plugin: pawncmd
+[19:38:56] [Pawn.CMD] plugin v3.3.6 loading...
+[19:38:56] [Pawn.CMD] 
+
+    | Pawn.CMD 3.3.6 | 2016 - 2021
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Sep 26 2021 at 11:55:10
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[19:38:56]   Loaded.
+[19:38:56]  Loading plugin: sampvoice
+[19:38:56] [sv:dbg:network:init] : module initializing...
+[19:38:56] [dbg:raknet:init] : module initializing...
+[19:38:56] [dbg:raknet:init] : module initialized
+[19:38:56] [sv:dbg:network:init] : module initialized
+[19:38:56] [sv:dbg:main:Load] : creating 8 work threads...
+[19:38:56]  -------------------------------------------    
+[19:38:56]    ___                __   __    _              
+[19:38:56]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[19:38:56]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[19:38:56]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[19:38:56]                   |_|                           
+[19:38:56]  -------------------------------------------    
+[19:38:56]            SampVoice by MOR loaded              
+[19:38:56]  -------------------------------------------    
+[19:38:56]   Loaded.
+[19:38:56]  Loading plugin: sscanf
+[19:38:56] 
+
+[19:38:56]  ===============================
+
+[19:38:56]       sscanf plugin loaded.     
+
+[19:38:56]          Version:  2.8.3        
+
+[19:38:56]   (c) 2018 Alex "Y_Less" Cole  
+
+[19:38:56]  ===============================
+
+[19:38:56]   Loaded.
+[19:38:56]  Loading plugin: discord-connector
+[19:38:58]  >> plugin.dc-connector: v0.3.5 successfully loaded.
+[19:38:58]   Loaded.
+[19:38:58]  Loading plugin: mysql
+[19:38:58]  >> plugin.mysql: R39-6 successfully loaded.
+[19:38:58]   Loaded.
+[19:38:58]  Loading plugin: streamer
+[19:38:58] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[19:38:58]   Loaded.
+[19:38:58]  Loading plugin: Whirlpool
+[19:38:58]  
+[19:38:58]  ==================
+[19:38:58]  
+[19:38:58]   Whirlpool loaded
+[19:38:58]  
+[19:38:58]  ==================
+[19:38:58]  
+[19:38:58]   Loaded.
+[19:38:58]  Loading plugin: SKY
+[19:38:58] 
+[19:38:58]  ===============================
+[19:38:58]    
+[19:38:58]    < SKY - 2.3.0 >
+[19:38:58]    
+[19:38:58]    (c) 2008 - Present | YSF Maintainers
+[19:38:58]    (c) 2015 | Oscar "Slice" Broman
+[19:38:58]    
+[19:38:58]    Server Version: 0.3.7 R2
+[19:38:58]    Operating System: Windows
+[19:38:58]    Built on: Sep 27 2021 at 23:19:52
+[19:38:58]    
+[19:38:58]  ===============================
+[19:38:58] 
+[19:38:58]   Loaded.
+[19:38:58]  Loading plugin: nativechecker
+[19:38:58]   Loaded.
+[19:38:58]  Loaded 10 plugins.
+
+[19:38:58] 
+[19:38:58] Ban list
+[19:38:58] --------
+[19:38:58]  Loaded: samp.ban
+[19:38:58] 
+[19:38:58] 
+[19:38:58] Filterscripts
+[19:38:58] ---------------
+[19:38:58]   Loaded 0 filterscripts.
+
+[19:38:58] [sv:dbg:main:AmxLoad] : net game pointer (value:009D9F68) received
+[19:38:58] [sv:dbg:network:bind] : voice server running on port 52779
+[19:38:58] AMX (73792008) loaded
+[19:38:58]  
+[19:38:58] --------------------------------------
+[19:38:58]  Anticheat Nex-AC loaded!
+[19:38:58]  Anticheat version: 1.9.52
+[19:38:58]  Author: Nexius
+[19:38:58] --------------------------------------
+
+[19:38:58]  
+[19:38:58]  
+[19:38:58]  
+[19:38:58]  ======================================= 
+[19:38:58]  |                                     | 
+[19:38:58]  |        YSI version 3.09.0684        | 
+[19:38:58]  |        By Alex "Y_Less" Cole        | 
+[19:38:58]  |                                     | 
+[19:38:58]  ======================================= 
+[19:38:58]  
+[19:38:58] Unable to establish a connection with the MySQL server...
+[19:38:58] Number of vehicle models: 0
+[19:38:58] --- Server Shutting Down.
+[19:38:58]  
+[19:38:58] --------------------------------------
+[19:38:58]  Statistics anticheat Nex-AC
+[19:38:58]  Detected and prevented:
+[19:38:58]   0 cheating attempts
+[19:38:58]   0 hacking attempts
+[19:38:58]   0 crashing attempts
+[19:38:58]   0 flooding attempts
+[19:38:58]   0 attacks
+[19:38:58]  Total detected and punished 0 cheaters
+[19:38:58] --------------------------------------
+
+[19:38:58] [Pawn.CMD] plugin unloaded
+[19:38:58]  -------------------------------------------
+[19:38:58]            SampVoice unloading...           
+[19:38:58]  -------------------------------------------
+[19:38:58] [dbg:raknet:free] : module releasing...
+[19:38:58] [dbg:raknet:free] : module released
+[19:38:58] [sv:dbg:network:free] : module releasing...
+[19:38:58] [sv:dbg:network:free] : module released
+[19:38:58] 
+
+[19:38:58]  ===============================
+
+[19:38:58]      sscanf plugin unloaded.    
+
+[19:38:58]  ===============================
+
+[19:38:58] plugin.dc-connector: Unloading plugin...
+[19:38:59] plugin.dc-connector: Plugin unloaded.
+[19:38:59] plugin.mysql: Unloading plugin...
+[19:38:59] plugin.mysql: Plugin unloaded.
+[19:38:59] 
+
+*** Streamer Plugin v2.9.4 by Incognito unloaded ***
+
+[19:38:59]  
+[19:38:59]  ====================
+[19:38:59]  
+[19:38:59]   Whirlpool unloaded
+[19:38:59]  
+[19:38:59]  ====================
+[19:38:59]  
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[19:40:38] filterscripts = ""  (string)
+[19:40:38] weburl = "www.sa-mp.com"  (string)
+[19:40:38] 
+[19:40:38] Server Plugins
+[19:40:38] --------------
+[19:40:38]  Loading plugin: crashdetect
+[19:40:38]   CrashDetect plugin 4.19.4
+[19:40:38]   Loaded.
+[19:40:38]  Loading plugin: pawncmd
+[19:40:38] [Pawn.CMD] plugin v3.3.6 loading...
+[19:40:38] [Pawn.CMD] 
+
+    | Pawn.CMD 3.3.6 | 2016 - 2021
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Sep 26 2021 at 11:55:10
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[19:40:38]   Loaded.
+[19:40:38]  Loading plugin: sampvoice
+[19:40:38] [sv:dbg:network:init] : module initializing...
+[19:40:38] [dbg:raknet:init] : module initializing...
+[19:40:38] [dbg:raknet:init] : module initialized
+[19:40:38] [sv:dbg:network:init] : module initialized
+[19:40:38] [sv:dbg:main:Load] : creating 8 work threads...
+[19:40:38]  -------------------------------------------    
+[19:40:38]    ___                __   __    _              
+[19:40:38]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[19:40:38]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[19:40:38]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[19:40:38]                   |_|                           
+[19:40:38]  -------------------------------------------    
+[19:40:38]            SampVoice by MOR loaded              
+[19:40:38]  -------------------------------------------    
+[19:40:38]   Loaded.
+[19:40:38]  Loading plugin: sscanf
+[19:40:38] 
+
+[19:40:38]  ===============================
+
+[19:40:38]       sscanf plugin loaded.     
+
+[19:40:38]          Version:  2.8.3        
+
+[19:40:38]   (c) 2018 Alex "Y_Less" Cole  
+
+[19:40:38]  ===============================
+
+[19:40:38]   Loaded.
+[19:40:38]  Loading plugin: discord-connector
+[19:40:40]  >> plugin.dc-connector: v0.3.5 successfully loaded.
+[19:40:40]   Loaded.
+[19:40:40]  Loading plugin: mysql
+[19:40:40]  >> plugin.mysql: R39-6 successfully loaded.
+[19:40:40]   Loaded.
+[19:40:40]  Loading plugin: streamer
+[19:40:40]   Failed.
+[19:40:40]  Loading plugin: Whirlpool
+[19:40:40]  
+[19:40:40]  ==================
+[19:40:40]  
+[19:40:40]   Whirlpool loaded
+[19:40:40]  
+[19:40:40]  ==================
+[19:40:40]  
+[19:40:40]   Loaded.
+[19:40:40]  Loading plugin: SKY
+[19:40:40] 
+[19:40:40]  ===============================
+[19:40:40]    
+[19:40:40]    < SKY - 2.3.0 >
+[19:40:40]    
+[19:40:40]    (c) 2008 - Present | YSF Maintainers
+[19:40:40]    (c) 2015 | Oscar "Slice" Broman
+[19:40:40]    
+[19:40:40]    Server Version: 0.3.7 R2
+[19:40:40]    Operating System: Windows
+[19:40:40]    Built on: Sep 27 2021 at 23:19:52
+[19:40:40]    
+[19:40:40]  ===============================
+[19:40:40] 
+[19:40:40]   Loaded.
+[19:40:40]  Loading plugin: nativechecker
+[19:40:40]   Loaded.
+[19:40:40]  Loaded 9 plugins.
+
+[19:40:40] 
+[19:40:40] Ban list
+[19:40:40] --------
+[19:40:40]  Loaded: samp.ban
+[19:40:40] 
+[19:40:40] 
+[19:40:40] Filterscripts
+[19:40:40] ---------------
+[19:40:40]   Loaded 0 filterscripts.
+
+[19:40:40] [sv:dbg:main:AmxLoad] : net game pointer (value:024F9F68) received
+[19:40:40] [sv:dbg:network:bind] : voice server running on port 55886
+[19:40:40] AMX (73792008) loaded
+[19:40:40]    Error: Function not registered: 'CreateDynamicObject'
+[19:40:40]    Error: Function not registered: 'SetDynamicObjectMaterial'
+[19:40:40]    Error: Function not registered: 'SetDynamicObjectMaterialText'
+[19:40:40]    Error: Function not registered: 'CreateDynamicObjectEx'
+[19:40:40]    Error: Function not registered: 'CreateDynamicPickup'
+[19:40:40]    Error: Function not registered: 'CreateDynamic3DTextLabel'
+[19:40:40]    Error: Function not registered: 'DestroyDynamicObject'
+[19:40:40]    Error: Function not registered: 'IsValidDynamicMapIcon'
+[19:40:40]    Error: Function not registered: 'DestroyDynamicMapIcon'
+[19:40:40]    Error: Function not registered: 'IsValidDynamicObject'
+[19:40:40]    Error: Function not registered: 'EditDynamicObject'
+[19:40:40]    Error: Function not registered: 'Streamer_GetArrayData'
+[19:40:40]    Error: Function not registered: 'Streamer_SetArrayData'
+[19:40:40]    Error: Function not registered: 'Streamer_GetUpperBound'
+[19:40:40]    Error: Function not registered: 'DestroyDynamic3DTextLabel'
+[19:40:40]    Error: Function not registered: 'IsValidDynamic3DTextLabel'
+[19:40:40]    Error: Function not registered: 'Streamer_UpdateEx'
+[19:40:40]    Error: Function not registered: 'DestroyDynamicPickup'
+[19:40:40]    Error: Function not registered: 'Streamer_GetIntData'
+[19:40:40]    Error: Function not registered: 'AttachDynamicObjectToVehicle'
+[19:40:40]    Error: Function not registered: 'DestroyDynamicArea'
+[19:40:40]    Error: Function not registered: 'CreateDynamicRectangle'
+[19:40:40]    Error: Function not registered: 'CreateDynamicMapIcon'
+[19:40:40]    Error: Function not registered: 'Streamer_SetIntData'
+[19:40:40]    Error: Function not registered: 'UpdateDynamic3DTextLabelText'
+[19:40:40]    Error: Function not registered: 'MoveDynamicObject'
+[19:40:40]    Error: Function not registered: 'IsValidDynamicPickup'
+[19:40:40]    Error: Function not registered: 'IsPlayerInDynamicArea'
+[19:40:40]    Error: Function not registered: 'GetDynamicObjectPos'
+[19:40:40]    Error: Function not registered: 'GetDynamicObjectRot'
+[19:40:40]    Error: Function not registered: 'SetDynamicObjectRot'
+[19:40:40]    Error: Function not registered: 'Streamer_CellDistance'
+[19:40:40]    Error: Function not registered: 'Streamer_TickRate'
+[19:40:40]    Error: Function not registered: 'Streamer_VisibleItems'
+[19:40:40]    Error: Function not registered: 'SetDynamicObjectPos'
+[19:40:40]    Error: Function not registered: 'Streamer_Update'
+[19:40:40]    Error: Function not registered: 'Streamer_ToggleIdleUpdate'
+[19:40:40] [debug] Run time error 19: "File or function is not found"
+[19:40:40] [debug]  CreateDynamicObject
+[19:40:40] [debug]  SetDynamicObjectMaterial
+[19:40:40] [debug]  SetDynamicObjectMaterialText
+[19:40:40] [debug]  CreateDynamicObjectEx
+[19:40:40] [debug]  CreateDynamicPickup
+[19:40:40] [debug]  CreateDynamic3DTextLabel
+[19:40:40] [debug]  DestroyDynamicObject
+[19:40:40] [debug]  IsValidDynamicMapIcon
+[19:40:40] [debug]  DestroyDynamicMapIcon
+[19:40:40] [debug]  IsValidDynamicObject
+[19:40:40] [debug]  EditDynamicObject
+[19:40:40] [debug]  Streamer_GetArrayData
+[19:40:40] [debug]  Streamer_SetArrayData
+[19:40:40] [debug]  Streamer_GetUpperBound
+[19:40:40] [debug]  DestroyDynamic3DTextLabel
+[19:40:40] [debug]  IsValidDynamic3DTextLabel
+[19:40:40] [debug]  Streamer_UpdateEx
+[19:40:40] [debug]  DestroyDynamicPickup
+[19:40:40] [debug]  Streamer_GetIntData
+[19:40:40] [debug]  AttachDynamicObjectToVehicle
+[19:40:40] [debug]  DestroyDynamicArea
+[19:40:40] [debug]  CreateDynamicRectangle
+[19:40:40] [debug]  CreateDynamicMapIcon
+[19:40:40] [debug]  Streamer_SetIntData
+[19:40:40] [debug]  UpdateDynamic3DTextLabelText
+[19:40:40] [debug]  MoveDynamicObject
+[19:40:40] [debug]  IsValidDynamicPickup
+[19:40:40] [debug]  IsPlayerInDynamicArea
+[19:40:40] [debug]  GetDynamicObjectPos
+[19:40:40] [debug]  GetDynamicObjectRot
+[19:40:40] [debug]  SetDynamicObjectRot
+[19:40:40] [debug]  Streamer_CellDistance
+[19:40:40] [debug]  Streamer_TickRate
+[19:40:40] [debug]  Streamer_VisibleItems
+[19:40:40] [debug]  SetDynamicObjectPos
+[19:40:40] [debug]  Streamer_Update
+[19:40:40] [debug]  Streamer_ToggleIdleUpdate
+[19:40:40] [debug] Run time error 19: "File or function is not found"
+[19:40:40] [debug]  CreateDynamicObject
+[19:40:40] [debug]  SetDynamicObjectMaterial
+[19:40:40] [debug]  SetDynamicObjectMaterialText
+[19:40:40] [debug]  CreateDynamicObjectEx
+[19:40:40] [debug]  CreateDynamicPickup
+[19:40:40] [debug]  CreateDynamic3DTextLabel
+[19:40:40] [debug]  DestroyDynamicObject
+[19:40:40] [debug]  IsValidDynamicMapIcon
+[19:40:40] [debug]  DestroyDynamicMapIcon
+[19:40:40] [debug]  IsValidDynamicObject
+[19:40:40] [debug]  EditDynamicObject
+[19:40:40] [debug]  Streamer_GetArrayData
+[19:40:40] [debug]  Streamer_SetArrayData
+[19:40:40] [debug]  Streamer_GetUpperBound
+[19:40:40] [debug]  DestroyDynamic3DTextLabel
+[19:40:40] [debug]  IsValidDynamic3DTextLabel
+[19:40:40] [debug]  Streamer_UpdateEx
+[19:40:40] [debug]  DestroyDynamicPickup
+[19:40:40] [debug]  Streamer_GetIntData
+[19:40:40] [debug]  AttachDynamicObjectToVehicle
+[19:40:40] [debug]  DestroyDynamicArea
+[19:40:40] [debug]  CreateDynamicRectangle
+[19:40:40] [debug]  CreateDynamicMapIcon
+[19:40:40] [debug]  Streamer_SetIntData
+[19:40:40] [debug]  UpdateDynamic3DTextLabelText
+[19:40:40] [debug]  MoveDynamicObject
+[19:40:40] [debug]  IsValidDynamicPickup
+[19:40:40] [debug]  IsPlayerInDynamicArea
+[19:40:40] [debug]  GetDynamicObjectPos
+[19:40:40] [debug]  GetDynamicObjectRot
+[19:40:40] [debug]  SetDynamicObjectRot
+[19:40:40] [debug]  Streamer_CellDistance
+[19:40:40] [debug]  Streamer_TickRate
+[19:40:40] [debug]  Streamer_VisibleItems
+[19:40:40] [debug]  SetDynamicObjectPos
+[19:40:40] [debug]  Streamer_Update
+[19:40:40] [debug]  Streamer_ToggleIdleUpdate
+[19:40:40] Script[gamemodes/v2morgancity.amx]: Run time error 19: "File or function is not found"
+[19:40:40] Number of vehicle models: 0
+[19:40:59]  -------------------------------------------
+[19:40:59]            SampVoice unloading...           
+[19:40:59]  -------------------------------------------
+[19:40:59] [dbg:raknet:free] : module releasing...
+[19:40:59] [dbg:raknet:free] : module released
+[19:40:59] [sv:dbg:network:free] : module releasing...
+[19:40:59] [sv:dbg:network:free] : module released
