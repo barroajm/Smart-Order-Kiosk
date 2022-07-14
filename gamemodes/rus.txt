@@ -1,2 +1,4 @@
+modular\mcrpmap.pwn(175) : íåïðàâèëüíàÿ òàáóëÿöèÿ
+modular\mcrpmap.pwn(1306) : íåïðàâèëüíàÿ òàáóëÿöèÿ
 Pawn compiler 3.2.3664	 	 	Copyright (c) 1997-2016, ITB CompuPhase
 
