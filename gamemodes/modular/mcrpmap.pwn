@@ -172,7 +172,11 @@ stock pacificmappings() {
 	new tmpobjid;
 	new HOUSE_INT;
 	// NEW MALL BY LAKE
+<<<<<<< HEAD
 tmpobjid = CreateDynamicObject(19322, 1117.585937, -1490.007812, 32.718750, 0.000000, 0.000000, 0.000000, -1, -1, -1, 300.00, 300.00);
+=======
+tmpobjid = CreateDynamicObject(19322, 1117.585937, -1490.007812, 32.718750, 0.000000, 0.000000, 0.000000, 0, 0, -1, 300.00, 300.00);
+>>>>>>> parent of a17fc25 (returned codes from discord verify)
 SetDynamicObjectMaterial(tmpobjid, 8, 3979, "civic01_lan", "crazy paving", 0xFFFFFFFF);
 SetDynamicObjectMaterial(tmpobjid, 9, 3820, "boxhses_sfsx", "stonewall_la", 0xFFFFFFFF);
 tmpobjid = CreateDynamicObject(6051, 1110.328125, -1489.093750, 18.992189, 0.000000, 0.000000, 0.000000, -1, -1, -1, 300.00, 300.00);
@@ -236,12 +240,20 @@ SetDynamicObjectMaterialText(tmpobjid, 0, "{ff0000} Sex Toyshop", 40, "Calibri",
 tmpobjid = CreateDynamicObject(19482, 1099.105468, -1506.960449, 18.320623, 0.000000, 0.000000, 21.400005, -1, -1, -1, 300.00, 300.00);
 SetDynamicObjectMaterial(tmpobjid, 0, 10101, "2notherbuildsfe", "ferry_build14", 0x00000000);
 SetDynamicObjectMaterialText(tmpobjid, 0, "{ff0000} LEGAL GUNSHOP", 50, "Calibri", 20, 1, 0x00000000, 0x00000000, 1);
+<<<<<<< HEAD
 tmpobjid = CreateDynamicObject(19482, 1102.061401, -1458.169067, 18.526874, 0.000000, 0.000000, 0.000000, -1, -1, -1, 300.00, 300.00);
 SetDynamicObjectMaterial(tmpobjid, 0, 10101, "2notherbuildsfe", "ferry_build14", 0x00000000);
 SetDynamicObjectMaterialText(tmpobjid, 0, "{FF0000} ToyShop", 50, "Calibri", 20, 1, 0x00000000, 0x00000000, 1);
 tmpobjid = CreateDynamicObject(19482, 1102.023437, -1440.045043, 18.736879, 0.000000, 0.000000, 0.399998, -1, -1, -1, 300.00, 300.00);
 SetDynamicObjectMaterial(tmpobjid, 0, 10101, "2notherbuildsfe", "ferry_build14", 0x00000000);
 SetDynamicObjectMaterialText(tmpobjid, 0, "{ff0000}Clothing Store", 40, "Calibri", 20, 1, 0x00000000, 0x00000000, 1);
+=======
+tmpobjid = CreateDynamicObject(19482, 1102.061401, -1457.699096, 18.526874, 0.000000, 0.000000, 0.000000, -1, -1, -1, 300.00, 300.00);
+SetDynamicObjectMaterial(tmpobjid, 0, 10101, "2notherbuildsfe", "ferry_build14", 0x00000000);
+tmpobjid = CreateDynamicObject(19482, 1102.023437, -1440.045043, 18.736879, 0.000000, 0.000000, 0.399998, -1, -1, -1, 300.00, 300.00);
+SetDynamicObjectMaterial(tmpobjid, 0, 10101, "2notherbuildsfe", "ferry_build14", 0x00000000);
+SetDynamicObjectMaterialText(tmpobjid, 0, "{FF0000} ToyShop", 40, "Calibri", 20, 1, 0x00000000, 0x00000000, 1);
+>>>>>>> parent of a17fc25 (returned codes from discord verify)
 tmpobjid = CreateDynamicObject(19482, 1155.078979, -1457.540527, 18.266880, 0.000000, 0.000000, -179.599990, -1, -1, -1, 300.00, 300.00);
 SetDynamicObjectMaterial(tmpobjid, 0, 10101, "2notherbuildsfe", "ferry_build14", 0x00000000);
 SetDynamicObjectMaterialText(tmpobjid, 0, "{ff0000} Internet Cafe", 50, "Calibri", 20, 1, 0x00000000, 0x00000000, 1);
@@ -1302,6 +1314,10 @@ tmpobjid = CreateDynamicObject(996, 1137.153564, -1415.830810, 13.366511, 0.0000
 tmpobjid = CreateDynamicObject(996, 1125.613159, -1415.811279, 13.366511, 0.000000, 0.000000, -0.099999, -1, -1, -1, 300.00, 300.00);
 tmpobjid = CreateDynamicObject(996, 1112.873779, -1415.788696, 13.366511, 0.000000, 0.000000, -0.099999, -1, -1, -1, 300.00, 300.00);
 tmpobjid = CreateDynamicObject(19968, 1129.014038, -1411.617919, 12.489356, 0.000000, 0.000000, -178.399993, -1, -1, -1, 300.00, 300.00);
+<<<<<<< HEAD
+=======
+
+>>>>>>> parent of a17fc25 (returned codes from discord verify)
 	//EL GREEGO
     CreateDynamicObject(18762, 1722.10071, -2155.97754, 12.55349,   0.00000, 0.00000, 0.00000);
     CreateDynamicObject(18762, 1721.12109, -2155.97095, 12.55349,   0.00000, 0.00000, 0.00000);

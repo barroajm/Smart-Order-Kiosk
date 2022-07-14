@@ -1,2 +1,39 @@
+C:\Users\vj\Documents\jmcb\pawno\include\nex-ac.inc(9091) : îøèáêà 017: íåîáúÿâëåííûé ñèìâîë "OnCheatDetected"
+c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn(8018) : îøèáêà 017: íåîáúÿâëåííûé ñèìâîë "ResetDamages"
+c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn(8261) : ïðåäóïðåæäåíèå 219: ïåðåìåííàÿ "ip" óæå îáúÿâëåíà â áîëåå ãëîáàëüíîé çîíå âèäèìîñòè
+c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn(10198) : îøèáêà 017: íåîáúÿâëåííûé ñèìâîë "ShowLoginScreen"
+c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn(11198) : îøèáêà 017: íåîáúÿâëåííûé ñèìâîë "ShowIphoneReceiveCall"
+c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn(11201) : îøèáêà 017: íåîáúÿâëåííûé ñèìâîë "ShowIphoneCalling"
+c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn(19844) : îøèáêà 017: íåîáúÿâëåííûé ñèìâîë "Graffity_PlayerTimer"
+c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn(20179) : îøèáêà 017: íåîáúÿâëåííûé ñèìâîë "ConvertSecond"
+c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn(21487) : îøèáêà 017: íåîáúÿâëåííûé ñèìâîë "CheckBillBoard"
+c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn(22089) : îøèáêà 017: íåîáúÿâëåííûé ñèìâîë "RemoveCorpse"
+c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn(24056) : ïðåäóïðåæäåíèå 219: ïåðåìåííàÿ "ip" óæå îáúÿâëåíà â áîëåå ãëîáàëüíîé çîíå âèäèìîñòè
+c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn(24184) : ïðåäóïðåæäåíèå 219: ïåðåìåííàÿ "ip" óæå îáúÿâëåíà â áîëåå ãëîáàëüíîé çîíå âèäèìîñòè
+c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn(24993) : îøèáêà 017: íåîáúÿâëåííûé ñèìâîë "ShowLoginScreen"
+c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn(26240) : ïðåäóïðåæäåíèå 219: ïåðåìåííàÿ "ip" óæå îáúÿâëåíà â áîëåå ãëîáàëüíîé çîíå âèäèìîñòè
+c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn(26258) : ïðåäóïðåæäåíèå 219: ïåðåìåííàÿ "ip" óæå îáúÿâëåíà â áîëåå ãëîáàëüíîé çîíå âèäèìîñòè
+c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn(26282) : ïðåäóïðåæäåíèå 219: ïåðåìåííàÿ "ip" óæå îáúÿâëåíà â áîëåå ãëîáàëüíîé çîíå âèäèìîñòè
+c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn(26423) : îøèáêà 017: íåîáúÿâëåííûé ñèìâîë "UploadAntiCheatSettings"
+c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn(26424) : îøèáêà 017: íåîáúÿâëåííûé ñèìâîë "InitPokerTables"
+c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn(26425) : îøèáêà 017: íåîáúÿâëåííûé ñèìâîë "CreatePlayerBoxingCage"
+c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn(26446) : îøèáêà 017: íåîáúÿâëåííûé ñèìâîë "MineSweeperTD"
+c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn(41082) : îøèáêà 017: íåîáúÿâëåííûé ñèìâîë "Player_OnPlayerConnect"
+c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn(41083) : îøèáêà 017: íåîáúÿâëåííûé ñèìâîë "ServerTextdraws"
+c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn(41084) : îøèáêà 017: íåîáúÿâëåííûé ñèìâîë "RemoveBuildings"
+c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn(41085) : îøèáêà 017: íåîáúÿâëåííûé ñèìâîë "MineSweeperPTD"
+c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn(41126) : îøèáêà 017: íåîáúÿâëåííûé ñèìâîë "Graffity_OnPlayerDisconnect"
+c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn(41129) : îøèáêà 017: íåîáúÿâëåííûé ñèìâîë "PlayerCarryCrate"
+c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn(41180) : îøèáêà 017: íåîáúÿâëåííûé ñèìâîë "HideCasinoTDs"
+c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn(41500) : îøèáêà 017: íåîáúÿâëåííûé ñèìâîë "HideCasinoTDs"
+c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn(41567) : îøèáêà 017: íåîáúÿâëåííûé ñèìâîë "ResetBettingVariables"
+c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn(41711) : îøèáêà 017: íåîáúÿâëåííûé ñèìâîë "CreateCorpse"
+c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn(41791) : îøèáêà 017: íåîáúÿâëåííûé ñèìâîë "Graffity_OnPlayerDeath"
+c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn(41932) : îøèáêà 017: íåîáúÿâëåííûé ñèìâîë "Corpse_OnPlayerEnterVehicle"
+
+Êîìïèëÿöèÿ îñòàíîâëåíà.
+
 Pawn compiler 3.2.3664	 	 	Copyright (c) 1997-2016, ITB CompuPhase
 
+
+Îøèáîê:26.
