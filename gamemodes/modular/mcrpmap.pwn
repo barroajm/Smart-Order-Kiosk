@@ -174,7 +174,11 @@ stock pacificmappings() {
 	// NEW MALL BY LAKE
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 tmpobjid = CreateDynamicObject(19322, 1117.585937, -1490.007812, 32.718750, 0.000000, 0.000000, 0.000000, -1, -1, -1, 300.00, 300.00);
+=======
+tmpobjid = CreateDynamicObject(19322, 1117.585937, -1490.007812, 32.718750, 0.000000, 0.000000, 0.000000, 0, 0, -1, 300.00, 300.00);
+>>>>>>> parent of a17fc25 (returned codes from discord verify)
 =======
 tmpobjid = CreateDynamicObject(19322, 1117.585937, -1490.007812, 32.718750, 0.000000, 0.000000, 0.000000, 0, 0, -1, 300.00, 300.00);
 >>>>>>> parent of a17fc25 (returned codes from discord verify)
@@ -246,6 +250,7 @@ SetDynamicObjectMaterial(tmpobjid, 0, 10101, "2notherbuildsfe", "ferry_build14",
 SetDynamicObjectMaterialText(tmpobjid, 0, "{ff0000} LEGAL GUNSHOP", 50, "Calibri", 20, 1, 0x00000000, 0x00000000, 1);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 tmpobjid = CreateDynamicObject(19482, 1102.061401, -1458.169067, 18.526874, 0.000000, 0.000000, 0.000000, -1, -1, -1, 300.00, 300.00);
 SetDynamicObjectMaterial(tmpobjid, 0, 10101, "2notherbuildsfe", "ferry_build14", 0x00000000);
 SetDynamicObjectMaterialText(tmpobjid, 0, "{FF0000} ToyShop", 50, "Calibri", 20, 1, 0x00000000, 0x00000000, 1);
@@ -255,12 +260,17 @@ SetDynamicObjectMaterialText(tmpobjid, 0, "{ff0000}Clothing Store", 40, "Calibri
 =======
 =======
 >>>>>>> parent of a17fc25 (returned codes from discord verify)
+=======
+>>>>>>> parent of a17fc25 (returned codes from discord verify)
 tmpobjid = CreateDynamicObject(19482, 1102.061401, -1457.699096, 18.526874, 0.000000, 0.000000, 0.000000, -1, -1, -1, 300.00, 300.00);
 SetDynamicObjectMaterial(tmpobjid, 0, 10101, "2notherbuildsfe", "ferry_build14", 0x00000000);
 tmpobjid = CreateDynamicObject(19482, 1102.023437, -1440.045043, 18.736879, 0.000000, 0.000000, 0.399998, -1, -1, -1, 300.00, 300.00);
 SetDynamicObjectMaterial(tmpobjid, 0, 10101, "2notherbuildsfe", "ferry_build14", 0x00000000);
 SetDynamicObjectMaterialText(tmpobjid, 0, "{FF0000} ToyShop", 40, "Calibri", 20, 1, 0x00000000, 0x00000000, 1);
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of a17fc25 (returned codes from discord verify)
+=======
 >>>>>>> parent of a17fc25 (returned codes from discord verify)
 =======
 >>>>>>> parent of a17fc25 (returned codes from discord verify)
@@ -1326,7 +1336,10 @@ tmpobjid = CreateDynamicObject(996, 1112.873779, -1415.788696, 13.366511, 0.0000
 tmpobjid = CreateDynamicObject(19968, 1129.014038, -1411.617919, 12.489356, 0.000000, 0.000000, -178.399993, -1, -1, -1, 300.00, 300.00);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of a17fc25 (returned codes from discord verify)
 =======
 >>>>>>> parent of a17fc25 (returned codes from discord verify)
 
