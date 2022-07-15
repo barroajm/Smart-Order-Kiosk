@@ -81,7 +81,7 @@
 
 //comment this line to disable debug (recommended once you finished using the
 //buttons editor, this will make the script more efficient)
-//#define DEBUG
+#define DEBUG
 
 /*############################################################################*/
 
@@ -706,7 +706,7 @@ public OnGameModeExit()
 				GetPlayerPos(playerid, PlayerPos[0], PlayerPos[1], PlayerPos[2]);
 				GetPlayerFacingAngle(playerid, PlayerPos[3]);
 
-				buttonid = FS_CreateButton(PlayerPos[0],PlayerPos[1],PlayerPos[2] + 0.63,PlayerPos[3]);
+				buttonid = FS_CreateButton(PlayerPos[0],PlayerPos[1],PlayerPos[2] + 0.63,PlayerPos[3], 0);
                 format(String, sizeof(String), "Buttonid %d created! Select it with \"/button select\"", buttonid);
 			    SendClientMessage(playerid, 0x00FF00FF, String);
 		    	return true;
