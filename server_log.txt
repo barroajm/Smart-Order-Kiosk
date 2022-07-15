@@ -11650,3 +11650,3065 @@ v0.3.7-R2, (C)2005-2015 SA-MP Team
 [01:11:18] [dbg:raknet:free] : module released
 [01:11:18] [sv:dbg:network:free] : module releasing...
 [01:11:18] [sv:dbg:network:free] : module released
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[09:59:30] filterscripts = ""  (string)
+[09:59:30] weburl = "www.sa-mp.com"  (string)
+[09:59:30] 
+[09:59:30] Server Plugins
+[09:59:30] --------------
+[09:59:30]  Loading plugin: crashdetect
+[09:59:30]   CrashDetect plugin 4.19.4
+[09:59:30]   Loaded.
+[09:59:30]  Loading plugin: pawncmd
+[09:59:30] [Pawn.CMD] plugin v3.3.6 loading...
+[09:59:30] [Pawn.CMD] 
+
+    | Pawn.CMD 3.3.6 | 2016 - 2021
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Sep 26 2021 at 11:55:10
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[09:59:30]   Loaded.
+[09:59:30]  Loading plugin: sampvoice
+[09:59:30] [sv:dbg:network:init] : module initializing...
+[09:59:30] [dbg:raknet:init] : module initializing...
+[09:59:30] [dbg:raknet:init] : module initialized
+[09:59:30] [sv:dbg:network:init] : module initialized
+[09:59:30] [sv:dbg:main:Load] : creating 8 work threads...
+[09:59:30]  -------------------------------------------    
+[09:59:30]    ___                __   __    _              
+[09:59:30]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[09:59:30]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[09:59:30]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[09:59:30]                   |_|                           
+[09:59:30]  -------------------------------------------    
+[09:59:30]            SampVoice by MOR loaded              
+[09:59:30]  -------------------------------------------    
+[09:59:30]   Loaded.
+[09:59:30]  Loading plugin: sscanf
+[09:59:30] 
+
+[09:59:30]  ===============================
+
+[09:59:30]       sscanf plugin loaded.     
+
+[09:59:30]          Version:  2.8.3        
+
+[09:59:30]   (c) 2018 Alex "Y_Less" Cole  
+
+[09:59:30]  ===============================
+
+[09:59:30]   Loaded.
+[09:59:30]  Loading plugin: discord-connector
+[09:59:33]  >> plugin.dc-connector: v0.3.5 successfully loaded.
+[09:59:33]   Loaded.
+[09:59:33]  Loading plugin: mysql
+[09:59:34]  >> plugin.mysql: R39-6 successfully loaded.
+[09:59:34]   Loaded.
+[09:59:34]  Loading plugin: streamer
+[09:59:36] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[09:59:36]   Loaded.
+[09:59:36]  Loading plugin: Whirlpool
+[09:59:37]  
+[09:59:37]  ==================
+[09:59:37]  
+[09:59:37]   Whirlpool loaded
+[09:59:37]  
+[09:59:37]  ==================
+[09:59:37]  
+[09:59:37]   Loaded.
+[09:59:37]  Loading plugin: SKY
+[09:59:37] 
+[09:59:37]  ===============================
+[09:59:37]    
+[09:59:37]    < SKY - 2.3.0 >
+[09:59:37]    
+[09:59:37]    (c) 2008 - Present | YSF Maintainers
+[09:59:37]    (c) 2015 | Oscar "Slice" Broman
+[09:59:37]    
+[09:59:37]    Server Version: 0.3.7 R2
+[09:59:37]    Operating System: Windows
+[09:59:37]    Built on: Sep 27 2021 at 23:19:52
+[09:59:37]    
+[09:59:37]  ===============================
+[09:59:37] 
+[09:59:37]   Loaded.
+[09:59:37]  Loading plugin: nativechecker
+[09:59:37]   Loaded.
+[09:59:37]  Loaded 10 plugins.
+
+[09:59:37] 
+[09:59:37] Ban list
+[09:59:37] --------
+[09:59:37]  Loaded: samp.ban
+[09:59:37] 
+[09:59:37] 
+[09:59:37] Filterscripts
+[09:59:37] ---------------
+[09:59:37]   Loaded 0 filterscripts.
+
+[09:59:37] [sv:dbg:main:AmxLoad] : net game pointer (value:024E9F40) received
+[09:59:37] [sv:dbg:network:bind] : voice server running on port 50054
+[09:59:37] AMX (77658632) loaded
+[09:59:38]  
+[09:59:38] --------------------------------------
+[09:59:38]  Anticheat Nex-AC loaded!
+[09:59:38]  Anticheat version: 1.9.52
+[09:59:38]  Author: Nexius
+[09:59:38] --------------------------------------
+
+[09:59:38]  
+[09:59:38]  
+[09:59:38]  
+[09:59:38]  ======================================= 
+[09:59:38]  |                                     | 
+[09:59:38]  |        YSI version 3.09.0684        | 
+[09:59:38]  |        By Alex "Y_Less" Cole        | 
+[09:59:38]  |                                     | 
+[09:59:38]  ======================================= 
+[09:59:38]  
+[09:59:38] Couldn't connect to radio station database... server will continue to operate normally.
+[09:59:38] 
+************************************************************************************************************************
+[09:59:38]  					Morgan City Roleplay [LOW ECONOMY] Version - MC:RPv2                                                                    
+[09:59:38]  					 Last Update game version - MC:RPv2                                                                
+[09:59:38] ************************************************************************************************************************
+
+[09:59:38] [LoadAntiCheat] Loading data from database...
+[09:59:38] Morgan City Roleplay [LOW ECONOMY]
+[09:59:38] 84 objects loaded.
+[09:59:38] Number of vehicle models: 20
+[09:59:39] [Script] 262 houses loaded.
+[09:59:39] [Script] 3 garages loaded.
+[09:59:39] [debug] Run time error 4: "Array index out of bounds"
+[09:59:39] [debug]  Attempted to read/write array element at index 8 in array of size 7
+[09:59:39] [debug] AMX backtrace:
+[09:59:39] [debug] #0 00381280 in ReloadBusiness (businessid=16) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:16957
+[09:59:39] [debug] #1 003efd50 in public OnQueryFinished (threadid=14, extraid=0) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:25372
+[09:59:39] [Script] 28 entrances loaded.
+[09:59:39] [Script] 4 factions loaded.
+[09:59:39] [debug] Run time error 4: "Array index out of bounds"
+[09:59:39] [debug]  Attempted to read/write array element at index 7 in array of size 7
+[09:59:39] [debug] AMX backtrace:
+[09:59:39] [debug] #0 003f2288 in public OnQueryFinished (threadid=21, extraid=0) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:25491
+[09:59:39] [Script] 2 lands loaded.
+[09:59:39] [Script] 19 gangs loaded.
+[09:59:39] [Script] 0 points loaded.
+[09:59:39] [Script] 10 Points Loaded.
+[09:59:39] [Graffities] No records found.
+[09:59:39] [BillBoards] No records found.
+[09:59:39] [ANTICHEAT]: Anti-cheat settings loaded successfully (loaded: 53). Time: 0 ??.
+[10:01:10] [connection] 127.0.0.1:64631 requests connection cookie.
+[10:01:11] [connection] incoming connection: 127.0.0.1:64631 id: 0
+[10:01:11] [sv:dbg:network:connect] : connecting player (0) with address (127.0.0.1) ...
+[10:01:11] [sv:dbg:network:connect] : player (0) assigned key (fe5a2deb)
+[10:01:11] [join] Lisher_Frost has joined the server (0:127.0.0.1)
+[10:01:11] > {FFFFFF}Lisher Frost has joined the server [{FFFFFF}IP:{FFFFFF} 127.0.0.1] [City: ] [Country: ]
+[10:01:11] [sv:dbg:network:receive] : player (0) identified (port:64632)
+[10:01:40] [sv:dbg:network:connect] : disconnecting player (0) ...
+[10:01:40] > {FFFFFF}Lisher Frost Left The Server [{00ffff}IP:{FFFFFF} 255.255.255.255]
+[10:01:40] [part] Lisher_Frost has left the server (0:1)
+[10:02:02] [connection] 127.0.0.1:56621 requests connection cookie.
+[10:02:03] [connection] incoming connection: 127.0.0.1:56621 id: 0
+[10:02:03] [sv:dbg:network:connect] : connecting player (0) with address (127.0.0.1) ...
+[10:02:03] [sv:dbg:network:connect] : player (0) assigned key (db126eba)
+[10:02:03] [join] Lisher_Frosttt has joined the server (0:127.0.0.1)
+[10:02:03] > {FFFFFF}Lisher Frosttt has joined the server [{FFFFFF}IP:{FFFFFF} 127.0.0.1] [City: ] [Country: ]
+[10:02:03] [sv:dbg:network:receive] : player (0) identified (port:64106)
+[10:04:09] [cmd] Lisher Frosttt: [settings]
+[10:04:16] [cmd] Lisher Frosttt: [settings]
+[10:04:17] [cmd] Lisher Frosttt: [settings]
+[10:04:18] [cmd] Lisher Frosttt: [settings]
+[10:04:24] [cmd] Lisher Frosttt: [settings]
+[10:04:26] [cmd] Lisher Frosttt: [settings]
+[10:20:40] [sv:dbg:network:connect] : disconnecting player (0) ...
+[10:20:40] > {FFFFFF}Lisher Frosttt Left The Server [{00ffff}IP:{FFFFFF} 255.255.255.255]
+[10:20:40] [part] Lisher_Frosttt has left the server (0:1)
+[10:21:04] [connection] 127.0.0.1:62061 requests connection cookie.
+[10:21:05] [connection] incoming connection: 127.0.0.1:62061 id: 0
+[10:21:05] [sv:dbg:network:connect] : connecting player (0) with address (127.0.0.1) ...
+[10:21:05] [sv:dbg:network:connect] : player (0) assigned key (91fc2d3a)
+[10:21:05] [join] Lisher_Fros has joined the server (0:127.0.0.1)
+[10:21:05] > {FFFFFF}Lisher Fros has joined the server [{FFFFFF}IP:{FFFFFF} 127.0.0.1] [City: ] [Country: ]
+[10:21:05] [sv:dbg:network:receive] : player (0) identified (port:55939)
+[10:32:30] [cmd] Lisher Fros: [announce]
+[10:38:02] [sv:dbg:network:connect] : disconnecting player (0) ...
+[10:38:02] > {FFFFFF}Lisher Fros Left The Server [{00ffff}IP:{FFFFFF} 255.255.255.255]
+[10:38:02] [part] Lisher_Fros has left the server (0:1)
+[10:38:03]  -------------------------------------------
+[10:38:03]            SampVoice unloading...           
+[10:38:03]  -------------------------------------------
+[10:38:03] [dbg:raknet:free] : module releasing...
+[10:38:03] [dbg:raknet:free] : module released
+[10:38:03] [sv:dbg:network:free] : module releasing...
+[10:38:03] [sv:dbg:network:free] : module released
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[10:38:07] filterscripts = ""  (string)
+[10:38:07] weburl = "www.sa-mp.com"  (string)
+[10:38:07] 
+[10:38:07] Server Plugins
+[10:38:07] --------------
+[10:38:07]  Loading plugin: crashdetect
+[10:38:07]   CrashDetect plugin 4.19.4
+[10:38:07]   Loaded.
+[10:38:07]  Loading plugin: pawncmd
+[10:38:07] [Pawn.CMD] plugin v3.3.6 loading...
+[10:38:07] [Pawn.CMD] 
+
+    | Pawn.CMD 3.3.6 | 2016 - 2021
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Sep 26 2021 at 11:55:10
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[10:38:07]   Loaded.
+[10:38:07]  Loading plugin: sampvoice
+[10:38:07] [sv:dbg:network:init] : module initializing...
+[10:38:07] [dbg:raknet:init] : module initializing...
+[10:38:07] [dbg:raknet:init] : module initialized
+[10:38:07] [sv:dbg:network:init] : module initialized
+[10:38:07] [sv:dbg:main:Load] : creating 8 work threads...
+[10:38:07]  -------------------------------------------    
+[10:38:07]    ___                __   __    _              
+[10:38:07]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[10:38:07]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[10:38:07]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[10:38:07]                   |_|                           
+[10:38:07]  -------------------------------------------    
+[10:38:07]            SampVoice by MOR loaded              
+[10:38:07]  -------------------------------------------    
+[10:38:07]   Loaded.
+[10:38:07]  Loading plugin: sscanf
+[10:38:07] 
+
+[10:38:07]  ===============================
+
+[10:38:07]       sscanf plugin loaded.     
+
+[10:38:07]          Version:  2.8.3        
+
+[10:38:07]   (c) 2018 Alex "Y_Less" Cole  
+
+[10:38:07]  ===============================
+
+[10:38:07]   Loaded.
+[10:38:07]  Loading plugin: discord-connector
+[10:38:11]  >> plugin.dc-connector: v0.3.5 successfully loaded.
+[10:38:11]   Loaded.
+[10:38:11]  Loading plugin: mysql
+[10:38:11]  >> plugin.mysql: R39-6 successfully loaded.
+[10:38:11]   Loaded.
+[10:38:11]  Loading plugin: streamer
+[10:38:11] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[10:38:11]   Loaded.
+[10:38:11]  Loading plugin: Whirlpool
+[10:38:11]  
+[10:38:11]  ==================
+[10:38:11]  
+[10:38:11]   Whirlpool loaded
+[10:38:11]  
+[10:38:11]  ==================
+[10:38:11]  
+[10:38:11]   Loaded.
+[10:38:11]  Loading plugin: SKY
+[10:38:11] 
+[10:38:11]  ===============================
+[10:38:11]    
+[10:38:11]    < SKY - 2.3.0 >
+[10:38:11]    
+[10:38:11]    (c) 2008 - Present | YSF Maintainers
+[10:38:11]    (c) 2015 | Oscar "Slice" Broman
+[10:38:11]    
+[10:38:11]    Server Version: 0.3.7 R2
+[10:38:11]    Operating System: Windows
+[10:38:11]    Built on: Sep 27 2021 at 23:19:52
+[10:38:11]    
+[10:38:11]  ===============================
+[10:38:11] 
+[10:38:11]   Loaded.
+[10:38:11]  Loading plugin: nativechecker
+[10:38:11]   Loaded.
+[10:38:11]  Loaded 10 plugins.
+
+[10:38:11] 
+[10:38:11] Ban list
+[10:38:11] --------
+[10:38:11]  Loaded: samp.ban
+[10:38:11] 
+[10:38:11] 
+[10:38:11] Filterscripts
+[10:38:11] ---------------
+[10:38:11]   Loaded 0 filterscripts.
+
+[10:38:11] [sv:dbg:main:AmxLoad] : net game pointer (value:025F9F40) received
+[10:38:11] [sv:dbg:network:bind] : voice server running on port 62319
+[10:38:11] AMX (73136648) loaded
+[10:38:11]  
+[10:38:11] --------------------------------------
+[10:38:11]  Anticheat Nex-AC loaded!
+[10:38:11]  Anticheat version: 1.9.52
+[10:38:11]  Author: Nexius
+[10:38:11] --------------------------------------
+
+[10:38:11]  
+[10:38:11]  
+[10:38:11]  
+[10:38:11]  ======================================= 
+[10:38:11]  |                                     | 
+[10:38:11]  |        YSI version 3.09.0684        | 
+[10:38:11]  |        By Alex "Y_Less" Cole        | 
+[10:38:11]  |                                     | 
+[10:38:11]  ======================================= 
+[10:38:11]  
+[10:38:11] Couldn't connect to radio station database... server will continue to operate normally.
+[10:38:11] 
+************************************************************************************************************************
+[10:38:11]  					Morgan City Roleplay [LOW ECONOMY] Version - MC:RPv2                                                                    
+[10:38:11]  					 Last Update game version - MC:RPv2                                                                
+[10:38:11] ************************************************************************************************************************
+
+[10:38:11] [LoadAntiCheat] Loading data from database...
+[10:38:11] Morgan City Roleplay [LOW ECONOMY]
+[10:38:11] 84 objects loaded.
+[10:38:11] Number of vehicle models: 20
+[10:38:12] [Script] 262 houses loaded.
+[10:38:12] [Script] 3 garages loaded.
+[10:38:12] [debug] Run time error 4: "Array index out of bounds"
+[10:38:12] [debug]  Attempted to read/write array element at index 8 in array of size 7
+[10:38:12] [debug] AMX backtrace:
+[10:38:12] [debug] #0 00381280 in ReloadBusiness (businessid=16) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:16957
+[10:38:12] [debug] #1 003efd50 in public OnQueryFinished (threadid=14, extraid=0) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:25372
+[10:38:12] [Script] 28 entrances loaded.
+[10:38:12] [Script] 4 factions loaded.
+[10:38:12] [debug] Run time error 4: "Array index out of bounds"
+[10:38:12] [debug]  Attempted to read/write array element at index 7 in array of size 7
+[10:38:12] [debug] AMX backtrace:
+[10:38:12] [debug] #0 003f2288 in public OnQueryFinished (threadid=21, extraid=0) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:25491
+[10:38:12] [Script] 2 lands loaded.
+[10:38:13] [Script] 19 gangs loaded.
+[10:38:13] [Script] 0 points loaded.
+[10:38:13] [Script] 10 Points Loaded.
+[10:38:13] [Graffities] No records found.
+[10:38:13] [BillBoards] No records found.
+[10:38:13] [ANTICHEAT]: Anti-cheat settings loaded successfully (loaded: 53). Time: 0 ??.
+[10:38:32] [connection] 127.0.0.1:55413 requests connection cookie.
+[10:38:33] [connection] incoming connection: 127.0.0.1:55413 id: 0
+[10:38:33] [sv:dbg:network:connect] : connecting player (0) with address (127.0.0.1) ...
+[10:38:33] [sv:dbg:network:connect] : player (0) assigned key (857d7383)
+[10:38:33] [join] Lisher_Floss has joined the server (0:127.0.0.1)
+[10:38:33] > {FFFFFF}Lisher Floss has joined the server [{FFFFFF}IP:{FFFFFF} 127.0.0.1] [City: ] [Country: ]
+[10:38:33] [sv:dbg:network:receive] : player (0) identified (port:55414)
+[10:39:46] [cmd] Lisher Floss: [verify]
+[10:40:17] RCON (In-Game): Player #0 (Lisher_Floss) has logged in.
+[10:40:19] [cmd] Lisher Floss: [makeadmin]
+[10:40:21] AdmCmd: Lisher Floss has made Lisher Floss a {FF50F1}Community Developer{ffffff} (10).
+[10:40:21] [cmd] Lisher Floss: [makeadmin]
+[10:40:23] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.941608, vel z: 0.244378
+[10:40:23] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.094413, vel z: 0.245207
+[10:40:23] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.390661, vel z: 0.245001
+[10:40:23] [Nex-AC debug] Speed: 253, speed x, y: 249, vel z: 0.245001, pos diff z: 0.530294, old speed: 234
+[10:40:23] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.597942, vel z: 0.243830
+[10:40:23] [Nex-AC debug] Speed: 310, speed x, y: 307, vel z: 0.244256, pos diff z: 0.525440, old speed: 301
+[10:40:23] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.716859, vel z: 0.244251
+[10:40:23] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.589498, vel z: 0.244861
+[10:40:24] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.341760, vel z: 0.244046
+[10:40:24] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.147695, vel z: 0.244689
+[10:40:24] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.796080, vel z: 0.244788
+[10:40:24] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.496951, vel z: 0.245171
+[10:40:24] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.476257, vel z: 0.198364
+[10:40:24] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.703048, vel z: 0.141680
+[10:40:25] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.112688, vel z: 0.039286
+[10:40:25] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.309737, vel z: -0.014099
+[10:40:25] [Nex-AC debug] Speed: 235, speed x, y: 235, vel z: -0.014099, pos diff z: -0.016712, old speed: 223
+[10:40:25] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.504462, vel z: -0.068831
+[10:40:25] [Nex-AC debug] Speed: 292, speed x, y: 291, vel z: -0.104414, pos diff z: -0.265869, old speed: 280
+[10:40:25] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.660846, vel z: -0.118935
+[10:40:25] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.658478, vel z: -0.155174
+[10:40:25] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.652722, vel z: -0.200008
+[10:40:25] [Nex-AC debug] Speed: 306, speed x, y: 303, vel z: 0.244272, pos diff z: -0.009201, old speed: 301
+[10:40:25] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.712930, vel z: 0.244064
+[10:40:26] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.882346, vel z: 0.244122
+[10:40:26] [Nex-AC debug] Speed: 349, speed x, y: 346, vel z: 0.238747, pos diff z: 0.498264, old speed: 340
+[10:40:26] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.992624, vel z: 0.204404
+[10:40:26] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.066197, vel z: 0.153953
+[10:40:26] [Nex-AC debug] Speed: 375, speed x, y: 374, vel z: 0.133089, pos diff z: 0.302845, old speed: 371
+[10:40:26] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.126241, vel z: 0.092425
+[10:40:26] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.197373, vel z: 0.029845
+[10:40:26] [Nex-AC debug] Speed: 394, speed x, y: 394, vel z: 0.029845, pos diff z: 0.083087, old speed: 390
+[10:40:26] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.261193, vel z: -0.014125
+[10:40:26] [Nex-AC debug] Speed: 416, speed x, y: 416, vel z: -0.049352, pos diff z: -0.113422, old speed: 411
+[10:40:26] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.338407, vel z: -0.065181
+[10:40:26] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.386362, vel z: -0.112987
+[10:40:26] [Nex-AC debug] Speed: 429, speed x, y: 428, vel z: -0.126862, pos diff z: -0.267742, old speed: 428
+[10:40:26] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.458431, vel z: -0.146491
+[10:40:27] [Nex-AC debug] Dist: 122.653366, dist set: 159.361373, acSet[7]: -1, speed: 457, old pos x, y: 1666.674682, -2184.072753
+[10:40:27] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.576770, vel z: -0.186791
+[10:40:27] [Nex-AC debug] Speed: 463, speed x, y: 462, vel z: -0.186791, pos diff z: -0.527271, old speed: 457
+[10:40:27] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.603179, vel z: -0.213695
+[10:40:27] [Nex-AC debug] Speed: 471, speed x, y: 469, vel z: 0.243546, pos diff z: 0.133951, old speed: 470
+[10:40:27] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.642046, vel z: 0.244699
+[10:40:27] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.658348, vel z: 0.242927
+[10:40:27] [Nex-AC debug] Speed: 479, speed x, y: 477, vel z: 0.242927, pos diff z: 0.547500, old speed: 478
+[10:40:27] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.661237, vel z: 0.242925
+[10:40:27] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.667483, vel z: 0.243507
+[10:40:28] [Nex-AC debug] Dist: 108.264907, dist set: 263.547943, acSet[7]: -1, speed: 481, old pos x, y: 1780.086669, -2137.365478
+[10:40:28] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.668886, vel z: 0.243506
+[10:40:28] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.563077, vel z: 0.145417
+[10:40:28] [Nex-AC debug] Speed: 460, speed x, y: 460, vel z: 0.145417, pos diff z: 0.421974, old speed: 459
+[10:40:28] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.571965, vel z: 0.079923
+[10:40:28] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.578161, vel z: 0.026921
+[10:40:29] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.474056, vel z: -0.030741
+[10:40:29] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.314701, vel z: -0.106374
+[10:40:29] [Nex-AC debug] Dist: 110.241012, dist set: 373.772247, acSet[7]: -1, speed: 415, old pos x, y: 1871.930908, -2080.042480
+[10:40:29] [Nex-AC debug] Speed: 419, speed x, y: 418, vel z: -0.137806, pos diff z: -0.292007, old speed: 415
+[10:40:29] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.352982, vel z: -0.151012
+[10:40:29] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.336731, vel z: -0.178631
+[10:40:29] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.228363, vel z: -0.215639
+[10:40:29] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.184615, vel z: -0.248479
+[10:40:29] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.182238, vel z: -0.266483
+[10:40:30] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.861645, vel z: 0.243945
+[10:40:30] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.596815, vel z: 0.243831
+[10:40:30] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.427009, vel z: 0.244475
+[10:40:30] [Nex-AC debug] Dist: 101.302284, dist set: 471.624938, acSet[7]: -1, speed: 250, old pos x, y: 1949.431640, -2001.641479
+[10:40:30] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.360471, vel z: 0.212618
+[10:40:30] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.369735, vel z: 0.151274
+[10:40:30] [Nex-AC debug] Speed: 247, speed x, y: 246, vel z: 0.151274, pos diff z: 0.331584, old speed: 245
+[10:40:30] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.473757, vel z: 0.087231
+[10:40:30] [Nex-AC debug] Speed: 280, speed x, y: 280, vel z: 0.045141, pos diff z: 0.147628, old speed: 271
+[10:40:30] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.587276, vel z: 0.035542
+[10:40:31] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.698917, vel z: -0.005772
+[10:40:31] [Nex-AC debug] Speed: 311, speed x, y: 311, vel z: -0.023779, pos diff z: -0.039268, old speed: 305
+[10:40:31] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.768355, vel z: -0.056322
+[10:40:31] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.721061, vel z: -0.100158
+[10:40:31] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.813155, vel z: -0.144501
+[10:40:31] [Nex-AC debug] Speed: 326, speed x, y: 325, vel z: -0.144501, pos diff z: -0.306156, old speed: 320
+[10:40:31] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.874707, vel z: 0.244660
+[10:40:31] [Nex-AC debug] Speed: 351, speed x, y: 348, vel z: 0.246762, pos diff z: 0.523937, old speed: 345
+[10:40:31] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.975844, vel z: 0.243510
+[10:40:31] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.060344, vel z: 0.204959
+[10:40:31] [Nex-AC debug] Speed: 376, speed x, y: 374, vel z: 0.181769, pos diff z: 0.428436, old speed: 371
+[10:40:32] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.150827, vel z: 0.133210
+[10:40:32] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.185232, vel z: 0.082223
+[10:40:32] [Nex-AC debug] Speed: 392, speed x, y: 392, vel z: 0.082223, pos diff z: 0.198669, old speed: 388
+[10:40:32] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.271058, vel z: 0.020953
+[10:40:32] [Nex-AC debug] Speed: 413, speed x, y: 413, vel z: -0.007248, pos diff z: -0.006103, old speed: 412
+[10:40:32] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.338141, vel z: -0.022541
+[10:40:32] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.404318, vel z: -0.074682
+[10:40:32] [Nex-AC debug] Speed: 434, speed x, y: 432, vel z: 0.242570, pos diff z: 0.260395, old speed: 431
+[10:40:32] [Nex-AC debug] Dist: 117.596916, dist set: 439.932312, acSet[7]: -1, speed: 434, old pos x, y: 1953.215942, -1863.300415
+[10:40:32] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.441459, vel z: 0.243113
+[10:40:32] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.457720, vel z: 0.233434
+[10:40:33] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.495478, vel z: 0.163893
+[10:40:33] [Nex-AC debug] Speed: 448, speed x, y: 447, vel z: 0.163893, pos diff z: 0.435806, old speed: 445
+[10:40:33] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.523934, vel z: 0.093571
+[10:40:33] [Nex-AC debug] Speed: 455, speed x, y: 455, vel z: 0.053828, pos diff z: 0.134002, old speed: 454
+[10:40:33] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.546186, vel z: 0.029797
+[10:40:33] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.568120, vel z: -0.022307
+[10:40:33] [Nex-AC debug] Speed: 461, speed x, y: 461, vel z: -0.043738, pos diff z: -0.101081, old speed: 460
+[10:40:33] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.612991, vel z: -0.102390
+[10:40:33] [Nex-AC debug] Speed: 470, speed x, y: 470, vel z: -0.116561, pos diff z: -0.250537, old speed: 469
+[10:40:33] [Nex-AC debug] Dist: 140.206192, dist set: 402.263702, acSet[7]: -1, speed: 472, old pos x, y: 1836.234985, -1851.280029
+[10:40:33] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.635073, vel z: -0.142979
+[10:40:33] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.650701, vel z: -0.181764
+[10:40:34] [Nex-AC debug] Speed: 477, speed x, y: 475, vel z: -0.206681, pos diff z: -0.543987, old speed: 476
+[10:40:34] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.654647, vel z: -0.216543
+[10:40:34] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.651607, vel z: -0.248073
+[10:40:34] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.651223, vel z: -0.275999
+[10:40:34] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.656134, vel z: -0.293224
+[10:40:34] [Nex-AC debug] Speed: 481, speed x, y: 478, vel z: -0.307765, pos diff z: -0.671295, old speed: 480
+[10:40:34] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.671807, vel z: -0.314448
+[10:40:34] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.667412, vel z: -0.328995
+[10:40:34] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.662842, vel z: -0.348061
+[10:40:34] [Nex-AC debug] Dist: 144.009384, dist set: 415.467895, acSet[7]: -1, speed: 481, old pos x, y: 1696.406005, -1861.557739
+[10:40:34] [Nex-AC debug] Speed: 483, speed x, y: 478, vel z: -0.355934, pos diff z: -0.426265, old speed: 482
+[10:40:35] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.688230, vel z: -0.366839
+[10:40:35] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.695335, vel z: -0.381517
+[10:40:35] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.694194, vel z: -0.394464
+[10:40:35] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.680361, vel z: 0.242908
+[10:40:36] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.554193, vel z: 0.200164
+[10:40:36] [Nex-AC debug] Speed: 461, speed x, y: 460, vel z: 0.178043, pos diff z: 0.381641, old speed: 459
+[10:40:36] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.580583, vel z: 0.128304
+[10:40:36] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.464249, vel z: 0.061627
+[10:40:36] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.264431, vel z: 0.001568
+[10:40:36] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.105680, vel z: -0.049935
+[10:40:36] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.880596, vel z: -0.116083
+[10:40:37] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.808954, vel z: -0.151457
+[10:40:37] [Nex-AC debug] Dist: 115.061637, dist set: 517.097534, acSet[7]: -1, speed: 325, old pos x, y: 1467.284423, -1873.746704
+[10:40:37] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.745045, vel z: -0.187756
+[10:40:37] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.661414, vel z: -0.229735
+[10:40:37] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.572906, vel z: -0.270323
+[10:40:37] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.494341, vel z: -0.308783
+[10:40:37] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.427314, vel z: -0.343514
+[10:40:37] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.363091, vel z: -0.379004
+[10:40:38] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.221651, vel z: 0.245119
+[10:40:38] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.017610, vel z: 0.245258
+[10:40:38] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.019757, vel z: 0.161982
+[10:40:38] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.000200, vel z: 0.112995
+[10:40:45] [cmd] Lisher Floss: [gate]
+[10:40:53] [cmd] Lisher Floss: [setstat]
+[10:41:00] [sv:dbg:network:connect] : disconnecting player (0) ...
+[10:41:00] > {FFFFFF}Lisher Floss Left The Server [{00ffff}IP:{FFFFFF} 255.255.255.255]
+[10:41:00] [part] Lisher_Floss has left the server (0:1)
+[10:42:06] [connection] 127.0.0.1:64242 requests connection cookie.
+[10:42:07] [connection] incoming connection: 127.0.0.1:64242 id: 0
+[10:42:07] [sv:dbg:network:connect] : connecting player (0) with address (127.0.0.1) ...
+[10:42:07] [sv:dbg:network:connect] : player (0) assigned key (b0c0cb54)
+[10:42:07] [join] Lisher_Frost has joined the server (0:127.0.0.1)
+[10:42:07] > {FFFFFF}Lisher Frost has joined the server [{FFFFFF}IP:{FFFFFF} 127.0.0.1] [City: ] [Country: ]
+[10:42:07] [sv:dbg:network:receive] : player (0) identified (port:55076)
+[10:42:26] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.313829, vel z: 0.245291
+[10:42:26] Lisher Frost[0] was kicked on suspicion of using cheat programs: FlyHack (onfoot) [code: 007].
+[10:42:26] [sv:dbg:network:connect] : disconnecting player (0) ...
+[10:42:26] > {FFFFFF}Lisher Frost Left The Server [{00ffff}IP:{FFFFFF} 255.255.255.255]
+[10:42:26] [part] Lisher_Frost has left the server (0:2)
+[10:42:49] [connection] 127.0.0.1:57447 requests connection cookie.
+[10:42:50] [connection] incoming connection: 127.0.0.1:57447 id: 0
+[10:42:50] [sv:dbg:network:connect] : connecting player (0) with address (127.0.0.1) ...
+[10:42:50] [sv:dbg:network:connect] : player (0) assigned key (1227323f)
+[10:42:50] [join] Lisher_Frost has joined the server (0:127.0.0.1)
+[10:42:50] > {FFFFFF}Lisher Frost has joined the server [{FFFFFF}IP:{FFFFFF} 127.0.0.1] [City: ] [Country: ]
+[10:42:51] [sv:dbg:network:receive] : player (0) identified (port:56653)
+[10:43:19] RCON (In-Game): Player #0 (Lisher_Frost) has logged in.
+[10:43:23] AdmCmd: Lisher Frost has made Lisher Frost a {FF50F1}Community Developer{ffffff} (10).
+[10:43:23] [cmd] Lisher Frost: [makeadmin]
+[10:43:24] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.209267, vel z: 0.245350
+[10:43:24] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.494215, vel z: 0.243859
+[10:43:24] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.649916, vel z: 0.245958
+[10:43:24] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.839904, vel z: 0.244922
+[10:43:24] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.990185, vel z: 0.244809
+[10:43:25] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.907784, vel z: 0.242548
+[10:43:25] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.626745, vel z: 0.245078
+[10:43:25] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.541691, vel z: 0.245139
+[10:43:25] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.594415, vel z: 0.245102
+[10:43:25] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.534955, vel z: 0.245585
+[10:43:25] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.269856, vel z: 0.244893
+[10:43:25] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.195894, vel z: 0.244935
+[10:43:25] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.352842, vel z: 0.245697
+[10:43:26] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.509261, vel z: 0.209675
+[10:43:26] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.536369, vel z: 0.166129
+[10:43:26] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.430829, vel z: 0.106328
+[10:43:26] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.124184, vel z: -0.096256
+[10:43:26] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.409780, vel z: -0.146959
+[10:43:26] [Nex-AC debug] Speed: 254, speed x, y: 253, vel z: -0.146959, pos diff z: -0.390083, old speed: 235
+[10:43:27] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.775255, vel z: -0.213122
+[10:43:27] [Nex-AC debug] Speed: 321, speed x, y: 318, vel z: -0.213122, pos diff z: -0.468467, old speed: 309
+[10:43:27] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.977577, vel z: 0.244048
+[10:43:27] [Nex-AC debug] Speed: 374, speed x, y: 372, vel z: 0.230991, pos diff z: 0.415275, old speed: 368
+[10:43:27] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.129545, vel z: 0.209108
+[10:43:27] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.215648, vel z: 0.153660
+[10:43:27] [Nex-AC debug] Speed: 403, speed x, y: 402, vel z: 0.126749, pos diff z: 0.377914, old speed: 398
+[10:43:27] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.284939, vel z: 0.086065
+[10:43:27] [Nex-AC debug] Dist: 96.920127, dist set: 126.307113, acSet[7]: -1, speed: 412, old pos x, y: 1687.976562, -2279.621582
+[10:43:27] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.285130, vel z: 0.028913
+[10:43:27] [Nex-AC debug] Speed: 413, speed x, y: 413, vel z: 0.008767, pos diff z: 0.040882, old speed: 410
+[10:43:27] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.325812, vel z: -0.025546
+[10:43:28] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.373343, vel z: -0.077802
+[10:43:28] [Nex-AC debug] Speed: 426, speed x, y: 426, vel z: -0.077802, pos diff z: -0.161968, old speed: 423
+[10:43:28] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.408353, vel z: -0.115350
+[10:43:28] [Nex-AC debug] Speed: 441, speed x, y: 440, vel z: -0.153236, pos diff z: -0.348167, old speed: 438
+[10:43:28] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.479062, vel z: -0.167147
+[10:43:28] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.279252, vel z: 0.243812
+[10:43:28] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.126688, vel z: 0.243931
+[10:43:28] [Nex-AC debug] Dist: 110.846771, dist set: 236.924179, acSet[7]: -1, speed: 378, old pos x, y: 1670.537963, -2184.283203
+[10:43:29] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.056299, vel z: 0.217663
+[10:43:29] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.136545, vel z: 0.153700
+[10:43:29] [Nex-AC debug] Speed: 390, speed x, y: 390, vel z: 0.127425, pos diff z: 0.372215, old speed: 384
+[10:43:29] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.223094, vel z: 0.090288
+[10:43:29] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.223936, vel z: 0.015915
+[10:43:29] [Nex-AC debug] Speed: 403, speed x, y: 403, vel z: -0.001820, pos diff z: 0.010444, old speed: 399
+[10:43:30] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.198060, vel z: -0.028027
+[10:43:30] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.055429, vel z: -0.075011
+[10:43:30] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.928348, vel z: -0.120203
+[10:43:31] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.384851, vel z: 0.239535
+[10:43:32] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.389080, vel z: 0.186726
+[10:43:32] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.519571, vel z: 0.130467
+[10:43:32] [Nex-AC debug] Speed: 276, speed x, y: 275, vel z: 0.125454, pos diff z: 0.069000, old speed: 273
+[10:43:32] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.537405, vel z: 0.089440
+[10:43:32] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.466632, vel z: 0.030374
+[10:43:32] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.400787, vel z: -0.026759
+[10:43:32] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.341259, vel z: -0.080797
+[10:43:32] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.288056, vel z: -0.130474
+[10:43:33] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.241852, vel z: -0.173991
+[10:43:34] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.195830, vel z: -0.221051
+[10:43:34] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.920448, vel z: -0.137664
+[10:43:35] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.972441, vel z: -0.267039
+[10:43:35] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.966715, vel z: -0.308722
+[10:43:35] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.941636, vel z: -0.348849
+[10:43:37] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.226148, vel z: 0.245342
+[10:43:37] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.451853, vel z: 0.203067
+[10:43:37] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.560808, vel z: 0.160648
+[10:43:37] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.578391, vel z: 0.114452
+[10:43:40] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.015154, vel z: 0.244790
+[10:43:40] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.060396, vel z: 0.244755
+[10:43:40] [Nex-AC debug] Speed: 201, speed x, y: 196, vel z: 0.244252, pos diff z: 0.493965, old speed: 198
+[10:43:40] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.098108, vel z: 0.234240
+[10:43:40] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.094148, vel z: 0.173811
+[10:43:40] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.032131, vel z: 0.109656
+[10:43:40] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.013988, vel z: 0.051703
+[10:43:41] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.984929, vel z: -0.002108
+[10:43:41] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.921308, vel z: -0.055336
+[10:43:44] [cmd] Lisher Frost: [setfaction]
+[10:43:47] [cmd] Lisher Frost: [setstaff]
+[10:43:50] AdmCmd: Lisher Frost has made Lisher Frost a faction moderator.
+[10:43:50] [cmd] Lisher Frost: [setstaff]
+[10:43:53] [cmd] Lisher Frost: [setfaction]
+[10:43:55] [cmd] Lisher Frost: [setfaction]
+[10:43:56] [cmd] Lisher Frost: [factions]
+[10:44:10] AdmCmd: Lisher Frost has made Lisher Frost a Mechshop Owner in Azalea Automotive Services.
+[10:44:10] [cmd] Lisher Frost: [setfaction]
+[10:44:13] [cmd] Lisher Frost: [gate]
+[10:44:20] [cmd] Lisher Frost: [gate]
+[10:44:23] [cmd] Lisher Frost: [factionhelp]
+[10:44:33] [cmd] Lisher Frost: [gate]
+[10:47:33] [cmd] Lisher Frost: [open]
+[10:47:34] [cmd] Lisher Frost: [open]
+[10:49:02] [sv:dbg:network:connect] : disconnecting player (0) ...
+[10:49:02] > {FFFFFF}Lisher Frost Left The Server [{00ffff}IP:{FFFFFF} 255.255.255.255]
+[10:49:02] [part] Lisher_Frost has left the server (0:1)
+[10:49:10]  -------------------------------------------
+[10:49:10]            SampVoice unloading...           
+[10:49:10]  -------------------------------------------
+[10:49:10] [dbg:raknet:free] : module releasing...
+[10:49:10] [dbg:raknet:free] : module released
+[10:49:10] [sv:dbg:network:free] : module releasing...
+[10:49:10] [sv:dbg:network:free] : module released
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[10:52:07] filterscripts = ""  (string)
+[10:52:07] weburl = "www.sa-mp.com"  (string)
+[10:52:07] 
+[10:52:07] Server Plugins
+[10:52:07] --------------
+[10:52:07]  Loading plugin: crashdetect
+[10:52:07]   CrashDetect plugin 4.19.4
+[10:52:07]   Loaded.
+[10:52:07]  Loading plugin: pawncmd
+[10:52:07] [Pawn.CMD] plugin v3.3.6 loading...
+[10:52:07] [Pawn.CMD] 
+
+    | Pawn.CMD 3.3.6 | 2016 - 2021
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Sep 26 2021 at 11:55:10
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[10:52:07]   Loaded.
+[10:52:07]  Loading plugin: sampvoice
+[10:52:07] [sv:dbg:network:init] : module initializing...
+[10:52:07] [dbg:raknet:init] : module initializing...
+[10:52:07] [dbg:raknet:init] : module initialized
+[10:52:07] [sv:dbg:network:init] : module initialized
+[10:52:07] [sv:dbg:main:Load] : creating 8 work threads...
+[10:52:07]  -------------------------------------------    
+[10:52:07]    ___                __   __    _              
+[10:52:07]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[10:52:07]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[10:52:07]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[10:52:07]                   |_|                           
+[10:52:07]  -------------------------------------------    
+[10:52:07]            SampVoice by MOR loaded              
+[10:52:08]  -------------------------------------------    
+[10:52:08]   Loaded.
+[10:52:08]  Loading plugin: sscanf
+[10:52:08] 
+
+[10:52:08]  ===============================
+
+[10:52:08]       sscanf plugin loaded.     
+
+[10:52:08]          Version:  2.8.3        
+
+[10:52:08]   (c) 2018 Alex "Y_Less" Cole  
+
+[10:52:08]  ===============================
+
+[10:52:08]   Loaded.
+[10:52:08]  Loading plugin: discord-connector
+[10:52:11]  >> plugin.dc-connector: v0.3.5 successfully loaded.
+[10:52:11]   Loaded.
+[10:52:11]  Loading plugin: mysql
+[10:52:11]  >> plugin.mysql: R39-6 successfully loaded.
+[10:52:11]   Loaded.
+[10:52:11]  Loading plugin: streamer
+[10:52:11] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[10:52:11]   Loaded.
+[10:52:11]  Loading plugin: Whirlpool
+[10:52:11]  
+[10:52:11]  ==================
+[10:52:11]  
+[10:52:11]   Whirlpool loaded
+[10:52:11]  
+[10:52:11]  ==================
+[10:52:11]  
+[10:52:11]   Loaded.
+[10:52:11]  Loading plugin: SKY
+[10:52:11] 
+[10:52:11]  ===============================
+[10:52:11]    
+[10:52:11]    < SKY - 2.3.0 >
+[10:52:11]    
+[10:52:11]    (c) 2008 - Present | YSF Maintainers
+[10:52:11]    (c) 2015 | Oscar "Slice" Broman
+[10:52:11]    
+[10:52:11]    Server Version: 0.3.7 R2
+[10:52:11]    Operating System: Windows
+[10:52:11]    Built on: Sep 27 2021 at 23:19:52
+[10:52:11]    
+[10:52:11]  ===============================
+[10:52:11] 
+[10:52:11]   Loaded.
+[10:52:11]  Loading plugin: nativechecker
+[10:52:11]   Loaded.
+[10:52:11]  Loaded 10 plugins.
+
+[10:52:11] 
+[10:52:11] Ban list
+[10:52:11] --------
+[10:52:11]  Loaded: samp.ban
+[10:52:11] 
+[10:52:11] 
+[10:52:11] Filterscripts
+[10:52:11] ---------------
+[10:52:11]   Loaded 0 filterscripts.
+
+[10:52:11] [sv:dbg:main:AmxLoad] : net game pointer (value:00769F40) received
+[10:52:11] [sv:dbg:network:bind] : voice server running on port 53576
+[10:52:11] AMX (73267720) loaded
+[10:52:11]  
+[10:52:11] --------------------------------------
+[10:52:11]  Anticheat Nex-AC loaded!
+[10:52:11]  Anticheat version: 1.9.52
+[10:52:11]  Author: Nexius
+[10:52:11] --------------------------------------
+
+[10:52:11]  
+[10:52:11]  
+[10:52:11]  
+[10:52:11]  ======================================= 
+[10:52:11]  |                                     | 
+[10:52:11]  |        YSI version 3.09.0684        | 
+[10:52:11]  |        By Alex "Y_Less" Cole        | 
+[10:52:11]  |                                     | 
+[10:52:11]  ======================================= 
+[10:52:11]  
+[10:52:11] Couldn't connect to radio station database... server will continue to operate normally.
+[10:52:11] 
+************************************************************************************************************************
+[10:52:11]  					Morgan City Roleplay [LOW ECONOMY] Version - MC:RPv2                                                                    
+[10:52:11]  					 Last Update game version - MC:RPv2                                                                
+[10:52:11] ************************************************************************************************************************
+
+[10:52:11] [LoadAntiCheat] Loading data from database...
+[10:52:11] Morgan City Roleplay [LOW ECONOMY]
+[10:52:11] 84 objects loaded.
+[10:52:11] Number of vehicle models: 20
+[10:52:12] [Script] 262 houses loaded.
+[10:52:12] [Script] 3 garages loaded.
+[10:52:12] [debug] Run time error 4: "Array index out of bounds"
+[10:52:12] [debug]  Attempted to read/write array element at index 8 in array of size 7
+[10:52:12] [debug] AMX backtrace:
+[10:52:12] [debug] #0 00381280 in ReloadBusiness (businessid=16) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:16957
+[10:52:12] [debug] #1 003efd50 in public OnQueryFinished (threadid=14, extraid=0) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:25372
+[10:52:12] [Script] 28 entrances loaded.
+[10:52:12] [Script] 4 factions loaded.
+[10:52:12] [debug] Run time error 4: "Array index out of bounds"
+[10:52:12] [debug]  Attempted to read/write array element at index 7 in array of size 7
+[10:52:12] [debug] AMX backtrace:
+[10:52:12] [debug] #0 003f2288 in public OnQueryFinished (threadid=21, extraid=0) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:25491
+[10:52:12] [Script] 2 lands loaded.
+[10:52:12] [Script] 19 gangs loaded.
+[10:52:12] [Script] 0 points loaded.
+[10:52:12] [Script] 10 Points Loaded.
+[10:52:12] [Graffities] No records found.
+[10:52:12] [BillBoards] No records found.
+[10:52:12] [ANTICHEAT]: Anti-cheat settings loaded successfully (loaded: 53). Time: 0 ??.
+[10:52:35] [connection] 127.0.0.1:64315 requests connection cookie.
+[10:52:36] [connection] incoming connection: 127.0.0.1:64315 id: 0
+[10:52:36] [sv:dbg:network:connect] : connecting player (0) with address (127.0.0.1) ...
+[10:52:36] [sv:dbg:network:connect] : player (0) assigned key (e0ddda77)
+[10:52:36] [join] Lisher_Frost has joined the server (0:127.0.0.1)
+[10:52:36] > {FFFFFF}Lisher Frost has joined the server [{FFFFFF}IP:{FFFFFF} 127.0.0.1] [City: ] [Country: ]
+[10:52:36] [sv:dbg:network:receive] : player (0) identified (port:60728)
+[10:53:26] SERVER: Lisher Frost has logged in as a {eb4034}{FF50F1}Community Developer{ffffff}{FFFFFF}.
+[10:53:26] AdmCmd: {FF50F1}Community Developer{ffffff} Lisher Frost has logged in.
+[10:53:38] [cmd] Lisher Frost: [open]
+[10:53:47] [cmd] Lisher Frost: [open]
+[10:53:52] [cmd] Lisher Frost: [open]
+[10:53:52] [chat] [Lisher_Frost]: a
+[10:53:54] [cmd] Lisher Frost: [r]
+[10:53:56] [cmd] Lisher Frost: [gov]
+[10:54:13] [cmd] Lisher Frost: [editgate]
+[10:56:48] [cmd] Lisher Frost: [gotogate]
+[10:56:51] [cmd] Lisher Frost: [gotogate]
+[10:56:52] [cmd] Lisher Frost: [gotogate]
+[10:56:54] [cmd] Lisher Frost: [gotogate]
+[10:56:57] [cmd] Lisher Frost: [gotogate]
+[10:57:03] [cmd] Lisher Frost: [gotogate]
+[10:57:17] [cmd] Lisher Frost: [gotogate]
+[10:57:19] [cmd] Lisher Frost: [gotogate]
+[11:05:39] [sv:dbg:network:connect] : disconnecting player (0) ...
+[11:05:39] > {FFFFFF}Lisher Frost Left The Server [{00ffff}IP:{FFFFFF} 255.255.255.255]
+[11:05:39] [part] Lisher_Frost has left the server (0:1)
+[11:05:40]  -------------------------------------------
+[11:05:40]            SampVoice unloading...           
+[11:05:40]  -------------------------------------------
+[11:05:40] [dbg:raknet:free] : module releasing...
+[11:05:40] [dbg:raknet:free] : module released
+[11:05:40] [sv:dbg:network:free] : module releasing...
+[11:05:40] [sv:dbg:network:free] : module released
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[11:06:26] filterscripts = ""  (string)
+[11:06:26] weburl = "www.sa-mp.com"  (string)
+[11:06:26] 
+[11:06:26] Server Plugins
+[11:06:26] --------------
+[11:06:26]  Loading plugin: crashdetect
+[11:06:26]   CrashDetect plugin 4.19.4
+[11:06:26]   Loaded.
+[11:06:26]  Loading plugin: pawncmd
+[11:06:26] [Pawn.CMD] plugin v3.3.6 loading...
+[11:06:26] [Pawn.CMD] 
+
+    | Pawn.CMD 3.3.6 | 2016 - 2021
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Sep 26 2021 at 11:55:10
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[11:06:26]   Loaded.
+[11:06:26]  Loading plugin: sampvoice
+[11:06:26] [sv:dbg:network:init] : module initializing...
+[11:06:26] [dbg:raknet:init] : module initializing...
+[11:06:26] [dbg:raknet:init] : module initialized
+[11:06:26] [sv:dbg:network:init] : module initialized
+[11:06:26] [sv:dbg:main:Load] : creating 8 work threads...
+[11:06:26]  -------------------------------------------    
+[11:06:26]    ___                __   __    _              
+[11:06:26]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[11:06:26]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[11:06:26]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[11:06:26]                   |_|                           
+[11:06:26]  -------------------------------------------    
+[11:06:26]            SampVoice by MOR loaded              
+[11:06:26]  -------------------------------------------    
+[11:06:27]   Loaded.
+[11:06:27]  Loading plugin: sscanf
+[11:06:27] 
+
+[11:06:27]  ===============================
+
+[11:06:27]       sscanf plugin loaded.     
+
+[11:06:27]          Version:  2.8.3        
+
+[11:06:27]   (c) 2018 Alex "Y_Less" Cole  
+
+[11:06:27]  ===============================
+
+[11:06:27]   Loaded.
+[11:06:27]  Loading plugin: discord-connector
+[11:06:29]  >> plugin.dc-connector: v0.3.5 successfully loaded.
+[11:06:29]   Loaded.
+[11:06:29]  Loading plugin: mysql
+[11:06:29]  >> plugin.mysql: R39-6 successfully loaded.
+[11:06:29]   Loaded.
+[11:06:29]  Loading plugin: streamer
+[11:06:29] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[11:06:29]   Loaded.
+[11:06:29]  Loading plugin: Whirlpool
+[11:06:29]  
+[11:06:29]  ==================
+[11:06:29]  
+[11:06:29]   Whirlpool loaded
+[11:06:29]  
+[11:06:29]  ==================
+[11:06:29]  
+[11:06:29]   Loaded.
+[11:06:29]  Loading plugin: SKY
+[11:06:29] 
+[11:06:29]  ===============================
+[11:06:29]    
+[11:06:29]    < SKY - 2.3.0 >
+[11:06:29]    
+[11:06:29]    (c) 2008 - Present | YSF Maintainers
+[11:06:29]    (c) 2015 | Oscar "Slice" Broman
+[11:06:29]    
+[11:06:29]    Server Version: 0.3.7 R2
+[11:06:29]    Operating System: Windows
+[11:06:29]    Built on: Sep 27 2021 at 23:19:52
+[11:06:29]    
+[11:06:29]  ===============================
+[11:06:29] 
+[11:06:29]   Loaded.
+[11:06:29]  Loading plugin: nativechecker
+[11:06:29]   Loaded.
+[11:06:29]  Loaded 10 plugins.
+
+[11:06:29] 
+[11:06:29] Ban list
+[11:06:29] --------
+[11:06:29]  Loaded: samp.ban
+[11:06:29] 
+[11:06:29] 
+[11:06:29] Filterscripts
+[11:06:29] ---------------
+[11:06:29]   Loaded 0 filterscripts.
+
+[11:06:29] [sv:dbg:main:AmxLoad] : net game pointer (value:02359F40) received
+[11:06:29] [sv:dbg:network:bind] : voice server running on port 55224
+[11:06:29] AMX (73071112) loaded
+[11:06:29]  
+[11:06:29] --------------------------------------
+[11:06:29]  Anticheat Nex-AC loaded!
+[11:06:29]  Anticheat version: 1.9.52
+[11:06:29]  Author: Nexius
+[11:06:29] --------------------------------------
+
+[11:06:29]  
+[11:06:29]  
+[11:06:29]  
+[11:06:29]  ======================================= 
+[11:06:29]  |                                     | 
+[11:06:29]  |        YSI version 3.09.0684        | 
+[11:06:29]  |        By Alex "Y_Less" Cole        | 
+[11:06:29]  |                                     | 
+[11:06:29]  ======================================= 
+[11:06:29]  
+[11:06:29] Couldn't connect to radio station database... server will continue to operate normally.
+[11:06:29] 
+************************************************************************************************************************
+[11:06:29]  					Morgan City Roleplay [LOW ECONOMY] Version - MC:RPv2                                                                    
+[11:06:29]  					 Last Update game version - MC:RPv2                                                                
+[11:06:29] ************************************************************************************************************************
+
+[11:06:29] [LoadAntiCheat] Loading data from database...
+[11:06:29] Morgan City Roleplay [LOW ECONOMY]
+[11:06:29] 84 objects loaded.
+[11:06:29] Number of vehicle models: 20
+[11:06:30] [Script] 262 houses loaded.
+[11:06:30] [Script] 3 garages loaded.
+[11:06:30] [debug] Run time error 4: "Array index out of bounds"
+[11:06:30] [debug]  Attempted to read/write array element at index 8 in array of size 7
+[11:06:30] [debug] AMX backtrace:
+[11:06:30] [debug] #0 00381280 in ReloadBusiness (businessid=16) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:16957
+[11:06:30] [debug] #1 003efd50 in public OnQueryFinished (threadid=14, extraid=0) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:25372
+[11:06:30] [Script] 28 entrances loaded.
+[11:06:30] [Script] 4 factions loaded.
+[11:06:30] [debug] Run time error 4: "Array index out of bounds"
+[11:06:30] [debug]  Attempted to read/write array element at index 7 in array of size 7
+[11:06:30] [debug] AMX backtrace:
+[11:06:30] [debug] #0 003f2288 in public OnQueryFinished (threadid=21, extraid=0) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:25491
+[11:06:30] [Script] 2 lands loaded.
+[11:06:30] [Script] 19 gangs loaded.
+[11:06:30] [Script] 0 points loaded.
+[11:06:30] [Script] 10 Points Loaded.
+[11:06:30] [Graffities] No records found.
+[11:06:30] [BillBoards] No records found.
+[11:06:30] [ANTICHEAT]: Anti-cheat settings loaded successfully (loaded: 53). Time: 1 ??.
+[11:06:51] [connection] 127.0.0.1:55008 requests connection cookie.
+[11:06:52] [connection] incoming connection: 127.0.0.1:55008 id: 0
+[11:06:52] [sv:dbg:network:connect] : connecting player (0) with address (127.0.0.1) ...
+[11:06:52] [sv:dbg:network:connect] : player (0) assigned key (abfde056)
+[11:06:52] [join] Lisher_Frost has joined the server (0:127.0.0.1)
+[11:06:52] > {FFFFFF}Lisher Frost has joined the server [{FFFFFF}IP:{FFFFFF} 127.0.0.1] [City: ] [Country: ]
+[11:06:52] [sv:dbg:network:receive] : player (0) identified (port:49933)
+[11:13:26] SERVER: Lisher Frost has logged in as a {eb4034}{FF50F1}Community Developer{ffffff}{FFFFFF}.
+[11:13:26] AdmCmd: {FF50F1}Community Developer{ffffff} Lisher Frost has logged in.
+[11:13:42] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.279737, vel z: 0.245312
+[11:13:43] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.536425, vel z: 0.240311
+[11:13:43] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.709805, vel z: 0.196457
+[11:13:43] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.950679, vel z: 0.133578
+[11:13:43] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.176405, vel z: 0.071415
+[11:13:43] [Nex-AC debug] Speed: 237, speed x, y: 237, vel z: 0.030913, pos diff z: 0.104919, old speed: 223
+[11:13:43] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.385159, vel z: 0.012973
+[11:13:43] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.545131, vel z: -0.035053
+[11:13:43] [Nex-AC debug] Speed: 290, speed x, y: 290, vel z: -0.055475, pos diff z: -0.127876, old speed: 277
+[11:13:43] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.738892, vel z: -0.087503
+[11:13:44] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.907035, vel z: -0.135727
+[11:13:44] [Nex-AC debug] Speed: 343, speed x, y: 342, vel z: -0.135727, pos diff z: -0.361686, old speed: 334
+[11:13:44] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.097071, vel z: -0.172083
+[11:13:44] [Nex-AC debug] Speed: 396, speed x, y: 394, vel z: -0.197667, pos diff z: -0.377761, old speed: 385
+[11:13:44] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.261498, vel z: -0.212259
+[11:13:44] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.409872, vel z: -0.246657
+[11:13:44] [Nex-AC debug] Speed: 442, speed x, y: 439, vel z: -0.256336, pos diff z: -0.556049, old speed: 434
+[11:13:44] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.456378, vel z: -0.270194
+[11:13:44] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.464672, vel z: -0.296356
+[11:13:45] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.361069, vel z: 0.216548
+[11:13:45] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.246539, vel z: 0.150267
+[11:13:46] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.245551, vel z: 0.087033
+[11:13:46] [Nex-AC debug] Speed: 407, speed x, y: 407, vel z: 0.048557, pos diff z: 0.085033, old speed: 405
+[11:13:46] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.202317, vel z: 0.023605
+[11:13:46] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.261395, vel z: -0.032498
+[11:13:46] [Nex-AC debug] Speed: 412, speed x, y: 412, vel z: -0.066128, pos diff z: -0.148708, old speed: 410
+[11:13:47] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.323591, vel z: -0.085216
+[11:13:47] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.382009, vel z: -0.159691
+[11:13:47] [Nex-AC debug] Speed: 428, speed x, y: 427, vel z: -0.159691, pos diff z: -0.348289, old speed: 422
+[11:13:47] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.471299, vel z: -0.192495
+[11:13:47] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.430904, vel z: -0.231295
+[11:13:47] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.425047, vel z: -0.261337
+[11:13:47] [Nex-AC debug] Speed: 439, speed x, y: 436, vel z: -0.272815, pos diff z: -0.736000, old speed: 437
+[11:13:48] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.448321, vel z: 0.243679
+[11:13:48] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.489257, vel z: 0.243647
+[11:13:48] [Nex-AC debug] Speed: 449, speed x, y: 447, vel z: 0.243437, pos diff z: 0.138317, old speed: 448
+[11:13:48] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.508412, vel z: 0.243632
+[11:13:48] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.530307, vel z: 0.243615
+[11:13:48] [Nex-AC debug] Speed: 457, speed x, y: 455, vel z: 0.244766, pos diff z: 0.546699, old speed: 456
+[11:13:48] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.567988, vel z: 0.244747
+[11:13:48] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.618249, vel z: 0.244715
+[11:13:48] [Nex-AC debug] Speed: 471, speed x, y: 469, vel z: 0.244715, pos diff z: 0.522899, old speed: 468
+[11:13:48] [Nex-AC debug] Dist: 129.411331, dist set: 396.160491, acSet[7]: -1, speed: 471, old pos x, y: 662.372131, -1340.203369
+[11:13:48] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.661712, vel z: 0.231869
+[11:13:48] [Nex-AC debug] Speed: 484, speed x, y: 483, vel z: 0.182592, pos diff z: 0.421531, old speed: 482
+[11:13:48] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.712818, vel z: 0.159147
+[11:13:49] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.622646, vel z: 0.117192
+[11:13:49] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.595556, vel z: 0.053420
+[11:13:49] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.601093, vel z: 0.005568
+[11:13:49] [Nex-AC debug] Speed: 471, speed x, y: 471, vel z: -0.011074, pos diff z: -0.010265, old speed: 466
+[11:13:49] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.674349, vel z: -0.047863
+[11:13:49] [Nex-AC debug] Dist: 106.523269, dist set: 502.338043, acSet[7]: -1, speed: 487, old pos x, y: 779.386352, -1395.475097
+[11:13:49] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.720355, vel z: 0.244649
+[11:13:49] [Nex-AC debug] Speed: 490, speed x, y: 488, vel z: 0.244649, pos diff z: 0.569522, old speed: 487
+[11:13:49] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.772425, vel z: 0.229870
+[11:13:50] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.675750, vel z: 0.164843
+[11:13:50] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.608539, vel z: 0.098510
+[11:13:50] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.577019, vel z: 0.033456
+[11:13:51] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.550290, vel z: 0.001562
+[11:13:52] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.293579, vel z: -0.059552
+[11:13:52] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.153295, vel z: -0.105512
+[11:13:52] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.070998, vel z: -0.137736
+[11:13:52] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.983677, vel z: -0.177004
+[11:13:53] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.921929, vel z: -0.207311
+[11:13:53] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.814685, vel z: -0.242744
+[11:13:54] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.719850, vel z: -0.276083
+[11:13:54] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.626974, vel z: -0.311798
+[11:13:54] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.549719, vel z: -0.343735
+[11:13:55] [Nex-AC debug] Speed: 205, speed x, y: 200, vel z: 0.245192, pos diff z: 0.171962, old speed: 204
+[11:13:56] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.728040, vel z: 0.245005
+[11:13:56] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.716008, vel z: 0.245072
+[11:13:56] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.868095, vel z: 0.244900
+[11:13:56] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.085917, vel z: 0.244736
+[11:13:57] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.171138, vel z: 0.236000
+[11:13:57] [Nex-AC debug] Speed: 215, speed x, y: 212, vel z: 0.215012, pos diff z: 0.490264, old speed: 214
+[11:13:57] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.216868, vel z: 0.173731
+[11:13:57] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.302870, vel z: 0.108852
+[11:13:57] [Nex-AC debug] Speed: 234, speed x, y: 234, vel z: 0.108852, pos diff z: 0.248992, old speed: 229
+[11:13:57] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.318911, vel z: 0.071560
+[11:13:57] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.265676, vel z: -0.101460
+[11:13:57] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.218123, vel z: -0.383541
+[11:13:58] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.980357, vel z: -0.494715
+[11:13:58] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.654015, vel z: 0.245059
+[11:13:58] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.898521, vel z: 0.245342
+[11:13:59] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.191604, vel z: 0.244655
+[11:13:59] [Nex-AC debug] Speed: 253, speed x, y: 249, vel z: 0.244005, pos diff z: 0.647487, old speed: 234
+[11:13:59] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.475826, vel z: 0.243933
+[11:13:59] [Nex-AC debug] Speed: 325, speed x, y: 322, vel z: 0.244188, pos diff z: 0.549140, old speed: 315
+[11:13:59] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.831753, vel z: 0.244690
+[11:13:59] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.918751, vel z: 0.232410
+[11:13:59] [Nex-AC debug] Speed: 352, speed x, y: 350, vel z: 0.209901, pos diff z: 0.469345, old speed: 347
+[11:13:59] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.012152, vel z: 0.165319
+[11:13:59] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.033988, vel z: 0.102651
+[11:13:59] [Nex-AC debug] Speed: 367, speed x, y: 367, vel z: 0.082254, pos diff z: 0.202110, old speed: 365
+[11:14:00] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.083324, vel z: 0.243419
+[11:14:00] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.137195, vel z: 0.243923
+[11:14:00] [Nex-AC debug] Speed: 386, speed x, y: 383, vel z: 0.243923, pos diff z: 0.536647, old speed: 381
+[11:14:00] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.233852, vel z: 0.243847
+[11:14:00] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.217744, vel z: 0.244416
+[11:14:00] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 2.044000, vel z: 0.243996
+[11:14:00] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.964222, vel z: 0.244058
+[11:14:00] [Nex-AC debug] Dist: 93.380531, dist set: 931.939025, acSet[7]: -1, speed: 337, old pos x, y: 1128.540405, -1688.497436
+[11:14:01] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.675100, vel z: 0.244283
+[11:14:01] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.524525, vel z: 0.237328
+[11:14:01] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.426542, vel z: 0.244475
+[11:14:01] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.360779, vel z: 0.244526
+[11:14:01] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.247131, vel z: 0.244613
+[11:14:02] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.092106, vel z: 0.244731
+[11:14:02] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 1.003984, vel z: 0.244798
+[11:14:02] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.982018, vel z: 0.244815
+[11:14:02] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.957191, vel z: 0.235014
+[11:14:02] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.824468, vel z: 0.194682
+[11:14:03] [Nex-AC debug] Speed: 316, speed x, y: 30, vel z: -1.752400, pos diff z: -3.798988, old speed: 305
+[11:14:29] [sv:dbg:network:connect] : disconnecting player (0) ...
+[11:14:29] > {FFFFFF}Lisher Frost Left The Server [{00ffff}IP:{FFFFFF} 255.255.255.255]
+[11:14:29] [part] Lisher_Frost has left the server (0:1)
+[11:14:31]  -------------------------------------------
+[11:14:31]            SampVoice unloading...           
+[11:14:31]  -------------------------------------------
+[11:14:31] [dbg:raknet:free] : module releasing...
+[11:14:31] [dbg:raknet:free] : module released
+[11:14:31] [sv:dbg:network:free] : module releasing...
+[11:14:31] [sv:dbg:network:free] : module released
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[11:16:57] weburl = "www.sa-mp.com"  (string)
+[11:16:57] 
+[11:16:57] Server Plugins
+[11:16:57] --------------
+[11:16:57]  Loading plugin: crashdetect
+[11:16:57]   CrashDetect plugin 4.19.4
+[11:16:57]   Loaded.
+[11:16:57]  Loading plugin: pawncmd
+[11:16:57] [Pawn.CMD] plugin v3.3.6 loading...
+[11:16:57] [Pawn.CMD] 
+
+    | Pawn.CMD 3.3.6 | 2016 - 2021
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Sep 26 2021 at 11:55:10
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[11:16:57]   Loaded.
+[11:16:57]  Loading plugin: sampvoice
+[11:16:57] [sv:dbg:network:init] : module initializing...
+[11:16:57] [dbg:raknet:init] : module initializing...
+[11:16:57] [dbg:raknet:init] : module initialized
+[11:16:57] [sv:dbg:network:init] : module initialized
+[11:16:57] [sv:dbg:main:Load] : creating 8 work threads...
+[11:16:57]  -------------------------------------------    
+[11:16:57]    ___                __   __    _              
+[11:16:57]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[11:16:57]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[11:16:57]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[11:16:57]                   |_|                           
+[11:16:57]  -------------------------------------------    
+[11:16:57]            SampVoice by MOR loaded              
+[11:16:58]  -------------------------------------------    
+[11:16:58]   Loaded.
+[11:16:58]  Loading plugin: sscanf
+[11:16:58] 
+
+[11:16:58]  ===============================
+
+[11:16:58]       sscanf plugin loaded.     
+
+[11:16:58]          Version:  2.8.3        
+
+[11:16:58]   (c) 2018 Alex "Y_Less" Cole  
+
+[11:16:58]  ===============================
+
+[11:16:58]   Loaded.
+[11:16:58]  Loading plugin: discord-connector
+[11:16:59]  >> plugin.dc-connector: v0.3.5 successfully loaded.
+[11:16:59]   Loaded.
+[11:16:59]  Loading plugin: mysql
+[11:16:59]  >> plugin.mysql: R39-6 successfully loaded.
+[11:16:59]   Loaded.
+[11:16:59]  Loading plugin: streamer
+[11:16:59] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[11:16:59]   Loaded.
+[11:17:00]  Loading plugin: Whirlpool
+[11:17:00]  
+[11:17:00]  ==================
+[11:17:00]  
+[11:17:00]   Whirlpool loaded
+[11:17:00]  
+[11:17:00]  ==================
+[11:17:00]  
+[11:17:00]   Loaded.
+[11:17:00]  Loading plugin: SKY
+[11:17:00] 
+[11:17:00]  ===============================
+[11:17:00]    
+[11:17:00]    < SKY - 2.3.0 >
+[11:17:00]    
+[11:17:00]    (c) 2008 - Present | YSF Maintainers
+[11:17:00]    (c) 2015 | Oscar "Slice" Broman
+[11:17:00]    
+[11:17:00]    Server Version: 0.3.7 R2
+[11:17:00]    Operating System: Windows
+[11:17:00]    Built on: Sep 27 2021 at 23:19:52
+[11:17:00]    
+[11:17:00]  ===============================
+[11:17:00] 
+[11:17:00]   Loaded.
+[11:17:00]  Loading plugin: nativechecker
+[11:17:00]   Loaded.
+[11:17:00]  Loaded 10 plugins.
+
+[11:17:00] 
+[11:17:00] Ban list
+[11:17:00] --------
+[11:17:00]  Loaded: samp.ban
+[11:17:00] 
+[11:17:00] 
+[11:17:00] Filterscripts
+[11:17:00] ---------------
+[11:17:00]   Loading filterscript 'yom_buttons.amx'...
+[11:17:00] [sv:dbg:main:AmxLoad] : net game pointer (value:024A9F40) received
+[11:17:00] [sv:dbg:network:bind] : voice server running on port 49183
+[11:17:00] AMX (73752792) loaded
+[11:17:00]   Loaded 1 filterscripts.
+
+[11:17:00] AMX (73661000) loaded
+[11:17:00]  
+[11:17:00] --------------------------------------
+[11:17:00]  Anticheat Nex-AC loaded!
+[11:17:00]  Anticheat version: 1.9.52
+[11:17:00]  Author: Nexius
+[11:17:00] --------------------------------------
+
+[11:17:00]  
+[11:17:00]  
+[11:17:00]  
+[11:17:00]  ======================================= 
+[11:17:00]  |                                     | 
+[11:17:00]  |        YSI version 3.09.0684        | 
+[11:17:00]  |        By Alex "Y_Less" Cole        | 
+[11:17:00]  |                                     | 
+[11:17:00]  ======================================= 
+[11:17:00]  
+[11:17:00] Couldn't connect to radio station database... server will continue to operate normally.
+[11:17:00] 
+************************************************************************************************************************
+[11:17:00]  					Morgan City Roleplay [LOW ECONOMY] Version - MC:RPv2                                                                    
+[11:17:00]  					 Last Update game version - MC:RPv2                                                                
+[11:17:00] ************************************************************************************************************************
+
+[11:17:00] [LoadAntiCheat] Loading data from database...
+[11:17:00] Morgan City Roleplay [LOW ECONOMY]
+[11:17:00] 84 objects loaded.
+[11:17:00] Number of vehicle models: 20
+[11:17:00] [Script] 262 houses loaded.
+[11:17:00] [Script] 3 garages loaded.
+[11:17:00] [debug] Run time error 4: "Array index out of bounds"
+[11:17:00] [debug]  Attempted to read/write array element at index 8 in array of size 7
+[11:17:00] [debug] AMX backtrace:
+[11:17:00] [debug] #0 00381280 in ReloadBusiness (businessid=16) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:16958
+[11:17:00] [debug] #1 003efd50 in public OnQueryFinished (threadid=14, extraid=0) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:25373
+[11:17:00] [Script] 28 entrances loaded.
+[11:17:00] [Script] 4 factions loaded.
+[11:17:00] [debug] Run time error 4: "Array index out of bounds"
+[11:17:00] [debug]  Attempted to read/write array element at index 7 in array of size 7
+[11:17:00] [debug] AMX backtrace:
+[11:17:00] [debug] #0 003f2288 in public OnQueryFinished (threadid=21, extraid=0) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:25492
+[11:17:00] [Script] 2 lands loaded.
+[11:17:01] [Script] 19 gangs loaded.
+[11:17:01] [Script] 0 points loaded.
+[11:17:01] [Script] 10 Points Loaded.
+[11:17:01] [Graffities] No records found.
+[11:17:01] [BillBoards] No records found.
+[11:17:01] [ANTICHEAT]: Anti-cheat settings loaded successfully (loaded: 53). Time: 0 ??.
+[11:17:24] [connection] 127.0.0.1:62409 requests connection cookie.
+[11:17:25] [connection] incoming connection: 127.0.0.1:62409 id: 0
+[11:17:25] [sv:dbg:network:connect] : connecting player (0) with address (127.0.0.1) ...
+[11:17:25] [sv:dbg:network:connect] : player (0) assigned key (42134adf)
+[11:17:25] [join] Lisher_Frost has joined the server (0:127.0.0.1)
+[11:17:25] > {FFFFFF}Lisher Frost has joined the server [{FFFFFF}IP:{FFFFFF} 127.0.0.1] [City: ] [Country: ]
+[11:17:25] [sv:dbg:network:receive] : player (0) identified (port:60675)
+[11:17:49] SERVER: Lisher Frost has logged in as a {eb4034}{FF50F1}Community Developer{ffffff}{FFFFFF}.
+[11:17:49] AdmCmd: {FF50F1}Community Developer{ffffff} Lisher Frost has logged in.
+[11:30:52] [sv:dbg:network:connect] : disconnecting player (0) ...
+[11:30:52] > {FFFFFF}Lisher Frost Left The Server [{00ffff}IP:{FFFFFF} 255.255.255.255]
+[11:30:52] [part] Lisher_Frost has left the server (0:1)
+[11:30:55]  -------------------------------------------
+[11:30:55]            SampVoice unloading...           
+[11:30:55]  -------------------------------------------
+[11:30:55] [dbg:raknet:free] : module releasing...
+[11:30:55] [dbg:raknet:free] : module released
+[11:30:55] [sv:dbg:network:free] : module releasing...
+[11:30:55] [sv:dbg:network:free] : module released
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[11:31:12] weburl = "www.sa-mp.com"  (string)
+[11:31:12] 
+[11:31:12] Server Plugins
+[11:31:12] --------------
+[11:31:12]  Loading plugin: crashdetect
+[11:31:12]   CrashDetect plugin 4.19.4
+[11:31:12]   Loaded.
+[11:31:12]  Loading plugin: pawncmd
+[11:31:12] [Pawn.CMD] plugin v3.3.6 loading...
+[11:31:12] [Pawn.CMD] 
+
+    | Pawn.CMD 3.3.6 | 2016 - 2021
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Sep 26 2021 at 11:55:10
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[11:31:12]   Loaded.
+[11:31:12]  Loading plugin: sampvoice
+[11:31:12] [sv:dbg:network:init] : module initializing...
+[11:31:12] [dbg:raknet:init] : module initializing...
+[11:31:12] [dbg:raknet:init] : module initialized
+[11:31:12] [sv:dbg:network:init] : module initialized
+[11:31:12] [sv:dbg:main:Load] : creating 8 work threads...
+[11:31:12]  -------------------------------------------    
+[11:31:12]    ___                __   __    _              
+[11:31:12]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[11:31:12]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[11:31:12]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[11:31:12]                   |_|                           
+[11:31:12]  -------------------------------------------    
+[11:31:12]            SampVoice by MOR loaded              
+[11:31:12]  -------------------------------------------    
+[11:31:12]   Loaded.
+[11:31:12]  Loading plugin: sscanf
+[11:31:12] 
+
+[11:31:12]  ===============================
+
+[11:31:12]       sscanf plugin loaded.     
+
+[11:31:12]          Version:  2.8.3        
+
+[11:31:12]   (c) 2018 Alex "Y_Less" Cole  
+
+[11:31:12]  ===============================
+
+[11:31:12]   Loaded.
+[11:31:12]  Loading plugin: discord-connector
+[11:31:15]  >> plugin.dc-connector: v0.3.5 successfully loaded.
+[11:31:15]   Loaded.
+[11:31:15]  Loading plugin: mysql
+[11:31:15]  >> plugin.mysql: R39-6 successfully loaded.
+[11:31:15]   Loaded.
+[11:31:15]  Loading plugin: streamer
+[11:31:15] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[11:31:15]   Loaded.
+[11:31:15]  Loading plugin: Whirlpool
+[11:31:15]  
+[11:31:15]  ==================
+[11:31:15]  
+[11:31:15]   Whirlpool loaded
+[11:31:15]  
+[11:31:15]  ==================
+[11:31:15]  
+[11:31:15]   Loaded.
+[11:31:15]  Loading plugin: SKY
+[11:31:15] 
+[11:31:15]  ===============================
+[11:31:15]    
+[11:31:15]    < SKY - 2.3.0 >
+[11:31:15]    
+[11:31:15]    (c) 2008 - Present | YSF Maintainers
+[11:31:15]    (c) 2015 | Oscar "Slice" Broman
+[11:31:15]    
+[11:31:15]    Server Version: 0.3.7 R2
+[11:31:15]    Operating System: Windows
+[11:31:15]    Built on: Sep 27 2021 at 23:19:52
+[11:31:15]    
+[11:31:15]  ===============================
+[11:31:15] 
+[11:31:15]   Loaded.
+[11:31:15]  Loading plugin: nativechecker
+[11:31:15]   Loaded.
+[11:31:15]  Loaded 10 plugins.
+
+[11:31:15] 
+[11:31:15] Ban list
+[11:31:15] --------
+[11:31:15]  Loaded: samp.ban
+[11:31:15] 
+[11:31:15] 
+[11:31:15] Filterscripts
+[11:31:15] ---------------
+[11:31:15]   Loading filterscript 'yom_buttons.amx'...
+[11:31:15] [sv:dbg:main:AmxLoad] : net game pointer (value:02369F40) received
+[11:31:15] [sv:dbg:network:bind] : voice server running on port 58014
+[11:31:15] AMX (73949400) loaded
+[11:31:15]   Loaded 1 filterscripts.
+
+[11:31:15] AMX (73857608) loaded
+[11:31:15]  
+[11:31:15] --------------------------------------
+[11:31:15]  Anticheat Nex-AC loaded!
+[11:31:15]  Anticheat version: 1.9.52
+[11:31:15]  Author: Nexius
+[11:31:15] --------------------------------------
+
+[11:31:15]  
+[11:31:15]  
+[11:31:15]  
+[11:31:15]  ======================================= 
+[11:31:15]  |                                     | 
+[11:31:15]  |        YSI version 3.09.0684        | 
+[11:31:15]  |        By Alex "Y_Less" Cole        | 
+[11:31:15]  |                                     | 
+[11:31:15]  ======================================= 
+[11:31:15]  
+[11:31:15] Couldn't connect to radio station database... server will continue to operate normally.
+[11:31:15] 
+************************************************************************************************************************
+[11:31:15]  					Morgan City Roleplay [LOW ECONOMY] Version - MC:RPv2                                                                    
+[11:31:15]  					 Last Update game version - MC:RPv2                                                                
+[11:31:15] ************************************************************************************************************************
+
+[11:31:15] [LoadAntiCheat] Loading data from database...
+[11:31:15] Morgan City Roleplay [LOW ECONOMY]
+[11:31:15] 84 objects loaded.
+[11:31:15] Number of vehicle models: 20
+[11:31:16] [Script] 262 houses loaded.
+[11:31:16] [Script] 3 garages loaded.
+[11:31:16] [debug] Run time error 4: "Array index out of bounds"
+[11:31:16] [debug]  Attempted to read/write array element at index 8 in array of size 7
+[11:31:16] [debug] AMX backtrace:
+[11:31:16] [debug] #0 00381280 in ReloadBusiness (businessid=16) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:16958
+[11:31:16] [debug] #1 003efd50 in public OnQueryFinished (threadid=14, extraid=0) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:25373
+[11:31:16] [Script] 28 entrances loaded.
+[11:31:16] [Script] 4 factions loaded.
+[11:31:16] [debug] Run time error 4: "Array index out of bounds"
+[11:31:16] [debug]  Attempted to read/write array element at index 7 in array of size 7
+[11:31:16] [debug] AMX backtrace:
+[11:31:16] [debug] #0 003f2288 in public OnQueryFinished (threadid=21, extraid=0) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:25492
+[11:31:16] [Script] 2 lands loaded.
+[11:31:17] [Script] 19 gangs loaded.
+[11:31:17] [Script] 0 points loaded.
+[11:31:17] [Script] 10 Points Loaded.
+[11:31:17] [Graffities] No records found.
+[11:31:17] [BillBoards] No records found.
+[11:31:17] [ANTICHEAT]: Anti-cheat settings loaded successfully (loaded: 53). Time: 1 ??.
+[11:31:43] [connection] 127.0.0.1:64378 requests connection cookie.
+[11:31:44] [connection] incoming connection: 127.0.0.1:64378 id: 0
+[11:31:44] [sv:dbg:network:connect] : connecting player (0) with address (127.0.0.1) ...
+[11:31:44] [sv:dbg:network:connect] : player (0) assigned key (2739baf9)
+[11:31:44] [join] Lisher_Frost has joined the server (0:127.0.0.1)
+[11:31:44] > {FFFFFF}Lisher Frost has joined the server [{FFFFFF}IP:{FFFFFF} 127.0.0.1] [City: ] [Country: ]
+[11:31:45] [sv:dbg:network:receive] : player (0) identified (port:50416)
+[11:31:50] SERVER: Lisher Frost has logged in as a {eb4034}{FF50F1}Community Developer{ffffff}{FFFFFF}.
+[11:31:50] AdmCmd: {FF50F1}Community Developer{ffffff} Lisher Frost has logged in.
+[11:32:41] RCON (In-Game): Player #0 (Lisher_Frost) has logged in.
+[11:51:24] [sv:dbg:network:connect] : disconnecting player (0) ...
+[11:51:24] > {FFFFFF}Lisher Frost Left The Server [{00ffff}IP:{FFFFFF} 255.255.255.255]
+[11:51:24] [part] Lisher_Frost has left the server (0:1)
+[11:51:25]  -------------------------------------------
+[11:51:25]            SampVoice unloading...           
+[11:51:25]  -------------------------------------------
+[11:51:25] [dbg:raknet:free] : module releasing...
+[11:51:25] [dbg:raknet:free] : module released
+[11:51:25] [sv:dbg:network:free] : module releasing...
+[11:51:25] [sv:dbg:network:free] : module released
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[11:51:27] weburl = "www.sa-mp.com"  (string)
+[11:51:27] 
+[11:51:27] Server Plugins
+[11:51:27] --------------
+[11:51:27]  Loading plugin: crashdetect
+[11:51:27]   CrashDetect plugin 4.19.4
+[11:51:27]   Loaded.
+[11:51:27]  Loading plugin: pawncmd
+[11:51:27] [Pawn.CMD] plugin v3.3.6 loading...
+[11:51:27] [Pawn.CMD] 
+
+    | Pawn.CMD 3.3.6 | 2016 - 2021
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Sep 26 2021 at 11:55:10
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[11:51:27]   Loaded.
+[11:51:27]  Loading plugin: sampvoice
+[11:51:27] [sv:dbg:network:init] : module initializing...
+[11:51:27] [dbg:raknet:init] : module initializing...
+[11:51:27] [dbg:raknet:init] : module initialized
+[11:51:27] [sv:dbg:network:init] : module initialized
+[11:51:27] [sv:dbg:main:Load] : creating 8 work threads...
+[11:51:27]  -------------------------------------------    
+[11:51:27]    ___                __   __    _              
+[11:51:27]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[11:51:27]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[11:51:27]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[11:51:27]                   |_|                           
+[11:51:27]  -------------------------------------------    
+[11:51:27]            SampVoice by MOR loaded              
+[11:51:27]  -------------------------------------------    
+[11:51:27]   Loaded.
+[11:51:27]  Loading plugin: sscanf
+[11:51:27] 
+
+[11:51:27]  ===============================
+
+[11:51:27]       sscanf plugin loaded.     
+
+[11:51:27]          Version:  2.8.3        
+
+[11:51:27]   (c) 2018 Alex "Y_Less" Cole  
+
+[11:51:27]  ===============================
+
+[11:51:27]   Loaded.
+[11:51:27]  Loading plugin: discord-connector
+[11:51:29]  >> plugin.dc-connector: v0.3.5 successfully loaded.
+[11:51:29]   Loaded.
+[11:51:29]  Loading plugin: mysql
+[11:51:29]  >> plugin.mysql: R39-6 successfully loaded.
+[11:51:29]   Loaded.
+[11:51:29]  Loading plugin: streamer
+[11:51:29] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[11:51:29]   Loaded.
+[11:51:29]  Loading plugin: Whirlpool
+[11:51:29]  
+[11:51:29]  ==================
+[11:51:29]  
+[11:51:29]   Whirlpool loaded
+[11:51:29]  
+[11:51:29]  ==================
+[11:51:29]  
+[11:51:29]   Loaded.
+[11:51:29]  Loading plugin: SKY
+[11:51:29] 
+[11:51:29]  ===============================
+[11:51:29]    
+[11:51:29]    < SKY - 2.3.0 >
+[11:51:29]    
+[11:51:29]    (c) 2008 - Present | YSF Maintainers
+[11:51:29]    (c) 2015 | Oscar "Slice" Broman
+[11:51:29]    
+[11:51:29]    Server Version: 0.3.7 R2
+[11:51:29]    Operating System: Windows
+[11:51:29]    Built on: Sep 27 2021 at 23:19:52
+[11:51:29]    
+[11:51:29]  ===============================
+[11:51:29] 
+[11:51:29]   Loaded.
+[11:51:29]  Loading plugin: nativechecker
+[11:51:29]   Loaded.
+[11:51:29]  Loaded 10 plugins.
+
+[11:51:30] 
+[11:51:30] Ban list
+[11:51:30] --------
+[11:51:30]  Loaded: samp.ban
+[11:51:30] 
+[11:51:30] 
+[11:51:30] Filterscripts
+[11:51:30] ---------------
+[11:51:30]   Loading filterscript 'yom_buttons.amx'...
+[11:51:30] [sv:dbg:main:AmxLoad] : net game pointer (value:025C9F40) received
+[11:51:30] [sv:dbg:network:bind] : voice server running on port 53062
+[11:51:30] AMX (73162968) loaded
+[11:51:30]   Loaded 1 filterscripts.
+
+[11:51:30] AMX (73071176) loaded
+[11:51:30]  
+[11:51:30] --------------------------------------
+[11:51:30]  Anticheat Nex-AC loaded!
+[11:51:30]  Anticheat version: 1.9.52
+[11:51:30]  Author: Nexius
+[11:51:30] --------------------------------------
+
+[11:51:30]  
+[11:51:30]  
+[11:51:30]  
+[11:51:30]  ======================================= 
+[11:51:30]  |                                     | 
+[11:51:30]  |        YSI version 3.09.0684        | 
+[11:51:30]  |        By Alex "Y_Less" Cole        | 
+[11:51:30]  |                                     | 
+[11:51:30]  ======================================= 
+[11:51:30]  
+[11:51:30] Couldn't connect to radio station database... server will continue to operate normally.
+[11:51:30] 
+************************************************************************************************************************
+[11:51:30]  					Morgan City Roleplay [LOW ECONOMY] Version - MC:RPv2                                                                    
+[11:51:30]  					 Last Update game version - MC:RPv2                                                                
+[11:51:30] ************************************************************************************************************************
+
+[11:51:30] [LoadAntiCheat] Loading data from database...
+[11:51:30] Morgan City Roleplay [LOW ECONOMY]
+[11:51:30] 84 objects loaded.
+[11:51:30] 
+ ���������������������������������������������������������Ŀ
+ �                   Buttons Informations                  �
+ ���������������������������������������������������������Ĵ
+ �ButtonID�ObjectID�    X    �    Y    �    Z    �    A    �
+ ���������������������������������������������������������Ĵ
+[11:51:30]  �����������������������������������������������������������
+
+[11:51:30] Number of vehicle models: 20
+[11:51:30] [Script] 262 houses loaded.
+[11:51:30] [Script] 3 garages loaded.
+[11:51:30] [debug] Run time error 4: "Array index out of bounds"
+[11:51:30] [debug]  Attempted to read/write array element at index 8 in array of size 7
+[11:51:30] [debug] AMX backtrace:
+[11:51:30] [debug] #0 00381280 in ReloadBusiness (businessid=16) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:16956
+[11:51:30] [debug] #1 003efd50 in public OnQueryFinished (threadid=14, extraid=0) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:25371
+[11:51:30] [Script] 28 entrances loaded.
+[11:51:30] [Script] 4 factions loaded.
+[11:51:30] [debug] Run time error 4: "Array index out of bounds"
+[11:51:30] [debug]  Attempted to read/write array element at index 7 in array of size 7
+[11:51:30] [debug] AMX backtrace:
+[11:51:30] [debug] #0 003f2288 in public OnQueryFinished (threadid=21, extraid=0) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:25490
+[11:51:30] [Script] 2 lands loaded.
+[11:51:31] [Script] 19 gangs loaded.
+[11:51:31] [Script] 0 points loaded.
+[11:51:31] [Script] 10 Points Loaded.
+[11:51:31] [Graffities] No records found.
+[11:51:31] [BillBoards] No records found.
+[11:51:31] [ANTICHEAT]: Anti-cheat settings loaded successfully (loaded: 53). Time: 0 ??.
+[11:51:52] [connection] 127.0.0.1:54974 requests connection cookie.
+[11:51:53] [connection] incoming connection: 127.0.0.1:54974 id: 0
+[11:51:53] [sv:dbg:network:connect] : connecting player (0) with address (127.0.0.1) ...
+[11:51:53] [sv:dbg:network:connect] : player (0) assigned key (4f5eccd2)
+[11:51:53] [join] Lisher_Frost has joined the server (0:127.0.0.1)
+[11:51:53] > {FFFFFF}Lisher Frost has joined the server [{FFFFFF}IP:{FFFFFF} 127.0.0.1] [City: ] [Country: ]
+[11:51:54] [sv:dbg:network:receive] : player (0) identified (port:58957)
+[11:52:49] SERVER: Lisher Frost has logged in as a {eb4034}{FF50F1}Community Developer{ffffff}{FFFFFF}.
+[11:52:49] AdmCmd: {FF50F1}Community Developer{ffffff} Lisher Frost has logged in.
+[11:54:08] [chat] [Lisher_Frost]: a
+[11:54:26] RCON (In-Game): Player #0 (Lisher_Frost) has logged in.
+[12:17:51] [sv:dbg:network:connect] : disconnecting player (0) ...
+[12:17:51] > {FFFFFF}Lisher Frost Left The Server [{00ffff}IP:{FFFFFF} 255.255.255.255]
+[12:17:51] [part] Lisher_Frost has left the server (0:1)
+[12:17:53]  -------------------------------------------
+[12:17:53]            SampVoice unloading...           
+[12:17:53]  -------------------------------------------
+[12:17:53] [dbg:raknet:free] : module releasing...
+[12:17:53] [dbg:raknet:free] : module released
+[12:17:53] [sv:dbg:network:free] : module releasing...
+[12:17:53] [sv:dbg:network:free] : module released
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[12:32:26] filterscripts = ""  (string)
+[12:32:26] weburl = "www.sa-mp.com"  (string)
+[12:32:26] 
+[12:32:26] Server Plugins
+[12:32:26] --------------
+[12:32:26]  Loading plugin: crashdetect
+[12:32:26]   CrashDetect plugin 4.19.4
+[12:32:26]   Loaded.
+[12:32:26]  Loading plugin: pawncmd
+[12:32:26] [Pawn.CMD] plugin v3.3.6 loading...
+[12:32:26] [Pawn.CMD] 
+
+    | Pawn.CMD 3.3.6 | 2016 - 2021
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Sep 26 2021 at 11:55:10
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[12:32:26]   Loaded.
+[12:32:26]  Loading plugin: sampvoice
+[12:32:26] [sv:dbg:network:init] : module initializing...
+[12:32:26] [dbg:raknet:init] : module initializing...
+[12:32:26] [dbg:raknet:init] : module initialized
+[12:32:26] [sv:dbg:network:init] : module initialized
+[12:32:26] [sv:dbg:main:Load] : creating 8 work threads...
+[12:32:26]  -------------------------------------------    
+[12:32:26]    ___                __   __    _              
+[12:32:26]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[12:32:26]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[12:32:26]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[12:32:26]                   |_|                           
+[12:32:26]  -------------------------------------------    
+[12:32:26]            SampVoice by MOR loaded              
+[12:32:26]  -------------------------------------------    
+[12:32:26]   Loaded.
+[12:32:26]  Loading plugin: sscanf
+[12:32:26] 
+
+[12:32:26]  ===============================
+
+[12:32:26]       sscanf plugin loaded.     
+
+[12:32:26]          Version:  2.8.3        
+
+[12:32:26]   (c) 2018 Alex "Y_Less" Cole  
+
+[12:32:26]  ===============================
+
+[12:32:26]   Loaded.
+[12:32:26]  Loading plugin: discord-connector
+[12:32:28]  >> plugin.dc-connector: v0.3.5 successfully loaded.
+[12:32:28]   Loaded.
+[12:32:28]  Loading plugin: mysql
+[12:32:28]  >> plugin.mysql: R39-6 successfully loaded.
+[12:32:28]   Loaded.
+[12:32:28]  Loading plugin: streamer
+[12:32:28] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[12:32:28]   Loaded.
+[12:32:28]  Loading plugin: Whirlpool
+[12:32:28]  
+[12:32:28]  ==================
+[12:32:28]  
+[12:32:28]   Whirlpool loaded
+[12:32:28]  
+[12:32:28]  ==================
+[12:32:28]  
+[12:32:28]   Loaded.
+[12:32:28]  Loading plugin: SKY
+[12:32:28] 
+[12:32:28]  ===============================
+[12:32:28]    
+[12:32:28]    < SKY - 2.3.0 >
+[12:32:28]    
+[12:32:28]    (c) 2008 - Present | YSF Maintainers
+[12:32:28]    (c) 2015 | Oscar "Slice" Broman
+[12:32:28]    
+[12:32:28]    Server Version: 0.3.7 R2
+[12:32:28]    Operating System: Windows
+[12:32:28]    Built on: Sep 27 2021 at 23:19:52
+[12:32:28]    
+[12:32:28]  ===============================
+[12:32:28] 
+[12:32:28]   Loaded.
+[12:32:28]  Loading plugin: nativechecker
+[12:32:28]   Loaded.
+[12:32:28]  Loaded 10 plugins.
+
+[12:32:28] 
+[12:32:28] Ban list
+[12:32:28] --------
+[12:32:28]  Loaded: samp.ban
+[12:32:28] 
+[12:32:28] 
+[12:32:28] Filterscripts
+[12:32:28] ---------------
+[12:32:28]   Loaded 0 filterscripts.
+
+[12:32:28] [sv:dbg:main:AmxLoad] : net game pointer (value:02329F40) received
+[12:32:28] [sv:dbg:network:bind] : voice server running on port 52700
+[12:32:28] AMX (68680200) loaded
+[12:32:28]  
+[12:32:28] --------------------------------------
+[12:32:28]  Anticheat Nex-AC loaded!
+[12:32:28]  Anticheat version: 1.9.52
+[12:32:28]  Author: Nexius
+[12:32:28] --------------------------------------
+
+[12:32:28]  
+[12:32:28]  
+[12:32:28]  
+[12:32:28]  ======================================= 
+[12:32:28]  |                                     | 
+[12:32:28]  |        YSI version 3.09.0684        | 
+[12:32:28]  |        By Alex "Y_Less" Cole        | 
+[12:32:28]  |                                     | 
+[12:32:28]  ======================================= 
+[12:32:28]  
+[12:32:28] Couldn't connect to radio station database... server will continue to operate normally.
+[12:32:28] 
+************************************************************************************************************************
+[12:32:28]  					Morgan City Roleplay [LOW ECONOMY] Version - MC:RPv2                                                                    
+[12:32:28]  					 Last Update game version - MC:RPv2                                                                
+[12:32:28] ************************************************************************************************************************
+
+[12:32:28] [LoadAntiCheat] Loading data from database...
+[12:32:28] Morgan City Roleplay [LOW ECONOMY]
+[12:32:28] 84 objects loaded.
+[12:32:28] Number of vehicle models: 20
+[12:32:29] [Script] 262 houses loaded.
+[12:32:29] [Script] 3 garages loaded.
+[12:32:29] [debug] Run time error 4: "Array index out of bounds"
+[12:32:29] [debug]  Attempted to read/write array element at index 8 in array of size 7
+[12:32:29] [debug] AMX backtrace:
+[12:32:29] [debug] #0 003812f0 in ReloadBusiness (businessid=16) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:16959
+[12:32:29] [debug] #1 003efdc0 in public OnQueryFinished (threadid=14, extraid=0) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:25374
+[12:32:29] [Script] 28 entrances loaded.
+[12:32:29] [Script] 4 factions loaded.
+[12:32:29] [debug] Run time error 4: "Array index out of bounds"
+[12:32:29] [debug]  Attempted to read/write array element at index 7 in array of size 7
+[12:32:29] [debug] AMX backtrace:
+[12:32:29] [debug] #0 003f22f8 in public OnQueryFinished (threadid=21, extraid=0) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:25493
+[12:32:29] [Script] 2 lands loaded.
+[12:32:29] [Script] 19 gangs loaded.
+[12:32:29] [Script] 0 points loaded.
+[12:32:29] [Script] 10 Points Loaded.
+[12:32:29] [Graffities] No records found.
+[12:32:29] [BillBoards] No records found.
+[12:32:29] [ANTICHEAT]: Anti-cheat settings loaded successfully (loaded: 53). Time: 0 ??.
+[12:32:51] [connection] 127.0.0.1:51424 requests connection cookie.
+[12:32:52] [connection] incoming connection: 127.0.0.1:51424 id: 0
+[12:32:53] [sv:dbg:network:connect] : connecting player (0) with address (127.0.0.1) ...
+[12:32:53] [sv:dbg:network:connect] : player (0) assigned key (6f19425f)
+[12:32:53] [join] Lisher_Frost has joined the server (0:127.0.0.1)
+[12:32:53] > {FFFFFF}Lisher Frost has joined the server [{FFFFFF}IP:{FFFFFF} 127.0.0.1] [City: ] [Country: ]
+[12:32:53] [sv:dbg:network:receive] : player (0) identified (port:56068)
+[12:33:21] SERVER: Lisher Frost has logged in as a {eb4034}{FF50F1}Community Developer{ffffff}{FFFFFF}.
+[12:33:21] AdmCmd: {FF50F1}Community Developer{ffffff} Lisher Frost has logged in.
+[12:33:42] [sv:dbg:network:connect] : disconnecting player (0) ...
+[12:33:42] > {FFFFFF}Lisher Frost Left The Server [{00ffff}IP:{FFFFFF} 255.255.255.255]
+[12:33:42] [part] Lisher_Frost has left the server (0:1)
+[12:33:46]  -------------------------------------------
+[12:33:46]            SampVoice unloading...           
+[12:33:46]  -------------------------------------------
+[12:33:46] [dbg:raknet:free] : module releasing...
+[12:33:46] [dbg:raknet:free] : module released
+[12:33:46] [sv:dbg:network:free] : module releasing...
+[12:33:46] [sv:dbg:network:free] : module released
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[12:34:15] filterscripts = ""  (string)
+[12:34:15] weburl = "www.sa-mp.com"  (string)
+[12:34:15] 
+[12:34:15] Server Plugins
+[12:34:15] --------------
+[12:34:15]  Loading plugin: crashdetect
+[12:34:15]   CrashDetect plugin 4.19.4
+[12:34:15]   Loaded.
+[12:34:15]  Loading plugin: pawncmd
+[12:34:15] [Pawn.CMD] plugin v3.3.6 loading...
+[12:34:15] [Pawn.CMD] 
+
+    | Pawn.CMD 3.3.6 | 2016 - 2021
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Sep 26 2021 at 11:55:10
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[12:34:15]   Loaded.
+[12:34:15]  Loading plugin: sampvoice
+[12:34:15] [sv:dbg:network:init] : module initializing...
+[12:34:15] [dbg:raknet:init] : module initializing...
+[12:34:15] [dbg:raknet:init] : module initialized
+[12:34:15] [sv:dbg:network:init] : module initialized
+[12:34:15] [sv:dbg:main:Load] : creating 8 work threads...
+[12:34:15]  -------------------------------------------    
+[12:34:15]    ___                __   __    _              
+[12:34:15]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[12:34:15]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[12:34:15]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[12:34:15]                   |_|                           
+[12:34:15]  -------------------------------------------    
+[12:34:15]            SampVoice by MOR loaded              
+[12:34:15]  -------------------------------------------    
+[12:34:15]   Loaded.
+[12:34:15]  Loading plugin: sscanf
+[12:34:15] 
+
+[12:34:15]  ===============================
+
+[12:34:15]       sscanf plugin loaded.     
+
+[12:34:15]          Version:  2.8.3        
+
+[12:34:15]   (c) 2018 Alex "Y_Less" Cole  
+
+[12:34:15]  ===============================
+
+[12:34:15]   Loaded.
+[12:34:15]  Loading plugin: discord-connector
+[12:34:17]  >> plugin.dc-connector: v0.3.5 successfully loaded.
+[12:34:17]   Loaded.
+[12:34:17]  Loading plugin: mysql
+[12:34:17]  >> plugin.mysql: R39-6 successfully loaded.
+[12:34:17]   Loaded.
+[12:34:17]  Loading plugin: streamer
+[12:34:17] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[12:34:17]   Loaded.
+[12:34:17]  Loading plugin: Whirlpool
+[12:34:17]  
+[12:34:17]  ==================
+[12:34:17]  
+[12:34:17]   Whirlpool loaded
+[12:34:17]  
+[12:34:17]  ==================
+[12:34:17]  
+[12:34:17]   Loaded.
+[12:34:17]  Loading plugin: SKY
+[12:34:17] 
+[12:34:17]  ===============================
+[12:34:17]    
+[12:34:17]    < SKY - 2.3.0 >
+[12:34:17]    
+[12:34:17]    (c) 2008 - Present | YSF Maintainers
+[12:34:17]    (c) 2015 | Oscar "Slice" Broman
+[12:34:17]    
+[12:34:17]    Server Version: 0.3.7 R2
+[12:34:17]    Operating System: Windows
+[12:34:17]    Built on: Sep 27 2021 at 23:19:52
+[12:34:17]    
+[12:34:17]  ===============================
+[12:34:17] 
+[12:34:17]   Loaded.
+[12:34:17]  Loading plugin: nativechecker
+[12:34:17]   Loaded.
+[12:34:17]  Loaded 10 plugins.
+
+[12:34:17] 
+[12:34:17] Ban list
+[12:34:17] --------
+[12:34:17]  Loaded: samp.ban
+[12:34:17] 
+[12:34:18] 
+[12:34:18] Filterscripts
+[12:34:18] ---------------
+[12:34:18]   Loaded 0 filterscripts.
+
+[12:34:18] [sv:dbg:main:AmxLoad] : net game pointer (value:02429F40) received
+[12:34:18] [sv:dbg:network:bind] : voice server running on port 52939
+[12:34:18] AMX (68680200) loaded
+[12:34:18]  
+[12:34:18] --------------------------------------
+[12:34:18]  Anticheat Nex-AC loaded!
+[12:34:18]  Anticheat version: 1.9.52
+[12:34:18]  Author: Nexius
+[12:34:18] --------------------------------------
+
+[12:34:18]  
+[12:34:18]  
+[12:34:18]  
+[12:34:18]  ======================================= 
+[12:34:18]  |                                     | 
+[12:34:18]  |        YSI version 3.09.0684        | 
+[12:34:18]  |        By Alex "Y_Less" Cole        | 
+[12:34:18]  |                                     | 
+[12:34:18]  ======================================= 
+[12:34:18]  
+[12:34:18] Couldn't connect to radio station database... server will continue to operate normally.
+[12:34:18] 
+************************************************************************************************************************
+[12:34:18]  					Morgan City Roleplay [LOW ECONOMY] Version - MC:RPv2                                                                    
+[12:34:18]  					 Last Update game version - MC:RPv2                                                                
+[12:34:18] ************************************************************************************************************************
+
+[12:34:18] [LoadAntiCheat] Loading data from database...
+[12:34:18] Morgan City Roleplay [LOW ECONOMY]
+[12:34:18] 84 objects loaded.
+[12:34:18] Number of vehicle models: 20
+[12:34:19] [Script] 262 houses loaded.
+[12:34:19] [Script] 3 garages loaded.
+[12:34:19] [debug] Run time error 4: "Array index out of bounds"
+[12:34:19] [debug]  Attempted to read/write array element at index 8 in array of size 7
+[12:34:19] [debug] AMX backtrace:
+[12:34:19] [debug] #0 003812f0 in ReloadBusiness (businessid=16) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:16959
+[12:34:19] [debug] #1 003efdc0 in public OnQueryFinished (threadid=14, extraid=0) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:25374
+[12:34:19] [Script] 28 entrances loaded.
+[12:34:19] [Script] 4 factions loaded.
+[12:34:19] [debug] Run time error 4: "Array index out of bounds"
+[12:34:19] [debug]  Attempted to read/write array element at index 7 in array of size 7
+[12:34:19] [debug] AMX backtrace:
+[12:34:19] [debug] #0 003f22f8 in public OnQueryFinished (threadid=21, extraid=0) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:25493
+[12:34:19] [Script] 2 lands loaded.
+[12:34:19] [Script] 19 gangs loaded.
+[12:34:19] [Script] 0 points loaded.
+[12:34:19] [Script] 10 Points Loaded.
+[12:34:19] [Graffities] No records found.
+[12:34:19] [BillBoards] No records found.
+[12:34:19] [ANTICHEAT]: Anti-cheat settings loaded successfully (loaded: 53). Time: 0 ??.
+[12:34:40] [connection] 127.0.0.1:56265 requests connection cookie.
+[12:34:41] [connection] incoming connection: 127.0.0.1:56265 id: 0
+[12:34:41] [sv:dbg:network:connect] : connecting player (0) with address (127.0.0.1) ...
+[12:34:41] [sv:dbg:network:connect] : player (0) assigned key (e546d406)
+[12:34:41] [join] Lisher_Frost has joined the server (0:127.0.0.1)
+[12:34:41] > {FFFFFF}Lisher Frost has joined the server [{FFFFFF}IP:{FFFFFF} 127.0.0.1] [City: ] [Country: ]
+[12:34:42] [sv:dbg:network:receive] : player (0) identified (port:57189)
+[12:34:50] SERVER: Lisher Frost has logged in as a {eb4034}{FF50F1}Community Developer{ffffff}{FFFFFF}.
+[12:34:50] AdmCmd: {FF50F1}Community Developer{ffffff} Lisher Frost has logged in.
+[12:36:12] [cmd] Lisher Frost: [gotocoords]
+[12:36:25] [cmd] Lisher Frost: [gotocoords]
+[12:36:31] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.188294, vel z: 0.245782
+[12:36:31] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.162435, vel z: 0.245792
+[12:36:31] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.333334, vel z: 0.199880
+[12:36:31] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.483056, vel z: 0.154027
+[12:36:32] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.298902, vel z: 0.245301
+[12:36:32] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.495553, vel z: 0.197953
+[12:36:32] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.673503, vel z: 0.155305
+[12:36:33] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.388405, vel z: 0.245244
+[12:36:33] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.378019, vel z: 0.244820
+[12:36:35] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.203944, vel z: 0.193234
+[12:36:35] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.256013, vel z: 0.134105
+[12:36:37] [chat] [Lisher_Frost]: 1274.99, -1817.64, 14.01
+[12:36:38] [cmd] Lisher Frost: [gotocoords]
+[12:36:43] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.280013, vel z: 0.185672
+[12:36:43] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.299766, vel z: 0.135409
+[12:36:46] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.158259, vel z: 0.245374
+[12:36:46] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.158423, vel z: 0.245374
+[12:36:46] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.158571, vel z: 0.245374
+[12:36:47] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.239824, vel z: 0.236058
+[12:36:47] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.299352, vel z: 0.189509
+[12:36:48] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.299103, vel z: 0.134655
+[12:36:58] [sv:dbg:network:connect] : disconnecting player (0) ...
+[12:36:58] > {FFFFFF}Lisher Frost Left The Server [{00ffff}IP:{FFFFFF} 255.255.255.255]
+[12:36:58] [part] Lisher_Frost has left the server (0:2)
+[12:36:58] AdmWarning:  was banned for an unauthorized RCON login.
+[12:36:58] RCON (In-Game): Player #0 (Lisher_Frost) failed login.
+[12:37:33] [connection] 127.0.0.1:57137 requests connection cookie.
+[12:37:34] [connection] incoming connection: 127.0.0.1:57137 id: 0
+[12:37:34] [sv:dbg:network:connect] : connecting player (0) with address (127.0.0.1) ...
+[12:37:34] [sv:dbg:network:connect] : player (0) assigned key (f991a0d)
+[12:37:34] [join] Lisher_Frost has joined the server (0:127.0.0.1)
+[12:37:34] > {FFFFFF}Lisher Frost has joined the server [{FFFFFF}IP:{FFFFFF} 127.0.0.1] [City: ] [Country: ]
+[12:37:34] [sv:dbg:network:receive] : player (0) identified (port:57139)
+[12:37:39] [sv:dbg:network:connect] : disconnecting player (0) ...
+[12:37:39] > {FFFFFF}Lisher Frost Left The Server [{00ffff}IP:{FFFFFF} 255.255.255.255]
+[12:37:39] [part] Lisher_Frost has left the server (0:2)
+[12:38:23] [connection] 127.0.0.1:60582 requests connection cookie.
+[12:38:24] [connection] incoming connection: 127.0.0.1:60582 id: 0
+[12:38:25] [sv:dbg:network:connect] : connecting player (0) with address (127.0.0.1) ...
+[12:38:25] [sv:dbg:network:connect] : player (0) assigned key (9c0dc42c)
+[12:38:25] [join] Lisher_Frost has joined the server (0:127.0.0.1)
+[12:38:25] > {FFFFFF}Lisher Frost has joined the server [{FFFFFF}IP:{FFFFFF} 127.0.0.1] [City: ] [Country: ]
+[12:38:25] [sv:dbg:network:receive] : player (0) identified (port:60583)
+[12:38:32] SERVER: Lisher Frost has logged in as a {eb4034}{FF50F1}Community Developer{ffffff}{FFFFFF}.
+[12:38:32] AdmCmd: {FF50F1}Community Developer{ffffff} Lisher Frost has logged in.
+[12:38:54] RCON (In-Game): Player #0 (Lisher_Frost) has logged in.
+[12:38:58] RCON (In-Game): Player [Lisher_Frost] sent command: fsload
+[12:39:33] RCON (In-Game): Player [Lisher_Frost] sent command: loadfs
+[12:39:35] RCON (In-Game): Player [Lisher_Frost] sent command: loadfs yom_buttons
+[12:39:35] AMX (79953104) loaded
+[12:39:35]   Filterscript 'yom_buttons.amx' loaded.
+[12:41:41] RCON (In-Game): Player [Lisher_Frost] sent command: unloadfs
+[12:41:44] RCON (In-Game): Player [Lisher_Frost] sent command: unloadfs yom_buttons
+[12:41:44]   Filterscript 'yom_buttons.amx' unloaded.
+[12:41:47] [sv:dbg:network:connect] : disconnecting player (0) ...
+[12:41:47] > {FFFFFF}Lisher Frost Left The Server [{00ffff}IP:{FFFFFF} 255.255.255.255]
+[12:41:47] [part] Lisher_Frost has left the server (0:1)
+[12:41:50]  -------------------------------------------
+[12:41:50]            SampVoice unloading...           
+[12:41:50]  -------------------------------------------
+[12:41:50] [dbg:raknet:free] : module releasing...
+[12:41:50] [dbg:raknet:free] : module released
+[12:41:50] [sv:dbg:network:free] : module releasing...
+[12:41:50] [sv:dbg:network:free] : module released
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[12:42:21] filterscripts = ""  (string)
+[12:42:21] weburl = "www.sa-mp.com"  (string)
+[12:42:21] 
+[12:42:21] Server Plugins
+[12:42:21] --------------
+[12:42:21]  Loading plugin: crashdetect
+[12:42:21]   CrashDetect plugin 4.19.4
+[12:42:21]   Loaded.
+[12:42:21]  Loading plugin: pawncmd
+[12:42:21] [Pawn.CMD] plugin v3.3.6 loading...
+[12:42:21] [Pawn.CMD] 
+
+    | Pawn.CMD 3.3.6 | 2016 - 2021
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Sep 26 2021 at 11:55:10
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[12:42:21]   Loaded.
+[12:42:21]  Loading plugin: sampvoice
+[12:42:21] [sv:dbg:network:init] : module initializing...
+[12:42:21] [dbg:raknet:init] : module initializing...
+[12:42:21] [dbg:raknet:init] : module initialized
+[12:42:21] [sv:dbg:network:init] : module initialized
+[12:42:21] [sv:dbg:main:Load] : creating 8 work threads...
+[12:42:21]  -------------------------------------------    
+[12:42:21]    ___                __   __    _              
+[12:42:21]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[12:42:21]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[12:42:21]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[12:42:21]                   |_|                           
+[12:42:21]  -------------------------------------------    
+[12:42:21]            SampVoice by MOR loaded              
+[12:42:21]  -------------------------------------------    
+[12:42:21]   Loaded.
+[12:42:21]  Loading plugin: sscanf
+[12:42:21] 
+
+[12:42:21]  ===============================
+
+[12:42:21]       sscanf plugin loaded.     
+
+[12:42:21]          Version:  2.8.3        
+
+[12:42:21]   (c) 2018 Alex "Y_Less" Cole  
+
+[12:42:21]  ===============================
+
+[12:42:21]   Loaded.
+[12:42:21]  Loading plugin: discord-connector
+[12:42:24]  >> plugin.dc-connector: v0.3.5 successfully loaded.
+[12:42:24]   Loaded.
+[12:42:24]  Loading plugin: mysql
+[12:42:24]  >> plugin.mysql: R39-6 successfully loaded.
+[12:42:24]   Loaded.
+[12:42:24]  Loading plugin: streamer
+[12:42:24] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[12:42:24]   Loaded.
+[12:42:24]  Loading plugin: Whirlpool
+[12:42:24]  
+[12:42:24]  ==================
+[12:42:24]  
+[12:42:24]   Whirlpool loaded
+[12:42:24]  
+[12:42:24]  ==================
+[12:42:24]  
+[12:42:24]   Loaded.
+[12:42:24]  Loading plugin: SKY
+[12:42:24] 
+[12:42:24]  ===============================
+[12:42:24]    
+[12:42:24]    < SKY - 2.3.0 >
+[12:42:24]    
+[12:42:24]    (c) 2008 - Present | YSF Maintainers
+[12:42:24]    (c) 2015 | Oscar "Slice" Broman
+[12:42:24]    
+[12:42:24]    Server Version: 0.3.7 R2
+[12:42:24]    Operating System: Windows
+[12:42:24]    Built on: Sep 27 2021 at 23:19:52
+[12:42:24]    
+[12:42:24]  ===============================
+[12:42:24] 
+[12:42:24]   Loaded.
+[12:42:24]  Loading plugin: nativechecker
+[12:42:24]   Loaded.
+[12:42:24]  Loaded 10 plugins.
+
+[12:42:24] 
+[12:42:24] Ban list
+[12:42:24] --------
+[12:42:24]  Loaded: samp.ban
+[12:42:24] 
+[12:42:24] 
+[12:42:24] Filterscripts
+[12:42:24] ---------------
+[12:42:24]   Loaded 0 filterscripts.
+
+[12:42:24] [sv:dbg:main:AmxLoad] : net game pointer (value:02509F40) received
+[12:42:24] [sv:dbg:network:bind] : voice server running on port 63710
+[12:42:24] AMX (73202184) loaded
+[12:42:24]  
+[12:42:24] --------------------------------------
+[12:42:24]  Anticheat Nex-AC loaded!
+[12:42:24]  Anticheat version: 1.9.52
+[12:42:24]  Author: Nexius
+[12:42:24] --------------------------------------
+
+[12:42:24]  
+[12:42:24]  
+[12:42:24]  
+[12:42:24]  ======================================= 
+[12:42:24]  |                                     | 
+[12:42:24]  |        YSI version 3.09.0684        | 
+[12:42:24]  |        By Alex "Y_Less" Cole        | 
+[12:42:24]  |                                     | 
+[12:42:24]  ======================================= 
+[12:42:24]  
+[12:42:24] Couldn't connect to radio station database... server will continue to operate normally.
+[12:42:24] 
+************************************************************************************************************************
+[12:42:24]  					Morgan City Roleplay [LOW ECONOMY] Version - MC:RPv2                                                                    
+[12:42:24]  					 Last Update game version - MC:RPv2                                                                
+[12:42:24] ************************************************************************************************************************
+
+[12:42:24] [LoadAntiCheat] Loading data from database...
+[12:42:24] Morgan City Roleplay [LOW ECONOMY]
+[12:42:24] 84 objects loaded.
+[12:42:24] Number of vehicle models: 20
+[12:42:25] [Script] 262 houses loaded.
+[12:42:25] [Script] 3 garages loaded.
+[12:42:25] [debug] Run time error 4: "Array index out of bounds"
+[12:42:25] [debug]  Attempted to read/write array element at index 8 in array of size 7
+[12:42:25] [debug] AMX backtrace:
+[12:42:25] [debug] #0 003812f0 in ReloadBusiness (businessid=16) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:16959
+[12:42:25] [debug] #1 003efdc0 in public OnQueryFinished (threadid=14, extraid=0) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:25374
+[12:42:26] [Script] 28 entrances loaded.
+[12:42:26] [Script] 4 factions loaded.
+[12:42:26] [debug] Run time error 4: "Array index out of bounds"
+[12:42:26] [debug]  Attempted to read/write array element at index 7 in array of size 7
+[12:42:26] [debug] AMX backtrace:
+[12:42:26] [debug] #0 003f22f8 in public OnQueryFinished (threadid=21, extraid=0) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:25493
+[12:42:26] [Script] 2 lands loaded.
+[12:42:26] [Script] 19 gangs loaded.
+[12:42:26] [Script] 0 points loaded.
+[12:42:26] [Script] 10 Points Loaded.
+[12:42:26] [Graffities] No records found.
+[12:42:26] [BillBoards] No records found.
+[12:42:26] [ANTICHEAT]: Anti-cheat settings loaded successfully (loaded: 53). Time: 0 ??.
+[12:42:54] [connection] 127.0.0.1:57580 requests connection cookie.
+[12:42:55] [connection] incoming connection: 127.0.0.1:57580 id: 0
+[12:42:55] [sv:dbg:network:connect] : connecting player (0) with address (127.0.0.1) ...
+[12:42:55] [sv:dbg:network:connect] : player (0) assigned key (f9e3a1bc)
+[12:42:55] [join] Lisher_Frost has joined the server (0:127.0.0.1)
+[12:42:55] > {FFFFFF}Lisher Frost has joined the server [{FFFFFF}IP:{FFFFFF} 127.0.0.1] [City: ] [Country: ]
+[12:42:55] [sv:dbg:network:receive] : player (0) identified (port:57581)
+[12:55:03] SERVER: Lisher Frost has logged in as a {eb4034}{FF50F1}Community Developer{ffffff}{FFFFFF}.
+[12:55:03] AdmCmd: {FF50F1}Community Developer{ffffff} Lisher Frost has logged in.
+[12:55:31] RCON (In-Game): Player #0 (Lisher_Frost) has logged in.
+[12:55:34] RCON (In-Game): Player [Lisher_Frost] sent command: loadfs yom_buttons
+[12:55:34] AMX (73293976) loaded
+[12:55:34]   Filterscript 'yom_buttons.amx' loaded.
+[12:55:38] RCON (In-Game): Player [Lisher_Frost] sent command: unloadfs yom_buttons
+[12:55:38]   Filterscript 'yom_buttons.amx' unloaded.
+[12:58:14] [sv:dbg:network:connect] : disconnecting player (0) ...
+[12:58:14] > {FFFFFF}Lisher Frost Left The Server [{00ffff}IP:{FFFFFF} 255.255.255.255]
+[12:58:14] [part] Lisher_Frost has left the server (0:1)
+[12:58:25]  -------------------------------------------
+[12:58:25]            SampVoice unloading...           
+[12:58:25]  -------------------------------------------
+[12:58:25] [dbg:raknet:free] : module releasing...
+[12:58:25] [dbg:raknet:free] : module released
+[12:58:25] [sv:dbg:network:free] : module releasing...
+[12:58:25] [sv:dbg:network:free] : module released
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[12:58:32] filterscripts = ""  (string)
+[12:58:32] weburl = "www.sa-mp.com"  (string)
+[12:58:32] 
+[12:58:32] Server Plugins
+[12:58:32] --------------
+[12:58:32]  Loading plugin: crashdetect
+[12:58:32]   CrashDetect plugin 4.19.4
+[12:58:32]   Loaded.
+[12:58:32]  Loading plugin: pawncmd
+[12:58:32] [Pawn.CMD] plugin v3.3.6 loading...
+[12:58:32] [Pawn.CMD] 
+
+    | Pawn.CMD 3.3.6 | 2016 - 2021
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Sep 26 2021 at 11:55:10
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[12:58:32]   Loaded.
+[12:58:32]  Loading plugin: sampvoice
+[12:58:32] [sv:dbg:network:init] : module initializing...
+[12:58:32] [dbg:raknet:init] : module initializing...
+[12:58:32] [dbg:raknet:init] : module initialized
+[12:58:32] [sv:dbg:network:init] : module initialized
+[12:58:32] [sv:dbg:main:Load] : creating 8 work threads...
+[12:58:32]  -------------------------------------------    
+[12:58:32]    ___                __   __    _              
+[12:58:32]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[12:58:32]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[12:58:32]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[12:58:32]                   |_|                           
+[12:58:32]  -------------------------------------------    
+[12:58:32]            SampVoice by MOR loaded              
+[12:58:32]  -------------------------------------------    
+[12:58:32]   Loaded.
+[12:58:32]  Loading plugin: sscanf
+[12:58:32] 
+
+[12:58:32]  ===============================
+
+[12:58:32]       sscanf plugin loaded.     
+
+[12:58:32]          Version:  2.8.3        
+
+[12:58:32]   (c) 2018 Alex "Y_Less" Cole  
+
+[12:58:32]  ===============================
+
+[12:58:32]   Loaded.
+[12:58:32]  Loading plugin: discord-connector
+[12:58:34]  >> plugin.dc-connector: v0.3.5 successfully loaded.
+[12:58:34]   Loaded.
+[12:58:34]  Loading plugin: mysql
+[12:58:34]  >> plugin.mysql: R39-6 successfully loaded.
+[12:58:34]   Loaded.
+[12:58:34]  Loading plugin: streamer
+[12:58:34] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[12:58:34]   Loaded.
+[12:58:34]  Loading plugin: Whirlpool
+[12:58:34]  
+[12:58:34]  ==================
+[12:58:34]  
+[12:58:34]   Whirlpool loaded
+[12:58:34]  
+[12:58:34]  ==================
+[12:58:34]  
+[12:58:34]   Loaded.
+[12:58:34]  Loading plugin: SKY
+[12:58:34] 
+[12:58:34]  ===============================
+[12:58:34]    
+[12:58:34]    < SKY - 2.3.0 >
+[12:58:34]    
+[12:58:34]    (c) 2008 - Present | YSF Maintainers
+[12:58:34]    (c) 2015 | Oscar "Slice" Broman
+[12:58:34]    
+[12:58:34]    Server Version: 0.3.7 R2
+[12:58:34]    Operating System: Windows
+[12:58:34]    Built on: Sep 27 2021 at 23:19:52
+[12:58:34]    
+[12:58:34]  ===============================
+[12:58:34] 
+[12:58:34]   Loaded.
+[12:58:34]  Loading plugin: nativechecker
+[12:58:34]   Loaded.
+[12:58:34]  Loaded 10 plugins.
+
+[12:58:34] 
+[12:58:34] Ban list
+[12:58:34] --------
+[12:58:34]  Loaded: samp.ban
+[12:58:34] 
+[12:58:34] 
+[12:58:34] Filterscripts
+[12:58:34] ---------------
+[12:58:34]   Loaded 0 filterscripts.
+
+[12:58:35] [sv:dbg:main:AmxLoad] : net game pointer (value:02519F40) received
+[12:58:35] [sv:dbg:network:bind] : voice server running on port 56205
+[12:58:35] AMX (73071112) loaded
+[12:58:35]  
+[12:58:35] --------------------------------------
+[12:58:35]  Anticheat Nex-AC loaded!
+[12:58:35]  Anticheat version: 1.9.52
+[12:58:35]  Author: Nexius
+[12:58:35] --------------------------------------
+
+[12:58:35]  
+[12:58:35]  
+[12:58:35]  
+[12:58:35]  ======================================= 
+[12:58:35]  |                                     | 
+[12:58:35]  |        YSI version 3.09.0684        | 
+[12:58:35]  |        By Alex "Y_Less" Cole        | 
+[12:58:35]  |                                     | 
+[12:58:35]  ======================================= 
+[12:58:35]  
+[12:58:35] Couldn't connect to radio station database... server will continue to operate normally.
+[12:58:35] 
+************************************************************************************************************************
+[12:58:35]  					Morgan City Roleplay [LOW ECONOMY] Version - MC:RPv2                                                                    
+[12:58:35]  					 Last Update game version - MC:RPv2                                                                
+[12:58:35] ************************************************************************************************************************
+
+[12:58:35] [LoadAntiCheat] Loading data from database...
+[12:58:35] Morgan City Roleplay [LOW ECONOMY]
+[12:58:35] 84 objects loaded.
+[12:58:35] Number of vehicle models: 20
+[12:58:35] [Script] 262 houses loaded.
+[12:58:35] [Script] 3 garages loaded.
+[12:58:35] [debug] Run time error 4: "Array index out of bounds"
+[12:58:35] [debug]  Attempted to read/write array element at index 8 in array of size 7
+[12:58:35] [debug] AMX backtrace:
+[12:58:35] [debug] #0 003812f0 in ReloadBusiness (businessid=16) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:16959
+[12:58:35] [debug] #1 003efdc0 in public OnQueryFinished (threadid=14, extraid=0) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:25374
+[12:58:35] [Script] 28 entrances loaded.
+[12:58:35] [Script] 4 factions loaded.
+[12:58:35] [debug] Run time error 4: "Array index out of bounds"
+[12:58:35] [debug]  Attempted to read/write array element at index 7 in array of size 7
+[12:58:35] [debug] AMX backtrace:
+[12:58:35] [debug] #0 003f22f8 in public OnQueryFinished (threadid=21, extraid=0) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:25493
+[12:58:35] [Script] 2 lands loaded.
+[12:58:36] [Script] 19 gangs loaded.
+[12:58:36] [Script] 0 points loaded.
+[12:58:36] [Script] 10 Points Loaded.
+[12:58:36] [Graffities] No records found.
+[12:58:36] [BillBoards] No records found.
+[12:58:36] [ANTICHEAT]: Anti-cheat settings loaded successfully (loaded: 53). Time: 0 ??.
+[12:58:52] [connection] 127.0.0.1:61877 requests connection cookie.
+[12:58:53] [connection] incoming connection: 127.0.0.1:61877 id: 0
+[12:58:53] [sv:dbg:network:connect] : connecting player (0) with address (127.0.0.1) ...
+[12:58:53] [sv:dbg:network:connect] : player (0) assigned key (1e689407)
+[12:58:53] [join] Lisher_Frost has joined the server (0:127.0.0.1)
+[12:58:53] > {FFFFFF}Lisher Frost has joined the server [{FFFFFF}IP:{FFFFFF} 127.0.0.1] [City: ] [Country: ]
+[12:58:53] [sv:dbg:network:receive] : player (0) identified (port:50774)
+[13:01:00] SERVER: Lisher Frost has logged in as a {eb4034}{FF50F1}Community Developer{ffffff}{FFFFFF}.
+[13:01:00] AdmCmd: {FF50F1}Community Developer{ffffff} Lisher Frost has logged in.
+[13:04:04] RCON (In-Game): Player #0 (Lisher_Frost) has logged in.
+[13:04:08] RCON (In-Game): Player [Lisher_Frost] sent command: loadfs yom_buttons
+[13:04:08] AMX (72951496) loaded
+[13:04:08]   Filterscript 'yom_buttons.amx' loaded.
+[13:04:28] RCON (In-Game): Player [Lisher_Frost] sent command: unloadfs yom_buttons
+[13:04:28]   Filterscript 'yom_buttons.amx' unloaded.
+[13:04:30] [sv:dbg:network:connect] : disconnecting player (0) ...
+[13:04:30] > {FFFFFF}Lisher Frost Left The Server [{00ffff}IP:{FFFFFF} 255.255.255.255]
+[13:04:30] [part] Lisher_Frost has left the server (0:1)
+[13:04:45]  -------------------------------------------
+[13:04:45]            SampVoice unloading...           
+[13:04:45]  -------------------------------------------
+[13:04:45] [dbg:raknet:free] : module releasing...
+[13:04:45] [dbg:raknet:free] : module released
+[13:04:45] [sv:dbg:network:free] : module releasing...
+[13:04:45] [sv:dbg:network:free] : module released
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[13:05:19] filterscripts = ""  (string)
+[13:05:19] weburl = "www.sa-mp.com"  (string)
+[13:05:19] 
+[13:05:19] Server Plugins
+[13:05:19] --------------
+[13:05:19]  Loading plugin: crashdetect
+[13:05:19]   CrashDetect plugin 4.19.4
+[13:05:19]   Loaded.
+[13:05:19]  Loading plugin: pawncmd
+[13:05:19] [Pawn.CMD] plugin v3.3.6 loading...
+[13:05:19] [Pawn.CMD] 
+
+    | Pawn.CMD 3.3.6 | 2016 - 2021
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Sep 26 2021 at 11:55:10
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[13:05:19]   Loaded.
+[13:05:19]  Loading plugin: sampvoice
+[13:05:19] [sv:dbg:network:init] : module initializing...
+[13:05:19] [dbg:raknet:init] : module initializing...
+[13:05:19] [dbg:raknet:init] : module initialized
+[13:05:19] [sv:dbg:network:init] : module initialized
+[13:05:19] [sv:dbg:main:Load] : creating 8 work threads...
+[13:05:19]  -------------------------------------------    
+[13:05:19]    ___                __   __    _              
+[13:05:19]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[13:05:19]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[13:05:19]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[13:05:19]                   |_|                           
+[13:05:19]  -------------------------------------------    
+[13:05:19]            SampVoice by MOR loaded              
+[13:05:19]  -------------------------------------------    
+[13:05:19]   Loaded.
+[13:05:19]  Loading plugin: sscanf
+[13:05:19] 
+
+[13:05:19]  ===============================
+
+[13:05:19]       sscanf plugin loaded.     
+
+[13:05:19]          Version:  2.8.3        
+
+[13:05:19]   (c) 2018 Alex "Y_Less" Cole  
+
+[13:05:19]  ===============================
+
+[13:05:19]   Loaded.
+[13:05:19]  Loading plugin: discord-connector
+[13:05:21]  >> plugin.dc-connector: v0.3.5 successfully loaded.
+[13:05:21]   Loaded.
+[13:05:21]  Loading plugin: mysql
+[13:05:21]  >> plugin.mysql: R39-6 successfully loaded.
+[13:05:21]   Loaded.
+[13:05:21]  Loading plugin: streamer
+[13:05:21] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[13:05:21]   Loaded.
+[13:05:21]  Loading plugin: Whirlpool
+[13:05:21]  
+[13:05:21]  ==================
+[13:05:21]  
+[13:05:21]   Whirlpool loaded
+[13:05:21]  
+[13:05:21]  ==================
+[13:05:21]  
+[13:05:21]   Loaded.
+[13:05:21]  Loading plugin: SKY
+[13:05:21] 
+[13:05:21]  ===============================
+[13:05:21]    
+[13:05:21]    < SKY - 2.3.0 >
+[13:05:21]    
+[13:05:21]    (c) 2008 - Present | YSF Maintainers
+[13:05:21]    (c) 2015 | Oscar "Slice" Broman
+[13:05:21]    
+[13:05:21]    Server Version: 0.3.7 R2
+[13:05:21]    Operating System: Windows
+[13:05:21]    Built on: Sep 27 2021 at 23:19:52
+[13:05:21]    
+[13:05:21]  ===============================
+[13:05:21] 
+[13:05:21]   Loaded.
+[13:05:21]  Loading plugin: nativechecker
+[13:05:21]   Loaded.
+[13:05:21]  Loaded 10 plugins.
+
+[13:05:21] 
+[13:05:21] Ban list
+[13:05:21] --------
+[13:05:21]  Loaded: samp.ban
+[13:05:21] 
+[13:05:21] 
+[13:05:21] Filterscripts
+[13:05:21] ---------------
+[13:05:21]   Loaded 0 filterscripts.
+
+[13:05:21] [sv:dbg:main:AmxLoad] : net game pointer (value:02269F40) received
+[13:05:21] [sv:dbg:network:bind] : voice server running on port 54551
+[13:05:21] AMX (73267720) loaded
+[13:05:21]  
+[13:05:21] --------------------------------------
+[13:05:21]  Anticheat Nex-AC loaded!
+[13:05:21]  Anticheat version: 1.9.52
+[13:05:21]  Author: Nexius
+[13:05:21] --------------------------------------
+
+[13:05:21]  
+[13:05:21]  
+[13:05:21]  
+[13:05:21]  ======================================= 
+[13:05:21]  |                                     | 
+[13:05:21]  |        YSI version 3.09.0684        | 
+[13:05:21]  |        By Alex "Y_Less" Cole        | 
+[13:05:21]  |                                     | 
+[13:05:21]  ======================================= 
+[13:05:21]  
+[13:05:21] Couldn't connect to radio station database... server will continue to operate normally.
+[13:05:21] 
+************************************************************************************************************************
+[13:05:21]  					Morgan City Roleplay [LOW ECONOMY] Version - MC:RPv2                                                                    
+[13:05:21]  					 Last Update game version - MC:RPv2                                                                
+[13:05:21] ************************************************************************************************************************
+
+[13:05:21] [LoadAntiCheat] Loading data from database...
+[13:05:21] Morgan City Roleplay [LOW ECONOMY]
+[13:05:21] 84 objects loaded.
+[13:05:21] Number of vehicle models: 20
+[13:05:22] [Script] 262 houses loaded.
+[13:05:22] [Script] 3 garages loaded.
+[13:05:22] [debug] Run time error 4: "Array index out of bounds"
+[13:05:22] [debug]  Attempted to read/write array element at index 8 in array of size 7
+[13:05:22] [debug] AMX backtrace:
+[13:05:22] [debug] #0 003812f0 in ReloadBusiness (businessid=16) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:16959
+[13:05:22] [debug] #1 003efdc0 in public OnQueryFinished (threadid=14, extraid=0) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:25374
+[13:05:22] [Script] 28 entrances loaded.
+[13:05:22] [Script] 4 factions loaded.
+[13:05:22] [debug] Run time error 4: "Array index out of bounds"
+[13:05:22] [debug]  Attempted to read/write array element at index 7 in array of size 7
+[13:05:22] [debug] AMX backtrace:
+[13:05:22] [debug] #0 003f22f8 in public OnQueryFinished (threadid=21, extraid=0) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:25493
+[13:05:22] [Script] 2 lands loaded.
+[13:05:22] [Script] 19 gangs loaded.
+[13:05:22] [Script] 0 points loaded.
+[13:05:22] [Script] 10 Points Loaded.
+[13:05:22] [Graffities] No records found.
+[13:05:22] [BillBoards] No records found.
+[13:05:22] [ANTICHEAT]: Anti-cheat settings loaded successfully (loaded: 53). Time: 0 ??.
+[13:05:39] [connection] 127.0.0.1:62433 requests connection cookie.
+[13:05:40] [connection] incoming connection: 127.0.0.1:62433 id: 0
+[13:05:41] [sv:dbg:network:connect] : connecting player (0) with address (127.0.0.1) ...
+[13:05:41] [sv:dbg:network:connect] : player (0) assigned key (ab632040)
+[13:05:41] [join] Lisher_Frost has joined the server (0:127.0.0.1)
+[13:05:41] > {FFFFFF}Lisher Frost has joined the server [{FFFFFF}IP:{FFFFFF} 127.0.0.1] [City: ] [Country: ]
+[13:05:41] [sv:dbg:network:receive] : player (0) identified (port:60948)
+[13:08:55] SERVER: Lisher Frost has logged in as a {eb4034}{FF50F1}Community Developer{ffffff}{FFFFFF}.
+[13:08:55] AdmCmd: {FF50F1}Community Developer{ffffff} Lisher Frost has logged in.
+[13:10:12] RCON (In-Game): Player #0 (Lisher_Frost) has logged in.
+[13:10:17] RCON (In-Game): Player [Lisher_Frost] sent command: loadfs yom_buttons
+[13:10:17] AMX (73359512) loaded
+[13:10:17]   Filterscript 'yom_buttons.amx' loaded.
+[13:12:49] [sv:dbg:network:connect] : disconnecting player (0) ...
+[13:12:49] > {FFFFFF}Lisher Frost Left The Server [{00ffff}IP:{FFFFFF} 255.255.255.255]
+[13:12:49] [part] Lisher_Frost has left the server (0:1)
+[13:12:50]  -------------------------------------------
+[13:12:50]            SampVoice unloading...           
+[13:12:50]  -------------------------------------------
+[13:12:50] [dbg:raknet:free] : module releasing...
+[13:12:50] [dbg:raknet:free] : module released
+[13:12:50] [sv:dbg:network:free] : module releasing...
+[13:12:50] [sv:dbg:network:free] : module released
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[13:12:56] filterscripts = ""  (string)
+[13:12:56] weburl = "www.sa-mp.com"  (string)
+[13:12:56] 
+[13:12:56] Server Plugins
+[13:12:56] --------------
+[13:12:56]  Loading plugin: crashdetect
+[13:12:56]   CrashDetect plugin 4.19.4
+[13:12:56]   Loaded.
+[13:12:56]  Loading plugin: pawncmd
+[13:12:56] [Pawn.CMD] plugin v3.3.6 loading...
+[13:12:56] [Pawn.CMD] 
+
+    | Pawn.CMD 3.3.6 | 2016 - 2021
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Sep 26 2021 at 11:55:10
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[13:12:56]   Loaded.
+[13:12:56]  Loading plugin: sampvoice
+[13:12:56] [sv:dbg:network:init] : module initializing...
+[13:12:56] [dbg:raknet:init] : module initializing...
+[13:12:56] [dbg:raknet:init] : module initialized
+[13:12:56] [sv:dbg:network:init] : module initialized
+[13:12:56] [sv:dbg:main:Load] : creating 8 work threads...
+[13:12:56]  -------------------------------------------    
+[13:12:56]    ___                __   __    _              
+[13:12:56]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[13:12:56]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[13:12:56]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[13:12:56]                   |_|                           
+[13:12:56]  -------------------------------------------    
+[13:12:57]            SampVoice by MOR loaded              
+[13:12:57]  -------------------------------------------    
+[13:12:57]   Loaded.
+[13:12:57]  Loading plugin: sscanf
+[13:12:57] 
+
+[13:12:57]  ===============================
+
+[13:12:57]       sscanf plugin loaded.     
+
+[13:12:57]          Version:  2.8.3        
+
+[13:12:57]   (c) 2018 Alex "Y_Less" Cole  
+
+[13:12:57]  ===============================
+
+[13:12:57]   Loaded.
+[13:12:57]  Loading plugin: discord-connector
+[13:12:58]  >> plugin.dc-connector: v0.3.5 successfully loaded.
+[13:12:58]   Loaded.
+[13:12:58]  Loading plugin: mysql
+[13:12:59]  >> plugin.mysql: R39-6 successfully loaded.
+[13:12:59]   Loaded.
+[13:12:59]  Loading plugin: streamer
+[13:12:59] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[13:12:59]   Loaded.
+[13:12:59]  Loading plugin: Whirlpool
+[13:12:59]  
+[13:12:59]  ==================
+[13:12:59]  
+[13:12:59]   Whirlpool loaded
+[13:12:59]  
+[13:12:59]  ==================
+[13:12:59]  
+[13:12:59]   Loaded.
+[13:12:59]  Loading plugin: SKY
+[13:12:59] 
+[13:12:59]  ===============================
+[13:12:59]    
+[13:12:59]    < SKY - 2.3.0 >
+[13:12:59]    
+[13:12:59]    (c) 2008 - Present | YSF Maintainers
+[13:12:59]    (c) 2015 | Oscar "Slice" Broman
+[13:12:59]    
+[13:12:59]    Server Version: 0.3.7 R2
+[13:12:59]    Operating System: Windows
+[13:12:59]    Built on: Sep 27 2021 at 23:19:52
+[13:12:59]    
+[13:12:59]  ===============================
+[13:12:59] 
+[13:12:59]   Loaded.
+[13:12:59]  Loading plugin: nativechecker
+[13:12:59]   Loaded.
+[13:12:59]  Loaded 10 plugins.
+
+[13:12:59] 
+[13:12:59] Ban list
+[13:12:59] --------
+[13:12:59]  Loaded: samp.ban
+[13:12:59] 
+[13:12:59] 
+[13:12:59] Filterscripts
+[13:12:59] ---------------
+[13:12:59]   Loaded 0 filterscripts.
+
+[13:12:59] [sv:dbg:main:AmxLoad] : net game pointer (value:02389F40) received
+[13:12:59] [sv:dbg:network:bind] : voice server running on port 63758
+[13:12:59] AMX (73464328) loaded
+[13:12:59]  
+[13:12:59] --------------------------------------
+[13:12:59]  Anticheat Nex-AC loaded!
+[13:12:59]  Anticheat version: 1.9.52
+[13:12:59]  Author: Nexius
+[13:12:59] --------------------------------------
+
+[13:12:59]  
+[13:12:59]  
+[13:12:59]  
+[13:12:59]  ======================================= 
+[13:12:59]  |                                     | 
+[13:12:59]  |        YSI version 3.09.0684        | 
+[13:12:59]  |        By Alex "Y_Less" Cole        | 
+[13:12:59]  |                                     | 
+[13:12:59]  ======================================= 
+[13:12:59]  
+[13:12:59] Couldn't connect to radio station database... server will continue to operate normally.
+[13:12:59] 
+************************************************************************************************************************
+[13:12:59]  					Morgan City Roleplay [LOW ECONOMY] Version - MC:RPv2                                                                    
+[13:12:59]  					 Last Update game version - MC:RPv2                                                                
+[13:12:59] ************************************************************************************************************************
+
+[13:12:59] [LoadAntiCheat] Loading data from database...
+[13:12:59] Morgan City Roleplay [LOW ECONOMY]
+[13:12:59] 84 objects loaded.
+[13:12:59] Number of vehicle models: 20
+[13:12:59] [Script] 262 houses loaded.
+[13:12:59] [Script] 3 garages loaded.
+[13:12:59] [debug] Run time error 4: "Array index out of bounds"
+[13:12:59] [debug]  Attempted to read/write array element at index 8 in array of size 7
+[13:12:59] [debug] AMX backtrace:
+[13:12:59] [debug] #0 003812f0 in ReloadBusiness (businessid=16) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:16959
+[13:12:59] [debug] #1 003efdc0 in public OnQueryFinished (threadid=14, extraid=0) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:25374
+[13:12:59] [Script] 28 entrances loaded.
+[13:12:59] [Script] 4 factions loaded.
+[13:12:59] [debug] Run time error 4: "Array index out of bounds"
+[13:12:59] [debug]  Attempted to read/write array element at index 7 in array of size 7
+[13:12:59] [debug] AMX backtrace:
+[13:12:59] [debug] #0 003f22f8 in public OnQueryFinished (threadid=21, extraid=0) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:25493
+[13:12:59] [Script] 2 lands loaded.
+[13:12:59] [Script] 19 gangs loaded.
+[13:12:59] [Script] 0 points loaded.
+[13:12:59] [Script] 10 Points Loaded.
+[13:13:00] [Graffities] No records found.
+[13:13:00] [BillBoards] No records found.
+[13:13:00] [ANTICHEAT]: Anti-cheat settings loaded successfully (loaded: 53). Time: 0 ??.
+[13:13:17] [connection] 127.0.0.1:61323 requests connection cookie.
+[13:13:18] [connection] incoming connection: 127.0.0.1:61323 id: 0
+[13:13:18] [sv:dbg:network:connect] : connecting player (0) with address (127.0.0.1) ...
+[13:13:18] [sv:dbg:network:connect] : player (0) assigned key (665201e3)
+[13:13:18] [join] Lisher_Frost has joined the server (0:127.0.0.1)
+[13:13:18] > {FFFFFF}Lisher Frost has joined the server [{FFFFFF}IP:{FFFFFF} 127.0.0.1] [City: ] [Country: ]
+[13:13:18] [sv:dbg:network:receive] : player (0) identified (port:61324)
+[13:13:43] SERVER: Lisher Frost has logged in as a {eb4034}{FF50F1}Community Developer{ffffff}{FFFFFF}.
+[13:13:43] AdmCmd: {FF50F1}Community Developer{ffffff} Lisher Frost has logged in.
+[13:14:04] RCON (In-Game): Player #0 (Lisher_Frost) has logged in.
+[13:14:08] RCON (In-Game): Player [Lisher_Frost] sent command: loadfs yom_buttons
+[13:14:08] AMX (73556120) loaded
+[13:14:08]   Filterscript 'yom_buttons.amx' loaded.
+[13:14:30] [cmd] Lisher Frost: [gotocoords]
+[13:14:38] [Nex-AC debug] Anim: 958, old anim: 958, weaponid: 0, spec act: 3, vel x, y: 0.080020, vel z: 0.237055
+[13:24:08] [sv:dbg:network:connect] : disconnecting player (0) ...
+[13:24:08] > {FFFFFF}Lisher Frost Left The Server [{00ffff}IP:{FFFFFF} 255.255.255.255]
+[13:24:08] [part] Lisher_Frost has left the server (0:1)
+[13:24:09]  -------------------------------------------
+[13:24:09]            SampVoice unloading...           
+[13:24:09]  -------------------------------------------
+[13:24:09] [dbg:raknet:free] : module releasing...
+[13:24:09] [dbg:raknet:free] : module released
+[13:24:09] [sv:dbg:network:free] : module releasing...
+[13:24:09] [sv:dbg:network:free] : module released
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[13:25:07] weburl = "www.sa-mp.com"  (string)
+[13:25:07] 
+[13:25:07] Server Plugins
+[13:25:07] --------------
+[13:25:07]  Loading plugin: crashdetect
+[13:25:07]   CrashDetect plugin 4.19.4
+[13:25:07]   Loaded.
+[13:25:07]  Loading plugin: pawncmd
+[13:25:07] [Pawn.CMD] plugin v3.3.6 loading...
+[13:25:07] [Pawn.CMD] 
+
+    | Pawn.CMD 3.3.6 | 2016 - 2021
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Sep 26 2021 at 11:55:10
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[13:25:07]   Loaded.
+[13:25:07]  Loading plugin: sampvoice
+[13:25:07] [sv:dbg:network:init] : module initializing...
+[13:25:07] [dbg:raknet:init] : module initializing...
+[13:25:07] [dbg:raknet:init] : module initialized
+[13:25:07] [sv:dbg:network:init] : module initialized
+[13:25:07] [sv:dbg:main:Load] : creating 8 work threads...
+[13:25:07]  -------------------------------------------    
+[13:25:07]    ___                __   __    _              
+[13:25:07]   / __| __ _ _ __  _ _\ \ / /__ (_) __ ___    
+[13:25:07]   \__ \/ _` | '  \| '_ \   / _ \| |/ _/ -_)
+[13:25:07]   |___/\__,_|_|_|_| .__/\_/\___/|_|\__\___|
+[13:25:07]                   |_|                           
+[13:25:07]  -------------------------------------------    
+[13:25:07]            SampVoice by MOR loaded              
+[13:25:07]  -------------------------------------------    
+[13:25:07]   Loaded.
+[13:25:07]  Loading plugin: sscanf
+[13:25:07] 
+
+[13:25:07]  ===============================
+
+[13:25:07]       sscanf plugin loaded.     
+
+[13:25:07]          Version:  2.8.3        
+
+[13:25:07]   (c) 2018 Alex "Y_Less" Cole  
+
+[13:25:07]  ===============================
+
+[13:25:07]   Loaded.
+[13:25:07]  Loading plugin: discord-connector
+[13:25:10]  >> plugin.dc-connector: v0.3.5 successfully loaded.
+[13:25:10]   Loaded.
+[13:25:10]  Loading plugin: mysql
+[13:25:10]  >> plugin.mysql: R39-6 successfully loaded.
+[13:25:10]   Loaded.
+[13:25:10]  Loading plugin: streamer
+[13:25:10] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[13:25:10]   Loaded.
+[13:25:10]  Loading plugin: Whirlpool
+[13:25:10]  
+[13:25:10]  ==================
+[13:25:10]  
+[13:25:10]   Whirlpool loaded
+[13:25:10]  
+[13:25:10]  ==================
+[13:25:10]  
+[13:25:10]   Loaded.
+[13:25:10]  Loading plugin: SKY
+[13:25:10] 
+[13:25:10]  ===============================
+[13:25:10]    
+[13:25:10]    < SKY - 2.3.0 >
+[13:25:10]    
+[13:25:10]    (c) 2008 - Present | YSF Maintainers
+[13:25:10]    (c) 2015 | Oscar "Slice" Broman
+[13:25:10]    
+[13:25:10]    Server Version: 0.3.7 R2
+[13:25:10]    Operating System: Windows
+[13:25:10]    Built on: Sep 27 2021 at 23:19:52
+[13:25:10]    
+[13:25:10]  ===============================
+[13:25:10] 
+[13:25:10]   Loaded.
+[13:25:10]  Loading plugin: nativechecker
+[13:25:10]   Loaded.
+[13:25:10]  Loaded 10 plugins.
+
+[13:25:10] 
+[13:25:10] Ban list
+[13:25:10] --------
+[13:25:10]  Loaded: samp.ban
+[13:25:10] 
+[13:25:10] 
+[13:25:10] Filterscripts
+[13:25:10] ---------------
+[13:25:10]   Loading filterscript 'yom_buttons.amx'...
+[13:25:10] [sv:dbg:main:AmxLoad] : net game pointer (value:02309F40) received
+[13:25:10] [sv:dbg:network:bind] : voice server running on port 57913
+[13:25:10] AMX (73949400) loaded
+[13:25:10]   Loaded 1 filterscripts.
+
+[13:25:10] AMX (73857608) loaded
+[13:25:10]  
+[13:25:10] --------------------------------------
+[13:25:10]  Anticheat Nex-AC loaded!
+[13:25:10]  Anticheat version: 1.9.52
+[13:25:10]  Author: Nexius
+[13:25:10] --------------------------------------
+
+[13:25:10]  
+[13:25:10]  
+[13:25:10]  
+[13:25:10]  ======================================= 
+[13:25:10]  |                                     | 
+[13:25:10]  |        YSI version 3.09.0684        | 
+[13:25:10]  |        By Alex "Y_Less" Cole        | 
+[13:25:10]  |                                     | 
+[13:25:10]  ======================================= 
+[13:25:10]  
+[13:25:10] Couldn't connect to radio station database... server will continue to operate normally.
+[13:25:10] 
+************************************************************************************************************************
+[13:25:10]  					Morgan City Roleplay [LOW ECONOMY] Version - MC:RPv2                                                                    
+[13:25:10]  					 Last Update game version - MC:RPv2                                                                
+[13:25:10] ************************************************************************************************************************
+
+[13:25:10] [LoadAntiCheat] Loading data from database...
+[13:25:10] Morgan City Roleplay [LOW ECONOMY]
+[13:25:10] 84 objects loaded.
+[13:25:10] Number of vehicle models: 20
+[13:25:10] [Script] 262 houses loaded.
+[13:25:10] [Script] 3 garages loaded.
+[13:25:10] [debug] Run time error 4: "Array index out of bounds"
+[13:25:10] [debug]  Attempted to read/write array element at index 8 in array of size 7
+[13:25:10] [debug] AMX backtrace:
+[13:25:10] [debug] #0 003812f0 in ReloadBusiness (businessid=16) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:16959
+[13:25:10] [debug] #1 003efdc0 in public OnQueryFinished (threadid=14, extraid=0) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:25374
+[13:25:10] [Script] 28 entrances loaded.
+[13:25:10] [Script] 4 factions loaded.
+[13:25:10] [debug] Run time error 4: "Array index out of bounds"
+[13:25:10] [debug]  Attempted to read/write array element at index 7 in array of size 7
+[13:25:10] [debug] AMX backtrace:
+[13:25:10] [debug] #0 003f22f8 in public OnQueryFinished (threadid=21, extraid=0) at c:\Users\vj\Documents\jmcb\gamemodes\v2morgancity.pwn:25493
+[13:25:10] [Script] 2 lands loaded.
+[13:25:11] [Script] 19 gangs loaded.
+[13:25:11] [Script] 0 points loaded.
+[13:25:11] [Script] 10 Points Loaded.
+[13:25:11] [Graffities] No records found.
+[13:25:11] [BillBoards] No records found.
+[13:25:11] [ANTICHEAT]: Anti-cheat settings loaded successfully (loaded: 53). Time: 0 ??.
+[13:25:44] [connection] 127.0.0.1:57343 requests connection cookie.
+[13:25:45] [connection] incoming connection: 127.0.0.1:57343 id: 0
+[13:25:45] [sv:dbg:network:connect] : connecting player (0) with address (127.0.0.1) ...
+[13:25:45] [sv:dbg:network:connect] : player (0) assigned key (d211265d)
+[13:25:45] [join] Lisher_Frost has joined the server (0:127.0.0.1)
+[13:25:45] > {FFFFFF}Lisher Frost has joined the server [{FFFFFF}IP:{FFFFFF} 127.0.0.1] [City: ] [Country: ]
+[13:25:45] [sv:dbg:network:receive] : player (0) identified (port:57927)
+[13:26:36] SERVER: Lisher Frost has logged in as a {eb4034}{FF50F1}Community Developer{ffffff}{FFFFFF}.
+[13:26:36] AdmCmd: {FF50F1}Community Developer{ffffff} Lisher Frost has logged in.
+[13:29:33] AdmCmd: Lisher Frost has made Lisher Frost a Chief Of Police in Azalea Police Department.
+[13:29:33] [cmd] Lisher Frost: [setfaction]
+[13:29:40] AdmCmd: Lisher Frost has made Lisher Frost a Mechshop Owner in Azalea Automotive Services.
+[13:29:40] [cmd] Lisher Frost: [setfaction]
+[13:30:39] [cmd] Lisher Frost: [settings]
+[13:30:49] [cmd] Lisher Frost: [settings]
+[13:34:43] [sv:dbg:network:connect] : disconnecting player (0) ...
+[13:34:43] > {FFFFFF}Lisher Frost Left The Server [{00ffff}IP:{FFFFFF} 255.255.255.255]
+[13:34:43] [part] Lisher_Frost has left the server (0:1)
+[13:34:51]  -------------------------------------------
+[13:34:51]            SampVoice unloading...           
+[13:34:51]  -------------------------------------------
+[13:34:51] [dbg:raknet:free] : module releasing...
+[13:34:51] [dbg:raknet:free] : module released
+[13:34:51] [sv:dbg:network:free] : module releasing...
+[13:34:51] [sv:dbg:network:free] : module released
