@@ -1,4 +1,7 @@
 modular\mcrpmap.pwn(175) : íåïðàâèëüíàÿ òàáóëÿöèÿ
 modular\mcrpmap.pwn(1306) : íåïðàâèëüíàÿ òàáóëÿöèÿ
+C:\Users\JMCB\Documents\GitHub\jmcb\gamemodes\v2morgancity.pwn(47598) : íåïðàâèëüíàÿ òàáóëÿöèÿ
+C:\Users\JMCB\Documents\GitHub\jmcb\gamemodes\v2morgancity.pwn(47606) : íåïðàâèëüíàÿ òàáóëÿöèÿ
+C:\Users\JMCB\Documents\GitHub\jmcb\gamemodes\v2morgancity.pwn(95688) : íåïðàâèëüíàÿ òàáóëÿöèÿ
 Pawn compiler 3.2.3664	 	 	Copyright (c) 1997-2016, ITB CompuPhase
 
