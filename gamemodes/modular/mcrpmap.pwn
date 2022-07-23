@@ -39,6 +39,7 @@ stock pacificremoveobjects(playerid) {
 	RemoveBuildingForPlayer(playerid, 615, 1166.349, -1417.693, 13.953, 0.250);
 	RemoveBuildingForPlayer(playerid, 955, 1154.725, -1460.890, 15.156, 0.250);
 
+
 	//MCDO //
 	RemoveBuildingForPlayer(playerid, 5950, 837.4141, -1361.2188, 10.0313, 0.25);
 	RemoveBuildingForPlayer(playerid, 1462, 826.8516, -1385.6719, 12.5078, 0.25);
@@ -156,9 +157,8 @@ stock pacificmappings()
 
 	new HOUSE_INT;
 	new tmpobjid;
-
 	// NEW MALL BY LAKE
-    tmpobjid = CreateDynamicObject(19322, 1117.585937, -1490.007812, 32.718750, 0.000000, 0.000000, 0.000000, -1, -1, -1, 300.00, 300.00);
+    tmpobjid = CreateDynamicObject(19322, 1117.585937, -1490.007812, 32.718750, 0.000000, 0.000000, 0.000000, 0, 0, -1, 200.00, 300.00);
     SetDynamicObjectMaterial(tmpobjid, 8, 3979, "civic01_lan", "crazy paving", 0xFFFFFFFF);
     SetDynamicObjectMaterial(tmpobjid, 9, 3820, "boxhses_sfsx", "stonewall_la", 0xFFFFFFFF);
     tmpobjid = CreateDynamicObject(6051, 1110.328125, -1489.093750, 18.992189, 0.000000, 0.000000, 0.000000, -1, -1, -1, 300.00, 300.00);
