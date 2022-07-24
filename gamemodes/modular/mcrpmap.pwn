@@ -9,35 +9,35 @@ stock pacificremoveobjects(playerid) {
 	RemoveBuildingForPlayer(playerid, 1260, 1648.0156, -1795.0703, 25.0391, 0.25);
 	RemoveBuildingForPlayer(playerid, 5078, 1616.6719, -1893.4844, 14.3281, 0.25);
 	
-	// NEW HOSPITAL by Lake
-	RemoveBuildingForPlayer(playerid, 6130, 1117.583, -1490.005, 32.716, 0.250);
-	RemoveBuildingForPlayer(playerid, 6255, 1117.583, -1490.005, 32.716, 0.250);
-	RemoveBuildingForPlayer(playerid, 6051, 1110.328, -1489.093, 18.992, 0.250);
-	RemoveBuildingForPlayer(playerid, 647, 1117.609, -1536.974, 30.968, 0.250);
-	RemoveBuildingForPlayer(playerid, 647, 1111.562, -1533.958, 30.968, 0.250);
-	RemoveBuildingForPlayer(playerid, 647, 1105.599, -1531.156, 30.968, 0.250);
-	RemoveBuildingForPlayer(playerid, 647, 1137.927, -1537.062, 30.968, 0.250);
-	RemoveBuildingForPlayer(playerid, 647, 1143.787, -1534.703, 30.968, 0.250);
-	RemoveBuildingForPlayer(playerid, 647, 1148.599, -1532.255, 30.968, 0.250);
-	RemoveBuildingForPlayer(playerid, 647, 1097.474, -1523.974, 30.968, 0.250);
-	RemoveBuildingForPlayer(playerid, 647, 1093.421, -1519.828, 30.968, 0.250);
-	RemoveBuildingForPlayer(playerid, 647, 1089.578, -1515.787, 30.968, 0.250);
-	RemoveBuildingForPlayer(playerid, 647, 1087.193, -1510.490, 30.968, 0.250);
-	RemoveBuildingForPlayer(playerid, 647, 1084.968, -1504.421, 30.968, 0.250);
-	RemoveBuildingForPlayer(playerid, 647, 1101.140, -1527.968, 30.968, 0.250);
-	RemoveBuildingForPlayer(playerid, 792, 1128.734, -1518.490, 15.210, 0.250);
-	RemoveBuildingForPlayer(playerid, 647, 1077.859, -1499.865, 30.968, 0.250);
-	RemoveBuildingForPlayer(playerid, 647, 1083.671, -1499.490, 30.968, 0.250);
-	RemoveBuildingForPlayer(playerid, 647, 1153.537, -1529.802, 30.968, 0.250);
-	RemoveBuildingForPlayer(playerid, 647, 1157.818, -1525.484, 30.968, 0.250);
-	RemoveBuildingForPlayer(playerid, 647, 1161.328, -1521.578, 30.968, 0.250);
-	RemoveBuildingForPlayer(playerid, 647, 1165.156, -1517.208, 30.968, 0.250);
-	RemoveBuildingForPlayer(playerid, 647, 1167.781, -1513.177, 30.968, 0.250);
-	RemoveBuildingForPlayer(playerid, 647, 1169.162, -1509.333, 30.968, 0.250);
-	RemoveBuildingForPlayer(playerid, 647, 1170.802, -1503.552, 30.968, 0.250);
-	RemoveBuildingForPlayer(playerid, 762, 1175.359, -1420.187, 19.881, 0.250);
-	RemoveBuildingForPlayer(playerid, 615, 1166.349, -1417.693, 13.953, 0.250);
-	RemoveBuildingForPlayer(playerid, 955, 1154.725, -1460.890, 15.156, 0.250);
+	// NEW Mall by Lake
+    RemoveBuildingForPlayer(playerid, 6130, 1117.583, -1490.005, 32.716, 0.250);
+    RemoveBuildingForPlayer(playerid, 6255, 1117.583, -1490.005, 32.716, 0.250);
+    RemoveBuildingForPlayer(playerid, 6051, 1110.328, -1489.093, 18.992, 0.250);
+    RemoveBuildingForPlayer(playerid, 647, 1117.609, -1536.974, 30.968, 0.250);
+    RemoveBuildingForPlayer(playerid, 647, 1111.562, -1533.958, 30.968, 0.250);
+    RemoveBuildingForPlayer(playerid, 647, 1105.599, -1531.156, 30.968, 0.250);
+    RemoveBuildingForPlayer(playerid, 647, 1137.927, -1537.062, 30.968, 0.250);
+    RemoveBuildingForPlayer(playerid, 647, 1143.787, -1534.703, 30.968, 0.250);
+    RemoveBuildingForPlayer(playerid, 647, 1148.599, -1532.255, 30.968, 0.250);
+    RemoveBuildingForPlayer(playerid, 647, 1097.474, -1523.974, 30.968, 0.250);
+    RemoveBuildingForPlayer(playerid, 647, 1093.421, -1519.828, 30.968, 0.250);
+    RemoveBuildingForPlayer(playerid, 647, 1089.578, -1515.787, 30.968, 0.250);
+    RemoveBuildingForPlayer(playerid, 647, 1087.193, -1510.490, 30.968, 0.250);
+    RemoveBuildingForPlayer(playerid, 647, 1084.968, -1504.421, 30.968, 0.250);
+    RemoveBuildingForPlayer(playerid, 647, 1101.140, -1527.968, 30.968, 0.250);
+    RemoveBuildingForPlayer(playerid, 792, 1128.734, -1518.490, 15.210, 0.250);
+    RemoveBuildingForPlayer(playerid, 647, 1077.859, -1499.865, 30.968, 0.250);
+    RemoveBuildingForPlayer(playerid, 647, 1083.671, -1499.490, 30.968, 0.250);
+    RemoveBuildingForPlayer(playerid, 647, 1153.537, -1529.802, 30.968, 0.250);
+    RemoveBuildingForPlayer(playerid, 647, 1157.818, -1525.484, 30.968, 0.250);
+    RemoveBuildingForPlayer(playerid, 647, 1161.328, -1521.578, 30.968, 0.250);
+    RemoveBuildingForPlayer(playerid, 647, 1165.156, -1517.208, 30.968, 0.250);
+    RemoveBuildingForPlayer(playerid, 647, 1167.781, -1513.177, 30.968, 0.250);
+    RemoveBuildingForPlayer(playerid, 647, 1169.162, -1509.333, 30.968, 0.250);
+    RemoveBuildingForPlayer(playerid, 647, 1170.802, -1503.552, 30.968, 0.250);
+    RemoveBuildingForPlayer(playerid, 762, 1175.359, -1420.187, 19.881, 0.250);
+    RemoveBuildingForPlayer(playerid, 615, 1166.349, -1417.693, 13.953, 0.250);
+    RemoveBuildingForPlayer(playerid, 955, 1154.725, -1460.890, 15.156, 0.250);
 
 
 	//MCDO //
@@ -158,7 +158,7 @@ stock pacificmappings()
 	new HOUSE_INT;
 	new jmid;
 	// NEW MALL BY LAKE
-    jmid = CreateDynamicObject(19322, 1117.585937, -1490.007812, 32.718750, 0.000000, 0.000000, 0.000000, 0, 0, -1, 200.00, 300.00);
+ 	jmid = CreateDynamicObject(19322, 1117.585937, -1490.007812, 32.718750, 0.000000, 0.000000, 0.000000, -1, -1, -1, 300.00, 300.00);
     SetDynamicObjectMaterial(jmid, 8, 3979, "civic01_lan", "crazy paving", 0xFFFFFFFF);
     SetDynamicObjectMaterial(jmid, 9, 3820, "boxhses_sfsx", "stonewall_la", 0xFFFFFFFF);
     jmid = CreateDynamicObject(6051, 1110.328125, -1489.093750, 18.992189, 0.000000, 0.000000, 0.000000, -1, -1, -1, 300.00, 300.00);
