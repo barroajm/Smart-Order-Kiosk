@@ -26,228 +26,198 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 		if(listitem == 0)
         {
         if(!response) return 1;
-        if(Airstriking[playerid] == 1) return
-	 	SendClientMessage(playerid,0xFF0000AA,"Please Wait");
+        if(Airstriking[playerid] == 1) return SendClientMessage(playerid,0xFF0000AA,"Please Wait");
 		new Float:x,Float:y,Float:z;
 		GetPlayerPos(playerid,x,y,z);
 		Airstrike[playerid] = 1;
 		Adromada = CreateObject(14553,x-55,y,z+75,0.000000,0.000000,90);
-        MoveObject(Adromada,x+50,y,z+50,29);
+        MoveObject(Adromada,x+250,y,z+75,29);
         Airstriking[playerid] = 1;
 		SetTimerEx("AirstrikeGo",10000,false,"dfffd",playerid,x,y,z,Airstrike[playerid]);
-		SendClientMessageToAll(0xFF0000AA, "Government: An Airstrike will Occurred!");
 		}
 
 		if(listitem == 1)
         {
         if(!response) return 1;
-        if(Airstriking[playerid] == 1) return
-		SendClientMessage(playerid,0xFF0000AA,"Please Wait");
+        if(Airstriking[playerid] == 1) return SendClientMessage(playerid,0xFF0000AA,"Please Wait");
 		new Float:x,Float:y,Float:z;
 		GetPlayerPos(playerid,x,y,z);
 		Airstrike[playerid] = 2;
-		Adromada = CreateObject(14553,x-55,y,z+50,0.000000,0.000000,90);
-        MoveObject(Adromada,x+50,y,z+50,29);
+		Adromada = CreateObject(14553,x-55,y,z+75,0.000000,0.000000,90);
+        MoveObject(Adromada,x+250,y,z+75,29);
         Airstriking[playerid] = 1;
 		SetTimerEx("AirstrikeGo",10000,false,"dfffd",playerid,x,y,z,Airstrike[playerid]);
-		SendClientMessageToAll(0xFF0000AA, "Government: An Airstrike will Occurred!");
 		}
 
 		if(listitem == 2)
         {
         if(!response) return 1;
-        if(Airstriking[playerid] == 1) return
-		SendClientMessage(playerid,0xFF0000AA,"Please Wait");
+        if(Airstriking[playerid] == 1) return SendClientMessage(playerid,0xFF0000AA,"Please Wait");
 		new Float:x,Float:y,Float:z;
 		GetPlayerPos(playerid,x,y,z);
 		Airstrike[playerid] = 3;
-		Adromada = CreateObject(14553,x-55,y,z+50,0.000000,0.000000,90);
-        MoveObject(Adromada,x+50,y,z+50,29);
+		Adromada = CreateObject(14553,x-55,y,z+75,0.000000,0.000000,90);
+        MoveObject(Adromada,x+250,y,z+75,29);
         Airstriking[playerid] = 1;
 		SetTimerEx("AirstrikeGo",10000,false,"dfffd",playerid,x,y,z,Airstrike[playerid]);
-        SendClientMessageToAll(0xFF0000AA, "Government: An Airstrike will Occurred!");
 		}
 
 		if(listitem == 3)
         {
         if(!response) return 4;
-        if(Airstriking[playerid] == 1) return
-		SendClientMessage(playerid,0xFF0000AA,"Please Wait");
+        if(Airstriking[playerid] == 1) return SendClientMessage(playerid,0xFF0000AA,"Please Wait");
 		new Float:x,Float:y,Float:z;
 		GetPlayerPos(playerid,x,y,z);
 		Airstrike[playerid] = 4;
-		Adromada = CreateObject(14553,x-55,y,z+50,0.000000,0.000000,90);
-        MoveObject(Adromada,x+50,y,z+50,29);
+		Adromada = CreateObject(14553,x-55,y,z+75,0.000000,0.000000,90);
+        MoveObject(Adromada,x+250,y,z+75,29);
         Airstriking[playerid] = 1;
 		SetTimerEx("AirstrikeGo",10000,false,"dfffd",playerid,x,y,z,Airstrike[playerid]);
-		SendClientMessageToAll(0xFF0000AA, "Government: An Airstrike will Occurred!");
 		}
 
 		if(listitem == 4)
         {
         if(!response) return 1;
-        if(Airstriking[playerid] == 1) return
-		SendClientMessage(playerid,0xFF0000AA,"Please Wait");
+        if(Airstriking[playerid] == 1) return SendClientMessage(playerid,0xFF0000AA,"Please Wait");
 		new Float:x,Float:y,Float:z;
 		GetPlayerPos(playerid,x,y,z);
 		Airstrike[playerid] = 5;
 		new Float:ang;
 		GetPlayerFacingAngle(playerid,ang);
-		Adromada = CreateObject(14553,x-55,y,z+50,0.000000,0.000000,90);
-        MoveObject(Adromada,x+50,y,z+50,29);
+		Adromada = CreateObject(14553,x-55,y,z+75,0.000000,0.000000,90);
+        MoveObject(Adromada,x+250,y,z+75,29);
         Airstriking[playerid] = 1;
 		SetTimerEx("AirstrikeGo",10000,false,"dfffd",playerid,x,y,z,Airstrike[playerid]);
-		SendClientMessageToAll(0xFF0000AA, "Government: An Nuclear Bomb has been Launch!");
 		}
 
 		if(listitem == 5)
         {
         if(!response) return 1;
-        if(Airstriking[playerid] == 1) return
-		SendClientMessage(playerid,0xFF0000AA,"Please Wait");
+        if(Airstriking[playerid] == 1) return SendClientMessage(playerid,0xFF0000AA,"Please Wait");
 		new Float:x,Float:y,Float:z;
 		GetPlayerPos(playerid,x,y,z);
 		Airstrike[playerid] = 6;
-  		Adromada = CreateObject(14553,x-55,y,z+50,0.000000,0.000000,90);
-        MoveObject(Adromada,x+50,y,z+50,29);
+  		Adromada = CreateObject(14553,x-55,y,z+75,0.000000,0.000000,90);
+        MoveObject(Adromada,x+250,y,z+75,29);
         Airstriking[playerid] = 1;
 		SetTimerEx("AirstrikeGo",10000,false,"dfffd",playerid,x,y,z,Airstrike[playerid]);
-		SendClientMessageToAll(0xFF0000AA, "Government: An Airstrike will Occurred!");
 		}
 
 		if(listitem == 6)
 		{
         if(!response) return 1;
-        if(Airstriking[playerid] == 1) return
-		SendClientMessage(playerid,0xFF0000AA,"Please Wait");
+        if(Airstriking[playerid] == 1) return SendClientMessage(playerid,0xFF0000AA,"Please Wait");
 		new Float:x,Float:y,Float:z;
 		GetPlayerPos(playerid,x,y,z);
 		Airstrike[playerid] = 7;
-  		Adromada = CreateObject(14553,x-55,y,z+150,0.000000,0.000000,90);
-        MoveObject(Adromada,x+150,y,z+150,29);
+  		Adromada = CreateObject(14553,x-55,y,z+75,0.000000,0.000000,90);
+        MoveObject(Adromada,x+250,y,z+75,29);
         Airstriking[playerid] = 1;
 		SetTimerEx("AirstrikeGo",10000,false,"dfffd",playerid,x,y,z,Airstrike[playerid]);
-		SendClientMessageToAll(0xFF0000AA, "Government: An Airstrike will Occurred!");
 		}
 
 		if(listitem == 7)
         {
         if(!response) return 1;
-        if(Airstriking[playerid] == 1) return
-		SendClientMessage(playerid,0xFF0000AA,"Please Wait");
+        if(Airstriking[playerid] == 1) return SendClientMessage(playerid,0xFF0000AA,"Please Wait");
 		new Float:x,Float:y,Float:z;
 		GetPlayerPos(playerid,x,y,z);
 		Airstrike[playerid] = 8;
-  		Adromada = CreateObject(14553,x,y,z+150,0.000000,0.000000,90);
-        MoveObject(Adromada,x+150,y,z+150,26);
+  		Adromada = CreateObject(14553,x,y,z+75,0.000000,0.000000,90);
+        MoveObject(Adromada,x+250,y,z+75,26);
         Airstriking[playerid] = 1;
 		SetTimerEx("AirstrikeGo",10000,false,"dfffd",playerid,x,y,z,Airstrike[playerid]);
-		SendClientMessageToAll(0xFF0000AA, "Government: An Nuclear Bomb has been Launch!");
 		}
 
 		if(listitem == 8)
         {
         if(!response) return 1;
-        if(Airstriking[playerid] == 1) return
-		SendClientMessage(playerid,0xFF0000AA,"Please Wait");
+        if(Airstriking[playerid] == 1) return SendClientMessage(playerid,0xFF0000AA,"Please Wait");
 		new Float:x,Float:y,Float:z;
 		GetPlayerPos(playerid,x,y,z);
 		Airstrike[playerid] = 9;
-  		Adromada = CreateObject(14553,x-55,y,z+150,0.000000,0.000000,90);
-        MoveObject(Adromada,x+150,y,z+150,29);
+  		Adromada = CreateObject(14553,x-55,y,z+75,0.000000,0.000000,90);
+        MoveObject(Adromada,x+250,y,z+75,29);
         Airstriking[playerid] = 1;
 		SetTimerEx("AirstrikeGo",10000,false,"dfffd",playerid,x,y,z,Airstrike[playerid]);
-		SendClientMessageToAll(0xFF0000AA, "Government: An Airstrike will Occurred!");
 		}
 
 		if(listitem == 9)
         {
         if(!response) return 1;
-        if(Airstriking[playerid] == 1) return
-		SendClientMessage(playerid,0xFF0000AA,"Please Wait");
+        if(Airstriking[playerid] == 1) return SendClientMessage(playerid,0xFF0000AA,"Please Wait");
 		new Float:x,Float:y,Float:z;
 		GetPlayerPos(playerid,x,y,z);
 		Airstrike[playerid] = 10;
-  		Adromada = CreateObject(14553,x-55,y,z+150,0.000000,0.000000,90);
-        MoveObject(Adromada,x+150,y,z+150,29);
+  		Adromada = CreateObject(14553,x-55,y,z+75,0.000000,0.000000,90);
+        MoveObject(Adromada,x+250,y,z+75,29);
         Airstriking[playerid] = 1;
 		SetTimerEx("AirstrikeGo",10000,false,"dfffd",playerid,x,y,z,Airstrike[playerid]);
-		SendClientMessageToAll(0xFF0000AA, "Government: An Airstrike will Occurred!");
 		}
 
 		if(listitem == 10)
 	  	{
         if(!response) return 1;
-        if(Airstriking[playerid] == 1) return
-		SendClientMessage(playerid,0xFF0000AA,"Please Wait");
+        if(Airstriking[playerid] == 1) return SendClientMessage(playerid,0xFF0000AA,"Please Wait");
 		new Float:x,Float:y,Float:z;
 		GetPlayerPos(playerid,x,y,z);
 		Airstrike[playerid] = 11;
-  		Adromada = CreateObject(14553,x-50,y,z+150,0.000000,40.000000,90);
-        MoveObject(Adromada,x+150,y,z+50,29);
+  		Adromada = CreateObject(14553,x-50,y,z+75,0.000000,40.000000,90);
+        MoveObject(Adromada,x+250,y,z+75,29);
         Airstriking[playerid] = 1;
 		SetTimerEx("AirstrikeGo",10000,false,"dfffd",playerid,x,y,z,Airstrike[playerid]);
-		SendClientMessageToAll(0xFF0000AA, "Government: An Airstrike will Occurred!");
 		}
 
 		if(listitem == 11)
 	  	{
         if(!response) return 1;
-        if(Airstriking[playerid] == 1) return
-		SendClientMessage(playerid,0xFF0000AA,"Please Wait");
+        if(Airstriking[playerid] == 1) return SendClientMessage(playerid,0xFF0000AA,"Please Wait");
 		new Float:x,Float:y,Float:z;
 		GetPlayerPos(playerid,x,y,z);
 		Airstrike[playerid] = 12;
-  		Adromada = CreateObject(354,x,y,z+150,0.000000,0.000000,0.000000);
-        MoveObject(Adromada,x,y,z+150,29);
+  		Adromada = CreateObject(354,x,y,z+75,0.000000,0.000000,0.000000);
+        MoveObject(Adromada,x,y,z,29);
         Airstriking[playerid] = 1;
 		SetTimerEx("AirstrikeGo",10000,false,"dfffd",playerid,x,y,z,Airstrike[playerid]);
-		SendClientMessageToAll(0xFF0000AA, "Government: An Airstrike will Occurred!");
 		}
 
 		if(listitem == 12)
 	  	{
         if(!response) return 1;
-        if(Airstriking[playerid] == 1) return
-		SendClientMessage(playerid,0xFF0000AA,"Please Wait");
+        if(Airstriking[playerid] == 1) return SendClientMessage(playerid,0xFF0000AA,"Please Wait");
 		new Float:x,Float:y,Float:z;
 		GetPlayerPos(playerid,x,y,z);
 		Airstrike[playerid] = 13;
-  		Adromada = CreateObject(354,x,y,z+150,0.000000,0.000000,0.000000);
-        MoveObject(Adromada,x,y,z+150,29);
+  		Adromada = CreateObject(354,x,y,z+75,0.000000,0.000000,0.000000);
+        MoveObject(Adromada,x,y,z,29);
         Airstriking[playerid] = 1;
 		SetTimerEx("AirstrikeGo",10000,false,"dfffd",playerid,x,y,z,Airstrike[playerid]);
-		SendClientMessageToAll(0xFF0000AA, "Government: An Airstrike will Occurred!");
 		}
 
 		if(listitem == 13)
 	  	{
         if(!response) return 1;
-        if(Airstriking[playerid] == 1) return
-		SendClientMessage(playerid,0xFF0000AA,"Please Wait");
+        if(Airstriking[playerid] == 1) return SendClientMessage(playerid,0xFF0000AA,"Please Wait");
 		new Float:x,Float:y,Float:z;
 		GetPlayerPos(playerid,x,y,z);
 		Airstrike[playerid] = 14;
-  		Adromada = CreateObject(354,x,y,z+150,0.000000,0.000000,0.000000);
-        MoveObject(Adromada,x,y,z+150,30);
+  		Adromada = CreateObject(354,x,y,z+75,0.000000,0.000000,0.000000);
+        MoveObject(Adromada,x,y,z,30);
         Airstriking[playerid] = 1;
 		SetTimerEx("AirstrikeGo",10000,false,"dfffd",playerid,x,y,z,Airstrike[playerid]);
-		SendClientMessageToAll(0xFF0000AA, "Government: An Airstrike will Occurred!");
 		}
 
 		if(listitem == 14)
 	  	{
         if(!response) return 1;
-        if(Airstriking[playerid] == 1) return
-		SendClientMessage(playerid,0xFF0000AA,"Please Wait");
+        if(Airstriking[playerid] == 1) return SendClientMessage(playerid,0xFF0000AA,"Please Wait");
 		new Float:x,Float:y,Float:z;
 		GetPlayerPos(playerid,x,y,z);
 		Airstrike[playerid] = 15;
-  		Adromada = CreateObject(354,x,y,z+150,0.000000,0.000000,0.000000);
-        MoveObject(Adromada,x,y,z+150,30);
+  		Adromada = CreateObject(354,x,y,z+75,0.000000,0.000000,0.000000);
+        MoveObject(Adromada,x,y,z,30);
         Airstriking[playerid] = 1;
 		SetTimerEx("AirstrikeGo",10000,false,"dfffd",playerid,x,y,z,Airstrike[playerid]);
-		SendClientMessageToAll(0xFF0000AA, "Government: An Airstrike will Occurred!");
 		}
 	}
 
@@ -330,7 +300,7 @@ public AirstrikeGo2(playerid,Float:x,Float:y,Float:z,type)
 	    CreateExplosion(x+8,y+6,z,6,5);
 	    CreateExplosion(x-12,y,z,6,5);
 	    CreateExplosion(x+12,y+6,z,6,5);
-	    SetTimerEx("AirstrikeGo3",10000,false,"dfffd",playerid,x,y,z,1);
+	    SetTimerEx("AirstrikeGo3",2000,false,"dfffd",playerid,x,y,z,1);
 
   	}
 
@@ -340,7 +310,7 @@ public AirstrikeGo2(playerid,Float:x,Float:y,Float:z,type)
 	    CreateExplosion(x-4,y,z,6,5);
 	    CreateExplosion(x+4,y+2,z+2,6,5);
 	    CreateExplosion(x-4,y+2,z+2,6,5);
-	    SetTimerEx("AirstrikeGo3",10000,false,"dfffd",playerid,x,y,z,2);
+	    SetTimerEx("AirstrikeGo3",2000,false,"dfffd",playerid,x,y,z,2);
 
   	}
 
@@ -364,7 +334,7 @@ public AirstrikeGo2(playerid,Float:x,Float:y,Float:z,type)
 	    CreateExplosion(x+28,y,z+7,6,5);
 	    CreateExplosion(x+30,y,z+7,6,5);
 	    CreateExplosion(x+32,y,z+7,6,5);
-	    SetTimerEx("AirstrikeGo3",20000,false,"dfffd",playerid,x,y,z,3);
+	    SetTimerEx("AirstrikeGo3",2000,false,"dfffd",playerid,x,y,z,3);
 	}
 
 	if(type == 5)
@@ -393,7 +363,7 @@ public AirstrikeGo2(playerid,Float:x,Float:y,Float:z,type)
      	CreateExplosion(x+32,y+1,z,6,5);
 	    CreateExplosion(x+32,y+2,z,6,5);
 	    CreateExplosion(x+32,y+3,z,6,5);
-	    SetTimerEx("AirstrikeGo3",20000,false,"dfffd",playerid,x,y,z,4);
+	    SetTimerEx("AirstrikeGo3",2000,false,"dfffd",playerid,x,y,z,4);
 
 	}
 	return 1;
@@ -493,7 +463,7 @@ public AirstrikeGo(playerid,Float:x,Float:y,Float:z,type)
 	    CreateExplosion(x,y+2,z,6,5);
      	CreateExplosion(x,y+3,z,6,5);
      	CreateExplosion(x,y+4,z,6,5);
-     	SetTimerEx("AirstrikeGo2",20000,false,"dfffd",playerid,x,y,z,1);
+     	SetTimerEx("AirstrikeGo2",3000,false,"dfffd",playerid,x,y,z,1);
 	}
 
 	if(type == 7)
@@ -506,7 +476,7 @@ public AirstrikeGo(playerid,Float:x,Float:y,Float:z,type)
      	CreateExplosion(x-4,y,z,6,5);
    		CreateExplosion(x+6,y,z,6,5);
      	CreateExplosion(x-6,y,z,6,5);
-     	SetTimerEx("AirstrikeGo2",20000,false,"dfffd",playerid,x,y,z,2);
+     	SetTimerEx("AirstrikeGo2",2000,false,"dfffd",playerid,x,y,z,2);
 	}
 
 	if(type == 8)
@@ -515,7 +485,7 @@ public AirstrikeGo(playerid,Float:x,Float:y,Float:z,type)
 	    DestroyObject(Adromada);
 	    CreateExplosion(x+2,y,z,6,5);
 	    CreateExplosion(x-2,y,z,6,5);
-     	SetTimerEx("AirstrikeGo2",20000,false,"dfffd",playerid,x,y,z,3);
+     	SetTimerEx("AirstrikeGo2",2000,false,"dfffd",playerid,x,y,z,3);
 	}
 
 	if(type == 9)
@@ -570,7 +540,7 @@ public AirstrikeGo(playerid,Float:x,Float:y,Float:z,type)
 	    CreateExplosion(x+28,y-2,z+15,6,5);
 	    CreateExplosion(x+30,y-3,z+15,6,5);
 	    CreateExplosion(x+32,y-4,z+15,6,5);
-	    SetTimerEx("AirstrikeGo2",20000,false,"dfffd",playerid,x,y,z,4);
+	    SetTimerEx("AirstrikeGo2",2000,false,"dfffd",playerid,x,y,z,4);
 	}
 
 	if(type == 12)
