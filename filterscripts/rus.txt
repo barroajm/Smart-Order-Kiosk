@@ -1,4 +1,2 @@
-C:\Users\Lake\Documents\GitHub\jmcb\filterscripts\BusSystem.pwn(374) : íåïðàâèëüíàÿ òàáóëÿöèÿ
-C:\Users\Lake\Documents\GitHub\jmcb\filterscripts\BusSystem.pwn(422) : íåïðàâèëüíàÿ òàáóëÿöèÿ
 Pawn compiler 3.2.3664	 	 	Copyright (c) 1997-2016, ITB CompuPhase
 
