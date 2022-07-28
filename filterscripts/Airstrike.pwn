@@ -34,6 +34,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
         MoveObject(Adromada,x+250,y,z+75,29);
         Airstriking[playerid] = 1;
 		SetTimerEx("AirstrikeGo",10000,false,"dfffd",playerid,x,y,z,Airstrike[playerid]);
+  		SendClientMessageToAll(0xFF0000AA, "MILITARY: Military Airstrike has been Deployed!");
 		}
 
 		if(listitem == 1)
@@ -47,6 +48,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
         MoveObject(Adromada,x+250,y,z+75,29);
         Airstriking[playerid] = 1;
 		SetTimerEx("AirstrikeGo",10000,false,"dfffd",playerid,x,y,z,Airstrike[playerid]);
+		SendClientMessageToAll(0xFF0000AA, "MILITARY: Military Airstrike has been Deployed!");
 		}
 
 		if(listitem == 2)
@@ -60,6 +62,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
         MoveObject(Adromada,x+250,y,z+75,29);
         Airstriking[playerid] = 1;
 		SetTimerEx("AirstrikeGo",10000,false,"dfffd",playerid,x,y,z,Airstrike[playerid]);
+		SendClientMessageToAll(0xFF0000AA, "MILITARY: Military Airstrike has been Deployed!");
 		}
 
 		if(listitem == 3)
@@ -73,6 +76,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
         MoveObject(Adromada,x+250,y,z+75,29);
         Airstriking[playerid] = 1;
 		SetTimerEx("AirstrikeGo",10000,false,"dfffd",playerid,x,y,z,Airstrike[playerid]);
+		SendClientMessageToAll(0xFF0000AA, "MILITARY: Military Airstrike has been Deployed!");
 		}
 
 		if(listitem == 4)
@@ -88,6 +92,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
         MoveObject(Adromada,x+250,y,z+75,29);
         Airstriking[playerid] = 1;
 		SetTimerEx("AirstrikeGo",10000,false,"dfffd",playerid,x,y,z,Airstrike[playerid]);
+		SendClientMessageToAll(0xFF0000AA, "WARNING: WARNING WARNING WARNING NUCLEAR Has been Launch!");
 		}
 
 		if(listitem == 5)
@@ -101,6 +106,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
         MoveObject(Adromada,x+250,y,z+75,29);
         Airstriking[playerid] = 1;
 		SetTimerEx("AirstrikeGo",10000,false,"dfffd",playerid,x,y,z,Airstrike[playerid]);
+		SendClientMessageToAll(0xFF0000AA, "MILITARY: Military Airstrike has been Deployed!");
 		}
 
 		if(listitem == 6)
@@ -114,6 +120,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
         MoveObject(Adromada,x+250,y,z+75,29);
         Airstriking[playerid] = 1;
 		SetTimerEx("AirstrikeGo",10000,false,"dfffd",playerid,x,y,z,Airstrike[playerid]);
+		SendClientMessageToAll(0xFF0000AA, "MILITARY: Military Airstrike has been Deployed!");
 		}
 
 		if(listitem == 7)
@@ -127,6 +134,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
         MoveObject(Adromada,x+250,y,z+75,26);
         Airstriking[playerid] = 1;
 		SetTimerEx("AirstrikeGo",10000,false,"dfffd",playerid,x,y,z,Airstrike[playerid]);
+        SendClientMessageToAll(0xFF0000AA, "WARNING: WARNING WARNING WARNING NUCLEAR Has been Launch!");
 		}
 
 		if(listitem == 8)
@@ -140,6 +148,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
         MoveObject(Adromada,x+250,y,z+75,29);
         Airstriking[playerid] = 1;
 		SetTimerEx("AirstrikeGo",10000,false,"dfffd",playerid,x,y,z,Airstrike[playerid]);
+		SendClientMessageToAll(0xFF0000AA, "WARNING: WARNING WARNING WARNING NUCLEAR Has been Launch!");
 		}
 
 		if(listitem == 9)
@@ -153,6 +162,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
         MoveObject(Adromada,x+250,y,z+75,29);
         Airstriking[playerid] = 1;
 		SetTimerEx("AirstrikeGo",10000,false,"dfffd",playerid,x,y,z,Airstrike[playerid]);
+		SendClientMessageToAll(0xFF0000AA, "MILITARY: Military Airstrike has been Deployed!");
 		}
 
 		if(listitem == 10)
@@ -166,6 +176,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
         MoveObject(Adromada,x+250,y,z+75,29);
         Airstriking[playerid] = 1;
 		SetTimerEx("AirstrikeGo",10000,false,"dfffd",playerid,x,y,z,Airstrike[playerid]);
+		SendClientMessageToAll(0xFF0000AA, "MILITARY: Military Airstrike has been Deployed!");
 		}
 
 		if(listitem == 11)
@@ -179,6 +190,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
         MoveObject(Adromada,x,y,z,29);
         Airstriking[playerid] = 1;
 		SetTimerEx("AirstrikeGo",10000,false,"dfffd",playerid,x,y,z,Airstrike[playerid]);
+		SendClientMessageToAll(0xFF0000AA, "WARNING: WARNING WARNING WARNING NUCLEAR Has been Launch!");
 		}
 
 		if(listitem == 12)
@@ -192,6 +204,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
         MoveObject(Adromada,x,y,z,29);
         Airstriking[playerid] = 1;
 		SetTimerEx("AirstrikeGo",10000,false,"dfffd",playerid,x,y,z,Airstrike[playerid]);
+		SendClientMessageToAll(0xFF0000AA, "MILITARY: Military Airstrike has been Deployed!");
 		}
 
 		if(listitem == 13)
@@ -205,6 +218,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
         MoveObject(Adromada,x,y,z,30);
         Airstriking[playerid] = 1;
 		SetTimerEx("AirstrikeGo",10000,false,"dfffd",playerid,x,y,z,Airstrike[playerid]);
+		SendClientMessageToAll(0xFF0000AA, "MILITARY: Military Airstrike has been Deployed!");
 		}
 
 		if(listitem == 14)
@@ -218,6 +232,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
         MoveObject(Adromada,x,y,z,30);
         Airstriking[playerid] = 1;
 		SetTimerEx("AirstrikeGo",10000,false,"dfffd",playerid,x,y,z,Airstrike[playerid]);
+		SendClientMessageToAll(0xFF0000AA, "MILITARY: Military Airstrike has been Deployed!");
 		}
 	}
 
