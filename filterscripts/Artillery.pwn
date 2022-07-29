@@ -122,7 +122,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 		if(strcmp(cmd, "/addartillery", true) == 0)
   {
-			if(IsPlayerAdmin(playerid) )
+			if(IsPlayerConnected(playerid))
    {
 				new Float:px;
 			    new Float:py;
@@ -137,7 +137,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 		}
 		if(strcmp(cmd, "/removeartillery", true) == 0)
   {
-      	if(IsPlayerAdmin(playerid) )
+      	if(IsPlayerConnected(playerid))
 			{
 		        new tmp[32];
 				tmp = strtok(cmdtext, idx);
@@ -151,7 +151,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 			else
 				SendClientMessage(playerid, COLOR_RED, "This is an Admin-Only command!");
 
- 			return 1;
 		}
 
 		if(strcmp(cmd, "/sscan", true) == 0)
