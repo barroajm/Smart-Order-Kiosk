@@ -621,7 +621,7 @@ public FireStationaryArtillery(playerid, base)
 public MoveBomb(base, id)
 {
 	lastcurx[base][id] = xo[base][id];
-	sp[base][id] = floatsqroot( floatpower(speedo[base][id], 2) - 2 * speedo[base][id] * g * (flighttime[base][id] + 2 * atime) * floatsin(alpha[base][id], degrees) + floatpower(g, 2) * floatpower((flighttime[base][id] + 4 * atime), 2));
+	sp[base][id] = floatsqroot( floatpower(speedo[base][id], 2) - 2 * speedo[base][id] * g * (flighttime[base][id] + 2 * atime) * floatsin(alpha[base][id], degrees) + floatpower(g, 2) * floatpower((flighttime[base][id] + 2 * atime), 2));
 	xo[base][id] = speedo[base][id] * floatcos(alpha[base][id], degrees) * (flighttime[base][id] + 2 * atime);
 	yo[base][id] = (-1) * (g / 2) * floatpower((flighttime[base][id] + 2 * atime), 2) + speedo[base][id] * floatsin(alpha[base][id], degrees) * (flighttime[base][id] + 2 * atime);
 
