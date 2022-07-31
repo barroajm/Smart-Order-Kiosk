@@ -2,9 +2,5 @@ modular\mcrpmap.pwn(154) : íåïðàâèëüíàÿ òàáóëÿöèÿ
 modular\mcrpmap.pwn(165) : íåïðàâèëüíàÿ òàáóëÿöèÿ
 modular\mcrpmap.pwn(11964) : íåïðàâèëüíàÿ òàáóëÿöèÿ
 modular\mcrpmap.pwn(12298) : íåïðàâèëüíàÿ òàáóëÿöèÿ
-C:\Users\Lake\Documents\GitHub\jmcb\gamemodes\v2morgancity.pwn(47885) : èäåíòèôèêàòîðó ïðèñâîåíî çíà÷åíèå, íî îí íå èñïîëüçóåòñÿ: "vehicleid"
-C:\Users\Lake\Documents\GitHub\jmcb\gamemodes\v2morgancity.pwn(47896) : èäåíòèôèêàòîðó ïðèñâîåíî çíà÷åíèå, íî îí íå èñïîëüçóåòñÿ: "vehicleid"
-C:\Users\Lake\Documents\GitHub\jmcb\gamemodes\v2morgancity.pwn(72063) : íåïðàâèëüíàÿ òàáóëÿöèÿ
-C:\Users\Lake\Documents\GitHub\jmcb\gamemodes\v2morgancity.pwn(72293) : íåïðàâèëüíàÿ òàáóëÿöèÿ
 Pawn compiler 3.2.3664	 	 	Copyright (c) 1997-2016, ITB CompuPhase
 
