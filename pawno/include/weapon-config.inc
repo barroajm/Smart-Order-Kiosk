@@ -469,17 +469,17 @@ static Float:s_WeaponDamage[] = {
 	1.0, // 13 - Vibrator 2
 	1.0, // 14 - Flowers
 	1.0, // 15 - Cane
-	82.5, // 16 - Grenade
+	99.5, // 16 - Grenade
 	0.0, // 17 - Teargas
 	3.0, // 18 - Molotov
 	9.9, // 19 - Vehicle M4 (custom)
 	46.2, // 20 - Vehicle minigun (custom)
 	0.0, // 21
 	8.25, // 22 - Colt 45
-	13.2, // 23 - Silenced
-	46.2, // 24 - Deagle
+	15.2, // 23 - Silenced
+	32.0, // 24 - Deagle
 	3.0, // 25 - Shotgun
-	2.3, // 26 - Sawed-off
+	1.5, // 26 - Sawed-off
 	2.0, // 27 - Spas
 	6.0, // 28 - UZI
 	8.1, // 29 - MP5
@@ -491,8 +491,8 @@ static Float:s_WeaponDamage[] = {
 	82.5, // 35 - Rocket launcher
 	82.5, // 36 - Heatseeker
 	1.0, // 37 - Flamethrower
-	2.0, // 38 - Minigun
-	82.5, // 39 - Satchel
+	1.0, // 38 - Minigun
+	99.5, // 39 - Satchel
 	0.0, // 40 - Detonator
 	0.33, // 41 - Spraycan
 	0.33, // 42 - Fire extinguisher
