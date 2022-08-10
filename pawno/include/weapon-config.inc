@@ -476,7 +476,7 @@ static Float:s_WeaponDamage[] = {
 	46.2, // 20 - Vehicle minigun (custom)
 	0.0, // 21
 	8.25, // 22 - Colt 45
-	15.2, // 23 - Silenced
+	40.0, // 23 - Silenced
 	32.0, // 24 - Deagle
 	3.0, // 25 - Shotgun
 	1.5, // 26 - Sawed-off
