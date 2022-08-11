@@ -171,7 +171,7 @@ stock pacificmappings()
 	new HOUSE_INT;
 	new jmid;
 	// NEW MALL BY LAKE
- 	jmid = CreateDynamicObject(19322, 1117.585937, -1490.007812, 32.718750, 0.000000, 0.000000, 0.000000, -1, -1, -1, 500.00, 500.00);
+ 	jmid = CreateObject(19322, 1117.585937, -1490.007812, 32.718750, 0.000000, 0.000000, 0.000000);
     SetDynamicObjectMaterial(jmid, 8, 3979, "civic01_lan", "crazy paving", 0xFFFFFFFF);
     SetDynamicObjectMaterial(jmid, 9, 3820, "boxhses_sfsx", "stonewall_la", 0xFFFFFFFF);
     jmid = CreateDynamicObject(6051, 1110.328125, -1489.093750, 18.992189, 0.000000, 0.000000, 0.000000, -1, -1, -1, 300.00, 300.00);
