@@ -5,3 +5,6 @@
 [07/15/22 10:11:03] [plugins/discord-connector] Error while shutting down SSL on HTTP connection: An existing connection was forcibly closed by the remote host (10054)
 [07/15/22 10:16:32] [plugins/discord-connector] Error while shutting down SSL on HTTP connection: An existing connection was forcibly closed by the remote host (10054)
 [07/15/22 11:30:06] [plugins/discord-connector] Error while shutting down SSL on HTTP connection: An existing connection was forcibly closed by the remote host (10054)
+[08/12/22 11:25:34] [plugins/discord-connector] Error while shutting down SSL on HTTP connection: An existing connection was forcibly closed by the remote host (10054)
+[08/12/22 11:35:42] [plugins/discord-connector] Error while shutting down SSL on HTTP connection: An existing connection was forcibly closed by the remote host (10054)
+[08/12/22 12:48:05] [plugins/discord-connector] Error while shutting down SSL on HTTP connection: An existing connection was forcibly closed by the remote host (10054)

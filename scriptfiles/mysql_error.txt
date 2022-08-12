@@ -26578,3 +26578,129 @@ Callback:
 Query: UPDATE users SET bind5 = 'NULL' WHERE uid = 1
 [!] Unknown column 'bind5' in 'field list'
 
+[Aug. 12, 2022 7:05 PM]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM `impoundlots`
+[!] Table 'morgan.impoundlots' doesn't exist
+
+[Aug. 12, 2022 7:11 PM]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM `impoundlots`
+[!] Table 'morgan.impoundlots' doesn't exist
+
+[Aug. 12, 2022 7:12 PM]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM `impoundlots`
+[!] Table 'morgan.impoundlots' doesn't exist
+
+[Aug. 12, 2022 7:20 PM]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM `impoundlots`
+[!] Table 'morgan.impoundlots' doesn't exist
+
+[Aug. 12, 2022 7:46 PM]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM `impoundlots`
+[!] Table 'morgan.impoundlots' doesn't exist
+
+[Aug. 12, 2022 7:51 PM]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM `impoundlots`
+[!] Table 'morgan.impoundlots' doesn't exist
+
+[Aug. 12, 2022 7:55 PM]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM `impoundlots`
+[!] Table 'morgan.impoundlots' doesn't exist
+
+[Aug. 12, 2022 7:58 PM]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM `impoundlots`
+[!] Table 'morgan.impoundlots' doesn't exist
+
+[Aug. 12, 2022 8:03 PM]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM `impoundlots`
+[!] Table 'morgan.impoundlots' doesn't exist
+
+[Aug. 12, 2022 8:13 PM]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM `impoundlots`
+[!] Table 'morgan.impoundlots' doesn't exist
+
+[Aug. 12, 2022 8:19 PM]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM `impoundlots`
+[!] Table 'morgan.impoundlots' doesn't exist
+
+[Aug. 12, 2022 8:22 PM]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM `impoundlots`
+[!] Table 'morgan.impoundlots' doesn't exist
+
+[Aug. 12, 2022 8:24 PM]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM `impoundlots`
+[!] Table 'morgan.impoundlots' doesn't exist
+
+[Aug. 12, 2022 8:36 PM]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM `impoundlots`
+[!] Table 'morgan.impoundlots' doesn't exist
+
+[Aug. 12, 2022 8:39 PM]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM `impoundlots`
+[!] Table 'morgan.impoundlots' doesn't exist
+
+[Aug. 12, 2022 8:40 PM]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM `impoundlots`
+[!] Table 'morgan.impoundlots' doesn't exist
+
+[Aug. 12, 2022 8:50 PM]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM `impoundlots`
+[!] Table 'morgan.impoundlots' doesn't exist
+
+[Aug. 12, 2022 8:53 PM]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM `impoundlots`
+[!] Table 'morgan.impoundlots' doesn't exist
+
+[Aug. 12, 2022 8:58 PM]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM `impoundlots`
+[!] Table 'morgan.impoundlots' doesn't exist
+
+[Aug. 12, 2022 9:05 PM]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM `impoundlots`
+[!] Table 'morgan.impoundlots' doesn't exist
+
+[Aug. 12, 2022 9:07 PM]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM `impoundlots`
+[!] Table 'morgan.impoundlots' doesn't exist
+
