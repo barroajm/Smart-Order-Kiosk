@@ -26,17 +26,14 @@ namespace Smart_Order_Kiosk
         }
 
         stItem Item = new stItem();
-        stItem[] arrItems = new stItem[100];
-        int ItemsCount = 0;
         int OrderSummaryTotal = 0;
+
         void ResetOrder()
         {
-        
             cbItems.SelectedIndex = 0;
             nudQuantity.Value = 1;
             StoreItemInfo(cbItems.SelectedItem.ToString(), (int)nudQuantity.Value);
-        
-
+       
        }
 
         void ResetOrderSummary()
@@ -44,8 +41,6 @@ namespace Smart_Order_Kiosk
             lvOrderSummary.Items.Clear();
        
             lblOrderSummaryTotal.Text = "$ 0";
-
-            ItemsCount = 0;
 
             pnFullInfo.Visible = false;
         }
@@ -131,15 +126,9 @@ namespace Smart_Order_Kiosk
             lblOrderSummaryTotal.Text = $"$ { OrderSummaryTotal}";
         }
 
-        void AddItemToArr()
-        {
-            arrItems[ItemsCount] = Item;
-            ItemsCount++;
-        }
+     
         void AddItemToListView()
         {
-
-            AddItemToArr();
             ListViewItem ListItem = new ListViewItem(Item.ItemName);
             ListItem.SubItems.Add(Item.Quantity.ToString());
             ListItem.SubItems.Add(Item.ItemPrice.ToString());
@@ -150,6 +139,7 @@ namespace Smart_Order_Kiosk
 
             OrderSummaryTotal += Item.TotalPrice;
             UpdateOrderSummaryTotal();
+            MessageBox.Show("Order added successfully");
         }
 
         void ShowOrderConfirmed()
@@ -187,29 +177,11 @@ namespace Smart_Order_Kiosk
             
         }
 
-        void RemoveItemFromArray(string ItemName)
-        {
-            stItem[] TempArr = new stItem[100];
-            int arrlength = 0;
-            for(int i=0;i < ItemsCount;i++)
-            {
-                if(arrItems[i].ItemName != ItemName)
-                {
-                    TempArr[arrlength] = arrItems[i];
-                    arrlength++;
-                }
-            }
-
-
-            arrItems = TempArr;
-            ItemsCount--;
-        }
         
         void RemoveItem()
         {
             if (lvOrderSummary.SelectedItems.Count>0)
             {
-                RemoveItemFromArray(lvOrderSummary.SelectedItems[0].Text);
                 OrderSummaryTotal -= Convert.ToInt32(lvOrderSummary.SelectedItems[0].SubItems[3].Text);
                 lvOrderSummary.Items.Remove(lvOrderSummary.SelectedItems[0]);
                 UpdateOrderSummaryTotal();
@@ -256,9 +228,10 @@ namespace Smart_Order_Kiosk
         }
 
    
-
         private void btnConfirmOrder_Click(object sender, EventArgs e)
         {
+            if (lvOrderSummary.Items.Count == 0) return;
+
             ShowOrderConfirmed();
             ResetOrderSummary();
         }
@@ -280,7 +253,6 @@ namespace Smart_Order_Kiosk
         }
 
      
-
         private void removeItemToolStripMenuItem_Click(object sender, EventArgs e)
         {
             
@@ -288,8 +260,8 @@ namespace Smart_Order_Kiosk
             {
                 RemoveItem();
             }
-
-         
+          
+     
         }
 
 
@@ -306,11 +278,22 @@ namespace Smart_Order_Kiosk
                 else
                 {
                     lvOrderSummary.SelectedItems.Clear();
+                
                 }
             }
 
         }
 
-       
+        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+            if (lvOrderSummary.SelectedItems.Count == 0)
+            {
+                removeItemToolStripMenuItem.Enabled = false;
+            }
+            else
+            {
+                removeItemToolStripMenuItem.Enabled = true;
+            }
+        }
     }
 }
